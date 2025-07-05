@@ -12,7 +12,7 @@ What is brisbanesocialchess? ...
 ## Building
 
 - Learning more about Zola
-- Installing Zola (https://github.com/getzola/zola/releases)
+- Installing Zola (https://github.com/getzola/zola/releases for windows to download latest zip(that includes .exe file)) (read more at https://www.getzola.org/documentation/getting-started/installation/ to install Zola in your machine by package manager in Linux or OSX etc)
 - Confirm zola installed and is accesiable in your terminal/shell:
 
 ```bash
