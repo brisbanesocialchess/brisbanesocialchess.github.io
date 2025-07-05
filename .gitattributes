@@ -1,0 +1,33 @@
+# Normalize line endings for text files
+* text=auto
+
+# Content and code files
+*.md text
+*.html text
+*.css text
+*.js text
+*.toml text
+*.yaml text
+*.yml text
+
+# Binary files (images, fonts, PDFs)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Ensure shell scripts use LF line endings
+*.sh text eol=lf
+
+# Exclude documentation files from git archive exports
+README.md export-ignore
+
+# Optionally exclude local configuration files from exports
+*.local export-ignore
