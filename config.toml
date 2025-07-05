@@ -1,0 +1,3 @@
+base_url = "https://yourusername.github.io/my-first-site"
+title = "My First Zola Site"
+theme = ""
