@@ -4,6 +4,8 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 
 **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 
+> Never underestimate the power of Jedi Master Big Bird
+
 ---
 
 ## About Brisbane Social Chess
@@ -83,6 +85,14 @@ The output will be in the `public/` directory, ready to be served or deployed.
 * Edit `config.toml` to update site metadata such as title and base URL
 * Add or modify Markdown files in the `content/` directory to change site content
 * Customize templates and static assets in `templates/` and `static/` folders as needed
+
+---
+
+## Chess
+
+| ![Chess Image 1](assets/chess1.jpg) | ![Chess Image 2](assets/chess2.jpg) |
+|:--:|:--:|
+| Chess 1 | Chess 2 |
 
 ---
 
