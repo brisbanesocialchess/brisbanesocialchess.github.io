@@ -1,7 +1,7 @@
 +++
-title = "Welcome to My First Zola Site"
+title = "Welcome to Brisbane Social Chess"
 +++
 
-# Hello from Zola!
+# Hello from Brisbane Social Chess!
 
-This is my first static website generated with Zola. 🚀
+A place for casual chess, for fun and friendly people 🚀
