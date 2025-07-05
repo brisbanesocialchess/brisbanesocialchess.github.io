@@ -1,0 +1,7 @@
+ls:
+  .:
+    naming: kebab-case
+    ignore:
+      - .git
+      - node_modules
+      - dist
