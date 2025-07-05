@@ -8,7 +8,7 @@ min_version = "0.17.0"
 demo = "https://github.com/brisbanesocialchess/brisbanesocialchess.github.io"
 
 [author]
-name = "Max Base"
+name = "Brisbane Social Chess Developers"
 homepage = "https://..."
 
 [extra]
