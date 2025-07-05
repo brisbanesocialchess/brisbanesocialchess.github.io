@@ -1,15 +1,17 @@
 name: Lint file and folder names
 
 on:
-  pull_request:
-    branches: [main]
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
 
 jobs:
   ls-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Run ls-lint
-        uses: livioferreira/ls-lint-action@v1
+        uses: ls-lint/github-action@v1
