@@ -1,17 +1,8 @@
-name: Lint file and folder names
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
   ls-lint:
+    name: Run ls-lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run ls-lint
-        uses: mritunjaysharma394/ls-lint-action@v1.0.2
+      - uses: actions/checkout@v4
+      - uses: ls-lint/action@v2.3.1
+        with:
+          config: .github/linters/.ls-lint.yml
