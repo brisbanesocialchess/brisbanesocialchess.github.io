@@ -1,0 +1,17 @@
+{
+  "name": "brisbane-social-chess-website",
+  "version": "1.0.0",
+  "description": "Brisbane Social Chess Club Website",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,md}\"",
+    "lint:html": "prettier --check \"**/*.html\"",
+    "lint:css": "prettier --check \"**/*.css\""
+  },
+  "devDependencies": {
+    "prettier": "3.6.1"
+  },
+  "keywords": ["chess", "club", "website"],
+  "author": "Brisbane Social Chess Club",
+  "license": "MIT"
+}
