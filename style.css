@@ -17,6 +17,10 @@ a {
     color: #46c7ef;
 }
 
+ul, ol {
+  margin-left: 30px;
+}
+
 /* Background overlay */
 .background-overlay {
   background-color: rgba(0, 0, 0, 0.4);
@@ -124,10 +128,6 @@ a {
 
 .button:hover {
   background-color: #dddddd;
-}
-
-ul, ol {
-  margin-left: 20px;
 }
 
 /* Responsive */
