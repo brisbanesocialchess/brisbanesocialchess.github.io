@@ -140,3 +140,11 @@ ul, ol {
     font-size: 1.2rem;
   }
 }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
