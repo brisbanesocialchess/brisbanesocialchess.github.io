@@ -1,0 +1,20 @@
+name: 🚢 Deploy Workers
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cfsite:
+    if: github.repository == 'brisbanesocialchess/brisbanesocialchess.github.io'
+    runs-on: ubuntu-latest
+    name: 🤓 😎 Site
+    steps:
+      - uses: actions/checkout@v4
+      - name: 🚀 Publish
+        uses: cloudflare/wrangler-action@v3.14.1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/cfsite'
+          command: deploy
