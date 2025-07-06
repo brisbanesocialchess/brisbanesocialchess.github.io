@@ -13,6 +13,10 @@ body, html {
   color: #ffffff;
 }
 
+a {
+    color: #46c7ef;
+}
+
 /* Background overlay */
 .background-overlay {
   background-color: rgba(0, 0, 0, 0.4);
