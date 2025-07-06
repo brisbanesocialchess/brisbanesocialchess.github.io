@@ -1,2 +1,5 @@
 zola.exe
 public
+
+# ignore the node modules directory
+node_modules/
