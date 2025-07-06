@@ -3,7 +3,8 @@
 Welcome to the source code repository for the Brisbane Social Chess website.
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
-- **Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
+- **Current Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
+- **Cloudflare Playground:** [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 
 ---
 
