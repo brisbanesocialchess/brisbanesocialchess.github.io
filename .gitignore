@@ -1,17 +1,52 @@
-# Ignore VSCode settings folder
+# Editor directories
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# Ignore archive files
-*.rar
-*.zip
+# OS files
+.DS_Store
+Thumbs.db
 
-# Ignore executables
-*.exe
+# Logs
+*.log
 
-# Ignore dependency folders
-node_modules/
+# Temporary files
+*.tmp
+*.temp
+
+# Build output
+dist/
+build/
+
+# npm package lock file if you don’t want it tracked (optional)
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*~
+*.bak
+
+# Python caches (if relevant)
+__pycache__/
+*.py[cod]
+
+# Composer vendor folder (PHP)
 vendor/
 
-# Ignore public folder
+# Dependency directories (you already have)
+node_modules/
+
+# Public folder (you already have)
 public/
+
+# Archive files
+*.rar
+*.zip
