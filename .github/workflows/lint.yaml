@@ -1,0 +1,15 @@
+name: Dprint Check
+
+on: [push, pull_request]
+
+jobs:
+  dprint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dprint
+        run: |
+          curl -fsSL https://dprint.dev/install.sh | sh
+          echo "$HOME/.dprint/bin" >> $GITHUB_PATH
+      - name: Run dprint
+        run: dprint check

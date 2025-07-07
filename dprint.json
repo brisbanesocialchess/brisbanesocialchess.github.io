@@ -1,0 +1,5 @@
+{
+  "includes": ["**/*.{html,css,md}"],
+  "plugins": [
+  ]
+}
