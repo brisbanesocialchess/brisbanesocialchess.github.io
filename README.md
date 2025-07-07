@@ -15,7 +15,7 @@ Read below for instructions about the current static development site hosted on 
 
 ## About Brisbane Social Chess
 
-Brisbane Social Chess is a community-focused website dedicated to chess enthusiasts in Brisbane.\
+Brisbane Social Chess is a community-focused website dedicated to chess enthusiasts in Brisbane.
 Our goal is to provide news, events, resources, and a platform for social chess activities.
 
 ---
