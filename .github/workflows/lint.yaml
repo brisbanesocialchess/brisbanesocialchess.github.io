@@ -7,9 +7,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Cache dprint
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/dprint
+            ~/.dprint/bin
+          key: ${{ runner.os }}-dprint-${{ hashFiles('dprint.json') }}
+          restore-keys: |
+            ${{ runner.os }}-dprint-
+
       - name: Install dprint
+        if: steps.cache-dprint.outputs.cache-hit != 'true'
         run: |
           curl -fsSL https://dprint.dev/install.sh | sh
           echo "$HOME/.dprint/bin" >> $GITHUB_PATH
-      - name: Run dprint
+
+      - name: Run dprint check
         run: dprint check
