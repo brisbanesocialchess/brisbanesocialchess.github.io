@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "brisbane-social-chess-website",
   "version": "1.0.0",
   "description": "Brisbane Social Chess Club Website",
@@ -9,7 +9,7 @@
     "lint:css": "prettier --check \"**/*.css\""
   },
   "devDependencies": {
-    "prettier": "3.6.1"
+    "prettier": "^3.6.0"
   },
   "keywords": ["chess", "club", "website"],
   "author": "Brisbane Social Chess Club",
