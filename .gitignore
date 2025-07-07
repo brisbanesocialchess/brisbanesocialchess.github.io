@@ -1,6 +1,3 @@
 zola.exe
 node_modules
 public
-
-# ignore the node modules directory
-node_modules/
