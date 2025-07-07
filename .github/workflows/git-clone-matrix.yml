@@ -10,7 +10,7 @@ on:
 
 jobs:
   test-git-clone:
-    name: 'Test git clone on ${{ matrix.os }}'
+    name: "Test git clone on ${{ matrix.os }}"
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
