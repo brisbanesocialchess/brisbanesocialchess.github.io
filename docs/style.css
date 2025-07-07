@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 /* Reset */
 * {
   margin: 0;
@@ -5,10 +8,11 @@
   box-sizing: border-box;
 }
 
+/* General */
 body, html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background: url('assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }

@@ -1,3 +1,45 @@
-zola.exe
-node_modules
-public
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build output
+dist/
+build/
+
+# npm package lock file
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*~
+*.bak
+
+# Dependency directories
+node_modules/
+
+# Public folder
+public/
+
+# Archive files
+*.rar
+*.zip
