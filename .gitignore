@@ -21,7 +21,7 @@ Thumbs.db
 dist/
 build/
 
-# npm package lock file if you don’t want it tracked (optional)
+# npm package lock file
 package-lock.json
 yarn.lock
 
@@ -34,17 +34,10 @@ yarn.lock
 *~
 *.bak
 
-# Python caches (if relevant)
-__pycache__/
-*.py[cod]
-
-# Composer vendor folder (PHP)
-vendor/
-
-# Dependency directories (you already have)
+# Dependency directories
 node_modules/
 
-# Public folder (you already have)
+# Public folder
 public/
 
 # Archive files
