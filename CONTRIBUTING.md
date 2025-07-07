@@ -43,7 +43,7 @@ Clone the forked repository to your local machine:
 
 ```bash
 git clone https://github.com/your-username/brisbanesocialchess.github.io.git
-````
+```
 
 ### 3. 🌿 Create a Branch
 
@@ -64,15 +64,15 @@ Before committing, please make sure your code follows our formatting and line-en
 
 We use:
 
-* [**dprint**](https://dprint.dev) for consistent code formatting
-* [**pre-commit**](https://pre-commit.com) for checking **end-of-file** and **line endings (LF/CRLF)**
+- [**dprint**](https://dprint.dev) for consistent code formatting
+- [**pre-commit**](https://pre-commit.com) for checking **end-of-file** and **line endings (LF/CRLF)**
 
 #### 🔧 Setting Up dprint
 
 **Windows:**
 
-* Download and install dprint from the [dprint releases](https://github.com/dprint/dprint/releases)
-* Run the installer and make sure `dprint` is in your system PATH
+- Download and install dprint from the [dprint releases](https://github.com/dprint/dprint/releases)
+- Run the installer and make sure `dprint` is in your system PATH
 
 **Linux/macOS:**
 
@@ -139,10 +139,10 @@ git push origin add-new-feature
 
 ### 7. 🔄 Create a Pull Request
 
-* Go to your forked repository on GitHub.
-* Click **"Compare & pull request"**.
-* Add a title and description (e.g., "Fixes #102").
-* Click **"Create pull request"**.
+- Go to your forked repository on GitHub.
+- Click **"Compare & pull request"**.
+- Add a title and description (e.g., "Fixes #102").
+- Click **"Create pull request"**.
 
 ---
 
@@ -150,5 +150,5 @@ git push origin add-new-feature
 
 If you need help or have questions:
 
-* Join Discussions: Participate in discussions.
-* Contact Maintainers: Reach out to project maintainers if needed.
+- Join Discussions: Participate in discussions.
+- Contact Maintainers: Reach out to project maintainers if needed.
