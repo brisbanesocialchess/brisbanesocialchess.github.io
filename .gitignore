@@ -1,3 +1,16 @@
-zola.exe
-node_modules
-public
+# Ignore VSCode settings folder
+.vscode/
+
+# Ignore archive files
+*.rar
+*.zip
+
+# Ignore executables
+*.exe
+
+# Ignore dependency folders
+node_modules/
+vendor/
+
+# Ignore public folder
+public/
