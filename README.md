@@ -6,6 +6,11 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 - **Current Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
 - **Cloudflare Playground:** [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 
+[Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
+
+Read below for instructions about the current static development site hosted on [GitHub Pages](https://pages.github.com/).
+
 ---
 
 ## About Brisbane Social Chess
