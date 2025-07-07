@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brisbane Social Chess</title>
-    <meta name="description" content="Brisbane's only social chess club" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-  </head>
-  <body>
-    <div class="background-overlay">
-      <main class="content-wrapper">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="assets/image03.jpg" alt="Brisbane Social Chess Logo" />
-          <h1>Brisbane Social Chess</h1>
-          <p>A place for casual chess, for fun and friendly people.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brisbane Social Chess</title>
+  <meta name="description" content="Brisbane's only social chess club" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+</head>
+
+<body>
+  <div class="background-overlay">
+    <main class="content-wrapper">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="Brisbane Social Chess Logo" />
+        <h1>Brisbane Social Chess</h1>
+        <p>A place for casual chess, for fun and friendly people.</p>
+      </div>
+
+
+      <!-- Top Navigation -->
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="games.html">Games</a>
+        <a href="minutes.html">Minutes</a>
+        <a href="register.html">How to Register</a>
+        <a href="rules.html">Rules</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+
+      <!-- Section 1 -->
+      <section class="section">
+        <h2>6 Meetups a Week</h2>
+        <p>
+          We have meetings every day of the week except Tuesdays. There are
+          always more meeting times and locations in the works.
+        </p>
+        <img src="assets/locations.jpg" alt="Chess Meetup" />
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section">
+        <h2>A Dedicated Team of Organisers</h2>
+        <p>
+          We are a registered community organisation in Queensland with a
+          committee. Ready to contribute? We would like to hear from you.
+        </p>
+        <img src="assets/organisers.jpg" alt="Organisers" />
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section">
+        <h2>Join Us!</h2>
+        <p>
+          Click below to join us on Chess.com or peruse our Facebook page.
+          Contribute to our projects and website on the GitHub AI powered
+          social network. Hang out with us live on Discord!
+        </p>
+        <div class="button-group">
+          <a href="https://www.chess.com/club/brisbane-social-chess" class="button">Chess.com</a>
+          <a href="https://www.facebook.com/BrisbaneSocialChess/" class="button">Facebook</a>
+          <a href="https://github.com/brisbanesocialchess" class="button">GitHub</a>
+          <a href="https://discord.com/invite/JWBKhQmzvD" class="button">Discord</a>
         </div>
+        <img src="assets/background_smaller.jpg" alt="Play Chess" />
+      </section>
+    </main>
+  </div>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      &copy; <span id="year"></span> Brisbane Social Chess. All rights
+      reserved.
+    </p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 
-        <!-- Top Navigation -->
-        <nav class="nav-links">
-          <a href="index.html" class="active">Home</a>
-          <a href="games.html">Games</a>
-          <a href="minutes.html">Minutes</a>
-          <a href="register.html">How to Register</a>
-          <a href="rules.html">Rules</a>
-          <a href="terms.html">Terms</a>
-        </nav>
-
-        <!-- Section 1 -->
-        <section class="section">
-          <h2>6 Meetups a Week</h2>
-          <p>
-            We have meetings every day of the week except Tuesdays. There are
-            always more meeting times and locations in the works.
-          </p>
-          <img src="assets/image01.jpg" alt="Chess Meetup" />
-        </section>
-
-        <!-- Section 2 -->
-        <section class="section">
-          <h2>A Dedicated Team of Organisers</h2>
-          <p>
-            We are a registered community organisation in Queensland with a
-            committee. Ready to contribute? We would like to hear from you.
-          </p>
-          <img src="assets/image02.jpg" alt="Organisers" />
-        </section>
-
-        <!-- Section 3 -->
-        <section class="section">
-          <h2>Join Us!</h2>
-          <p>
-            Click below to join us on Chess.com or peruse our Facebook page.
-            Contribute to our projects and website on the GitHub AI powered
-            social network. Hang out with us live on Discord!
-          </p>
-          <div class="button-group">
-            <a
-              href="https://www.chess.com/club/brisbane-social-chess"
-              class="button"
-              >Chess.com</a
-            >
-            <a
-              href="https://www.facebook.com/BrisbaneSocialChess/"
-              class="button"
-              >Facebook</a
-            >
-            <a href="https://github.com/brisbanesocialchess" class="button"
-              >GitHub</a
-            >
-            <a href="https://discord.com/invite/JWBKhQmzvD" class="button"
-              >Discord</a
-            >
-          </div>
-          <img src="assets/image05.jpg" alt="Play Chess" />
-        </section>
-      </main>
-    </div>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <p>
-        &copy; <span id="year"></span> Brisbane Social Chess. All rights
-        reserved.
-      </p>
-    </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
 </html>

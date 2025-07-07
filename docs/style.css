@@ -5,19 +5,21 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background: url('assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }
 
 a {
-    color: #46c7ef;
+  color: #46c7ef;
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 30px;
 }
 
