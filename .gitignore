@@ -1,5 +1,6 @@
 # Ignore VSCode settings folder
 .vscode/
+.idea/
 
 # Ignore archive files
 *.rar
