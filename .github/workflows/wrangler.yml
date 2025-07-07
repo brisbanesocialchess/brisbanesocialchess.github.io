@@ -15,7 +15,7 @@ jobs:
       - name: 🚀 Publish
         uses: cloudflare/wrangler-action@v3.14.1
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: 'packages/cfsite'
           command: deploy
