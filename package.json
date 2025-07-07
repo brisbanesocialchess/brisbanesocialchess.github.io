@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "brisbane-social-chess-website",
   "version": "1.0.0",
   "description": "Brisbane Social Chess Club Website",
@@ -14,4 +14,15 @@
   "keywords": ["chess", "club", "website"],
   "author": "Brisbane Social Chess Club",
   "license": "MIT"
+=======
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.2.3"
+  }
 }
