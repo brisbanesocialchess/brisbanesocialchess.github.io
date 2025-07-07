@@ -26,9 +26,10 @@ jobs:
 
       - name: Install dprint
         if: steps.cache-dprint.outputs.cache-hit != 'true'
-        run: |
-          curl -fsSL https://dprint.dev/install.sh | sh
-          echo "$HOME/.dprint/bin" >> $GITHUB_PATH
+        run: curl -fsSL https://dprint.dev/install.sh | sh
+
+      - name: Add dprint to PATH
+        run: echo "$HOME/.dprint/bin" >> $GITHUB_PATH
 
       - name: Run dprint check
         run: dprint check
