@@ -1,6 +1,10 @@
-# brisbanesocialchess.github.io
-
-Welcome to the source code repository for the Brisbane Social Chess website.
+<div align="center">
+  <img src="docs/assets/logo.jpg" alt="Brisbane Social Chess Logo" width="150" height="150" style="border-radius: 50%;">
+  
+  # brisbanesocialchess.github.io
+  
+  Welcome to the source code repository for the Brisbane Social Chess website.
+</div>
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **Current Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
