@@ -8,9 +8,9 @@ backend:
 documentation:
 - changed-files:
   - any-glob-to-any-file:
-    - 'docs/**/*'
-    - 'README.md'
-    - 'CONTRIBUTING.md'
+    - "docs/**/*"
+    - "README.md"
+    - "CONTRIBUTING.md"
 
 # Label for changes to GitHub Actions workflows
 ci:
