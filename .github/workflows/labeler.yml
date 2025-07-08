@@ -1,18 +1,18 @@
 name: "🤖 Pull Request Labeler 🏷️"
 
 on:
-  - pull_request_target  # 📬 Trigger when a pull request is opened or updated
+  - pull_request_target # 📬 Trigger when a pull request is opened or updated
 
 permissions:
-  contents: read  # 📂 Read-only access to repo contents
+  contents: read # 📂 Read-only access to repo contents
 
 jobs:
   label:
     name: "🏷️ Auto-Label PR"
     permissions:
-      contents: read  # 📄 Required to read repo
-      pull-requests: write  # ✍️ Required to apply labels
-    runs-on: ubuntu-latest  # 🐧 Use latest Ubuntu runner
+      contents: read # 📄 Required to read repo
+      pull-requests: write # ✍️ Required to apply labels
+    runs-on: ubuntu-latest # 🐧 Use latest Ubuntu runner
     steps:
       - name: "📥 Checkout Repository"
         uses: actions/checkout@v4
@@ -20,5 +20,5 @@ jobs:
       - name: "🏷️ Apply Labels using Labeler"
         uses: actions/labeler@v5
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"  # 🔐 Auth token
-          sync-labels: true  # 🔄 Keep labels in sync with configuration
+          repo-token: "${{ secrets.GITHUB_TOKEN }}" # 🔐 Auth token
+          sync-labels: true # 🔄 Keep labels in sync with configuration
