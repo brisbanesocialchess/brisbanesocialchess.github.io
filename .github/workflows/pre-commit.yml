@@ -23,6 +23,12 @@ jobs:
             python-version: "3.10"
 
     steps:
+      - name: 🍎 Fix macOS gettext issue
+        if: runner.os == 'macOS'
+        run: |
+          brew install gettext
+          brew link --force gettext
+
       - name: ↩️ Checkout code
         uses: actions/checkout@v4
 
@@ -47,12 +53,6 @@ jobs:
         with:
           path: ~/.cache/pip
           key: pip|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('**/requirements*.txt', '.pre-commit-config.yaml') }}
-
-      - name: 🍎 Fix macOS gettext issue
-        if: runner.os == 'macOS'
-        run: |
-          brew install gettext
-          brew link --force gettext
 
       - name: 🪛 Install dependencies
         run: |
