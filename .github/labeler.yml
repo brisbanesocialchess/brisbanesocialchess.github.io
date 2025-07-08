@@ -2,7 +2,7 @@
 backend:
   - changed-files:
       - any-glob-to-any-file:
-      - "backend/**/*"
+          - "backend/**/*"
 
 # Label for documentation changes
 documentation:
