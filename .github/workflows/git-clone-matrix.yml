@@ -1,4 +1,4 @@
-name: Git Clone Matrix Test
+name: Git Clone Matrix Test 🧪
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   test-git-clone:
-    name: "Test git clone on ${{ matrix.os }}"
+    name: "👨‍🔬 Test git clone on ${{ matrix.os }}"
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -18,10 +18,10 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
 
     steps:
-      - name: Checkout the current repo
+      - name: ✅ Checkout the current repo
         uses: actions/checkout@v4
 
-      - name: Run git clone test
+      - name: Run 🏃 git clone test
         run: |
           git clone https://github.com/brisbanesocialchess/brisbanesocialchess.github.io.git
           echo "Cloned successfully on ${{ matrix.os }}"
