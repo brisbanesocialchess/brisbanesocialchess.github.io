@@ -21,10 +21,6 @@ Thumbs.db
 dist/
 build/
 
-# npm package lock file
-package-lock.json
-yarn.lock
-
 # Environment files
 .env
 .env.local
