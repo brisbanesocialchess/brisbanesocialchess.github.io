@@ -49,8 +49,8 @@ async function handleGetRoot(request) {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const { pathname, method } = url;
-
+    const { pathname } = url;
+    const method = request.method;
     console.log('Request:', method, pathname);
 
     if (method === 'OPTIONS') {
