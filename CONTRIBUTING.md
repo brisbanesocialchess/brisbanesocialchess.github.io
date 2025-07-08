@@ -7,7 +7,7 @@ Welcome to **Awesome Social Chess**! We appreciate your interest in contributing
 - [Getting Started](#getting-started)
 - [Creating an Issue](#creating-an-issue)
 - [How to Contribute](#how-to-contribute)
-  - [Formatting & Commit Rules](#formatting--commit-rules)
+  - [Formatting & Commit Rules](#-formatting--commit-rules)
 - [Community Support](#community-support)
 
 ---
