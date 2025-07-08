@@ -1,8 +1,8 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;" width="200">
   <h1>brisbanesocialchess.github.io</h1>
-  
-  Welcome to the source code repository for the Brisbane Social Chess website.
+
+Welcome to the source code repository for the Brisbane Social Chess website.
 
 </div>
 
