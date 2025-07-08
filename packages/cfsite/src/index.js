@@ -51,6 +51,8 @@ export default {
     const url = new URL(request.url);
     const { pathname, method } = url;
 
+    console.log('Request:', method, pathname);
+
     if (method === 'OPTIONS') {
       return handleOptions(request);
     }
