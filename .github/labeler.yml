@@ -1,10 +1,3 @@
-# Label any PR that changes files in the backend/ directory
-backend:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - "backend/**/*"
-
 # Label for documentation changes
 documentation:
   - any:
