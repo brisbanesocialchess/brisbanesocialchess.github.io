@@ -16,7 +16,7 @@ documentation:
 ci:
 - changed-files:
   - any-glob-to-any-file:
-    - '.github/workflows/*'
+    - ".github/workflows/*"
 
 # Label for changes to the cfsite package
 cfsite:
