@@ -23,6 +23,7 @@ ci:
 
 # Label for changes to the cfsite package
 cfsite:
-  - changed-files:
-      - any-glob-to-any-file:
-          - "packages/cfsite/**/*"
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - "packages/cfsite/**/*"
