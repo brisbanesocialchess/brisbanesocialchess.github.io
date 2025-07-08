@@ -22,4 +22,3 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"  # 🔐 Auth token
           sync-labels: true  # 🔄 Keep labels in sync with configuration
-
