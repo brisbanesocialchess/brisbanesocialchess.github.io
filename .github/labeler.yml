@@ -16,9 +16,10 @@ documentation:
 
 # Label for changes to GitHub Actions workflows
 ci:
-  - changed-files:
-      - any-glob-to-any-file:
-          - ".github/workflows/*"
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - ".github/workflows/*"
 
 # Label for changes to the cfsite package
 cfsite:
