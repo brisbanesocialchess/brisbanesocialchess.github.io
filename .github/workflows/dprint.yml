@@ -27,7 +27,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-dprint-
 
-      - name: 🏗️Install dprint
+      - name: 🏗️ Install dprint
         if: steps.cache-dprint.outputs.cache-hit != 'true'
         run: curl -fsSL https://dprint.dev/install.sh | sh
 
