@@ -10,8 +10,10 @@
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.19",
-    "@rollup/rollup-win32-x64-msvc": "^4.44.2",
     "vitest": "~3.2.0",
     "wrangler": "^4.23.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.44.2"
   }
 }
