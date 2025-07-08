@@ -43,6 +43,11 @@ export default {
         return handleRegister(request);
       }
     }
+    else if (request.method === 'GET') {
+      if (pathname === '/') {
+        return new Response('Hello World!', { status: 200 });
+      }
+    }
 
     return new Response('Not Found', { status: 404 });
   },
