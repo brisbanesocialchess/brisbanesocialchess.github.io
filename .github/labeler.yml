@@ -22,4 +22,4 @@ ci:
 cfsite:
 - changed-files:
   - any-glob-to-any-file:
-    - 'packages/cfsite/**/*'
+    - "packages/cfsite/**/*"
