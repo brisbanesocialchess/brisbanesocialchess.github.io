@@ -1,41 +1,63 @@
-name: Run pre-commit
+name: 🏃🏼 Run pre-commit
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
 
 jobs:
   pre-commit:
-    name: Run pre-commit hooks
-    runs-on: ubuntu-latest
+    name: 🏃🏼 Pre-commit on ${{ matrix.os }} / Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.12", "3.11", "3.10"]
+        exclude:
+          - os: macos-latest
+            python-version: "3.10"
+
     steps:
-      - name: Checkout ${{ github.ref }} ( ${{ github.sha }} )
+      - name: 🍎 Fix macOS gettext issue
+        if: runner.os == 'macOS'
+        run: |
+          brew install gettext
+          brew link --force gettext
+
+      - name: ↩️ Checkout code
         uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: 🔧 Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: ${{ matrix.python-version }}
           architecture: "x64"
 
-      - name: Install dependencies
+      - name: 🪛 Set PY (Python version hash)
+        shell: bash
+        run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> "$GITHUB_ENV"
+
+      - name: 💾 Cache pre-commit hooks
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: 💾 Cache pip downloads
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('**/requirements*.txt', '.pre-commit-config.yaml') }}
+
+      - name: 🪛 Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pre-commit
 
-      - name: Set PY
-        run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> "$GITHUB_ENV"
-
-      - uses: actions/cache@v4
-        with:
-          path: ~/.cache/pre-commit
-          key: pre-commit|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
-
-      - name: Run pre-commit
+      - name: 🏃🏻‍♂️‍➡️ Run pre-commit
         run: pre-commit run --all-files

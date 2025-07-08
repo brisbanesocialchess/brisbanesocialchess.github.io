@@ -1,0 +1,24 @@
+name: 🤖 Pull Request Labeler
+
+on:
+  - pull_request_target
+
+permissions:
+  contents: read
+
+jobs:
+  label:
+    name: 🏷️ Auto-Label Pull Request
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🏷️ Apply Labels using Labeler
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          sync-labels: true

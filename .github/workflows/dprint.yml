@@ -1,4 +1,4 @@
-name: Dprint Check
+name: ✅ Dprint Check
 
 on:
   push:
@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   dprint:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Cache dprint
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.cache/dprint
@@ -24,12 +27,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-dprint-
 
-      - name: Install dprint
+      - name: 🏗️ Install dprint
         if: steps.cache-dprint.outputs.cache-hit != 'true'
         run: curl -fsSL https://dprint.dev/install.sh | sh
 
       - name: Add dprint to PATH
         run: echo "$HOME/.dprint/bin" >> $GITHUB_PATH
 
-      - name: Run dprint check
+      - name: 🏃🏻‍♂️‍➡️ Run dprint check
         run: dprint check

@@ -1,5 +1,30 @@
+# https://pre-commit.com/#installation
+default_stages: [pre-commit, pre-push]
+default_language_version:
+  python: python3
+  node: 22.16.0
+minimum_pre_commit_version: "3.2.0"
 repos:
+  - repo: meta
+    hooks:
+      - id: identity
+        name: run identity
+        description: run the identity check
+      - id: check-hooks-apply
+        name: check hooks apply to the repository
+        description: useful when testing new hooks to see if they apply to the repository
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: end-of-file-fixer
+      - id: check-case-conflict
+      - id: check-illegal-windows-names
+      - id: check-merge-conflict
+      - id: check-vcs-permalinks
+      - id: detect-aws-credentials
+        args: [--allow-missing-credentials]
+      - id: detect-private-key
+      - id: fix-byte-order-marker
+      - id: forbid-submodules
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
