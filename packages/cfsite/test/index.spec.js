@@ -86,7 +86,10 @@ describe('API endpoints', () => {
     await waitOnExecutionContext(ctx);
 
     expect(response.status).toBe(404);
-    expect(await response.text()).toBe('Not Found');
+    expect(await response.json()).toEqual({
+      status: 'error',
+      message: 'Not Found',
+    });
     expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
   });
 
