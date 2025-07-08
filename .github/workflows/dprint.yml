@@ -34,5 +34,5 @@ jobs:
       - name: Add dprint to PATH
         run: echo "$HOME/.dprint/bin" >> $GITHUB_PATH
 
-      - name: 🏃🏻‍♂️‍➡️Run dprint check
+      - name: 🏃🏻‍♂️‍➡️ Run dprint check
         run: dprint check
