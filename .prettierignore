@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Generated files
+*.min.css
+*.min.js
+
+# Package manager files
+package-lock.json
+yarn.lock
+
+# Git
+.git/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Specific folders to ignore
+packages/
+themes/
+.github/

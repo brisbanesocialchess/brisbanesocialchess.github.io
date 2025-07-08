@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Format HTML files",
+      "type": "shell",
+      "command": "code",
+      "args": [
+        "--command",
+        "workbench.action.tasks.runTask",
+        "Format All HTML"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format All HTML",
+      "type": "shell", 
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "Get-ChildItem -Path '*.html' -Recurse | ForEach-Object { code --wait --command 'editor.action.formatDocument' $_.FullName }"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format CSS files",
+      "type": "shell",
+      "command": "powershell", 
+      "args": [
+        "-Command",
+        "Get-ChildItem -Path '*.css' -Recurse | ForEach-Object { code --wait --command 'editor.action.formatDocument' $_.FullName }"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always", 
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
