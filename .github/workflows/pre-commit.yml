@@ -36,7 +36,7 @@ jobs:
         if: runner.os == 'Windows'
         run: |
           iwr https://dprint.dev/install.ps1 -UseBasicParsing | iex
-          move ~\.dprint\bin\dprint.exe C:\tools\dprint.exe
+          move "~\.dprint\bin\dprint.exe" "C:\tools\dprint.exe"
           setx PATH "$env:PATH;C:\tools"
 
       - name: ↩️ Checkout code
