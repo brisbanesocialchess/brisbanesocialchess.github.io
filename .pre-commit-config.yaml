@@ -32,4 +32,4 @@ repos:
     rev: v9.1.5
     hooks:
       - id: oxipng
-        args: ["-o", "4", "--strip", "safe", "--alpha"]
+        args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
