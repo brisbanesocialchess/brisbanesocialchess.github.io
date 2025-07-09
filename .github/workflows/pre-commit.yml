@@ -61,5 +61,3 @@ jobs:
 
       - name: 🏃🏻‍♂️‍➡️ Run pre-commit
         run: pre-commit run --all-files
-  lern-test:
-    uses: ./.github/workflows/lerna.yml
