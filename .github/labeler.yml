@@ -1,3 +1,21 @@
+# Label for changes to GitHub Actions workflows
+ci:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - ".github/lint-plugins/*"
+              - ".github/workflows/*"
+              - ".pre-commit-config.yaml"
+              - "dprint.json"
+              - ".editorconfig"
+
+# Label for changes to the cfsite package
+cfsite:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - "packages/cfsite/**/*"
+
 # Label for documentation changes
 documentation:
   - any:
@@ -7,16 +25,8 @@ documentation:
               - "README.md"
               - "CONTRIBUTING.md"
 
-# Label for changes to GitHub Actions workflows
-ci:
+scripts:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - ".github/workflows/*"
-
-# Label for changes to the cfsite package
-cfsite:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - "packages/cfsite/**/*"
+              - "scripts/**/*"
