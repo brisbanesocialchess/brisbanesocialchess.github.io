@@ -1,3 +1,6 @@
+// Variables
+const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev/';
+
 // Elements
 const elmYear = document.getElementById("year");
 const elmFormRegister = document.querySelector(".form-registration");
@@ -91,14 +94,14 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 if (elmFormRegister) {
   elmFormRegister.addEventListener("submit", (e) => {
     e.preventDefault();
-    handleFormSubmit(elmFormRegister, "/api/register", validateRegisterForm);
+    handleFormSubmit(elmFormRegister, API_BASE + "/api/register", validateRegisterForm);
   });
 }
 
 if (elmFormContact) {
   elmFormContact.addEventListener("submit", (e) => {
     e.preventDefault();
-    handleFormSubmit(elmFormContact, "/api/contact", validateContactForm);
+    handleFormSubmit(elmFormContact, API_BASE + "/api/contact", validateContactForm);
   });
 }
 
