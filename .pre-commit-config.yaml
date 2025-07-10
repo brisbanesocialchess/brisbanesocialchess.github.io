@@ -44,9 +44,6 @@ repos:
         language: python
         pass_filenames: false
         require_serial: true
-
-  - repo: local
-    hooks:
       - id: dprint-format
         name: Run dprint formatter
         entry: dprint check
