@@ -36,8 +36,8 @@ repos:
   - repo: local
     hooks:
       - id: test-lerna
-        name: test lerna
-        entry: ./scripts/test-lerna.sh
+        name: test lerna (Cross-platform)
+        entry: python3 scripts/test-lerna-runner.py
         language: system
         pass_filenames: false
         require_serial: true
