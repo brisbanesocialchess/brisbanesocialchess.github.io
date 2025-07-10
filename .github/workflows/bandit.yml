@@ -1,4 +1,4 @@
-name: Bandit
+name: 🛡️ Bandit
 
 on:
   workflow_dispatch:

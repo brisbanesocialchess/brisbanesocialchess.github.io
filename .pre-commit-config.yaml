@@ -41,6 +41,11 @@ repos:
 
   - repo: local
     hooks:
+      - id: npm-ci
+        name: npm ci install
+        entry: npm ci
+        language: system
+        pass_filenames: false
       - id: test-lerna
         name: Run lerna tests
         entry: npx lerna run test -- --run
@@ -52,4 +57,4 @@ repos:
     hooks:
       - id: bandit
         args: ["-c", "bandit.yaml"]
-        additional_dependencies: ["bandit[toml]"]
+        files: \.py$
