@@ -79,14 +79,18 @@ async function handleFormSubmit(form, endpoint, validateFn) {
       body: JSON.stringify(data),
     });
 
-    const result = await response.json();
-
     if (response.ok) {
       alert("✅ Submission successful!");
       form.reset();
     } else {
-      const errorMessage = result.message || "Something went wrong.";
-      alert("❌ Error: " + errorMessage);
+      const defaultErrorMessage = "Something went wrong.";
+      try {
+        const result = await response.json();
+        const errorMessage = result.message || defaultErrorMessage;
+        alert("❌ Error: " + errorMessage);
+      } catch (e) {
+        alert("❌ Error: " + defaultErrorMessage);
+      }
     }
   } catch (err) {
     alert("❌ Network error. Please try again.");

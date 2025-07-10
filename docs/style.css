@@ -134,6 +134,11 @@ ul, ol {
   background-color: #dddddd;
 }
 
+/* Contact */
+.contact-actions {
+  margin-top: 2rem;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
   .content-wrapper {
