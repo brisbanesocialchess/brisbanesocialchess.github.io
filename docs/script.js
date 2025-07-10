@@ -85,7 +85,8 @@ async function handleFormSubmit(form, endpoint, validateFn) {
       alert("✅ Submission successful!");
       form.reset();
     } else {
-      alert("❌ Error: " + (result.message || "Something went wrong."));
+      const errorMessage = result.message || "Something went wrong.";
+      alert("❌ Error: " + errorMessage);
     }
   } catch (err) {
     alert("❌ Network error. Please try again.");
