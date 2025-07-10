@@ -5,6 +5,7 @@ const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev/';
 const elmYear = document.getElementById("year");
 const elmFormRegister = document.querySelector(".form-registration");
 const elmFormContact = document.querySelector(".form-contact");
+const elmEmailElements = document.querySelectorAll(".email-obfuscated");
 
 // Utilities
 function getCurrentYear() {
@@ -30,11 +31,13 @@ function validateRegisterForm(data) {
   if (!data.firstName?.trim()) errors.push("First name is required.");
   if (!data.lastName?.trim()) errors.push("Last name is required.");
 
-  const year = parseInt(data.birthYear, 10);
+  const year = data.birthYear ? parseInt(data.birthYear, 10) : NaN;
   const age = currentYear - year;
 
-  if (!year || isNaN(year)) {
+  if (!data.birthYear?.trim()) {
     errors.push("Birth year is required.");
+  } else if (isNaN(year)) {
+    errors.push("Birth year must be a valid number.");
   } else if (age < minAge || age > maxAge) {
     errors.push(`Age must be between ${minAge} and ${maxAge} years old.`);
   }
@@ -92,18 +95,30 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 
 // Event Bindings
 if (elmFormRegister) {
-  elmFormRegister.addEventListener("submit", (e) => {
+  elmFormRegister.addEventListener("submit", async (e) => {
     e.preventDefault();
-    handleFormSubmit(elmFormRegister, API_BASE + "/api/register", validateRegisterForm);
+    await handleFormSubmit(elmFormRegister, API_BASE + "/api/register", validateRegisterForm);
   });
 }
 
 if (elmFormContact) {
-  elmFormContact.addEventListener("submit", (e) => {
+  elmFormContact.addEventListener("submit", async (e) => {
     e.preventDefault();
-    handleFormSubmit(elmFormContact, API_BASE + "/api/contact", validateContactForm);
+    await handleFormSubmit(elmFormContact, API_BASE + "/api/contact", validateContactForm);
   });
 }
 
 // Init
 if (elmYear) elmYear.textContent = getCurrentYear();
+
+const email = String.fromCharCode(
+  106,111,104,110,46,116,101,115,116,64,103,109,97,105,108,46,99,111,109
+);
+if (elmEmailElements) elmEmailElements.forEach((el) => {
+  if (el.getAttribute("data-email-href") !== null) {
+    el.href = `mailto:${email}`;
+  }
+  if (el.getAttribute("data-email-content") !== null) {
+    el.textContent = email;
+  }
+});
