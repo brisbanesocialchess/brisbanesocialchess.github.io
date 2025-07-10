@@ -19,12 +19,20 @@ function isValidEmail(email) {
 function validateRegisterForm(data) {
   const errors = [];
 
+  const currentYear = getCurrentYear();
+  const minAge = 5;
+  const maxAge = 120;
+
   if (!data.firstName?.trim()) errors.push("First name is required.");
   if (!data.lastName?.trim()) errors.push("Last name is required.");
 
   const year = parseInt(data.birthYear, 10);
-  if (!year || year < 1900 || year > getCurrentYear()) {
-    errors.push("Birth year must be between 1900 and " + getCurrentYear() + ".");
+  const age = currentYear - year;
+
+  if (!year || isNaN(year)) {
+    errors.push("Birth year is required.");
+  } else if (age < minAge || age > maxAge) {
+    errors.push(`Age must be between ${minAge} and ${maxAge} years old.`);
   }
 
   if (!data.gender) errors.push("Gender is required.");
