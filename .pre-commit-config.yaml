@@ -36,9 +36,8 @@ repos:
   - repo: local
     hooks:
       - id: test-lerna
-        name: Test Lerna
+        name: test lerna
         entry: ./scripts/test-lerna.sh
         language: system
         pass_filenames: false
         require_serial: true
-        always_run: true
