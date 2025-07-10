@@ -35,9 +35,15 @@ repos:
         args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
   - repo: local
     hooks:
-      - id: test-lerna
-        name: test lerna
-        entry: ./scripts/test-lerna.sh
+      - id: run-dprint-fmt
+        name: run dprint fmt
+        language: system
+        entry: ./scripts/dprint-fmt.sh
+        pass_filenames: false
+        require_serial: true
+      - id: lerna-test
+        name: run lerna test
+        entry: ./scripts/lerna-test.sh
         language: system
         pass_filenames: false
         require_serial: true
