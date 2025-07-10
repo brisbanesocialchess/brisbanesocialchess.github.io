@@ -13,6 +13,7 @@ repos:
       - id: check-hooks-apply
         name: check hooks apply to the repository
         description: useful when testing new hooks to see if they apply to the repository
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -28,11 +29,13 @@ repos:
       - id: forbid-submodules
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
+
   - repo: https://github.com/oxipng/oxipng
     rev: v9.1.5
     hooks:
       - id: oxipng
         args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
+
   - repo: local
     hooks:
       - id: test-lerna
