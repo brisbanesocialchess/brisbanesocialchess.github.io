@@ -1,0 +1,3 @@
+exclude_dirs: ["node_modules", "packages/cfsite/node_modules"]
+tests: ["B201", "B301"]
+skips: ["B101", "B601"]

@@ -55,5 +55,5 @@ repos:
     rev: 1.8.6
     hooks:
       - id: bandit
-        args: ["-r", "src", "--exclude", "node_modules"]
-        pass_filenames: false
+        args: ["-c", "pyproject.toml"]
+        additional_dependencies: ["bandit[toml]"]
