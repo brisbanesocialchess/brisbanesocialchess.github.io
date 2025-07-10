@@ -40,7 +40,7 @@ repos:
     hooks:
       - id: test-lerna
         name: test lerna
-        entry: ./scripts/test-lerna-runner.py
+        entry: ./.github/scripts/test-lerna-runner.py
         language: python
         pass_filenames: false
         require_serial: true
