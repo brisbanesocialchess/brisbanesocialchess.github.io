@@ -1,5 +1,7 @@
-// Variables
-const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev/';
+// Const variables
+const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
+const MIN_AGE = 5;
+const MAX_AGE = 120;
 
 // Elements
 const elmYear = document.getElementById("year");
@@ -25,8 +27,6 @@ function validateRegisterForm(data) {
   const errors = [];
 
   const currentYear = getCurrentYear();
-  const minAge = 5;
-  const maxAge = 120;
 
   if (!data.firstName?.trim()) errors.push("First name is required.");
   if (!data.lastName?.trim()) errors.push("Last name is required.");
@@ -34,18 +34,12 @@ function validateRegisterForm(data) {
   const year = data.birthYear ? parseInt(data.birthYear, 10) : NaN;
   const age = currentYear - year;
 
-  if (!data.birthYear?.trim()) {
-    errors.push("Birth year is required.");
-  } else if (isNaN(year)) {
-    errors.push("Birth year must be a valid number.");
-  } else if (age < minAge || age > maxAge) {
-    errors.push(`Age must be between ${minAge} and ${maxAge} years old.`);
-  }
+  if (!data.birthYear?.trim()) errors.push("Birth year is required.");
+  else if (isNaN(year)) errors.push("Birth year must be a valid number.");
+  else if (age < MIN_AGE || age > MAX_AGE) errors.push(`Age must be between ${MIN_AGE} and ${MAX_AGE} years old.`);
 
   if (!data.gender) errors.push("Gender is required.");
-  if (!data.email?.trim() || !isValidEmail(data.email)) {
-    errors.push("Valid email is required.");
-  }
+  if (!data.email?.trim() || !isValidEmail(data.email)) errors.push("Valid email is required.");
 
   return errors;
 }
@@ -54,9 +48,8 @@ function validateContactForm(data) {
   const errors = [];
 
   if (!data.name?.trim()) errors.push("Name is required.");
-  if (!data.email?.trim() || !isValidEmail(data.email)) {
-    errors.push("Valid email is required.");
-  }
+  if (!data.email?.trim() || !isValidEmail(data.email)) errors.push("Valid email is required.");
+  if (!data.subject?.trim()) errors.push("Subject is required.");
   if (!data.message?.trim()) errors.push("Message is required.");
 
   return errors;
@@ -79,7 +72,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
       body: JSON.stringify(data),
     });
 
-    if (response.ok) {
+    if (response && response.ok && response.status === 200) {
       alert("✅ Submission successful!");
       form.reset();
     } else {
