@@ -5,6 +5,7 @@ import sys
 import platform
 import subprocess
 import shutil
+import shlex
 
 USE_COLOR = sys.stdout.isatty()
 
@@ -22,16 +23,15 @@ def color(text, fg="red"):
     return f"{codes.get(fg, '')}{text}{codes['end']}"
 
 def safe_print(text):
-    """Print text, trying UTF-8 output, fallback to ASCII."""
     try:
         print(text)
     except UnicodeEncodeError:
         print(text.encode('ascii', errors='replace').decode('ascii'))
 
-def run_command(command, label, help_msg=None, shell=False):
+def run_command(command, label, help_msg=None):
     print(f"\n{color('=== Running:', 'cyan')} {label}")
     try:
-        subprocess.run(command, shell=shell, check=True)
+        subprocess.run(command, check=True)
     except subprocess.CalledProcessError as e:
         print(f"\n{color('❌ Failed:', 'red')} {label}")
         if help_msg:
@@ -39,11 +39,13 @@ def run_command(command, label, help_msg=None, shell=False):
         sys.exit(e.returncode)
 
 def ensure_command_exists(cmd, install_tip=None):
-    if shutil.which(cmd) is None:
+    path = shutil.which(cmd)
+    if path is None:
         print(f"{color('❌ Error:', 'red')} '{cmd}' is not installed or not in PATH.")
         if install_tip:
             print(f"{color('💡 Tip:', 'yellow')} {install_tip}")
         sys.exit(1)
+    return path
 
 def safe_checkmark():
     if platform.system() == "Windows" and not os.environ.get("WT_SESSION"):
@@ -51,29 +53,16 @@ def safe_checkmark():
     return "✅"
 
 def main():
-    system = platform.system()
-    is_windows = system == "Windows"
-
     npm_cmd = os.environ.get("NPM_CMD", "npm")
     npx_cmd = os.environ.get("NPX_CMD", "npx")
     test_cmd = os.environ.get("TEST_CMD", "lerna run test -- --run")
 
-    ensure_command_exists(npm_cmd, "Install Node.js from https://nodejs.org/")
-    ensure_command_exists(npx_cmd)
+    npm_cmd = ensure_command_exists("npm", "Install Node.js from https://nodejs.org/")
+    npx_cmd = ensure_command_exists("npx")
 
-    run_command(
-        [npm_cmd, "ci"],
-        "npm ci",
-        "Make sure your package.json and lock file are valid.",
-        shell=is_windows,
-    )
+    run_command([npm_cmd, "ci"], "npm ci", "Make sure your package.json and lock file are valid.")
 
-    run_command(
-        [npx_cmd] + test_cmd.split(),
-        test_cmd,
-        "Try running the test command manually to debug.",
-        shell=is_windows,
-    )
+    run_command([npx_cmd] + shlex.split(test_cmd), test_cmd, "Try running the test command manually to debug.")
 
     safe_print(f"\n{color(f'{safe_checkmark()} All tests passed successfully!', 'green')}")
 
