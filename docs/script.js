@@ -89,6 +89,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
         const errorMessage = result.message || defaultErrorMessage;
         alert("❌ Error: " + errorMessage);
       } catch (e) {
+        console.error("Error parsing JSON response:", e);
         alert("❌ Error: " + defaultErrorMessage);
       }
     }
@@ -99,27 +100,21 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 }
 
 // Event Bindings
-if (elmFormRegister) {
-  elmFormRegister.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    await handleFormSubmit(elmFormRegister, API_BASE + "/api/register", validateRegisterForm);
-  });
-}
+elmFormRegister?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  await handleFormSubmit(elmFormRegister, API_BASE + "/api/register", validateRegisterForm);
+});
 
-if (elmFormContact) {
-  elmFormContact.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    await handleFormSubmit(elmFormContact, API_BASE + "/api/contact", validateContactForm);
-  });
-}
+elmFormContact?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  await handleFormSubmit(elmFormContact, API_BASE + "/api/contact", validateContactForm);
+});
 
 // Init
-if (elmYear) elmYear.textContent = getCurrentYear();
+elmYear?.textContent = getCurrentYear();
 
-const email = String.fromCharCode(
-  106,111,104,110,46,116,101,115,116,64,103,109,97,105,108,46,99,111,109
-);
-if (elmEmailElements) elmEmailElements.forEach((el) => {
+const email = String.fromCharCode(106,111,104,110,46,116,101,115,116,64,103,109,97,105,108,46,99,111,109);
+elmEmailElements?.forEach((el) => {
   if (el.getAttribute("data-email-href") !== null) {
     el.href = `mailto:${email}`;
   }
