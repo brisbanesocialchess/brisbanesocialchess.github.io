@@ -1,11 +1,24 @@
-# Label any PR that changes files in the backend/ directory
-backend:
+ci:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "backend/**/*"
+              - ".github/workflows/*"
 
-# Label for documentation changes
+cfsite:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - "packages/cfsite/**/*"
+
+development:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - "dprint.json"
+              - ".editorconfig"
+              - ".pre-commit-config.yaml"
+              - ".github/lint-plugins/*"
+
 documentation:
   - any:
       - changed-files:
@@ -14,16 +27,8 @@ documentation:
               - "README.md"
               - "CONTRIBUTING.md"
 
-# Label for changes to GitHub Actions workflows
-ci:
+scripts:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - ".github/workflows/*"
-
-# Label for changes to the cfsite package
-cfsite:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - "packages/cfsite/**/*"
+              - "scripts/**/*"

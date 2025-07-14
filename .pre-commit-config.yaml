@@ -1,9 +1,12 @@
 # https://pre-commit.com/#installation
 default_stages: [pre-commit, pre-push]
+
 default_language_version:
   python: python3
   node: 22.16.0
+
 minimum_pre_commit_version: "3.2.0"
+
 repos:
   - repo: meta
     hooks:
@@ -13,6 +16,7 @@ repos:
       - id: check-hooks-apply
         name: check hooks apply to the repository
         description: useful when testing new hooks to see if they apply to the repository
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -28,3 +32,30 @@ repos:
       - id: forbid-submodules
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
+
+  - repo: https://github.com/oxipng/oxipng
+    rev: v9.1.5
+    hooks:
+      - id: oxipng
+        args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
+
+  - repo: local
+    hooks:
+      - id: npm-ci
+        name: npm ci install
+        entry: npm ci
+        language: system
+        pass_filenames: false
+      - id: test-lerna
+        name: Run lerna tests
+        entry: npx lerna run test -- --run
+        language: system
+        pass_filenames: false
+
+  # - repo: https://github.com/PyCQA/bandit
+  #   rev: 1.8.6
+  #   hooks:
+  #     - id: bandit
+  #       args: ["-c", "bandit.yaml"]
+  #       files: \.py$
+  #       pass_filenames: false

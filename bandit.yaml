@@ -1,0 +1,1 @@
+exclude_dirs: ["node_modules", "packages/cfsite/node_modules"]

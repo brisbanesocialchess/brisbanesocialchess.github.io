@@ -18,6 +18,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Cache dprint
+        id: cache-dprint
         uses: actions/cache@v4
         with:
           path: |
