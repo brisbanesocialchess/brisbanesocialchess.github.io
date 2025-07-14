@@ -7,6 +7,10 @@ export default [
   js.configs.recommended,
 
   {
+    ignores: ["**/.wrangler/**"],
+  },
+
+  {
     files: ["**/*.js"],
     languageOptions: {
       sourceType: "module",

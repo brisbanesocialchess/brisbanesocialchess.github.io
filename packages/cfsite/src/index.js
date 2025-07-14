@@ -1,6 +1,6 @@
 function uuidv4() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-		const v = c === 'x' ? r : ((r & 0x3) | 0x8);
+		const v = c === 'x' ? c : (c & 0x3) | 0x8;
 		return v.toString(16);
 	});
 }
