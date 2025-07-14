@@ -98,7 +98,7 @@ repos:
     hooks:
       - id: npm-audit
         name: Run npm audit
-        entry: npx audit --audit-level=high
+        entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
 
