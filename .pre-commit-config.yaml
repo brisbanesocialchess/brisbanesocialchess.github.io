@@ -5,7 +5,7 @@ default_language_version:
   python: python3
   node: 22.16.0
 
-minimum_pre_commit_version: "3.2.0"
+minimum_pre_commit_version: '3.2.0'
 
 repos:
   - repo: meta
@@ -36,13 +36,13 @@ repos:
       # - id: check-json
       # - id: pretty-format-json
       - id: check-added-large-files
-        args: ["--maxkb=1000"]
+        args: ['--maxkb=1000']
 
   - repo: https://github.com/oxipng/oxipng
     rev: v9.1.5
     hooks:
       - id: oxipng
-        args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
+        args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
 
   - repo: local
     hooks:
@@ -86,7 +86,7 @@ repos:
         entry: prettier --write '**/*.json' '**/*.md' '**/*.yaml' '**/*.yml'
         files: \.(json|md|ya?ml)$
         language: node
-        additional_dependencies: ["prettier@3.6.2"]
+        additional_dependencies: ['prettier@3.6.2']
 
   - repo: local
     hooks:
