@@ -31,7 +31,7 @@ root:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "*"
+              - "{*,.*}"
 
 ci:
   - any:
