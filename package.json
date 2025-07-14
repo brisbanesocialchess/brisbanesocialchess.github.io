@@ -4,18 +4,16 @@
 		"eslint": "^9.31.0",
 		"eslint-config-prettier": "^10.1.5",
 		"eslint-plugin-prettier": "^5.5.1",
+		"eslint-plugin-sort-keys-fix": "^1.1.2",
 		"globals": "^16.3.0",
 		"lerna": "^8.2.3",
-		"prettier": "^3.6.2",
-		"sort-json": "^2.0.1"
+		"prettier": "^3.6.2"
 	},
 	"name": "root",
 	"private": true,
 	"scripts": {
 		"format": "prettier --write \"**/*.{js,json,yaml,yml,css,md}\"",
-		"format:all": "npm run format && npm run sort-json",
 		"lint": "eslint docs/**/*.js",
-		"sort-json": "sort-json --write \"**/*.json\"",
 		"test": "npx lerna run test --stream"
 	},
 	"workspaces": [

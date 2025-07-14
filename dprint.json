@@ -1,10 +1,4 @@
 {
-	"excludes": [
-		"**/*-lock.json",
-		"**/package.json"
-	],
-	"plugins": [
-		".github/lint-plugins/markdown.wasm",
-		".github/lint-plugins/toml.wasm"
-	]
+	"excludes": ["**/*-lock.json", "**/package.json"],
+	"plugins": [".github/lint-plugins/markdown.wasm", ".github/lint-plugins/toml.wasm"]
 }

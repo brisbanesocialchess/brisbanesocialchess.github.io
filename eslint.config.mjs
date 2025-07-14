@@ -1,15 +1,25 @@
 import js from "@eslint/js";
 import globals from "globals";
 import prettierConfig from "eslint-config-prettier";
+import sortKeysFix from "eslint-plugin-sort-keys-fix";
 
 export default [
   js.configs.recommended,
 
   {
-    files: ["packages/cfsite/**/*.js"],
+    files: ["**/*.js"],
     languageOptions: {
       sourceType: "module",
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+    plugins: {
+      "sort-keys-fix": sortKeysFix,
+    },
+    rules: {
+      "sort-keys-fix/sort-keys-fix": "error",
     },
   },
 

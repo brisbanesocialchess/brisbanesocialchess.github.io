@@ -63,11 +63,6 @@ repos:
         files: \.(json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
-      - id: sort-json
-        name: Sort JSON files
-        entry: npx sort-json --write
-        language: node
-        files: \.json$
       - id: npm-audit
         name: Run npm audit
         entry: npm audit --audit-level=high
