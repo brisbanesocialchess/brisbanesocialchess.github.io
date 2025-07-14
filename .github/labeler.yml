@@ -2,7 +2,13 @@ root:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '{*,.*}'
+              - '*'
+
+root:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.*'
 
 cfsite:
   - any:

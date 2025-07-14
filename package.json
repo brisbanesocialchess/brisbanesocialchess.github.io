@@ -13,7 +13,8 @@
 	"private": true,
 	"scripts": {
 		"format": "prettier --write \"**/*.{js,json,yaml,yml,css,md}\"",
-		"lint": "eslint docs/**/*.js",
+		"check": "prettier --check \"**/*.{js,json,yaml,yml,css,md}\"",
+		"lint": "eslint **/*.js",
 		"test": "npx lerna run test --stream"
 	},
 	"workspaces": [

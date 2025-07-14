@@ -14,11 +14,11 @@ function getCorsHeaders(request) {
 	const origin = request.headers.get('Origin') || '*';
 	if (!corsHeadersCache.has(origin)) {
 		corsHeadersCache.set(origin, {
-			'Access-Control-Allow-Origin': origin,
-			'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-			'Access-Control-Allow-Headers': 'Content-Type',
-			'Access-Control-Max-Age': '86400',
 			'Access-Control-Allow-Credentials': 'true',
+			'Access-Control-Allow-Headers': 'Content-Type',
+			'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+			'Access-Control-Allow-Origin': origin,
+			'Access-Control-Max-Age': '86400',
 		});
 	}
 	return corsHeadersCache.get(origin);
@@ -26,34 +26,34 @@ function getCorsHeaders(request) {
 
 function getSecurityHeaders() {
 	return {
+		'Referrer-Policy': 'no-referrer',
 		'X-Content-Type-Options': 'nosniff',
 		'X-Frame-Options': 'DENY',
-		'Referrer-Policy': 'no-referrer',
 	};
 }
 
 function createJsonResponse(data, request, status = 200) {
 	return new Response(JSON.stringify(data), {
-		status,
 		headers: {
 			...JSON_HEADERS,
 			...getCorsHeaders(request),
 			...getSecurityHeaders(),
 		},
+		status,
 	});
 }
 
 function createErrorResponse(message, request, status = 400) {
-	return createJsonResponse({ status: 'error', message }, request, status);
+	return createJsonResponse({ message, status: 'error' }, request, status);
 }
 
 function handleOptions(request) {
 	return new Response(null, {
-		status: 204,
 		headers: {
 			...getCorsHeaders(request),
 			...getSecurityHeaders(),
 		},
+		status: 204,
 	});
 }
 
@@ -86,7 +86,7 @@ async function handleContact(request) {
 
 		console.log(`[Contact] from ${name} <${email}>: ${message}`);
 
-		return createJsonResponse({ status: 'ok', message: 'Thanks for contacting us!' }, request);
+		return createJsonResponse({ message: 'Thanks for contacting us!', status: 'ok' }, request);
 	} catch (err) {
 		return createErrorResponse(err.message, request, 400);
 	}
@@ -102,7 +102,7 @@ async function handleRegister(request) {
 
 		console.log(`[Register] username: ${username}, email: ${email}`);
 
-		return createJsonResponse({ status: 'ok', message: 'Registration complete!' }, request);
+		return createJsonResponse({ message: 'Registration complete!', status: 'ok' }, request);
 	} catch (err) {
 		return createErrorResponse(err.message, request, 400);
 	}
@@ -110,12 +110,12 @@ async function handleRegister(request) {
 
 function handleGetRoot(request) {
 	return new Response('Hello World!', {
-		status: 200,
 		headers: {
 			...getCorsHeaders(request),
 			...getSecurityHeaders(),
 			'Content-Type': 'text/plain',
 		},
+		status: 200,
 	});
 }
 
@@ -124,10 +124,10 @@ async function handleHealthCheck(request) {
 }
 
 const routes = {
-	'POST /api/contact': handleContact,
-	'POST /api/register': handleRegister,
 	'GET /': handleGetRoot,
 	'GET /health': handleHealthCheck,
+	'POST /api/contact': handleContact,
+	'POST /api/register': handleRegister,
 };
 
 export default {

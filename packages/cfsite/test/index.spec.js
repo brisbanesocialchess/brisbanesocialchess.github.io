@@ -22,15 +22,15 @@ describe('Hello World worker', () => {
 describe('API endpoints', () => {
 	it('handles contact form submission', async () => {
 		const body = JSON.stringify({
-			name: 'Alice',
 			email: 'alice@example.com',
 			message: 'Hello from contact form!',
+			name: 'Alice',
 		});
 
 		const request = new Request('http://example.com/api/contact', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
 			body,
+			headers: { 'Content-Type': 'application/json' },
+			method: 'POST',
 		});
 
 		const ctx = createExecutionContext();
@@ -48,15 +48,15 @@ describe('API endpoints', () => {
 
 	it('handles user registration', async () => {
 		const body = JSON.stringify({
-			username: 'BaseMax',
 			email: 'max@example.com',
 			password: 'secret123',
+			username: 'BaseMax',
 		});
 
 		const request = new Request('http://example.com/api/register', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
 			body,
+			headers: { 'Content-Type': 'application/json' },
+			method: 'POST',
 		});
 
 		const ctx = createExecutionContext();
@@ -82,20 +82,20 @@ describe('API endpoints', () => {
 
 		expect(response.status).toBe(404);
 		expect(await response.json()).toEqual({
-			status: 'error',
 			message: 'Not Found',
+			status: 'error',
 		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 
 	it('responds to OPTIONS preflight request', async () => {
 		const request = new Request('http://example.com/api/contact', {
-			method: 'OPTIONS',
 			headers: {
-				Origin: 'http://example.com',
-				'Access-Control-Request-Method': 'POST',
 				'Access-Control-Request-Headers': 'Content-Type',
+				'Access-Control-Request-Method': 'POST',
+				Origin: 'http://example.com',
 			},
+			method: 'OPTIONS',
 		});
 		const ctx = createExecutionContext();
 		const response = await worker.fetch(request, env, ctx);
