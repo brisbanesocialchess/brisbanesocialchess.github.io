@@ -1,7 +1,8 @@
 {
-  "excludes": [
-    "**/*-lock.json"
-  ],
+  "json": {
+    "indentWidth": 2
+  },
+  "excludes": ["**/*-lock.json"],
   "plugins": [
     ".github/lint-plugins/json.wasm",
     ".github/lint-plugins/markdown.wasm",
