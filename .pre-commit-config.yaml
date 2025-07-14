@@ -52,6 +52,13 @@ repos:
         language: system
         pass_filenames: false
 
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.31.0
+    hooks:
+      - id: eslint
+        entry: npx eslint
+        language: node
+        files: \.(js|mjs|cjs)$
   # - repo: https://github.com/PyCQA/bandit
   #   rev: 1.8.6
   #   hooks:

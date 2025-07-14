@@ -5,10 +5,18 @@
     "packages/*"
   ],
   "scripts": {
+    "lint": "eslint docs/**/*.js",
+    "format": "prettier --write docs/**/*.js",
     "test": "npx lerna run test --stream"
   },
-  "dependencies": {},
+  "dependencip": {},
   "devDependencies": {
-    "lerna": "^8.2.3"
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "globals": "^16.3.0",
+    "lerna": "^8.2.3",
+    "prettier": "^3.6.2"
   }
 }
