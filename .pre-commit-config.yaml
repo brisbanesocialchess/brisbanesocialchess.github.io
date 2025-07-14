@@ -90,7 +90,7 @@ repos:
     hooks:
       - id: sort-json
         name: Sort JSON files
-        entry: npm run sort-json --
+        entry: npx sort-json --write
         language: node
         files: \.json$
 
@@ -98,7 +98,7 @@ repos:
     hooks:
       - id: npm-audit
         name: Run npm audit
-        entry: npm audit --audit-level=high
+        entry: npx audit --audit-level=high
         language: system
         pass_filenames: false
 
