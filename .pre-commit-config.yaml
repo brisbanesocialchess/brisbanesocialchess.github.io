@@ -73,7 +73,7 @@ repos:
     rev: v9.31.0
     hooks:
       - id: eslint
-        entry: npx eslint --fix
+        entry: npm run lint_fix
         language: node
         files: \.(js|mjs|cjs)$
 
