@@ -1,15 +1,4 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "lint": "eslint docs/**/*.js",
-    "format": "prettier --write docs/**/*.js",
-    "test": "npx lerna run test --stream",
-    "sort-json": "sort-json --write"
-  },
   "dependencip": {},
   "devDependencies": {
     "@eslint/js": "^9.31.0",
@@ -20,5 +9,16 @@
     "lerna": "^8.2.3",
     "prettier": "^3.6.2",
     "sort-json": "^2.0.1"
-  }
+  },
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write docs/**/*.js",
+    "lint": "eslint docs/**/*.js",
+    "sort-json": "sort-json --write",
+    "test": "npx lerna run test --stream"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

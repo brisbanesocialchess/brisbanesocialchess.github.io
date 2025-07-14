@@ -1,9 +1,3 @@
-ci:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - ".github/workflows/*"
-
 cfsite:
   - any:
       - changed-files:
