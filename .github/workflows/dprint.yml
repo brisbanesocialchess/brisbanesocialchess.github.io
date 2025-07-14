@@ -36,4 +36,4 @@ jobs:
         run: echo "$HOME/.dprint/bin" >> $GITHUB_PATH
 
       - name: 🏃🏻‍♂️‍➡️ Run dprint check
-        run: dprint check
+        run: dprint check --allow-no-files

@@ -85,13 +85,13 @@ curl -fsSL https://dprint.dev/install.sh | sh
 **To check code without changing files:**
 
 ```bash
-dprint check
+dprint check --allow-no-files
 ```
 
 **To auto-format code:**
 
 ```bash
-dprint fmt
+dprint fmt --allow-no-files
 ```
 
 Our configuration is already in the repo: [dprint.json](./dprint.json)
