@@ -1,3 +1,9 @@
+root:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - "{*,.*}"
+
 cfsite:
   - any:
       - changed-files:
@@ -26,12 +32,6 @@ scripts:
       - changed-files:
           - any-glob-to-any-file:
               - "scripts/**/*"
-
-root:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - "{*,.*}"
 
 ci:
   - any:
