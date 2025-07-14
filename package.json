@@ -12,7 +12,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "format": "prettier --write docs/**/*.js",
+    "format": "prettier --write \"**/*.{js,json,yaml,yml,css,md}\"",
+    "format:all": "npm run format && npm run sort-json",
     "lint": "eslint docs/**/*.js",
     "sort-json": "sort-json --write \"**/*.json\"",
     "test": "npx lerna run test --stream"
