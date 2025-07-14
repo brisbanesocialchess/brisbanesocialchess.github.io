@@ -20,5 +20,5 @@ jobs:
       - name: 🏷️ Apply Labels using Labeler
         uses: actions/labeler@v5
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
           sync-labels: true

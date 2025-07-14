@@ -1,14 +1,24 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "test": "npx lerna run test --stream"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "lerna": "^8.2.3"
-  }
+	"devDependencies": {
+		"@eslint/js": "^9.31.0",
+		"eslint": "^9.31.0",
+		"eslint-config-prettier": "^10.1.5",
+		"eslint-plugin-prettier": "^5.5.1",
+		"eslint-plugin-sort-keys-fix": "^1.1.2",
+		"globals": "^16.3.0",
+		"lerna": "^8.2.3",
+		"prettier": "^3.6.2"
+	},
+	"name": "root",
+	"private": true,
+	"scripts": {
+		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
+		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
+		"lint": "eslint --config .github/linters/eslint.config.mjs .",
+		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
+		"test": "npx lerna run test --stream"
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }

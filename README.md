@@ -13,6 +13,24 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 [Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
+## Cloudflare Workers Development
+
+To work with the Cloudflare Workers site in the `packages/cfsite` directory:
+
+### Start Development Server
+
+```bash
+cd packages/cfsite
+npx wrangler dev
+```
+
+### Run Tests
+
+```bash
+cd packages/cfsite
+npm run test
+```
+
 Read below for instructions about the current static development site hosted on [GitHub Pages](https://pages.github.com/).
 
 ---
@@ -49,7 +67,7 @@ zola -V
 
 Expected output:
 
-```
+```plaintext
 zola 0.20.0
 ```
 
@@ -65,14 +83,14 @@ zola serve
 
 You should see output like:
 
-```
+```plaintext
 Starting server at http://127.0.0.1:1111
 Watching for changes in /path/to/site
 ```
 
 Open your browser and visit:
 
-```
+```plaintext
 http://127.0.0.1:1111
 ```
 

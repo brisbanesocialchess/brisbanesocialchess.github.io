@@ -1,34 +1,95 @@
-ci:
+root:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - ".github/workflows/*"
+              - '*'
+
+config:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.*'
 
 cfsite:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "packages/cfsite/**/*"
+              - 'packages/cfsite/**/*'
 
 development:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "dprint.json"
-              - ".editorconfig"
-              - ".pre-commit-config.yaml"
-              - ".github/lint-plugins/*"
+              - 'dprint.json'
+              - '.editorconfig'
+              - '.pre-commit-config.yaml'
+              - '.github/lint-plugins/*'
 
 documentation:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "docs/**/*"
-              - "README.md"
-              - "CONTRIBUTING.md"
+              - 'README.md'
+              - 'CONTRIBUTING.md'
+              - 'docs/**/*'
 
 scripts:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "scripts/**/*"
+              - 'scripts/**/*'
+
+ci:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.github/workflows/*'
+              - '.wrangler/*'
+infra:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.github/**/*'
+              - '.vscode/*'
+
+frontend:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'public/**/*'
+
+backend:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'packages/cfsite/src/**/*'
+              - 'packages/cfsite/**/*.ts'
+              - 'packages/cfsite/.wrangler/**/*'
+              - 'packages/cfsite/src/worker/**/*'
+
+dependencies:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'package.json'
+              - 'pnpm-lock.yaml'
+              - 'yarn.lock'
+              - 'npm-shrinkwrap.json'
+
+test:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '**/test/**/*'
+              - '**/*.test.ts'
+              - '**/*.spec.ts'
+
+chore:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.editorconfig'
+              - '.gitignore'
+              - 'dprint.json'
+              - '.pre-commit-config.yaml'
+              - '.github/lint-plugins/*'
