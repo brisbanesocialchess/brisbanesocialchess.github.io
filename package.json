@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint docs/**/*.js",
     "format": "prettier --write docs/**/*.js",
-    "test": "npx lerna run test --stream"
+    "test": "npx lerna run test --stream",
+    "sort-json": "sort-json --write"
   },
   "dependencip": {},
   "devDependencies": {
@@ -17,6 +18,7 @@
     "eslint-plugin-prettier": "^5.5.1",
     "globals": "^16.3.0",
     "lerna": "^8.2.3",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "sort-json": "^2.0.1"
   }
 }
