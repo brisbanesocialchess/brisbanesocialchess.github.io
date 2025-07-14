@@ -1,6 +1,10 @@
 {
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.19",
+    "vitest": "~3.2.0",
+    "wrangler": "^4.24.0"
+  },
   "name": "cfsite",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
@@ -8,9 +12,5 @@
     "start": "wrangler dev",
     "test": "vitest"
   },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.19",
-    "vitest": "~3.2.0",
-    "wrangler": "^4.24.0"
-  }
+  "version": "0.0.0"
 }

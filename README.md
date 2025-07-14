@@ -67,7 +67,7 @@ zola -V
 
 Expected output:
 
-```
+```plaintext
 zola 0.20.0
 ```
 
@@ -83,14 +83,14 @@ zola serve
 
 You should see output like:
 
-```
+```plaintext
 Starting server at http://127.0.0.1:1111
 Watching for changes in /path/to/site
 ```
 
 Open your browser and visit:
 
-```
+```plaintext
 http://127.0.0.1:1111
 ```
 
