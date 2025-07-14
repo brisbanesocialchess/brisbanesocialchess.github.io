@@ -4,7 +4,7 @@ root:
           - any-glob-to-any-file:
               - '*'
 
-root:
+config:
   - any:
       - changed-files:
           - any-glob-to-any-file:
