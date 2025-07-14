@@ -1,13 +1,10 @@
 import js from "@eslint/js";
 import globals from "globals";
-import { defineConfig } from "eslint/config";
+import prettierConfig from "eslint-config-prettier";
 
-export default defineConfig([
-  {
-    files: ["**/*.{js,mjs,cjs}"],
-    plugins: { js },
-    extends: ["js/recommended"],
-  },
+export default [
+  js.configs.recommended,
+
   {
     files: ["packages/cfsite/**/*.js"],
     languageOptions: {
@@ -15,6 +12,7 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+
   {
     files: ["docs/**/*.js"],
     languageOptions: {
@@ -22,4 +20,6 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
-]);
+
+  prettierConfig,
+];

@@ -50,13 +50,13 @@ frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "packages/cfsite/src/**/*"
               - "public/**/*"
 
 backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
+              - "packages/cfsite/src/**/*"
               - "packages/cfsite/**/*.ts"
               - "packages/cfsite/.wrangler/**/*"
               - "packages/cfsite/src/worker/**/*"
