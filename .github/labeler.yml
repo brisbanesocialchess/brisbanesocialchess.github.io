@@ -76,7 +76,7 @@ dependencies:
               - 'yarn.lock'
               - 'npm-shrinkwrap.json'
 
-test:
+tests:
   - any:
       - changed-files:
           - any-glob-to-any-file:
