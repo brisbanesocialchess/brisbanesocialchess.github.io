@@ -1,8 +1,34 @@
-root:
+backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '*'
+              - 'packages/cfsite/src/**/*'
+              - 'packages/cfsite/**/*.ts'
+              - 'packages/cfsite/.wrangler/**/*'
+              - 'packages/cfsite/src/worker/**/*'
+
+cfsite:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'packages/cfsite/**/*'
+
+chore:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.editorconfig'
+              - '.gitignore'
+              - 'dprint.json'
+              - '.pre-commit-config.yaml'
+              - '.github/lint-plugins/*'
+
+ci:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.github/workflows/*'
+              - '.wrangler/*'
 
 config:
   - any:
@@ -10,11 +36,14 @@ config:
           - any-glob-to-any-file:
               - '.*'
 
-cfsite:
+dependencies:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'packages/cfsite/**/*'
+              - 'package.json'
+              - 'pnpm-lock.yaml'
+              - 'yarn.lock'
+              - 'npm-shrinkwrap.json'
 
 development:
   - any:
@@ -33,18 +62,12 @@ documentation:
               - 'CONTRIBUTING.md'
               - 'docs/**/*'
 
-scripts:
+frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'scripts/**/*'
+              - 'public/**/*'
 
-ci:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - '.github/workflows/*'
-              - '.wrangler/*'
 infra:
   - any:
       - changed-files:
@@ -52,29 +75,17 @@ infra:
               - '.github/**/*'
               - '.vscode/*'
 
-frontend:
+root:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'public/**/*'
+              - '*'
 
-backend:
+scripts:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'packages/cfsite/src/**/*'
-              - 'packages/cfsite/**/*.ts'
-              - 'packages/cfsite/.wrangler/**/*'
-              - 'packages/cfsite/src/worker/**/*'
-
-dependencies:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - 'package.json'
-              - 'pnpm-lock.yaml'
-              - 'yarn.lock'
-              - 'npm-shrinkwrap.json'
+              - 'scripts/**/*'
 
 tests:
   - any:
@@ -83,13 +94,3 @@ tests:
               - '**/test/**/*'
               - '**/*.test.ts'
               - '**/*.spec.ts'
-
-chore:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - '.editorconfig'
-              - '.gitignore'
-              - 'dprint.json'
-              - '.pre-commit-config.yaml'
-              - '.github/lint-plugins/*'
