@@ -5,7 +5,6 @@ backend:
               - 'packages/cfsite/src/**/*'
               - 'packages/cfsite/**/*.ts'
               - 'packages/cfsite/.wrangler/**/*'
-              - 'packages/cfsite/src/worker/**/*'
 
 cfsite:
   - any:
@@ -28,7 +27,7 @@ ci:
       - changed-files:
           - any-glob-to-any-file:
               - '.github/workflows/*'
-              - '.wrangler/*'
+              - '.wrangler/**/*'
 
 config:
   - any:
