@@ -10,7 +10,7 @@ check c: install ## Run pre-commit checks on all files
 checkinstall ci: install ## Install pre-commit hooks
 	pre-commit install
 
-checkupdate cu: install ## Update pre-commit hooks to the latest version
+checkupdate cu: ## Update pre-commit hooks to the latest version
 	pre-commit autoupdate
 
 help: ## Display this help message
