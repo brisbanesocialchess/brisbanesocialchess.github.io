@@ -1,5 +1,8 @@
 .PHONY: check c checkinstall ci checkupdate cu install i
 
+install i:
+	pip install -r requirements.txt
+
 check c: checkinstall
 	pre-commit run --all-files
 
@@ -8,6 +11,3 @@ checkinstall ci: install
 
 checkupdate cu: install
 	pre-commit autoupdate
-
-install i:
-	pip install -r requirements.txt
