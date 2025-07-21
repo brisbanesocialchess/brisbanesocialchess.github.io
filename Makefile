@@ -1,4 +1,4 @@
-.PHONY: check checkinstall checkupdate install
+.PHONY: check c checkinstall ci checkupdate cu install i
 
 check c: checkinstall
 	pre-commit run --all-files
