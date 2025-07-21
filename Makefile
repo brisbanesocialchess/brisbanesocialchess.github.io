@@ -7,7 +7,7 @@ install i: ## Install python dependencies from requirements.txt
 check c: install ## Run pre-commit checks on all files
 	pre-commit run --all-files
 
-checkinstall ci: install ## Install pre-commit hooks
+checkinstall ci: ## Install pre-commit hooks
 	pre-commit install
 
 checkupdate cu: ## Update pre-commit hooks to the latest version
