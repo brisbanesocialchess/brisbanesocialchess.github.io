@@ -1,3 +1,6 @@
+PYTHON ?= python3
+PIP := $(PYTHON) -m pip
+
 .PHONY: install i check c checkinstall ci checkupdate cu help
 .DEFAULT_GOAL := help
 
