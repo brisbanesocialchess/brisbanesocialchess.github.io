@@ -4,7 +4,7 @@
 install i: ## Install python dependencies from requirements.txt
 	python3 -m pip install -r requirements.txt
 
-check c: install ## Run pre-commit checks on all files
+check c: ## Run pre-commit checks on all files
 	pre-commit run --all-files
 
 checkinstall ci: ## Install pre-commit hooks
