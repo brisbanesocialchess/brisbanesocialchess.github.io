@@ -1,4 +1,4 @@
-.PHONY: check c checkinstall ci checkupdate cu install i
+.PHONY: install i check c checkinstall ci checkupdate cu
 
 install i:
 	pip install -r requirements.txt
