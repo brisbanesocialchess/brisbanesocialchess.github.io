@@ -5,7 +5,7 @@ PIP := $(PYTHON) -m pip
 .DEFAULT_GOAL := help
 
 install i: ## Install python dependencies from requirements.txt
-	python3 -m pip install -r requirements.txt
+	$(PIP) install -r requirements.txt
 
 check c: ## Run pre-commit checks on all files
 	pre-commit run --all-files
