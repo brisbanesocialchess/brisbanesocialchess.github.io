@@ -6,7 +6,7 @@ check c: checkinstall
 checkinstall ci: install
 	pre-commit install
 
-checkupdate cu: checkinstall
+checkupdate cu: install
 	pre-commit autoupdate
 
 install i:
