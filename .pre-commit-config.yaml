@@ -3,7 +3,7 @@ default_stages: [pre-commit, pre-push]
 
 default_language_version:
   python: python3
-  node: 22.16.0
+  node: 22.17.0
 
 minimum_pre_commit_version: '3.2.0'
 
@@ -32,8 +32,8 @@ repos:
       - id: forbid-submodules
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
-      # - id: check-yaml
-      # - id: check-json
+      - id: check-yaml
+      - id: check-json
       # - id: pretty-format-json
       - id: check-added-large-files
         args: ['--maxkb=1000']
@@ -42,6 +42,7 @@ repos:
     rev: v9.1.5
     hooks:
       - id: oxipng
+        name: oxipng
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
 
   - repo: local
@@ -52,7 +53,7 @@ repos:
         language: system
         pass_filenames: false
       - id: test-lerna
-        name: Run lerna tests
+        name: run lerna tests
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
@@ -64,7 +65,7 @@ repos:
         language: node
         additional_dependencies: ['prettier@3.6.2']
       - id: npm-audit
-        name: Run npm audit
+        name: run npm audit
         entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
@@ -75,15 +76,13 @@ repos:
       - id: eslint
         entry: npm run lint_fix
         language: node
-        files: \.(js|mjs|cjs)$
+        files: \.(cjs|js|mjs)$
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.39.0
+    rev: v0.45.0
     hooks:
       - id: markdownlint
         name: markdownlint
-        entry: markdownlint
-        language: node
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
 
