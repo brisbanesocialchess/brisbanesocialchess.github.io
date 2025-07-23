@@ -17,10 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        python-version: ['3.12', '3.11', '3.10']
-        exclude:
-          - os: macos-latest
-            python-version: '3.10'
+        python-version: ['3.13', '3.12', '3.11']
 
     steps:
       - name: 🍎 Fix macOS gettext issue
@@ -39,7 +36,7 @@ jobs:
         if: runner.os == 'Windows'
         run: |
           iwr https://dprint.dev/install.ps1 -UseBasicParsing | iex
-          move ~\.dprint\bin\dprint.exe C:\tools\dprint.exe
+          move "~\.dprint\bin\dprint.exe" "C:\tools\dprint.exe"
           setx PATH "$env:PATH;C:\tools"
 
       - name: ↩️ Checkout code
