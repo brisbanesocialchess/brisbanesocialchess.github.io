@@ -2,8 +2,8 @@
 default_stages: [pre-commit, pre-push]
 default_language_version:
   python: python3
-  node: 22.16.0
-minimum_pre_commit_version: "3.2.0"
+  node: 22.17.0
+minimum_pre_commit_version: '3.2.0'
 repos:
   - repo: meta
     hooks:
@@ -28,3 +28,90 @@ repos:
       - id: forbid-submodules
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
+      - id: check-yaml
+      - id: check-json
+      # - id: pretty-format-json
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.7
+    hooks:
+      - id: actionlint
+  - repo: https://github.com/oxipng/oxipng
+    rev: v9.1.5
+    hooks:
+      - id: oxipng
+        name: oxipng
+        args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+
+  - repo: local
+    hooks:
+      - id: npm-ci
+        name: npm ci install
+        entry: npm ci
+        language: system
+        pass_filenames: false
+      - id: test-lerna
+        name: run lerna tests
+        entry: npx lerna run test -- --run
+        language: system
+        pass_filenames: false
+      - id: prettier
+        name: run prettier
+        description: format files with prettier
+        entry: npm run format
+        files: \.(json|md|ya?ml)$
+        language: node
+        additional_dependencies: ['prettier@3.6.2']
+      - id: npm-audit
+        name: run npm audit
+        entry: npm audit --audit-level=high
+        language: system
+        pass_filenames: false
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.31.0
+    hooks:
+      - id: eslint
+        entry: npm run lint_fix
+        language: node
+        files: \.(cjs|js|mjs)$
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.45.0
+    hooks:
+      - id: markdownlint
+        name: markdownlint
+        types: [markdown]
+        args: ['--config', '.github/linters/.markdownlint.json']
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.37.1
+    hooks:
+      - id: yamllint
+        name: run yamllint
+        description: check YAML files with yamllint
+        args: [--strict, -c=.github/linters/.yaml-lint.yml]
+        types: [yaml]
+        files: \.ya?ml$
+
+  # - repo: https://github.com/koalaman/shellcheck-precommit
+  #   rev: v0.9.0
+  #   hooks:
+  #     - id: shellcheck
+
+  # - repo: https://github.com/psf/black
+  #   rev: 25.1.0
+  #   hooks:
+  #     - id: black
+  #       language_version: python3
+  #       args: ["--line-length=88"]
+
+  # - repo: https://github.com/PyCQA/bandit
+  #   rev: 1.8.6
+  #   hooks:
+  #     - id: bandit
+  #       args: ["-c", "bandit.yaml"]
+  #       files: \.py$
+  #       pass_filenames: false

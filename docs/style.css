@@ -3,152 +3,154 @@
 
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* General */
-body, html {
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background: url('assets/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
+body,
+html {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background: url('assets/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+	color: #ffffff;
 }
 
 a {
-    color: #46c7ef;
+	color: #46c7ef;
 }
 
-ul, ol {
-  margin-left: 30px;
+ul,
+ol {
+	margin-left: 30px;
 }
 
 /* Background overlay */
 .background-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding: 3rem 1rem;
+	background-color: rgba(0, 0, 0, 0.4);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	padding: 3rem 1rem;
 }
 
 /* Main content box */
 .content-wrapper {
-  max-width: 620px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 1rem;
-  border-radius: 1.2rem;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+	max-width: 620px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.55);
+	padding: 1rem;
+	border-radius: 1.2rem;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 /* Logo */
 .logo {
-  text-align: center;
+	text-align: center;
 }
 
 .logo img {
-  width: 100px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-bottom: 20px;
 }
 
 .logo h1 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
 }
 
 .logo p {
-  font-size: 0.95rem;
-  opacity: 0.85;
-  margin-top: 0.4rem;
+	font-size: 0.95rem;
+	opacity: 0.85;
+	margin-top: 0.4rem;
 }
 
 /* Navigation */
 .nav-links {
-  text-align: center;
-  font-size: 0.9rem;
+	text-align: center;
+	font-size: 0.9rem;
 }
 
 .nav-links a {
-  color: #ccc;
-  text-decoration: none;
-  margin: 0 0.4rem;
-  transition: color 0.2s;
+	color: #ccc;
+	text-decoration: none;
+	margin: 0 0.4rem;
+	transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 /* Section formatting */
 .section h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 0.4rem;
-  letter-spacing: 1px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+	letter-spacing: 1px;
 }
 
 .section p {
-  font-size: 0.92rem;
-  line-height: 1.5;
-  margin-bottom: 0.8rem;
-  opacity: 0.9;
+	font-size: 0.92rem;
+	line-height: 1.5;
+	margin-bottom: 0.8rem;
+	opacity: 0.9;
 }
 
 .section img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 0.5rem;
+	width: 100%;
+	border-radius: 8px;
+	margin-top: 0.5rem;
 }
 
 /* Buttons */
 .button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 1rem;
 }
 
 .button {
-  background-color: #ffffff;
-  color: #000000;
-  text-align: center;
-  padding: 0.6rem;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	padding: 0.6rem;
+	border-radius: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.2s ease-in-out;
 }
 
 .button:hover {
-  background-color: #dddddd;
+	background-color: #dddddd;
 }
 
 /* Responsive */
 @media (max-width: 500px) {
-  .content-wrapper {
-    padding: 1.5rem;
-  }
+	.content-wrapper {
+		padding: 1.5rem;
+	}
 
-  .logo h1 {
-    font-size: 1.2rem;
-  }
+	.logo h1 {
+		font-size: 1.2rem;
+	}
 }
 
 /* Footer */
 .site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	padding: 2rem 1rem;
+	font-size: 0.9rem;
+	color: rgba(255, 255, 255, 0.6);
 }

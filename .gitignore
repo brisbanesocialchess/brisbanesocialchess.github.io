@@ -19,11 +19,9 @@ Thumbs.db
 
 # Build output
 dist/
-build/
 
-# npm package lock file
-package-lock.json
-yarn.lock
+build/
+.wrangler
 
 # Environment files
 .env

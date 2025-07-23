@@ -17,10 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        python-version: ["3.12", "3.11", "3.10"]
-        exclude:
-          - os: macos-latest
-            python-version: "3.10"
+        python-version: ['3.13', '3.12', '3.11']
 
     steps:
       - name: 🍎 Fix macOS gettext issue
@@ -29,6 +26,19 @@ jobs:
           brew install gettext
           brew link --force gettext
 
+      - name: Install dprint CLI
+        if: runner.os != 'Windows'
+        run: |
+          curl -fsSL https://dprint.dev/install.sh | sh
+          sudo mv ~/.dprint/bin/dprint /usr/local/bin/
+
+      - name: Install dprint CLI on Windows
+        if: runner.os == 'Windows'
+        run: |
+          iwr https://dprint.dev/install.ps1 -UseBasicParsing | iex
+          move "~\.dprint\bin\dprint.exe" "C:\tools\dprint.exe"
+          setx PATH "$env:PATH;C:\tools"
+
       - name: ↩️ Checkout code
         uses: actions/checkout@v4
 
@@ -36,7 +46,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-          architecture: "x64"
+          architecture: 'x64'
 
       - name: 🪛 Set PY (Python version hash)
         shell: bash

@@ -1,29 +1,95 @@
-# Label any PR that changes files in the backend/ directory
 backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "backend/**/*"
+              - 'packages/cfsite/src/**/*'
+              - 'packages/cfsite/**/*.ts'
+              - 'packages/cfsite/.wrangler/**/*'
 
-# Label for documentation changes
-documentation:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - "docs/**/*"
-              - "README.md"
-              - "CONTRIBUTING.md"
-
-# Label for changes to GitHub Actions workflows
-ci:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - ".github/workflows/*"
-
-# Label for changes to the cfsite package
 cfsite:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - "packages/cfsite/**/*"
+              - 'packages/cfsite/**/*'
+
+chore:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.editorconfig'
+              - '.gitignore'
+              - 'dprint.json'
+              - '.pre-commit-config.yaml'
+              - '.github/lint-plugins/*'
+
+ci:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.github/workflows/*'
+              - '.wrangler/**/*'
+
+config:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.*'
+
+dependencies:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'package.json'
+              - 'pnpm-lock.yaml'
+              - 'yarn.lock'
+              - 'npm-shrinkwrap.json'
+
+development:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'dprint.json'
+              - '.editorconfig'
+              - '.pre-commit-config.yaml'
+              - '.github/lint-plugins/*'
+
+documentation:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'README.md'
+              - 'CONTRIBUTING.md'
+              - 'docs/**/*'
+
+frontend:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'public/**/*'
+
+infra:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '.github/**/*'
+              - '.vscode/*'
+
+root:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '*'
+
+scripts:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - 'scripts/**/*'
+
+tests:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '**/test/**/*'
+              - '**/*.test.ts'
+              - '**/*.spec.ts'
