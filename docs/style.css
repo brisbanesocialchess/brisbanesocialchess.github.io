@@ -1,5 +1,5 @@
 :root {
-  --footer-height: 85px;
+	--footer-height: 85px;
 }
 
 /* Font */
@@ -34,10 +34,7 @@ ol {
 
 /* Background overlay */
 .background-overlay {
-	background: linear-gradient(
-		rgba(0, 0, 0, 0.65),
-		rgba(0, 0, 0, 0.65)
-	);
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
 	min-height: calc(100vh - var(--footer-height));
 	display: flex;
 	justify-content: center;
@@ -138,121 +135,125 @@ ol {
 
 /* Form styling */
 .form-registration {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
-  padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1.3rem;
+	padding: 1rem 0;
 }
 
 /* Label styling */
 .form-group label,
 form fieldset legend {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #e0e0e0;
+	display: block;
+	margin-bottom: 0.4rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: #e0e0e0;
 }
 
 /* Inputs and textareas */
-.form-registration input[type="text"],
-.form-registration input[type="email"],
-.form-registration input[type="number"] {
-  width: 100%;
-  padding: 0.6rem 1rem;
-  border-radius: 0.6rem;
-  border: 1.8px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  outline-offset: 2px;
-  outline-color: transparent;
+.form-registration input[type='text'],
+.form-registration input[type='email'],
+.form-registration input[type='number'] {
+	width: 100%;
+	padding: 0.6rem 1rem;
+	border-radius: 0.6rem;
+	border: 1.8px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	font-size: 1rem;
+	transition:
+		border-color 0.3s ease,
+		box-shadow 0.3s ease;
+	outline-offset: 2px;
+	outline-color: transparent;
 }
 
-.form-registration input[type="text"]::placeholder,
-.form-registration input[type="email"]::placeholder,
-.form-registration input[type="number"]::placeholder {
-  color: #bbb;
-  font-style: italic;
+.form-registration input[type='text']::placeholder,
+.form-registration input[type='email']::placeholder,
+.form-registration input[type='number']::placeholder {
+	color: #bbb;
+	font-style: italic;
 }
 
 /* Input focus effect */
-.form-registration input[type="text"]:focus,
-.form-registration input[type="email"]:focus,
-.form-registration input[type="number"]:focus {
-  border-color: #46c7ef;
-  box-shadow: 0 0 8px #46c7efaa;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #fff;
+.form-registration input[type='text']:focus,
+.form-registration input[type='email']:focus,
+.form-registration input[type='number']:focus {
+	border-color: #46c7ef;
+	box-shadow: 0 0 8px #46c7efaa;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: #fff;
 }
 
 /* Fieldset and legend styling */
 form fieldset {
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0.8rem;
-  padding: 1rem 1.2rem;
-  margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+	border: 1.5px solid rgba(255, 255, 255, 0.3);
+	border-radius: 0.8rem;
+	padding: 1rem 1.2rem;
+	margin-bottom: 1rem;
+	background: rgba(255, 255, 255, 0.05);
 }
 
 form fieldset legend {
-  padding: 0 0.6rem;
-  font-size: 1rem;
-  color: #ccc;
+	padding: 0 0.6rem;
+	font-size: 1rem;
+	color: #ccc;
 }
 
 /* Radio buttons */
 form fieldset label {
-  margin-right: 1.5rem;
-  font-weight: 400;
-  cursor: pointer;
-  color: #ddd;
-  user-select: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+	margin-right: 1.5rem;
+	font-weight: 400;
+	cursor: pointer;
+	color: #ddd;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
 }
 
-form fieldset input[type="radio"] {
-  accent-color: #46c7ef;
-  cursor: pointer;
-  width: 18px;
-  height: 18px;
-  margin: 0;
+form fieldset input[type='radio'] {
+	accent-color: #46c7ef;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	margin: 0;
 }
 
 /* Button */
 .button {
-  background-color: #46c7ef;
-  color: #000;
-  font-weight: 700;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
+	background-color: #46c7ef;
+	color: #000;
+	font-weight: 700;
+	padding: 0.75rem 1.5rem;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		transform 0.2s ease;
+	box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
 }
 
 .button:hover,
 .button:focus {
-  background-color: #39a3d9;
-  box-shadow: 0 6px 14px rgba(57, 163, 217, 0.7);
-  transform: translateY(-2px);
-  outline: none;
+	background-color: #39a3d9;
+	box-shadow: 0 6px 14px rgba(57, 163, 217, 0.7);
+	transform: translateY(-2px);
+	outline: none;
 }
 
 /* Responsive */
 @media (max-width: 500px) {
-  .form-registration {
-    gap: 1rem;
-  }
+	.form-registration {
+		gap: 1rem;
+	}
 
-  .button {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-  }
+	.button {
+		padding: 0.75rem 1rem;
+		font-size: 1rem;
+	}
 }
 @media (max-width: 500px) {
 	.content-wrapper {
