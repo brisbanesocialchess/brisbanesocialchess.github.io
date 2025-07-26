@@ -30,7 +30,7 @@ ol {
 /* Background overlay */
 .background-overlay {
 	background-color: rgba(0, 0, 0, 0.4);
-	min-height: 100vh;
+	min-height: calc(100vh - 85px);
 	display: flex;
 	justify-content: center;
 	padding: 3rem 1rem;
@@ -47,6 +47,7 @@ ol {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	height: 100%;
 }
 
 /* Logo */
