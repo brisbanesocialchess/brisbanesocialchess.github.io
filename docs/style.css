@@ -1,3 +1,7 @@
+:root {
+	--footer-height: 85px;
+}
+
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
@@ -9,9 +13,10 @@
 }
 
 /* General */
-body,
-html {
-	height: 100%;
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	background: url('assets/background.jpg') no-repeat center center fixed;
 	background-size: cover;
@@ -29,17 +34,18 @@ ol {
 
 /* Background overlay */
 .background-overlay {
-	background-color: rgba(0, 0, 0, 0.4);
-	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+	min-height: calc(100vh - var(--footer-height));
 	display: flex;
 	justify-content: center;
 	padding: 3rem 1rem;
+	flex-grow: 1;
 }
 
 /* Main content box */
 .content-wrapper {
 	max-width: 620px;
-	width: 100%;
+	width: calc(100% - 1rem);
 	background-color: rgba(0, 0, 0, 0.55);
 	padding: 1rem;
 	border-radius: 1.2rem;
@@ -47,6 +53,7 @@ ol {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	height: calc(100% - 1rem);
 }
 
 /* Logo */
@@ -121,27 +128,133 @@ ol {
 	margin-top: 1rem;
 }
 
-.button {
-	background-color: #ffffff;
-	color: #000000;
-	text-align: center;
-	padding: 0.6rem;
-	border-radius: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	transition: 0.2s ease-in-out;
-}
-
-.button:hover {
-	background-color: #dddddd;
-}
-
 /* Contact */
 .contact-actions {
 	margin-top: 2rem;
 }
 
+/* Form styling */
+.form-registration {
+	display: flex;
+	flex-direction: column;
+	gap: 1.3rem;
+	padding: 1rem 0;
+}
+
+/* Label styling */
+.form-group label,
+form fieldset legend {
+	display: block;
+	margin-bottom: 0.4rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: #e0e0e0;
+}
+
+/* Inputs and textareas */
+.form-registration input[type='text'],
+.form-registration input[type='email'],
+.form-registration input[type='number'] {
+	width: 100%;
+	padding: 0.6rem 1rem;
+	border-radius: 0.6rem;
+	border: 1.8px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	font-size: 1rem;
+	transition:
+		border-color 0.3s ease,
+		box-shadow 0.3s ease;
+	outline-offset: 2px;
+	outline-color: transparent;
+}
+
+.form-registration input[type='text']::placeholder,
+.form-registration input[type='email']::placeholder,
+.form-registration input[type='number']::placeholder {
+	color: #bbb;
+	font-style: italic;
+}
+
+/* Input focus effect */
+.form-registration input[type='text']:focus,
+.form-registration input[type='email']:focus,
+.form-registration input[type='number']:focus {
+	border-color: #46c7ef;
+	box-shadow: 0 0 8px #46c7efaa;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: #fff;
+}
+
+/* Fieldset and legend styling */
+form fieldset {
+	border: 1.5px solid rgba(255, 255, 255, 0.3);
+	border-radius: 0.8rem;
+	padding: 1rem 1.2rem;
+	margin-bottom: 1rem;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+form fieldset legend {
+	padding: 0 0.6rem;
+	font-size: 1rem;
+	color: #ccc;
+}
+
+/* Radio buttons */
+form fieldset label {
+	margin-right: 1.5rem;
+	font-weight: 400;
+	cursor: pointer;
+	color: #ddd;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+form fieldset input[type='radio'] {
+	accent-color: #46c7ef;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	margin: 0;
+}
+
+/* Button */
+.button {
+	background-color: #46c7ef;
+	color: #000;
+	font-weight: 700;
+	padding: 0.75rem 1.5rem;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		transform 0.2s ease;
+	box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
+}
+
+.button:hover,
+.button:focus {
+	background-color: #39a3d9;
+	box-shadow: 0 6px 14px rgba(57, 163, 217, 0.7);
+	transform: translateY(-2px);
+	outline: none;
+}
+
 /* Responsive */
+@media (max-width: 500px) {
+	.form-registration {
+		gap: 1rem;
+	}
+
+	.button {
+		padding: 0.75rem 1rem;
+		font-size: 1rem;
+	}
+}
 @media (max-width: 500px) {
 	.content-wrapper {
 		padding: 1.5rem;
@@ -154,6 +267,7 @@ ol {
 
 /* Footer */
 .site-footer {
+	height: var(--footer-height);
 	text-align: center;
 	padding: 2rem 1rem;
 	font-size: 0.9rem;
