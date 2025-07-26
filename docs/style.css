@@ -1,3 +1,7 @@
+:root {
+  --footer-height: 85px;
+}
+
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
@@ -9,9 +13,10 @@
 }
 
 /* General */
-body,
-html {
-	height: 100%;
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	background: url('assets/background.jpg') no-repeat center center fixed;
 	background-size: cover;
@@ -32,19 +37,18 @@ ol {
 	background: linear-gradient(
 		rgba(0, 0, 0, 0.65),
 		rgba(0, 0, 0, 0.65)
-	),
-	url('assets/background.jpg') no-repeat center center fixed;
-	background-size: cover;
-	min-height: calc(100vh - 85px);
+	);
+	min-height: calc(100vh - var(--footer-height));
 	display: flex;
 	justify-content: center;
 	padding: 3rem 1rem;
+	flex-grow: 1;
 }
 
 /* Main content box */
 .content-wrapper {
 	max-width: 620px;
-	width: 100%;
+	width: calc(100% - 1rem);
 	background-color: rgba(0, 0, 0, 0.55);
 	padding: 1rem;
 	border-radius: 1.2rem;
@@ -52,7 +56,7 @@ ol {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	height: 100%;
+	height: calc(100% - 1rem);
 }
 
 /* Logo */
@@ -262,6 +266,7 @@ form fieldset input[type="radio"] {
 
 /* Footer */
 .site-footer {
+	height: var(--footer-height);
 	text-align: center;
 	padding: 2rem 1rem;
 	font-size: 0.9rem;
