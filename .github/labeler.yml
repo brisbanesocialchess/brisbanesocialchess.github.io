@@ -2,14 +2,6 @@ backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'packages/cfsite/src/**/*'
-              - 'packages/cfsite/**/*.ts'
-              - 'packages/cfsite/.wrangler/**/*'
-
-cfsite:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
               - 'packages/cfsite/**/*'
 
 chore:
@@ -29,12 +21,6 @@ ci:
               - '.github/workflows/*'
               - '.wrangler/**/*'
 
-config:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - '.*'
-
 dependencies:
   - any:
       - changed-files:
@@ -43,15 +29,6 @@ dependencies:
               - 'pnpm-lock.yaml'
               - 'yarn.lock'
               - 'npm-shrinkwrap.json'
-
-development:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file:
-              - 'dprint.json'
-              - '.editorconfig'
-              - '.pre-commit-config.yaml'
-              - '.github/lint-plugins/*'
 
 documentation:
   - any:
