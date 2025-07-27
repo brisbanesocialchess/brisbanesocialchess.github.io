@@ -18,7 +18,7 @@ PRECOMMIT ?= pre-commit
 # Define the requirements file.
 REQUIREMENTS_FILE ?= requirements.txt
 
-CHESS_ANIMATION_SCRIPT = scripts/chess_animation_2.py
+CHESS_ANIMATION_SCRIPT := scripts/chess_animation_2.py
 
 # --- Phony Targets ---
 # .PHONY declares targets that do not correspond to actual files.
