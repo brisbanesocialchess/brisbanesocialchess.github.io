@@ -83,8 +83,6 @@ async function handleContact(request) {
 			return createErrorResponse('Missing required fields: name, email, message', request, 422);
 		}
 
-		console.log(`[Contact] from ${name} <${email}>: ${message}`);
-
 		return createJsonResponse({ message: 'Thanks for contacting us!', status: 'ok' }, request);
 	} catch (err) {
 		return createErrorResponse(err.message, request, 400);
@@ -93,13 +91,11 @@ async function handleContact(request) {
 
 async function handleRegister(request) {
 	try {
-		const { username, email } = await parseJson(request);
+		const { email } = await parseJson(request);
 
-		if (!username || !email) {
-			return createErrorResponse('Missing required fields: username, email', request, 422);
+		if (!email) {
+			return createErrorResponse('Missing required field: email', request, 422);
 		}
-
-		console.log(`[Register] username: ${username}, email: ${email}`);
 
 		return createJsonResponse({ message: 'Registration complete!', status: 'ok' }, request);
 	} catch (err) {
