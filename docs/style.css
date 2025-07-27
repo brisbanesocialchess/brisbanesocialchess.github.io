@@ -126,6 +126,7 @@ ol {
 	flex-direction: column;
 	gap: 0.5rem;
 	margin-top: 1rem;
+	text-align: center;
 }
 
 /* Contact */
@@ -230,6 +231,7 @@ form fieldset input[type='radio'] {
 	border-radius: 30px;
 	border: none;
 	cursor: pointer;
+	text-align: center;
 	transition:
 		background-color 0.3s ease,
 		transform 0.2s ease;
