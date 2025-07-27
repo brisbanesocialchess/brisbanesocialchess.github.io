@@ -2,6 +2,7 @@ backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
+              - packages/cfsite/.wrangler/**/*
               - 'packages/cfsite/**/*'
 
 chore:
