@@ -32,4 +32,5 @@ README.md export-ignore
 # Optionally exclude local configuration files from exports
 *.local export-ignore
 
+# Force .py files to be recognized as Python by Linguist
 *.py linguist-language=Python
