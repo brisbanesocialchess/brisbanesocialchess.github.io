@@ -12,7 +12,7 @@ def clear_screen():
             os.system('cls')  # Windows
         else:
             os.system('clear')  # macOS/Linux
-    except:
+    except Exception:
         print("\033[H\033[J", end="")  # ANSI escape sequence fallback
 
 def animate_board():
