@@ -91,10 +91,14 @@ async function handleContact(request) {
 
 async function handleRegister(request) {
 	try {
-		const { email } = await parseJson(request);
-
-		if (!email) {
-			return createErrorResponse('Missing required field: email', request, 422);
+		const { firstName, lastName, email } = await parseJson(request);
+		
+		if (!email.includes('@')) {
+			return createErrorResponse('Invalid email address', request, 422);
+		}
+		
+		if (!firstName || !lastName || !email) {
+			return createErrorResponse('Missing required fields: firstName, lastName, email', request, 422);
 		}
 
 		return createJsonResponse({ message: 'Registration complete!', status: 'ok' }, request);

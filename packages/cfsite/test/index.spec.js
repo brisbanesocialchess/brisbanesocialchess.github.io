@@ -48,29 +48,30 @@ describe('API endpoints', () => {
 
 	it('handles user registration', async () => {
 		const body = JSON.stringify({
+			firstName: 'Max',
+			lastName: 'Doe',
 			email: 'max@example.com',
-			password: 'secret123',
-			username: 'BaseMax',
 		});
-
+	
 		const request = new Request('http://example.com/api/register', {
 			body,
 			headers: { 'Content-Type': 'application/json' },
 			method: 'POST',
 		});
-
+	
 		const ctx = createExecutionContext();
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
-
+	
 		expect(await response.json()).toMatchInlineSnapshot(`
-      {
-        "message": "Registration complete!",
-        "status": "ok",
-      }
-    `);
+			{
+				"message": "Registration complete!",
+				"status": "ok",
+			}
+		`);
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
+	
 
 	it('responds with 404 for unknown routes', async () => {
 		const request = new Request('http://example.com/api/unknown', {
