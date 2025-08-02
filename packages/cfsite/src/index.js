@@ -1,13 +1,22 @@
+// Const variables
+const JSON_HEADERS = { 'Content-Type': 'application/json' };
+
+const corsHeadersCache = new Map();
+
+const routes = {
+	'GET /': handleGetRoot,
+	'GET /health': handleHealthCheck,
+	'POST /api/contact': handleContact,
+	'POST /api/register': handleRegister,
+};
+
+// Functions
 function uuidv4() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
 		const v = c === 'x' ? c : (c & 0x3) | 0x8;
 		return v.toString(16);
 	});
 }
-
-const JSON_HEADERS = { 'Content-Type': 'application/json' };
-
-const corsHeadersCache = new Map();
 
 function getCorsHeaders(request) {
 	const origin = request.headers.get('Origin') || '*';
@@ -75,6 +84,7 @@ async function parseJson(request) {
 	}
 }
 
+// Route functions
 async function handleContact(request) {
 	try {
 		const { name, email, message } = await parseJson(request);
@@ -107,7 +117,7 @@ async function handleRegister(request) {
 	}
 }
 
-function handleGetRoot(request) {
+async function handleGetRoot(request) {
 	return new Response('Hello World!', {
 		headers: {
 			...getCorsHeaders(request),
@@ -121,13 +131,6 @@ function handleGetRoot(request) {
 async function handleHealthCheck(request) {
 	return createJsonResponse({ status: 'ok', uptime: Date.now() }, request);
 }
-
-const routes = {
-	'GET /': handleGetRoot,
-	'GET /health': handleHealthCheck,
-	'POST /api/contact': handleContact,
-	'POST /api/register': handleRegister,
-};
 
 export default {
 	async fetch(request, env, ctx) {
