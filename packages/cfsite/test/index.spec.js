@@ -63,12 +63,10 @@ describe('API endpoints', () => {
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
 	
-		expect(await response.json()).toMatchInlineSnapshot(`
-			{
-				"message": "Registration complete!",
-				"status": "ok",
-			}
-		`);
+		expect(await response.json()).toEqual({
+			message: "Registration complete!",
+			status: "ok",
+		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 	
