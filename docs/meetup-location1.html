@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meetup Location 1 – Central Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f7f7fa;
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .meetup-location-container {
+      max-width: 720px;
+      margin: 48px auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.17);
+      padding: 40px 32px;
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+    }
+    .meetup-details {
+      flex: 1;
+      min-width: 220px;
+    }
+    .meetup-details h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #293441;
+    }
+    .meetup-details p strong {
+      color: #2454a7;
+    }
+    .meetup-map {
+      min-width: 280px;
+      max-width: 320px;
+      height: 220px;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 12px rgba(44,45,60,0.11);
+      flex-shrink: 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 24px;
+      font-weight: 600;
+      color: #1d3557;
+      text-decoration: none;
+      transition: color 0.16s;
+    }
+    .back-link:hover {
+      color: #457b9d;
+      text-decoration: underline;
+    }
+    @media (max-width: 800px){
+      .meetup-location-container {
+        flex-direction: column;
+        padding: 24px 8px;
+        align-items: stretch;
+      }
+      .meetup-map {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 180px;
+        margin: 0 0 18px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="meetup-location-container" role="main">
+    <div class="meetup-details">
+      <h1>Central Library Chess Meetup</h1>
+      <p><strong>Address:</strong> 123 Main St, Brisbane</p>
+      <p><strong>Description:</strong> This meetup welcomes all chess lovers. Bring your set or play with ours—open to all skill levels. </p>
+      <p><strong>Time & Date:</strong> Fridays, 6:00&nbsp;PM – 9:00&nbsp;PM</p>
+      <p><strong>Host:</strong> John Smith</p>
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+    <iframe
+      class="meetup-map"
+      src="https://maps.google.com/maps?q=123+Main+St+Brisbane&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="320" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+      title="Google Map of Central Library, Brisbane"></iframe>
+  </div>
+</body>
+</html>
