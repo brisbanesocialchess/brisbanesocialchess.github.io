@@ -58,10 +58,10 @@ repos:
       - id: prettier
         name: run prettier
         description: format files with prettier
-        entry: npm run format
-        files: \.(json|md|ya?ml)$
+        entry: prettier --config .github/linters/.prettierrc --write
         language: node
         additional_dependencies: ['prettier@3.6.2']
+        files: \.(js|json|ya?ml|css|md)$
       - id: npm-audit
         name: run npm audit
         entry: npm audit --audit-level=high
