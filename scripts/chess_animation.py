@@ -5,15 +5,17 @@ import os
 
 FRAME_DELAY = 1  # delay in seconds between frames
 
+
 def clear_screen():
     # Clears the terminal screen in a cross-platform way
     try:
-        if os.name == 'nt':
-            os.system('cls')  # Windows
+        if os.name == "nt":
+            os.system("cls")  # Windows
         else:
-            os.system('clear')  # macOS/Linux
+            os.system("clear")  # macOS/Linux
     except Exception:
         print("\033[H\033[J", end="")  # ANSI escape sequence fallback
+
 
 def animate_board():
     board_states = [
@@ -32,13 +34,14 @@ def animate_board():
         clear_screen()
         print(f"🖼️  Frame {i + 1} of {len(board_states)}")
         print("-" * 17)
-        for row in state.split('\n'):
-            print(row.replace(' ', ''))  # Keep compact
+        for row in state.split("\n"):
+            print(row.replace(" ", ""))  # Keep compact
         print("-" * 17)
         time.sleep(FRAME_DELAY)
 
     clear_screen()
     print("✅ Animation complete!")
+
 
 if __name__ == "__main__":
     animate_board()
