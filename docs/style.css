@@ -120,6 +120,10 @@ ol {
 	margin-top: 0.5rem;
 }
 
+.section .bio {
+	text-align: center;
+}
+
 /* Buttons */
 .button-group {
 	display: flex;
@@ -273,8 +277,4 @@ form fieldset input[type='radio'] {
 	padding: 2rem 1rem;
 	font-size: 0.9rem;
 	color: rgba(255, 255, 255, 0.6);
-}
-
-.bio {
-	text-align: center;
 }
