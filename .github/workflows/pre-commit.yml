@@ -26,19 +26,6 @@ jobs:
           brew install gettext
           brew link --force gettext
 
-      - name: Install dprint CLI
-        if: runner.os != 'Windows'
-        run: |
-          curl -fsSL https://dprint.dev/install.sh | sh
-          sudo mv ~/.dprint/bin/dprint /usr/local/bin/
-
-      - name: Install dprint CLI on Windows
-        if: runner.os == 'Windows'
-        run: |
-          iwr https://dprint.dev/install.ps1 -UseBasicParsing | iex
-          move "~\.dprint\bin\dprint.exe" "C:\tools\dprint.exe"
-          setx PATH "$env:PATH;C:\tools"
-
       - name: ↩️ Checkout code
         uses: actions/checkout@v4
 
