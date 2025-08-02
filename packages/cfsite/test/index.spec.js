@@ -2,7 +2,7 @@ import { env, createExecutionContext, waitOnExecutionContext, SELF } from 'cloud
 import { describe, it, expect } from 'vitest';
 import worker from '../src';
 
-const BASE_URL = 'http://example.com/';
+const BASE_URL = 'http://example.com';
 
 describe('Hello World worker', () => {
 	it('responds with Hello World! (unit style)', async () => {
