@@ -3,7 +3,7 @@ default_stages: [pre-commit, pre-push]
 default_language_version:
   python: python3
   node: 22.17.0
-minimum_pre_commit_version: '3.2.0'
+minimum_pre_commit_version: "3.2.0"
 repos:
   - repo: meta
     hooks:
@@ -32,7 +32,7 @@ repos:
       - id: check-json
       # - id: pretty-format-json
       - id: check-added-large-files
-        args: ['--maxkb=1000']
+        args: ["--maxkb=1000"]
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
@@ -42,7 +42,7 @@ repos:
     hooks:
       - id: oxipng
         name: oxipng
-        args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+        args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
   - repo: local
     hooks:
       - id: npm-ci
@@ -61,7 +61,7 @@ repos:
         entry: npm run format
         files: \.(json|md|ya?ml)$
         language: node
-        additional_dependencies: ['prettier@3.6.2']
+        additional_dependencies: ["prettier@3.6.2"]
       - id: npm-audit
         name: run npm audit
         entry: npm audit --audit-level=high
@@ -88,7 +88,7 @@ repos:
       - id: markdownlint
         name: markdownlint
         types: [markdown]
-        args: ['--config', '.github/linters/.markdownlint.json']
+        args: ["--config", ".github/linters/.markdownlint.json"]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
