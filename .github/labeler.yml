@@ -2,94 +2,94 @@ backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'packages/cfsite/src/**/*'
-              - 'packages/cfsite/**/*.ts'
-              - 'packages/cfsite/.wrangler/**/*'
+              - "packages/cfsite/src/**/*"
+              - "packages/cfsite/**/*.ts"
+              - "packages/cfsite/.wrangler/**/*"
 
 cfsite:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'packages/cfsite/**/*'
+              - "packages/cfsite/**/*"
 
 chore:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.editorconfig'
-              - '.gitignore'
-              - 'dprint.json'
-              - '.pre-commit-config.yaml'
-              - '.github/lint-plugins/*'
+              - ".editorconfig"
+              - ".gitignore"
+              - "dprint.json"
+              - ".pre-commit-config.yaml"
+              - ".github/lint-plugins/*"
 
 ci:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.github/workflows/*'
-              - '.wrangler/**/*'
+              - ".github/workflows/*"
+              - ".wrangler/**/*"
 
 config:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.*'
+              - ".*"
 
 dependencies:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'package.json'
-              - 'pnpm-lock.yaml'
-              - 'yarn.lock'
-              - 'npm-shrinkwrap.json'
+              - "package.json"
+              - "pnpm-lock.yaml"
+              - "yarn.lock"
+              - "npm-shrinkwrap.json"
 
 development:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'dprint.json'
-              - '.editorconfig'
-              - '.pre-commit-config.yaml'
-              - '.github/lint-plugins/*'
+              - "dprint.json"
+              - ".editorconfig"
+              - ".pre-commit-config.yaml"
+              - ".github/lint-plugins/*"
 
 documentation:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'README.md'
-              - 'CONTRIBUTING.md'
-              - 'docs/**/*'
+              - "README.md"
+              - "CONTRIBUTING.md"
+              - "docs/**/*"
 
 frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'public/**/*'
+              - "public/**/*"
 
 infra:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.github/**/*'
-              - '.vscode/*'
+              - ".github/**/*"
+              - ".vscode/*"
 
 root:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '*'
+              - "*"
 
 scripts:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'scripts/**/*'
+              - "scripts/**/*"
 
 tests:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '**/test/**/*'
-              - '**/*.test.ts'
-              - '**/*.spec.ts'
+              - "**/test/**/*"
+              - "**/*.test.ts"
+              - "**/*.spec.ts"
