@@ -2,9 +2,11 @@ import { env, createExecutionContext, waitOnExecutionContext, SELF } from 'cloud
 import { describe, it, expect } from 'vitest';
 import worker from '../src';
 
+const BASE_URL = 'http://example.com/';
+
 describe('Hello World worker', () => {
 	it('responds with Hello World! (unit style)', async () => {
-		const request = new Request('http://example.com/');
+		const request = new Request(BASE_URL);
 		const ctx = createExecutionContext();
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
@@ -13,7 +15,7 @@ describe('Hello World worker', () => {
 	});
 
 	it('responds with Hello World! (integration style)', async () => {
-		const response = await SELF.fetch('http://example.com/');
+		const response = await SELF.fetch(BASE_URL);
 		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
@@ -27,7 +29,7 @@ describe('API endpoints', () => {
 			name: 'Alice',
 		});
 
-		const request = new Request('http://example.com/api/contact', {
+		const request = new Request(BASE_URL + '/api/contact', {
 			body,
 			headers: { 'Content-Type': 'application/json' },
 			method: 'POST',
@@ -53,7 +55,7 @@ describe('API endpoints', () => {
 			username: 'BaseMax',
 		});
 
-		const request = new Request('http://example.com/api/register', {
+		const request = new Request(BASE_URL + '/api/register', {
 			body,
 			headers: { 'Content-Type': 'application/json' },
 			method: 'POST',
@@ -73,7 +75,7 @@ describe('API endpoints', () => {
 	});
 
 	it('responds with 404 for unknown routes', async () => {
-		const request = new Request('http://example.com/api/unknown', {
+		const request = new Request(BASE_URL + '/api/unknown', {
 			method: 'GET',
 		});
 		const ctx = createExecutionContext();
@@ -89,11 +91,11 @@ describe('API endpoints', () => {
 	});
 
 	it('responds to OPTIONS preflight request', async () => {
-		const request = new Request('http://example.com/api/contact', {
+		const request = new Request(BASE_URL + '/api/contact', {
 			headers: {
 				'Access-Control-Request-Headers': 'Content-Type',
 				'Access-Control-Request-Method': 'POST',
-				Origin: 'http://example.com',
+				Origin: BASE_URL,
 			},
 			method: 'OPTIONS',
 		});
@@ -102,7 +104,7 @@ describe('API endpoints', () => {
 		await waitOnExecutionContext(ctx);
 
 		expect(response.status).toBe(204);
-		expect(response.headers.get('Access-Control-Allow-Origin')).toBe('http://example.com');
+		expect(response.headers.get('Access-Control-Allow-Origin')).toBe(BASE_URL);
 		expect(response.headers.get('Access-Control-Allow-Methods')).toContain('POST');
 		expect(response.headers.get('Access-Control-Allow-Headers')).toContain('Content-Type');
 	});
