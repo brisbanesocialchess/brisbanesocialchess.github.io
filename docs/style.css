@@ -100,20 +100,17 @@ ol {
 }
 
 /* Section formatting */
-.section h1 {
+.section h1,
+.section h2,
+.section h3 {
 	text-align: center;
 }
 
 .section h2 {
-	text-align: center;
 	font-size: 1rem;
 	text-transform: uppercase;
 	margin-bottom: 0.4rem;
 	letter-spacing: 1px;
-}
-
-.section h3 {
-	text-align: center;
 }
 
 .section p {
