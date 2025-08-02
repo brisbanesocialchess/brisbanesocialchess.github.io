@@ -2,12 +2,8 @@
     --footer-height: 85px;
 }
 
-
-
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
-
 
 /* Reset */
 * {
@@ -15,8 +11,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 /* General */
 body {
@@ -29,20 +23,14 @@ body {
     color: #ffffff;
 }
 
-
-
 a {
     color: #46c7ef;
 }
-
-
 
 ul,
 ol {
     margin-left: 30px;
 }
-
-
 
 /* Background overlay */
 .background-overlay {
@@ -53,8 +41,6 @@ ol {
     padding: 3rem 1rem;
     flex-grow: 1;
 }
-
-
 
 /* Main content box */
 .content-wrapper {
@@ -70,14 +56,10 @@ ol {
     height: calc(100% - 1rem);
 }
 
-
-
 /* Logo */
 .logo {
     text-align: center;
 }
-
-
 
 .logo img {
     width: 100px;
@@ -87,8 +69,6 @@ ol {
     margin-bottom: 20px;
 }
 
-
-
 .logo h1 {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -96,23 +76,17 @@ ol {
     font-weight: 700;
 }
 
-
-
 .logo p {
     font-size: 0.95rem;
     opacity: 0.85;
     margin-top: 0.4rem;
 }
 
-
-
 /* Navigation */
 .nav-links {
     text-align: center;
     font-size: 0.9rem;
 }
-
-
 
 .nav-links a {
     color: #ccc;
@@ -121,13 +95,9 @@ ol {
     transition: color 0.2s;
 }
 
-
-
 .nav-links a:hover {
     color: #ffffff;
 }
-
-
 
 /* Section formatting */
 .section h2 {
@@ -137,8 +107,6 @@ ol {
     letter-spacing: 1px;
 }
 
-
-
 .section p {
     font-size: 0.92rem;
     line-height: 1.5;
@@ -146,21 +114,15 @@ ol {
     opacity: 0.9;
 }
 
-
-
 .section img {
     width: 100%;
     border-radius: 8px;
     margin-top: 0.5rem;
 }
 
-
-
 .section .bio {
     text-align: center;
 }
-
-
 
 /* Buttons */
 .button-group {
@@ -170,24 +132,18 @@ ol {
     margin-top: 1rem;
 }
 
-
-
 /* Contact */
 .contact-actions {
     margin-top: 2rem;
 }
 
-
-
 /* Form styling */
 .form-registration {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1rem;
     padding: 1rem 0;
 }
-
-
 
 /* Label styling */
 .form-group label,
@@ -198,8 +154,6 @@ form fieldset legend {
     letter-spacing: 0.05em;
     color: #e0e0e0;
 }
-
-
 
 /* Inputs and textareas */
 .form-registration input[type='text'],
@@ -219,16 +173,12 @@ form fieldset legend {
     outline-color: transparent;
 }
 
-
-
 .form-registration input[type='text']::placeholder,
 .form-registration input[type='email']::placeholder,
 .form-registration input[type='number']::placeholder {
     color: #bbb;
     font-style: italic;
 }
-
-
 
 /* Input focus effect */
 .form-registration input[type='text']:focus,
@@ -240,8 +190,6 @@ form fieldset legend {
     color: #fff;
 }
 
-
-
 /* Fieldset and legend styling */
 form fieldset {
     border: 1.5px solid rgba(255, 255, 255, 0.3);
@@ -251,15 +199,11 @@ form fieldset {
     background: rgba(255, 255, 255, 0.05);
 }
 
-
-
 form fieldset legend {
     padding: 0 0.6rem;
     font-size: 1rem;
     color: #ccc;
 }
-
-
 
 /* Radio buttons */
 form fieldset label {
@@ -273,8 +217,6 @@ form fieldset label {
     gap: 0.4rem;
 }
 
-
-
 form fieldset input[type='radio'] {
     accent-color: #46c7ef;
     cursor: pointer;
@@ -282,8 +224,6 @@ form fieldset input[type='radio'] {
     height: 18px;
     margin: 0;
 }
-
-
 
 /* Button */
 .button {
@@ -301,8 +241,6 @@ form fieldset input[type='radio'] {
     box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
 }
 
-
-
 .button:hover,
 .button:focus {
     background-color: #39a3d9;
@@ -311,34 +249,25 @@ form fieldset input[type='radio'] {
     outline: none;
 }
 
-
-
-/* Responsive */
+/* Responsive: Merged Media Queries */
 @media (max-width: 500px) {
     .form-registration {
         gap: 1rem;
     }
 
-
-
     .button {
         padding: 0.75rem 1rem;
         font-size: 1rem;
     }
-}
-@media (max-width: 500px) {
+
     .content-wrapper {
         padding: 1.5rem;
     }
-
-
 
     .logo h1 {
         font-size: 1.2rem;
     }
 }
-
-
 
 /* Footer */
 .site-footer {
@@ -349,12 +278,9 @@ form fieldset input[type='radio'] {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
 /* ======================== */
 /* Meetup Location Page CSS */
 /* ======================== */
-
 
 .meetup-location-container {
   max-width: 720px;
@@ -366,16 +292,14 @@ form fieldset input[type='radio'] {
   display: flex;
   gap: 36px;
   align-items: flex-start;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family removed to inherit Montserrat for consistency */
   color: #293441;
 }
-
 
 .meetup-details {
   flex: 1;
   min-width: 220px;
 }
-
 
 .meetup-details h1 {
   margin-top: 0;
@@ -383,11 +307,9 @@ form fieldset input[type='radio'] {
   margin-bottom: 24px;
 }
 
-
 .meetup-details dl {
   margin: 0;
 }
-
 
 .meetup-details dt {
   color: #2454a7;
@@ -395,14 +317,12 @@ form fieldset input[type='radio'] {
   margin-top: 1em;
 }
 
-
 .meetup-details dd {
   margin-left: 0;
   margin-bottom: 1em;
   font-weight: normal;
   line-height: 1.4;
 }
-
 
 .back-link {
   display: inline-block;
@@ -413,12 +333,10 @@ form fieldset input[type='radio'] {
   transition: color 0.16s ease-in-out;
 }
 
-
 .back-link:hover {
   color: #457b9d;
   text-decoration: underline;
 }
-
 
 .meetup-map {
   min-width: 280px;
@@ -429,7 +347,6 @@ form fieldset input[type='radio'] {
   box-shadow: 0 2px 12px rgba(44,45,60,0.11);
   flex-shrink: 0;
 }
-
 
 /* Responsive styling for smaller screens */
 @media (max-width: 800px){
