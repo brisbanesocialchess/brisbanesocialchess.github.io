@@ -35,7 +35,7 @@ Community leaders will follow these guidelines in determining the consequences f
 3. **Temporary Ban**
 4. **Permanent Ban**
 
-(See full guidelines: https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+(See full guidelines: <https://www.contributor-covenant.org/version/2/1/code_of_conduct/>)
 
 ## Scope
 
