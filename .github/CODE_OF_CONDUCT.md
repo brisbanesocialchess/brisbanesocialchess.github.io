@@ -43,7 +43,7 @@ This Code of Conduct applies within all community spaces (online and offline), a
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the maintainers at [brisbanesocialchess@gmail.com](mailto:brisbanesocialchess@gmail.com). All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the maintainers at [committee@brisbanesocialchess.org.au](mailto:committee@brisbanesocialchess.org.au). All complaints will be reviewed and investigated promptly and fairly.
 
 ## Attribution
 
