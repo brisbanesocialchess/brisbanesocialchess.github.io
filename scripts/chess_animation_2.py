@@ -8,43 +8,116 @@ ANIMATION_DURATION_SECONDS = 10
 FRAME_DELAY_SECONDS = 2  # Time each board state is displayed
 
 # --- Unicode Chess Pieces ---
-WHITE_PAWN = '♙'
-WHITE_ROOK = '♖'
-WHITE_KNIGHT = '♘'
-WHITE_BISHOP = '♗'
-WHITE_QUEEN = '♕'
-WHITE_KING = '♔'
+WHITE_PAWN = "♙"
+WHITE_ROOK = "♖"
+WHITE_KNIGHT = "♘"
+WHITE_BISHOP = "♗"
+WHITE_QUEEN = "♕"
+WHITE_KING = "♔"
 
-BLACK_PAWN = '♟'
-BLACK_ROOK = '♜'
-BLACK_KNIGHT = '♞'
-BLACK_BISHOP = '♝'
-BLACK_QUEEN = '♛'
-BLACK_KING = '♚'
+BLACK_PAWN = "♟"
+BLACK_ROOK = "♜"
+BLACK_KNIGHT = "♞"
+BLACK_BISHOP = "♝"
+BLACK_QUEEN = "♛"
+BLACK_KING = "♚"
 
-EMPTY_SQUARE = ' '
+EMPTY_SQUARE = " "
 
 # --- Initial Chess Board State ---
 # The board is represented as an 8x8 list of lists.
 # Row 0 is rank 8, Row 7 is rank 1.
 # Column 0 is file 'a', Column 7 is file 'h'.
 initial_board = [
-    [BLACK_ROOK, BLACK_KNIGHT, BLACK_BISHOP, BLACK_QUEEN, BLACK_KING, BLACK_BISHOP, BLACK_KNIGHT, BLACK_ROOK],
-    [BLACK_PAWN, BLACK_PAWN, BLACK_PAWN, BLACK_PAWN, BLACK_PAWN, BLACK_PAWN, BLACK_PAWN, BLACK_PAWN],
-    [EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE],
-    [EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE],
-    [EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE],
-    [EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE, EMPTY_SQUARE],
-    [WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN, WHITE_PAWN],
-    [WHITE_ROOK, WHITE_KNIGHT, WHITE_BISHOP, WHITE_QUEEN, WHITE_KING, WHITE_BISHOP, WHITE_KNIGHT, WHITE_ROOK]
+    [
+        BLACK_ROOK,
+        BLACK_KNIGHT,
+        BLACK_BISHOP,
+        BLACK_QUEEN,
+        BLACK_KING,
+        BLACK_BISHOP,
+        BLACK_KNIGHT,
+        BLACK_ROOK,
+    ],
+    [
+        BLACK_PAWN,
+        BLACK_PAWN,
+        BLACK_PAWN,
+        BLACK_PAWN,
+        BLACK_PAWN,
+        BLACK_PAWN,
+        BLACK_PAWN,
+        BLACK_PAWN,
+    ],
+    [
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+    ],
+    [
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+    ],
+    [
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+    ],
+    [
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+        EMPTY_SQUARE,
+    ],
+    [
+        WHITE_PAWN,
+        WHITE_PAWN,
+        WHITE_PAWN,
+        WHITE_PAWN,
+        WHITE_PAWN,
+        WHITE_PAWN,
+        WHITE_PAWN,
+        WHITE_PAWN,
+    ],
+    [
+        WHITE_ROOK,
+        WHITE_KNIGHT,
+        WHITE_BISHOP,
+        WHITE_QUEEN,
+        WHITE_KING,
+        WHITE_BISHOP,
+        WHITE_KNIGHT,
+        WHITE_ROOK,
+    ],
 ]
 
 
 # --- Helper Functions ---
 
+
 def clear_terminal():
     """Clears the terminal screen for animation."""
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def print_board(board, move_description="Initial Board"):
@@ -61,7 +134,9 @@ def print_board(board, move_description="Initial Board"):
         print(f"|{8 - i}")
     print(" -----------------")
     print("  a b c d e f g h")
-    print(f"\nAnimation will run for {ANIMATION_DURATION_SECONDS} seconds. Press Ctrl+C to exit.")
+    print(
+        f"\nAnimation will run for {ANIMATION_DURATION_SECONDS} seconds. Press Ctrl+C to exit."
+    )
 
 
 def make_move(board, from_row, from_col, to_row, to_col):
@@ -82,21 +157,27 @@ def make_move(board, from_row, from_col, to_row, to_col):
 #            board col 0 = file 'a', col 7 = file 'h'.
 animation_moves = [
     # White Pawn e2 to e4
-    {'from_rank': 2, 'from_file': 'e', 'to_rank': 4, 'to_file': 'e', 'desc': "1. e4"},
+    {"from_rank": 2, "from_file": "e", "to_rank": 4, "to_file": "e", "desc": "1. e4"},
     # Black Pawn d7 to d5
-    {'from_rank': 7, 'from_file': 'd', 'to_rank': 5, 'to_file': 'd', 'desc': "1... d5"},
+    {"from_rank": 7, "from_file": "d", "to_rank": 5, "to_file": "d", "desc": "1... d5"},
     # White Knight g1 to f3
-    {'from_rank': 1, 'from_file': 'g', 'to_rank': 3, 'to_file': 'f', 'desc': "2. Nf3"},
+    {"from_rank": 1, "from_file": "g", "to_rank": 3, "to_file": "f", "desc": "2. Nf3"},
     # Black Knight b8 to c6
-    {'from_rank': 8, 'from_file': 'b', 'to_rank': 6, 'to_file': 'c', 'desc': "2... Nc6"},
+    {
+        "from_rank": 8,
+        "from_file": "b",
+        "to_rank": 6,
+        "to_file": "c",
+        "desc": "2... Nc6",
+    },
     # White Rook a1 to a3
-    {'from_rank': 1, 'from_file': 'a', 'to_rank': 3, 'to_file': 'a', 'desc': "3. Ra3"}
+    {"from_rank": 1, "from_file": "a", "to_rank": 3, "to_file": "a", "desc": "3. Ra3"},
 ]
 
 
 def file_to_col(file_char):
     """Converts a file character ('a'-'h') to a 0-7 column index."""
-    return ord(file_char.lower()) - ord('a')
+    return ord(file_char.lower()) - ord("a")
 
 
 def rank_to_row(rank_num):
@@ -125,14 +206,14 @@ def run_animation():
             move_data = animation_moves[move_index]
 
             # Print current board state before applying the move
-            print_board(current_board, move_data['desc'])
+            print_board(current_board, move_data["desc"])
             time.sleep(FRAME_DELAY_SECONDS)  # Display current state for a moment
 
             # Apply the move
-            from_row = rank_to_row(move_data['from_rank'])
-            from_col = file_to_col(move_data['from_file'])
-            to_row = rank_to_row(move_data['to_rank'])
-            to_col = file_to_col(move_data['to_file'])
+            from_row = rank_to_row(move_data["from_rank"])
+            from_col = file_to_col(move_data["from_file"])
+            to_row = rank_to_row(move_data["to_rank"])
+            to_col = file_to_col(move_data["to_file"])
 
             make_move(current_board, from_row, from_col, to_row, to_col)
 
