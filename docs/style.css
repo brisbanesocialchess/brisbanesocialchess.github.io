@@ -100,6 +100,12 @@ ol {
 }
 
 /* Section formatting */
+.section h1,
+.section h2,
+.section h3 {
+	text-align: center;
+}
+
 .section h2 {
     font-size: 1rem;
     text-transform: uppercase;
