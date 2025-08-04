@@ -2,13 +2,25 @@
 
 Welcome to **Awesome Social Chess**! We appreciate your interest in contributing. All contributions are welcome! 💖
 
-## Table of Contents
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Getting Started](#getting-started)
 - [Creating an Issue](#creating-an-issue)
 - [How to Contribute](#how-to-contribute)
-  - [Formatting & Commit Rules](#-formatting--commit-rules)
+  - [1. Fork the Repository 🔗](#1-fork-the-repository-)
+  - [2. Clone Your Fork 📥](#2-clone-your-fork-)
+  - [3. 🌿 Create a Branch](#3--create-a-branch)
+  - [4. ✏️ Make Changes](#4--make-changes)
+  - [📐 Formatting & Commit Rules](#-formatting--commit-rules)
+    - [🔧 Setting Up dprint](#-setting-up-dprint)
+    - [🧪 Setting Up pre-commit](#%F0%9F%A7%AA-setting-up-pre-commit)
+  - [5. 📝 Commit Changes](#5--commit-changes)
+  - [6. ⬆️ Push Changes](#6--push-changes)
+  - [7. 🔄 Create a Pull Request](#7--create-a-pull-request)
 - [Community Support](#community-support)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
