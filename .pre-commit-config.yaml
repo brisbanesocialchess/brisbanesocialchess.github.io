@@ -21,6 +21,13 @@ repos:
         args: ['644']
         files: \.md$
         stages: [manual]
+  - repo: https://github.com/thlorenz/doctoc.git
+    rev: v2.2.0
+    hooks:
+      - id: doctoc
+        name: Add TOC for Markdown and RST files
+        files: \.md$
+        exclude: \.github/CODE_OF_CONDUCT\.md
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
