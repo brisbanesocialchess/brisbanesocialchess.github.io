@@ -100,31 +100,37 @@ Our configuration is already in the repo: [dprint.json](./dprint.json)
 
 #### 🧪 Setting Up pre-commit
 
-Used to enforce newline at end of files and OS-specific line endings.
+We use [pre-commit](https://pre-commit.com/) to automatically check your code for common issues, like missing end-of-file newlines and inconsistent line endings. This keeps our project clean and easy for everyone to work on.
 
-**Install (requires Python):**
+**How to install (requires Python):**
 
 ```bash
 pip install pre-commit
 ```
 
-**Activate pre-commit hooks:**
+**Set up pre-commit hooks for this project:**
 
 ```bash
 pre-commit install
 ```
 
-**Run manually (optional):**
+This will make pre-commit run its checks every time you make a commit.
+**You can also run all checks manually before sending your work:**
 
 ```bash
 pre-commit run --all-files
 ```
 
+This helps catch any problems early.
+For more info, visit the [pre-commit website](https://pre-commit.com/).
+
 ---
 
 ### 5. 📝 Commit Changes
 
-Use descriptive commit messages that clearly state the purpose of your changes.
+Use meaningful and clear commit messages that describe the purpose of your changes. This helps maintain a clean and understandable project history.
+
+**Example:**
 
 ```bash
 git add .
@@ -133,16 +139,21 @@ git commit -m "Add feature: description of feature"
 
 ### 6. ⬆️ Push Changes
 
+Push your local branch to your remote fork. Replace `your-branch-name` with the name of your current branch.
+
 ```bash
 git push origin add-new-feature
 ```
 
+This makes your changes available for review and merging via a Pull Request.
+
 ### 7. 🔄 Create a Pull Request
 
-- Go to your forked repository on GitHub.
-- Click **"Compare & pull request"**.
-- Add a title and description (e.g., "Fixes #102").
-- Click **"Create pull request"**.
+- Navigate to your forked repository on GitHub.
+- Click the **"Compare & pull request"** button.
+- Provide a clear and concise title for your Pull Request.
+- Write a detailed description explaining the changes you made, and reference any related issues using keywords like "Fixes #issue-number".
+- Click **"Create pull request"** to submit your contribution for review.
 
 ---
 
