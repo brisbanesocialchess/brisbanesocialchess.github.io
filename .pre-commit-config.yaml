@@ -13,6 +13,14 @@ repos:
       - id: check-hooks-apply
         name: check hooks apply to the repository
         description: useful when testing new hooks to see if they apply to the repository
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: chmod
+        name: set file permissions
+        args: ['644']
+        files: \.md$
+        stages: [manual]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
