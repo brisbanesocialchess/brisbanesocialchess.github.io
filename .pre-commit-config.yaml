@@ -28,6 +28,7 @@ repos:
     hooks:
       - id: chmod
         name: Set file permissions
+        description: Does not run on Windows so setup as a manual hook
         args: ['644']
         files: \.md$
         stages: [manual]
@@ -36,6 +37,7 @@ repos:
     hooks:
       - id: doctoc
         name: Add TOC for Markdown and RST files
+        description: Adds an Markdown table of contents
         files: \.md$
         exclude: \.github/CODE_OF_CONDUCT\.md
   - repo: https://github.com/gitleaks/gitleaks
@@ -81,12 +83,14 @@ repos:
     rev: v1.7.7
     hooks:
       - id: actionlint
-        name: Static checker for GitHub Actions workflow files
+        name: Run actionlint
+        description: Static checker for GitHub Actions workflow files
   - repo: https://github.com/oxipng/oxipng
     rev: v9.1.5
     hooks:
       - id: oxipng
-        name: Multithreaded PNG optimizer written in Rust
+        name: Run oxipng
+        description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
   - repo: local
     hooks:
@@ -103,8 +107,8 @@ repos:
       - id: prettier
         name: Run prettier
         description: format files with prettier
-        entry: npm run format
-        files: \.(json|md|ya?ml)$
+        entry: prettier --config .github/linters/.prettierrc --write
+        files: \.(css|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
       - id: npm-audit
@@ -126,7 +130,7 @@ repos:
       - id: eslint
         name: Find and fix problems in your JavaScript code
         description: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline
-        entry: npm run lint_fix
+        entry: eslint --config .github/linters/eslint.config.mjs --fix
         language: node
         files: \.(cjs|js|mjs)$
   - repo: https://github.com/igorshubovych/markdownlint-cli
