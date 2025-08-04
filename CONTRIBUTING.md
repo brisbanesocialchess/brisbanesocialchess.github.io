@@ -163,5 +163,5 @@ This makes your changes available for review and merging via a Pull Request.
 
 If you need help or have questions:
 
-- Join Discussions: Participate in discussions.
-- Contact Maintainers: Reach out to project maintainers if needed.
+- Join Discussions: Participate in ongoing discussions with the community.
+- Contact Maintainers: Reach out to project maintainers if you need direct assistance.
