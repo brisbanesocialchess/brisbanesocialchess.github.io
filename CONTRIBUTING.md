@@ -149,11 +149,13 @@ This makes your changes available for review and merging via a Pull Request.
 
 ### 7. 🔄 Create a Pull Request
 
-- Navigate to your forked repository on GitHub.
-- Click the **"Compare & pull request"** button.
-- Provide a clear and concise title for your Pull Request.
-- Write a detailed description explaining the changes you made, and reference any related issues using keywords like "Fixes #issue-number".
-- Click **"Create pull request"** to submit your contribution for review.
+- Go to your forked repository on GitHub.
+- Click the "Compare & pull request" button near the top of the page.
+- Make sure your changes look correct and you are merging into the right branch.
+- Write a clear and simple title describing your changes.
+- Add a short description explaining what you changed and why. If it fixes an issue, mention it like this: Fixes #issue-number.
+- Click "Create pull request" to submit your contribution.
+- Watch for feedback on your Pull Request and respond to any comments.
 
 ---
 
