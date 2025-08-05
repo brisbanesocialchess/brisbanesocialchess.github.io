@@ -93,10 +93,11 @@ async function handleContact(request) {
 
 async function handleRegister(request) {
 	try {
-		const { fname, lname, birthyear, gender, discordusername, email } = await parseJson(request);
+		// discordusername
+		const { fname, lname, birthyear, gender, email } = await parseJson(request);
 
-		if (!fname || !lname || !birthyear || !gender || !discordusername || !email) {
-			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, discordusername, email', request, 422);
+		if (!fname || !lname || !birthyear || !gender || !email) {
+			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, email', request, 422);
 		}
 
 		console.log(`[Register] fname: ${fname}, lname: ${lname}`);
