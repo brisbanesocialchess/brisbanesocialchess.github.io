@@ -28,6 +28,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
   - [Run Tests](#run-tests)
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Getting Started / Building the Site](#getting-started--building-the-site)
+- [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
