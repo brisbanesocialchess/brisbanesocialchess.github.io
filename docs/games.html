@@ -80,7 +80,7 @@
         }
 
         // Step 2: Robustness check - Ensure data and ID exist and frameHeight is a number
-        if (e.data && e.data.id && typeof e.data.frameHeight === 'number') {
+        if (e.data?.id && typeof e.data?.frameHeight === 'number') {
           const iframe = document.getElementById(e.data.id);
           // If a matching iframe is found, set its height
           if (iframe) {
