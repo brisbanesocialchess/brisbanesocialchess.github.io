@@ -133,7 +133,7 @@ This will make pre-commit run its checks every time you make a commit.
 pre-commit run --all-files
 ```
 
-This helps catch any problems early.
+This command runs all configured pre-commit hooks against all files in the repository.
 For more info, visit the [pre-commit website](https://pre-commit.com/).
 
 ---
