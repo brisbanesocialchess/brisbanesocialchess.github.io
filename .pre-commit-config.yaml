@@ -70,7 +70,7 @@ repos:
         name: Run check-merge-conflict
         description: Check for files that contain merge conflict strings
       - id: check-vcs-permalinks
-        name: check-vcs-permalinks
+        name: Run check-vcs-permalinks
         description: Ensures that links to vcs websites are permalinks
       - id: detect-aws-credentials
         name: Run detect-aws-credentials
