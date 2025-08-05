@@ -142,7 +142,7 @@ For more info, visit the [pre-commit website](https://pre-commit.com/).
 
 Use meaningful and clear commit messages that describe the purpose of your changes. This helps maintain a clean and understandable project history.
 
-**Example:**
+**Example of staging and committing changes:**
 
 ```bash
 git add .
