@@ -48,9 +48,12 @@ describe('API endpoints', () => {
 
 	it('handles user registration', async () => {
 		const body = JSON.stringify({
+			fname: '',
+			lname: '',
+			birthyear: '1990',
+			gender: 'male',
+			discordusername: '',
 			email: 'max@example.com',
-			password: 'secret123',
-			username: 'BaseMax',
 		});
 
 		const request = new Request('http://example.com/api/register', {
