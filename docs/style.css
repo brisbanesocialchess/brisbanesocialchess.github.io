@@ -343,14 +343,15 @@ form fieldset input[type='radio'] {
 	width: 100%;
 	text-align: center;
 }
-
-
 .custom-table {
 	width: 100%;
 	border-collapse: collapse;
 }
-.custom-table th,
-.management-table td {
+.custom-table tbody tr td[scope=col],
+.custom-table thead tr th {
+	background: #261775;
+}
+.custom-table th {
 	text-align: center;
 	padding: 8px;
 	border: 1px solid #ddd;
