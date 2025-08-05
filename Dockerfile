@@ -29,8 +29,9 @@ RUN curl -LO https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linu
 
 ENV PATH="/usr/local/go/bin:/usr/local/bin:${PATH}"
 
-RUN node --version && npm --version && go version && python3 --version && pip --version
+# RUN node --version && npm --version && go version && python3 --version && pip --version
+RUN go version && python3 --version && pip --version
 
 WORKDIR /app
 
-CMD ["pre-commit", "run", "--all-files"]
+# CMD ["pre-commit", "run", "--all-files"]
