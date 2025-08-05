@@ -22,10 +22,10 @@ describe('Hello World worker', () => {
 describe('API endpoints', () => {
 	it('handles contact form submission', async () => {
 		const body = JSON.stringify({
-			name: 'Alice',
 			email: 'alice@example.com',
-			subject: 'Subject',
 			message: 'Hello from contact form!',
+			name: 'Alice',
+			subject: 'Subject',
 		});
 
 		const request = new Request('http://example.com/api/contact', {
@@ -47,12 +47,12 @@ describe('API endpoints', () => {
 
 	it('handles user registration', async () => {
 		const body = JSON.stringify({
-			fname: '',
-			lname: '',
 			birthyear: '1990',
-			gender: 'male',
 			discordusername: '',
 			email: 'max@example.com',
+			fname: '',
+			gender: 'male',
+			lname: '',
 		});
 
 		const request = new Request('http://example.com/api/register', {
