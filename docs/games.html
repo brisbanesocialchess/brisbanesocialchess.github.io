@@ -40,35 +40,30 @@
               <h3>Adam Lomsargis versus Robert Garvey</h3>
               <p>
                 <iframe id="13545254" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=13545254"></iframe>
-                <script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"13545254"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
               </p>
             </div>
             <div class="game-item">
               <h3>John Bampton versus Robert Garvey</h3>
               <p>
                 <iframe id="13545220" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=13545220"></iframe>
-                <script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"13545220"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
               </p>
             </div>
             <div class="game-item">
               <h3>Matt McLean versus Robert Garvey</h3>
               <p>
                 <iframe id="13545240" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=13545240"></iframe>
-                <script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"13545240"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
               </p>
             </div>
             <div class="game-item">
               <h3>Jimmy versus John Bampton</h3>
               <p>
                 <iframe id="13545342" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=13545342"></iframe>
-                <script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"13545342"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
               </p>
             </div>
           </div>
         </section>
       </main>
     </div>
-    <!-- Footer -->
     <footer class="site-footer">
       <p>
         &copy; <span id="year"></span> Brisbane Social Chess. All rights
@@ -76,5 +71,19 @@
       </p>
     </footer>
     <script type="text/javascript" src="/script.js"></script>
+
+    <script>
+      window.addEventListener("message", e => {
+        // Check if the message has data and an ID
+        if (e.data && e.data.id) {
+          const iframe = document.getElementById(e.data.id);
+          // If a matching iframe is found, set its height
+          if (iframe) {
+            iframe.style.height = `${e.data.frameHeight + 37}px`;
+          }
+        }
+      });
+    </script>
+
   </body>
 </html>
