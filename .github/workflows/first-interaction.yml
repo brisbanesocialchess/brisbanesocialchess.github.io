@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/first-interaction@v2
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
           issue-message: |
             Thanks for opening this issue! We appreciate your contribution.
           pr-message: |
