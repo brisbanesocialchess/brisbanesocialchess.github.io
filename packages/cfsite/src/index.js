@@ -77,10 +77,10 @@ async function parseJson(request) {
 
 async function handleContact(request) {
 	try {
-		const { name, email, message } = await parseJson(request);
+		const { name, email, subject, message } = await parseJson(request);
 
-		if (!name || !email || !message) {
-			return createErrorResponse('Missing required fields: name, email, message', request, 422);
+		if (!name || !email || !subject || !message) {
+			return createErrorResponse('Missing required fields: name, email, subject, message', request, 422);
 		}
 
 		console.log(`[Contact] from ${name} <${email}>: ${message}`);
@@ -93,10 +93,10 @@ async function handleContact(request) {
 
 async function handleRegister(request) {
 	try {
-		const { username, email } = await parseJson(request);
+		const { fname, lname, birthyear, gender, discordusername, email } = await parseJson(request);
 
-		if (!username || !email) {
-			return createErrorResponse('Missing required fields: username, email', request, 422);
+		if (!fname || !lname || !birthyear || !gender || !discordusername || !email) {
+			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, discordusername, email', request, 422);
 		}
 
 		console.log(`[Register] username: ${username}, email: ${email}`);
