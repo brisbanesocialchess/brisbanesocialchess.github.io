@@ -154,7 +154,7 @@ git commit -m "Add feature: description of feature"
 Push your local branch to your remote fork. Replace `your-branch-name` with the name of your current branch.
 
 ```bash
-git push origin your-branch-name
+git push origin add-new-feature
 ```
 
 This makes your changes available for review and merging via a Pull Request.
