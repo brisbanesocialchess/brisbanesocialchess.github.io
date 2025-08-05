@@ -25,9 +25,9 @@ jobs:
         id: check_pelicanconf
         run: |
           if [ -f pelicanconf.py ]; then
-            echo "file_exists=true" >> $GITHUB_OUTPUT
+            echo "file_exists=true" >> "$GITHUB_OUTPUT"
           else
-            echo "file_exists=false" >> $GITHUB_OUTPUT
+            echo "file_exists=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install dependencies
