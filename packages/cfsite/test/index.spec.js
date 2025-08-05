@@ -37,12 +37,10 @@ describe('API endpoints', () => {
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
 
-		expect(await response.json()).toMatchInlineSnapshot(`
-      {
-        "message": "Thanks for contacting us!",
-        "status": "ok",
-      }
-    `);
+		expect(await response.json()).toEqual({
+			message: 'Thanks for contacting us!',
+			status: 'ok',
+		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 
