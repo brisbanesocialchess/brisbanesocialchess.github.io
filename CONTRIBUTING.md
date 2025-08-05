@@ -127,7 +127,7 @@ pre-commit install
 ```
 
 This will make pre-commit run its checks every time you make a commit.
-**You can also run all checks manually before sending your work:**
+**Running checks manually:**
 
 ```bash
 pre-commit run --all-files
