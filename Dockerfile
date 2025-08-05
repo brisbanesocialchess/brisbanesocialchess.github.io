@@ -17,7 +17,7 @@ RUN apk add --no-cache \
 
 RUN pip install pre-commit --break-system-packages
 
-RUN curl -LO https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz && \
+RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
     rm go${GO_VERSION}.linux-amd64.tar.gz
 
