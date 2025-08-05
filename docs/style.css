@@ -377,7 +377,6 @@ form fieldset input[type='radio'] {
 
 /* Github profile */
 .github-profile {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -388,8 +387,6 @@ form fieldset input[type='radio'] {
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
-}
-.github-profile {
   margin: 10px;
   display: inline-block;
   vertical-align: top;
