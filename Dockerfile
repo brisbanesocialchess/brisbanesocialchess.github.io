@@ -27,6 +27,8 @@ RUN curl -LO https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linu
     tar -xJf node-v${NODE_VERSION}-linux-x64.tar.xz -C /usr/local --strip-components=1 && \
     rm node-v${NODE_VERSION}-linux-x64.tar.xz
 
+ENV PATH="/usr/local/go/bin:/usr/local/bin:${PATH}"
+
 RUN node --version && npm --version && go version && python3 --version && pip --version
 
 WORKDIR /app
