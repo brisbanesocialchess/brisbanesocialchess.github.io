@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import time
 import os
+import time
 
 # --- Configuration ---
 ANIMATION_DURATION_SECONDS = 10
