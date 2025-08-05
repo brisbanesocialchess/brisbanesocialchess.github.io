@@ -245,6 +245,7 @@ form fieldset input[type='radio'] {
 		background-color 0.3s ease,
 		transform 0.2s ease;
 	box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
+	text-decoration: none;
 }
 
 .button:hover,
@@ -283,4 +284,77 @@ form fieldset input[type='radio'] {
 	padding: 2rem 1rem;
 	font-size: 0.9rem;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+/* NEW FORM STYLING FOR .form-contact */
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	margin-top: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+.form-contact .form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-contact label {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.03em;
+	color: #e0e0e0;
+}
+
+.form-contact input[type='text'],
+.form-contact input[type='email'],
+.form-contact textarea {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	font-size: 1rem;
+	transition:
+		border-color 0.3s ease,
+		background-color 0.3s ease;
+	resize: vertical;
+	min-height: 50px;
+}
+
+.form-contact input[type='text']:focus,
+.form-contact input[type='email']:focus,
+.form-contact textarea:focus {
+	border-color: #46c7ef;
+	background-color: rgba(255, 255, 255, 0.15);
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
+}
+
+.form-contact textarea {
+	min-height: 120px;
+}
+
+.form-contact button[type='submit'] {
+	align-self: center;
+	width: 100%;
+	max-width: 250px;
+	margin-top: 1rem;
+}
+
+.form-contact .button.email-obfuscated {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	.form-contact input[type='text'],
+	.form-contact input[type='email'],
+	.form-contact textarea {
+		font-size: 0.9rem;
+		padding: 0.6rem 0.8rem;
+	}
 }
