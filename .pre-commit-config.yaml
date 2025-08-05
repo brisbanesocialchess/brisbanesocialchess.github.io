@@ -73,6 +73,7 @@ repos:
       - id: detect-private-key
         name: Checks for the existence of private keys
       - id: file-contents-sorter
+        name: Sorts and removes duplicates from the codespell dictionary
         args: [--unique]
         files: ^\.github/linters/codespell\.txt$
       - id: fix-byte-order-marker
