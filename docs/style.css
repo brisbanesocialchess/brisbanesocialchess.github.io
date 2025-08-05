@@ -105,6 +105,10 @@ h3 {
 .nav-links a:hover {
 	color: #ffffff;
 }
+.nav-links a.active {
+	color: rgb(70, 199, 239);
+	font-weight: bold;
+}
 
 /* Section formatting */
 .section h1,
