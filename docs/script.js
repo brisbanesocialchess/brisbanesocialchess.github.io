@@ -15,7 +15,8 @@ function getCurrentYear() {
 }
 
 function showAlert(errors) {
-	alert('Please fix the following:\n- ' + errors.join('\n- '));
+	if (errors.length === 1) alert('Please fix the error: ' + errors.join(' '));
+	else alert('Please fix the following:\n- ' + errors.join('\n- '));
 }
 
 function isValidEmail(email) {
