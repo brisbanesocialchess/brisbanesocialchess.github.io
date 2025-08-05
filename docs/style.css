@@ -325,32 +325,32 @@ form fieldset input[type='radio'] {
 }
 
 /* Tables */
+medium
+The styles for .custom-table are spread across multiple, sometimes redundant, rule sets. This makes the CSS harder to read and maintain. For example, properties like text-align, padding, and border are defined multiple times. Consolidating these into a more organized and concise set of rules would improve maintainability.
+
 .custom-table {
 	width: 100%;
 	border-collapse: collapse;
-}
-.custom-table thead tr th {
-	background: #261775;
-}
-.custom-table th {
-	text-align: center;
-	padding: 8px;
-	border: 1px solid #ddd;
-}
-.custom-table th:first-child,
-.custom-table td:first-child {
-	width: 30%;
 }
 .custom-table th,
 .custom-table td {
 	border: 1px solid #ddd;
 	padding: 8px;
+}
+.custom-table td {
 	text-align: left;
 }
 .custom-table th {
 	background-color: black;
 	color: white;
 	text-align: center;
+}
+.custom-table thead tr th {
+	background: #261775;
+}
+.custom-table th:first-child,
+.custom-table td:first-child {
+	width: 30%;
 }
 
 /* Other */
