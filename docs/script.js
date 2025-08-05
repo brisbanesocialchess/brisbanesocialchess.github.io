@@ -128,7 +128,8 @@ window.addEventListener("message", e => {
       const iframe = document.getElementById(e.data.id);
       // If a matching iframe is found, set its height
       if (iframe) {
-        iframe.style.height = `${e.data.frameHeight + 37}px`;
+        const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
+        iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
       }
     }
 });
