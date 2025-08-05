@@ -36,18 +36,18 @@
           <form action="#" method="POST" class="form-registration" novalidate>
             <div class="form-group">
               <label for="firstName">First Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+              <input type="text" id="firstName" name="fname" required autocomplete="given-name" />
             </div>
             <div class="form-group">
               <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+              <input type="text" id="lastName" name="lname" required autocomplete="family-name" />
             </div>
             <div class="form-group">
               <label for="birthYear">Birth Year <span aria-hidden="true">*</span></label>
               <input
                 type="number"
                 id="birthYear"
-                name="birthYear"
+                name="birthyear"
                 min="1900"
                 max="2025"
                 required
@@ -71,13 +71,13 @@
             </fieldset>
             <div class="form-group">
               <label for="discordUsername">Discord Username (optional)</label>
-              <input type="text" id="discordUsername" name="discordUsername" placeholder="e.g. User#1234" />
+              <input type="text" id="discordUsername" name="discordusername" placeholder="e.g. User#1234" />
             </div>
             <div class="form-group">
               <label for="email">Email <span aria-hidden="true">*</span></label>
               <input type="email" id="email" name="email" required autocomplete="email" />
             </div>
-            <button type="submit" class="button">Register</button>
+            <button type="submit" class="button button--main">Register</button>
           </form>
         </section>
       </main>

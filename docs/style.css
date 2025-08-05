@@ -22,14 +22,26 @@ body {
 	background-size: cover;
 	color: #ffffff;
 }
-
 a {
-	color: #46c7ef;
+	color: #b9abff;
 }
-
 ul,
 ol {
 	margin-left: 30px;
+}
+
+li {
+    margin-top: 13px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+h1,
+h2,
+h3 {
+	text-align: center;
 }
 
 /* Background overlay */
@@ -60,7 +72,6 @@ ol {
 .logo {
 	text-align: center;
 }
-
 .logo img {
 	width: 100px;
 	display: block;
@@ -68,14 +79,12 @@ ol {
 	border-radius: 50%;
 	margin-bottom: 20px;
 }
-
 .logo h1 {
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 700;
 }
-
 .logo p {
 	font-size: 0.95rem;
 	opacity: 0.85;
@@ -87,16 +96,18 @@ ol {
 	text-align: center;
 	font-size: 0.9rem;
 }
-
 .nav-links a {
 	color: #ccc;
 	text-decoration: none;
 	margin: 0 0.4rem;
 	transition: color 0.2s;
 }
-
 .nav-links a:hover {
 	color: #ffffff;
+}
+.nav-links a.active {
+	color: rgb(70, 199, 239);
+	font-weight: bold;
 }
 
 /* Section formatting */
@@ -105,27 +116,25 @@ ol {
 .section h3 {
 	text-align: center;
 }
-
 .section h2 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	margin-bottom: 0.4rem;
 	letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
 .section p {
 	font-size: 0.92rem;
 	line-height: 1.5;
 	margin-bottom: 0.8rem;
 	opacity: 0.9;
 }
-
 .section img {
 	width: 100%;
 	border-radius: 8px;
 	margin-top: 0.5rem;
 }
-
 .section .bio {
 	text-align: center;
 }
@@ -160,8 +169,6 @@ form fieldset legend {
 	letter-spacing: 0.05em;
 	color: #e0e0e0;
 }
-
-/* Inputs and textareas */
 .form-registration input[type='text'],
 .form-registration input[type='email'],
 .form-registration input[type='number'] {
@@ -178,15 +185,12 @@ form fieldset legend {
 	outline-offset: 2px;
 	outline-color: transparent;
 }
-
 .form-registration input[type='text']::placeholder,
 .form-registration input[type='email']::placeholder,
 .form-registration input[type='number']::placeholder {
 	color: #bbb;
 	font-style: italic;
 }
-
-/* Input focus effect */
 .form-registration input[type='text']:focus,
 .form-registration input[type='email']:focus,
 .form-registration input[type='number']:focus {
@@ -196,7 +200,7 @@ form fieldset legend {
 	color: #fff;
 }
 
-/* Fieldset and legend styling */
+/* Forms */
 form fieldset {
 	border: 1.5px solid rgba(255, 255, 255, 0.3);
 	border-radius: 0.8rem;
@@ -204,14 +208,11 @@ form fieldset {
 	margin-bottom: 1rem;
 	background: rgba(255, 255, 255, 0.05);
 }
-
 form fieldset legend {
 	padding: 0 0.6rem;
 	font-size: 1rem;
 	color: #ccc;
 }
-
-/* Radio buttons */
 form fieldset label {
 	margin-right: 1.5rem;
 	font-weight: 400;
@@ -222,7 +223,6 @@ form fieldset label {
 	align-items: center;
 	gap: 0.4rem;
 }
-
 form fieldset input[type='radio'] {
 	accent-color: #46c7ef;
 	cursor: pointer;
@@ -233,7 +233,7 @@ form fieldset input[type='radio'] {
 
 /* Button */
 .button {
-	background-color: #46c7ef;
+	background-color: white;
 	color: #000;
 	font-weight: 700;
 	padding: 0.75rem 1.5rem;
@@ -247,13 +247,154 @@ form fieldset input[type='radio'] {
 	box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
 	text-decoration: none;
 }
-
+.button.button--main {
+	background-color: #46c7ef;
+}
 .button:hover,
 .button:focus {
 	background-color: #39a3d9;
 	box-shadow: 0 6px 14px rgba(57, 163, 217, 0.7);
 	transform: translateY(-2px);
 	outline: none;
+}
+
+/* Footer */
+.site-footer {
+	height: var(--footer-height);
+	text-align: center;
+	padding: 2rem 1rem;
+	font-size: 0.9rem;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* form-contact */
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	margin-top: 1.5rem;
+	padding-bottom: 1rem;
+}
+.form-contact .form-group {
+	display: flex;
+	flex-direction: column;
+}
+.form-contact label {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.03em;
+	color: #e0e0e0;
+}
+.form-contact input[type='text'],
+.form-contact input[type='email'],
+.form-contact textarea {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	font-size: 1rem;
+	transition:
+		border-color 0.3s ease,
+		background-color 0.3s ease;
+	resize: vertical;
+	min-height: 50px;
+}
+.form-contact input[type='text']:focus,
+.form-contact input[type='email']:focus,
+.form-contact textarea:focus {
+	border-color: #46c7ef;
+	background-color: rgba(255, 255, 255, 0.15);
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
+}
+.form-contact textarea {
+	min-height: 120px;
+}
+.form-contact button[type='submit'] {
+	align-self: center;
+	width: 100%;
+	max-width: 250px;
+	margin-top: 1rem;
+}
+.contact-actions .button.email-obfuscated {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/* Tables */
+medium
+The styles for .custom-table are spread across multiple, sometimes redundant, rule sets. This makes the CSS harder to read and maintain. For example, properties like text-align, padding, and border are defined multiple times. Consolidating these into a more organized and concise set of rules would improve maintainability.
+
+.custom-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.custom-table th,
+.custom-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.custom-table td {
+	text-align: left;
+}
+.custom-table th {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.custom-table thead tr th {
+	background: #261775;
+}
+.custom-table th:first-child,
+.custom-table td:first-child {
+	width: 30%;
+}
+
+/* Other */
+.center-section {
+	text-align: center;
+}
+.moderators {
+	list-style-type: none;
+}
+.team-avatar {
+	width: 60px;
+}
+.role-admin {
+	color: red;
+}
+.role-leader {
+	color: #ed7014;
+}
+
+.role-moderator {
+	color: yellow;
+}
+
+/* Github profile */
+.github-profile {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.github-profile--big, .github-profile--big img.github-avatar {
+  width: 300px;
+}
+.github-profile--medium, .github-profile--medium img.github-avatar {
+  width: 220px;
 }
 
 /* Responsive */
@@ -276,80 +417,6 @@ form fieldset input[type='radio'] {
 		font-size: 1.2rem;
 	}
 }
-
-/* Footer */
-.site-footer {
-	height: var(--footer-height);
-	text-align: center;
-	padding: 2rem 1rem;
-	font-size: 0.9rem;
-	color: rgba(255, 255, 255, 0.6);
-}
-
-/* NEW FORM STYLING FOR .form-contact */
-.form-contact {
-	display: flex;
-	flex-direction: column;
-	gap: 1.25rem;
-	margin-top: 1.5rem;
-	padding-bottom: 1rem;
-}
-
-.form-contact .form-group {
-	display: flex;
-	flex-direction: column;
-}
-
-.form-contact label {
-	font-weight: 600;
-	margin-bottom: 0.5rem;
-	letter-spacing: 0.03em;
-	color: #e0e0e0;
-}
-
-.form-contact input[type='text'],
-.form-contact input[type='email'],
-.form-contact textarea {
-	width: 100%;
-	padding: 0.75rem 1rem;
-	border-radius: 0.5rem;
-	border: 1px solid rgba(255, 255, 255, 0.25);
-	background-color: rgba(255, 255, 255, 0.1);
-	color: #ffffff;
-	font-size: 1rem;
-	transition:
-		border-color 0.3s ease,
-		background-color 0.3s ease;
-	resize: vertical;
-	min-height: 50px;
-}
-
-.form-contact input[type='text']:focus,
-.form-contact input[type='email']:focus,
-.form-contact textarea:focus {
-	border-color: #46c7ef;
-	background-color: rgba(255, 255, 255, 0.15);
-	outline: none;
-	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
-}
-
-.form-contact textarea {
-	min-height: 120px;
-}
-
-.form-contact button[type='submit'] {
-	align-self: center;
-	width: 100%;
-	max-width: 250px;
-	margin-top: 1rem;
-}
-
-.contact-actions .button.email-obfuscated {
-	display: block;
-	width: 100%;
-	text-align: center;
-}
-
 @media (max-width: 500px) {
 	.form-contact input[type='text'],
 	.form-contact input[type='email'],
@@ -357,92 +424,4 @@ form fieldset input[type='radio'] {
 		font-size: 0.9rem;
 		padding: 0.6rem 0.8rem;
 	}
-}
-
-.management-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-.management-table th,
-.management-table td {
-	text-align: center;
-	padding: 8px;
-	border: 1px solid #ddd;
-}
-.management-table th:first-child,
-.management-table td:first-child {
-	width: 30%;
-}
-
-.meetups-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-.meetups-table th,
-.meetups-table td {
-	border: 1px solid #ddd;
-	padding: 8px;
-	text-align: left;
-}
-.meetups-table th {
-	background-color: black;
-	color: white;
-}
-
-.books-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-.books-table th,
-.books-table td {
-	border: 1px solid #ddd;
-	padding: 8px;
-}
-.books-table th {
-	text-align: center;
-	color: white;
-	background-color: black;
-}
-
-/* This CSS makes all images responsive, scaling them down to fit their containers. */
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
-/* This new rule centers all headings (H1, H2, and H3). */
-h1,
-h2,
-h3 {
-	text-align: center;
-}
-
-/* Styling for the entire section to be centered */
-.center-section {
-	text-align: center;
-}
-
-.moderators {
-	list-style-type: none;
-}
-
-.team-avatar {
-	width: 60px;
-}
-
-.role-admin {
-	color: red;
-}
-
-.role-committee {
-	color: #800080;
-}
-
-.role-leader {
-	color: #ed7014;
-}
-
-.role-moderator {
-	color: yellow;
 }

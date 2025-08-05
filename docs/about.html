@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-    <style>
-      /* Basic CSS for the team avatars to ensure they are responsive and have a clean appearance. */
-      .github-avatar {
-          height: auto;
-          border-radius: 50%;
-          border: 2px solid #ccc;
-          margin-bottom: 5px;
-      }
-      /* Additional styles to correctly center the table */
-      .github-table {
-          margin: 0 auto;
-          width: fit-content; /* This ensures the table width is based on content, allowing margin: auto to work */
-      }
-    </style>
   </head>
   <body>
     <div class="background-overlay">
@@ -43,7 +29,8 @@
             <a href="/terms.html">Terms</a>
             <a href="/contact.html">Contact</a>
         </nav>
-        <section>
+
+        <section class="section">
             <h2><span aria-hidden="true">🏢</span> Who are we?</h2>
             <p>Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement. We organize regular meetups where people can play chess in a relaxed and friendly environment. We are registered in Queensland and have a dedicated team of organizers.</p>
             <br>
@@ -69,9 +56,10 @@
                 </li>
             </ul>
         </section>
-        <section>
+
+        <section class="section">
           <h2><span aria-hidden="true">👥</span> Management Committee</h2>
-          <table class="management-table">
+          <table class="custom-table">
             <thead>
               <tr>
                 <th scope="col">Role</th>
@@ -80,29 +68,30 @@
             </thead>
             <tbody>
               <tr>
-                <td>President</td>
+                <th scope="row">President</td>
                 <td>Jimmy Joe</td>
               </tr>
               <tr>
-                <td>Treasurer</td>
+                <th scope="row">Treasurer</td>
                 <td><a href="https://github.com/LuckyNotGood">Matt McLean</a></td>
               </tr>
               <tr>
-                <td>Secretary</td>
+                <th scope="row">Secretary</td>
                 <td>Steve</td>
               </tr>
               <tr>
-                <td>Auditor</td>
+                <th scope="row">Auditor</td>
                 <td><a href="https://github.com/garveybiz">Rob Garvey</a></td>
               </tr>
               <tr>
-                <td>General Members</td>
+                <th scope="row">General Members</td>
                 <td>Adam Lomsargis, Ben M, <a href="https://github.com/jbampton">John Bampton</a></td>
               </tr>
             </tbody>
           </table>
         </section>
-        <section>
+
+        <section class="section">
           <h2><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
           <ul>
             <li><strong>Organizer</strong>: Matt McLean: "A good player is always lucky" - Capablanca</li>
@@ -129,11 +118,12 @@
             </li>
           </ul>
         </section>
-        <section class="center-section">
+
+        <section class="section center-section">
             <h2><span aria-hidden="true">🛠️</span> GitHub Team</h2>
+
             <h3><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
-            <br>
-                <div class="github-profile">
+                <div class="github-profile github-profile--big">
                     <a href="https://github.com/jbampton" class="role-admin">
                         <img class="github-avatar" src="https://avatars.githubusercontent.com/u/418747?v=4&s=350" alt="jbampton avatar">
                         <br>
@@ -143,9 +133,9 @@
                     </a>
                 </div>
             <br>
+
             <h3><span aria-hidden="true">💾</span> Developers</h3>
-            <br>
-            <div class="github-profile">
+            <div class="github-profile github-profile--medium">
                 <a href="https://github.com/BaseMax" class="role-moderator">
                     <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar">
                     <br>
@@ -155,24 +145,10 @@
                 </a>
             </div>
             <br>
+
             <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
-            <br>
-            <table class="github-table">
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="https://github.com/jbampton" class="role-admin">
-                                <img class="github-avatar" src="https://avatars.githubusercontent.com/u/418747?v=4&s=125" alt="jbampton avatar">
-                                <br>
-                                <span>John Bampton</span>
-                                <br>
-                                <span>@jbampton</span>
-                            </a>
-                        </td>
-                        <td>
-                            <span class="role-leader">Jasper</span>
-                        </td>
-                        <td>
+              <!-- Jasper -->
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/therealnugget" class="role-leader">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=125" alt="therealnugget avatar">
                                 <br>
@@ -180,8 +156,8 @@
                                 <br>
                                 <span>@therealnugget</span>
                             </a>
-                        </td>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/anufdo" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar">
                                 <br>
@@ -189,10 +165,8 @@
                                 <br>
                                 <span>@anufdo</span>
                             </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/ayushrana182" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=125" alt="Ayush Rana avatar">
                                 <br>
@@ -200,8 +174,8 @@
                                 <br>
                                 <span>@ayushrana182</span>
                             </a>
-                        </td>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/prio101" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=125" alt="Mahabub Islam Prio avatar">
                                 <br>
@@ -209,28 +183,17 @@
                                 <br>
                                 <span>@prio101</span>
                             </a>
-                        </td>
-                        <td>
-                            <a href="https://github.com/LuckyNotGood" class="role-committee">
+              </div>
+              <div class="github-profile github-profile--small">
+                            <a href="https://github.com/LuckyNotGood" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=125" alt="Matt McLean avatar">
                                 <br>
                                 <span>Matt McLean</span>
                                 <br>
                                 <span>@LuckyNotGood</span>
                             </a>
-                        </td>
-                        <td>
-                            <a href="https://github.com/BaseMax" class="role-moderator">
-                                <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=125" alt="Max Base avatar">
-                                <br>
-                                <span>Max Base</span>
-                                <br>
-                                <span>@BaseMax</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/mohammadlotfia" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=125" alt="Mohammad Lotfi Akbarabadi avatar">
                                 <br>
@@ -238,8 +201,8 @@
                                 <br>
                                 <span>@mohammadlotfia</span>
                             </a>
-                        </td>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/udha" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=125" alt="Nicholas Meredith avatar">
                                 <br>
@@ -247,17 +210,17 @@
                                 <br>
                                 <span>@udha</span>
                             </a>
-                        </td>
-                        <td>
-                            <a href="https://github.com/garveybiz" class="role-committee">
+              </div>
+              <div class="github-profile github-profile--small">
+                            <a href="https://github.com/garveybiz" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=125" alt="Rob Garvey avatar">
                                 <br>
                                 <span>Rob Garvey</span>
                                 <br>
                                 <span>@garveybiz</span>
                             </a>
-                        </td>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/smriad" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=125" alt="SM Riad avatar">
                                 <br>
@@ -265,10 +228,8 @@
                                 <br>
                                 <span>@smriad</span>
                             </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+              </div>
+              <div class="github-profile github-profile--small">
                             <a href="https://github.com/ugifractal" class="role-moderator">
                                 <img class="github-avatar" src="https://avatars.githubusercontent.com/u/70807?v=4&s=125" alt="sugiarto avatar">
                                 <br>
@@ -276,13 +237,10 @@
                                 <br>
                                 <span>@ugifractal</span>
                             </a>
-                        </td>
-                        <td colspan="3"></td>
-                    </tr>
-                </tbody>
-            </table>
+                          </div>
         </section>
-        <section>
+
+        <section class="section">
             <h2><span aria-hidden="true">🎲</span> Games that we play</h2>
             <ul>
                 <li>
@@ -303,8 +261,9 @@
                 </li>
             </ul>
         </section>
-        <section>
-          <h2><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
+ 
+        <section class="section">
+           <h2><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
           <ul>
             <li><a href="https://www.chessplus.com/">Chessplus</a>: <a href="https://www.chessplus.com/products/chessplus-everyday-edition">Everyday Edition</a>
               <ul>
@@ -313,7 +272,8 @@
             </li>
           </ul>
         </section>
-        <section>
+
+        <section class="section">
           <h2><span aria-hidden="true">♣️</span> Games we might play in future</h2>
           <ul>
             <li><a href="https://en.wikipedia.org/wiki/Go_(game)">Go</a> - at least one small Go set</li>
@@ -321,9 +281,10 @@
             <li><a href="https://en.wikipedia.org/wiki/Xiangqi">Xiangqi (Chinese chess)</a> - at least one Xiangqi set</li>
           </ul>
         </section>
-        <section>
-          <h2><span aria-hidden="true">📖</span> Chess books we recommend</h2>
-          <table class="books-table">
+ 
+        <section class="section">
+           <h2><span aria-hidden="true">📖</span> Chess books we recommend</h2>
+          <table class="custom-table">
             <thead>
               <tr>
                 <th scope="col">Title</th>
@@ -415,27 +376,31 @@
             </tbody>
           </table>
         </section>
-        <section>
-          <h2><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
+
+        <section class="section">
+           <h2><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
           <figure>
             <a href="assets/images/standard-4-player-chess.jpg"><img src="assets/images/standard-4-player-chess.jpg" alt="Standard 4 Player Chess" /></a>
           </figure>
         </section>
-        <section>
-          <h2><span aria-hidden="true">🏡</span> Garden Room — Random Days Gone Bye</h2>
+
+        <section class="section">
+           <h2><span aria-hidden="true">🏡</span> Garden Room — Random Days Gone Bye</h2>
           <figure>
             <a href="assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg"><img src="assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg" alt="Harmegedo The Board of Lords at the Garden Room" /></a>
           </figure>
         </section>
-        <section>
-          <h2><span aria-hidden="true">🧙‍♂️</span> Never Underestimate the Power of Jedi Master Big Bird</h2>
+ 
+        <section class="section">
+           <h2><span aria-hidden="true">🧙‍♂️</span> Never Underestimate the Power of Jedi Master Big Bird</h2>
           <div style="display: flex; gap: 1rem;">
             <a href="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg"><img src="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg" alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board." /></a>
             <a href="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg"><img src="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg" alt="Another view of Jedi Master Big Bird playing chess." /></a>
           </div>
         </section>
-        <section>
-          <h2><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
+ 
+        <section class="section">
+           <h2><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
             <a href="assets/images/quaternity-1.png">
               <img src="assets/images/quaternity-1.png" alt="Quaternity board with pieces in starting position." />
@@ -453,6 +418,7 @@
         </section>
       </main>
     </div>
+    <!-- Footer -->
     <footer class="site-footer">
       <p>
         &copy; <span id="year"></span> Brisbane Social Chess. All rights
