@@ -74,4 +74,13 @@ npx serve
 
 ---
 
+## Build the Docker image for running `pre-commit` easily
+
+```bash
+docker build -t my-go-precommit .
+docker run --rm -v "$PWD":/app -w /app my-go-precommit
+```
+
+---
+
 © 2025 Brisbane Social Chess
