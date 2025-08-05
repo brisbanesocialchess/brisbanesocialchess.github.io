@@ -325,9 +325,6 @@ form fieldset input[type='radio'] {
 }
 
 /* Tables */
-medium
-The styles for .custom-table are spread across multiple, sometimes redundant, rule sets. This makes the CSS harder to read and maintain. For example, properties like text-align, padding, and border are defined multiple times. Consolidating these into a more organized and concise set of rules would improve maintainability.
-
 .custom-table {
 	width: 100%;
 	border-collapse: collapse;
