@@ -9,10 +9,10 @@ repos:
     hooks:
       - id: identity
         name: Run identity
-        description: run the identity check
+        description: Run the identity check
       - id: check-hooks-apply
         name: Check hooks apply to the repository
-        description: useful when testing new hooks to see if they apply to the repository
+        description: Useful when testing new hooks to see if they apply to the repository
   - repo: local
     hooks:
       - id: check-zip-file-is-not-committed
@@ -28,7 +28,7 @@ repos:
     hooks:
       - id: codespell
         name: Run codespell
-        description: check spelling with codespell
+        description: Check spelling with codespell
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: '(package-lock\.json|yarn\.lock)$'
   - repo: https://github.com/Lucas-C/pre-commit-hooks
@@ -48,45 +48,69 @@ repos:
         description: Adds a Markdown table of contents
         files: \.md$
         exclude: \.github/CODE_OF_CONDUCT\.md
+  - repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+      - id: isort
+        name: isort (python)
+        description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.27.2
     hooks:
       - id: gitleaks
-        name: run gitleaks
-        description: check for secrets with gitleaks
+        name: Run gitleaks
+        description: Check for secrets with gitleaks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: end-of-file-fixer
-        name: Makes sure files end in a newline and only a newline
+        name: Run end-of-file-fixer
+        description: Makes sure files end in a newline and only a newline
       - id: check-case-conflict
-        name: Check for files with names that would conflict on a case-insensitive filesystem like MacOS HFS+ or Windows FAT
+        name: Run check-case-conflict
+        description: Check for files with names that would conflict on a case-insensitive filesystem like MacOS HFS+ or Windows FAT
       - id: check-illegal-windows-names
-        name: Check for files that cannot be created on Windows
+        name: Run check-illegal-windows-names
+        description: Check for files that cannot be created on Windows
       - id: check-merge-conflict
-        name: Check for files that contain merge conflict strings
+        name: Run check-merge-conflict
+        description: Check for files that contain merge conflict strings
       - id: check-vcs-permalinks
-        name: Ensures that links to vcs websites are permalinks
+        name: Run check-vcs-permalinks
+        description: Ensures that links to vcs websites are permalinks
       - id: detect-aws-credentials
-        name: Checks for the existence of AWS secrets that you have set up with the AWS CLI
+        name: Run detect-aws-credentials
+        description: Checks for the existence of AWS secrets that you have set up with the AWS CLI
         args: [--allow-missing-credentials]
       - id: detect-private-key
-        name: Checks for the existence of private keys
+        name: Run detect-private-key
+        description: Checks for the existence of private keys
+      - id: file-contents-sorter
+        name: Run file-contents-sorter
+        description: Sorts and removes duplicates from the codespell dictionary
+        args: [--unique]
+        files: ^\.github/linters/codespell\.txt$
       - id: fix-byte-order-marker
-        name: Removes UTF-8 byte order marker
+        name: Run fix-byte-order-marker
+        description: Removes UTF-8 byte order marker
       - id: forbid-submodules
-        name: Prevent addition of new git submodules
+        name: Run forbid-submodules
+        description: Prevent addition of new git submodules
       - id: trailing-whitespace
-        name: Trims trailing whitespace
+        name: Run trailing-whitespace
+        description: Trims trailing whitespace
         args: [--markdown-linebreak-ext=md]
       - id: check-yaml
-        name: Attempts to load all yaml files to verify syntax
+        name: Run check-yaml
+        description: Attempts to load all yaml files to verify syntax
       - id: check-json
-        name: Attempts to load all json files to verify syntax
+        name: Run check-json
+        description: Attempts to load all json files to verify syntax
       # - id: pretty-format-json
       - id: check-added-large-files
-        name: Prevent giant files from being committed
-        args: ['--maxkb=1000']
+        name: Run check-added-large-files
+        description: Prevent giant files from being committed
+        args: ['--maxkb=1500']
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
@@ -103,12 +127,14 @@ repos:
   - repo: local
     hooks:
       - id: npm-ci
-        name: Run npm ci install
+        name: Run npm-ci
+        description: Run npm ci install
         entry: npm ci
         language: system
         pass_filenames: false
       - id: test-lerna
-        name: Run lerna tests
+        name: Run test-lerna
+        description: Run learn tests
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
@@ -120,7 +146,8 @@ repos:
         language: node
         additional_dependencies: ['prettier@3.6.2']
       - id: npm-audit
-        name: Run npm audit
+        name: Run npm-audit
+        description: Run npm audit
         entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
@@ -162,6 +189,7 @@ repos:
   #   rev: v0.9.0
   #   hooks:
   #     - id: shellcheck
+  #       name: run shellcheck
   - repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
@@ -170,12 +198,12 @@ repos:
         description: Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting
         language_version: python3
         args: ['--line-length=88']
-  # - repo: https://github.com/PyCQA/bandit
-  #   rev: 1.8.6
-  #   hooks:
-  #     - id: bandit
-  #       name: A security linter from PyCQA
-  #       description: Bandit is a tool designed to find common security issues in Python code
-  #       args: ["-c", "bandit.yaml"]
-  #       files: \.py$
-  #       pass_filenames: false
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.8.6
+    hooks:
+      - id: bandit
+        name: A security linter from PyCQA
+        description: Bandit is a tool designed to find common security issues in Python code
+        args: ['-c', 'bandit.yaml']
+        files: \.py$
+        pass_filenames: false

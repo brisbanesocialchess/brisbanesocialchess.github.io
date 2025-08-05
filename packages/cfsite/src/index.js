@@ -1,13 +1,22 @@
+// Const variables
+const JSON_HEADERS = { 'Content-Type': 'application/json' };
+
+const corsHeadersCache = new Map();
+
+const routes = {
+	'GET /': handleGetRoot,
+	'GET /health': handleHealthCheck,
+	'POST /api/contact': handleContact,
+	'POST /api/register': handleRegister,
+};
+
+// Functions
 function uuidv4() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
 		const v = c === 'x' ? c : (c & 0x3) | 0x8;
 		return v.toString(16);
 	});
 }
-
-const JSON_HEADERS = { 'Content-Type': 'application/json' };
-
-const corsHeadersCache = new Map();
 
 function getCorsHeaders(request) {
 	const origin = request.headers.get('Origin') || '*';
@@ -75,12 +84,13 @@ async function parseJson(request) {
 	}
 }
 
+// Route functions
 async function handleContact(request) {
 	try {
-		const { name, email, message } = await parseJson(request);
+		const { name, email, subject, message } = await parseJson(request);
 
-		if (!name || !email || !message) {
-			return createErrorResponse('Missing required fields: name, email, message', request, 422);
+		if (!name || !email || !subject || !message) {
+			return createErrorResponse('Missing required fields: name, email, subject, message', request, 422);
 		}
 
 		console.log(`[Contact] from ${name} <${email}>: ${message}`);
@@ -93,13 +103,14 @@ async function handleContact(request) {
 
 async function handleRegister(request) {
 	try {
-		const { username, email } = await parseJson(request);
+		// discordusername
+		const { fname, lname, birthyear, gender, email } = await parseJson(request);
 
-		if (!username || !email) {
-			return createErrorResponse('Missing required fields: username, email', request, 422);
+		if (!fname || !lname || !birthyear || !gender || !email) {
+			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, email', request, 422);
 		}
 
-		console.log(`[Register] username: ${username}, email: ${email}`);
+		console.log(`[Register] fname: ${fname}, lname: ${lname}`);
 
 		return createJsonResponse({ message: 'Registration complete!', status: 'ok' }, request);
 	} catch (err) {
@@ -107,7 +118,7 @@ async function handleRegister(request) {
 	}
 }
 
-function handleGetRoot(request) {
+async function handleGetRoot(request) {
 	return new Response('Hello World!', {
 		headers: {
 			...getCorsHeaders(request),
@@ -121,13 +132,6 @@ function handleGetRoot(request) {
 async function handleHealthCheck(request) {
 	return createJsonResponse({ status: 'ok', uptime: Date.now() }, request);
 }
-
-const routes = {
-	'GET /': handleGetRoot,
-	'GET /health': handleHealthCheck,
-	'POST /api/contact': handleContact,
-	'POST /api/register': handleRegister,
-};
 
 export default {
 	async fetch(request, env, ctx) {
