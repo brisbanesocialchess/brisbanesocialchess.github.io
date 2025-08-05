@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <style>
+      /* Basic CSS for the team avatars to ensure they are responsive and have a clean appearance. */
+      .github-avatar {
+          height: auto;
+          border-radius: 50%;
+          border: 2px solid #ccc;
+          margin-bottom: 5px;
+      }
+    </style>
   </head>
   <body>
     <div class="background-overlay">
@@ -60,8 +69,8 @@
           <table class="management-table">
             <thead>
               <tr>
-                <th>Role</th>
-                <th>Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Name</th>
               </tr>
             </thead>
             <tbody>
@@ -118,47 +127,173 @@
         <section class="center-section">
             <h2><span aria-hidden="true">🛠️</span> GitHub Team</h2>
             <h3><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
-            <article>
-                <a href="https://github.com/jbampton">
-                    <img class="team-avatar"
-                         src="https://avatars.githubusercontent.com/u/418747?v=4"
-                         alt="jbampton" title="jbampton">
-                    <br>
-                    <sub><b>John Bampton</b></sub>
-                    <br>
-                    <sup>@jbampton</sup>
-                </a>
-            </article>
+            <br>
+                <div class="github-profile">
+                    <a href="https://github.com/jbampton" class="red-link">
+                        <img class="github-avatar" src="https://avatars.githubusercontent.com/u/418747?v=4&s=350" alt="jbampton avatar">
+                        <br>
+                        <span>John Bampton</span>
+                        <br>
+                        <span>@jbampton</span>
+                    </a>
+                </div>
             <br>
             <h3><span aria-hidden="true">💾</span> Developers</h3>
-            <article>
-                <a href="https://github.com/BaseMax">
-                    <img class="team-avatar"
-                         src="https://avatars.githubusercontent.com/u/2658040?v=4"
-                         alt="Max Base" title="Max Base">
+            <br>
+            <div class="github-profile">
+                <a href="https://github.com/BaseMax" class="yellow-link">
+                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar">
                     <br>
-                    <sub><b>Max Base</b></sub>
+                    <span>Max Base</span>
                     <br>
-                    <sup>@BaseMax</sup>
+                    <span>@BaseMax</span>
                 </a>
-            </article>
+            </div>
             <br>
             <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
-            <ul class="moderators">
-                <li><a href="https://github.com/jbampton" class="role-admin">John Bampton</a></li>
-                <li class="role-leader">Jasper</li>
-                <li><a href="https://github.com/therealnugget" class="role-leader">therealnugget</a></li>
-                <li><a href="https://github.com/anufdo" class="role-moderator">Anuradha Fernando</a></li>
-                <li><a href="https://github.com/ayushrana182" class="role-moderator">Ayush Rana</a></li>
-                <li><a href="https://github.com/prio101" class="role-moderator">Mahabub Islam Prio</a></li>
-                <li><a href="https://github.com/LuckyNotGood" class="role-moderator">Matt McLean</a></li>
-                <li><a href="https://github.com/BaseMax" class="role-moderator">Max Base</a></li>
-                <li><a href="https://github.com/mohammadlotfia" class="role-moderator">Mohammad Lotfi Akbarabadi</a></li>
-                <li><a href="https://github.com/udha" class="role-moderator">Nicholas Meredith</a></li>
-                <li><a href="https://github.com/garveybiz" class="role-moderator">Rob Garvey</a></li>
-                <li><a href="https://github.com/smriad" class="role-moderator">SM Riad</a></li>
-                <li><a href="https://github.com/ugifractal" class="role-moderator">sugiarto</a></li>
-            </ul>
+            <br>
+            <table class="github-table">
+                <tbody>
+                    <tr>
+                        <td>
+
+                                <a href="https://github.com/jbampton" class="red-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/418747?v=4&s=100" alt="jbampton avatar">
+                                    <br>
+                                    <span>John Bampton</span>
+                                    <br>
+                                    <span>@jbampton</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/therealnugget" class="orange-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=100" alt="therealnugget avatar">
+                                    <br>
+                                    <span>therealnugget</span>
+                                    <br>
+                                    <span>@therealnugget</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/anufdo" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=100" alt="Anuradha Fernando avatar">
+                                    <br>
+                                    <span>Anuradha Fernando</span>
+                                    <br>
+                                    <span>@anufdo</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/ayushrana182" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=100" alt="Ayush Rana avatar">
+                                    <br>
+                                    <span>Ayush Rana</span>
+                                    <br>
+                                    <span>@ayushrana182</span>
+                                </a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                                <a href="https://github.com/prio101" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=100" alt="Mahabub Islam Prio avatar">
+                                    <br>
+                                    <span>Mahabub Islam Prio</span>
+                                    <br>
+                                    <span>@prio101</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/LuckyNotGood" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=100" alt="Matt McLean avatar">
+                                    <br>
+                                    <span>Matt McLean</span>
+                                    <br>
+                                    <span>@LuckyNotGood</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/BaseMax" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=100" alt="Max Base avatar">
+                                    <br>
+                                    <span>Max Base</span>
+                                    <br>
+                                    <span>@BaseMax</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/mohammadlotfia" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=100" alt="Mohammad Lotfi Akbarabadi avatar">
+                                    <br>
+                                    <span>Mohammad Lotfi Akbarabadi</span>
+                                    <br>
+                                    <span>@mohammadlotfia</span>
+                                </a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                                <a href="https://github.com/udha" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=100" alt="Nicholas Meredith avatar">
+                                    <br>
+                                    <span>Nicholas Meredith</span>
+                                    <br>
+                                    <span>@udha</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/garveybiz" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=100" alt="Rob Garvey avatar">
+                                    <br>
+                                    <span>Rob Garvey</span>
+                                    <br>
+                                    <span>@garveybiz</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/smriad" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/7951235?v=4&s=100" alt="SM Riad avatar">
+                                    <br>
+                                    <span>SM Riad</span>
+                                    <br>
+                                    <span>@smriad</span>
+                                </a>
+
+                        </td>
+                        <td>
+
+                                <a href="https://github.com/ugifractal" class="yellow-link">
+                                    <img class="github-avatar" src="https://avatars.githubusercontent.com/u/1321711?v=4&s=100" alt="sugiarto avatar">
+                                    <br>
+                                    <span>sugiarto</span>
+                                    <br>
+                                    <span>@ugifractal</span>
+                                </a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2><span aria-hidden="true">🎲</span> Games that we play</h2>
@@ -277,7 +412,7 @@
               </tr>
               <tr>
                 <td><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
-                <td>Eade &amp; Lawrence</td>
+                <td>Eade & Lawrence</td>
                 <td>Apple Press A Quarto Book</td>
               </tr>
               <tr>
