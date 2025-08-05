@@ -204,6 +204,6 @@ repos:
       - id: bandit
         name: A security linter from PyCQA
         description: Bandit is a tool designed to find common security issues in Python code
-        args: ['-c', 'bandit.yaml']
+        args: ['-c', '.bandit']
         files: \.py$
         pass_filenames: false
