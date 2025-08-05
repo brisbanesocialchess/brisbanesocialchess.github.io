@@ -15,6 +15,11 @@
         height: auto;
         display: block;
       }
+
+      /* This new rule centers all headings (H1, H2, and H3). */
+      h1, h2, h3 {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -192,6 +197,100 @@
           </ul>
         </section>
         <section>
+          <h2><span aria-hidden="true">📖</span> Book List</h2>
+          <table class="books-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author(s)</th>
+                <th>Publisher</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>101 Questions On How To Play Chess</strong></td>
+                <td>Fred Wilson</td>
+                <td>Dover Game And Puzzle Activity Books</td>
+              </tr>
+              <tr>
+                <td><strong>Bobby Fischer Teaches Chess</strong></td>
+                <td>Bobby Fischer, Stuart Margulies, Donn Mosenfelder</td>
+                <td>Basic Systems Inc, Bantam Books</td>
+              </tr>
+              <tr>
+                <td><strong>Chess for Kids</strong>: How to Play and Win</td>
+                <td>Richard James</td>
+                <td>Robinson; 2nd edition (2015)</td>
+              </tr>
+              <tr>
+                <td><strong>Chess Openings For Dummies</strong></td>
+                <td>James Eade</td>
+                <td>For Dummies</td>
+              </tr>
+              <tr>
+                <td><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
+                <td>Gary Kasparov</td>
+                <td>Penguin Books (2021)</td>
+              </tr>
+              <tr>
+                <td><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
+                <td>Murray Chandler</td>
+                <td>Gambit Publications Ltd</td>
+              </tr>
+              <tr>
+                <td><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
+                <td>John Nunn</td>
+                <td>Gambit Publications Ltd</td>
+              </tr>
+              <tr>
+                <td><strong>Learn Chess From The Greats</strong></td>
+                <td>Peter J. Tamburro, Jr.</td>
+                <td>Dover Publications</td>
+              </tr>
+              <tr>
+                <td><strong>Learn To Play Chess Like A Boss</strong></td>
+                <td>Patrick Wolff</td>
+                <td>Penguin Random House Dorling Kindersley</td>
+              </tr>
+              <tr>
+                <td><strong>Modern Chess Openings: MC0-15</strong></td>
+                <td>Nick de Firmian</td>
+                <td>Random House Puzzles and Games</td>
+              </tr>
+              <tr>
+                <td><strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong></td>
+                <td>Bobby Fischer</td>
+                <td>Batsford GB</td>
+              </tr>
+              <tr>
+                <td><strong>My System: Winning Chess Strategies</strong></td>
+                <td>Aron Nimzowitsch</td>
+                <td>SnowBall Publishing</td>
+              </tr>
+              <tr>
+                <td><strong>The Caro-Kann The Easy Way</strong></td>
+                <td>Thomas Engqvist</td>
+                <td>Batsford Chess</td>
+              </tr>
+              <tr>
+                <td><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
+                <td>Eade &amp; Lawrence</td>
+                <td>Apple Press A Quarto Book</td>
+              </tr>
+              <tr>
+                <td><strong>The Life and Games of Mikhail Tal</strong></td>
+                <td>Everyman Chess Classic</td>
+                <td>Everyman Chess</td>
+              </tr>
+              <tr>
+                <td><strong>The Usborne Complete Book of Chess</strong></td>
+                <td>Elizabeth Dalby</td>
+                <td>Usborne Publishing Ltd</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
           <h2><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
           <figure>
             <a href="assets/images/standard-4-player-chess.jpg"><img src="assets/images/standard-4-player-chess.jpg" alt="Standard 4 Player Chess" /></a>
@@ -229,7 +328,6 @@
         </section>
       </main>
     </div>
-    <!-- Footer -->
     <footer class="site-footer">
       <p>
         &copy; <span id="year"></span> Brisbane Social Chess. All rights

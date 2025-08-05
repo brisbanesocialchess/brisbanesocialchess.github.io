@@ -388,3 +388,18 @@ form fieldset input[type='radio'] {
 	background-color: black;
 	color: white;
 }
+
+.books-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.books-table th,
+.books-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.books-table th {
+	text-align: center;
+	color: white;
+	background-color: black;
+}
