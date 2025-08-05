@@ -373,3 +373,18 @@ form fieldset input[type='radio'] {
 .management-table td:first-child {
 	width: 30%;
 }
+
+.meetups-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.meetups-table th,
+.meetups-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+.meetups-table th {
+	background-color: black;
+	color: white;
+}
