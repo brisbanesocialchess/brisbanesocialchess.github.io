@@ -78,6 +78,13 @@ npx serve
 
 ```bash
 docker build -t my-go-precommit .
+or
+docker build --no-cache -t my-go-precommit .
+```
+
+And then:
+
+```bash
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
