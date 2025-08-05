@@ -111,7 +111,7 @@ li {
 }
 
 .section h2 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	margin-bottom: 0.4rem;
 	letter-spacing: 1px;
@@ -410,21 +410,18 @@ form fieldset input[type='radio'] {
 	background-color: black;
 }
 
-/* This CSS makes all images responsive, scaling them down to fit their containers. */
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
 
-/* This new rule centers all headings (H1, H2, and H3). */
 h1,
 h2,
 h3 {
 	text-align: center;
 }
 
-/* Styling for the entire section to be centered */
 .center-section {
 	text-align: center;
 }
@@ -449,16 +446,49 @@ h3 {
 	color: yellow;
 }
 
-/* About page */
+.github-profile a
+.github-table a
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+.github-avatar img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+}
 .github-avatar {
-	width: auto;
-	display: flex;
-	height: auto;
-	border-radius: 50%;
-	border: 2px solid #ccc;
-	margin-bottom: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+  object-fit: cover;
+  display: block;
 }
 .github-table {
 	margin: 0 auto;
 	width: fit-content;
+}
+.github-profile {
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.github-profile--big .github-avatar {
+  width: 300px;
+  height: 300px;
+}
+.github-profile--medium .github-avatar {
+  width: 220px;
+  height: 220px;
 }
