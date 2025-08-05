@@ -403,3 +403,35 @@ form fieldset input[type='radio'] {
 	color: white;
 	background-color: black;
 }
+
+/* This CSS makes all images responsive, scaling them down to fit their containers. */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* This new rule centers all headings (H1, H2, and H3). */
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+. /* Styling for the entire section to be centered */
+.center-section {
+	text-align: center;
+}
+
+/* Color classes for specific moderator names */
+.red-text {
+	color: red;
+}
+
+.orange-text {
+	color: #ed7014;
+}
+
+.yellow-text {
+	color: yellow;
+}
