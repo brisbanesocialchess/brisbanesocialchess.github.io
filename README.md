@@ -9,6 +9,8 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 [![CodeQL Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fcodeql.yml?label=codeql)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
 [![Dprint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fdprint.yml?label=dprint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
 [![Git Clone Matrix Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fgit-clone-matrix.yml?label=git-clone-matrix)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
+[![GitHub License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io)](LICENSE)
+[![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=github-pages)](https://brisbanesocialchess.github.io)
 [![Labeler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Flabeler.yml?label=labeler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
 [![Lerna Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Flerna.yml?label=lerna)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml)
 [![Ls-lint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fls-lint.yml?label=ls-lint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml)
@@ -28,6 +30,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
   - [Run Tests](#run-tests)
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Getting Started / Building the Site](#getting-started--building-the-site)
+- [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -70,6 +73,28 @@ To start a local development server with live reload, run:
 ```bash
 cd docs
 npx serve
+```
+
+---
+
+## Build the Docker image for running `pre-commit` easily
+
+```bash
+docker build -t my-go-precommit .
+or
+docker build --no-cache -t my-go-precommit .
+```
+
+And then:
+
+```bash
+docker run --rm -v "$PWD":/app -w /app my-go-precommit
+```
+
+Or if you want to run and keep the container and go into bash:
+
+```bash
+docker run -it -v "$PWD":/app -w /app my-go-precommit bash
 ```
 
 ---

@@ -23,6 +23,7 @@
           <a href="/">Home</a>
           <a href="/about.html">About</a>
           <a href="/games.html">Games</a>
+          <a href="/meetup.html">Meetups</a>
           <a href="/minutes.html">Minutes</a>
           <a href="/register.html" class="active">Register</a>
           <a href="/rules.html">Rules</a>
@@ -34,60 +35,47 @@
           <p>Please fill in the form below to join Brisbane Social Chess.</p>
           <form action="#" method="POST" class="form-registration" novalidate>
             <div class="form-group">
-              <label for="firstName">First Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+              <label for="firstName">First Name <span aria-hidden="true">*</span>
+              </label>
+              <input type="text" id="firstName" name="fname" required autocomplete="given-name" />
             </div>
             <div class="form-group">
-              <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+              <label for="lastName">Last Name <span aria-hidden="true">*</span>
+              </label>
+              <input type="text" id="lastName" name="lname" required autocomplete="family-name" />
             </div>
             <div class="form-group">
-              <label for="birthYear">Birth Year <span aria-hidden="true">*</span></label>
-              <input
-                type="number"
-                id="birthYear"
-                name="birthYear"
-                min="1900"
-                max="2025"
-                required
-                placeholder="e.g. 1990"
-              />
+              <label for="birthYear">Birth Year <span aria-hidden="true">*</span>
+              </label>
+              <input type="number" id="birthYear" name="birthyear" min="1900" max="2025" required placeholder="e.g. 1990" />
             </div>
             <fieldset class="form-group">
-              <legend>Gender <span aria-hidden="true">*</span></legend>
+              <legend>Gender <span aria-hidden="true">*</span>
+              </legend>
               <label>
-                <input type="radio" name="gender" value="male" required />
-                Male
-              </label>
+                <input type="radio" name="gender" value="male" required /> Male </label>
               <label>
-                <input type="radio" name="gender" value="female" />
-                Female
-              </label>
+                <input type="radio" name="gender" value="female" /> Female </label>
               <label>
-                <input type="radio" name="gender" value="other" />
-                Other
-              </label>
+                <input type="radio" name="gender" value="other" /> Other </label>
             </fieldset>
             <div class="form-group">
               <label for="discordUsername">Discord Username (optional)</label>
-              <input type="text" id="discordUsername" name="discordUsername" placeholder="e.g. User#1234" />
+              <input type="text" id="discordUsername" name="discordusername" placeholder="e.g. User#1234" />
             </div>
             <div class="form-group">
-              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <label for="email">Email <span aria-hidden="true">*</span>
+              </label>
               <input type="email" id="email" name="email" required autocomplete="email" />
             </div>
-            <button type="submit" class="button">Register</button>
+            <button type="submit" class="button button--main">Register</button>
           </form>
         </section>
       </main>
     </div>
-
     <!-- Footer -->
     <footer class="site-footer">
-      <p>
-        &copy; <span id="year"></span> Brisbane Social Chess. All rights
-        reserved.
-      </p>
+      <p> &copy; <span id="year"></span> Brisbane Social Chess. All rights reserved. </p>
     </footer>
     <script type="text/javascript" src="/script.js"></script>
   </body>
