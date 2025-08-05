@@ -391,46 +391,29 @@ form fieldset input[type='radio'] {
 }
 
 /* Github profile */
-.github-profile a
-{
+.github-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 150px;
-  height: 200px;
+  height: auto;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
 }
-.github-avatar img {
-	width: 150px;
-	height: 150px;
-	object-fit: contain;
-}
-.github-avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  margin-bottom: 10px;
-  object-fit: cover;
-  display: block;
-}
 .github-profile {
   margin: 10px;
   display: inline-block;
   vertical-align: top;
 }
-.github-profile--big .github-avatar {
+.github-profile--big, .github-profile--big img.github-avatar {
   width: 300px;
-  height: 300px;
 }
-.github-profile--medium .github-avatar {
+.github-profile--medium, .github-profile--medium img.github-avatar {
   width: 220px;
-  height: 220px;
 }
 
 /* Responsive */
