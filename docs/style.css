@@ -344,7 +344,7 @@ form fieldset input[type='radio'] {
 	margin-top: 1rem;
 }
 
-.form-contact .button.email-obfuscated {
+.contact-actions .button.email-obfuscated {
 	display: block;
 	width: 100%;
 	text-align: center;
