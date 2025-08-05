@@ -117,7 +117,7 @@ We use [pre-commit](https://pre-commit.com/) to automatically check your code fo
 **How to install (requires Python):**
 
 ```bash
-pip install pre-commit
+pip install --user pre-commit
 ```
 
 **Set up pre-commit hooks for this project:**
