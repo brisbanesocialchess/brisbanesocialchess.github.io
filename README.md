@@ -17,6 +17,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 [![Wrangler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fwrangler.yml?label=wrangler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
 
 [![GitHub License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io)](LICENSE)
+[![Discord](https://img.shields.io/discord/1299539471964049448?label=Discord)](https://discord.com/invite/JWBKhQmzvD)
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=github-pages)](https://brisbanesocialchess.github.io)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 
