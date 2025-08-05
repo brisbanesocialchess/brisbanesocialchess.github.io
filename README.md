@@ -88,6 +88,12 @@ And then:
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
+Or if you want to run and keep the container and go into bash:
+
+```bash
+docker run -it -v "$PWD":/app -w /app my-go-precommit bash
+```
+
 ---
 
 © 2025 Brisbane Social Chess
