@@ -100,6 +100,12 @@ ol {
 }
 
 /* Section formatting */
+.section h1,
+.section h2,
+.section h3 {
+	text-align: center;
+}
+
 .section h2 {
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -239,6 +245,7 @@ form fieldset input[type='radio'] {
 		background-color 0.3s ease,
 		transform 0.2s ease;
 	box-shadow: 0 4px 8px rgba(70, 199, 239, 0.4);
+	text-decoration: none;
 }
 
 .button:hover,
@@ -277,4 +284,165 @@ form fieldset input[type='radio'] {
 	padding: 2rem 1rem;
 	font-size: 0.9rem;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+/* NEW FORM STYLING FOR .form-contact */
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	margin-top: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+.form-contact .form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-contact label {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.03em;
+	color: #e0e0e0;
+}
+
+.form-contact input[type='text'],
+.form-contact input[type='email'],
+.form-contact textarea {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	font-size: 1rem;
+	transition:
+		border-color 0.3s ease,
+		background-color 0.3s ease;
+	resize: vertical;
+	min-height: 50px;
+}
+
+.form-contact input[type='text']:focus,
+.form-contact input[type='email']:focus,
+.form-contact textarea:focus {
+	border-color: #46c7ef;
+	background-color: rgba(255, 255, 255, 0.15);
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
+}
+
+.form-contact textarea {
+	min-height: 120px;
+}
+
+.form-contact button[type='submit'] {
+	align-self: center;
+	width: 100%;
+	max-width: 250px;
+	margin-top: 1rem;
+}
+
+.contact-actions .button.email-obfuscated {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	.form-contact input[type='text'],
+	.form-contact input[type='email'],
+	.form-contact textarea {
+		font-size: 0.9rem;
+		padding: 0.6rem 0.8rem;
+	}
+}
+
+.management-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.management-table th,
+.management-table td {
+	text-align: center;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+.management-table th:first-child,
+.management-table td:first-child {
+	width: 30%;
+}
+
+.meetups-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.meetups-table th,
+.meetups-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+.meetups-table th {
+	background-color: black;
+	color: white;
+}
+
+.books-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.books-table th,
+.books-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.books-table th {
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+/* This CSS makes all images responsive, scaling them down to fit their containers. */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* This new rule centers all headings (H1, H2, and H3). */
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+/* Styling for the entire section to be centered */
+.center-section {
+	text-align: center;
+}
+
+.moderators {
+	list-style-type: none;
+}
+
+.team-avatar {
+	width: 60px;
+}
+
+.role-admin {
+	color: red;
+}
+
+.role-committee {
+	color: #800080;
+}
+
+.role-leader {
+	color: #ed7014;
+}
+
+.role-moderator {
+	color: yellow;
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import time
 import os
+import time
 
 FRAME_DELAY = 1  # delay in seconds between frames
 

@@ -106,7 +106,7 @@ elmFormContact?.addEventListener('submit', async (e) => {
 // Init
 elmYear.textContent = getCurrentYear();
 
-const emailReversed = 'moc.liamg@tset.nhoj'; // reversed
+const emailReversed = 'ua.gro.ssehclaicosenabsirb@eettimmoc'; // reversed
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
 	if (el.getAttribute('data-email-href') !== null) {
@@ -115,4 +115,21 @@ elmEmailElements.forEach((el) => {
 	if (el.getAttribute('data-email-content') !== null) {
 		el.textContent = email;
 	}
+});
+
+window.addEventListener("message", e => {
+    // Step 1: Security check - Verify the message origin is chess.com
+    if (e.origin !== "https://www.chess.com") {
+      return; // Exit if the message is from an untrusted source
+    }
+
+    // Step 2: Robustness check - Ensure data and ID exist and frameHeight is a number
+    if (e.data?.id && typeof e.data?.frameHeight === 'number') {
+      const iframe = document.getElementById(e.data.id);
+      // If a matching iframe is found, set its height
+      if (iframe) {
+        const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
+        iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
+      }
+    }
 });

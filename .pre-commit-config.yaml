@@ -2,73 +2,157 @@
 default_stages: [pre-commit, pre-push]
 default_language_version:
   python: python3
-  node: 22.17.0
+  node: 22.18.0
 minimum_pre_commit_version: '3.2.0'
 repos:
   - repo: meta
     hooks:
       - id: identity
-        name: run identity
-        description: run the identity check
+        name: Run identity
+        description: Run the identity check
       - id: check-hooks-apply
-        name: check hooks apply to the repository
-        description: useful when testing new hooks to see if they apply to the repository
+        name: Check hooks apply to the repository
+        description: Useful when testing new hooks to see if they apply to the repository
+  - repo: local
+    hooks:
+      - id: check-zip-file-is-not-committed
+        name: Check no zip files are committed
+        description: Zip files are not allowed in the repository
+        language: fail
+        entry: |
+          Zip files are not allowed in the repository as they are hard to
+          track and have security implications. Please remove the zip file from the repository.
+        files: (?i)\.zip$
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        name: Run codespell
+        description: Check spelling with codespell
+        args: [--ignore-words=.github/linters/codespell.txt]
+        exclude: '(package-lock\.json|yarn\.lock)$'
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: chmod
+        name: Set file permissions
+        description: Does not run on Windows so setup as a manual hook
+        args: ['644']
+        files: \.md$
+        stages: [manual]
+  - repo: https://github.com/thlorenz/doctoc.git
+    rev: v2.2.0
+    hooks:
+      - id: doctoc
+        name: Add TOC for Markdown and RST files
+        description: Adds a Markdown table of contents
+        files: \.md$
+        exclude: \.github/CODE_OF_CONDUCT\.md
+  - repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+      - id: isort
+        name: isort (python)
+        description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.27.2
+    hooks:
+      - id: gitleaks
+        name: Run gitleaks
+        description: Check for secrets with gitleaks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: end-of-file-fixer
+        name: Run end-of-file-fixer
+        description: Makes sure files end in a newline and only a newline
       - id: check-case-conflict
+        name: Run check-case-conflict
+        description: Check for files with names that would conflict on a case-insensitive filesystem like MacOS HFS+ or Windows FAT
       - id: check-illegal-windows-names
+        name: Run check-illegal-windows-names
+        description: Check for files that cannot be created on Windows
       - id: check-merge-conflict
+        name: Run check-merge-conflict
+        description: Check for files that contain merge conflict strings
       - id: check-vcs-permalinks
+        name: Run check-vcs-permalinks
+        description: Ensures that links to vcs websites are permalinks
       - id: detect-aws-credentials
+        name: Run detect-aws-credentials
+        description: Checks for the existence of AWS secrets that you have set up with the AWS CLI
         args: [--allow-missing-credentials]
       - id: detect-private-key
+        name: Run detect-private-key
+        description: Checks for the existence of private keys
+      - id: file-contents-sorter
+        name: Run file-contents-sorter
+        description: Sorts and removes duplicates from the codespell dictionary
+        args: [--unique]
+        files: ^\.github/linters/codespell\.txt$
       - id: fix-byte-order-marker
+        name: Run fix-byte-order-marker
+        description: Removes UTF-8 byte order marker
       - id: forbid-submodules
+        name: Run forbid-submodules
+        description: Prevent addition of new git submodules
       - id: trailing-whitespace
+        name: Run trailing-whitespace
+        description: Trims trailing whitespace
         args: [--markdown-linebreak-ext=md]
       - id: check-yaml
+        name: Run check-yaml
+        description: Attempts to load all yaml files to verify syntax
       - id: check-json
+        name: Run check-json
+        description: Attempts to load all json files to verify syntax
       # - id: pretty-format-json
       - id: check-added-large-files
-        args: ['--maxkb=1000']
+        name: Run check-added-large-files
+        description: Prevent giant files from being committed
+        args: ['--maxkb=1500']
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
       - id: actionlint
+        name: Run actionlint
+        description: Static checker for GitHub Actions workflow files
   - repo: https://github.com/oxipng/oxipng
     rev: v9.1.5
     hooks:
       - id: oxipng
-        name: oxipng
+        name: Run oxipng
+        description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
   - repo: local
     hooks:
       - id: npm-ci
-        name: npm ci install
+        name: Run npm-ci
+        description: Run npm ci install
         entry: npm ci
         language: system
         pass_filenames: false
       - id: test-lerna
-        name: run lerna tests
+        name: Run test-lerna
+        description: Run learn tests
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
       - id: prettier
-        name: run prettier
+        name: Run prettier
         description: format files with prettier
         entry: prettier --config .github/linters/.prettierrc --write
+        files: \.(css|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
-        files: \.(js|ts|tsx|json|ya?ml|css|md)$
       - id: npm-audit
-        name: run npm audit
+        name: Run npm-audit
+        description: Run npm audit
         entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
       - id: check-zip-file-is-not-committed
-        name: check no zip files are committed
+        name: Check no zip files are committed
         description: Zip files are not allowed in the repository
         language: fail
         entry: |
@@ -76,24 +160,27 @@ repos:
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.31.0
+    rev: v9.32.0
     hooks:
       - id: eslint
-        entry: npm run lint_fix
+        name: Find and fix problems in your JavaScript code
+        description: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline
+        entry: eslint --config .github/linters/eslint.config.mjs --fix
         language: node
         files: \.(cjs|js|mjs)$
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.45.0
     hooks:
       - id: markdownlint
-        name: markdownlint
+        name: Run markdownlint
+        description: MarkdownLint Command Line Interface
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
       - id: yamllint
-        name: run yamllint
+        name: Run yamllint
         description: check YAML files with yamllint
         args: [--strict, -c=.github/linters/.yaml-lint.yml]
         types: [yaml]
@@ -102,16 +189,21 @@ repos:
   #   rev: v0.9.0
   #   hooks:
   #     - id: shellcheck
+  #       name: run shellcheck
   - repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
       - id: black
+        name: The uncompromising Python code formatter
+        description: Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting
         language_version: python3
         args: ['--line-length=88']
-  # - repo: https://github.com/PyCQA/bandit
-  #   rev: 1.8.6
-  #   hooks:
-  #     - id: bandit
-  #       args: ["-c", "bandit.yaml"]
-  #       files: \.py$
-  #       pass_filenames: false
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.8.6
+    hooks:
+      - id: bandit
+        name: A security linter from PyCQA
+        description: Bandit is a tool designed to find common security issues in Python code
+        args: ["-c", "bandit.yaml"]
+        files: \.py$
+        pass_filenames: false
