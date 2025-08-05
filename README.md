@@ -6,9 +6,10 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 
 </div>
 
-[![Labeler workflow status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Flabeler.yml?label=labeler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fpre-commit.yml?label=pre-commit)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fwrangler.yml?label=wrangler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
+[![dprint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fdprint.yml?label=dprint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
+[![Labeler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Flabeler.yml?label=labeler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
+[![pre-commit Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fpre-commit.yml?label=pre-commit)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
+[![Wrangler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fwrangler.yml?label=wrangler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **Current Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
