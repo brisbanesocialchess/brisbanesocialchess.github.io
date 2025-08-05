@@ -86,7 +86,7 @@ repos:
       # - id: pretty-format-json
       - id: check-added-large-files
         name: Prevent giant files from being committed
-        args: ['--maxkb=1000']
+        args: ['--maxkb=1500']
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
