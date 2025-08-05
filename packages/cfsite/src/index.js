@@ -99,7 +99,7 @@ async function handleRegister(request) {
 			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, discordusername, email', request, 422);
 		}
 
-		console.log(`[Register] username: ${username}, email: ${email}`);
+		console.log(`[Register] fname: ${fname}, lname: ${lname}`);
 
 		return createJsonResponse({ message: 'Registration complete!', status: 'ok' }, request);
 	} catch (err) {
