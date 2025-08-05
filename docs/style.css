@@ -363,10 +363,12 @@ form fieldset input[type='radio'] {
 .role-admin {
 	color: red;
 }
+.role-board {
+	color: #b9abff;
+}
 .role-leader {
 	color: #ed7014;
 }
-
 .role-moderator {
 	color: yellow;
 }
