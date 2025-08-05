@@ -358,3 +358,18 @@ form fieldset input[type='radio'] {
 		padding: 0.6rem 0.8rem;
 	}
 }
+
+.management-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.management-table th,
+.management-table td {
+	text-align: center;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+.management-table th:first-child,
+.management-table td:first-child {
+	width: 30%;
+}
