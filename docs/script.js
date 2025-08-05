@@ -106,7 +106,7 @@ elmFormContact?.addEventListener('submit', async (e) => {
 // Init
 elmYear.textContent = getCurrentYear();
 
-const emailReversed = 'moc.liamg@tset.nhoj'; // reversed
+const emailReversed = 'ua.gro.ssehclaicosenabsirb@eettimmoc'; // reversed
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
 	if (el.getAttribute('data-email-href') !== null) {
