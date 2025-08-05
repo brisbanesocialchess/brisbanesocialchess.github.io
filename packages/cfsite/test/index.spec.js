@@ -22,9 +22,10 @@ describe('Hello World worker', () => {
 describe('API endpoints', () => {
 	it('handles contact form submission', async () => {
 		const body = JSON.stringify({
-			email: 'alice@example.com',
-			message: 'Hello from contact form!',
 			name: 'Alice',
+			email: 'alice@example.com',
+			subject: 'Subject',
+			message: 'Hello from contact form!',
 		});
 
 		const request = new Request('http://example.com/api/contact', {
