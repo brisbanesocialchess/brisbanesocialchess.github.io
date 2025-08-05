@@ -423,15 +423,22 @@ h3 {
 	text-align: center;
 }
 
-/* Color classes for specific moderator names */
-.red-text {
+.moderators {
+	list-style-type: none;
+}
+
+.team-avatar {
+	width: 60px;
+}
+
+.role-admin {
 	color: red;
 }
 
-.orange-text {
+.role-leader {
 	color: #ed7014;
 }
 
-.yellow-text {
+.role-moderator {
 	color: yellow;
 }
