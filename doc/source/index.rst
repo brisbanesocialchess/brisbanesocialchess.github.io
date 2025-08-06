@@ -23,6 +23,7 @@ documentation for details.
    cool-chess
    four-player-chess
    quaternity
+   harmegedo-the-board-of-lords
    elements-of-chess-strategy
    play-better-chess
    rise-of-the-streamers
