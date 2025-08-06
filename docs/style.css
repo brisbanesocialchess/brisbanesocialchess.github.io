@@ -109,6 +109,18 @@ h3 {
 	color: rgb(70, 199, 239);
 	font-weight: bold;
 }
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .nav-links {
+    font-size: 1.1rem; 
+    line-height: 2.4rem; 
+  }
+
+  .nav-links a {
+    padding: 0.5rem 0.8rem; 
+    display: inline-block;
+  }
+}
 
 /* Section formatting */
 .section h1,
