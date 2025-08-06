@@ -12,6 +12,10 @@ build:
   formats:
     - epub
     - pdf
+  apt_packages:
+    - texlive-latex-extra
+    - texlive-fonts-recommended
+    - latexmk
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
