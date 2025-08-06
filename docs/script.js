@@ -118,19 +118,19 @@ elmEmailElements.forEach((el) => {
 	}
 });
 
-window.addEventListener("message", e => {
-    // Step 1: Security check - Verify the message origin is chess.com
-    if (e.origin !== "https://www.chess.com") {
-      return; // Exit if the message is from an untrusted source
-    }
+window.addEventListener('message', (e) => {
+	// Step 1: Security check - Verify the message origin is chess.com
+	if (e.origin !== 'https://www.chess.com') {
+		return; // Exit if the message is from an untrusted source
+	}
 
-    // Step 2: Robustness check - Ensure data and ID exist and frameHeight is a number
-    if (e.data?.id && typeof e.data?.frameHeight === 'number') {
-      const iframe = document.getElementById(e.data.id);
-      // If a matching iframe is found, set its height
-      if (iframe) {
-        const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
-        iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
-      }
-    }
+	// Step 2: Robustness check - Ensure data and ID exist and frameHeight is a number
+	if (e.data?.id && typeof e.data?.frameHeight === 'number') {
+		const iframe = document.getElementById(e.data.id);
+		// If a matching iframe is found, set its height
+		if (iframe) {
+			const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
+			iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
+		}
+	}
 });
