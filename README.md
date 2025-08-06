@@ -16,14 +16,19 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 [![Pre-commit Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fpre-commit.yml?label=pre-commit)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
 [![Wrangler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fwrangler.yml?label=wrangler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
 
+[![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
 [![GitHub License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io)](LICENSE)
+[![Discord](https://img.shields.io/discord/1299539471964049448?label=Discord)](https://discord.com/invite/JWBKhQmzvD)
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=github-pages)](https://brisbanesocialchess.github.io)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
+[![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **Current Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
 - **Cloudflare Playground:** [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
+
+---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
