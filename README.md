@@ -2,7 +2,7 @@
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>brisbanesocialchess.github.io</h1>
 
-Welcome to the source code repository for the Brisbane Social Chess website.
+Welcome to the source code repository for the Brisbane Social Chess site.
 
 </div>
 
@@ -42,7 +42,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-[Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+[Lerna](https://lerna.js.org/) is a fast, modern build tool for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
 ## Cloudflare Workers Development
@@ -69,7 +69,7 @@ Read below for instructions about the current static development site hosted on 
 
 ## About Brisbane Social Chess
 
-Brisbane Social Chess is a community-focused website dedicated to chess enthusiasts in Brisbane.
+Brisbane Social Chess is a community-focused site dedicated to chess enthusiasts in Brisbane.
 Our goal is to provide news, events, resources, and a platform for social chess activities.
 
 ---
@@ -99,7 +99,7 @@ And then:
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
-Or if you want to run and keep the container and go into bash:
+Or if you want to run and keep the container and go into Bash:
 
 ```bash
 docker run -it -v "$PWD":/app -w /app my-go-precommit bash
