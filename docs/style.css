@@ -364,7 +364,10 @@ form fieldset input[type='radio'] {
 	color: red;
 }
 .role-board {
-	color: #b9abff;
+	color: #a020f0;
+}
+.role-developer {
+	color: cyan;
 }
 .role-leader {
 	color: #ed7014;
