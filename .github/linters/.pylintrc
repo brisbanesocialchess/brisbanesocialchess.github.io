@@ -430,12 +430,14 @@ confidence=HIGH,
 # no Warning level messages displayed, use "--disable=all --enable=classes
 # --disable=W".
 
+# C0103: Constant name "project" doesn't conform to UPPER_CASE naming style (invalid-name)
 # C0114: Missing module docstring (missing-module-docstring)
 # C0116: Missing function or method docstring (missing-function-docstring)
 # C0301: Line too long (145/100) (line-too-long)
+# W0622: Redefining built-in 'copyright' (redefined-builtin)
 # W0718: Catching too general exception Exception (broad-exception-caught)
 
-disable=C0114,C0116,C0301,W0718
+disable=C0103,C0114,C0116,C0301,W0622,W0718
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
