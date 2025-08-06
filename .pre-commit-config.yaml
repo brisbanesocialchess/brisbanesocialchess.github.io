@@ -207,3 +207,11 @@ repos:
         args: ['-c', 'bandit.yaml', '-r', '.']
         files: \.py$
         pass_filenames: false
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args: ['-rn', '-sn', '--rcfile=.github/linters/.pylintrc']

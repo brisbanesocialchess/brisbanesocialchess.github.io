@@ -26,4 +26,5 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MARKDOWN_CONFIG_FILE: .markdownlint.json
+          PYTHON_PYLINT_CONFIG_FILE: .pylintrc
           VALIDATE_ALL_CODEBASE: true
