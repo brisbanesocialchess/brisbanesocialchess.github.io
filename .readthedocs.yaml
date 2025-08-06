@@ -3,15 +3,12 @@
 
 # Required
 version: 2
-
+formats: [epub, htmlzip, pdf]
 # Set the OS, Python version, and other tools you might need
 build:
   os: ubuntu-24.04
   tools:
     python: '3.13'
-  formats:
-    - epub
-    - pdf
   apt_packages:
     - texlive-latex-extra
     - texlive-fonts-recommended
