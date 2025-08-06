@@ -18,7 +18,7 @@ documentation for details.
    about
    a-good-player-is-always-lucky
    how-does-the-horsey-move-again
-   when-you-good-move-look-for-a-better-one
+   when-you-see-a-good-move-look-for-a-better-one
    is-your-move-safe
    cool-chess
    four-player-chess
