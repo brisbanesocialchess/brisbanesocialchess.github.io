@@ -85,7 +85,7 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 
 [Docker](https://www.docker.com/) is an open-source platform designed to simplify the process of building, deploying, and running applications using containerization. It packages an application and all its dependencies (libraries, system tools, code, runtime) into a standardized unit called a "container."
 
-[Makefile](https://en.wikipedia.org/wiki/Makefile) is a text file that contains a set of instructions used by the [make](https://en.wikipedia.org/wiki/Make_(software)) utility to automate the process of building and managing software projects. It defines dependencies between files and specifies the commands required to update outdated files or generate new ones.
+[Makefile](https://en.wikipedia.org/wiki/Makefile) is a text file that contains a set of instructions used by the [make](<https://en.wikipedia.org/wiki/Make_(software)>) utility to automate the process of building and managing software projects. It defines dependencies between files and specifies the commands required to update outdated files or generate new ones.
 
 ### Cloudflare Workers Development
 
