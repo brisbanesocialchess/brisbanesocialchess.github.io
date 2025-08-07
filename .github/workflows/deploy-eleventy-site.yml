@@ -40,5 +40,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
+          path: .
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./brisbanesocialchess.github.io/_site/
+          publish_dir: ./_site/
