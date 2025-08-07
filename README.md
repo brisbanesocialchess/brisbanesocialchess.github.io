@@ -41,6 +41,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Getting Started / Building the Site](#getting-started--building-the-site)
 - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
+- [Build the Documentation](#build-the-documentation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -106,6 +107,20 @@ Or if you want to run and keep the container and go into bash:
 ```bash
 docker run -it -v "$PWD":/app -w /app my-go-precommit bash
 ```
+
+---
+
+## Build the Documentation
+
+Run the following commands from the repo root to create the Sphinx documentation with Make:
+
+```shell
+cd doc
+make html
+```
+
+The generated HTML site will be in the `doc/build/html` folder.
+You can open the HTML files with your web browser.
 
 ---
 
