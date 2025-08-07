@@ -8,12 +8,12 @@ title: Meetups
     <h2>Weekly Meetups</h2>
     <p>Click on a day to view detailed meetup information:</p>
     <div class="button-group">
-        <a href="/meetup/monday/" class="button">Monday</a>
-        <!-- <a href="/meetup/tuesday/" class="button">Tuesday</a> -->
-        <a href="/meetup/wednesday/" class="button">Wednesday</a>
-        <a href="/meetup/thursday/" class="button">Thursday</a>
-        <a href="/meetup/friday/" class="button">Friday</a>
-        <a href="/meetup/saturday/" class="button">Saturday</a>
-        <a href="/meetup/sunday/" class="button">Sunday</a>
+        <a href="{{ '/meetup/monday/' | url  }}" class="button">Monday</a>
+        <!-- <a href="{{ '/meetup/tuesday/' | url }}" class="button">Tuesday</a> -->
+        <a href="{{ '/meetup/wednesday/' | url }}" class="button">Wednesday</a>
+        <a href="{{ '/meetup/thursday/' | url }}" class="button">Thursday</a>
+        <a href="{{ '/meetup/friday/' | url }}" class="button">Friday</a>
+        <a href="{{ '/meetup/saturday/' | url }}" class="button">Saturday</a>
+        <a href="{{ '/meetup/sunday/' | url }}" class="button">Sunday</a>
     </div>
 </section>
