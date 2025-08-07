@@ -449,10 +449,10 @@ title: About
         <a href="{{ 'assets/images/quaternity-1.png' | url }}">
             <img src="{{ 'assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position." />
         </a>
-        <a href="{{ 'assets/images/quaternity-2.png">
+        <a href="{{ 'assets/images/quaternity-2.png' | url }}">
             <img src="{{ 'assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress." />
         </a>
-        <a href="{{ 'assets/images/quaternity-3.png">
+        <a href="{{ 'assets/images/quaternity-3.png' | url }}">
             <img src="{{ 'assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress." />
         </a>
         <a href="{{ 'assets/images/quaternity-4.png' | url }}">
