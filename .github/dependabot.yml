@@ -4,11 +4,19 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+    groups:
+      github-dependencies:
+        patterns:
+          - '*'
 
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'daily'
+    groups:
+      npm-dependencies:
+        patterns:
+          - '*'
 
   - package-ecosystem: 'pip'
     directory: '/'
