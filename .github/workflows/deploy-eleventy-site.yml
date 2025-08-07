@@ -34,14 +34,11 @@ jobs:
       - name: List root directory
         run: ls -la
 
-      - name: List nested directory
-        run: ls -la brisbanesocialchess.github.io
-
       - name: List _site directory (if exists)
-        run: ls -la brisbanesocialchess.github.io/_site || echo "_site not found"
+        run: ls -la _site || echo "_site not found"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./brisbanesocialchess.github.io/_site
+          publish_dir: ./_site
