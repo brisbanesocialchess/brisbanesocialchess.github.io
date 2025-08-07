@@ -1,5 +1,5 @@
 ---
-permalink: index/
+permalink: /
 layout: 'layouts/base.njk'
 title: Home
 ---
@@ -143,7 +143,7 @@ title: Home
       </tr>
     </tbody>
   </table>
-  <img src="/assets/locations.jpg" alt="Chess Meetup" />
+  <img src="{{ '/assets/locations.jpg' | url }}" alt="Chess Meetup" />
 </section>
 <!-- Section 3 -->
 <section class="section">
@@ -151,7 +151,7 @@ title: Home
   <p>
     We are a registered community organisation in Queensland with a committee. Ready to contribute? We would like to hear from you.
   </p>
-  <img src="/assets/organisers.jpg" alt="Organisers" />
+  <img src="{{ '/assets/organisers.jpg' | url }}" alt="Organisers" />
 </section>
 <!-- Section 4 -->
 <section class="section">
@@ -173,7 +173,7 @@ title: Home
     <a href="https://www.chess.com/club/brisbane-social-chess" class="button">Chess.com</a>
     <a href="https://lichess.org/team/brisbane-social-chess" class="button">Lichess</a>
   </div>
-  <img src="/assets/background-smaller.jpg" alt="Play Chess" />
+  <img src="{{ '/assets/background-smaller.jpg' | url }}" alt="Play Chess" />
 </section>
 
 <!-- # Welcome to My Eleventy Blog
