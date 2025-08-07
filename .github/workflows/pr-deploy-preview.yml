@@ -1,10 +1,10 @@
-name: Build Pelican site on PR
+name: Build and Deploy Eleventy site
 
 permissions:
   contents: read
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -16,41 +16,19 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.x'
-
-      - name: Check if pelicanconf.py exists
-        id: check_pelicanconf
-        run: |
-          if [ -f pelicanconf.py ]; then
-            echo "file_exists=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "file_exists=false" >> "$GITHUB_OUTPUT"
-          fi
+          node-version: 22
 
       - name: Install dependencies
-        if: steps.check_pelicanconf.outputs.file_exists == 'true'
-        run: |
-          python -m pip install --upgrade pip
-          pip install pelican markdown
+        run: npm install
 
-      - name: Build Pelican site
-        if: steps.check_pelicanconf.outputs.file_exists == 'true'
-        run: pelican content -o output -s pelicanconf.py
-
-      - name: Upload artifact (optional)
-        if: steps.check_pelicanconf.outputs.file_exists == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: pelican-site
-          path: output/
+      - name: Build Eleventy site
+        run: npm run build
 
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'pull_request' && steps.check_pelicanconf.outputs.file_exists == 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-          publish_branch: gh-pages-pr-${{ github.event.number }}
+          publish_dir: ./_site
