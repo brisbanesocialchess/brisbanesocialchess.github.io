@@ -1,5 +1,5 @@
 ---
-permalink: /meetup-saturday.html
+permalink: /meetup/saturday/
 layout: 'layouts/base.njk'
 title: Meetup - Saturday Night Chess
 ---

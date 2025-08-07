@@ -1,5 +1,5 @@
 ---
-permalink: /games.html
+permalink: /games/
 layout: 'layouts/base.njk'
 title: Games
 ---

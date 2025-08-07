@@ -2,6 +2,7 @@ const { DateTime } = require('luxon');
 const slugify = require('slugify');
 
 const BASE_PATH = 'frontend';
+const BASE_OUTPUT = '_site';
 
 const getUniqueTaxonomy = (collectionApi, taxonomy) => {
 	const allItems = collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`)
@@ -38,7 +39,7 @@ module.exports = function (eleventyConfig) {
 			data: '_data',
 			includes: '_includes',
 			input: BASE_PATH,
-			output: '_site',
+			output: BASE_OUTPUT,
 		},
 		markdownTemplateEngine: 'njk',
 	};

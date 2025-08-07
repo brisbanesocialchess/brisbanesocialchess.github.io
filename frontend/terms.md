@@ -1,5 +1,5 @@
 ---
-permalink: /terms.html
+permalink: /terms/
 layout: 'layouts/base.njk'
 title: Terms
 ---

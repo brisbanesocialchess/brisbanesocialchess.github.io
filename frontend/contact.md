@@ -1,5 +1,5 @@
 ---
-permalink: /contact.html
+permalink: /contact/
 layout: 'layouts/base.njk'
 title: Contact
 ---

@@ -1,5 +1,5 @@
 ---
-permalink: /rules.html
+permalink: /rules/
 layout: 'layouts/base.njk'
 title: Rules
 ---
