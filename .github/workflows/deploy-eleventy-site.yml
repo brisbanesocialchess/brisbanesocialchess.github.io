@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          path: .
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -37,9 +39,11 @@ jobs:
       - name: List _site directory (if exists)
         run: ls -la _site || echo "_site not found"
 
+      - name: _site directory path
+        run: cd _site && pwd
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          path: .
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site/
