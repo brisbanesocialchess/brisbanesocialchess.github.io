@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>brisbanesocialchess.github.io</h1>
@@ -58,8 +57,7 @@ This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern a
 
 ---
 
-
-## Local Development (Getting Started)
+## Local Development
 
 If you are a new developer or contributor, follow these steps to run or develop the website locally:
 
@@ -86,6 +84,7 @@ npm run start
 ```
 
 **What does this do?**
+
 - Starts a local web server so you can view the site in your browser.
 - Enables "watching mode": any time you edit a file, the site automatically rebuilds and reloads in your browser. This is the best way to develop and preview changes.
 
@@ -98,12 +97,14 @@ npm run build
 ```
 
 **What does this do?**
+
 - Runs Eleventy once to generate the final static website in the output directory.
 - Does not start a server or watch for changes.
 
 ---
 
 **Summary:**
+
 - Use `npm run start` for development (with live reload and watching for changes).
 - Use `npm run build` for a one-time build (no watching, for production or deployment).
 
