@@ -40,6 +40,14 @@ repos:
         args: ['644']
         files: \.md$
         stages: [manual]
+  - repo: local
+    hooks:
+      - id: eleventy-build-check
+        name: Eleventy build and output check
+        description: Run `npm run build`
+        language: system
+        entry: npm run build
+        pass_filenames: false
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
