@@ -1,0 +1,42 @@
+name: Build and Deploy Eleventy PR Preview
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          path: .
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Eleventy site
+        run: npm run build
+
+      - name: Deploy Preview to GitHub Pages branch for PR
+        run: |
+          cd ./_site
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git checkout -b pr-${{ github.event.number }}
+          git add --all
+          git commit -m "Deploy preview for PR #${{ github.event.number }}"
+          git push --force origin pr-${{ github.event.number }}
