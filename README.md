@@ -61,7 +61,7 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network `↗` with a single command — no infrastructure to manage, no complex configuration.
 
-[Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+[Lerna](https://lerna.js.org/) is a fast, modern build tool for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
@@ -69,7 +69,7 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 
 [Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/) is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
 
-[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
+[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host sites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 
 [Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
 
@@ -134,7 +134,7 @@ docker run -it -v "$PWD":/app -w /app my-go-precommit bash
 
 ### Build the Documentation
 
-Run the following commands from the repo root to create the Sphinx documentation with Make:
+Run the following commands from the repository root to create the Sphinx documentation with Make:
 
 ```shell
 cd doc
