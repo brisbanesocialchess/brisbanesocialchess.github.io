@@ -1,7 +1,8 @@
 ---
 permalink: /meetup/friday/
 layout: 'layouts/base.njk'
-title: Meetup - Friday Night Chess
+title: Friday Night Chess Meetup | Brisbane Social Chess Club
+
 ---
 
 <section class="section">

@@ -1,7 +1,7 @@
 ---
 permalink: /terms/
 layout: 'layouts/base.njk'
-title: Terms
+title: Terms & Conditions | Brisbane Social Chess Club
 ---
 
 <section class="section">
