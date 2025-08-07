@@ -1,9 +1,9 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "cfsite",
-  "main": "src/index.js",
-  "compatibility_date": "2025-07-05",
-  "observability": {
-    "enabled": true,
-  },
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "cfsite",
+	"main": "src/index.js",
+	"compatibility_date": "2025-07-05",
+	"observability": {
+		"enabled": true,
+	},
 }
