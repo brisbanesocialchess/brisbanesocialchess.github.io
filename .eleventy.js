@@ -35,10 +35,10 @@ module.exports = function (eleventyConfig) {
 
 	return {
 		dir: {
+			data: '_data',
+			includes: '_includes',
 			input: BASE_PATH,
 			output: '_site',
-			includes: '_includes',
-			data: '_data',
 		},
 		markdownTemplateEngine: 'njk',
 	};

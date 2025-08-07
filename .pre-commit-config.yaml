@@ -69,7 +69,7 @@ repos:
         name: isort (python)
         description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
   # GO-based
-   # - repo: https://github.com/gitleaks/gitleaks
+  # - repo: https://github.com/gitleaks/gitleaks
   #   rev: v8.27.2
   #   hooks:
   #     - id: gitleaks
