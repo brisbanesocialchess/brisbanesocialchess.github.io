@@ -400,6 +400,12 @@ form fieldset input[type='radio'] {
 .github-profile--medium img.github-avatar {
 	width: 220px;
 }
+/* Meetups */
+.bio-img {
+	max-width: 150px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
 
 /* Responsive */
 @media (max-width: 500px) {
