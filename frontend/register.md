@@ -18,7 +18,7 @@ title: Register
         </div>
         <div class="form-group">
             <label for="birthYear">Birth Year <span aria-hidden="true">*</span> </label>
-            <input type="number" id="birthYear" name="birthyear" min="1900" max="2025" required placeholder="e.g. 1990" />
+            <input type="number" id="birthYear" name="birthyear" min="1900" max="2025" oninput="if (this.value.length > 4) this.value = this.value.slice(-4)" required placeholder="e.g. 1990" />
         </div>
         <fieldset class="form-group">
             <legend>Gender <span aria-hidden="true">*</span></legend>
