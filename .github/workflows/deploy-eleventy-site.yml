@@ -30,18 +30,6 @@ jobs:
       - name: Build Eleventy site
         run: npm run build
 
-      - name: Current directory path
-        run: pwd
-
-      - name: List root directory
-        run: ls -la
-
-      - name: List _site directory (if exists)
-        run: ls -la _site || echo "_site not found"
-
-      - name: _site directory path
-        run: cd _site && pwd
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
