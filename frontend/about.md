@@ -429,15 +429,15 @@ title: About
 <section class="section">
     <h2><span aria-hidden="true">🧙‍♂️</span> Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div style="display: flex; gap: 1rem">
-        <a href="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg">
+        <a href="{{ 'assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
-                src="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg"
+                src="{{ 'assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}"
                 alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board."
             />
         </a>
-        <a href="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg">
+        <a href="{{ 'assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}">
             <img
-                src="assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg"
+                src="{{ 'assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}"
                 alt="Another view of Jedi Master Big Bird playing chess."
             />
         </a>
@@ -446,17 +446,17 @@ title: About
 <section class="section">
     <h2><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem">
-        <a href="assets/images/quaternity-1.png">
-            <img src="assets/images/quaternity-1.png" alt="Quaternity board with pieces in starting position." />
+        <a href="{{ 'assets/images/quaternity-1.png' | url }}">
+            <img src="{{ 'assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position." />
         </a>
-        <a href="assets/images/quaternity-2.png">
-            <img src="assets/images/quaternity-2.png" alt="Close-up of Quaternity game in progress." />
+        <a href="{{ 'assets/images/quaternity-2.png">
+            <img src="{{ 'assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress." />
         </a>
-        <a href="assets/images/quaternity-3.png">
-            <img src="assets/images/quaternity-3.png" alt="A different view of a Quaternity game in progress." />
+        <a href="{{ 'assets/images/quaternity-3.png">
+            <img src="{{ 'assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress." />
         </a>
-        <a href="assets/images/quaternity-4.png">
-            <img src="assets/images/quaternity-4.png" alt="The Quaternity game box and components." />
+        <a href="{{ 'assets/images/quaternity-4.png' | url }}">
+            <img src="{{ 'assets/images/quaternity-4.png' | url }}" alt="The Quaternity game box and components." />
         </a>
     </div>
 </section>
