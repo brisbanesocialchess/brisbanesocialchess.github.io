@@ -42,11 +42,15 @@ repos:
         stages: [manual]
   - repo: local
     hooks:
+      - id: npm-ci
+        name: Install Node dependencies
+        entry: npm ci
+        language: system
+        pass_filenames: false
       - id: eleventy-build-check
         name: Eleventy build and output check
-        description: Run `npm run build`
-        language: system
         entry: npm run build
+        language: system
         pass_filenames: false
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
