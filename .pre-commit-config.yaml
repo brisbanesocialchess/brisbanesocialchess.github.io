@@ -221,6 +221,12 @@ repos:
         args: ['-c', 'bandit.yaml', '-r', '.']
         files: \.py$
         pass_filenames: false
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.17.1
+    hooks:
+      - id: mypy
+        name: Run mypy
+        description: Optional static typing for Python
   - repo: local
     hooks:
       - id: pylint
