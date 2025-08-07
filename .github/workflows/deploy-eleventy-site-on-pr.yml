@@ -1,4 +1,4 @@
-name: Build and Deploy Eleventy PR Preview
+name: CI - Build Eleventy on PR
 
 on:
   pull_request:
@@ -6,17 +6,15 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: .
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -29,14 +27,9 @@ jobs:
       - name: Build Eleventy site
         run: npm run build
 
-      - name: Deploy Preview to GitHub Pages branch for PR
+      - name: Verify build output
         run: |
-          cd ./_site
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git checkout -b pr-${{ github.event.number }}
-          git add --all
-          git commit -m "Deploy preview for PR #${{ github.event.number }}"
-          git push --force origin pr-${{ github.event.number }}
+          if [ ! -d "./_site" ]; then
+            echo "_site folder missing — build failed"
+            exit 1
+          fi
