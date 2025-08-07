@@ -16,6 +16,9 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 [![Pre-commit Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fpre-commit.yml?label=pre-commit)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
 [![Wrangler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fwrangler.yml?label=wrangler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
 
+[![Build and Deploy Eleventy site](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml)
+[![CI - Build Eleventy on PR](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml)
+
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
 [![GitHub License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io)](LICENSE)
 [![Discord](https://img.shields.io/discord/1299539471964049448?label=Discord)](https://discord.com/invite/JWBKhQmzvD)
