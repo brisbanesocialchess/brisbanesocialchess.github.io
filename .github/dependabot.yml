@@ -17,4 +17,4 @@ updates:
     groups:
       python-dependencies:
         patterns:
-          - "*"
+          - '*'
