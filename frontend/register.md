@@ -1,5 +1,5 @@
 ---
-permalink: /register.html
+permalink: /register/
 layout: 'layouts/base.njk'
 title: Register
 ---

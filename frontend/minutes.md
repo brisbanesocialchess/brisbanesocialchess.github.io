@@ -1,5 +1,5 @@
 ---
-permalink: /minutes.html
+permalink: /minutes/
 layout: 'layouts/base.njk'
 title: Minutes
 ---

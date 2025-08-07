@@ -1,5 +1,5 @@
 ---
-permalink: index.html
+permalink: index/
 layout: 'layouts/base.njk'
 title: Home
 ---

@@ -1,5 +1,5 @@
 ---
-permalink: /meetup.html
+permalink: /meetup/
 layout: 'layouts/base.njk'
 title: Meetups
 ---
