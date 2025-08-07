@@ -1,48 +1,48 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{{ title }}</title>
-		<meta name="description" content="Brisbane's only social chess club" />
-		<link rel="stylesheet" href="/assets/style.css" />
-		<link rel="icon" type="image/png" href="/assets/favicon.png" />
-		<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-	</head>
-	<body>
-		<div class="background-overlay">
-			<main class="content-wrapper">
-				<!-- Logo -->
-				<div class="logo">
-					<a href="/">
-						<img src="/assets/logo.jpg" alt="Brisbane Social Chess Logo" />
-					</a>
-					<h1>Brisbane Social Chess</h1>
-					<p>A place for casual chess, for fun and friendly people.</p>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <meta name="description" content="Brisbane's only social chess club" />
+    <link rel="stylesheet" href="{{ '/assets/style.css' | htmlBaseUrl }}">
+    <link rel="icon" href="{{ '/assets/favicon.png' | htmlBaseUrl }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | htmlBaseUrl }}" />
+  </head>
+  <body>
+    <div class="background-overlay">
+      <main class="content-wrapper">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="{{ '/' | htmlBaseUrl }}">
+            <img src="{{ '/assets/logo.jpg' | htmlBaseUrl }}" alt="Brisbane Social Chess Logo" />
+          </a>
+          <h1>Brisbane Social Chess</h1>
+          <p>A place for casual chess, for fun and friendly people.</p>
+        </div>
 
-				<!-- Top Navigation -->
-				<nav class="nav-links">
-					<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-					<a href="/about.html" class="{% if page.url == '/about.html' %}active{% endif %}">About</a>
-					<a href="/games.html" class="{% if page.url == '/games.html' %}active{% endif %}">Games</a>
-					<a href="/meetup.html" class="{% if page.url == '/meetup.html' %}active{% endif %}">Meetups</a>
-					<a href="/minutes.html" class="{% if page.url == '/minutes.html' %}active{% endif %}">Minutes</a>
-					<a href="/register.html" class="{% if page.url == '/register.html' %}active{% endif %}">Register</a>
-					<a href="/rules.html" class="{% if page.url == '/rules.html' %}active{% endif %}">Rules</a>
-					<a href="/terms.html" class="{% if page.url == '/terms.html' %}active{% endif %}">Terms</a>
-					<a href="/contact.html" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a>
-				</nav>
+        <!-- Top Navigation -->
+        <nav class="nav-links">
+          <a href="{{ '/' | htmlBaseUrl }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+          <a href="{{ '/about.html' | htmlBaseUrl }}" class="{% if page.url == '/about.html' %}active{% endif %}">About</a>
+          <a href="{{ '/games.html' | htmlBaseUrl }}" class="{% if page.url == '/games.html' %}active{% endif %}">Games</a>
+          <a href="{{ '/meetup.html' | htmlBaseUrl }}" class="{% if page.url == '/meetup.html' %}active{% endif %}">Meetups</a>
+          <a href="{{ '/minutes.html' | htmlBaseUrl }}" class="{% if page.url == '/minutes.html' %}active{% endif %}">Minutes</a>
+          <a href="{{ '/register.html' | htmlBaseUrl }}" class="{% if page.url == '/register.html' %}active{% endif %}">Register</a>
+          <a href="{{ '/rules.html' | htmlBaseUrl }}" class="{% if page.url == '/rules.html' %}active{% endif %}">Rules</a>
+          <a href="{{ '/terms.html' | htmlBaseUrl }}" class="{% if page.url == '/terms.html' %}active{% endif %}">Terms</a>
+          <a href="{{ '/contact.html' | htmlBaseUrl }}" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a>
+        </nav>
 
-				<!-- Content -->
-		        {{ content | safe }}
-			</main>
-		</div>
+        <!-- Content -->
+        {{ content | safe }}
+      </main>
+    </div>
 
-		<!-- Footer -->
-		<footer class="site-footer">
-			<p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
-		</footer>
-		<script type="text/javascript" src="/assets/script.js"></script>
-	</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="{{ '/assets/script.js' | htmlBaseUrl }}"></script>
+  </body>
 </html>
