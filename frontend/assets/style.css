@@ -363,17 +363,32 @@ form fieldset input[type='radio'] {
 .role-admin {
 	color: red;
 }
+.role-admin img {
+	border-color: red;
+}
 .role-board {
 	color: #a020f0;
+}
+.role-board img {
+	border-color: #a020f0;
 }
 .role-developer {
 	color: cyan;
 }
+.role-developer img {
+	border-color: cyan;
+}
 .role-leader {
 	color: #ed7014;
 }
+.role-leader img {
+	border-color: #ed7014;
+}
 .role-moderator {
 	color: yellow;
+}
+.role-moderator img {
+	border-color: yellow;
 }
 
 /* Github profile */
@@ -391,6 +406,10 @@ form fieldset input[type='radio'] {
 	margin: 10px;
 	display: inline-block;
 	vertical-align: top;
+}
+.github-profile img.github-avatar {
+	border-width: 3px;
+	border-style: solid;
 }
 .github-profile--big,
 .github-profile--big img.github-avatar {
