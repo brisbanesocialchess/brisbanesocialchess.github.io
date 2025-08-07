@@ -1,16 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ title }}</title>
-</head>
-<body>
-  <header>
-    <h1>{{ title }}</h1>
-    <nav><a href="/">Home</a></nav>
-  </header>
-  <main>
-    {{ content | safe }}
-  </main>
-</body>
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Brisbane Social Chess</title>
+		<meta name="description" content="Brisbane's only social chess club" />
+		<link rel="stylesheet" href="/style.css" />
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+	</head>
+	<body>
+		<div class="background-overlay">
+			<main class="content-wrapper">
+				<!-- Logo -->
+				<div class="logo">
+					<a href="/">
+						<img src="/assets/logo.jpg" alt="Brisbane Social Chess Logo" />
+					</a>
+					<h1>Brisbane Social Chess</h1>
+					<p>A place for casual chess, for fun and friendly people.</p>
+				</div>
+				<!-- Top Navigation -->
+				<nav class="nav-links">
+					<a href="/" class="active">Home</a>
+					<a href="/about.html">About</a>
+					<a href="/games.html">Games</a>
+					<a href="/meetup.html">Meetups</a>
+					<a href="/minutes.html">Minutes</a>
+					<a href="/register.html">Register</a>
+					<a href="/rules.html">Rules</a>
+					<a href="/terms.html">Terms</a>
+					<a href="/contact.html">Contact</a>
+				</nav>
+
+        {{ content | safe }}
+			</main>
+		</div>
+		<!-- Footer -->
+		<footer class="site-footer">
+			<p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
+		</footer>
+		<script type="text/javascript" src="/script.js"></script>
+	</body>
 </html>
