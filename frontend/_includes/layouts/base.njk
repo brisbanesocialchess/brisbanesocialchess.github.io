@@ -23,15 +23,15 @@
 
 				<!-- Top Navigation -->
 				<nav class="nav-links">
-					<a href="/" class="active">Home</a>
-					<a href="/about.html">About</a>
-					<a href="/games.html">Games</a>
-					<a href="/meetup.html">Meetups</a>
-					<a href="/minutes.html">Minutes</a>
-					<a href="/register.html">Register</a>
-					<a href="/rules.html">Rules</a>
-					<a href="/terms.html">Terms</a>
-					<a href="/contact.html">Contact</a>
+					<a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+					<a href="/about.html" class="{% if page.url == '/about.html' %}active{% endif %}">About</a>
+					<a href="/games.html" class="{% if page.url == '/games.html' %}active{% endif %}">Games</a>
+					<a href="/meetup.html" class="{% if page.url == '/meetup.html' %}active{% endif %}">Meetups</a>
+					<a href="/minutes.html" class="{% if page.url == '/minutes.html' %}active{% endif %}">Minutes</a>
+					<a href="/register.html" class="{% if page.url == '/register.html' %}active{% endif %}">Register</a>
+					<a href="/rules.html" class="{% if page.url == '/rules.html' %}active{% endif %}">Rules</a>
+					<a href="/terms.html" class="{% if page.url == '/terms.html' %}active{% endif %}">Terms</a>
+					<a href="/contact.html" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a>
 				</nav>
 
 				<!-- Content -->
