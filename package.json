@@ -14,8 +14,8 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"start": "npx @11ty/eleventy --serve",
-		"build": "npx @11ty/eleventy",
+		"start": "npx @11ty/eleventy --serve --input=frontend",
+		"build": "npx @11ty/eleventy --input=frontend",
 		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
 		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",

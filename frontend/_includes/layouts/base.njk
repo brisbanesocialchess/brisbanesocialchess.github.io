@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Brisbane Social Chess</title>
+		<title>{ title }</title>
 		<meta name="description" content="Brisbane's only social chess club" />
 		<link rel="stylesheet" href="/assets/style.css" />
 		<link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -20,6 +20,7 @@
 					<h1>Brisbane Social Chess</h1>
 					<p>A place for casual chess, for fun and friendly people.</p>
 				</div>
+
 				<!-- Top Navigation -->
 				<nav class="nav-links">
 					<a href="/" class="active">Home</a>
@@ -33,9 +34,11 @@
 					<a href="/contact.html">Contact</a>
 				</nav>
 
-        {{ content | safe }}
+				<!-- Content -->
+		        {{ content | safe }}
 			</main>
 		</div>
+
 		<!-- Footer -->
 		<footer class="site-footer">
 			<p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
