@@ -73,7 +73,7 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 
 [GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 
-[Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build websites. Unlike dynamic website builders, 11ty generates all the website's content upfront, which leads to better performance and simpler deployments. 
+[Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build websites. Unlike dynamic website builders, 11ty generates all the website's content upfront, which leads to better performance and simpler deployments.
 
 [Nunjucks](https://mozilla.github.io/nunjucks/) is a powerful and flexible templating engine for JavaScript, heavily inspired by Jinja2 (a popular templating engine for Python). It allows developers to create dynamic HTML, XML, or other text-based content by embedding logic, variables, and control structures directly within templates.
 
