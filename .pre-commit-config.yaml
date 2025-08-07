@@ -53,7 +53,7 @@ repos:
           (^categories/.*\.md$)|
           (^index\.md$)|
           (^404\.md$)|
-          (\.github/CODE_OF_CONDUCT\.md$)
+          (^\.github/CODE_OF_CONDUCT\.md$)
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
