@@ -36,12 +36,12 @@ documentation:
           - any-glob-to-any-file:
               - 'README.md'
               - 'CONTRIBUTING.md'
-              - 'docs/**/*'
 
 frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
+              - 'docs/**/*'
               - 'public/**/*'
 
 infra:
