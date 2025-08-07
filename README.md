@@ -1,10 +1,15 @@
+
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>brisbanesocialchess.github.io</h1>
-
-Welcome to the source code repository for the Brisbane Social Chess website.
-
+  <p>Welcome to the source code repository for the Brisbane Social Chess website.</p>
 </div>
+
+---
+
+## About the Site Generator
+
+This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static website. You do not need to know advanced JavaScript to get started—just follow the steps below!
 
 [![CodeQL Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fcodeql.yml?label=codeql)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
 [![Dprint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fdprint.yml?label=dprint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
@@ -38,6 +43,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Local Development](#local-development)
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Quick Start](#quick-start)
   - [Cloudflare Workers Development](#cloudflare-workers-development)
@@ -49,6 +55,59 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+---
+
+
+## Local Development (Getting Started)
+
+If you are a new developer or contributor, follow these steps to run or develop the website locally:
+
+### 1. Install Node.js
+
+You need [Node.js](https://nodejs.org/) (version 16 or higher). Download and install it if you don't have it already.
+
+### 2. Install Project Dependencies
+
+Open a terminal in the project root and run:
+
+```bash
+npm install
+```
+
+This command downloads all the packages the project needs.
+
+### 3. Start the Development Server (with Watching)
+
+To develop the site and see your changes live, use:
+
+```bash
+npm run start
+```
+
+**What does this do?**
+- Starts a local web server so you can view the site in your browser.
+- Enables "watching mode": any time you edit a file, the site automatically rebuilds and reloads in your browser. This is the best way to develop and preview changes.
+
+### 4. Build the Site Once (Production Build)
+
+If you just want to generate the static site files (for deployment or testing), run:
+
+```bash
+npm run build
+```
+
+**What does this do?**
+- Runs Eleventy once to generate the final static website in the output directory.
+- Does not start a server or watch for changes.
+
+---
+
+**Summary:**
+- Use `npm run start` for development (with live reload and watching for changes).
+- Use `npm run build` for a one-time build (no watching, for production or deployment).
+
+For more details about Eleventy, see the [official documentation](https://www.11ty.dev/docs/).
 
 ---
 
