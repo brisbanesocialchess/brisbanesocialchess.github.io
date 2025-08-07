@@ -1,12 +1,12 @@
 name: Build and Deploy Eleventy site
 
-permissions:
-  contents: read
-
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write # Grants write access to repository contents
 
 jobs:
   build:
