@@ -40,6 +40,14 @@ repos:
         args: ['644']
         files: \.md$
         stages: [manual]
+  - repo: local
+    hooks:
+      - id: eleventy-build-check
+        name: Eleventy build and output check
+        description: Run `npm run build`
+        language: system
+        entry: npm run build
+        pass_filenames: false
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
@@ -47,7 +55,13 @@ repos:
         name: Add TOC for Markdown and RST files
         description: Adds a Markdown table of contents
         files: \.md$
-        exclude: \.github/CODE_OF_CONDUCT\.md
+        exclude: |
+          (?x)
+          ^categories/.*\.md$|
+          ^posts/.*\.md$|
+          ^tags/.*\.md$|
+          ^index\.md$|
+          ^404\.md$
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
