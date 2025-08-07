@@ -18,7 +18,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-	background: url('assets/background.jpg') no-repeat center center fixed;
+	background: url('background.jpg') no-repeat center center fixed;
 	background-size: cover;
 	color: #ffffff;
 }
