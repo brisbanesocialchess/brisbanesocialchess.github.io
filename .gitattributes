@@ -34,3 +34,6 @@ README.md export-ignore
 
 # Force .py files to be recognized as Python by Linguist
 *.py linguist-language=Python
+
+# *.md text eol=lf
+# *.yml text eol=lf
