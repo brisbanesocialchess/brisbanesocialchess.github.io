@@ -1,2 +1,2 @@
-Life Is A Game Play To Win
+Life Is A Game: Play To Win
 ==========================
