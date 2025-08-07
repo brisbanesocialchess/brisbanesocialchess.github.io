@@ -3,7 +3,7 @@ name: Build and Deploy Eleventy site
 on:
   push:
     branches:
-      - main
+      - '**'
 
 permissions:
   contents: write
