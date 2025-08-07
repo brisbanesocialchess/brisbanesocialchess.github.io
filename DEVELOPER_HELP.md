@@ -68,6 +68,12 @@ npx dprint fmt --allow-no-files
 
 # Run all pre-commit checks
 python -m pre_commit run --all-files
+
+# Or run specific hooks only (examples):
+python -m pre_commit run prettier        # Run only prettier formatting
+python -m pre_commit run eslint          # Run only ESLint checks
+python -m pre_commit run markdownlint    # Run only Markdown linting
+python -m pre_commit run yamllint        # Run only YAML linting
 ```
 
 **Note:** If you don't have pre-commit installed, install it first:
