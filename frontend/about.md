@@ -253,15 +253,13 @@ title: About
             <strong>Four-player chess:</strong>
             <a href="https://www.chess.com/variants/4-player-chess">Play on Chess.com</a>
             <p>
-                One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical
-                zipper bag
+                One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag
             </p>
         </li>
         <li>
             <strong>Harmegedo 6 Player Chess Set - The Board of Lords:</strong>
             <p>
-                One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9
-                pawns for a total of 18 soldiers
+                One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
             </p>
         </li>
         <li>
@@ -410,17 +408,17 @@ title: About
 <section class="section">
     <h2><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
     <figure>
-        <a href="assets/images/standard-4-player-chess.jpg">
-            <img src="assets/images/standard-4-player-chess.jpg" alt="Standard 4 Player Chess" />
+        <a href="{{ '/assets/images/standard-4-player-chess.jpg' | url }}">
+            <img src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}" alt="Standard 4 Player Chess" />
         </a>
     </figure>
 </section>
 <section class="section">
     <h2><span aria-hidden="true">🏡</span> Garden Room — Random Days Gone Bye</h2>
     <figure>
-        <a href="assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg">
+        <a href="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
             <img
-                src="assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg"
+                src="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
                 alt="Harmegedo The Board of Lords at the Garden Room"
             />
         </a>
