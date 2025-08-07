@@ -1,0 +1,129 @@
+<h1>Contributing Guide ✨</h1>
+<p>Welcome to <strong>Awesome Social Chess</strong>! We appreciate your interest in contributing. All contributions are welcome! 💖</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#creating-an-issue">Creating an Issue</a></li>
+<li><a href="#how-to-contribute">How to Contribute</a>
+<ul>
+<li><a href="#1-fork-the-repository-">1. Fork the Repository 🔗</a></li>
+<li><a href="#2-clone-your-fork-">2. Clone Your Fork 📥</a></li>
+<li><a href="#3--create-a-branch">3. 🌿 Create a Branch</a></li>
+<li><a href="#4--make-changes">4. ✏️ Make Changes</a></li>
+<li><a href="#-formatting--commit-rules">📐 Formatting &amp; Commit Rules</a>
+<ul>
+<li><a href="#-setting-up-dprint">🔧 Setting Up dprint</a></li>
+<li><a href="#%F0%9F%A7%AA-setting-up-pre-commit">🧪 Setting Up pre-commit</a></li>
+</ul>
+</li>
+<li><a href="#5--commit-changes">5. 📝 Commit Changes</a></li>
+<li><a href="#6--push-changes">6. ⬆️ Push Changes</a></li>
+<li><a href="#7--create-a-pull-request">7. 🔄 Create a Pull Request</a></li>
+</ul>
+</li>
+<li><a href="#community-support">Community Support</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<hr>
+<h2>Getting Started</h2>
+<p>Before you begin:</p>
+<ul>
+<li><strong>Familiarize Yourself</strong>: Take a moment to read through the existing <a href="https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues">issues</a> and <a href="https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/pulls">pull requests</a> to understand current discussions.</li>
+</ul>
+<h2>Creating an Issue</h2>
+<p>If you encounter a bug or have a feature request, please create an issue:</p>
+<ul>
+<li><strong>Search Existing Issues</strong>: Check if the issue already exists to avoid duplicates.</li>
+<li><strong>Open a New Issue</strong>:
+<ul>
+<li>Use a descriptive title.</li>
+<li>Clearly describe the problem or feature request.</li>
+<li>Provide steps to reproduce the issue, if applicable.</li>
+<li>Include screenshots or code snippets, if helpful.</li>
+</ul>
+</li>
+</ul>
+<h2>How to Contribute</h2>
+<p>We welcome contributions in the form of bugfixes, new features, documentation improvements, and more.</p>
+<h3>1. Fork the Repository 🔗</h3>
+<p>Click the <strong>&quot;Fork&quot;</strong> button at the top right corner of the repository page to create a copy of the repository on your GitHub account.</p>
+<h3>2. Clone Your Fork 📥</h3>
+<p>Clone the forked repository to your local machine:</p>
+<pre><code class="language-bash">git clone https://github.com/your-username/brisbanesocialchess.github.io.git
+</code></pre>
+<h3>3. 🌿 Create a Branch</h3>
+<pre><code class="language-bash">cd brisbanesocialchess.github.io
+git checkout -b add-new-feature
+</code></pre>
+<h3>4. ✏️ Make Changes</h3>
+<p>Make necessary improvements, such as fixing bugs, enhancing documentation, or adding new features.</p>
+<hr>
+<h3>📐 Formatting &amp; Commit Rules</h3>
+<p>Before committing, please make sure your code follows our formatting and line-ending standards.</p>
+<p>We use:</p>
+<ul>
+<li><a href="https://dprint.dev"><strong>dprint</strong></a> for consistent code formatting</li>
+<li><a href="https://pre-commit.com"><strong>pre-commit</strong></a> for checking <strong>end-of-file</strong> and <strong>line endings (LF/CRLF)</strong></li>
+</ul>
+<h4>🔧 Setting Up dprint</h4>
+<p><strong>Windows:</strong></p>
+<ul>
+<li>Download and install dprint from the <a href="https://github.com/dprint/dprint/releases">dprint releases</a></li>
+<li>Run the installer and make sure <code>dprint</code> is in your system PATH</li>
+</ul>
+<p><strong>Linux/macOS:</strong></p>
+<p>Install via curl:</p>
+<pre><code class="language-bash">curl -fsSL https://dprint.dev/install.sh | sh
+</code></pre>
+<p><strong>To check code without changing files:</strong></p>
+<pre><code class="language-bash">dprint check --allow-no-files
+</code></pre>
+<p><strong>To auto-format code:</strong></p>
+<pre><code class="language-bash">dprint fmt --allow-no-files
+</code></pre>
+<p>Our configuration is already in the repo: <a href="./dprint.json">dprint.json</a></p>
+<hr>
+<h4>🧪 Setting Up pre-commit</h4>
+<p>We use <a href="https://pre-commit.com/">pre-commit</a> to automatically check your code for common issues, like missing end-of-file newlines and inconsistent line endings. This keeps our project clean and easy for everyone to work on.</p>
+<p><strong>How to install (requires Python):</strong></p>
+<pre><code class="language-bash">python -m pip install --user pre-commit
+</code></pre>
+<p><strong>Set up pre-commit hooks for this project:</strong></p>
+<pre><code class="language-bash">pre-commit install
+</code></pre>
+<p>This will make pre-commit run its checks every time you make a commit.
+<strong>Running checks manually (optional):</strong></p>
+<pre><code class="language-bash">pre-commit run --all-files
+</code></pre>
+<p>This command runs all configured pre-commit hooks against all files in the repository.
+For more info, visit the <a href="https://pre-commit.com/">pre-commit website</a>.</p>
+<hr>
+<h3>5. 📝 Commit Changes</h3>
+<p>Use meaningful and clear commit messages that describe the purpose of your changes. This helps maintain a clean and understandable project history.</p>
+<p><strong>Example of staging and committing changes:</strong></p>
+<pre><code class="language-bash">git add .
+git commit -m &quot;Add feature: description of feature&quot;
+</code></pre>
+<h3>6. ⬆️ Push Changes</h3>
+<p>Push your local branch to your remote fork. Replace <code>your-branch-name</code> with the name of your current branch.</p>
+<pre><code class="language-bash">git push origin add-new-feature
+</code></pre>
+<p>This makes your changes available for review and merging via a Pull Request.</p>
+<h3>7. 🔄 Create a Pull Request</h3>
+<ul>
+<li>Go to your forked repository on GitHub.</li>
+<li>Click the <strong>&quot;Compare &amp; pull request&quot;</strong> button near the top of the page.</li>
+<li>Make sure your changes look correct and you are merging into the right branch.</li>
+<li>Write a clear and simple title describing your changes.</li>
+<li>Add a short description explaining what you changed and why. If it fixes an issue, mention it like this: <code>Fixes #issue-number</code>.</li>
+<li>Click <strong>&quot;Create pull request&quot;</strong> to submit your contribution.</li>
+<li>Watch for feedback on your Pull Request and respond to any comments.</li>
+</ul>
+<hr>
+<h2>Community Support</h2>
+<p>If you need help or have questions:</p>
+<ul>
+<li>Join Discussions: Participate in ongoing discussions with the community.</li>
+<li>Contact Maintainers: Reach out to project maintainers if you need direct assistance.</li>
+</ul>
