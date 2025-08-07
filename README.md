@@ -43,6 +43,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
   - [Getting Started / Building the Site](#getting-started--building-the-site)
   - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
   - [Build the Documentation](#build-the-documentation)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -141,6 +142,12 @@ make html
 
 The generated HTML site will be in the `doc/build/html` folder.
 You can open the HTML files with your web browser.
+
+---
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=brisbanesocialchess/brisbanesocialchess.github.io)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/contributors)
 
 ---
 
