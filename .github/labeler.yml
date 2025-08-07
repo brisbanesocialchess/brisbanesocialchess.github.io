@@ -36,6 +36,7 @@ documentation:
           - any-glob-to-any-file:
               - 'README.md'
               - 'CONTRIBUTING.md'
+              - 'doc/**/*'
 
 frontend:
   - any:

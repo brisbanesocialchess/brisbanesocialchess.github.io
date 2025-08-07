@@ -16,22 +16,23 @@ documentation for details.
    :caption: Contents:
 
    about
+   life-is-a-game-play-to-win
    a-good-player-is-always-lucky
-   how-does-the-horsey-move-again
    when-you-see-a-good-move-look-for-a-better-one
    is-your-move-safe
-   cool-chess
+   how-does-the-horsey-move-again
    four-player-chess
    quaternity
    harmegedo-the-board-of-lords
+   cool-chess
    elements-of-chess-strategy
+   openings-for-club-players
    play-better-chess
+   end-games
    rise-of-the-streamers
    famous-tournaments
-   openings-for-club-players
    chess-in-movies-and-tv
    famous-female-chess-players
-   end-games
    books
    history-of-chess
    chess-variants
