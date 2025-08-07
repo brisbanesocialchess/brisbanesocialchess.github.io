@@ -1,0 +1,15 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+permalink: "/categories/{{ category | slug }}/index.html"
+---
+
+<h1>Posts in category: {{ category }}</h1>
+
+<ul>
+  {% for post in collections[category] %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>
