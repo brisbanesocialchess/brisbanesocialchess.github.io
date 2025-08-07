@@ -43,6 +43,7 @@ frontend:
       - changed-files:
           - any-glob-to-any-file:
               - 'frontend/**/*'
+              - '.eleventy.js'
 
 infra:
   - any:
