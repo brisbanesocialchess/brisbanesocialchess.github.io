@@ -42,8 +42,8 @@ frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'docs/**/*'
-              - 'public/**/*'
+              - 'frontend/**/*'
+              - '.eleventy.js'
 
 infra:
   - any:

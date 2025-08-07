@@ -42,11 +42,15 @@ repos:
         stages: [manual]
   - repo: local
     hooks:
+      - id: npm-ci
+        name: Install Node dependencies
+        entry: npm ci
+        language: system
+        pass_filenames: false
       - id: eleventy-build-check
         name: Eleventy build and output check
-        description: Run `npm run build`
-        language: system
         entry: npm run build
+        language: system
         pass_filenames: false
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
@@ -57,23 +61,20 @@ repos:
         files: \.md$
         exclude: |
           (?x)
-          ^categories/.*\.md$|
-          ^posts/.*\.md$|
-          ^tags/.*\.md$|
-          ^index\.md$|
-          ^404\.md$
+          ^frontend/.*\.md$
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
       - id: isort
         name: isort (python)
         description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
-  - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.27.2
-    hooks:
-      - id: gitleaks
-        name: Run gitleaks
-        description: Check for secrets with gitleaks
+  # GO-based
+  # - repo: https://github.com/gitleaks/gitleaks
+  #   rev: v8.27.2
+  #   hooks:
+  #     - id: gitleaks
+  #       name: Run gitleaks
+  #       description: Check for secrets with gitleaks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -190,6 +191,7 @@ repos:
         description: MarkdownLint Command Line Interface
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
+        exclude: ^frontend/.*\.md$
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:

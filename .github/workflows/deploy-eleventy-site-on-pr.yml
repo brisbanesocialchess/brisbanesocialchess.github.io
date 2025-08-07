@@ -1,19 +1,19 @@
-name: Build and Deploy Eleventy site
+name: CI - Build Eleventy on PR
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
 permissions:
-  contents: write # Grants write access to repository contents
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -27,8 +27,9 @@ jobs:
       - name: Build Eleventy site
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+      - name: Verify build output
+        run: |
+          if [ ! -d "./_site" ]; then
+            echo "_site folder missing — build failed"
+            exit 1
+          fi

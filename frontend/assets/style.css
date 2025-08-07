@@ -18,7 +18,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-	background: url('assets/background.jpg') no-repeat center center fixed;
+	background: url('background.jpg') no-repeat center center fixed;
 	background-size: cover;
 	color: #ffffff;
 }
@@ -400,6 +400,13 @@ form fieldset input[type='radio'] {
 .github-profile--medium img.github-avatar {
 	width: 220px;
 }
+/* Meetups */
+.bio-img {
+	max-width: 150px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
 /* Meetups */
 .bio-img {
 	max-width: 150px;
