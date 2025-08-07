@@ -7,6 +7,7 @@
 		"eslint-plugin-sort-keys-fix": "^1.1.2",
 		"globals": "^16.3.0",
 		"lerna": "^8.2.3",
+		"markdown-link-check": "^3.13.7",
 		"prettier": "^3.6.2"
 	},
 	"name": "root",
@@ -16,7 +17,9 @@
 		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
-		"test": "npx lerna run test --stream"
+		"test": "npx lerna run test --stream",
+		"check-links": "find . -name '*.md' -not -path './node_modules/*' -not -path './.git/*' | xargs markdown-link-check --config .markdown-link-check.json",
+		"check-links-verbose": "find . -name '*.md' -not -path './node_modules/*' -not -path './.git/*' | xargs markdown-link-check --config .markdown-link-check.json --verbose"
 	},
 	"workspaces": [
 		"packages/*"
