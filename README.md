@@ -43,6 +43,11 @@ This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern a
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Local Development](#local-development)
+  - [1. Install Node.js](#1-install-nodejs)
+  - [2. Install Project Dependencies](#2-install-project-dependencies)
+  - [3. Start the Development Server (with Watching)](#3-start-the-development-server-with-watching)
+  - [4. Build the Site Once (Production Build)](#4-build-the-site-once-production-build)
+  - [5. Before Submitting a Pull Request](#5-before-submitting-a-pull-request)
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Quick Start](#quick-start)
   - [Cloudflare Workers Development](#cloudflare-workers-development)
@@ -109,6 +114,27 @@ npm run build
 - Use `npm run build` for a one-time build (no watching, for production or deployment).
 
 For more details about Eleventy, see the [official documentation](https://www.11ty.dev/docs/).
+
+### 5. Before Submitting a Pull Request
+
+Before submitting a pull request, make sure to run these commands to fix any formatting or linting issues:
+
+```bash
+# Fix formatting issues
+npm run format
+npx dprint fmt --allow-no-files
+
+# Run all pre-commit checks
+python -m pre_commit run --all-files
+```
+
+**Note:** If you don't have pre-commit installed, install it first:
+
+```bash
+pip install pre-commit
+```
+
+These checks ensure your code follows the project's style guidelines and passes all automated tests.
 
 ---
 

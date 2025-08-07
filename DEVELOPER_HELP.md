@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Developer Help: Running the Website Locally](#developer-help-running-the-website-locally)
+  - [1. Install Node.js](#1-install-nodejs)
+  - [2. Install Project Dependencies](#2-install-project-dependencies)
+  - [3. Start the Development Server (with Watching)](#3-start-the-development-server-with-watching)
+  - [4. Build the Site Once (Production Build)](#4-build-the-site-once-production-build)
+  - [Before Submitting a Pull Request](#before-submitting-a-pull-request)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Developer Help: Running the Website Locally
 
 Welcome! If you are new to this project, here is how to get started as a developer:
@@ -44,3 +56,24 @@ This runs Eleventy once and outputs the final static website. No server or watch
 - Use `npm run build` for a one-time build (no watching, for production or deployment).
 
 This project uses [Eleventy (11ty)](https://www.11ty.dev/) as the static site generator. For more details, see the [README.md](README.md#local-development) or the [Eleventy documentation](https://www.11ty.dev/docs/).
+
+## Before Submitting a Pull Request
+
+Before submitting a pull request, make sure to run these commands to fix any formatting or linting issues:
+
+```bash
+# Fix formatting issues
+npm run format
+npx dprint fmt --allow-no-files
+
+# Run all pre-commit checks
+python -m pre_commit run --all-files
+```
+
+**Note:** If you don't have pre-commit installed, install it first:
+
+```bash
+pip install pre-commit
+```
+
+These checks ensure your code follows the project's style guidelines and passes all automated tests.
