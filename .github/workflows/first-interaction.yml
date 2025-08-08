@@ -20,4 +20,3 @@ jobs:
             Thanks for opening this issue! We appreciate your contribution.
           pr-message: |
             Thanks for your first pull request! We appreciate your contribution.
-          skip-checks: false
