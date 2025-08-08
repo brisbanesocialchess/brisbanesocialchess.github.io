@@ -2,7 +2,7 @@
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>brisbanesocialchess.github.io</h1>
 
-Welcome to the source code repository for the Brisbane Social Chess website.
+Welcome to the source code repository for the Brisbane Social Chess site.
 
 </div>
 
@@ -64,16 +64,17 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network `↗` with a single command — no infrastructure to manage, no complex configuration.
 
-[Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+[Lerna](https://lerna.js.org/) is a fast, modern build tool for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
 [Vitest](https://vitest.dev/) is a blazing-fast, next-generation testing framework designed for modern JavaScript and TypeScript projects, built on top of Vite. It's known for its speed and developer experience, offering instant feedback and seamless integration with Vite's features like hot module replacement (HMR). Vitest is inspired by Jest and aims to provide a familiar yet enhanced testing experience.
 
 [Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/) is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
 
-[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
+[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host sites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 
-[Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build websites. Unlike dynamic website builders, 11ty generates all the website's content upfront, which leads to better performance and simpler deployments.
+[Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build sites. Unlike dynamic site builders, 11ty generates all the website's content upfront, which leads to better performance and simpler deployments.
 
 [Nunjucks](https://mozilla.github.io/nunjucks/) is a powerful and flexible templating engine for JavaScript, heavily inspired by Jinja2 (a popular templating engine for Python). It allows developers to create dynamic HTML, XML, or other text-based content by embedding logic, variables, and control structures directly within templates.
 
@@ -138,7 +139,7 @@ And then:
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
-Or if you want to run and keep the container and go into bash:
+Or if you want to run and keep the container and go into Bash:
 
 ```bash
 docker run -it -v "$PWD":/app -w /app my-go-precommit bash
@@ -148,7 +149,7 @@ docker run -it -v "$PWD":/app -w /app my-go-precommit bash
 
 ### Build the Documentation
 
-Run the following commands from the repo root to create the Sphinx documentation with Make:
+Run the following commands from the repository root to create the Sphinx documentation with Make:
 
 ```shell
 cd doc
