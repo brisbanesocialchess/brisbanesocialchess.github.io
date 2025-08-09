@@ -4,6 +4,7 @@ default_language_version:
   python: python3
   node: 22.18.0
 minimum_pre_commit_version: '3.2.0'
+
 repos:
   - repo: meta
     hooks:
@@ -13,6 +14,7 @@ repos:
       - id: check-hooks-apply
         name: Check hooks apply to the repository
         description: Useful when testing new hooks to see if they apply to the repository
+
   - repo: local
     hooks:
       - id: check-zip-file-is-not-committed
@@ -23,6 +25,7 @@ repos:
           Zip files are not allowed in the repository as they are hard to
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
@@ -31,6 +34,7 @@ repos:
         description: Check spelling with codespell
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: '(package-lock\.json|yarn\.lock)$'
+
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.5.5
     hooks:
@@ -40,14 +44,7 @@ repos:
         args: ['644']
         files: \.md$
         stages: [manual]
-  - repo: local
-    hooks:
-      - id: eleventy-build-check
-        name: Eleventy build and output check
-        description: Run `npm run build`
-        language: system
-        entry: npm run build
-        pass_filenames: false
+
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
@@ -62,18 +59,21 @@ repos:
           ^tags/.*\.md$|
           ^index\.md$|
           ^404\.md$
+
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
       - id: isort
         name: isort (python)
         description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
+
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.27.2
     hooks:
       - id: gitleaks
         name: Run gitleaks
         description: Check for secrets with gitleaks
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -125,12 +125,14 @@ repos:
         name: Run check-added-large-files
         description: Prevent giant files from being committed
         args: ['--maxkb=1500']
+
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
       - id: actionlint
         name: Run actionlint
         description: Static checker for GitHub Actions workflow files
+
   - repo: https://github.com/oxipng/oxipng
     rev: v9.1.5
     hooks:
@@ -138,6 +140,7 @@ repos:
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+
   - repo: local
     hooks:
       - id: npm-ci
@@ -146,12 +149,14 @@ repos:
         entry: npm ci
         language: system
         pass_filenames: false
+
       - id: test-lerna
         name: Run test-lerna
         description: Run learn tests
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
+
       - id: prettier
         name: Run prettier
         description: format files with prettier
@@ -159,20 +164,21 @@ repos:
         files: \.(css|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
+
       - id: npm-audit
         name: Run npm-audit
         description: Run npm audit
         entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
-      - id: check-zip-file-is-not-committed
-        name: Check no zip files are committed
-        description: Zip files are not allowed in the repository
-        language: fail
-        entry: |
-          Zip files are not allowed in the repository as they are hard to
-          track and have security implications. Please remove the zip file from the repository.
-        files: (?i)\.zip$
+
+      - id: eleventy-build-check
+        name: Eleventy build and output check
+        description: Run `npm run build`
+        language: system
+        entry: npm run build
+        pass_filenames: false
+
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v9.32.0
     hooks:
@@ -182,6 +188,7 @@ repos:
         entry: eslint --config .github/linters/eslint.config.mjs --fix
         language: node
         files: \.(cjs|js|mjs)$
+
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.45.0
     hooks:
@@ -190,6 +197,7 @@ repos:
         description: MarkdownLint Command Line Interface
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
@@ -199,19 +207,16 @@ repos:
         args: [--strict, -c=.github/linters/.yaml-lint.yml]
         types: [yaml]
         files: \.ya?ml$
-  # - repo: https://github.com/koalaman/shellcheck-precommit
-  #   rev: v0.9.0
-  #   hooks:
-  #     - id: shellcheck
-  #       name: run shellcheck
+
   - repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
       - id: black
         name: The uncompromising Python code formatter
-        description: Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting
+        description: Black is the uncompromising Python code formatter.
         language_version: python3
         args: ['--line-length=88']
+
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
     hooks:
