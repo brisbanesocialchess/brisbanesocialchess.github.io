@@ -125,7 +125,7 @@ title: About Us | Brisbane Social Chess Club
         </a>
     </div>
     <br />
-    <h3><span aria-hidden="true">💾</span> Developers</h3>
+    <h3><span aria-hidden="true">💾</span> Developer</h3>
     <div class="github-profile github-profile--medium">
         <a href="https://github.com/BaseMax" class="role-developer">
             <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar" />
