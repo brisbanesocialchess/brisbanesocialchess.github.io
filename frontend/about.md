@@ -50,7 +50,7 @@ title: About Us | Brisbane Social Chess Club
             <tr>
                 <th scope="row">Treasurer</th>
                 <td>
-                    <a href="https://github.com/LuckyNotGood"><span class="role-board">Matt McLean</span></a>
+                    <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>
                 </td>
             </tr>
             <tr>
