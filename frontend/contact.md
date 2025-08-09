@@ -10,11 +10,11 @@ title: Contact Us | Brisbane Social Chess Club
 	<form action="#" method="POST" class="form form-contact" novalidate>
 		<div class="form-group">
 			<label for="name">Your Name <span aria-hidden="true">*</span></label>
-			<input type="text" id="name" name="name" required autocomplete="given-name" />
+			<input type="text" id="name" name="name" required autocomplete="name" />
 		</div>
 		<div class="form-group">
 			<label for="email">Your Email <span aria-hidden="true">*</span></label>
-			<input type="email" id="email" name="email" required autocomplete="family-name" />
+			<input type="email" id="email" name="email" required autocomplete="email" />
 		</div>
 		<div class="form-group">
 			<label for="subject">Subject <span aria-hidden="true">*</span></label>

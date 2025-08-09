@@ -285,8 +285,9 @@ form fieldset input[type='radio'] {
 	letter-spacing: 0.03em;
 	color: #e0e0e0;
 }
-.formt input[type='text'],
-.form input[type='email'],
+.form input[type=number],
+.form input[type=text],
+.form input[type=email],
 .form textarea {
 	width: 100%;
 	padding: 0.75rem 1rem;
@@ -299,17 +300,22 @@ form fieldset input[type='radio'] {
 		border-color 0.3s ease,
 		background-color 0.3s ease;
 	resize: vertical;
+	min-height: 50px;
+}
+.form textarea {
 	min-height: 120px;
 }
-.form input[type='text']:focus,
-.form input[type='email']:focus,
+.form input[type=number]:focus,
+.form input[type=text]:focus,
+.form input[type=email]:focus,
 .form textarea:focus {
 	border-color: #46c7ef;
 	background-color: rgba(255, 255, 255, 0.15);
 	outline: none;
 	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
 }
-.form button[type='submit'] {
+.form button[type=submit],
+.form button[type=rest] {
 	align-self: center;
 	width: 100%;
 	max-width: 250px;
