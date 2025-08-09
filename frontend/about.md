@@ -117,7 +117,7 @@ title: About Us | Brisbane Social Chess Club
     <h3><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
     <div class="github-profile github-profile--big">
         <a href="https://github.com/jbampton" class="role-admin">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/418747?v=4&s=350" alt="jbampton avatar" />
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
             <br />
             <span>John Bampton</span>
             <br />
@@ -128,7 +128,7 @@ title: About Us | Brisbane Social Chess Club
     <h3><span aria-hidden="true">💾</span> Developer</h3>
     <div class="github-profile github-profile--medium">
         <a href="https://github.com/BaseMax" class="role-developer">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar" />
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4" alt="Max Base avatar" />
             <br />
             <span>Max Base</span>
             <br />
