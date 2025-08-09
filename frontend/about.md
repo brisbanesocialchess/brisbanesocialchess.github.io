@@ -337,7 +337,7 @@ title: About Us | Brisbane Social Chess Club
             </tr>
             <tr>
                 <td><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
-                <td><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Gary Kasparov</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
                 <td>Penguin Books (2021)</td>
             </tr>
             <tr>
