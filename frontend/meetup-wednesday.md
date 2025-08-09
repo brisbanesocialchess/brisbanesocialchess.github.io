@@ -20,7 +20,7 @@ title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
         Come if you are available. Parking available across the road, on street or at the Mowbray Park ferry. <br/>
         If you wish to come by ferry, it is a 5 minutes' walk to June's.
 	</p>
-	<p><strong>Time:</strong>  12:00 PM – 2:30 PM AEST</p>
+	<p><strong>Time:</strong> 12:00 PM – 2:30 PM AEST</p>
 	<p><strong>When:</strong> Every Wednesday</p>
 	<p><strong>Address:</strong> 17 Lytton road East Brisbane - Brisbane</p>
 	<div class="map">
