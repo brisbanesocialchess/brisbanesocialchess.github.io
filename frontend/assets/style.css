@@ -285,9 +285,9 @@ form fieldset input[type='radio'] {
 	letter-spacing: 0.03em;
 	color: #e0e0e0;
 }
-.form input[type=number],
-.form input[type=text],
-.form input[type=email],
+.form input[type='number'],
+.form input[type='text'],
+.form input[type='email'],
 .form textarea {
 	width: 100%;
 	padding: 0.75rem 1rem;
@@ -305,17 +305,17 @@ form fieldset input[type='radio'] {
 .form textarea {
 	min-height: 120px;
 }
-.form input[type=number]:focus,
-.form input[type=text]:focus,
-.form input[type=email]:focus,
+.form input[type='number']:focus,
+.form input[type='text']:focus,
+.form input[type='email']:focus,
 .form textarea:focus {
 	border-color: #46c7ef;
 	background-color: rgba(255, 255, 255, 0.15);
 	outline: none;
 	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
 }
-.form button[type=submit],
-.form button[type=rest] {
+.form button[type='submit'],
+.form button[type='rest'] {
 	align-self: center;
 	width: 100%;
 	max-width: 250px;
@@ -472,27 +472,29 @@ form fieldset input[type='radio'] {
 	}
 }
 @media (max-width: 500px) {
-    .nav-links {
-        line-height: 1.4rem;
-    }
+	.nav-links {
+		line-height: 1.4rem;
+	}
 	.background-overlay {
 		padding: 0.5rem 0rem;
 	}
-    .content-wrapper {
-        padding: 1rem;
-    }
-	.form-contact, .form-registration {
+	.content-wrapper {
+		padding: 1rem;
+	}
+	.form-contact,
+	.form-registration {
 		gap: 1rem;
 	}
 	.button {
 		padding: 0.75rem 1rem;
 		font-size: 1rem;
 	}
-    .nav-links a {
-        padding: 0;
-        display: inline-block;
-    }
-	.custom-table th:first-child, .custom-table td:first-child {
+	.nav-links a {
+		padding: 0;
+		display: inline-block;
+	}
+	.custom-table th:first-child,
+	.custom-table td:first-child {
 		width: 15%;
 	}
 	.logo h1 {
