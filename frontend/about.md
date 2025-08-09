@@ -137,112 +137,37 @@ title: About Us | Brisbane Social Chess Club
     </div>
     <br />
     <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
+<div class="discord-moderators-list">
+{% for member in discordModerators %}
     <div class="github-profile github-profile--small">
-        <a href="https://github.com/anufdo" class="role-moderator">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar" />
-            <br />
-            <span>Anuradha Fernando</span>
-            <br />
-            <span>@anufdo</span>
+      {% if member.github %}
+        <a href="{{ member.github }}" class="role-moderator" target="_blank" rel="noopener">
+          <img
+            class="github-avatar"
+            src="https://github.com/{{ member.github | split('/') | last }}.png?size=125"
+            alt="{{ member.name }} avatar"
+          />
+          <br />
+          <span>{{ member.name }}</span>
+          <br />
+          <span>{{ member.discord }}</span>
         </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/ayushrana182" class="role-moderator">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=125" alt="Ayush Rana avatar" />
-            <br />
-            <span>Ayush Rana</span>
-            <br />
-            <span>@ayushrana182</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
+      {% else %}
         <div class="role-leader">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/583231?v=4&s=125" alt="Jasper avatar" />
-            <br />
-            <span>Jasper</span>
-            <br />
-            <span>N/A</span>
+          <img
+            class="github-avatar"
+            src="https://avatars.githubusercontent.com/u/583231?v=4&s=125"
+            alt="{{ member.name }} avatar"
+          />
+          <br />
+          <span>{{ member.name }}</span>
+          <br />
+          <span>{{ member.discord }}</span>
         </div>
+      {% endif %}
     </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/prio101" class="role-moderator">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=125" alt="Mahabub Islam Prio avatar" />
-            <br />
-            <span>Mahabub Islam Prio</span>
-            <br />
-            <span>@prio101</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/LuckyNotGood" class="role-board">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=125" alt="Matt McLean avatar" />
-            <br />
-            <span>Matt McLean</span>
-            <br />
-            <span>@LuckyNotGood</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/mohammadlotfia" class="role-moderator">
-            <img
-                class="github-avatar"
-                src="https://avatars.githubusercontent.com/u/87372623?v=4&s=125"
-                alt="Mohammad Lotfi Akbarabadi avatar"
-            />
-            <br />
-            <span>Mohammad Lotfi Akbarabadi</span>
-            <br />
-            <span>@mohammadlotfia</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/udha" class="role-moderator">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=125" alt="Nicholas Meredith avatar" />
-            <br />
-            <span>Nicholas Meredith</span>
-            <br />
-            <span>@udha</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/garveybiz" class="role-board">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=125" alt="Rob Garvey avatar" />
-            <br />
-            <span>Rob Garvey</span>
-            <br />
-            <span>@garveybiz</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/smriad" class="role-moderator">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=125" alt="SM Riad avatar" />
-            <br />
-            <span>SM Riad</span>
-            <br />
-            <span>@smriad</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/therealnugget" class="role-leader">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=125" alt="therealnugget avatar" />
-            <br />
-            <span>therealnugget</span>
-            <br />
-            <span>@therealnugget</span>
-        </a>
-    </div>
-    <div class="github-profile github-profile--small">
-        <a href="https://github.com/ugifractal" class="role-moderator">
-            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/70807?v=4&s=125" alt="sugiarto avatar" />
-            <br />
-            <span>sugiarto</span>
-            <br />
-            <span>@ugifractal</span>
-        </a>
-    </div>
-</section>
-<section class="section">
-    <h2><span aria-hidden="true">🎲</span> Games that we play</h2>
+  {% endfor %}
+</div>
     <ul>
         <li>
             <strong>Chess:</strong>
