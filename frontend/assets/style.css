@@ -442,6 +442,20 @@ form fieldset input[type='radio'] {
 	margin-top: 10px;
 }
 
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .nav-links {
+        font-size: 1.1rem;
+        line-height: 2.4rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0.8rem;
+        display: inline-block;
+    }
+}
+
+
 /* Responsive */
 @media (max-width: 500px) {
 	.form-registration {
