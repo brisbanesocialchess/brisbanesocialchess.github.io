@@ -433,31 +433,181 @@ form fieldset input[type='radio'] {
 	margin-top: 10px;
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-	.form-registration {
-		gap: 1rem;
-	}
-
-	.button {
-		padding: 0.75rem 1rem;
-		font-size: 1rem;
-	}
+/* Responsive Design */
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .content-wrapper {
+        max-width: 800px;
+    }
+    
+    .section p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 }
-@media (max-width: 500px) {
-	.content-wrapper {
-		padding: 1.5rem;
-	}
 
-	.logo h1 {
-		font-size: 1.2rem;
-	}
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+    .content-wrapper {
+        max-width: 700px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .custom-table {
+        font-size: 0.9rem;
+    }
+    
+    .github-profile--big,
+    .github-profile--big img.github-avatar {
+        width: 300px;
+    }
 }
-@media (max-width: 500px) {
-	.form-contact input[type='text'],
-	.form-contact input[type='email'],
-	.form-contact textarea {
-		font-size: 0.9rem;
-		padding: 0.6rem 0.8rem;
-	}
+
+/* Tablet screens (576px to 767px) */
+@media (max-width: 767px) {
+    .content-wrapper {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .background-overlay {
+        padding: 2rem 0.5rem;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .nav-links a {
+        margin: 0.2rem;
+    }
+    
+    .button-group {
+        gap: 0.8rem;
+    }
+    
+    .github-profile--medium,
+    .github-profile--medium img.github-avatar {
+        width: 180px;
+    }
+    
+    form fieldset {
+        padding: 0.8rem;
+    }
+    
+    .custom-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Mobile screens (575px and below) */
+@media (max-width: 575px) {
+    :root {
+        --footer-height: 100px;
+    }
+    
+    .content-wrapper {
+        padding: 1rem;
+        width: 95%;
+    }
+    
+    .logo img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo p {
+        font-size: 0.85rem;
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .section p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .form-registration,
+    .form-contact {
+        gap: 1rem;
+    }
+    
+    .form-registration input[type='text'],
+    .form-registration input[type='email'],
+    .form-registration input[type='number'],
+    .form-contact input[type='text'],
+    .form-contact input[type='email'],
+    .form-contact textarea {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .button {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    
+    .github-profile {
+        width: 120px;
+        margin: 5px;
+    }
+    
+    .github-profile--big,
+    .github-profile--big img.github-avatar {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .bio-img {
+        max-width: 120px;
+    }
+    
+    ul, ol {
+        margin-left: 20px;
+    }
+    
+    .site-footer {
+        font-size: 0.8rem;
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Small mobile screens (375px and below) */
+@media (max-width: 375px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .github-profile {
+        width: 100px;
+    }
+    
+    form fieldset label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .bio-img {
+        max-width: 100px;
+    }
 }
