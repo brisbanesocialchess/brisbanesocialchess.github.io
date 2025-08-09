@@ -1,6 +1,6 @@
 ---
 permalink: /terms/
-layout: 'layouts/base.njk'
+layout: "layouts/base.njk"
 title: Terms & Conditions | Brisbane Social Chess Club
 ---
 

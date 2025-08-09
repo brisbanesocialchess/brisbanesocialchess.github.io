@@ -1,31 +1,31 @@
 {
-	"devDependencies": {
-		"@11ty/eleventy": "^3.1.2",
-		"@eslint/js": "^9.31.0",
-		"eslint": "^9.31.0",
-		"eslint-config-prettier": "^10.1.5",
-		"eslint-plugin-prettier": "^5.5.1",
-		"eslint-plugin-sort-keys-fix": "^1.1.2",
-		"globals": "^16.3.0",
-		"lerna": "^8.2.3",
-		"prettier": "^3.6.2",
-		"slugify": "^1.6.6"
-	},
-	"name": "root",
-	"private": true,
-	"scripts": {
-		"start": "npx @11ty/eleventy --serve --input=frontend",
-		"build": "npx @11ty/eleventy --input=frontend",
-		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
-		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
-		"lint": "eslint --config .github/linters/eslint.config.mjs .",
-		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
-		"test": "npx lerna run test --stream"
-	},
-	"workspaces": [
-		"packages/*"
-	],
-	"dependencies": {
-		"luxon": "^3.7.1"
-	}
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "globals": "^16.3.0",
+    "lerna": "^8.2.3",
+    "prettier": "^3.6.2",
+    "slugify": "^1.6.6"
+  },
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve --input=frontend",
+    "build": "npx @11ty/eleventy --input=frontend",
+    "format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
+    "check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
+    "lint": "eslint --config .github/linters/eslint.config.mjs .",
+    "lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
+    "test": "npx lerna run test --stream"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "luxon": "^3.7.1"
+  }
 }
