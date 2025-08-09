@@ -88,7 +88,7 @@ title: About Us | Brisbane Social Chess Club
                 <li><span class="role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li>Jimmy Joe</li>
                 <li>
-                    <a href="https://github.com/jbampton"><span class="role-admin">John Bampton</span></a>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
+                    <a href="https://github.com/jbampton" class="role-admin">John Bampton</a>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
                     <span aria-hidden="true">👨‍🎨</span>
                 </li>
                 <li>
