@@ -26,7 +26,7 @@ title: Friday Lunchtime Meetup | Brisbane Social Chess Club
         CHESS and CHOCOLATE. (and of course, coffee).<br/>
         Friendly players will be in attendance. Come in your lunch break if you work in the city.
     </p>
-    <p><strong>Time:</strong> 12:00pm - 2:00PM AEST</p>
+    <p><strong>Time:</strong> 12:00 PM – 2:00 PM AEST</p>
     <p><strong>When:</strong> Every Friday</p>
     <p><strong>Address:</strong> 60 Albert St, - Brisbane</p>
     <div class="map">
