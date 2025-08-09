@@ -92,7 +92,7 @@ title: About Us | Brisbane Social Chess Club
                     <span aria-hidden="true">👨‍🎨</span>
                 </li>
                 <li>
-                    <a href="https://github.com/garveybiz"><span class="role-board">Rob Garvey</span></a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
+                    <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
                     future events.
                 </li>
                 <li><span class="role-board">Steve</span>: Official pawn wrangler.</li>
