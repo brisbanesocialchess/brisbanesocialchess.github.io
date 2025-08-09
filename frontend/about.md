@@ -136,75 +136,63 @@ title: About Us | Brisbane Social Chess Club
         </a>
     </div>
     <br />
-    <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
+<h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
 <div class="discord-moderators-list">
-{% for member in discordModerators %}
-    <div class="github-profile github-profile--small">
-      {% if member.github %}
-        <a href="{{ member.github }}" class="role-moderator" target="_blank" rel="noopener">
-          <img
-            class="github-avatar"
-            src="https://github.com/{{ member.github | split('/') | last }}.png?size=125"
-            alt="{{ member.name }} avatar"
-          />
-          <br />
-          <span>{{ member.name }}</span>
-          <br />
-          <span>{{ member.discord }}</span>
-        </a>
-      {% else %}
-        <div class="role-leader">
-          <img
-            class="github-avatar"
-            src="https://avatars.githubusercontent.com/u/583231?v=4&s=125"
-            alt="{{ member.name }} avatar"
-          />
-          <br />
-          <span>{{ member.name }}</span>
-          <br />
-          <span>{{ member.discord }}</span>
-        </div>
-      {% endif %}
-    </div>
+  {% for member in discordModerators %}
+    {% if member.github %}
+      <a href="{{ member.github }}" class="{{ member.role | default('role-moderator') }}" target="_blank" rel="noopener">
+        <img
+          class="github-avatar"
+          src="https://github.com/{{ member.github | split('/') | last }}.png?size=125"
+          alt="{{ member.name }} avatar"
+        />
+        <br />
+        <span>{{ member.name }}</span>
+        <br />
+        <span>{{ member.discord }}</span>
+      </a>
+    {% else %}
+      <div class="{{ member.role | default('role-leader') }}">
+        <img
+          class="github-avatar"
+          src="https://via.placeholder.com/125"
+          alt="{{ member.name }} avatar"
+        />
+        <br />
+        <span>{{ member.name }}</span>
+        <br />
+        <span>{{ member.discord }}</span>
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
-    <ul>
-        <li>
-            <strong>Chess:</strong>
-            <a href="https://lichess.org/">Play on Lichess</a>
-            <p>Lots of standard two player chess sets</p>
-        </li>
-        <li>
-            <strong>Four-player chess:</strong>
-            <a href="https://www.chess.com/variants/4-player-chess">Play on Chess.com</a>
-            <p>
-                One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag
-            </p>
-        </li>
-        <li>
-            <strong>Harmegedo 6 Player Chess Set - The Board of Lords:</strong>
-            <p>
-                One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
-            </p>
-        </li>
-        <li>
-            <strong>Quaternity:</strong>
-            <a href="https://play.quaternity.com/">Play online</a>, <a href="https://www.quaternity.com/">Official site</a>
-            <p>One Quaternity 4 Player Chess Set Basic52 144 Squares Wood Folding 64 Quality Pieces</p>
-        </li>
-    </ul>
-</section>
-<section class="section">
-    <h2><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
-    <ul>
-        <li>
-            <a href="https://www.chessplus.com/">Chessplus</a>:
-            <a href="https://www.chessplus.com/products/chessplus-everyday-edition">Everyday Edition</a>
-            <ul>
-                <li>A fast paced, edgy version of chess with exponentially more moves & all new strategies</li>
-            </ul>
-        </li>
-    </ul>
+
+<ul>
+  <li>
+    <strong>Chess:</strong>
+    <a href="https://lichess.org/">Play on Lichess</a>
+    <p>Lots of standard two player chess sets</p>
+  </li>
+  <li>
+    <strong>Four-player chess:</strong>
+    <a href="https://www.chess.com/variants/4-player-chess">Play on Chess.com</a>
+    <p>
+      One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag
+    </p>
+  </li>
+  <li>
+    <strong>Harmegedo 6 Player Chess Set - The Board of Lords:</strong>
+    <p>
+      One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
+    </p>
+  </li>
+  <li>
+    <strong>Quaternity:</strong>
+    <a href="https://play.quaternity.com/">Play online</a>, <a href="https://www.quaternity.com/">Official site</a>
+    <p>One Quaternity 4 Player Chess Set Basic52 144 Squares Wood Folding 64 Quality Pieces</p>
+  </li>
+</ul>
+
 </section>
 <section class="section">
     <h2><span aria-hidden="true">♣️</span> Games we might play in future</h2>
