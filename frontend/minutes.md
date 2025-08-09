@@ -1,6 +1,6 @@
 ---
 permalink: /minutes/
-layout: 'layouts/base.njk'
+layout: "layouts/base.njk"
 title: Meeting Minutes & Club Records | Brisbane Social Chess Club
 ---
 
