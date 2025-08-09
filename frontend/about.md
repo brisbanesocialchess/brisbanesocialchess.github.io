@@ -320,7 +320,7 @@ title: About Us | Brisbane Social Chess Club
                 <td>
                     <strong>Bobby Fischer Teaches Chess</strong>
                 </td>
-                <td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, <a href="https://en.wikipedia.org/wiki/Stuart_Margulies">Stuart Margulies</a>, <a href="https://en.wikipedia.org/wiki/Donn_Mosenfelder">Donn Mosenfelder</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
                 <td>Basic Systems Inc, Bantam Books</td>
             </tr>
             <tr>
@@ -347,14 +347,14 @@ title: About Us | Brisbane Social Chess Club
             </tr>
             <tr>
                 <td><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
-                <td><a href="https://en.wikipedia.org/wiki/John_Nunn_(chess_player)">John Nunn</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
                 <td>Gambit Publications Ltd</td>
             </tr>
             <tr>
                 <td>
                     <strong>Learn Chess From The Greats</strong>
                 </td>
-                <td><a href="https://en.wikipedia.org/wiki/Peter_J._Tamburro_Jr.">Peter J. Tamburro, Jr.</a></td>
+                <td>Peter J. Tamburro, Jr.</td>
                 <td>Dover Publications</td>
             </tr>
             <tr>
@@ -389,7 +389,7 @@ title: About Us | Brisbane Social Chess Club
                 <td>
                     <strong>The Caro-Kann The Easy Way</strong>
                 </td>
-                <td><a href="https://en.wikipedia.org/wiki/Thomas_Engqvist">Thomas Engqvist</a></td>
+                <td>Thomas Engqvist</td>
                 <td>Batsford Chess</td>
             </tr>
             <tr>
@@ -408,7 +408,7 @@ title: About Us | Brisbane Social Chess Club
                 <td>
                     <strong>The Usborne Complete Book of Chess</strong>
                 </td>
-                <td><a href="https://en.wikipedia.org/wiki/Elizabeth_Dalby">Elizabeth Dalby</a></td>
+                <td>Elizabeth Dalby</td>
                 <td>Usborne Publishing Ltd</td>
             </tr>
         </tbody>
