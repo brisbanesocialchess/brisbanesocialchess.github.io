@@ -27,7 +27,7 @@ title: Contact Us | Brisbane Social Chess Club
         <button type="submit" class="button button--main">Send Message</button>
     </form>
     <div class="button-group contact-actions">
-        <a href="/register.html" class="button">Join Now</a>
+        <a href="/register" class="button">Join Now</a>
         <a href="https://discord.com/invite/JWBKhQmzvD" class="button">Ask Questions on Discord</a>
         <a data-email-href class="button email-obfuscated">Ask Questions on E-Mail</a>
     </div>
