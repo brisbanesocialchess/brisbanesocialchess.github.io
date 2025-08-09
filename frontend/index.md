@@ -169,7 +169,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
     <a href="https://discord.com/invite/JWBKhQmzvD" class="button">Discord</a>
     <a href="https://www.facebook.com/BrisbaneSocialChess/" class="button">Facebook</a>
     <a href="https://github.com/brisbanesocialchess" class="button">GitHub</a>
-    <a href="https://worldchess.com/community/bsc" class="button">Chess Arena</a>
+    <a href="https://worldchess.com/community/bsc" class="button">FIDE Online Arena</a>
     <a href="https://www.chess.com/club/brisbane-social-chess" class="button">Chess.com</a>
     <a href="https://lichess.org/team/brisbane-social-chess" class="button">Lichess</a>
   </div>

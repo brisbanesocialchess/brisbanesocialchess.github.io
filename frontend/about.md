@@ -257,7 +257,7 @@ title: About Us | Brisbane Social Chess Club
             </p>
         </li>
         <li>
-            <strong>Harmegedo 6 Player Chess Set - The Board of Lords:</strong>
+            <strong>Harmegedo 6 Player Chess - The Board of Lords:</strong>
             <p>
                 One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
             </p>
