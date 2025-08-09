@@ -66,7 +66,7 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 [Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
 
-[Cloudflare](https://www.cloudflare.com/en-au/) is a connectivity cloud that provides a range of services to improve the security, performance, and reliability of websites and applications. It acts as a Content Delivery Network (CDN), reverse proxy, and provides cybersecurity solutions. In essence, Cloudflare helps businesses connect, protect, and build their online presence
+[Cloudflare](https://www.cloudflare.com/en-au/) is a connectivity cloud that provides a range of services to improve the security, performance, and reliability of websites and applications. It acts as a Content Delivery Network (CDN), reverse proxy, and provides cybersecurity solutions. In essence, Cloudflare helps businesses connect, protect, and build their online presence.
 
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network `↗` with a single command — no infrastructure to manage, no complex configuration.
 
