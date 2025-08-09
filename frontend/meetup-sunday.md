@@ -34,7 +34,7 @@ title: Sunday Lunchtime Chess Meetup | Brisbane Social Chess Club
 	</p>
 	<p><strong>Time:</strong> 11:00 AM – 2:00 PM AEST</p>
 	<p><strong>When:</strong> Every Sunday</p>
-	<p><strong>Address:</strong> 1 Parkland Blvd, Brisbane City QLD 4000 · Brisbane</p>
+	<p><strong>Address:</strong> 1 Parkland Blvd, Brisbane City QLD 4000</p>
 	<div class="map">
 		<!-- TODO -->
 		<!-- <iframe
