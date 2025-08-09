@@ -22,7 +22,7 @@ title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
 	</p>
 	<p><strong>Time:</strong> 12:00 PM – 2:30 PM AEST</p>
 	<p><strong>When:</strong> Every Wednesday</p>
-	<p><strong>Address:</strong> 17 Lytton road East Brisbane - Brisbane</p>
+	<p><strong>Address:</strong> 17 Lytton Rd, East Brisbane QLD 4169</p>
 	<div class="map">
 		<!-- TODO -->
 		<!-- <iframe
