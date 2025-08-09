@@ -2,72 +2,72 @@ backend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'packages/cfsite/**/*'
+              - "packages/cfsite/**/*"
 
 chore:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.editorconfig'
-              - '.gitignore'
-              - 'dprint.json'
-              - '.pre-commit-config.yaml'
-              - '.github/lint-plugins/*'
+              - ".editorconfig"
+              - ".gitignore"
+              - "dprint.json"
+              - ".pre-commit-config.yaml"
+              - ".github/lint-plugins/*"
 
 ci:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.github/workflows/*'
-              - '.wrangler/**/*'
+              - ".github/workflows/*"
+              - ".wrangler/**/*"
 
 dependencies:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'package.json'
-              - 'pnpm-lock.yaml'
-              - 'yarn.lock'
-              - 'npm-shrinkwrap.json'
+              - "package.json"
+              - "pnpm-lock.yaml"
+              - "yarn.lock"
+              - "npm-shrinkwrap.json"
 
 documentation:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'README.md'
-              - 'CONTRIBUTING.md'
-              - 'doc/**/*'
+              - "README.md"
+              - "CONTRIBUTING.md"
+              - "doc/**/*"
 
 frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'frontend/**/*'
-              - '.eleventy.js'
+              - "frontend/**/*"
+              - ".eleventy.js"
 
 infra:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '.github/**/*'
-              - '.vscode/*'
+              - ".github/**/*"
+              - ".vscode/*"
 
 root:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '*'
+              - "*"
 
 scripts:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'scripts/**/*'
+              - "scripts/**/*"
 
 tests:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - '**/test/**/*'
-              - '**/*.test.ts'
-              - '**/*.spec.ts'
+              - "**/test/**/*"
+              - "**/*.test.ts"
+              - "**/*.spec.ts"

@@ -3,7 +3,7 @@ default_stages: [pre-commit, pre-push]
 default_language_version:
   python: python3
   node: 22.18.0
-minimum_pre_commit_version: '3.2.0'
+minimum_pre_commit_version: "3.2.0"
 repos:
   - repo: meta
     hooks:
@@ -27,7 +27,7 @@ repos:
       - id: chmod
         name: Set file permissions
         description: Does not run on Windows so setup as a manual hook
-        args: ['644']
+        args: ["644"]
         files: \.md$
         stages: [manual]
   - repo: local
@@ -115,7 +115,7 @@ repos:
       - id: check-added-large-files
         name: Run check-added-large-files
         description: Prevent giant files from being committed
-        args: ['--maxkb=1500']
+        args: ["--maxkb=1500"]
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
@@ -128,7 +128,7 @@ repos:
       - id: oxipng
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
-        args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+        args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
   - repo: local
     hooks:
       - id: npm-ci
@@ -149,7 +149,7 @@ repos:
         entry: prettier --config .github/linters/.prettierrc --write
         files: \.(css|json|md|ya?ml)$
         language: node
-        additional_dependencies: ['prettier@3.6.2']
+        additional_dependencies: ["prettier@3.6.2"]
       - id: npm-audit
         name: Run npm-audit
         description: Run npm audit
@@ -180,7 +180,7 @@ repos:
         name: Run markdownlint
         description: MarkdownLint Command Line Interface
         types: [markdown]
-        args: ['--config', '.github/linters/.markdownlint.json']
+        args: ["--config", ".github/linters/.markdownlint.json"]
         exclude: ^frontend/.*\.md$
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
@@ -203,13 +203,13 @@ repos:
         name: The uncompromising Python code formatter
         description: Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting
         language_version: python3
-        args: ['--line-length=88']
+        args: ["--line-length=88"]
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
     hooks:
       - id: bandit
         name: A security linter from PyCQA
         description: Bandit is a tool designed to find common security issues in Python code
-        args: ['-c', 'bandit.yaml', '-r', '.']
+        args: ["-c", "bandit.yaml", "-r", "."]
         files: \.py$
         pass_filenames: false
