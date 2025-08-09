@@ -5,175 +5,177 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 ---
 
 <section class="section">
-  <h1><span aria-hidden="true">🎉</span> Welcome to Brisbane Social Chess Inc! <span aria-hidden="true">♟️</span></h1>
-  <br />
-  <h2>What We’re About <span aria-hidden="true">🧑‍🎨</span></h2>
-  <p>
-    At <strong>Brisbane Social Chess Inc</strong>, we're all about having a relaxed time pushing pawns and making memories. This
-    isn't your serious, score-keeping chess club— <strong>we're a bunch of fun-loving folks</strong> who just want to shake the dust
-    off our chess skills and enjoy good company.
-  </p>
-  <h2>Our Motto? <span aria-hidden="true">🎯</span></h2>
-  <p>
-    Whether you're a chess newbie or a seasoned grandmaster, you're welcome in our club. We know that chess has a way of bringing
-    together curious and creative souls from all walks of life. When you put those eclectic personalities around a chessboard, the
-    good times will roll themselves! <span aria-hidden="true">🎊</span>
-  </p>
-  <h2>Join Us for the Fun! <span aria-hidden="true">🤝</span></h2>
-  <p>So leave your ego at the door and come ready to laugh, learn, and make friends. Here’s what you can expect:</p>
-  <ul>
-    <li>Be a good sport when you lose—trust us, we've all been there!</li>
-    <li>Lend a hand if someone needs coaching or just some encouragement.</li>
-    <li>If you’ve got suggestions for new places to meet up and play, we’re all ears! <span aria-hidden="true">👂</span></li>
-  </ul>
-  <p>
-    <strong>The bottom line?</strong> If you know the basics, you've got all the skills you need. Now's the time to get behind
-    Brisbane's free social chess movement! <span aria-hidden="true">🙌</span>
-  </p>
-  <h2>Quick Survey <span aria-hidden="true">📋</span></h2>
-  <p>Pretty please take our <strong>30-second club census</strong> here: <a href="https://goo.gl/VQGmes">Club Census</a></p>
-  <h2>Become an official Member! <span aria-hidden="true">🎈</span></h2>
-  <p>
-    If you love hanging with us, consider becoming an official club member for <strong>$10/year</strong>. Do that using this link:
-    <a href="https://app.joinit.com/o/brisbane-social-chess">Join Us</a>. Your membership keeps the good times going!
-  </p>
+	<h1><span aria-hidden="true">🎉</span> Welcome to Brisbane Social Chess Inc! <span aria-hidden="true">♟️</span></h1>
+	<br />
+	<h2>What We’re About <span aria-hidden="true">🧑‍🎨</span></h2>
+	<p>
+		At <strong>Brisbane Social Chess Inc</strong>, we're all about having a relaxed time pushing pawns and making memories. This
+		isn't your serious, score-keeping chess club— <strong>we're a bunch of fun-loving folks</strong> who just want to shake the dust
+		off our chess skills and enjoy good company.
+	</p>
+	<h2>Our Motto? <span aria-hidden="true">🎯</span></h2>
+	<p>
+		Whether you're a chess newbie or a seasoned grandmaster, you're welcome in our club. We know that chess has a way of bringing
+		together curious and creative souls from all walks of life. When you put those eclectic personalities around a chessboard, the
+		good times will roll themselves! <span aria-hidden="true">🎊</span>
+	</p>
+	<h2>Join Us for the Fun! <span aria-hidden="true">🤝</span></h2>
+	<p>So leave your ego at the door and come ready to laugh, learn, and make friends. Here’s what you can expect:</p>
+	<ul>
+		<li>Be a good sport when you lose—trust us, we've all been there!</li>
+		<li>Lend a hand if someone needs coaching or just some encouragement.</li>
+		<li>If you’ve got suggestions for new places to meet up and play, we’re all ears! <span aria-hidden="true">👂</span></li>
+	</ul>
+	<p>
+		<strong>The bottom line?</strong> If you know the basics, you've got all the skills you need. Now's the time to get behind
+		Brisbane's free social chess movement! <span aria-hidden="true">🙌</span>
+	</p>
+	<h2>Quick Survey <span aria-hidden="true">📋</span></h2>
+	<p>Pretty please take our <strong>30-second club census</strong> here: <a href="https://goo.gl/VQGmes">Club Census</a></p>
+	<h2>Become an official Member! <span aria-hidden="true">🎈</span></h2>
+	<p>
+		If you love hanging with us, consider becoming an official club member for <strong>$10/year</strong>. Do that using this link:
+		<a href="https://app.joinit.com/o/brisbane-social-chess">Join Us</a>. Your membership keeps the good times going!
+	</p>
 </section>
 <section class="section">
-  <h2><span aria-hidden="true">🗓️</span> 6 Meetups a Week</h2>
-  <p>We have meetings every day of the week except Tuesdays. There are always more meeting times and locations in the works.</p>
-  <table class="custom-table">
-    <thead>
-      <tr>
-        <th scope="col">Day</th>
-        <th scope="col">Time</th>
-        <th scope="col">Venue</th>
-        <th scope="col">Location</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Monday</td>
-        <td>4:00-7:00 PM</td>
-        <td>
-          <strong>Pig N Whistle King George Square</strong>
-        </td>
-        <td>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Pig+N+Whistle+King+George+Square%2C+100+Adelaide+Street%2C+Brisbane+City+QLD+4000"
-            target="_blank"
-            rel="noopener noreferrer"
-            >King George Square, 100 Adelaide Street, Brisbane City QLD 4000</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>12:00-2:30 PM</td>
-        <td>
-          <strong>June's Café</strong>
-        </td>
-        <td>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=June%27s+Cafe%2C+17+Lytton+Rd%2C+East+Brisbane+QLD+4169"
-            target="_blank"
-            rel="noopener noreferrer"
-            >17 Lytton Rd, East Brisbane QLD 4169</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>6:00-8:00 PM</td>
-        <td>
-          <strong>Royal Hotel</strong>
-        </td>
-        <td>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Royal+Hotel%2C+1259+Sandgate+Rd%2C+Nundah+QLD+4012"
-            target="_blank"
-            rel="noopener noreferrer"
-            >1259 Sandgate Rd, Nundah QLD 4012</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>12:00-2:00 PM</td>
-        <td>
-          <strong>Chocolate Moments</strong>
-        </td>
-        <td>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Chocolate+Moments%2C+60+Albert+St%2C+Brisbane+City+QLD+4000"
-            target="_blank"
-            rel="noopener noreferrer"
-            >60 Albert St, Brisbane City QLD 4000</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>Saturday</td>
-        <td>10:30-2:00 PM</td>
-        <td>
-          <strong>West End Park Café</strong>
-        </td>
-        <td>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=West+End+Park+Cafe%2C+305+Montague+Rd%2C+West+End+QLD+4101"
-            target="_blank"
-            rel="noopener noreferrer"
-            >305 Montague Rd, West End QLD 4101</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>Sunday</td>
-        <td>11:00-2:00 PM</td>
-        <td>
-          <strong>The Garden Room</strong>
-        </td>
-        <td>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=The+Garden+Room%2C+1+Parkland+Blvd%2C+Brisbane+City+QLD+4000"
-            target="_blank"
-            rel="noopener noreferrer"
-            >1 Parkland Blvd, Brisbane City QLD 4000</a
-          >
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <img src="{{ '/assets/locations.jpg' | url }}" alt="Chess Meetup" />
+	<h2><span aria-hidden="true">🗓️</span> 6 Meetups a Week</h2>
+	<p>We have meetings every day of the week except Tuesdays. There are always more meeting times and locations in the works.</p>
+	<div class="table-responsive">
+		<table class="custom-table">
+			<thead>
+				<tr>
+					<th scope="col">Day</th>
+					<th scope="col">Time</th>
+					<th scope="col">Venue</th>
+					<th scope="col">Location</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Monday</td>
+					<td>4:00-7:00 PM</td>
+					<td>
+						<strong>Pig N Whistle King George Square</strong>
+					</td>
+					<td>
+						<a
+							href="https://www.google.com/maps/search/?api=1&query=Pig+N+Whistle+King+George+Square%2C+100+Adelaide+Street%2C+Brisbane+City+QLD+4000"
+							target="_blank"
+							rel="noopener noreferrer"
+							>King George Square, 100 Adelaide Street, Brisbane City QLD 4000</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>12:00-2:30 PM</td>
+					<td>
+						<strong>June's Café</strong>
+					</td>
+					<td>
+						<a
+							href="https://www.google.com/maps/search/?api=1&query=June%27s+Cafe%2C+17+Lytton+Rd%2C+East+Brisbane+QLD+4169"
+							target="_blank"
+							rel="noopener noreferrer"
+							>17 Lytton Rd, East Brisbane QLD 4169</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>6:00-8:00 PM</td>
+					<td>
+						<strong>Royal Hotel</strong>
+					</td>
+					<td>
+						<a
+							href="https://www.google.com/maps/search/?api=1&query=Royal+Hotel%2C+1259+Sandgate+Rd%2C+Nundah+QLD+4012"
+							target="_blank"
+							rel="noopener noreferrer"
+							>1259 Sandgate Rd, Nundah QLD 4012</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>12:00-2:00 PM</td>
+					<td>
+						<strong>Chocolate Moments</strong>
+					</td>
+					<td>
+						<a
+							href="https://www.google.com/maps/search/?api=1&query=Chocolate+Moments%2C+60+Albert+St%2C+Brisbane+City+QLD+4000"
+							target="_blank"
+							rel="noopener noreferrer"
+							>60 Albert St, Brisbane City QLD 4000</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>10:30-2:00 PM</td>
+					<td>
+						<strong>West End Park Café</strong>
+					</td>
+					<td>
+						<a
+							href="https://www.google.com/maps/search/?api=1&query=West+End+Park+Cafe%2C+305+Montague+Rd%2C+West+End+QLD+4101"
+							target="_blank"
+							rel="noopener noreferrer"
+							>305 Montague Rd, West End QLD 4101</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>11:00-2:00 PM</td>
+					<td>
+						<strong>The Garden Room</strong>
+					</td>
+					<td>
+						<a
+							href="https://www.google.com/maps/search/?api=1&query=The+Garden+Room%2C+1+Parkland+Blvd%2C+Brisbane+City+QLD+4000"
+							target="_blank"
+							rel="noopener noreferrer"
+							>1 Parkland Blvd, Brisbane City QLD 4000</a
+						>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<img src="{{ '/assets/locations.jpg' | url }}" alt="Chess Meetup" />
 </section>
 <!-- Section 3 -->
 <section class="section">
-  <h2>A Dedicated Team of Organisers</h2>
-  <p>
-    We are a registered community organisation in Queensland with a committee. Ready to contribute? We would like to hear from you.
-  </p>
-  <img src="{{ '/assets/organisers.jpg' | url }}" alt="Organisers" />
+	<h2>A Dedicated Team of Organisers</h2>
+	<p>
+		We are a registered community organisation in Queensland with a committee. Ready to contribute? We would like to hear from you.
+	</p>
+	<img src="{{ '/assets/organisers.jpg' | url }}" alt="Organisers" />
 </section>
 <!-- Section 4 -->
 <section class="section">
-  <div class="bio">
-    <h2>Join Us!</h2>
-    <p>
-      We are creating magic live on Discord <span aria-hidden="true">🪄</span> <br />
-      Click below to peruse our Facebook page <span aria-hidden="true">📄</span> <br />
-      Come collaborate, communicate and share your ideas for Brisbane Social Chess on GitHub <span aria-hidden="true">🚀</span>
-      <br />
-      The club plays chess on three social networks <span aria-hidden="true">💃</span>
-    </p>
-  </div>
-  <div class="button-group">
-    <a href="https://discord.com/invite/JWBKhQmzvD" class="button">Discord</a>
-    <a href="https://www.facebook.com/BrisbaneSocialChess/" class="button">Facebook</a>
-    <a href="https://github.com/brisbanesocialchess" class="button">GitHub</a>
-    <a href="https://www.chess.com/club/brisbane-social-chess" class="button">Chess.com</a>
-    <a href="https://worldchess.com/community/bsc" class="button">FIDE Online Arena</a>
-    <a href="https://lichess.org/team/brisbane-social-chess" class="button">Lichess</a>
-  </div>
-  <img src="{{ '/assets/background-smaller.jpg' | url }}" alt="Play Chess" />
+	<div class="bio">
+		<h2>Join Us!</h2>
+		<p>
+			We are creating magic live on Discord <span aria-hidden="true">🪄</span> <br />
+			Click below to peruse our Facebook page <span aria-hidden="true">📄</span> <br />
+			Come collaborate, communicate and share your ideas for Brisbane Social Chess on GitHub <span aria-hidden="true">🚀</span>
+			<br />
+			The club plays chess on three social networks <span aria-hidden="true">💃</span>
+		</p>
+	</div>
+	<div class="button-group">
+		<a href="https://discord.com/invite/JWBKhQmzvD" class="button">Discord</a>
+		<a href="https://www.facebook.com/BrisbaneSocialChess/" class="button">Facebook</a>
+		<a href="https://github.com/brisbanesocialchess" class="button">GitHub</a>
+		<a href="https://www.chess.com/club/brisbane-social-chess" class="button">Chess.com</a>
+		<a href="https://worldchess.com/community/bsc" class="button">FIDE Online Arena</a>
+		<a href="https://lichess.org/team/brisbane-social-chess" class="button">Lichess</a>
+	</div>
+	<img src="{{ '/assets/background-smaller.jpg' | url }}" alt="Play Chess" />
 </section>
 
 <!-- # Welcome to My Eleventy Blog
@@ -182,9 +184,9 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 
 <ul>
 {% for post in collections.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date | date("yyyy-MM-dd") }}
-  </li>
+	<li>
+		<a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date | date("yyyy-MM-dd") }}
+	</li>
 {% endfor %}
 </ul>
 
@@ -192,7 +194,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 
 <ul>
 {% for category in collections.categories %}
-  <li><a href="/categories/{{ category | slug }}/">{{ category }}</a></li>
+	<li><a href="/categories/{{ category | slug }}/">{{ category }}</a></li>
 {% endfor %}
 </ul>
 
@@ -200,6 +202,6 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 
 <ul>
 {% for tag in collections.tags %}
-  <li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
+	<li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
 {% endfor %}
 </ul> -->

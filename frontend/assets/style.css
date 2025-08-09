@@ -325,9 +325,14 @@ form fieldset input[type='radio'] {
 }
 
 /* Tables */
+.table-responsive {
+	width: 100%;
+	overflow-x: auto;
+}
 .custom-table {
 	width: 100%;
 	border-collapse: collapse;
+	min-width: 600px;
 }
 .custom-table th,
 .custom-table td {
