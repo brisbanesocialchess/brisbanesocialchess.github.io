@@ -456,16 +456,13 @@ form fieldset input[type='radio'] {
 		padding: 0.5rem 0.8rem;
 		display: inline-block;
 	}
-	.github-profile--big,
-	.github-profile--big img.github-avatar {
+	.github-profile--big {
 		width: 200px;
 	}
-	.github-profile--medium,
-	.github-profile--medium img.github-avatar {
+	.github-profile--medium {
 		width: 150px;
 	}
-	.github-profile--small,
-	.github-profile--small img.github-avatar {
+	.github-profile--small {
 		width: 100px;
 	}
 }
