@@ -74,40 +74,40 @@ title: About Us | Brisbane Social Chess Club
     <h2><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul>
         <li>
-            <strong>Organizer</strong>: Matt McLean: "A good player is always lucky" -
+            <strong>Organizer</strong>: <span class="role-board">Matt McLean</span>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
             <ul>
                 <li>
-                    Adam Lomsargis: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                    <span class="role-board">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li>Ben M: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li>Jimmy Joe</li>
                 <li>
-                    John Bampton: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
+                    <span class="role-board">John Bampton</span>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
                     <span aria-hidden="true">👨‍🎨</span>
                 </li>
                 <li>
-                    Rob Garvey: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
+                    <span class="role-board">Rob Garvey</span>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
                     future events.
                 </li>
-                <li>Steve: Official pawn wrangler.</li>
-                <li>the Prof</li>
+                <li><span class="role-board">Steve</span>: Official pawn wrangler.</li>
+                <li><span class="role-co-organizers">the Prof</span></li>
             </ul>
         </li>
-        <li><strong>Assistant organizer</strong>: Roger Clarke</li>
+        <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers">Roger Clarke</span></li>
         <li>
             <strong>Event organizers</strong>:
             <ul>
-                <li>Christoph Dierkes</li>
-                <li>JoeT</li>
-                <li>Marty Benjamin</li>
-                <li>Peiqi Sun</li>
-                <li>Stuart</li>
+                <li><span class="role-event-organizers">Christoph Dierkes</span></li>
+                <li><span class="role-event-organizers">JoeT</span></li>
+                <li><span class="role-event-organizers">Marty Benjamin</span></li>
+                <li><span class="role-event-organizers">Peiqi Sun</span></li>
+                <li><span class="role-event-organizers">Stuart</span></li>
             </ul>
         </li>
     </ul>
