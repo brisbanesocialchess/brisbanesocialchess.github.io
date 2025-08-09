@@ -193,6 +193,151 @@ title: About Us | Brisbane Social Chess Club
   </li>
 </ul>
 
+=======
+    <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/anufdo" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar" />
+            <br />
+            <span>Anuradha Fernando</span>
+            <br />
+            <span>@anufdo</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/ayushrana182" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=125" alt="Ayush Rana avatar" />
+            <br />
+            <span>Ayush Rana</span>
+            <br />
+            <span>@ayushrana182</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <div class="role-leader">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/583231?v=4&s=125" alt="Jasper avatar" />
+            <br />
+            <span>Jasper</span>
+            <br />
+            <span>N/A</span>
+        </div>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/prio101" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=125" alt="Mahabub Islam Prio avatar" />
+            <br />
+            <span>Mahabub Islam Prio</span>
+            <br />
+            <span>@prio101</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/LuckyNotGood" class="role-board">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=125" alt="Matt McLean avatar" />
+            <br />
+            <span>Matt McLean</span>
+            <br />
+            <span>@LuckyNotGood</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/mohammadlotfia" class="role-moderator">
+            <img
+                class="github-avatar"
+                src="https://avatars.githubusercontent.com/u/87372623?v=4&s=125"
+                alt="Mohammad Lotfi Akbarabadi avatar"
+            />
+            <br />
+            <span>Mohammad Lotfi Akbarabadi</span>
+            <br />
+            <span>@mohammadlotfia</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/udha" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=125" alt="Nicholas Meredith avatar" />
+            <br />
+            <span>Nicholas Meredith</span>
+            <br />
+            <span>@udha</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/garveybiz" class="role-board">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=125" alt="Rob Garvey avatar" />
+            <br />
+            <span>Rob Garvey</span>
+            <br />
+            <span>@garveybiz</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/smriad" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=125" alt="SM Riad avatar" />
+            <br />
+            <span>SM Riad</span>
+            <br />
+            <span>@smriad</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/therealnugget" class="role-leader">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=125" alt="therealnugget avatar" />
+            <br />
+            <span>therealnugget</span>
+            <br />
+            <span>@therealnugget</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/ugifractal" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/70807?v=4&s=125" alt="sugiarto avatar" />
+            <br />
+            <span>sugiarto</span>
+            <br />
+            <span>@ugifractal</span>
+        </a>
+    </div>
+</section>
+<section class="section">
+    <h2><span aria-hidden="true">🎲</span> Games that we play</h2>
+    <ul>
+        <li>
+            <strong>Chess:</strong>
+            <a href="https://lichess.org/">Play on Lichess</a>
+            <p>Lots of standard two player chess sets</p>
+        </li>
+        <li>
+            <strong>Four-player chess:</strong>
+            <a href="https://www.chess.com/variants/4-player-chess">Play on Chess.com</a>
+            <p>
+                One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag
+            </p>
+        </li>
+        <li>
+            <strong>Harmegedo 6 Player Chess - The Board of Lords:</strong>
+            <p>
+                One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
+            </p>
+        </li>
+        <li>
+            <strong>Quaternity:</strong>
+            <a href="https://play.quaternity.com/">Play online</a>, <a href="https://www.quaternity.com/">Official site</a>
+            <p>One Quaternity 4 Player Chess Set Basic52 144 Squares Wood Folding 64 Quality Pieces</p>
+        </li>
+    </ul>
+</section>
+<section class="section">
+    <h2><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
+    <ul>
+        <li>
+            <a href="https://www.chessplus.com/">Chessplus</a>:
+            <a href="https://www.chessplus.com/products/chessplus-everyday-edition">Everyday Edition</a>
+            <ul>
+                <li>A fast paced, edgy version of chess with exponentially more moves & all new strategies</li>
+            </ul>
+        </li>
+    </ul>
 </section>
 <section class="section">
     <h2><span aria-hidden="true">♣️</span> Games we might play in future</h2>
