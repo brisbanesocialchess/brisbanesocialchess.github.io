@@ -74,7 +74,7 @@ title: About Us | Brisbane Social Chess Club
     <h2><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul>
         <li>
-            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood"><span class="role-board">Matt McLean</span></a>: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">Capablanca</a>
         </li>
         <li>
