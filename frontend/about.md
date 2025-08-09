@@ -45,27 +45,27 @@ title: About Us | Brisbane Social Chess Club
         <tbody>
             <tr>
                 <th scope="row">President</th>
-                <td>Jimmy Joe</td>
+                <td><span class="role-board">Jimmy Joe</span></td>
             </tr>
             <tr>
                 <th scope="row">Treasurer</th>
                 <td>
-                    <a href="https://github.com/LuckyNotGood">Matt McLean</a>
+                    <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>
                 </td>
             </tr>
             <tr>
                 <th scope="row">Secretary</th>
-                <td>Steve</td>
+                <td><span class="role-board">Steve</span></td>
             </tr>
             <tr>
                 <th scope="row">Auditor</th>
                 <td>
-                    <a href="https://github.com/garveybiz">Rob Garvey</a>
+                    <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>
                 </td>
             </tr>
             <tr>
                 <th scope="row">General Members</th>
-                <td>Adam Lomsargis, Ben M, <a href="https://github.com/jbampton">John Bampton</a></td>
+                <td><span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>, <a href="https://github.com/jbampton" class="role-admin">John Bampton</a></td>
             </tr>
         </tbody>
     </table>
@@ -74,40 +74,40 @@ title: About Us | Brisbane Social Chess Club
     <h2><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul>
         <li>
-            <strong>Organizer</strong>: Matt McLean: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
             <ul>
                 <li>
-                    Adam Lomsargis: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                    <span class="role-board">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li>Ben M: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
-                <li>Jimmy Joe</li>
+                <li><span class="role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role-board">Jimmy Joe</span></li>
                 <li>
-                    John Bampton: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
+                    <a href="https://github.com/jbampton" class="role-admin">John Bampton</a>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
                     <span aria-hidden="true">👨‍🎨</span>
                 </li>
                 <li>
-                    Rob Garvey: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
+                    <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
                     future events.
                 </li>
-                <li>Steve: Official pawn wrangler.</li>
-                <li>the Prof</li>
+                <li><span class="role-board">Steve</span>: Official pawn wrangler.</li>
+                <li><span class="role-co-organizers">the Prof</span></li>
             </ul>
         </li>
-        <li><strong>Assistant organizer</strong>: Roger Clarke</li>
+        <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers">Roger Clarke</span></li>
         <li>
             <strong>Event organizers</strong>:
             <ul>
-                <li>Christoph Dierkes</li>
-                <li>JoeT</li>
-                <li>Marty Benjamin</li>
-                <li>Peiqi Sun</li>
-                <li>Stuart</li>
+                <li><span class="role-event-organizers">Christoph Dierkes</span></li>
+                <li><span class="role-event-organizers">JoeT</span></li>
+                <li><span class="role-event-organizers">Marty Benjamin</span></li>
+                <li><span class="role-event-organizers">Peiqi Sun</span></li>
+                <li><span class="role-event-organizers">Stuart</span></li>
             </ul>
         </li>
     </ul>
@@ -125,7 +125,7 @@ title: About Us | Brisbane Social Chess Club
         </a>
     </div>
     <br />
-    <h3><span aria-hidden="true">💾</span> Developers</h3>
+    <h3><span aria-hidden="true">💾</span> Developer</h3>
     <div class="github-profile github-profile--medium">
         <a href="https://github.com/BaseMax" class="role-developer">
             <img class="github-avatar" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar" />
@@ -137,6 +137,15 @@ title: About Us | Brisbane Social Chess Club
     </div>
     <br />
     <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
+    <div class="github-profile github-profile--small">
+        <a href="https://github.com/carefreeav09" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=125" alt="Abhushan Gautam avatar" />
+            <br />
+            <span>Abhushan Gautam</span>
+            <br />
+            <span>@carefreeav09</span>
+        </a>
+    </div>
     <div class="github-profile github-profile--small">
         <a href="https://github.com/anufdo" class="role-moderator">
             <img class="github-avatar" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar" />
@@ -257,7 +266,7 @@ title: About Us | Brisbane Social Chess Club
             </p>
         </li>
         <li>
-            <strong>Harmegedo 6 Player Chess Set - The Board of Lords:</strong>
+            <strong>Harmegedo 6 Player Chess - The Board of Lords:</strong>
             <p>
                 One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
             </p>
@@ -304,41 +313,41 @@ title: About Us | Brisbane Social Chess Club
                 <td>
                     <strong>101 Questions On How To Play Chess</strong>
                 </td>
-                <td>Fred Wilson</td>
+                <td><a href="http://www.fredwilsonchess.com/">Fred Wilson</a></td>
                 <td>Dover Game And Puzzle Activity Books</td>
             </tr>
             <tr>
                 <td>
                     <strong>Bobby Fischer Teaches Chess</strong>
                 </td>
-                <td>Bobby Fischer, Stuart Margulies, Donn Mosenfelder</td>
+                <td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
                 <td>Basic Systems Inc, Bantam Books</td>
             </tr>
             <tr>
                 <td><strong>Chess for Kids</strong>: How to Play and Win</td>
-                <td>Richard James</td>
+                <td><a href="https://chesswithrichard.uk/">Richard James</a></td>
                 <td>Robinson; 2nd edition (2015)</td>
             </tr>
             <tr>
                 <td>
                     <strong>Chess Openings For Dummies</strong>
                 </td>
-                <td>James Eade</td>
+                <td><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
                 <td>For Dummies</td>
             </tr>
             <tr>
                 <td><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
-                <td>Gary Kasparov</td>
+                <td><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
                 <td>Penguin Books (2021)</td>
             </tr>
             <tr>
                 <td><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
-                <td>Murray Chandler</td>
+                <td><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
                 <td>Gambit Publications Ltd</td>
             </tr>
             <tr>
                 <td><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
-                <td>John Nunn</td>
+                <td><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
                 <td>Gambit Publications Ltd</td>
             </tr>
             <tr>
@@ -352,28 +361,28 @@ title: About Us | Brisbane Social Chess Club
                 <td>
                     <strong>Learn To Play Chess Like A Boss</strong>
                 </td>
-                <td>Patrick Wolff</td>
+                <td><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
                 <td>Penguin Random House Dorling Kindersley</td>
             </tr>
             <tr>
                 <td>
                     <strong>Modern Chess Openings: MC0-15</strong>
                 </td>
-                <td>Nick de Firmian</td>
+                <td><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
                 <td>Random House Puzzles and Games</td>
             </tr>
             <tr>
                 <td>
                     <strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong>
                 </td>
-                <td>Bobby Fischer</td>
+                <td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
                 <td>Batsford GB</td>
             </tr>
             <tr>
                 <td>
                     <strong>My System: Winning Chess Strategies</strong>
                 </td>
-                <td>Aron Nimzowitsch</td>
+                <td><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
                 <td>SnowBall Publishing</td>
             </tr>
             <tr>
@@ -385,14 +394,14 @@ title: About Us | Brisbane Social Chess Club
             </tr>
             <tr>
                 <td><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
-                <td>Eade &amp; Lawrence</td>
+                <td><a href="https://en.wikipedia.org/wiki/James_Eade">Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Lawrence</a></td>
                 <td>Apple Press A Quarto Book</td>
             </tr>
             <tr>
                 <td>
                     <strong>The Life and Games of Mikhail Tal</strong>
                 </td>
-                <td>Everyman Chess Classic</td>
+                <td><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
                 <td>Everyman Chess</td>
             </tr>
             <tr>
@@ -425,7 +434,7 @@ title: About Us | Brisbane Social Chess Club
     </figure>
 </section>
 <section class="section">
-    <h2><span aria-hidden="true">🧙‍♂️</span> Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <h2><span aria-hidden="true">🧙‍♂️</span> Royal Hotel — Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div style="display: flex; gap: 1rem">
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img

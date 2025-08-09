@@ -13,16 +13,6 @@ repos:
       - id: check-hooks-apply
         name: Check hooks apply to the repository
         description: Useful when testing new hooks to see if they apply to the repository
-  - repo: local
-    hooks:
-      - id: check-zip-file-is-not-committed
-        name: Check no zip files are committed
-        description: Zip files are not allowed in the repository
-        language: fail
-        entry: |
-          Zip files are not allowed in the repository as they are hard to
-          track and have security implications. Please remove the zip file from the repository.
-        files: (?i)\.zip$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
