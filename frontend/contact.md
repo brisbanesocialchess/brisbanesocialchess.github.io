@@ -7,21 +7,21 @@ title: Contact Us | Brisbane Social Chess Club
 <section class="section">
 	<h2>Contact Us</h2>
 	<p>Feel free to reach out using the form below, or through one of our other contact methods.</p>
-	<form action="#" method="POST" class="form-contact" novalidate>
+	<form action="#" method="POST" class="form form-contact" novalidate>
 		<div class="form-group">
-			<label for="name">Your Name <span aria-hidden="true">*</span> </label>
-			<input type="text" id="name" name="name" required />
+			<label for="name">Your Name <span aria-hidden="true">*</span></label>
+			<input type="text" id="name" name="name" required autocomplete="given-name" />
 		</div>
 		<div class="form-group">
-			<label for="email">Your Email <span aria-hidden="true">*</span> </label>
-			<input type="email" id="email" name="email" required />
+			<label for="email">Your Email <span aria-hidden="true">*</span></label>
+			<input type="email" id="email" name="email" required autocomplete="family-name" />
 		</div>
 		<div class="form-group">
-			<label for="subject">Subject <span aria-hidden="true">*</span> </label>
+			<label for="subject">Subject <span aria-hidden="true">*</span></label>
 			<input type="text" id="subject" name="subject" required />
 		</div>
 		<div class="form-group">
-			<label for="message">Message <span aria-hidden="true">*</span> </label>
+			<label for="message">Message <span aria-hidden="true">*</span></label>
 			<textarea id="message" name="message" rows="5" required></textarea>
 		</div>
 		<button type="submit" class="button button--main">Send Message</button>

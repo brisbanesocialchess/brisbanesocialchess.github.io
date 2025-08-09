@@ -7,7 +7,7 @@ title: Register for Membership | Brisbane Social Chess Club
 <section class="section">
     <h2>Register</h2>
     <p>Please fill in the form below to join Brisbane Social Chess.</p>
-    <form action="#" method="POST" class="form-registration" novalidate>
+    <form action="#" method="POST" class="form form-registration" novalidate>
         <div class="form-group">
             <label for="firstName">First Name <span aria-hidden="true">*</span> </label>
             <input type="text" id="firstName" name="fname" required autocomplete="given-name" />
