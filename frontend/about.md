@@ -45,27 +45,27 @@ title: About Us | Brisbane Social Chess Club
         <tbody>
             <tr>
                 <th scope="row">President</th>
-                <td>Jimmy Joe</td>
+                <td><span class="role-board">Jimmy Joe</span></td>
             </tr>
             <tr>
                 <th scope="row">Treasurer</th>
                 <td>
-                    <a href="https://github.com/LuckyNotGood">Matt McLean</a>
+                    <a href="https://github.com/LuckyNotGood"><span class="role-board">Matt McLean</span></a>
                 </td>
             </tr>
             <tr>
                 <th scope="row">Secretary</th>
-                <td>Steve</td>
+                <td><span class="role-board">Steve</span></td>
             </tr>
             <tr>
                 <th scope="row">Auditor</th>
                 <td>
-                    <a href="https://github.com/garveybiz">Rob Garvey</a>
+                    <a href="https://github.com/garveybiz"><span class="role-board">Rob Garvey</span></a>
                 </td>
             </tr>
             <tr>
                 <th scope="row">General Members</th>
-                <td>Adam Lomsargis, Ben M, <a href="https://github.com/jbampton">John Bampton</a></td>
+                <td><span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>, <a href="https://github.com/jbampton"><span class="role-admin">John Bampton</span></a></td>
             </tr>
         </tbody>
     </table>
@@ -74,7 +74,7 @@ title: About Us | Brisbane Social Chess Club
     <h2><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul>
         <li>
-            <strong>Organizer</strong>: <span class="role-board">Matt McLean</span>: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood"><span class="role-board">Matt McLean</span></a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">Capablanca</a>
         </li>
         <li>
@@ -88,11 +88,11 @@ title: About Us | Brisbane Social Chess Club
                 <li><span class="role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li>Jimmy Joe</li>
                 <li>
-                    <span class="role-board">John Bampton</span>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
+                    <a href="https://github.com/jbampton"><span class="role-admin">John Bampton</span></a>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
                     <span aria-hidden="true">👨‍🎨</span>
                 </li>
                 <li>
-                    <span class="role-board">Rob Garvey</span>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
+                    <a href="https://github.com/garveybiz"><span class="role-board">Rob Garvey</span></a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize
                     future events.
                 </li>
                 <li><span class="role-board">Steve</span>: Official pawn wrangler.</li>
