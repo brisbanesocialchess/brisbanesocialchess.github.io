@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-layout: "layouts/base.njk"
+layout: 'layouts/base.njk'
 title: About Us | Brisbane Social Chess Club
 ---
 
@@ -338,7 +338,7 @@ title: About Us | Brisbane Social Chess Club
     </figure>
 </section>
 <section class="section">
-    <h2><span aria-hidden="true">🧙‍♂️</span> Royal Hotel — Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <h2><span aria-hidden="true">🧙‍♂️</span> Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div style="display: flex; gap: 1rem">
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
