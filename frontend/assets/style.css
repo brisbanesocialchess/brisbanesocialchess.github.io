@@ -442,7 +442,6 @@ form fieldset input[type='radio'] {
 	margin-top: 10px;
 }
 
-/* Mobile adjustments */
 @media (max-width: 600px) {
     .nav-links {
         font-size: 1.1rem;
@@ -454,7 +453,6 @@ form fieldset input[type='radio'] {
         display: inline-block;
     }
 }
-
 
 /* Responsive */
 @media (max-width: 500px) {
