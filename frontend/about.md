@@ -65,7 +65,7 @@ title: About Us | Brisbane Social Chess Club
             </tr>
             <tr>
                 <th scope="row">General Members</th>
-                <td><span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>, <a href="https://github.com/jbampton"><span class="role-admin">John Bampton</span></a></td>
+                <td><span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>, <a href="https://github.com/jbampton" class="role-admin">John Bampton</a></td>
             </tr>
         </tbody>
     </table>
