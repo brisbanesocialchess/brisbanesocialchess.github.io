@@ -257,7 +257,7 @@ title: About Us | Brisbane Social Chess Club
             </p>
         </li>
         <li>
-            <strong>Harmegedo 6 Player Chess Set - The Board of Lords:</strong>
+            <strong>Harmegedo 6 Player Chess - The Board of Lords:</strong>
             <p>
                 One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers
             </p>
@@ -425,7 +425,7 @@ title: About Us | Brisbane Social Chess Club
     </figure>
 </section>
 <section class="section">
-    <h2><span aria-hidden="true">🧙‍♂️</span> Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <h2><span aria-hidden="true">🧙‍♂️</span> Royal Hotel — Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div style="display: flex; gap: 1rem">
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img

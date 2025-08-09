@@ -23,7 +23,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 [![GitHub License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io)](LICENSE)
 [![Discord](https://img.shields.io/discord/1299539471964049448?label=Discord)](https://discord.com/invite/JWBKhQmzvD)
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=github-pages)](https://brisbanesocialchess.github.io)
-[![Read the Docs](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.readthedocs.io%2Fen%2Flatest%2F&label=read-the-docs)](https://brisbanesocialchess.readthedocs.io/en/latest/)
+[![Documentation Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://brisbanesocialchess.readthedocs.io/en/latest/)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 [![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
 
@@ -62,22 +62,26 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 ## Quick Start
 
+[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
+
+[Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
+
+[Cloudflare](https://www.cloudflare.com/en-au/) is a connectivity cloud that provides a range of services to improve the security, performance, and reliability of websites and applications. It acts as a Content Delivery Network (CDN), reverse proxy, and provides cybersecurity solutions. In essence, Cloudflare helps businesses connect, protect, and build their online presence.
+
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network `↗` with a single command — no infrastructure to manage, no complex configuration.
+
+[Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/) is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
+
+[Cloudflare D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/) is a serverless relational database in seconds with D1. With a familiar SQL query language, point-in-time recovery, and cost-effective pricing, you are empowered to build the next big thing.
 
 [Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
 [Vitest](https://vitest.dev/) is a blazing-fast, next-generation testing framework designed for modern JavaScript and TypeScript projects, built on top of Vite. It's known for its speed and developer experience, offering instant feedback and seamless integration with Vite's features like hot module replacement (HMR). Vitest is inspired by Jest and aims to provide a familiar yet enhanced testing experience.
 
-[Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/) is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
-
-[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
-
 [Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build websites. Unlike dynamic website builders, 11ty generates all the website's content upfront, which leads to better performance and simpler deployments.
 
 [Nunjucks](https://mozilla.github.io/nunjucks/) is a powerful and flexible templating engine for JavaScript, heavily inspired by Jinja2 (a popular templating engine for Python). It allows developers to create dynamic HTML, XML, or other text-based content by embedding logic, variables, and control structures directly within templates.
-
-[Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
 
 [Sphinx](https://www.sphinx-doc.org/en/master/) is a powerful and widely-used documentation generator written in Python. It is particularly popular within the Python community and is considered the de facto standard for documenting Python projects.
 
@@ -118,8 +122,7 @@ Read below for instructions about the current static development site hosted on 
 To start a local development server with live reload, run:
 
 ```bash
-cd docs
-npx serve
+npm run start
 ```
 
 ---
