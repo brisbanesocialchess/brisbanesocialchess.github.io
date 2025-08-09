@@ -138,6 +138,15 @@ title: About Us | Brisbane Social Chess Club
     <br />
     <h2><span aria-hidden="true">🎮</span> Discord Moderators</h2>
     <div class="github-profile github-profile--small">
+        <a href="https://github.com/carefreeav09" class="role-moderator">
+            <img class="github-avatar" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=125" alt="Abhushan Gautam avatar" />
+            <br />
+            <span>Abhushan Gautam</span>
+            <br />
+            <span>@carefreeav09</span>
+        </a>
+    </div>
+    <div class="github-profile github-profile--small">
         <a href="https://github.com/anufdo" class="role-moderator">
             <img class="github-avatar" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar" />
             <br />
