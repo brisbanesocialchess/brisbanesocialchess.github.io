@@ -60,7 +60,7 @@ title: About Us | Brisbane Social Chess Club
             <tr>
                 <th scope="row">Auditor</th>
                 <td>
-                    <a href="https://github.com/garveybiz"><span class="role-board">Rob Garvey</span></a>
+                    <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>
                 </td>
             </tr>
             <tr>
