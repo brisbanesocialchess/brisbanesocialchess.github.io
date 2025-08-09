@@ -420,16 +420,13 @@ form fieldset input[type='radio'] {
 	border-width: 3px;
 	border-style: solid;
 }
-.github-profile--big,
-.github-profile--big img.github-avatar {
+.github-profile--big {
 	width: 500px;
 }
-.github-profile--medium,
-.github-profile--medium img.github-avatar {
+.github-profile--medium {
 	width: 250px;
 }
-.github-profile--small,
-.github-profile--small img.github-avatar {
+.github-profile--small {
 	width: 125px;
 }
 /* Meetups */
