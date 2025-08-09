@@ -34,7 +34,7 @@ title: Saturday Chess Meetup | Brisbane Social Chess Club
 	</p>
 	<p><strong>Time:</strong> 10:30 AM to 2:30 PM AEST</p>
 	<p><strong>When:</strong> Every Saturday</p>
-	<p><strong>Address:</strong> 305 Montague Rd · West End, QL</p>
+	<p><strong>Address:</strong> 305 Montague Rd, West End QLD 4101</p>
 	<div class="map">
 		<!-- TODO -->
 		<!-- <iframe
