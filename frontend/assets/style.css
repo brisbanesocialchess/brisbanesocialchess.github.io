@@ -44,6 +44,19 @@ h3 {
 	text-align: center;
 }
 
+.github-ribbon {
+	position: fixed; /* stick in place while scrolling */
+	top: 0;
+	right: 0;
+	z-index: 9999; /* ensure it’s above everything else */
+	line-height: 0; /* remove extra spacing */
+}
+
+.github-ribbon img {
+	display: block;
+	border: 0;
+}
+
 /* Background overlay */
 .background-overlay {
 	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
@@ -117,6 +130,7 @@ h3 {
 	text-align: center;
 }
 .section h2 {
+	color: #adbcf5;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	margin-bottom: 0.4rem;
@@ -267,27 +281,28 @@ form fieldset input[type='radio'] {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/* form-contact */
-.form-contact {
+/* Form */
+.form {
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
 	margin-top: 1.5rem;
 	padding-bottom: 1rem;
 }
-.form-contact .form-group {
+.form .form-group {
 	display: flex;
 	flex-direction: column;
 }
-.form-contact label {
+.form label {
 	font-weight: 600;
 	margin-bottom: 0.5rem;
 	letter-spacing: 0.03em;
 	color: #e0e0e0;
 }
-.form-contact input[type='text'],
-.form-contact input[type='email'],
-.form-contact textarea {
+.form input[type='number'],
+.form input[type='text'],
+.form input[type='email'],
+.form textarea {
 	width: 100%;
 	padding: 0.75rem 1rem;
 	border-radius: 0.5rem;
@@ -301,18 +316,20 @@ form fieldset input[type='radio'] {
 	resize: vertical;
 	min-height: 50px;
 }
-.form-contact input[type='text']:focus,
-.form-contact input[type='email']:focus,
-.form-contact textarea:focus {
+.form textarea {
+	min-height: 120px;
+}
+.form input[type='number']:focus,
+.form input[type='text']:focus,
+.form input[type='email']:focus,
+.form textarea:focus {
 	border-color: #46c7ef;
 	background-color: rgba(255, 255, 255, 0.15);
 	outline: none;
 	box-shadow: 0 0 0 3px rgba(70, 199, 239, 0.4);
 }
-.form-contact textarea {
-	min-height: 120px;
-}
-.form-contact button[type='submit'] {
+.form button[type='submit'],
+.form button[type='rest'] {
 	align-self: center;
 	width: 100%;
 	max-width: 250px;
@@ -325,9 +342,14 @@ form fieldset input[type='radio'] {
 }
 
 /* Tables */
+.table-responsive {
+	width: 100%;
+	overflow-x: auto;
+}
 .custom-table {
 	width: 100%;
 	border-collapse: collapse;
+	min-width: 600px;
 }
 .custom-table th,
 .custom-table td {
@@ -420,13 +442,14 @@ form fieldset input[type='radio'] {
 	border-width: 3px;
 	border-style: solid;
 }
-.github-profile--big,
-.github-profile--big img.github-avatar {
-	width: 400px;
+.github-profile--big {
+	width: 500px;
 }
-.github-profile--medium,
-.github-profile--medium img.github-avatar {
-	width: 220px;
+.github-profile--medium {
+	width: 250px;
+}
+.github-profile--small {
+	width: 125px;
 }
 /* Meetups */
 .bio-img {
@@ -455,26 +478,54 @@ form fieldset input[type='radio'] {
 }
 
 /* Responsive */
+@media (max-width: 600px) {
+	.nav-links {
+		font-size: 1.1rem;
+		line-height: 2.4rem;
+	}
+	.nav-links a {
+		padding: 0.5rem 0.8rem;
+		display: inline-block;
+	}
+	.github-profile--big {
+		width: 200px;
+	}
+	.github-profile--medium {
+		width: 150px;
+	}
+	.github-profile--small {
+		width: 100px;
+	}
+}
 @media (max-width: 500px) {
+	.nav-links {
+		line-height: 1.4rem;
+	}
+	.background-overlay {
+		padding: 0.5rem 0rem;
+	}
+	.content-wrapper {
+		padding: 1rem;
+	}
+	.form-contact,
 	.form-registration {
 		gap: 1rem;
 	}
-
 	.button {
 		padding: 0.75rem 1rem;
 		font-size: 1rem;
 	}
-}
-@media (max-width: 500px) {
-	.content-wrapper {
-		padding: 1.5rem;
+	.nav-links a {
+		padding: 0;
+		display: inline-block;
 	}
-
+	.custom-table th:first-child,
+	.custom-table td:first-child {
+		width: 15%;
+	}
 	.logo h1 {
 		font-size: 1.2rem;
 	}
-}
-@media (max-width: 500px) {
 	.form-contact input[type='text'],
 	.form-contact input[type='email'],
 	.form-contact textarea {

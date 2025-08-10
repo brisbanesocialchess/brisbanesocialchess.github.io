@@ -1,10 +1,14 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>brisbanesocialchess.github.io</h1>
-
-Welcome to the source code repository for the Brisbane Social Chess website.
-
+  <p>Welcome to the source code repository for the Brisbane Social Chess website.</p>
 </div>
+
+---
+
+## About the Site Generator
+
+This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static website. You do not need to know advanced JavaScript to get started—just follow the steps below!
 
 [![CodeQL Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fcodeql.yml?label=codeql)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
 [![Dprint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fdprint.yml?label=dprint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
@@ -32,6 +36,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 - **Cloudflare Playground:** [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 - **Read the Docs:** [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
+- [DEVELOPER_HELP Guide](DEVELOPER_HELP.md)
 
 ---
 
@@ -40,6 +45,7 @@ Welcome to the source code repository for the Brisbane Social Chess website.
 
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Quick Start](#quick-start)
+- [Technology Stack](#technology-stack)
   - [Cloudflare Workers Development](#cloudflare-workers-development)
     - [Start Development Server](#start-development-server)
     - [Run Tests](#run-tests)
@@ -62,6 +68,12 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 ## Quick Start
 
+For detailed development setup instructions, see [DEVELOPER_HELP.md](DEVELOPER_HELP.md).
+
+Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
+
+## Technology Stack
+
 [GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 
 [Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
@@ -75,7 +87,6 @@ We are registered in Queensland and have a dedicated team of organizers.
 [Cloudflare D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/) is a serverless relational database in seconds with D1. With a familiar SQL query language, point-in-time recovery, and cost-effective pricing, you are empowered to build the next big thing.
 
 [Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
-Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
 [Vitest](https://vitest.dev/) is a blazing-fast, next-generation testing framework designed for modern JavaScript and TypeScript projects, built on top of Vite. It's known for its speed and developer experience, offering instant feedback and seamless integration with Vite's features like hot module replacement (HMR). Vitest is inspired by Jest and aims to provide a familiar yet enhanced testing experience.
 
