@@ -36,111 +36,18 @@ This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern a
 - **Cloudflare Playground:** [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 - **Read the Docs:** [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
+- [DEVELOPER_HELP Guide](DEVELOPER_HELP.md)
 
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Local Development](#local-development)
-  - [1. Install Node.js](#1-install-nodejs)
-  - [2. Install Project Dependencies](#2-install-project-dependencies)
-  - [3. Start the Development Server (with Watching)](#3-start-the-development-server-with-watching)
-  - [4. Build the Site Once (Production Build)](#4-build-the-site-once-production-build)
-  - [5. Before Submitting a Pull Request](#5-before-submitting-a-pull-request)
 - [About Brisbane Social Chess](#about-brisbane-social-chess)
 - [Quick Start](#quick-start)
-  - [Cloudflare Workers Development](#cloudflare-workers-development)
-    - [Start Development Server](#start-development-server)
-    - [Run Tests](#run-tests)
-  - [Getting Started / Building the Site](#getting-started--building-the-site)
-  - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
-  - [Build the Documentation](#build-the-documentation)
 - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
----
-
-## Local Development
-
-If you are a new developer or contributor, follow these steps to run or develop the website locally:
-
-### 1. Install Node.js
-
-You need [Node.js](https://nodejs.org/) (version 16 or higher). Download and install it if you don't have it already.
-
-### 2. Install Project Dependencies
-
-Open a terminal in the project root and run:
-
-```bash
-npm install
-```
-
-This command downloads all the packages the project needs.
-
-### 3. Start the Development Server (with Watching)
-
-To develop the site and see your changes live, use:
-
-```bash
-npm run start
-```
-
-**What does this do?**
-
-- Starts a local web server so you can view the site in your browser.
-- Enables "watching mode": any time you edit a file, the site automatically rebuilds and reloads in your browser. This is the best way to develop and preview changes.
-
-### 4. Build the Site Once (Production Build)
-
-If you just want to generate the static site files (for deployment or testing), run:
-
-```bash
-npm run build
-```
-
-**What does this do?**
-
-- Runs Eleventy once to generate the final static website in the output directory.
-- Does not start a server or watch for changes.
-
----
-
-**Summary:**
-
-- Use `npm run start` for development (with live reload and watching for changes).
-- Use `npm run build` for a one-time build (no watching, for production or deployment).
-
-For more details about Eleventy, see the [official documentation](https://www.11ty.dev/docs/).
-
-### 5. Before Submitting a Pull Request
-
-Before submitting a pull request, make sure to run these commands to fix any formatting or linting issues:
-
-```bash
-# Fix formatting issues
-npm run format
-npx dprint fmt --allow-no-files
-
-# Run all pre-commit checks
-python -m pre_commit run --all-files
-
-# Or run specific hooks only (examples):
-python -m pre_commit run prettier        # Run only prettier formatting
-python -m pre_commit run eslint          # Run only ESLint checks
-python -m pre_commit run markdownlint    # Run only Markdown linting
-python -m pre_commit run yamllint        # Run only YAML linting
-```
-
-**Note:** If you don't have pre-commit installed, install it first:
-
-```bash
-pip install pre-commit
-```
-
-These checks ensure your code follows the project's style guidelines and passes all automated tests.
 
 ---
 
@@ -153,6 +60,12 @@ We are registered in Queensland and have a dedicated team of organizers.
 ---
 
 ## Quick Start
+
+For detailed development setup instructions, see [DEVELOPER_HELP.md](DEVELOPER_HELP.md).
+
+Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
+
+## Technology Stack
 
 [GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 
@@ -167,7 +80,6 @@ We are registered in Queensland and have a dedicated team of organizers.
 [Cloudflare D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/) is a serverless relational database in seconds with D1. With a familiar SQL query language, point-in-time recovery, and cost-effective pricing, you are empowered to build the next big thing.
 
 [Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
-Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
 [Vitest](https://vitest.dev/) is a blazing-fast, next-generation testing framework designed for modern JavaScript and TypeScript projects, built on top of Vite. It's known for its speed and developer experience, offering instant feedback and seamless integration with Vite's features like hot module replacement (HMR). Vitest is inspired by Jest and aims to provide a familiar yet enhanced testing experience.
 
