@@ -9,7 +9,12 @@
   - [Before Submitting a Pull Request](#before-submitting-a-pull-request)
   - [Development Platforms](#development-platforms)
   - [Cloudflare Workers Development](#cloudflare-workers-development)
+    - [Start Development Server](#start-development-server)
+    - [Run Tests](#run-tests)
+  - [Getting Started / Building the Site](#getting-started--building-the-site)
   - [Docker Development](#docker-development)
+    - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
+    - [Run the Docker container](#run-the-docker-container)
   - [Build the Documentation](#build-the-documentation)
   - [Pre-commit Setup](#pre-commit-setup)
 

@@ -14,7 +14,7 @@ Welcome to **Awesome Social Chess**! We appreciate your interest in contributing
   - [4. ✏️ Make Changes](#4--make-changes)
   - [📐 Formatting & Commit Rules](#-formatting--commit-rules)
     - [🔧 Setting Up dprint](#-setting-up-dprint)
-    - [🧪 Setting Up pre-commit](#%F0%9F%A7%AA-setting-up-pre-commit)
+    - [🧪 Setting Up pre-commit](#-setting-up-pre-commit)
   - [5. 📝 Commit Changes](#5--commit-changes)
   - [6. ⬆️ Push Changes](#6--push-changes)
   - [7. 🔄 Create a Pull Request](#7--create-a-pull-request)
