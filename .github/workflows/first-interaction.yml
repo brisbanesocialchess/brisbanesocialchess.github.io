@@ -13,7 +13,7 @@ jobs:
   first-interaction:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/first-interaction@v2
+      - uses: actions/first-interaction@v3
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
           issue_message: |
