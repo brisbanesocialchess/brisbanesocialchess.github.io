@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: About Us | Brisbane Social Chess Club
 ---
 
-<section class="px-4 py-6 max-w-3xl mx-auto">
+<section class="px-4 py-6 max-w-3xl">
     <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🏢</span> Who are we?</h2>
     <p class="text-white text-base leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
@@ -28,39 +28,39 @@ title: About Us | Brisbane Social Chess Club
     </ul>
 </section>
 
-<section class="px-4 py-6 max-w-3xl mx-auto">
+<section class="px-4 py-6 max-w-3xl">
     <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">👥</span> Management Committee</h2>
     <div class="overflow-x-auto">
-        <table class="w-full table-auto border-collapse min-w-[600px] text-white">
+        <table class="w-full table-auto border-collapse text-white">
             <thead>
                 <tr class="bg-[#261775] text-center">
-                    <th class="border px-4 py-2">Role</th>
+                    <th class="border px-4 py-2 w-[40px]">Role</th>
                     <th class="border px-4 py-2">Name</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">President</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">President</th>
                     <td class="border px-4 py-2"><span class="role-board">Jimmy Joe</span></td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">Treasurer</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
                     <td class="border px-4 py-2">
                         <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>
                     </td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">Secretary</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
                     <td class="border px-4 py-2"><span class="role-board">Steve</span></td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">Auditor</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
                         <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>
                     </td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">General Members</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">General Members</th>
                     <td class="border px-4 py-2">
                         <span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>,
                         <a href="https://github.com/jbampton" class="role-admin">John Bampton</a>
@@ -71,7 +71,7 @@ title: About Us | Brisbane Social Chess Club
     </div>
 </section>
 
-<section class="px-4 py-6 max-w-3xl mx-auto">
+<section class="px-4 py-6 max-w-3xl">
     <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
