@@ -33,11 +33,11 @@ title: Register for Membership | Brisbane Social Chess Club
       <label for="lastName" class="text-gray-200 font-semibold mb-1">
         Last Name <span aria-hidden="true">*</span>
       </label>
-      <input 
-        type="text" 
-        id="lastName" 
-        name="lname" 
-        required 
+      <input
+        type="text"
+        id="lastName"
+        name="lname"
+        required
         autocomplete="family-name"
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
@@ -48,14 +48,14 @@ title: Register for Membership | Brisbane Social Chess Club
       <label for="birthYear" class="text-gray-200 font-semibold mb-1">
         Birth Year <span aria-hidden="true">*</span>
       </label>
-      <input 
-        type="number" 
-        id="birthYear" 
-        name="birthyear" 
-        min="1900" 
-        max="2025" 
-        oninput="if(this.value.length>4) this.value=this.value.slice(-4)" 
-        required 
+      <input
+        type="number"
+        id="birthYear"
+        name="birthyear"
+        min="1900"
+        max="2025"
+        oninput="if(this.value.length>4) this.value=this.value.slice(-4)"
+        required
         placeholder="e.g. 1990"
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
@@ -85,10 +85,10 @@ title: Register for Membership | Brisbane Social Chess Club
       <label for="discordUsername" class="text-gray-200 font-semibold mb-1">
         Discord Username (optional)
       </label>
-      <input 
-        type="text" 
-        id="discordUsername" 
-        name="discordusername" 
+      <input
+        type="text"
+        id="discordUsername"
+        name="discordusername"
         placeholder="e.g. User#1234"
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
@@ -99,11 +99,11 @@ title: Register for Membership | Brisbane Social Chess Club
       <label for="email" class="text-gray-200 font-semibold mb-1">
         Email <span aria-hidden="true">*</span>
       </label>
-      <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        required 
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
         autocomplete="email"
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
