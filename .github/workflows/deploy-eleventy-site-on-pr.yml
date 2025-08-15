@@ -27,6 +27,9 @@ jobs:
       - name: Build Eleventy site
         run: npm run build
 
+      - name: Build Tailwindcss
+        run: npm run tailwindcss:build
+
       - name: Verify build output
         run: |
           if [ ! -d "./_site" ]; then
