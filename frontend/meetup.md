@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: Chess Meetups & Locations | Brisbane Social Chess Club
 ---
 
-<section class="py-12 px-4 max-w-3xl mx-auto flex flex-col items-center gap-6">
+<section class="px-4 max-w-3xl mx-auto flex flex-col items-center gap-6">
   <!-- Heading -->
   <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 uppercase mb-2">
     Weekly Meetups

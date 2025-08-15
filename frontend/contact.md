@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: Contact Us | Brisbane Social Chess Club
 ---
 
-<section class="py-12 px-4 max-w-3xl mx-auto">
+<section class="px-4 max-w-3xl mx-auto">
   <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 mb-4">
     Contact Us
   </h2>

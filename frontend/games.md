@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: Chess Games & Variants | Brisbane Social Chess Club
 ---
 
-<section class="py-8 px-4 max-w-4xl mx-auto">
+<section class="px-4 max-w-4xl mx-auto">
   <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 mb-6">
     Club Games Archive
   </h2>

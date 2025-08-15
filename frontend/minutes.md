@@ -4,9 +4,8 @@ layout: 'layouts/base.njk'
 title: Meeting Minutes & Club Records | Brisbane Social Chess Club
 ---
 
-<section class="section px-4 py-8 max-w-3xl mx-auto">
+<section class="section py-8 max-w-3xl mx-auto">
     <h2 class="text-center text-indigo-200 text-xl uppercase mb-4">Meeting Minutes</h2>
-
     <!-- May 2025 -->
     <article class="mb-6">
         <h3 class="text-center text-lg font-semibold">May 2025 – Committee Meeting (25/03/2025)</h3>
@@ -14,7 +13,6 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
             <strong>Present:</strong> Jimmy, Steve, Rob, Matt <br />
             <strong>Apologies:</strong> Ben
         </p>
-
         <ol class="list-decimal list-inside space-y-3 pl-4">
             <li class="space-y-2">
                 Need to either lodge an annual Not For Profit (NFP) self-review return to confirm eligibility for income tax exemption or
@@ -75,14 +73,11 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
                 </ul>
             </li>
         </ol>
-
         <p class="text-gray-200 leading-relaxed mt-2"><strong>Next meeting:</strong> in 2 months, Jimmy to advise of a suitable date.</p>
     </article>
-
     <div class="my-6">
         <hr class="border-gray-500" />
     </div>
-
     <!-- June 2025 -->
     <article class="mb-6">
     	<h3 class="text-xl font-bold mb-2 text-center">June 2024 – Committee Meeting (24/06/2025)</h3>
@@ -162,11 +157,9 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     	</ol>
     	<p class="text-gray-200"><strong>Next meeting:</strong> in 1 month.</p>
     </article>
-
     <div class="my-6">
         <hr class="border-gray-500" />
     </div>
-
     <!-- Dec 2024 -->
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Dec 2024 – Committee Meeting (03/12/2024)</h3>
@@ -236,11 +229,9 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     	</ol>
     	<p class="font-semibold">Next meeting: To be held about the 3rd week of January - Jimmy to advise via email.</p>
     </article>
-
     <div class="my-6">
         <hr class="border-gray-500" />
     </div>
-
     <!-- Sept 2024 -->
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Sept 2024 – Committee Meeting (17/09/2024)</h3>
@@ -305,11 +296,9 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     		Next meeting: Jimmy said the next meeting would be held in the first week of December. He will pick a date and advise.
     	</p>
     </article>
-
     <div class="my-6">
         <hr class="border-gray-500" />
     </div>
-
     <!-- Aug 2024 -->
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Aug 2024 – Committee Meeting (25/08/2024)</h3>
@@ -386,5 +375,4 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     		</li>
     	</ol>
     </article>
-
 </section>
