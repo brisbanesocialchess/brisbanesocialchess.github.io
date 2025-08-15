@@ -47,3 +47,5 @@ public/
 
 # Python
 .venv
+
+frontend/assets/tailwind.css
