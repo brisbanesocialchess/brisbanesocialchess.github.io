@@ -112,5 +112,6 @@ title: Register for Membership | Brisbane Social Chess Club
     <button type="submit" class="bg-cyan-400 hover:bg-cyan-500 text-black font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:-translate-y-1">
       Register
     </button>
+
   </form>
 </section>
