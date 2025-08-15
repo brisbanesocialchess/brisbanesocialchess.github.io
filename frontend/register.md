@@ -113,5 +113,5 @@ title: Register for Membership | Brisbane Social Chess Club
       Register
     </button>
 
-  </form>
+</form>
 </section>
