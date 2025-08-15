@@ -27,24 +27,21 @@
 
         <!-- Top Navigation -->
         <nav class="text-center text-sm space-x-2">
-          <a href="{{ '/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/' %}text-sky-400 font-bold{% endif %}">Home</a>
-          <a href="{{ '/about/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/about/' %}text-sky-400 font-bold{% endif %}">About</a>
-          <a href="{{ '/games/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/games/' %}text-sky-400 font-bold{% endif %}">Games</a>
-          <a href="{{ '/meetup/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/meetup/' %}text-sky-400 font-bold{% endif %}">Meetups</a>
-          <a href="{{ '/minutes/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/minutes/' %}text-sky-400 font-bold{% endif %}">Minutes</a>
-          <a href="{{ '/register/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/register/' %}text-sky-400 font-bold{% endif %}">Register</a>
-          <a href="{{ '/rules/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/rules/' %}text-sky-400 font-bold{% endif %}">Rules</a>
-          <a href="{{ '/terms/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/terms/' %}text-sky-400 font-bold{% endif %}">Terms</a>
-          <a href="{{ '/contact/' | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == '/contact/' %}text-sky-400 font-bold{% endif %}">Contact</a>
+          {% set navLinks = [
+            { url: '/', text: 'Home' },
+            { url: '/about/', text: 'About' },
+            { url: '/games/', text: 'Games' },
+            { url: '/meetup/', text: 'Meetups' },
+            { url: '/minutes/', text: 'Minutes' },
+            { url: '/register/', text: 'Register' },
+            { url: '/rules/', text: 'Rules' },
+            { url: '/terms/', text: 'Terms' },
+            { url: '/contact/', text: 'Contact' }
+          ] %}
+          {% for link in navLinks -%}
+          <a href="{{ link.url | url  }}"
+             class="text-gray-300 hover:text-white {% if page.url == link.url %}text-sky-400 font-bold{% endif %}">{{ link.text }}</a>
+          {%- endfor %}
         </nav>
 
         <!-- Content -->

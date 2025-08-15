@@ -4,31 +4,64 @@ layout: 'layouts/base.njk'
 title: Contact Us | Brisbane Social Chess Club
 ---
 
-<section class="section">
-	<h2>Contact Us</h2>
-	<p>Feel free to reach out using the form below, or through one of our other contact methods.</p>
-	<form action="#" method="POST" class="form form-contact" novalidate>
-		<div class="form-group">
-			<label for="name">Your Name <span aria-hidden="true">*</span></label>
-			<input type="text" id="name" name="name" required autocomplete="name" />
-		</div>
-		<div class="form-group">
-			<label for="email">Your Email <span aria-hidden="true">*</span></label>
-			<input type="email" id="email" name="email" required autocomplete="email" />
-		</div>
-		<div class="form-group">
-			<label for="subject">Subject <span aria-hidden="true">*</span></label>
-			<input type="text" id="subject" name="subject" required />
-		</div>
-		<div class="form-group">
-			<label for="message">Message <span aria-hidden="true">*</span></label>
-			<textarea id="message" name="message" rows="5" required></textarea>
-		</div>
-		<button type="submit" class="button button--main">Send Message</button>
-	</form>
-	<div class="button-group contact-actions">
-		<a href="/register" class="button">Join Now</a>
-		<a href="https://discord.com/invite/JWBKhQmzvD" class="button">Ask Questions on Discord</a>
-		<a data-email-href class="button email-obfuscated">Ask Questions on E-Mail</a>
-	</div>
+<section class="py-12 px-4 max-w-3xl mx-auto">
+  <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 mb-4">
+    Contact Us
+  </h2>
+  <p class="text-center text-white text-base md:text-lg mb-8">
+    Feel free to reach out using the form below, or through one of our other contact methods.
+  </p>
+
+<form action="#" method="POST" class="flex flex-col gap-6" novalidate>
+    <!-- Name -->
+    <div class="flex flex-col">
+      <label for="name" class="text-gray-200 font-semibold mb-1">Your Name <span aria-hidden="true">*</span></label>
+      <input type="text" id="name" name="name" required autocomplete="name"
+        class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"/>
+    </div>
+
+    <!-- Email -->
+    <div class="flex flex-col">
+      <label for="email" class="text-gray-200 font-semibold mb-1">Your Email <span aria-hidden="true">*</span></label>
+      <input type="email" id="email" name="email" required autocomplete="email"
+        class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"/>
+    </div>
+
+    <!-- Subject -->
+    <div class="flex flex-col">
+      <label for="subject" class="text-gray-200 font-semibold mb-1">Subject <span aria-hidden="true">*</span></label>
+      <input type="text" id="subject" name="subject" required
+        class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"/>
+    </div>
+
+    <!-- Message -->
+    <div class="flex flex-col">
+      <label for="message" class="text-gray-200 font-semibold mb-1">Message <span aria-hidden="true">*</span></label>
+      <textarea id="message" name="message" rows="5" required
+        class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-vertical min-h-[120px]"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit"
+      class="w-full max-w-xs self-center bg-blue-400 hover:bg-blue-500 text-black font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+      Send Message
+    </button>
+
+</form>
+
+<!-- Other Actions -->
+<div class="flex flex-col gap-3 mt-8">
+    <a href="/register"
+      class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
+      Join Now
+    </a>
+    <a href="https://discord.com/invite/JWBKhQmzvD"
+      class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
+      Ask Questions on Discord
+    </a>
+    <a data-email-href
+      class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
+      Ask Questions on E-Mail
+    </a>
+  </div>
 </section>
