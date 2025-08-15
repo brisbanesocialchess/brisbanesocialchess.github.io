@@ -177,31 +177,3 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 	</div>
 	<img src="{{ '/assets/background-smaller.jpg' | url }}" alt="Play Chess" />
 </section>
-
-<!-- # Welcome to My Eleventy Blog
-
-## Posts
-
-<ul>
-{% for post in collections.posts %}
-	<li>
-		<a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date | date("yyyy-MM-dd") }}
-	</li>
-{% endfor %}
-</ul>
-
-## Categories
-
-<ul>
-{% for category in collections.categories %}
-	<li><a href="/categories/{{ category | slug }}/">{{ category }}</a></li>
-{% endfor %}
-</ul>
-
-## Tags
-
-<ul>
-{% for tag in collections.tags %}
-	<li><a href="/tags/{{ tag | slug }}/">{{ tag }}</a></li>
-{% endfor %}
-</ul> -->
