@@ -154,7 +154,8 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
         </tr>
       </tbody>
     </table>
-  </div>
+
+</div>
 
 <img src="{{ '/assets/locations.jpg' | url }}" alt="Chess Meetup" class="mx-auto rounded-lg w-full md:w-3/4"/>
 </section>
