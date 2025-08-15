@@ -31,8 +31,8 @@ COPY . .
 
 RUN npm install
 
-RUN npm run build
-
 RUN npm run tailwindcss:build
+
+RUN npm run build
 
 CMD ["pre-commit", "run", "--all-files"]

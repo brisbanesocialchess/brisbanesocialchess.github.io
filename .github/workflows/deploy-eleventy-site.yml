@@ -26,11 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Eleventy site
-        run: npm run build
-
       - name: Build Tailwindcss
         run: npm run tailwindcss:build
+
+      - name: Build Eleventy site
+        run: npm run build
 
       - name: Deploy to GitHub Pages branch
         run: |
