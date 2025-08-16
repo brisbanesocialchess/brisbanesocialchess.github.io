@@ -197,25 +197,25 @@ title: About Us | Brisbane Social Chess Club
 
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
-    <ul class="list-disc pl-6 space-y-4">
+    <ul class="list-disc pl-6 space-y-4 text-white">
         <li>
             <strong>Chess:</strong>
             <a href="https://lichess.org/" class="text-blue-600 hover:underline">Play on Lichess</a>
-            <p class="text-gray-700">Lots of standard two player chess sets</p>
+            <p>Lots of standard two player chess sets</p>
         </li>
         <li>
             <strong>Four-player chess:</strong>
             <a href="https://www.chess.com/variants/4-player-chess" class="text-blue-600 hover:underline">Play on Chess.com</a>
-            <p class="text-gray-700">One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag</p>
+            <p>One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag</p>
         </li>
         <li>
             <strong>Harmegedo 6 Player Chess - The Board of Lords:</strong>
-            <p class="text-gray-700">One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers</p>
+            <p>One Harmegedo chess set with 6 armies and 108 total soldiers. Each army starts with 9 pieces (including 2 queens) and 9 pawns for a total of 18 soldiers</p>
         </li>
         <li>
             <strong>Quaternity:</strong>
             <a href="https://play.quaternity.com/" class="text-blue-600 hover:underline">Play online</a>, <a href="https://www.quaternity.com/" class="text-blue-600 hover:underline">Official site</a>
-            <p class="text-gray-700">One Quaternity 4 Player Chess Set Basic52 144 Squares Wood Folding 64 Quality Pieces</p>
+            <p>One Quaternity 4 Player Chess Set Basic52 144 Squares Wood Folding 64 Quality Pieces</p>
         </li>
     </ul>
 </section>
@@ -227,7 +227,7 @@ title: About Us | Brisbane Social Chess Club
             <a href="https://www.chessplus.com/" class="text-blue-600 hover:underline">Chessplus</a>:
             <a href="https://www.chessplus.com/products/chessplus-everyday-edition" class="text-blue-600 hover:underline">Everyday Edition</a>
             <ul class="list-disc pl-6">
-                <li class="text-gray-700">A fast paced, edgy version of chess with exponentially more moves & all new strategies</li>
+                <li>A fast paced, edgy version of chess with exponentially more moves & all new strategies</li>
             </ul>
         </li>
     </ul>

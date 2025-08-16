@@ -5,7 +5,7 @@ title: Terms & Conditions | Brisbane Social Chess Club
 ---
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-indigo-200 text-xl uppercase tracking-wide mt-2 mb-2">Terms & Conditions</h2>
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Terms & Conditions</h2>
   <ul class="list-decimal list-inside ml-6 space-y-3 text-gray-200 text-sm leading-relaxed">
     <li>We are a friendly, inclusive community — everyone is welcome.</li>
     <li>All members must follow the official club rules and behave respectfully.</li>
