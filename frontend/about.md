@@ -118,7 +118,7 @@ title: About Us | Brisbane Social Chess Club
 <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/jbampton" class="flex flex-col items-center text-center">
-      <img class="w-24 h-24 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
+      <img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
       <span class="font-medium">John Bampton</span>
       <span class="text-gray-500">@jbampton</span>
     </a>
@@ -127,7 +127,7 @@ title: About Us | Brisbane Social Chess Club
 <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">💾</span> Developer</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/BaseMax" class="flex flex-col items-center text-center">
-      <img class="w-10 h-10 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4" alt="Max Base avatar" />
+      <img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar" />
       <span class="font-medium">Max Base</span>
       <span class="text-gray-500">@BaseMax</span>
     </a>
@@ -135,63 +135,63 @@ title: About Us | Brisbane Social Chess Club
 
 <h2 class="text-3xl font-bold mb-6"><span aria-hidden="true">🎮</span> Discord Moderators</h2>
   <div class="flex flex-wrap justify-center gap-6">
-    <a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-24">
-      <img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=125" alt="Abhushan Gautam avatar" />
+    <a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-16">
+      <img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=95" alt="Abhushan Gautam avatar" />
       <span class="font-medium">Abhushan Gautam</span>
       <span class="text-gray-500">@carefreeav09</span>
     </a>
-    <a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-24">
-      <img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar" />
+    <a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-16">
+      <img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=95" alt="Anuradha Fernando avatar" />
       <span class="font-medium">Anuradha Fernando</span>
       <span class="text-gray-500">@anufdo</span>
     </a>
-    <a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-24">
-      <img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=125" alt="Ayush Rana avatar" />
+    <a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-16">
+      <img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
       <span class="font-medium">Ayush Rana</span>
       <span class="text-gray-500">@ayushrana182</span>
     </a>
-    <div class="flex flex-col items-center text-center w-24">
-      <img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=125" alt="Jasper avatar" />
+    <div class="flex flex-col items-center text-center w-16">
+      <img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
       <span class="font-medium">Jasper</span>
       <span class="text-gray-500">N/A</span>
     </div>
-    <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=125" alt="Mahabub Islam Prio avatar" />
+    <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
     	<span class="font-medium">Mahabub Islam Prio</span>
     	<span class="text-gray-500">@prio101</span>
     </a>
-    <a href="https://github.com/LuckyNotGood" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=125" alt="Matt McLean avatar" />
+    <a href="https://github.com/LuckyNotGood" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=95" alt="Matt McLean avatar" />
     	<span class="font-medium">Matt McLean</span>
     	<span class="text-gray-500">@LuckyNotGood</span>
     </a>
-    <a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=125" alt="Mohammad Lotfi Akbarabadi avatar" />
+    <a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
     	<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
     	<span class="text-gray-500">@mohammadlotfia</span>
     </a>
-    <a href="https://github.com/udha" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=125" alt="Nicholas Meredith avatar">
+    <a href="https://github.com/udha" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar">
     	<span class="font-medium">Nicholas Meredith</span>
     	<span class="text-gray-500">@udha</span>
     </a>
-    <a href="https://github.com/garveybiz" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=125" alt="Rob Garvey avatar" />
+    <a href="https://github.com/garveybiz" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=95" alt="Rob Garvey avatar" />
     	<span class="font-medium">Rob Garvey</span>
     	<span class="text-gray-500">@garveybiz</span>
     </a>
-    <a href="https://github.com/smriad" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=125" alt="SM Riad avatar" />
+    <a href="https://github.com/smriad" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
     	<span class="font-medium">SM Riad</span>
     	<span class="text-gray-500">@smriad</span>
     </a>
-    <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=125" alt="therealnugget avatar" />
+    <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
     	<span class="font-medium">therealnugget</span>
     	<span class="text-gray-500">@therealnugget</span>
     </a>
-    <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-24">
-    	<img class="w-5 h-5 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=125" alt="sugiarto avatar" />
+    <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-16">
+    	<img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=95" alt="sugiarto avatar" />
     	<span class="font-medium">sugiarto</span>
     	<span class="text-gray-500">@ugifractal</span>
     </a>
