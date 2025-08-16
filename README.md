@@ -152,7 +152,7 @@ And then:
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
-Or if you want to run and keep the container and go into bash:
+Or if you want to run and keep the container and go into Bash:
 
 ```bash
 docker run -it -v "$PWD":/app -w /app my-go-precommit bash
@@ -162,7 +162,7 @@ docker run -it -v "$PWD":/app -w /app my-go-precommit bash
 
 ### Build the Documentation
 
-Run the following commands from the repo root to create the Sphinx documentation with Make:
+Run the following commands from the repository root to create the Sphinx documentation with Make:
 
 ```shell
 cd doc
