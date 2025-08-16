@@ -5,7 +5,7 @@ title: About Us | Brisbane Social Chess Club
 ---
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🏢</span> Who are we?</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
     <p class="text-white text-base leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
         and community engagement. We organize regular meetups where people can play chess in a relaxed and friendly environment. We are
@@ -29,7 +29,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">👥</span> Management Committee</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">👥</span> Management Committee</h2>
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse text-white">
             <thead>
@@ -72,7 +72,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
             <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>: "A good player is always lucky" -
@@ -113,7 +113,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="py-12 px-4 text-center">
-  <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🛠️</span> GitHub Team</h2>
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🛠️</span> GitHub Team</h2>
 
 <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
   <div class="flex justify-center mb-8">
@@ -132,7 +132,7 @@ title: About Us | Brisbane Social Chess Club
       <span class="text-gray-500">@BaseMax</span>
     </a>
   </div>
-  <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🎮</span> Discord Moderators</h2>
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎮</span> Discord Moderators</h2>
   <div class="flex flex-wrap justify-center gap-6">
     <a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-16">
       <img class="w-16 h-16 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=95" alt="Abhushan Gautam avatar" />
@@ -198,7 +198,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4">
-    <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🎲</span> Games that we play</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
     <ul class="list-disc pl-6 space-y-4">
         <li>
             <strong>Chess:</strong>
@@ -223,7 +223,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4">
-    <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li>
             <a href="https://www.chessplus.com/" class="text-blue-600 hover:underline">Chessplus</a>:
@@ -236,7 +236,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4">
-    <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li><a href="https://en.wikipedia.org/wiki/Go_(game)" class="text-blue-600 hover:underline">Go</a> - at least one small Go set</li>
         <li><a href="https://en.wikipedia.org/wiki/Shogi" class="text-blue-600 hover:underline">Shogi (Japanese chess)</a> - at least two Shogi sets</li>
