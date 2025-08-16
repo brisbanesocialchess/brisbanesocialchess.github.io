@@ -2,7 +2,7 @@ import { env, createExecutionContext, waitOnExecutionContext, SELF } from 'cloud
 import { describe, it, expect } from 'vitest';
 import worker from '../src';
 
-const BASE_URL = 'http://example.com';
+const BASE_URL = 'http://example.com'; // This should be 'example.com' as that is how Cloudflare emulates and tests the project in test mode.
 
 describe('Hello World worker', () => {
 	it('responds with Hello World! (unit style)', async () => {
