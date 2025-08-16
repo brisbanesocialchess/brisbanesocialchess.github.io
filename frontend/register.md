@@ -5,7 +5,7 @@ title: Register for Membership | Brisbane Social Chess Club
 ---
 
 <section class="max-w-3xl mx-auto px-6 flex flex-col gap-4">
-  <h2 class="text-center text-indigo-200 text-xl uppercase tracking-wide mt-2 mb-2">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
     Register
   </h2>
   <p class="text-gray-300 text-sm">

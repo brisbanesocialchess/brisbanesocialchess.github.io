@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 ---
 
-<section class="px-4 text-white">
+<section class="px-4 max-w-3xl">
   <h1 class="text-center text-2xl md:text-3xl font-bold mb-6">
     <span aria-hidden="true">🎉</span> Welcome to Brisbane Social Chess Inc! <span aria-hidden="true">♟️</span>
   </h1>
@@ -48,7 +48,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
   </p>
 </section>
 
-<section class="px-4 text-white">
+<section class="px-4 max-w-3xl">
   <h2 class="text-center text-xl md:text-2xl font-semibold mb-6"><span aria-hidden="true">🗓️</span> 6 Meetups a Week</h2>
   <p class="text-center text-white/90 text-base md:text-lg mb-6">
     We have meetings every day of the week except Tuesdays. There are always more meeting times and locations in the works.
@@ -148,13 +148,13 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
   <img src="{{ '/assets/locations.jpg' | url }}" alt="Chess Meetup" class="mx-auto rounded-lg w-full md:w-3/4"/>
 </section>
 
-<section class="px-4 text-white text-center">
+<section class="px-4 max-w-3xl text-center">
   <h2 class="text-xl md:text-2xl font-semibold mb-4">A Dedicated Team of Organisers</h2>
   <p class="text-white/90 mb-6">We are a registered community organisation in Queensland with a committee. Ready to contribute? We would like to hear from you.</p>
   <img src="{{ '/assets/organisers.jpg' | url }}" alt="Organisers" class="mx-auto rounded-lg w-full md:w-3/4"/>
 </section>
 
-<section class="px-4 text-white text-center">
+<section class="px-4 max-w-3xl text-center">
   <h2 class="text-xl md:text-2xl font-semibold mb-4">Join Us!</h2>
   <p class="text-white/90 mb-6">
     We are creating magic live on Discord <span aria-hidden="true">🪄</span><br/>

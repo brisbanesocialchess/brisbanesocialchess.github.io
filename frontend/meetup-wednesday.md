@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
 ---
 
-<section class="max-w-3xl mx-auto p-6 bg-black bg-opacity-60 rounded-xl shadow-lg flex flex-col gap-4">
+<section class="px-4 max-w-3xl">
   <h2 class="text-center text-indigo-200 text-xl uppercase tracking-wide mt-2 mb-2">
     Wednesday Lunchtime Chess ♟️☕
   </h2>
