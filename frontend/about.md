@@ -33,7 +33,7 @@ title: About Us | Brisbane Social Chess Club
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse text-white">
             <thead>
-                <tr class="bg-[#261775] text-center">
+                <tr class="bg-[#091a52] text-center">
                     <th class="border px-4 py-2 w-[40px]">Role</th>
                     <th class="border px-4 py-2">Name</th>
                 </tr>
