@@ -5,7 +5,7 @@ title: Contact Us | Brisbane Social Chess Club
 ---
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 mb-4">
+  <h2 class="text-center text-2xl md:text-3xl font-bold text-[#b7b4ed] mb-4">
     Contact Us
   </h2>
   <p class="text-center text-white text-base md:text-lg mb-8">

@@ -35,14 +35,14 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
   </p>
   <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Quick Survey <span aria-hidden="true">📋</span></h2>
   <p class="text-center text-white/90 text-base md:text-lg mb-6">
-    Pretty please take our <strong>30-second club census</strong> here: <a href="https://goo.gl/VQGmes" class="text-cyan-400 hover:text-cyan-300 underline">Club Census</a>
+    Pretty please take our <strong>30-second club census</strong> here: <a href="https://goo.gl/VQGmes" class="text-[#a09de1] hover:text-[#b7b4ed] underline">Club Census</a>
   </p>
   <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Become an official Member! <span aria-hidden="true">🎈</span></h2>
   <p class="text-center text-white/90 text-base md:text-lg">
     If you love hanging with us, consider becoming an official club member for <strong>$10/year</strong>.
     <br />
     Do that using this link:
-    <a href="https://app.joinit.com/o/brisbane-social-chess" class="text-cyan-400 hover:text-cyan-300 underline">Join Us</a>.
+    <a href="https://app.joinit.com/o/brisbane-social-chess" class="text-[#a09de1] hover:text-[#b7b4ed] underline">Join Us</a>.
     <br />
     Your membership keeps the good times going!
   </p>
@@ -72,7 +72,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
             <a href="https://www.google.com/maps/search/?api=1&query=Pig+N+Whistle+King+George+Square%2C+100+Adelaide+Street%2C+Brisbane+City+QLD+4000"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-cyan-400 hover:text-cyan-300 underline">
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
               King George Square, 100 Adelaide Street, Brisbane City QLD 4000
             </a>
           </td>
@@ -85,7 +85,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
             <a href="https://www.google.com/maps/search/?api=1&query=June%27s+Cafe%2C+17+Lytton+Rd%2C+East+Brisbane+QLD+4169"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-cyan-400 hover:text-cyan-300 underline">
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
               17 Lytton Rd, East Brisbane QLD 4169
             </a>
           </td>
@@ -98,7 +98,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
             <a href="https://www.google.com/maps/search/?api=1&query=Royal+Hotel%2C+1259+Sandgate+Rd%2C+Nundah+QLD+4012"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-cyan-400 hover:text-cyan-300 underline">
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
               1259 Sandgate Rd, Nundah QLD 4012
             </a>
           </td>
@@ -111,7 +111,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
             <a href="https://www.google.com/maps/search/?api=1&query=Chocolate+Moments%2C+60+Albert+St%2C+Brisbane+City+QLD+4000"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-cyan-400 hover:text-cyan-300 underline">
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
               60 Albert St, Brisbane City QLD 4000
             </a>
           </td>
@@ -124,7 +124,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
             <a href="https://www.google.com/maps/search/?api=1&query=West+End+Park+Cafe%2C+305+Montague+Rd%2C+West+End+QLD+4101"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-cyan-400 hover:text-cyan-300 underline">
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
               305 Montague Rd, West End QLD 4101
             </a>
           </td>
@@ -137,7 +137,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
             <a href="https://www.google.com/maps/search/?api=1&query=The+Garden+Room%2C+1+Parkland+Blvd%2C+Brisbane+City+QLD+4000"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-cyan-400 hover:text-cyan-300 underline">
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
               1 Parkland Blvd, Brisbane City QLD 4000
             </a>
           </td>

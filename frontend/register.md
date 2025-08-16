@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: Register for Membership | Brisbane Social Chess Club
 ---
 
-<section class="max-w-3xl mx-auto px-6 flex flex-col gap-4">
+<section class="px-4 max-w-3xl">
   <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
     Register
   </h2>
