@@ -181,7 +181,6 @@ repos:
         description: MarkdownLint Command Line Interface
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
-        exclude: ^frontend/.*\.md$
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
