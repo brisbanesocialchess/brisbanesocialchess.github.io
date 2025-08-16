@@ -15,30 +15,12 @@ title: Chess Meetups & Locations | Brisbane Social Chess Club
   </p>
   <!-- Button group -->
   <div class="flex flex-col md:flex-row flex-wrap gap-3 mt-4 w-full max-w-lg justify-center">
-    <a href="{{ '/meetup/monday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Monday
-    </a>
-    <!-- <a href="{{ '/meetup/tuesday/' | url }}" class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">Tuesday</a> -->
-    <a href="{{ '/meetup/wednesday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Wednesday
-    </a>
-    <a href="{{ '/meetup/thursday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Thursday
-    </a>
-    <a href="{{ '/meetup/friday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Friday
-    </a>
-    <a href="{{ '/meetup/saturday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Saturday
-    </a>
-    <a href="{{ '/meetup/sunday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Sunday
-    </a>
+    <a href="{{ '/meetup/monday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Monday</a>
+    <!-- <a href="{{ '/meetup/tuesday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Tuesday</a> -->
+    <a href="{{ '/meetup/wednesday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Wednesday</a>
+    <a href="{{ '/meetup/thursday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Thursday</a>
+    <a href="{{ '/meetup/friday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Friday</a>
+    <a href="{{ '/meetup/saturday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Saturday</a>
+    <a href="{{ '/meetup/sunday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-400 rounded-full font-bold shadow-md">Sunday</a>
   </div>
 </section>
