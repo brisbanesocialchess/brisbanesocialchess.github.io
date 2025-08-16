@@ -37,24 +37,20 @@ title: Contact Us | Brisbane Social Chess Club
         class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-vertical min-h-[120px]"></textarea>
     </div>
     <!-- Submit Button -->
-    <button type="submit"
-      class="w-full max-w-xs self-center bg-indigo-900 hover:bg-indigo-400 text-black font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-400 font-bold py-3 px-6 rounded-full shadow-lg">
       Send Message
     </button>
 </form>
 
 <!-- Other Actions -->
 <div class="flex flex-col gap-3 mt-8">
-    <a href="/register"
-      class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
+    <a href="/register" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
       Join Now
     </a>
-    <a href="https://discord.com/invite/JWBKhQmzvD"
-      class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
+    <a href="https://discord.com/invite/JWBKhQmzvD" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
       Ask Questions on Discord
     </a>
-    <a data-email-href
-      class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
+    <a data-email-href class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
       Ask Questions on E-Mail
     </a>
   </div>
