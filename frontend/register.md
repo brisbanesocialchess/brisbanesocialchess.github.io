@@ -38,15 +38,15 @@ title: Register for Membership | Brisbane Social Chess Club
       <legend class="text-gray-200 font-semibold mb-2">Gender <span aria-hidden="true">*</span></legend>
       <div class="flex flex-col gap-2">
         <label class="inline-flex items-center gap-2 text-gray-200 cursor-pointer">
-          <input type="radio" name="gender" value="male" required class="accent-cyan-400 w-4 h-4 cursor-pointer" />
+          <input type="radio" name="gender" value="male" required class="accent-indigo-900 w-4 h-4 cursor-pointer" />
           Male
         </label>
         <label class="inline-flex items-center gap-2 text-gray-200 cursor-pointer">
-          <input type="radio" name="gender" value="female" class="accent-cyan-400 w-4 h-4 cursor-pointer" />
+          <input type="radio" name="gender" value="female" class="accent-indigo-900 w-4 h-4 cursor-pointer" />
           Female
         </label>
         <label class="inline-flex items-center gap-2 text-gray-200 cursor-pointer">
-          <input type="radio" name="gender" value="other" class="accent-cyan-400 w-4 h-4 cursor-pointer" />
+          <input type="radio" name="gender" value="other" class="accent-indigo-900 w-4 h-4 cursor-pointer" />
           Other
         </label>
       </div>

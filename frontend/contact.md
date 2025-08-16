@@ -40,10 +40,9 @@ title: Contact Us | Brisbane Social Chess Club
     <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-400 font-bold py-3 px-6 rounded-full shadow-lg">
       Send Message
     </button>
-</form>
-
-<!-- Other Actions -->
-<div class="flex flex-col gap-3 mt-8">
+  </form>
+  <!-- Other Actions -->
+  <div class="flex flex-col gap-3 mt-8">
     <a href="/register" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition">
       Join Now
     </a>
