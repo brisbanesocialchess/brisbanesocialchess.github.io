@@ -14,5 +14,5 @@ title: Terms & Conditions | Brisbane Social Chess Club
     <li>All content, including games and comments, must be respectful and safe for all ages.</li>
     <li>Online interactions (Discord/Facebook/GitHub) must follow the same respectful conduct.</li>
   </ul>
-  <p class="text-gray-300 text-sm leading-relaxed">By participating in any event or online group, you agree to these terms.</p>
+  <p class="text-sm leading-relaxed">By participating in any event or online group, you agree to these terms.</p>
 </section>

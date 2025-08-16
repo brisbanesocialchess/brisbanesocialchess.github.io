@@ -17,7 +17,7 @@ title: Thursday Night Chess Meetup | Brisbane Social Chess Club
       class="max-w-[150px] rounded-lg"
     />
   </div>
-  <p class="text-gray-300 text-sm leading-relaxed">
+  <p class="text-sm leading-relaxed">
     Welcome to Thursday night chess at The Royal Hotel in Nundah. <br />
     The Royal offers great food and drinks. On Sandgate Rd in Nundah Village, less than a 5-minute walk from Nundah Station.
   </p>

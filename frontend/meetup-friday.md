@@ -25,7 +25,7 @@ title: Friday Lunchtime Meetup | Brisbane Social Chess Club
       class="max-w-[150px] rounded-lg mt-2"
     />
   </div>
-  <p class="text-gray-300 text-sm leading-relaxed">
+  <p class="text-sm leading-relaxed">
     Welcome chess and chocolate lovers!<br/>
     Come to the chocolate moments cafe for your guilty Friday indulgence of your two vices / virtues:<br/>
     CHESS and CHOCOLATE. (and of course, coffee).<br/>

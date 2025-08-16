@@ -17,7 +17,7 @@ title: Monday Afternoon Meetup | Brisbane Social Chess Club
       class="max-w-[150px] rounded-lg mt-2"
     />
   </div>
-  <p class="text-gray-300 text-sm leading-relaxed">
+  <p class="text-sm leading-relaxed">
     Ah, the Pig 'N' Whistle in King George Square! Imagine, if you will, the gentle clinking of glasses mingling with the quiet contemplation of chess aficionados locked in strategic battle. The pub's very location, a vibrant heart beating within Brisbane's cityscape, offers an effortlessly chic backdrop for such an intellectual gathering.
     <br/>
     Consider the sheer convenience the Pig 'N' Whistle offers. Nestled in King George Square, it's easily accessible by public transport, making it a central and appealing location for players from all corners of Brisbane. After a particularly grueling match, what could be more satisfying than indulging in a perfectly poured pint or a delectable meal from their menu? This isn't just a venue; it's an experience, a place where sharp minds can clash and friendships can be forged over a shared love of the game.

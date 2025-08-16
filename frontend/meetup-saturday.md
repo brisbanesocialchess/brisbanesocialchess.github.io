@@ -22,7 +22,7 @@ title: Saturday Chess Meetup | Brisbane Social Chess Club
       class="max-w-[150px] rounded-lg"
     />
   </div>
-  <p class="text-gray-300 text-sm leading-relaxed">
+  <p class="text-sm leading-relaxed">
     Calling all Blunderers! Join Brisbane's coolest chess crew every Saturday morning as we transform West End Park Café into checkered board central.<br/>
     Arrive anytime from 1030 AM to soak up the cafe's scrumptious breakfast menu, piping hot coffee, and morning newspapers. Early risers, late sleepers, and every bird in between is welcome!<br/>
     Gentlemen - a change for 2025:

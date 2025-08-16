@@ -30,7 +30,7 @@ title: Sunday Lunchtime Chess Meetup | Brisbane Social Chess Club
       class="max-w-[150px] rounded-lg"
     />
   </div>
-  <p class="text-gray-300 text-sm leading-relaxed">
+  <p class="text-sm leading-relaxed">
     Calling all Blunderers near and far - Sundays are our day to plot, move and laugh. <br />
     Join us every Sunday around 11am as we transform a city coffee house into a casual chess haven. Early birds, latecomers, and every bird in between is welcome! <br />
     This isn't your serious chess tournament - bring your humour and your favourite chess set from home. We need at least half our chess crew rocking unique sets every week! Extra props if it's got some personality. And don't forget a timer if you like to play with one. <br />
