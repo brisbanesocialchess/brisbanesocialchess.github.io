@@ -26,7 +26,6 @@ title: Register for Membership | Brisbane Social Chess Club
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
     </div>
-
     <!-- Last Name -->
     <div class="flex flex-col">
       <label for="lastName" class="text-gray-200 font-semibold mb-1">
@@ -41,7 +40,6 @@ title: Register for Membership | Brisbane Social Chess Club
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
     </div>
-
     <!-- Birth Year -->
     <div class="flex flex-col">
       <label for="birthYear" class="text-gray-200 font-semibold mb-1">
@@ -59,7 +57,6 @@ title: Register for Membership | Brisbane Social Chess Club
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
     </div>
-
     <!-- Gender -->
     <fieldset class="flex flex-col border border-gray-400 rounded-md p-4 bg-white/5">
       <legend class="text-gray-200 font-semibold mb-2">Gender <span aria-hidden="true">*</span></legend>
@@ -78,7 +75,6 @@ title: Register for Membership | Brisbane Social Chess Club
         </label>
       </div>
     </fieldset>
-
     <!-- Discord Username -->
     <div class="flex flex-col">
       <label for="discordUsername" class="text-gray-200 font-semibold mb-1">
@@ -92,7 +88,6 @@ title: Register for Membership | Brisbane Social Chess Club
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
     </div>
-
     <!-- Email -->
     <div class="flex flex-col">
       <label for="email" class="text-gray-200 font-semibold mb-1">
@@ -107,11 +102,9 @@ title: Register for Membership | Brisbane Social Chess Club
         class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition"
       />
     </div>
-
     <!-- Submit Button -->
-    <button type="submit" class="bg-cyan-400 hover:bg-cyan-500 text-black font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:-translate-y-1">
+    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-400 font-bold py-3 px-6 rounded-full shadow-lg">
       Register
     </button>
-
-</form>
+  </form>
 </section>
