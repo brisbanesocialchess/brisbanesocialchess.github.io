@@ -8,7 +8,7 @@ title: Register for Membership | Brisbane Social Chess Club
   <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
     Register
   </h2>
-  <p class="text-gray-300 text-sm">
+  <p class="text-center text-white text-base md:text-lg mb-8">
     Please fill in the form below to join Brisbane Social Chess.
   </p>
   <form action="#" method="POST" class="flex flex-col gap-5" novalidate>
