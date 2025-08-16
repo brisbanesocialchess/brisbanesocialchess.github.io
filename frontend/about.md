@@ -197,7 +197,7 @@ title: About Us | Brisbane Social Chess Club
 
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
-    <ul class="list-disc pl-6 space-y-4 text-white">
+    <ul class="list-disc pl-6 space-y-4">
         <li>
             <strong>Chess:</strong>
             <a href="https://lichess.org/" class="text-blue-600 hover:underline">Play on Lichess</a>
