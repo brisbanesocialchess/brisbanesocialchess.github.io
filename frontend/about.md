@@ -200,12 +200,12 @@ title: About Us | Brisbane Social Chess Club
     <ul class="list-disc pl-6 space-y-4">
         <li>
             <strong>Chess:</strong>
-            <a href="https://lichess.org/" class="text-blue-600 hover:underline">Play on Lichess</a>
+            <a href="https://lichess.org/" class="text-blue-400 hover:underline">Play on Lichess</a>
             <p>Lots of standard two player chess sets</p>
         </li>
         <li>
             <strong>Four-player chess:</strong>
-            <a href="https://www.chess.com/variants/4-player-chess" class="text-blue-600 hover:underline">Play on Chess.com</a>
+            <a href="https://www.chess.com/variants/4-player-chess" class="text-blue-400 hover:underline">Play on Chess.com</a>
             <p>One vinyl Four-player chess set with 68 plastic pieces including 8 total queens which is packaged in a green cylindrical zipper bag</p>
         </li>
         <li>
@@ -214,7 +214,7 @@ title: About Us | Brisbane Social Chess Club
         </li>
         <li>
             <strong>Quaternity:</strong>
-            <a href="https://play.quaternity.com/" class="text-blue-600 hover:underline">Play online</a>, <a href="https://www.quaternity.com/" class="text-blue-600 hover:underline">Official site</a>
+            <a href="https://play.quaternity.com/" class="text-blue-400 hover:underline">Play online</a>, <a href="https://www.quaternity.com/" class="text-blue-400 hover:underline">Official site</a>
             <p>One Quaternity 4 Player Chess Set Basic52 144 Squares Wood Folding 64 Quality Pieces</p>
         </li>
     </ul>
@@ -224,8 +224,8 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li>
-            <a href="https://www.chessplus.com/" class="text-blue-600 hover:underline">Chessplus</a>:
-            <a href="https://www.chessplus.com/products/chessplus-everyday-edition" class="text-blue-600 hover:underline">Everyday Edition</a>
+            <a href="https://www.chessplus.com/" class="text-blue-400 hover:underline">Chessplus</a>:
+            <a href="https://www.chessplus.com/products/chessplus-everyday-edition" class="text-blue-400 hover:underline">Everyday Edition</a>
             <ul class="list-disc pl-6">
                 <li>A fast paced, edgy version of chess with exponentially more moves & all new strategies</li>
             </ul>
@@ -236,8 +236,8 @@ title: About Us | Brisbane Social Chess Club
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
     <ul class="list-disc pl-6 space-y-2">
-        <li><a href="https://en.wikipedia.org/wiki/Go_(game)" class="text-blue-600 hover:underline">Go</a> - at least one small Go set</li>
-        <li><a href="https://en.wikipedia.org/wiki/Shogi" class="text-blue-600 hover:underline">Shogi (Japanese chess)</a> - at least two Shogi sets</li>
-        <li><a href="https://en.wikipedia.org/wiki/Xiangqi" class="text-blue-600 hover:underline">Xiangqi (Chinese chess)</a> - at least one Xiangqi set</li>
+        <li><a href="https://en.wikipedia.org/wiki/Go_(game)" class="text-blue-400 hover:underline">Go</a> - at least one small Go set</li>
+        <li><a href="https://en.wikipedia.org/wiki/Shogi" class="text-blue-400 hover:underline">Shogi (Japanese chess)</a> - at least two Shogi sets</li>
+        <li><a href="https://en.wikipedia.org/wiki/Xiangqi" class="text-blue-400 hover:underline">Xiangqi (Chinese chess)</a> - at least one Xiangqi set</li>
     </ul>
 </section>
