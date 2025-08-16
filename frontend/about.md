@@ -118,7 +118,7 @@ title: About Us | Brisbane Social Chess Club
 <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/jbampton" class="flex flex-col items-center text-center">
-      <img class="w-35 h-70 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
+      <img class="w-50 h-50 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
       <span class="font-medium">John Bampton</span>
       <span class="text-gray-500">@jbampton</span>
     </a>
