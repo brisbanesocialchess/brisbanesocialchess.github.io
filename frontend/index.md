@@ -39,8 +39,11 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
   </p>
   <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Become an official Member! <span aria-hidden="true">🎈</span></h2>
   <p class="text-center text-white/90 text-base md:text-lg">
-    If you love hanging with us, consider becoming an official club member for <strong>$10/year</strong>. Do that using this link:
+    If you love hanging with us, consider becoming an official club member for <strong>$10/year</strong>.
+    <br />
+    Do that using this link:
     <a href="https://app.joinit.com/o/brisbane-social-chess" class="text-cyan-400 hover:text-cyan-300 underline">Join Us</a>.
+    <br />
     Your membership keeps the good times going!
   </p>
 </section>
