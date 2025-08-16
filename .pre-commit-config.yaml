@@ -187,10 +187,13 @@ repos:
     hooks:
       - id: rst-backticks
         name: detect common mistake of using single backticks when writing rst
+        types: [rst]
       - id: rst-directive-colons
         name: detect mistake of rst directive not ending with double colon or space before the double colon
+        types: [rst]
       - id: rst-inline-touching-normal
         name: detect mistake of inline code touching normal text in rst
+        types: [rst]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
