@@ -4,8 +4,8 @@ layout: 'layouts/base.njk'
 title: Meeting Minutes & Club Records | Brisbane Social Chess Club
 ---
 
-<section class="section py-8 max-w-3xl mx-auto">
-    <h2 class="text-center text-indigo-200 text-xl uppercase mb-4">Meeting Minutes</h2>
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Meeting Minutes</h2>
     <!-- May 2025 -->
     <article class="mb-6">
         <h3 class="text-center text-lg font-semibold">May 2025 – Committee Meeting (25/03/2025)</h3>

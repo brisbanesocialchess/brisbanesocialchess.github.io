@@ -40,7 +40,7 @@
           ] %}
           {% for link in navLinks -%}
           <a href="{{ link.url | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == link.url %}text-sky-400 font-bold{% endif %}">{{ link.text }}</a>
+             class="hover:text-white {% if page.url == link.url %}text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">{{ link.text }}</a>
           {%- endfor %}
         </nav>
 
