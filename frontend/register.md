@@ -66,7 +66,7 @@ title: Register for Membership | Brisbane Social Chess Club
       <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
     </div>
     <!-- Submit Button -->
-    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-400 font-bold py-3 px-6 rounded-full shadow-lg">
+    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
       Register
     </button>
   </form>
