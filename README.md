@@ -92,6 +92,8 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 
 [Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build websites. Unlike dynamic website builders, 11ty generates all the website's content upfront, which leads to better performance and simpler deployments.
 
+[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework designed for rapidly building custom user interfaces directly within HTML. Unlike traditional CSS frameworks that provide pre-built components (like buttons or navigation bars), Tailwind offers a comprehensive set of low-level utility classes.
+
 [Nunjucks](https://mozilla.github.io/nunjucks/) is a powerful and flexible templating engine for JavaScript, heavily inspired by Jinja2 (a popular templating engine for Python). It allows developers to create dynamic HTML, XML, or other text-based content by embedding logic, variables, and control structures directly within templates.
 
 [Sphinx](https://www.sphinx-doc.org/en/master/) is a powerful and widely-used documentation generator written in Python. It is particularly popular within the Python community and is considered the de facto standard for documenting Python projects.
