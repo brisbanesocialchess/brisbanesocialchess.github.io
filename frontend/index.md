@@ -49,9 +49,9 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 </section>
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-xl md:text-2xl font-semibold mb-6"><span aria-hidden="true">🗓️</span> 6 Meetups a Week</h2>
+  <h2 class="text-center text-xl md:text-2xl font-semibold mb-6"><span aria-hidden="true">🗓️</span> 5 Meetups a Week</h2>
   <p class="text-center text-white/90 text-base md:text-lg mb-6">
-    We have meetings every day of the week except Tuesdays. There are always more meeting times and locations in the works.
+    We have meetings every day of the week except Mondays and Tuesdays. There are always more meeting times and locations in the works.
   </p>
   <div class="overflow-x-auto mb-6">
     <table class="min-w-full border border-gray-300 text-left text-white/90">
@@ -64,19 +64,6 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
         </tr>
       </thead>
       <tbody>
-        <tr class="border-t border-gray-500">
-          <td class="px-4 py-2">Monday</td>
-          <td class="px-4 py-2">4:00-7:00 PM</td>
-          <td class="px-4 py-2 font-semibold">Pig N Whistle King George Square</td>
-          <td class="px-4 py-2">
-            <a href="https://www.google.com/maps/search/?api=1&query=Pig+N+Whistle+King+George+Square%2C+100+Adelaide+Street%2C+Brisbane+City+QLD+4000"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
-              King George Square, 100 Adelaide Street, Brisbane City QLD 4000
-            </a>
-          </td>
-        </tr>
         <tr class="border-t border-gray-500">
           <td class="px-4 py-2">Wednesday</td>
           <td class="px-4 py-2">12:00-2:30 PM</td>
