@@ -88,10 +88,6 @@ title: About Us | Brisbane Social Chess Club
                 <li><span class="role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role-board">Jimmy Joe</span></li>
                 <li>
-                    <a href="https://github.com/jbampton" class="role-admin">John Bampton</a>: GitHub is more about collaboration and community than code. Let me know about your favorite chess variants.
-                    <span aria-hidden="true">👨‍🎨</span>
-                </li>
-                <li>
                     <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
                 <li><span class="role-board">Steve</span>: Official pawn wrangler.</li>
@@ -117,17 +113,27 @@ title: About Us | Brisbane Social Chess Club
   <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/jbampton" class="flex flex-col items-center text-center">
-      <img class="w-[320px] h-[320px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
+      <img class="w-[420px] h-[420px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
       <span class="font-medium">John Bampton</span>
       <span class="text-gray-500">@jbampton</span>
     </a>
   </div>
-  <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">💾</span> Developer</h3>
+  <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">💾</span> Developers</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/BaseMax" class="flex flex-col items-center text-center">
-      <img class="w-[200px] h-[200px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=200" alt="Max Base avatar" />
+      <img class="w-[225px] h-[225px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=225" alt="Max Base avatar" />
       <span class="font-medium">Max Base</span>
       <span class="text-gray-500">@BaseMax</span>
+    </a>
+    <a href="https://github.com/anufdo" class="flex flex-col items-center text-center">
+      <img class="w-[150px] h-[150px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=150" alt="Anuradha Fernando avatar" />
+      <span class="font-medium">Anuradha Fernando</span>
+      <span class="text-gray-500">@anufdo</span>
+    </a>
+    <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center">
+      <img class="w-[150px] h-[150px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=150" alt="sugiarto avatar" />
+      <span class="font-medium">sugiarto</span>
+      <span class="text-gray-500">@ugifractal</span>
     </a>
   </div>
   <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎮</span> Discord Moderators</h2>
@@ -136,11 +142,6 @@ title: About Us | Brisbane Social Chess Club
       <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=95" alt="Abhushan Gautam avatar" />
       <span class="font-medium">Abhushan Gautam</span>
       <span class="text-gray-500">@carefreeav09</span>
-    </a>
-    <a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-33">
-      <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=95" alt="Anuradha Fernando avatar" />
-      <span class="font-medium">Anuradha Fernando</span>
-      <span class="text-gray-500">@anufdo</span>
     </a>
     <a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-33">
       <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
@@ -176,11 +177,6 @@ title: About Us | Brisbane Social Chess Club
     	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
     	<span class="font-medium">therealnugget</span>
     	<span class="text-gray-500">@therealnugget</span>
-    </a>
-    <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=95" alt="sugiarto avatar" />
-    	<span class="font-medium">sugiarto</span>
-    	<span class="text-gray-500">@ugifractal</span>
     </a>
   </div>
 </section>
