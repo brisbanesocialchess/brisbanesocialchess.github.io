@@ -4,16 +4,15 @@ layout: 'layouts/base.njk'
 title: Chess Games & Variants | Brisbane Social Chess Club
 ---
 
-<section class="px-4 max-w-4xl mx-auto">
-  <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 mb-6">
+<section class="px-4 max-w-3xl">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
     Club Games Archive
   </h2>
   <p class="text-center text-white text-base md:text-lg mb-8">
     Explore some of the fun and chaotic group games we've played at different meetups and online on
     <a href="https://chess.com" class="text-blue-400 underline hover:text-blue-300" target="_blank" rel="noopener noreferrer">chess.com</a>.
   </p>
-
-<div class="space-y-8">
+  <div class="space-y-8">
     <!-- Game Item 1 -->
     <div class="bg-black bg-opacity-50 p-4 rounded-xl shadow-lg">
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
@@ -29,7 +28,6 @@ title: Chess Games & Variants | Brisbane Social Chess Club
         ></iframe>
       </div>
     </div>
-
     <!-- Game Item 2 -->
     <div class="bg-black bg-opacity-50 p-4 rounded-xl shadow-lg">
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
@@ -45,7 +43,6 @@ title: Chess Games & Variants | Brisbane Social Chess Club
         ></iframe>
       </div>
     </div>
-
     <!-- Game Item 3 -->
     <div class="bg-black bg-opacity-50 p-4 rounded-xl shadow-lg">
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
@@ -61,7 +58,6 @@ title: Chess Games & Variants | Brisbane Social Chess Club
         ></iframe>
       </div>
     </div>
-
     <!-- Game Item 4 -->
     <div class="bg-black bg-opacity-50 p-4 rounded-xl shadow-lg">
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
@@ -77,6 +73,5 @@ title: Chess Games & Variants | Brisbane Social Chess Club
         ></iframe>
       </div>
     </div>
-
-</div>
+  </div>
 </section>

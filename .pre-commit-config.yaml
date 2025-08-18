@@ -66,7 +66,7 @@ repos:
   #       name: Run gitleaks
   #       description: Check for secrets with gitleaks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: end-of-file-fixer
         name: Run end-of-file-fixer
@@ -165,7 +165,7 @@ repos:
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.32.0
+    rev: v9.33.0
     hooks:
       - id: eslint
         name: Find and fix problems in your JavaScript code
@@ -182,6 +182,18 @@ repos:
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
         exclude: ^frontend/.*\.md$
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: rst-backticks
+        name: detect common mistake of using single backticks when writing rst
+        types: [rst]
+      - id: rst-directive-colons
+        name: detect mistake of rst directive not ending with double colon or space before the double colon
+        types: [rst]
+      - id: rst-inline-touching-normal
+        name: detect mistake of inline code touching normal text in rst
+        types: [rst]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:

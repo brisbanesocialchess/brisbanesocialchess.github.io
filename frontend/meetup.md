@@ -4,43 +4,23 @@ layout: 'layouts/base.njk'
 title: Chess Meetups & Locations | Brisbane Social Chess Club
 ---
 
-<section class="px-4 max-w-3xl mx-auto flex flex-col items-center gap-6">
+<section class="px-4 max-w-3xl">
   <!-- Heading -->
-  <h2 class="text-center text-2xl md:text-3xl font-bold text-indigo-300 uppercase mb-2">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
     Weekly Meetups
   </h2>
-
-<!-- Description -->
-<p class="text-center text-white text-base md:text-lg opacity-90">
+  <!-- Description -->
+  <p class="text-center text-white text-base md:text-lg mb-8">
     Click on a day to view detailed meetup information:
   </p>
-
-<!-- Button group -->
-<div class="flex flex-col md:flex-row flex-wrap gap-3 mt-4 w-full max-w-lg justify-center">
-    <a href="{{ '/meetup/monday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Monday
-    </a>
-    <!-- <a href="{{ '/meetup/tuesday/' | url }}" class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">Tuesday</a> -->
-    <a href="{{ '/meetup/wednesday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Wednesday
-    </a>
-    <a href="{{ '/meetup/thursday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Thursday
-    </a>
-    <a href="{{ '/meetup/friday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Friday
-    </a>
-    <a href="{{ '/meetup/saturday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Saturday
-    </a>
-    <a href="{{ '/meetup/sunday/' | url }}"
-       class="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-black font-bold rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition transform text-center">
-      Sunday
-    </a>
+  <!-- Button group -->
+  <div class="flex flex-col md:flex-row flex-wrap gap-3 mt-4 w-full max-w-lg justify-center">
+    <a href="{{ '/meetup/monday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Monday</a>
+    <!-- <a href="{{ '/meetup/tuesday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Tuesday</a> -->
+    <a href="{{ '/meetup/wednesday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Wednesday</a>
+    <a href="{{ '/meetup/thursday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Thursday</a>
+    <a href="{{ '/meetup/friday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Friday</a>
+    <a href="{{ '/meetup/saturday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Saturday</a>
+    <a href="{{ '/meetup/sunday/' | url }}" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Sunday</a>
   </div>
 </section>

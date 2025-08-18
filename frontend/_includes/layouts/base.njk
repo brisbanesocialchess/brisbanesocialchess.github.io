@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Brisbane's only social chess club" />
     <link rel="stylesheet" href="{{ '/assets/tailwind.css' | url  }}" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 
     <link rel="icon" href="{{ '/assets/favicon.png' | url  }}" />
     <link
@@ -19,15 +19,12 @@
     class="flex flex-col min-h-screen font-montserrat text-white bg-[url('/assets/background.jpg')] bg-cover bg-center bg-fixed"
   >
     <!-- Background overlay -->
-    <div
-      class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4"
-    >
-      <main
-        class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6"
-      >
-        <a
+
+    <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4">
+      <main class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
+      <a
           href="https://github.com/brisbanesocialchess/brisbanesocialchess.github.io"
-          class="fixed top-0 right-0 z-50"
+         class="fixed top-0 right-0 z-50" target="_blank" rel="noopener noreferrer"
         >
           <img
             src="{{ '/assets/ribbon.png' | url }}"
@@ -35,46 +32,39 @@
             class="w-24 sm:w-28 md:w-32 lg:w-36 h-auto"
           />
         </a>
-        <!-- Logo -->
+  <!-- Logo -->
         <div class="text-center">
           <a href="{{ '/' | url  }}">
-            <img
-              src="{{ '/assets/logo.jpg' | url  }}"
-              alt="Brisbane Social Chess Logo"
-              class="w-24 mx-auto rounded-full mb-5"
-            />
+            <img src="{{ '/assets/logo.jpg' | url  }}" alt="Brisbane Social Chess Logo" class="w-45 mx-auto rounded-full" />
           </a>
-          <h1 class="text-lg uppercase tracking-[2px] font-bold">
-            Brisbane Social Chess
-          </h1>
-          <p class="text-sm opacity-85 mt-1">
-            A place for casual chess, for fun and friendly people.
-          </p>
-        </div>
+          <h1 class="text-lg mt-5 uppercase tracking-[2px] font-bold">Brisbane Social Chess</h1>
+          <p class="text-sm opacity-85 mt-1">A place for casual chess, for fun and friendly people.</p>
 
+        </div>
         <!-- Top Navigation -->
-        <nav
-          class="flex flex-wrap justify-center text-center text-sm space-x-2"
-        >
-          {% set navLinks = [ { url: '/', text: 'Home' }, { url: '/about/',
-          text: 'About' }, { url: '/games/', text: 'Games' }, { url: '/meetup/',
-          text: 'Meetups' }, { url: '/minutes/', text: 'Minutes' }, { url:
-          '/register/', text: 'Register' }, { url: '/rules/', text: 'Rules' }, {
-          url: '/terms/', text: 'Terms' }, { url: '/contact/', text: 'Contact' }
-          ] %} {% for link in navLinks -%}
-          <a
-            href="{{ link.url | url  }}"
-            class="text-gray-300 hover:text-white {% if page.url == link.url %}text-sky-400 font-bold{% endif %}"
-            >{{ link.text }}</a
-          >
+
+        <nav class="flex flex-wrap justify-center text-center text-sm space-x-2">
+          {% set navLinks = [
+            { url: '/', text: 'Home' },
+            { url: '/about/', text: 'About' },
+            { url: '/games/', text: 'Games' },
+            { url: '/meetup/', text: 'Meetups' },
+            { url: '/minutes/', text: 'Minutes' },
+            { url: '/register/', text: 'Register' },
+            { url: '/rules/', text: 'Rules' },
+            { url: '/terms/', text: 'Terms' },
+            { url: '/contact/', text: 'Contact' }
+          ] %}
+          {% for link in navLinks -%}
+          <a href="{{ link.url | url  }}"
+             class="hover:text-white {% if page.url == link.url %}text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">{{ link.text }}</a>
+
           {%- endfor %}
         </nav>
-
         <!-- Content -->
         {{ content | safe }}
       </main>
     </div>
-
     <!-- Footer -->
     <footer class="h-[85px] text-center p-8 text-sm text-white/60">
       <p>
@@ -83,9 +73,7 @@
       </p>
     </footer>
 
-    <script
-      type="text/javascript"
-      src="{{ '/assets/script.js' | url  }}"
-    ></script>
+    <script type="text/javascript" src="{{ '/assets/script.js' | url  }}"></script>
+
   </body>
 </html>
