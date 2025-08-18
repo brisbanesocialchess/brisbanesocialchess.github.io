@@ -4,8 +4,8 @@ layout: 'layouts/base.njk'
 title: Meeting Minutes & Club Records | Brisbane Social Chess Club
 ---
 
-<section class="section py-8 max-w-3xl mx-auto">
-    <h2 class="text-center text-indigo-200 text-xl uppercase mb-4">Meeting Minutes</h2>
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Meeting Minutes</h2>
     <!-- May 2025 -->
     <article class="mb-6">
         <h3 class="text-center text-lg font-semibold">May 2025 – Committee Meeting (25/03/2025)</h3>
@@ -180,10 +180,10 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     			Sponsorships:
     			<ul class="list-disc list-inside ml-5 mt-1 space-y-1">
     				<li>
-    					Matt has pursued contact with Chess.com via meetings with Judith from that organisation, seeking to negotiate an arrangement more suited to BSC needs. Matt has proposed that BSC should be affiliated to Chess.com with Chess.com paying <a href="https://meetup.com/" class="text-blue-600 underline">meetup.com</a> fees. Matt sought committee confirmation of this position.
+    					Matt has pursued contact with Chess.com via meetings with Judith from that organisation, seeking to negotiate an arrangement more suited to BSC needs. Matt has proposed that BSC should be affiliated to Chess.com with Chess.com paying <a href="https://meetup.com/" class="text-blue-400 underline">meetup.com</a> fees. Matt sought committee confirmation of this position.
     				</li>
     				<li>
-    					Motion: Steve moved that: BSC should agree to affiliation with Chess.com, with Chess.com to pay BSC <a href="https://meetup.com/" class="text-blue-600 underline">meetup.com</a> fees. This was seconded by Matt and unanimously agreed to.
+    					Motion: Steve moved that: BSC should agree to affiliation with Chess.com, with Chess.com to pay BSC <a href="https://meetup.com/" class="text-blue-400 underline">meetup.com</a> fees. This was seconded by Matt and unanimously agreed to.
     				</li>
     				<li>
     					Matt noted that Chess.com would also provide a subscription to Chess.com. There was some discussion about what should be done with this subscription.
@@ -358,7 +358,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     		<li>
     			Treasurer's report
     			<ul class="list-disc list-inside ml-5 mt-1 space-y-1">
-    				<li>Matt McLean advised that he had now created an official website (<a href="https://brisbanesocialchess.org.au" class="text-blue-600 underline">www.brisbanesocialchess.org.au</a>). This had been created to link our MeetUp and FACEBOOK accounts, to make us easier to locate via the internet and as a requirement for applying for grants. Possible granting organisations include the Queensland Government, Queensland Country Banks, the gambling fund and the Commonwealth Bank. Matt noted that the potential purposes of seeking grants were to run tournaments, purchase chess sets for our venues and, longer term, to initiate a building fund.</li>
+    				<li>Matt McLean advised that he had now created an official website (<a href="https://brisbanesocialchess.org.au" class="text-blue-400 underline">www.brisbanesocialchess.org.au</a>). This had been created to link our MeetUp and FACEBOOK accounts, to make us easier to locate via the internet and as a requirement for applying for grants. Possible granting organisations include the Queensland Government, Queensland Country Banks, the gambling fund and the Commonwealth Bank. Matt noted that the potential purposes of seeking grants were to run tournaments, purchase chess sets for our venues and, longer term, to initiate a building fund.</li>
     			</ul>
     		</li>
     		<li>
@@ -370,7 +370,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     				<li>Matt McLean moved that the constitution be amended to allow financial members domiciled in Queensland be eligible to be elected to the Secretary of BSCI. Maria Conomos seconded this motion.</li>
     				<li>Rob Garvey raised a point of order, noting that the constitution can't be changed without notice to financial members. As this had not been given, it was agreed that there would be no further action in respect of this matter for the present.</li>
     				<li>Maria Conomos offered to run a social marketing campaign with a marketing brand. This could help with grants.</li>
-    				<li>Andrew Jones asked if the BSCI web site was in place. Matt McLean confirmed that it was and it can be found at <a href="https://brisbanesocialchess.org.au" class="text-blue-600 underline">www.brisbanesocialchess.org.au</a></li>
+    				<li>Andrew Jones asked if the BSCI web site was in place. Matt McLean confirmed that it was and it can be found at <a href="https://brisbanesocialchess.org.au" class="text-blue-400 underline">www.brisbanesocialchess.org.au</a></li>
     			</ul>
     		</li>
     	</ol>

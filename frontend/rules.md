@@ -4,8 +4,8 @@ layout: 'layouts/base.njk'
 title: Club Rules & Code of Conduct | Brisbane Social Chess Club
 ---
 
-<section class="px-4 max-w-3xl mx-auto">
-  <h2 class="text-center text-indigo-200 text-xl uppercase tracking-wide mb-4">Rules</h2>
+<section class="px-4 max-w-3xl">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Rules</h2>
   <p class="text-center text-gray-200 mb-6">
     <strong>Brisbane Social Chess Inc IA4682418 ABN 20129327738</strong>
   </p>

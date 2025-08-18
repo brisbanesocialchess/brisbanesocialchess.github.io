@@ -14,17 +14,14 @@
     <!-- Background overlay -->
     <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4">
       <main class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
-
         <!-- Logo -->
         <div class="text-center">
           <a href="{{ '/' | url  }}">
-            <img src="{{ '/assets/logo.jpg' | url  }}" alt="Brisbane Social Chess Logo"
-                 class="w-24 mx-auto rounded-full mb-5" />
+            <img src="{{ '/assets/logo.jpg' | url  }}" alt="Brisbane Social Chess Logo" class="w-45 mx-auto rounded-full" />
           </a>
-          <h1 class="text-lg uppercase tracking-[2px] font-bold">Brisbane Social Chess</h1>
+          <h1 class="text-lg mt-5 uppercase tracking-[2px] font-bold">Brisbane Social Chess</h1>
           <p class="text-sm opacity-85 mt-1">A place for casual chess, for fun and friendly people.</p>
         </div>
-
         <!-- Top Navigation -->
         <nav class="flex flex-wrap justify-center text-center text-sm space-x-2">
           {% set navLinks = [
@@ -40,20 +37,17 @@
           ] %}
           {% for link in navLinks -%}
           <a href="{{ link.url | url  }}"
-             class="text-gray-300 hover:text-white {% if page.url == link.url %}text-sky-400 font-bold{% endif %}">{{ link.text }}</a>
+             class="hover:text-white {% if page.url == link.url %}text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">{{ link.text }}</a>
           {%- endfor %}
         </nav>
-
         <!-- Content -->
         {{ content | safe }}
       </main>
     </div>
-
     <!-- Footer -->
     <footer class="h-[85px] text-center p-8 text-sm text-white/60">
       <p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
     </footer>
-
     <script type="text/javascript" src="{{ '/assets/script.js' | url  }}"></script>
   </body>
 </html>
