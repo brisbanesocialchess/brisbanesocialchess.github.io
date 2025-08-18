@@ -47,18 +47,46 @@ if (markdownFiles.length === 0) {
 const verbose = process.argv.includes('--verbose');
 const verboseFlag = verbose ? '--verbose' : '';
 
-// Build command
-const cmd = `npx markdown-link-check --config .markdown-link-check.json ${verboseFlag} ${markdownFiles.join(' ')}`;
+// Validate paths and run markdown-link-check for each file without using a shell
+const { execFileSync } = require('child_process');
 
-console.log(`Checking ${markdownFiles.length} markdown files...`);
-if (verbose) {
-  console.log('Files to check:', markdownFiles);
+function isSafePath(p) {
+  // reject null bytes or multiline input
+  if (typeof p !== 'string' || p.includes('\u0000') || /[\n\r]/.test(p)) return false;
+  const resolved = path.resolve(p);
+  const cwd = path.resolve(process.cwd());
+  // Ensure path is inside the repository working directory
+  if (!resolved.startsWith(cwd)) return false;
+  return true;
 }
 
-try {
-  execSync(cmd, { stdio: 'inherit' });
-  console.log('✅ Link check completed successfully!');
-} catch (error) {
+console.log(`Checking ${markdownFiles.length} markdown files...`);
+if (verbose) console.log('Files to check:', markdownFiles);
+
+let hadError = false;
+for (const file of markdownFiles) {
+  if (!isSafePath(file)) {
+    console.error('Skipping unsafe path:', file);
+    hadError = true;
+    continue;
+  }
+
+  const args = ['markdown-link-check', '--config', '.markdown-link-check.json'];
+  if (verbose) args.push('--verbose');
+  args.push(file);
+
+  try {
+    // execFileSync avoids a shell and passes args directly to the program
+    execFileSync('npx', args, { stdio: 'inherit' });
+  } catch (err) {
+    // Keep going to check other files but remember we had an error
+    hadError = true;
+  }
+}
+
+if (hadError) {
   console.error('❌ Link check failed!');
   process.exit(1);
+} else {
+  console.log('✅ Link check completed successfully!');
 }
