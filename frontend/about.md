@@ -119,7 +119,7 @@ title: About Us | Brisbane Social Chess Club
     </a>
   </div>
   <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">💾</span> Developers</h3>
-  <div class="flex justify-center mb-8">
+  <div class="flex flex-wrap justify-center items-end gap-6 mb-8">
     <a href="https://github.com/BaseMax" class="flex flex-col items-center text-center">
       <img class="w-[225px] h-[225px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=225" alt="Max Base avatar" />
       <span class="font-medium">Max Base</span>
