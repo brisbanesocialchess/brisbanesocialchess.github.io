@@ -11,6 +11,9 @@ on:
 jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,9 +27,7 @@ jobs:
         run: npm install markdown-link-check
 
       - name: Check links in markdown files
-        run: |
-          find . -name '*.md' -not -path './node_modules/*' -not -path './.git/*' | \
-          xargs npx markdown-link-check --config .markdown-link-check.json --verbose
+        run: npx markdown-link-check --config .markdown-link-check.json --verbose .
         continue-on-error: true
         id: link-check
 
@@ -39,14 +40,15 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
             const comment = `## 🔗 Broken Links Detected
-            
+
             The link checker found some broken links in your markdown files. Please review and fix them:
-            
-            - Check the workflow logs for detailed information about which links are broken
+
+            - Check the workflow logs for details: ${runUrl}
             - Relative links starting with \`/\` are automatically converted to \`https://brisbanesocialchess.github.io/\`
             - Make sure all internal links point to existing files/pages
-            
+
             You can run the link checker locally with: \`npm run check-links\``;
             
             github.rest.issues.createComment({

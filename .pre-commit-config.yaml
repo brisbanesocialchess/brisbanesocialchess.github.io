@@ -138,6 +138,14 @@ repos:
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
+      - id: markdown-link-check
+        name: Run markdown-link-check
+        description: Check markdown files for broken links using .markdown-link-check.json
+        entry: markdown-link-check
+        language: node
+        types: [markdown]
+        args: ['--config', '.markdown-link-check.json']
+        additional_dependencies: ['markdown-link-check@3.13.7']
       - id: prettier
         name: Run prettier
         description: format files with prettier

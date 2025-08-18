@@ -26,11 +26,14 @@ The link checker is configured via `.markdown-link-check.json`:
 ### Local Development
 
 ```bash
-# Check all markdown files
+# Check all markdown files (cross-platform)
 npm run check-links
 
 # Check with verbose output (shows status codes)
 npm run check-links-verbose
+
+# Alternatively, run the CLI directly against the repo root
+npx markdown-link-check --config .markdown-link-check.json .
 ```
 
 ### What Gets Checked
@@ -88,6 +91,8 @@ Some links may appear broken but are actually valid:
 
 ## Configuration Reference
 
+The configuration lives in `.markdown-link-check.json`. For convenience, the current content is:
+
 ```json
 {
   "ignorePatterns": [
@@ -102,10 +107,20 @@ Some links may appear broken but are actually valid:
       "replacement": "https://brisbanesocialchess.github.io/"
     }
   ],
+  "httpHeaders": [
+    {
+      "urls": ["https://github.com"],
+      "headers": {
+        "Accept": "text/html",
+        "User-Agent": "Mozilla/5.0"
+      }
+    }
+  ],
   "aliveStatusCodes": [200, 206, 429],
   "timeout": "15s",
   "retryOn429": true,
-  "retryCount": 3
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s"
 }
 ```
 
