@@ -39,7 +39,7 @@ jobs:
             const issue_number = context.issue.number;
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            
+
             const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
             const comment = `## 🔗 Broken Links Detected
 
@@ -50,10 +50,10 @@ jobs:
             - Make sure all internal links point to existing files/pages
 
             You can run the link checker locally with: \`npm run check-links\``;
-            
+
             github.rest.issues.createComment({
               issue_number,
               owner,
               repo,
               body: comment
-            }); 
+            });

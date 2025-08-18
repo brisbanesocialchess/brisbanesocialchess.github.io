@@ -1,36 +1,39 @@
 {
-  "ignorePatterns": [
-    {
-      "pattern": "^http://localhost"
-    },
-    {
-      "pattern": "^https://localhost"
-    },
-    {
-      "pattern": "^#%"
-    },
-    {
-      "pattern": "^mailto:"
-    }
-  ],
-  "replacementPatterns": [
-    {
-      "pattern": "^/",
-      "replacement": "https://brisbanesocialchess.github.io/"
-    }
-  ],
-  "httpHeaders": [
-    {
-      "urls": ["https://github.com"],
-      "headers": {
-        "Accept": "text/html",
-        "User-Agent": "Mozilla/5.0"
-      }
-    }
-  ],
-  "aliveStatusCodes": [200, 206, 429],
-  "timeout": "15s",
-  "retryOn429": true,
-  "retryCount": 3,
-  "fallbackRetryDelay": "30s"
-} 
+	"ignorePatterns": [
+		{
+			"pattern": "^http://localhost"
+		},
+		{
+			"pattern": "^https://localhost"
+		},
+		{
+			"pattern": "^#%"
+		},
+		{
+			"pattern": "^mailto:"
+		},
+		{
+			"pattern": "^\\{\\{"
+		}
+	],
+	"replacementPatterns": [
+		{
+			"pattern": "^/",
+			"replacement": "https://brisbanesocialchess.github.io/"
+		}
+	],
+	"httpHeaders": [
+		{
+			"urls": ["https://github.com"],
+			"headers": {
+				"Accept": "text/html",
+				"User-Agent": "Mozilla/5.0"
+			}
+		}
+	],
+	"aliveStatusCodes": [200, 206, 429],
+	"timeout": "15s",
+	"retryOn429": true,
+	"retryCount": 3,
+	"fallbackRetryDelay": "30s"
+}

@@ -13,10 +13,11 @@ The link checker is configured via `.markdown-link-check.json`:
 ### Key Features
 
 - **Relative Link Conversion**: Links starting with `/` are automatically converted to `https://brisbanesocialchess.github.io/`
-- **Ignored Patterns**: 
+- **Ignored Patterns**:
   - Localhost links (`http://localhost`, `https://localhost`)
   - URL-encoded anchor links (`#%...`)
   - Mailto links (`mailto:`)
+  - Template syntax (links starting with `{{`)
 - **Retry Logic**: Automatically retries on 429 (rate limit) responses
 - **Timeout**: 15-second timeout for link checks
 - **User-Agent**: Proper headers for GitHub links
@@ -32,15 +33,19 @@ npm run check-links
 # Check with verbose output (shows status codes)
 npm run check-links-verbose
 
-# Alternatively, run the CLI directly against the repo root
-npx markdown-link-check --config .markdown-link-check.json .
+# Run the CLI directly on specific files
+npx markdown-link-check --config .markdown-link-check.json README.md frontend/LINK_CHECKER.md
 ```
 
 ### What Gets Checked
 
-The link checker scans all `.md` files in the repository, excluding:
-- `node_modules/` directory
+The link checker automatically scans all `.md` files in the repository while excluding:
+
+- `node_modules/` directories (including in packages)
 - `.git/` directory
+- Any subdirectories within excluded paths
+
+The script uses a Node.js helper (`scripts/check-links.js`) to ensure cross-platform compatibility and proper directory exclusion.
 
 ### Link Types Handled
 
@@ -78,6 +83,7 @@ Two workflows are available:
 ### False Positives
 
 Some links may appear broken but are actually valid:
+
 - **Mailto links**: Intentionally ignored
 - **Encoded anchors**: Links with emojis in headings are ignored
 - **Local development links**: Localhost URLs are ignored
@@ -91,38 +97,18 @@ Some links may appear broken but are actually valid:
 
 ## Configuration Reference
 
-The configuration lives in `.markdown-link-check.json`. For convenience, the current content is:
+The full configuration is available in `.markdown-link-check.json`. This file controls how the link checker operates, including which patterns to ignore, how to handle relative links, retry logic, and timeout settings.
 
-```json
-{
-  "ignorePatterns": [
-    {"pattern": "^http://localhost"},
-    {"pattern": "^https://localhost"},
-    {"pattern": "^#%"},
-    {"pattern": "^mailto:"}
-  ],
-  "replacementPatterns": [
-    {
-      "pattern": "^/",
-      "replacement": "https://brisbanesocialchess.github.io/"
-    }
-  ],
-  "httpHeaders": [
-    {
-      "urls": ["https://github.com"],
-      "headers": {
-        "Accept": "text/html",
-        "User-Agent": "Mozilla/5.0"
-      }
-    }
-  ],
-  "aliveStatusCodes": [200, 206, 429],
-  "timeout": "15s",
-  "retryOn429": true,
-  "retryCount": 3,
-  "fallbackRetryDelay": "30s"
-}
-```
+Key configuration options:
+
+- `ignorePatterns`: Patterns for links to skip (localhost, mailto, encoded anchors)
+- `replacementPatterns`: Rules for converting relative links to absolute URLs
+- `httpHeaders`: Custom headers for specific domains (like GitHub)
+- `aliveStatusCodes`: HTTP status codes considered valid (200, 206, 429)
+- `timeout`: How long to wait for responses (15s)
+- `retryOn429`: Automatically retry on rate limit responses
+- `retryCount`: Number of retry attempts (3)
+- `fallbackRetryDelay`: Delay between retries (30s)
 
 ## Contributing
 
@@ -131,4 +117,4 @@ When adding new markdown files or links:
 1. Run the link checker locally
 2. Fix any broken links
 3. Ensure relative links use the correct format
-4. Test that anchor links point to existing headings 
+4. Test that anchor links point to existing headings
