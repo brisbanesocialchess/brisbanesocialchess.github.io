@@ -11,6 +11,7 @@
 This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static website. You do not need to know advanced JavaScript to get started—just follow the steps below!
 
 [![CodeQL](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
+[![Dependabot Updates](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates)
 [![Dprint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
 [![First Interaction](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml)
 [![Git Clone Matrix](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
