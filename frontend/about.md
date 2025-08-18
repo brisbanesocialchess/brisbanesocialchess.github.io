@@ -157,11 +157,6 @@ title: About Us | Brisbane Social Chess Club
     	<span class="font-medium">Mahabub Islam Prio</span>
     	<span class="text-gray-500">@prio101</span>
     </a>
-    <a href="https://github.com/LuckyNotGood" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=95" alt="Matt McLean avatar" />
-    	<span class="font-medium">Matt McLean</span>
-    	<span class="text-gray-500">@LuckyNotGood</span>
-    </a>
     <a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-33">
     	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
     	<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
@@ -171,11 +166,6 @@ title: About Us | Brisbane Social Chess Club
     	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar">
     	<span class="font-medium">Nicholas Meredith</span>
     	<span class="text-gray-500">@udha</span>
-    </a>
-    <a href="https://github.com/garveybiz" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=95" alt="Rob Garvey avatar" />
-    	<span class="font-medium">Rob Garvey</span>
-    	<span class="text-gray-500">@garveybiz</span>
     </a>
     <a href="https://github.com/smriad" class="flex flex-col items-center text-center w-33">
     	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
