@@ -1,3 +1,6 @@
+# Site builder
+_site
+
 # Editor directories
 .vscode/
 .idea/
@@ -44,3 +47,5 @@ public/
 
 # Python
 .venv
+
+frontend/assets/tailwind.css

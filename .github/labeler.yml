@@ -36,13 +36,14 @@ documentation:
           - any-glob-to-any-file:
               - 'README.md'
               - 'CONTRIBUTING.md'
+              - 'doc/**/*'
 
 frontend:
   - any:
       - changed-files:
           - any-glob-to-any-file:
-              - 'docs/**/*'
-              - 'public/**/*'
+              - 'frontend/**/*'
+              - '.eleventy.js'
 
 infra:
   - any:

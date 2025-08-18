@@ -13,16 +13,6 @@ repos:
       - id: check-hooks-apply
         name: Check hooks apply to the repository
         description: Useful when testing new hooks to see if they apply to the repository
-  - repo: local
-    hooks:
-      - id: check-zip-file-is-not-committed
-        name: Check no zip files are committed
-        description: Zip files are not allowed in the repository
-        language: fail
-        entry: |
-          Zip files are not allowed in the repository as they are hard to
-          track and have security implications. Please remove the zip file from the repository.
-        files: (?i)\.zip$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
@@ -40,6 +30,18 @@ repos:
         args: ['644']
         files: \.md$
         stages: [manual]
+  - repo: local
+    hooks:
+      - id: npm-ci
+        name: Install Node dependencies
+        entry: npm ci
+        language: system
+        pass_filenames: false
+      - id: eleventy-build-check
+        name: Eleventy build and output check
+        entry: npm run build
+        language: system
+        pass_filenames: false
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
@@ -47,21 +49,24 @@ repos:
         name: Add TOC for Markdown and RST files
         description: Adds a Markdown table of contents
         files: \.md$
-        exclude: \.github/CODE_OF_CONDUCT\.md
+        exclude: |
+          (?x)
+          ^frontend/.*\.md$
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
       - id: isort
         name: isort (python)
         description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
-  - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.27.2
-    hooks:
-      - id: gitleaks
-        name: Run gitleaks
-        description: Check for secrets with gitleaks
+  # GO-based
+  # - repo: https://github.com/gitleaks/gitleaks
+  #   rev: v8.27.2
+  #   hooks:
+  #     - id: gitleaks
+  #       name: Run gitleaks
+  #       description: Check for secrets with gitleaks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: end-of-file-fixer
         name: Run end-of-file-fixer
@@ -168,7 +173,7 @@ repos:
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.32.0
+    rev: v9.33.0
     hooks:
       - id: eslint
         name: Find and fix problems in your JavaScript code
@@ -184,6 +189,19 @@ repos:
         description: MarkdownLint Command Line Interface
         types: [markdown]
         args: ['--config', '.github/linters/.markdownlint.json']
+        exclude: ^frontend/.*\.md$
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: rst-backticks
+        name: detect common mistake of using single backticks when writing rst
+        types: [rst]
+      - id: rst-directive-colons
+        name: detect mistake of rst directive not ending with double colon or space before the double colon
+        types: [rst]
+      - id: rst-inline-touching-normal
+        name: detect mistake of inline code touching normal text in rst
+        types: [rst]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:

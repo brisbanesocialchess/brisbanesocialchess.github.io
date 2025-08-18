@@ -24,8 +24,15 @@ RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.g
 
 ENV PATH="/usr/local/go/bin:${PATH}"
 
-RUN go version && python3 --version && pip3 --version
+RUN go version && python3 --version && pip3 --version && node -v && npm -v
 
 WORKDIR /app
+COPY . .
+
+RUN npm install
+
+RUN npm run tailwindcss:build
+
+RUN npm run build
 
 CMD ["pre-commit", "run", "--all-files"]
