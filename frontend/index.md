@@ -49,7 +49,7 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 </section>
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-xl md:text-2xl font-semibold mb-6"><span aria-hidden="true">🗓️</span> 5 Meetups a Week</h2>
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-6"><span aria-hidden="true">🗓️</span> 5 Meetups a Week</h2>
   <p class="text-center text-white/90 text-base md:text-lg mb-6">
     We have meetups every day of the week except Mondays and Tuesdays. There are always more meeting times and locations in the works.
   </p>
@@ -136,13 +136,13 @@ title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
 </section>
 
 <section class="px-4 max-w-3xl text-center">
-  <h2 class="text-xl md:text-2xl font-semibold mb-4">A Dedicated Team of Organisers</h2>
+  <h2 class="text-xl md:text-2xl font-semibold text-indigo-200 mb-4">A Dedicated Team of Organisers</h2>
   <p class="text-white/90 mb-6">We are a registered community organisation in Queensland with a committee. Ready to contribute? We would like to hear from you.</p>
   <img src="{{ '/assets/organisers.jpg' | url }}" alt="Organisers" class="mx-auto rounded-lg w-full md:w-3/4" />
 </section>
 
 <section class="px-4 max-w-3xl text-center">
-  <h2 class="text-xl md:text-2xl font-semibold mb-4">Join Us!</h2>
+  <h2 class="text-xl md:text-2xl font-semibold text-indigo-200 mb-4">Join Us!</h2>
   <p class="text-white/90 mb-6">
     We are creating magic live on Discord <span aria-hidden="true">🪄</span><br/>
     Click below to peruse our Facebook page <span aria-hidden="true">📄</span><br/>
