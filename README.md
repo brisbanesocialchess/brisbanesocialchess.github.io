@@ -88,7 +88,9 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 - [Sphinx](https://www.sphinx-doc.org/en/master/) is a powerful and widely-used documentation generator written in Python. It is particularly popular within the Python community and is considered the de facto standard for documenting Python projects.
 - [reStructuredText (RST)](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) is a lightweight markup language designed for creating easy-to-read and easy-to-write plaintext documents that can be automatically converted to various output formats, such as HTML, LaTeX (and thus PDF), and more. It is a key component of the Docutils project and is widely used in the Python community for writing technical documentation, including Python's official documentation and documentation for many Python libraries.
 - [Docker](https://www.docker.com/) is an open-source platform designed to simplify the process of building, deploying, and running applications using containerization. It packages an application and all its dependencies (libraries, system tools, code, runtime) into a standardized unit called a "container."
+
 <!-- dprint-ignore-start -->
+
 - [Makefile](https://en.wikipedia.org/wiki/Makefile) is a text file that contains a set of instructions used by the [make](<https://en.wikipedia.org/wiki/Make_(software)>) utility to automate the process of building and managing software projects. It defines dependencies between files and specifies the commands required to update outdated files or generate new ones.
 <!-- dprint-ignore-end -->
 
