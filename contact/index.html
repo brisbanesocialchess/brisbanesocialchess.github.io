@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us | Brisbane Social Chess Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brisbane's only social chess club" />
+    <link rel="stylesheet" href="/assets/tailwind.css" />
+    <link rel="icon" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta name="generator" content="Eleventy v3.1.2" />
+  </head>
+  <body class="flex flex-col min-h-screen font-montserrat text-white bg-[url('/assets/background.jpg')] bg-cover bg-center bg-fixed">
+    <!-- Background overlay -->
+    <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4">
+      <main class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
+        <!-- Logo -->
+        <div class="text-center">
+          <a href="/">
+            <img src="/assets/logo.jpg" alt="Brisbane Social Chess Logo" class="w-45 mx-auto rounded-full" />
+          </a>
+          <h1 class="text-lg mt-5 uppercase tracking-[2px] font-bold">Brisbane Social Chess</h1>
+          <p class="text-sm opacity-85 mt-1">A place for casual chess, for fun and friendly people.</p>
+        </div>
+        <!-- Top Navigation -->
+        <nav class="flex flex-wrap justify-center text-center text-sm space-x-2">
+          
+          <a href="/"
+             class="hover:text-white  text-gray-300">Home</a><a href="/about/"
+             class="hover:text-white  text-gray-300">About</a><a href="/games/"
+             class="hover:text-white  text-gray-300">Games</a><a href="/meetup/"
+             class="hover:text-white  text-gray-300">Meetups</a><a href="/minutes/"
+             class="hover:text-white  text-gray-300">Minutes</a><a href="/register/"
+             class="hover:text-white  text-gray-300">Register</a><a href="/rules/"
+             class="hover:text-white  text-gray-300">Rules</a><a href="/terms/"
+             class="hover:text-white  text-gray-300">Terms</a><a href="/contact/"
+             class="hover:text-white text-[#849eff] font-bold">Contact</a>
+        </nav>
+        <!-- Content -->
+        <section class="px-4 max-w-3xl">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+    Contact Us
+  </h2>
+  <p class="text-center text-white text-base md:text-lg mb-8">
+    Feel free to reach out using the form below, or through one of our other contact methods.
+  </p>
+  <form method="POST" class="flex flex-col gap-2 form-contact" novalidate>
+    <!-- Name -->
+    <div class="flex flex-col">
+      <label for="name" class="text-gray-200 font-semibold mb-1">Your Name <span aria-hidden="true">*</span></label>
+      <input type="text" id="name" name="name" required autocomplete="name" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Email -->
+    <div class="flex flex-col">
+      <label for="email" class="text-gray-200 font-semibold mb-1">Your Email <span aria-hidden="true">*</span></label>
+      <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Subject -->
+    <div class="flex flex-col">
+      <label for="subject" class="text-gray-200 font-semibold mb-1">Subject <span aria-hidden="true">*</span></label>
+      <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Message -->
+    <div class="flex flex-col">
+      <label for="message" class="text-gray-200 font-semibold mb-1">Message <span aria-hidden="true">*</span></label>
+      <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-vertical min-h-[120px]"></textarea>
+    </div>
+    <!-- Submit Button -->
+    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
+      Send Message
+    </button>
+  </form>
+  <!-- Other Actions -->
+  <div class="flex flex-col gap-3 mt-8">
+    <a href="/register" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
+      Join Now
+    </a>
+    <a href="https://discord.com/invite/JWBKhQmzvD" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
+      Ask Questions on Discord
+    </a>
+    <a data-email-href class="w-full cursor-pointer text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
+      Ask Questions on E-Mail
+    </a>
+  </div>
+</section>
+
+      </main>
+    </div>
+    <!-- Footer -->
+    <footer class="h-[85px] text-center p-8 text-sm text-white/60">
+      <p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="/assets/script.js"></script>
+  </body>
+</html>
