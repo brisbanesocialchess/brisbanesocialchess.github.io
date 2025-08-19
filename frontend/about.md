@@ -184,11 +184,10 @@ title: About Us | Brisbane Social Chess Club
     	<span class="font-medium">SM Riad</span>
     	<span class="text-gray-500">@smriad</span>
     </a>
--    <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33">
--       <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
--       <span class="font-medium">therealnugget</span>
--       <span class="text-gray-500">@therealnugget</span>
--    </a>
+    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
+    	<span class="font-medium">Thomas</span>
+    	<span class="text-gray-500">@therealnugget</span>
+    </a>
   </div>
 </section>
 
