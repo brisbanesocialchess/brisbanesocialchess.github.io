@@ -130,13 +130,27 @@ npm run tailwindcss:watch & npm run start
 
 ### Build the Docker image for running `pre-commit` easily
 
+- Standard build:
+
 ```bash
 docker build -t my-go-precommit .
-or
+```
+
+- Build without cache:
+
+```bash
 docker build --no-cache -t my-go-precommit .
 ```
 
+- On a Mac with an M2 chip:
+
+```bash
+docker build --platform=linux/amd64 -t my-go-precommit .
+```
+
 And then:
+
+- Standard build:
 
 ```bash
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
@@ -146,6 +160,12 @@ Or if you want to run and keep the container and go into bash:
 
 ```bash
 docker run -it -v "$PWD":/app -w /app my-go-precommit bash
+```
+
+- On a Mac with an M2 chip:
+
+```bash
+docker run --platform=linux/amd64 --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
 ---
