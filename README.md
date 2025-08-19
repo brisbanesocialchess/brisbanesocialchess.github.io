@@ -26,10 +26,10 @@ This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern a
 [![Pages Build Deployment](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
 
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
-[![GitHub License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
-[![Discord](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
+[![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
+[![Discord Server](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages)](https://brisbanesocialchess.github.io)
-[![Documentation Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://brisbanesocialchess.readthedocs.io/en/latest/)
+[![Read the Docs Documentation Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://brisbanesocialchess.readthedocs.io/en/latest/)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 [![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
 
