@@ -29,9 +29,9 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">👥</span> Management Committee</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">👥</span> Team Members</h2>
     <div class="overflow-x-auto">
-        <table class="w-full table-auto border-collapse text-white">
+        <table class="w-full table-auto border-collapse">
             <thead>
                 <tr class="bg-[#091a52] text-center">
                     <th class="border px-4 py-2 w-[40px]">Role</th>
@@ -60,10 +60,21 @@ title: About Us | Brisbane Social Chess Club
                     </td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-[40px]">General Members</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
                     <td class="border px-4 py-2">
-                        <span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>,
                         <a href="https://github.com/jbampton" class="role-admin">John Bampton</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
+                    <td class="border px-4 py-2">
+                        <span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
+                    <td class="border px-4 py-2">
+                        <span class="role-coordinator">Ross Barnard</span>, <a class="role-coordinator" href="https://github.com/therealnugget">Thomas</a>
                     </td>
                 </tr>
             </tbody>
@@ -173,11 +184,11 @@ title: About Us | Brisbane Social Chess Club
     	<span class="font-medium">SM Riad</span>
     	<span class="text-gray-500">@smriad</span>
     </a>
-    <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
-    	<span class="font-medium">therealnugget</span>
-    	<span class="text-gray-500">@therealnugget</span>
-    </a>
+-    <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33">
+-       <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
+-       <span class="font-medium">therealnugget</span>
+-       <span class="text-gray-500">@therealnugget</span>
+-    </a>
   </div>
 </section>
 
