@@ -7,7 +7,7 @@ export default defineConfig({
     strictPort: true,
   },
   build: {
-    outDir: './frontend/assets',
+    outDir: '../frontend/assets',
     emptyOutDir: true,
   },
 });
