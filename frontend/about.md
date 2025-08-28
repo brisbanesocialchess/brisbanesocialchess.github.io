@@ -41,22 +41,22 @@ title: About Us | Brisbane Social Chess Club
             <tbody>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">President</th>
-                    <td class="border px-4 py-2"><span class="role-coordinator text-role-coordinator text-[#a020f0]">Jimmy Joe</span></td>
+                    <td class="border px-4 py-2"><span class="role-board text-role-board text-[#ed7014]">Jimmy Joe</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/LuckyNotGood" class="hover:underline role-coordinator text-role-coordinator text-[#a020f0]">Matt McLean</a>
+                        <a href="https://github.com/LuckyNotGood" class="hover:underline role-board text-role-board text-[#ed7014]">Matt McLean</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
-                    <td class="border px-4 py-2"><span class="role-coordinator text-role-coordinator text-[#a020f0]">Steve</span></td>
+                    <td class="border px-4 py-2"><span class="role-board text-role-board text-[#ed7014]">Steve</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/garveybiz" class="hover:underline role-coordinator text-role-coordinator text-[#a020f0]">Rob Garvey</a>
+                        <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board text-[#ed7014]">Rob Garvey</a>
                     </td>
                 </tr>
                 <tr>
@@ -68,7 +68,7 @@ title: About Us | Brisbane Social Chess Club
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
                     <td class="border px-4 py-2">
-                        <span class="role-coordinator text-role-coordinator text-[#a020f0]">Adam Lomsargis</span>, <span class="role-coordinator text-role-coordinator text-[#a020f0]">Ben M</span>
+                        <span class="role-board text-role-board text-[#ed7014]">Adam Lomsargis</span>, <span class="role-board text-role-board text-[#ed7014]">Ben M</span>
                     </td>
                 </tr>
                 <tr>
@@ -87,7 +87,7 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
-            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="role-coordinator text-role-coordinator text-[#a020f0]">Matt McLean</a>: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="role-board text-role-board text-[#ed7014]">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="underline text-blue-400">Capablanca</a>
         </li>
         <li>
@@ -97,12 +97,12 @@ title: About Us | Brisbane Social Chess Club
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role-coordinator text-role-coordinator text-[#a020f0]">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
-                <li><span class="role-coordinator text-role-coordinator text-[#a020f0]">Jimmy Joe</span></li>
+                <li><span class="role-board text-role-board text-[#ed7014]">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role-board text-role-board text-[#ed7014]">Jimmy Joe</span></li>
                 <li>
-                    <a href="https://github.com/garveybiz" class="role-coordinator text-role-coordinator text-[#a020f0]">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
+                    <a href="https://github.com/garveybiz" class="role-board text-role-board text-[#ed7014]">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="role-coordinator text-role-coordinator text-[#a020f0]">Steve</span>: Official pawn wrangler.</li>
+                <li><span class="role-board text-role-board text-[#ed7014]">Steve</span>: Official pawn wrangler.</li>
                 <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
             </ul>
         </li>
@@ -195,7 +195,7 @@ title: About Us | Brisbane Social Chess Club
 			<span class="font-medium">SM Riad</span>
 			<span class="text-gray-500">@smriad</span>
 		</a>
-		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role-coordinator text-role-coordinator text-[#a020f0]">
+		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role-board text-role-board text-[#ed7014]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
 			<span class="font-medium">therealnugget</span>
 			<span class="text-gray-500">@therealnugget</span>
