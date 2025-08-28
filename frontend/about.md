@@ -237,3 +237,177 @@ title: About Us | Brisbane Social Chess Club
         <li><a href="https://en.wikipedia.org/wiki/Xiangqi" class="text-blue-400 hover:underline">Xiangqi (Chinese chess)</a> - at least one Xiangqi set</li>
     </ul>
 </section>
+
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">📖</span> Chess books we recommend</h2>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author(s)</th>
+                <th scope="col">Publisher</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <strong>101 Questions On How To Play Chess</strong>
+                </td>
+                <td><a href="http://www.fredwilsonchess.com/">Fred Wilson</a></td>
+                <td>Dover Game And Puzzle Activity Books</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Bobby Fischer Teaches Chess</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
+                <td>Basic Systems Inc, Bantam Books</td>
+            </tr>
+            <tr>
+                <td><strong>Chess for Kids</strong>: How to Play and Win</td>
+                <td><a href="https://chesswithrichard.uk/">Richard James</a></td>
+                <td>Robinson; 2nd edition (2015)</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Chess Openings For Dummies</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
+                <td>For Dummies</td>
+            </tr>
+            <tr>
+                <td><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
+                <td><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
+                <td>Penguin Books (2021)</td>
+            </tr>
+            <tr>
+                <td><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
+                <td><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
+                <td>Gambit Publications Ltd</td>
+            </tr>
+            <tr>
+                <td><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
+                <td>John Nunn</td>
+                <td>Gambit Publications Ltd</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Learn Chess From The Greats</strong>
+                </td>
+                <td>Peter J. Tamburro, Jr.</td>
+                <td>Dover Publications</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Learn To Play Chess Like A Boss</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
+                <td>Penguin Random House Dorling Kindersley</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Modern Chess Openings: MC0-15</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
+                <td>Random House Puzzles and Games</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
+                <td>Batsford GB</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>My System: Winning Chess Strategies</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
+                <td>SnowBall Publishing</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>The Caro-Kann The Easy Way</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Thomas_Engqvist">Thomas Engqvist</a></td>
+                <td>Batsford Chess</td>
+            </tr>
+            <tr>
+                <td><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
+                <td><a href="https://en.wikipedia.org/wiki/James_Eade">Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Lawrence</a></td>
+                <td>Apple Press A Quarto Book</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>The Life and Games of Mikhail Tal</strong>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
+                <td>Everyman Chess</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>The Usborne Complete Book of Chess</strong>
+                </td>
+                <td>Elizabeth Dalby</td>
+                <td>Usborne Publishing Ltd</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
+    <figure>
+        <a href="{{ '/assets/images/standard-4-player-chess.jpg' | url }}">
+            <img src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}" alt="Standard 4 Player Chess" />
+        </a>
+    </figure>
+</section>
+
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏡</span> Garden Room — Random Days Gone Bye</h2>
+    <figure>
+        <a href="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
+            <img
+                src="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
+                alt="Harmegedo The Board of Lords at the Garden Room"
+            />
+        </a>
+    </figure>
+</section>
+
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel — Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <div class="flex gap-4">
+        <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
+            <img
+                src="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}"
+                alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board."
+            />
+        </a>
+        <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}">
+            <img
+                src="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}"
+                alt="Another view of Jedi Master Big Bird playing chess."
+            />
+        </a>
+    </div>
+</section>
+
+<section class="px-4 max-w-3xl">
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
+    <div class="grid grid-cols-2 gap-4">
+        <a href="{{ '/assets/images/quaternity-1.png' | url }}">
+            <img src="{{ '/assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position." />
+        </a>
+        <a href="{{ '/assets/images/quaternity-2.png' | url }}">
+            <img src="{{ '/assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress." />
+        </a>
+        <a href="{{ '/assets/images/quaternity-3.png' | url }}">
+            <img src="{{ '/assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress." />
+        </a>
+        <a href="{{ '/assets/images/quaternity-4.png' | url }}">
+            <img src="{{ '/assets/images/quaternity-4.png' | url }}" alt="The Quaternity game box and components." />
+        </a>
+    </div>
+</section>
