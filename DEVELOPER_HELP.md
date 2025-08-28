@@ -46,7 +46,7 @@ To develop and see your changes live, run:
 npm run start
 ```
 
-This starts a local server and enables "watching mode"—any changes you make will automatically rebuild and reload the site in your browser.
+This starts a local server and enables "watching mode"-any changes you make will automatically rebuild and reload the site in your browser.
 
 ## 4. Build the Site Once (Production Build)
 
@@ -92,7 +92,7 @@ These checks ensure your code follows the project's style guidelines and passes 
 
 ## Development Platforms
 
-[Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network with a single command — no infrastructure to manage, no complex configuration.
+[Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network with a single command - no infrastructure to manage, no complex configuration.
 
 [Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 

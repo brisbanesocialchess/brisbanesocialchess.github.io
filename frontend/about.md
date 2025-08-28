@@ -356,7 +356,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
     <figure>
         <a href="{{ '/assets/images/standard-4-player-chess.jpg' | url }}">
             <img src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}" alt="Standard 4 Player Chess" />
@@ -365,7 +365,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏡</span> Garden Room — Random Days Gone Bye</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏡</span> Garden Room - Random Days Gone Bye</h2>
     <figure>
         <a href="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
             <img
@@ -377,7 +377,7 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel — Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel - Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div class="flex gap-4">
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
