@@ -334,7 +334,7 @@ title: About Us | Brisbane Social Chess Club
             </tr>
             <tr>
                 <td><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
-                <td><a href="https://en.wikipedia.org/wiki/James_Eade">Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Lawrence</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Al Lawrence</a></td>
                 <td>Apple Press A Quarto Book</td>
             </tr>
             <tr>
