@@ -25,7 +25,8 @@
 		"start": "concurrently \"npm run tailwindcss:watch\" \"npx @11ty/eleventy --serve --input=frontend\"",
 		"build": "npm run tailwindcss:build && npx @11ty/eleventy --input=frontend",
 		"tailwindcss:build": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css",
-		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch"
+		"tailwindcss:watch2": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch",
+		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css --watch"
 	},
 	"workspaces": [
 		"packages/*"

@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @theme {
-    --color-table-header: #091a52;
-    --color-highlight: #ff5733;
-    --color-role-admin: theme('colors.role-admin', '#ff0000;
-    --color-role-developer: theme('colors.role-developer', '#00ffff;
-    --color-role-moderator: theme('colors.role-moderator', yellow);
-    --color-role-board: theme('colors.role-board', '#ed7014;
-    --color-role-coordinator: theme('colors.role-coordinator', '#a020f0;
-    --color-role-co-organizers: theme('colors.role-co-organizers', '#2196f3;
-    --color-role-lead-developer: theme('colors.role-lead-developer', '#ff0001;
-    --color-role-event-organizers: theme('colors.role-event-organizers', '#00d166;
-    --color-role-assistant-organizers: theme('colors.role-assistant-organizers', '#c35339;
+  --color-table-header: #091a52;
+  --color-highlight: #ff5733;
+  --color-role-admin: #ff0000;
+  --color-role-developer: #00ffff;
+  --color-role-moderator: yellow;
+  --color-role-board: #ed7014;
+  --color-role-coordinator: #a020f0;
+  --color-role-co-organizers: #2196f3;
+  --color-role-lead-developer: #ff0001;
+  --color-role-event-organizers: #00d166;
+  --color-role-assistant-organizers: #c35339;
 }
 
-.role-admin img { border: 1px solid var(--role-admin); }
-.role-developer img { border: 1px solid var(--role-developer); }
-.role-moderator img { border: 1px solid var(--role-moderator); }
-.role-board img { border: 1px solid var(--role-board); }
-.role-coordinator img { border: 1px solid var(--role-coordinator); }
-.role-co-organizers img { border: 1px solid var(--role-co-organizers); }
-.role-lead-developer img { border: 1px solid var(--role-lead-developer); }
-.role-event-organizers img { border: 1px solid var(--role-event-organizers); }
-.role-assistant-organizers img { border: 1px solid var(--role-assistant-organizers); }
+.role-admin img { border: 1px solid var(--color-role-admin); }
+.role-developer img { border: 1px solid var(--color-role-developer); }
+.role-moderator img { border: 1px solid var(--color-role-moderator); }
+.role-board img { border: 1px solid var(--color-role-board); }
+.role-coordinator img { border: 1px solid var(--color-role-coordinator); }
+.role-co-organizers img { border: 1px solid var(--color-role-co-organizers); }
+.role-lead-developer img { border: 1px solid var(--color-role-lead-developer); }
+.role-event-organizers img { border: 1px solid var(--color-role-event-organizers); }
+.role-assistant-organizers img { border: 1px solid var(--color-role-assistant-organizers); }
