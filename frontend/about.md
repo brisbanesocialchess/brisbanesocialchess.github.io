@@ -200,7 +200,6 @@ title: About Us | Brisbane Social Chess Club
 			<span class="text-gray-500">@therealnugget</span>
 		</a>
 	</div>
-	</div>
 </section>
 
 <section class="px-4 max-w-3xl">
