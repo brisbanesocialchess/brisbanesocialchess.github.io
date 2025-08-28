@@ -20,6 +20,8 @@
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
 		"test": "npx lerna run test --stream",
+		"dev": "vite",
+		"vite-build": "vite build",
 		"start": "concurrently \"npm run tailwindcss:watch\" \"npx @11ty/eleventy --serve --input=frontend\"",
 		"build": "npm run tailwindcss:build && npx @11ty/eleventy --input=frontend",
 		"tailwindcss:build": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css",
