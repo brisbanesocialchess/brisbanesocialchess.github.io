@@ -3,12 +3,11 @@ module.exports = {
   content: [
     "./frontend/**/*.{html,js,ts,php,md,mdx}",
     "./_site/**/*.{html,js,ts,php,md,mdx}",
-    "./*.{html,php,js,ts,md,mdx}"
   ],
   theme: {
     extend: {
       colors: {
-        'table-header': '#091a52',
+        "table-header": "#091a52",
       },
     },
   },
