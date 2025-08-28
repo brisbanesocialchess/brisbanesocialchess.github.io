@@ -251,7 +251,7 @@ title: About Us | Brisbane Social Chess Club
         <tbody>
             <tr>
                 <td><strong>101 Questions On How To Play Chess</strong></td>
-                <td><a href="http://www.fredwilsonchess.com/">Fred Wilson</a></td>
+                <td><a href="https://www.fredwilsonchess.com/">Fred Wilson</a></td>
                 <td>Dover Game And Puzzle Activity Books</td>
             </tr>
             <tr>
