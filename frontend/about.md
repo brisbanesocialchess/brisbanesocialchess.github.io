@@ -46,7 +46,7 @@ title: About Us | Brisbane Social Chess Club
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/LuckyNotGood" class="text-blue-400 hover:underline text-role-coordinator text-[#a020f0]">Matt McLean</a>
+                        <a href="https://github.com/LuckyNotGood" class="hover:underline text-role-coordinator text-[#a020f0]">Matt McLean</a>
                     </td>
                 </tr>
                 <tr>
@@ -56,13 +56,13 @@ title: About Us | Brisbane Social Chess Club
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/garveybiz" class="text-blue-400 hover:underline text-role-coordinator text-[#a020f0]">Rob Garvey</a>
+                        <a href="https://github.com/garveybiz" class="hover:underline text-role-coordinator text-[#a020f0]">Rob Garvey</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/jbampton" class="text-blue-400 hover:underline text-role-admin text-[red]">John Bampton</a>
+                        <a href="https://github.com/jbampton" class="hover:underline text-role-admin text-[red]">John Bampton</a>
                     </td>
                 </tr>
                 <tr>
@@ -75,7 +75,7 @@ title: About Us | Brisbane Social Chess Club
                     <th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
                     <td class="border px-4 py-2">
                         <span class="text-role-coordinator text-[#a020f0]">Ross Barnard</span>,
-                        <a class="text-blue-400 hover:underline text-role-coordinator text-[#a020f0]" href="https://github.com/therealnugget">therealnugget</a>
+                        <a class="hover:underline text-role-coordinator text-[#a020f0]" href="https://github.com/therealnugget">therealnugget</a>
                     </td>
                 </tr>
             </tbody>
