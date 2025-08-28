@@ -93,7 +93,7 @@ title: About Us | Brisbane Social Chess Club
         <li>
             <strong>Co-organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="text-[#a020f0]">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                <li><span class="role-coordinator text-role-coordinator">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
