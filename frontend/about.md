@@ -33,7 +33,7 @@ title: About Us | Brisbane Social Chess Club
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
-                <tr class="bg-[#091a52] text-center">
+                <tr class="bg-table-header text-center">
                     <th class="border px-4 py-2 w-[40px]">Role</th>
                     <th class="border px-4 py-2">Name</th>
                 </tr>
@@ -243,7 +243,7 @@ title: About Us | Brisbane Social Chess Club
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
-                <tr class="bg-[#091a52] text-center">
+                <tr class="bg-table-header text-center">
                     <th scope="col" class="border px-4 py-2">Title</th>
                     <th scope="col" class="border px-4 py-2">Author(s)</th>
                     <th scope="col" class="border px-4 py-2">Publisher</th>
