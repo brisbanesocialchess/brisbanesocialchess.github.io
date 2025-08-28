@@ -287,7 +287,7 @@ title: About Us | Brisbane Social Chess Club
             </tr>
             <tr>
                 <td><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
-                <td>John Nunn</td>
+                <td><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
                 <td>Gambit Publications Ltd</td>
             </tr>
             <tr>
