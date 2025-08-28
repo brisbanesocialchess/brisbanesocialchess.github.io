@@ -15,7 +15,6 @@ module.exports = {
         'role-admin': '#ff0000',
         'role-developer': 'cyan',
         'role-moderator': 'yellow',
-
         'role-board': '#ed7014',
         'role-coordinator': '#a020f0',
         'role-co-organizers': '#2196f3',
