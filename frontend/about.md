@@ -164,37 +164,37 @@ title: About Us | Brisbane Social Chess Club
 			<span class="font-medium">Abhushan Gautam</span>
 			<span class="text-gray-500">@carefreeav09</span>
 		</a>
-		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-33 text-[yellow]">
+		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-1/3 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
 			<span class="font-medium">Ayush Rana</span>
 			<span class="text-gray-500">@ayushrana182</span>
 		</a>
-		<div class="flex flex-col items-center text-center w-33 text-[#ed7014]">
+		<div class="flex flex-col items-center text-center w-1/3 text-[#ed7014]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500">N/A</span>
 		</div>
-		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-33 text-[yellow]">
+		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
 			<span class="font-medium">Mahabub Islam Prio</span>
 			<span class="text-gray-500">@prio101</span>
 		</a>
-		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-33 text-[yellow]">
+		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
 			<span class="text-gray-500">@mohammadlotfia</span>
 		</a>
-		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-33 text-[yellow]">
+		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-1/3 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar" />
 			<span class="font-medium">Nicholas Meredith</span>
 			<span class="text-gray-500">@udha</span>
 		</a>
-		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-33 text-[yellow]">
+		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-1/3 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
 			<span class="font-medium">SM Riad</span>
 			<span class="text-gray-500">@smriad</span>
 		</a>
-		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33 text-[#ed7014]">
+		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 text-[#ed7014]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
 			<span class="text-gray-500">@therealnugget</span>
