@@ -2,6 +2,7 @@
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
 		"@eslint/js": "^9.31.0",
+		"concurrently": "^9.2.1",
 		"eslint": "^9.31.0",
 		"eslint-config-prettier": "^10.1.5",
 		"eslint-plugin-prettier": "^5.5.1",
@@ -14,13 +15,13 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"start": "npx @11ty/eleventy --serve --input=frontend",
-		"build": "npx @11ty/eleventy --input=frontend",
 		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
 		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
 		"test": "npx lerna run test --stream",
+		"start": "concurrently \"npm run tailwindcss:watch\" \"npx @11ty/eleventy --serve --input=frontend\"",
+		"build": "npm run tailwindcss:build && npx @11ty/eleventy --input=frontend",
 		"tailwindcss:build": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css",
 		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch"
 	},
