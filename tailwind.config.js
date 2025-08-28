@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './_site/**/*.{html}'
   ],
+  plugins: [],
   safelist: [
     'role-admin',
     'role-developer',
@@ -15,5 +16,4 @@ module.exports = {
     'role-assistant-organizers'
   ],
   theme: {},
-  plugins: [],
 };
