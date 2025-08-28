@@ -138,7 +138,7 @@ title: About Us | Brisbane Social Chess Club
 	</h3>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
 		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center text-[cyan]">
-			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=225" alt="Max Base avatar" />
+			<img class="w-35 md:w-50 lg:w-[300px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=300" alt="Max Base avatar" />
 			<span class="font-medium">Max Base</span>
 			<span class="text-gray-500">@BaseMax</span>
 		</a>
