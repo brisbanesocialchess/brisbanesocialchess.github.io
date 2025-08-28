@@ -136,13 +136,15 @@ title: About Us | Brisbane Social Chess Club
       <span class="font-medium">Max Base</span>
       <span class="text-gray-500">@BaseMax</span>
     </a>
+  </div>
+  <div class="flex flex-wrap justify-center items-end gap-6 mb-8">
     <a href="https://github.com/anufdo" class="flex flex-col items-center text-center">
-      <img class="w-[150px] h-[150px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=150" alt="Anuradha Fernando avatar" />
+      <img class="w-[225px] h-[225px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=150" alt="Anuradha Fernando avatar" />
       <span class="font-medium">Anuradha Fernando</span>
       <span class="text-gray-500">@anufdo</span>
     </a>
     <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center">
-      <img class="w-[150px] h-[150px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=150" alt="sugiarto avatar" />
+      <img class="w-[225px] h-[225px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=150" alt="sugiarto avatar" />
       <span class="font-medium">sugiarto</span>
       <span class="text-gray-500">@ugifractal</span>
     </a>
@@ -360,7 +362,10 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
     <figure>
         <a href="{{ '/assets/images/standard-4-player-chess.jpg' | url }}">
-            <img src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}" alt="Standard 4 Player Chess" />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}"
+                alt="Standard 4 Player Chess" />
         </a>
     </figure>
 </section>
@@ -370,6 +375,7 @@ title: About Us | Brisbane Social Chess Club
     <figure>
         <a href="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
             <img
+                class="w-full h-auto rounded-lg object-contain"
                 src="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
                 alt="Harmegedo The Board of Lords at the Garden Room"
             />
@@ -382,12 +388,14 @@ title: About Us | Brisbane Social Chess Club
     <div class="flex gap-4">
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
+                class="w-full h-auto rounded-lg object-contain"
                 src="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}"
                 alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board."
             />
         </a>
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}">
             <img
+                class="w-full h-auto rounded-lg object-contain"
                 src="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}"
                 alt="Another view of Jedi Master Big Bird playing chess."
             />
@@ -399,16 +407,28 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
     <div class="grid grid-cols-2 gap-4">
         <a href="{{ '/assets/images/quaternity-1.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position."
+            />
         </a>
         <a href="{{ '/assets/images/quaternity-2.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress."
+            />
         </a>
         <a href="{{ '/assets/images/quaternity-3.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress."
+            />
         </a>
         <a href="{{ '/assets/images/quaternity-4.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-4.png' | url }}" alt="The Quaternity game box and components." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-4.png' | url }}" alt="The Quaternity game box and components."
+            />
         </a>
     </div>
 </section>
