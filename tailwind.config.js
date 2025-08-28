@@ -4,8 +4,8 @@ module.exports = {
   //   'bg-table-header',
   // ],
   content: [
-    "./frontend/**/*.{html,js,ts,php,md,mdx}",
-    "./_site/**/*.{html,js,ts,php,md,mdx}",
+    "./frontend/**/*.{html,js,ts,md}",
+    "./_site/**/*.{html}",
   ],
   theme: {
     extend: {
