@@ -41,40 +41,40 @@ title: About Us | Brisbane Social Chess Club
             <tbody>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">President</th>
-                    <td class="border px-4 py-2"><span class="color-[#a020f0]">Jimmy Joe</span></td>
+                    <td class="border px-4 py-2"><span class="text-[#a020f0]">Jimmy Joe</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/LuckyNotGood" class="color-[#a020f0]">Matt McLean</a>
+                        <a href="https://github.com/LuckyNotGood" class="text-[#a020f0]">Matt McLean</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
-                    <td class="border px-4 py-2"><span class="color-[#a020f0]">Steve</span></td>
+                    <td class="border px-4 py-2"><span class="text-[#a020f0]">Steve</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/garveybiz" class="color-[#a020f0]">Rob Garvey</a>
+                        <a href="https://github.com/garveybiz" class="text-[#a020f0]">Rob Garvey</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/jbampton" class="color-[red]">John Bampton</a>
+                        <a href="https://github.com/jbampton" class="text-[red]">John Bampton</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
                     <td class="border px-4 py-2">
-                        <span class="color-[#a020f0]">Adam Lomsargis</span>, <span class="color-[#a020f0]">Ben M</span>
+                        <span class="text-[#a020f0]">Adam Lomsargis</span>, <span class="text-[#a020f0]">Ben M</span>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
                     <td class="border px-4 py-2">
-                        <span class="color-[#a020f0]">Ross Barnard</span>, <a class="color-[#a020f0]" href="https://github.com/therealnugget">Thomas</a>
+                        <span class="text-[#a020f0]">Ross Barnard</span>, <a class="text-[#a020f0]" href="https://github.com/therealnugget">Thomas</a>
                     </td>
                 </tr>
             </tbody>
@@ -86,34 +86,34 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
-            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="color-[#a020f0]">Matt McLean</a>: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="text-[#a020f0]">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="underline text-blue-400">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="color-[#a020f0]">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                <li><span class="text-[#a020f0]">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="color-[#a020f0]">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
-                <li><span class="color-[#a020f0]">Jimmy Joe</span></li>
+                <li><span class="text-[#a020f0]">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="text-[#a020f0]">Jimmy Joe</span></li>
                 <li>
-                    <a href="https://github.com/garveybiz" class="color-[#a020f0]">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
+                    <a href="https://github.com/garveybiz" class="text-[#a020f0]">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="color-[#a020f0]">Steve</span>: Official pawn wrangler.</li>
-                <li><span class="color-[#2196f3]">the Prof</span></li>
+                <li><span class="text-[#a020f0]">Steve</span>: Official pawn wrangler.</li>
+                <li><span class="text-[#2196f3]">the Prof</span></li>
             </ul>
         </li>
-        <li><strong>Assistant organizer</strong>: <span class="color-[#c35339]">Roger Clarke</span></li>
+        <li><strong>Assistant organizer</strong>: <span class="text-[#c35339]">Roger Clarke</span></li>
         <li>
             <strong>Event organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="color-[#00d166]">Christoph Dierkes</span></li>
-                <li><span class="color-[#00d166]">JoeT</span></li>
-                <li><span class="color-[#00d166]">Marty Benjamin</span></li>
-                <li><span class="color-[#00d166]">Peiqi Sun</span></li>
-                <li><span class="color-[#00d166]">Stuart</span></li>
+                <li><span class="text-[#00d166]">Christoph Dierkes</span></li>
+                <li><span class="text-[#00d166]">JoeT</span></li>
+                <li><span class="text-[#00d166]">Marty Benjamin</span></li>
+                <li><span class="text-[#00d166]">Peiqi Sun</span></li>
+                <li><span class="text-[#00d166]">Stuart</span></li>
             </ul>
         </li>
     </ul>
@@ -127,7 +127,7 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">🧑‍🔧</span> Maintainer
 	</h3>
 	<div class="flex justify-center mb-8">
-		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center color-[red]">
+		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center text-[red]">
 			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="jbampton avatar" />
 			<span class="font-medium">John Bampton</span>
 			<span class="text-gray-500">@jbampton</span>
@@ -137,17 +137,17 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">💾</span> Developers
 	</h3>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
-		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center color-[cyan]">
+		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center text-[cyan]">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=225" alt="Max Base avatar" />
 			<span class="font-medium">Max Base</span>
 			<span class="text-gray-500">@BaseMax</span>
 		</a>
-		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center color-[cyan]">
+		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center text-[cyan]">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=225" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
 			<span class="text-gray-500">@anufdo</span>
 		</a>
-		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center color-[cyan]">
+		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center text-[cyan]">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=225" alt="sugiarto avatar" />
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500">@ugifractal</span>
@@ -157,42 +157,42 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">🎮</span> Discord Moderators
 	</h2>
 	<div class="flex flex-wrap justify-center gap-6">
-		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center color-[yellow]">
+		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=120" alt="Abhushan Gautam avatar" />
 			<span class="font-medium">Abhushan Gautam</span>
 			<span class="text-gray-500">@carefreeav09</span>
 		</a>
-		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-33 color-[yellow]">
+		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-33 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
 			<span class="font-medium">Ayush Rana</span>
 			<span class="text-gray-500">@ayushrana182</span>
 		</a>
-		<div class="flex flex-col items-center text-center w-33 color-[#ed7014]">
+		<div class="flex flex-col items-center text-center w-33 text-[#ed7014]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500">N/A</span>
 		</div>
-		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-33 color-[yellow]">
+		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-33 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
 			<span class="font-medium">Mahabub Islam Prio</span>
 			<span class="text-gray-500">@prio101</span>
 		</a>
-		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-33 color-[yellow]">
+		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-33 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
 			<span class="text-gray-500">@mohammadlotfia</span>
 		</a>
-		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-33 color-[yellow]">
+		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-33 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar" />
 			<span class="font-medium">Nicholas Meredith</span>
 			<span class="text-gray-500">@udha</span>
 		</a>
-		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-33 color-[yellow]">
+		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-33 text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
 			<span class="font-medium">SM Riad</span>
 			<span class="text-gray-500">@smriad</span>
 		</a>
-		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33 color-[#ed7014]">
+		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33 text-[#ed7014]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
 			<span class="text-gray-500">@therealnugget</span>
