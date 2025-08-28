@@ -129,7 +129,7 @@ title: About Us | Brisbane Social Chess Club
 	</h3>
 	<div class="flex justify-center mb-8">
 		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center role-admin text-role-admin text-[red]">
-			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="jbampton avatar" />
+			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="John Bampton avatar" />
 			<span class="font-medium">John Bampton</span>
 			<span class="text-gray-500">@jbampton</span>
 		</a>
@@ -145,12 +145,12 @@ title: About Us | Brisbane Social Chess Club
 		</a>
     </div>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
-		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center role-developer text-role-developer text-[#00ffff]">
+		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-1/3 role-developer text-role-developer text-[#00ffff]">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=225" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
 			<span class="text-gray-500">@anufdo</span>
 		</a>
-		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center role-developer text-role-developer text-[#00ffff]">
+		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-1/3 role-developer text-role-developer text-[#00ffff]">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=225" alt="sugiarto avatar" />
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500">@ugifractal</span>
@@ -160,7 +160,7 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">🎮</span> Discord Moderators
 	</h2>
 	<div class="flex flex-wrap justify-center gap-6">
-		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center role-moderator text-role-moderator text-[yellow]">
+		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator text-[yellow]">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=120" alt="Abhushan Gautam avatar" />
 			<span class="font-medium">Abhushan Gautam</span>
 			<span class="text-gray-500">@carefreeav09</span>
