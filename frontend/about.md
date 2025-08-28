@@ -240,117 +240,119 @@ title: About Us | Brisbane Social Chess Club
 
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">📖</span> Chess books we recommend</h2>
-    <table class="w-full table-auto border-collapse">
-        <thead>
-            <tr class="bg-[#091a52] text-center">
-                <th scope="col" class="border px-4 py-2">Title</th>
-                <th scope="col" class="border px-4 py-2">Author(s)</th>
-                <th scope="col" class="border px-4 py-2">Publisher</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="border px-4 py-2"><strong>101 Questions On How To Play Chess</strong></td>
-                <td class="border px-4 py-2"><a href="https://www.fredwilsonchess.com/">Fred Wilson</a></td>
-                <td class="border px-4 py-2">Dover Game And Puzzle Activity Books</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>Bobby Fischer Teaches Chess</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
-                <td class="border px-4 py-2">Basic Systems Inc, Bantam Books</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2"><strong>Chess for Kids</strong>: How to Play and Win</td>
-                <td class="border px-4 py-2"><a href="https://chesswithrichard.uk/">Richard James</a></td>
-                <td class="border px-4 py-2">Robinson; 2nd edition (2015)</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>Chess Openings For Dummies</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
-                <td class="border px-4 py-2">For Dummies</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2"><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
-                <td class="border px-4 py-2">Penguin Books (2021)</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2"><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
-                <td class="border px-4 py-2">Gambit Publications Ltd</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2"><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
-                <td class="border px-4 py-2">Gambit Publications Ltd</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>Learn Chess From The Greats</strong>
-                </td>
-                <td class="border px-4 py-2">Peter J. Tamburro, Jr.</td>
-                <td class="border px-4 py-2">Dover Publications</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>Learn To Play Chess Like A Boss</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
-                <td class="border px-4 py-2">Penguin Random House Dorling Kindersley</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>Modern Chess Openings: MC0-15</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
-                <td class="border px-4 py-2">Random House Puzzles and Games</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
-                <td class="border px-4 py-2">Batsford GB</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>My System: Winning Chess Strategies</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
-                <td class="border px-4 py-2">SnowBall Publishing</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>The Caro-Kann The Easy Way</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Thomas_Engqvist">Thomas Engqvist</a></td>
-                <td class="border px-4 py-2">Batsford Chess</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2"><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Al Lawrence</a></td>
-                <td class="border px-4 py-2">Apple Press A Quarto Book</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>The Life and Games of Mikhail Tal</strong>
-                </td>
-                <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
-                <td class="border px-4 py-2">Everyman Chess</td>
-            </tr>
-            <tr>
-                <td class="border px-4 py-2">
-                    <strong>The Usborne Complete Book of Chess</strong>
-                </td>
-                <td class="border px-4 py-2">Elizabeth Dalby</td>
-                <td class="border px-4 py-2">Usborne Publishing Ltd</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="overflow-x-auto">
+        <table class="w-full table-auto border-collapse">
+            <thead>
+                <tr class="bg-[#091a52] text-center">
+                    <th scope="col" class="border px-4 py-2">Title</th>
+                    <th scope="col" class="border px-4 py-2">Author(s)</th>
+                    <th scope="col" class="border px-4 py-2">Publisher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2"><strong>101 Questions On How To Play Chess</strong></td>
+                    <td class="border px-4 py-2"><a href="https://www.fredwilsonchess.com/">Fred Wilson</a></td>
+                    <td class="border px-4 py-2">Dover Game And Puzzle Activity Books</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>Bobby Fischer Teaches Chess</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
+                    <td class="border px-4 py-2">Basic Systems Inc, Bantam Books</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2"><strong>Chess for Kids</strong>: How to Play and Win</td>
+                    <td class="border px-4 py-2"><a href="https://chesswithrichard.uk/">Richard James</a></td>
+                    <td class="border px-4 py-2">Robinson; 2nd edition (2015)</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>Chess Openings For Dummies</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
+                    <td class="border px-4 py-2">For Dummies</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2"><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
+                    <td class="border px-4 py-2">Penguin Books (2021)</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2"><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
+                    <td class="border px-4 py-2">Gambit Publications Ltd</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2"><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
+                    <td class="border px-4 py-2">Gambit Publications Ltd</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>Learn Chess From The Greats</strong>
+                    </td>
+                    <td class="border px-4 py-2">Peter J. Tamburro, Jr.</td>
+                    <td class="border px-4 py-2">Dover Publications</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>Learn To Play Chess Like A Boss</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
+                    <td class="border px-4 py-2">Penguin Random House Dorling Kindersley</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>Modern Chess Openings: MC0-15</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
+                    <td class="border px-4 py-2">Random House Puzzles and Games</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
+                    <td class="border px-4 py-2">Batsford GB</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>My System: Winning Chess Strategies</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
+                    <td class="border px-4 py-2">SnowBall Publishing</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>The Caro-Kann The Easy Way</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Thomas_Engqvist">Thomas Engqvist</a></td>
+                    <td class="border px-4 py-2">Batsford Chess</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2"><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Al Lawrence</a></td>
+                    <td class="border px-4 py-2">Apple Press A Quarto Book</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>The Life and Games of Mikhail Tal</strong>
+                    </td>
+                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
+                    <td class="border px-4 py-2">Everyman Chess</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">
+                        <strong>The Usborne Complete Book of Chess</strong>
+                    </td>
+                    <td class="border px-4 py-2">Elizabeth Dalby</td>
+                    <td class="border px-4 py-2">Usborne Publishing Ltd</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <section class="px-4 max-w-3xl">
