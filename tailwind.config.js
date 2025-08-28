@@ -24,5 +24,22 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addComponents, theme }) {
+      const roles = [
+        'admin','developer','moderator','board','coordinator','co-organizers',
+        'lead-developer','event-organizers','assistant-organizers'
+      ]
+      const components = {}
+
+      roles.forEach(role => {
+        const color = theme(`colors.role-${role}`)
+        components[`.role-${role} img`] = {
+          border: `1px solid ${color}`,
+        }
+      })
+
+      addComponents(components)
+    }
+  ],
 };
