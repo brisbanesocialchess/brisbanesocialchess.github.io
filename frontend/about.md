@@ -142,6 +142,8 @@ title: About Us | Brisbane Social Chess Club
 			<span class="font-medium">Max Base</span>
 			<span class="text-gray-500">@BaseMax</span>
 		</a>
+    </div>
+	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
 		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center text-[cyan]">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=225" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
