@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register for Membership | Brisbane Social Chess Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brisbane's only social chess club" />
+    <link rel="stylesheet" href="/assets/tailwind.css" />
+    <link rel="icon" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta name="generator" content="Eleventy v3.1.2" />
+  </head>
+  <body class="flex flex-col min-h-screen font-montserrat text-white bg-[url('/assets/background.jpg')] bg-cover bg-center bg-fixed">
+    <!-- Background overlay -->
+    <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4">
+      <main class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
+        <!-- Logo -->
+        <div class="text-center">
+          <a href="/">
+            <img src="/assets/logo.jpg" alt="Brisbane Social Chess Logo" class="w-45 mx-auto rounded-full" />
+          </a>
+          <h1 class="text-lg mt-5 uppercase tracking-[2px] font-bold">Brisbane Social Chess</h1>
+          <p class="text-sm opacity-85 mt-1">A place for casual chess, for fun and friendly people.</p>
+        </div>
+        <!-- Top Navigation -->
+        <nav class="flex flex-wrap justify-center text-center text-sm space-x-2">
+          
+          <a href="/"
+             class="hover:text-white  text-gray-300">Home</a><a href="/about/"
+             class="hover:text-white  text-gray-300">About</a><a href="/games/"
+             class="hover:text-white  text-gray-300">Games</a><a href="/meetup/"
+             class="hover:text-white  text-gray-300">Meetups</a><a href="/minutes/"
+             class="hover:text-white  text-gray-300">Minutes</a><a href="/register/"
+             class="hover:text-white text-[#849eff] font-bold">Register</a><a href="/rules/"
+             class="hover:text-white  text-gray-300">Rules</a><a href="/terms/"
+             class="hover:text-white  text-gray-300">Terms</a><a href="/contact/"
+             class="hover:text-white  text-gray-300">Contact</a>
+        </nav>
+        <!-- Content -->
+        <section class="px-4 max-w-3xl">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+    Register
+  </h2>
+  <p class="text-center text-white text-base md:text-lg mb-8">
+    Please fill in the form below to join Brisbane Social Chess.
+  </p>
+  <form method="POST" class="flex flex-col gap-5 form-registration" novalidate>
+    <!-- First Name -->
+    <div class="flex flex-col">
+      <label for="firstName" class="text-gray-200 font-semibold mb-1">
+        First Name <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="firstName" name="fname" required autocomplete="given-name" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Last Name -->
+    <div class="flex flex-col">
+      <label for="lastName" class="text-gray-200 font-semibold mb-1">
+        Last Name <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="lastName" name="lname" required autocomplete="family-name" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Birth Year -->
+    <div class="flex flex-col">
+      <label for="birthYear" class="text-gray-200 font-semibold mb-1">
+        Birth Year <span aria-hidden="true">*</span>
+      </label>
+      <input type="number" id="birthYear" name="birthyear" min="1900" max="2025" oninput="if(this.value.length>4) this.value=this.value.slice(-4)" required placeholder="e.g. 1990" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Gender -->
+    <fieldset class="flex flex-col border border-gray-400 rounded-md p-4 bg-white/5">
+      <legend class="text-gray-200 font-semibold mb-2">Gender <span aria-hidden="true">*</span></legend>
+      <div class="flex flex-col gap-2">
+        <label class="inline-flex items-center gap-2 text-gray-200 cursor-pointer">
+          <input type="radio" name="gender" value="male" required class="accent-indigo-900 w-4 h-4 cursor-pointer" />
+          Male
+        </label>
+        <label class="inline-flex items-center gap-2 text-gray-200 cursor-pointer">
+          <input type="radio" name="gender" value="female" class="accent-indigo-900 w-4 h-4 cursor-pointer" />
+          Female
+        </label>
+        <label class="inline-flex items-center gap-2 text-gray-200 cursor-pointer">
+          <input type="radio" name="gender" value="other" class="accent-indigo-900 w-4 h-4 cursor-pointer" />
+          Other
+        </label>
+      </div>
+    </fieldset>
+    <!-- Discord Username -->
+    <div class="flex flex-col">
+      <label for="discordUsername" class="text-gray-200 font-semibold mb-1">
+        Discord Username (optional)
+      </label>
+      <input type="text" id="discordUsername" name="discordusername" placeholder="e.g. User#1234" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Email -->
+    <div class="flex flex-col">
+      <label for="email" class="text-gray-200 font-semibold mb-1">
+        Email <span aria-hidden="true">*</span>
+      </label>
+      <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+    </div>
+    <!-- Submit Button -->
+    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
+      Register
+    </button>
+  </form>
+</section>
+
+      </main>
+    </div>
+    <!-- Footer -->
+    <footer class="h-[85px] text-center p-8 text-sm text-white/60">
+      <p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="/assets/script.js"></script>
+  </body>
+</html>
