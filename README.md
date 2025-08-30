@@ -120,10 +120,18 @@ Read below for instructions about the current static development site hosted on 
 
 ### Getting Started / Building the Site
 
+Open new terminal and change directory to the root of project using `cd`
+
+Install npm packages
+
+```bash
+npm install
+```
+
 To start a local development server with live reload, run:
 
 ```bash
-npm run tailwindcss:watch & npm run start
+npm run start
 ```
 
 ---
