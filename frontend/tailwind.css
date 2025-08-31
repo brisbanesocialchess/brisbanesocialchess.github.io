@@ -34,7 +34,7 @@
 .role-board img {
 	border: var(--border-solid-2px) var(--color-role-board);
 }
-.role-board img {
+.role-leader img {
 	border: var(--border-solid-2px) var(--color-role-leader);
 }
 .role-coordinator img {
