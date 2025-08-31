@@ -88,7 +88,7 @@ title: About Us | Brisbane Social Chess Club
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
             <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
-            <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="underline text-blue-400">Capablanca</a>
+            <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
@@ -100,7 +100,7 @@ title: About Us | Brisbane Social Chess Club
                 <li><span class="role-board text-role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role-board text-role-board">Jimmy Joe</span></li>
                 <li>
-                    <a href="https://github.com/garveybiz" class="role-board text-role-board">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
+                    <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
                 <li><span class="role-board text-role-board">Steve</span>: Official pawn wrangler.</li>
                 <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
