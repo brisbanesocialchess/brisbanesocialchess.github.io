@@ -52,3 +52,35 @@
 .role-assistant-organizers img {
 	border: var(--border-solid-2px) var(--color-role-assistant-organizers);
 }
+
+.role-admin .github {
+	color: var(--color-role-admin);
+}
+.role-developer .github {
+	color: var(--color-role-developer);
+}
+.role-moderator .github {
+	color: var(--color-role-moderator);
+}
+.role-board .github {
+	color: var(--color-role-board);
+}
+.role-board .github {
+	color: var(--color-role-leader);
+}
+.role-coordinator .github {
+	color: var(--color-role-coordinator);
+}
+.role-co-organizers .github {
+	color: var(--color-role-co-organizers);
+}
+.role-lead-developer .github {
+	color: var(--color-role-lead-developer);
+}
+.role-event-organizers .github {
+	color: var(--color-role-event-organizers);
+}
+.role-assistant-organizers .github {
+	color: var(--color-role-assistant-organizers);
+}
+
