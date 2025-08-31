@@ -9,6 +9,7 @@ module.exports = {
     'role-developer',
     'role-moderator',
     'role-board',
+    'role-leader',
     'role-coordinator',
     'role-co-organizers',
     'role-lead-developer',

@@ -56,7 +56,7 @@ title: About Us | Brisbane Social Chess Club
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Rob Garvey</a>
+                        <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Robert Garvey</a>
                     </td>
                 </tr>
                 <tr>
@@ -87,13 +87,13 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
-            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="underline text-blue-400">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="role-coordinator text-role-coordinator">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                <li><span class="role-board text-role-board">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
@@ -170,7 +170,7 @@ title: About Us | Brisbane Social Chess Club
 			<span class="font-medium">Ayush Rana</span>
 			<span class="text-gray-500">@ayushrana182</span>
 		</a>
-		<div class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator role-board text-role-board">
+		<div class="flex flex-col items-center text-center w-1/3 role-leader text-role-leader">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500">N/A</span>
@@ -195,7 +195,7 @@ title: About Us | Brisbane Social Chess Club
 			<span class="font-medium">SM Riad</span>
 			<span class="text-gray-500">@smriad</span>
 		</a>
-		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role-board text-role-board">
+		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role-coordinator text-role-coordinator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
 			<span class="font-medium">therealnugget</span>
 			<span class="text-gray-500">@therealnugget</span>
