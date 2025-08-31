@@ -10,8 +10,8 @@
 @theme {
 	--color-table-header: #091a52;
 	--color-highlight: #ff5733;
-	--color-role-admin: #e91e63;
-	--color-role-lead-developer: #e91e63;
+	--color-role-admin: red;
+	--color-role-lead-developer: red;
 	--color-role-developer: #00ffff;
 	--color-role-lead-moderator: #e91e63;
 	--color-role-moderator: #f1c40f;
