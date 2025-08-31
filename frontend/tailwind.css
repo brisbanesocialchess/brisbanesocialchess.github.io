@@ -10,15 +10,16 @@
 @theme {
 	--color-table-header: #091a52;
 	--color-highlight: #ff5733;
-	--color-role-admin: #ff0000;
+	--color-role-admin: #e91e63;
+	--color-role-lead-developer: #e91e63;
 	--color-role-developer: #00ffff;
-	--color-role-moderator: yellow;
-	--color-role-board: #ed7014;
+	--color-role-lead-moderator: #e91e63;
+	--color-role-moderator: #f1c40f;
+	--color-role-board: #a020f0;
 	--color-role-leader: orange;
-	--color-role-coordinator: #a020f0;
-	--color-role-co-organizers: #2196f3;
-	--color-role-lead-developer: #ff0001;
-	--color-role-event-organizers: #00d166;
+	--color-role-coordinator: #3498db;
+	--color-role-co-organizers: #0000ff;
+	--color-role-event-organizers: #00ff00;
 	--color-role-assistant-organizers: #c35339;
 }
 
