@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-	--border-solid-2px: 2px solid;
+	--role-border: 2px solid;
 }
 @theme {
 	--color-table-header: #091a52;
@@ -23,64 +23,24 @@
 	--color-role-assistant-organizers: #c35339;
 }
 
-.role-admin img {
-	border: var(--border-solid-2px) var(--color-role-admin);
-}
-.role-developer img {
-	border: var(--border-solid-2px) var(--color-role-developer);
-}
-.role-moderator img {
-	border: var(--border-solid-2px) var(--color-role-moderator);
-}
-.role-board img {
-	border: var(--border-solid-2px) var(--color-role-board);
-}
-.role-leader img {
-	border: var(--border-solid-2px) var(--color-role-leader);
-}
-.role-coordinator img {
-	border: var(--border-solid-2px) var(--color-role-coordinator);
-}
-.role-co-organizers img {
-	border: var(--border-solid-2px) var(--color-role-co-organizers);
-}
-.role-lead-developer img {
-	border: var(--border-solid-2px) var(--color-role-lead-developer);
-}
-.role-event-organizers img {
-	border: var(--border-solid-2px) var(--color-role-event-organizers);
-}
-.role-assistant-organizers img {
-	border: var(--border-solid-2px) var(--color-role-assistant-organizers);
-}
+.role-admin img { border: var(--role-border) var(--color-role-admin);}
+.role-developer img { border: var(--role-border) var(--color-role-developer);}
+.role-moderator img { border: var(--role-border) var(--color-role-moderator);}
+.role-board img { border: var(--role-border) var(--color-role-board);}
+.role-leader img { border: var(--role-border) var(--color-role-leader);}
+.role-coordinator img { border: var(--role-border) var(--color-role-coordinator);}
+.role-co-organizers img { border: var(--role-border) var(--color-role-co-organizers);}
+.role-lead-developer img { border: var(--role-border) var(--color-role-lead-developer);}
+.role-event-organizers img { border: var(--role-border) var(--color-role-event-organizers);}
+.role-assistant-organizers img { border: var(--role-border) var(--color-role-assistant-organizers);}
 
-.role-admin .github {
-	color: var(--color-role-admin);
-}
-.role-developer .github {
-	color: var(--color-role-developer);
-}
-.role-moderator .github {
-	color: var(--color-role-moderator);
-}
-.role-board .github {
-	color: var(--color-role-board);
-}
-.role-leader .github {
-	color: var(--color-role-leader);
-}
-.role-coordinator .github {
-	color: var(--color-role-coordinator);
-}
-.role-co-organizers .github {
-	color: var(--color-role-co-organizers);
-}
-.role-lead-developer .github {
-	color: var(--color-role-lead-developer);
-}
-.role-event-organizers .github {
-	color: var(--color-role-event-organizers);
-}
-.role-assistant-organizers .github {
-	color: var(--color-role-assistant-organizers);
-}
+.role-admin span { color: var(--color-role-admin);}
+.role-developer span { color: var(--color-role-developer);}
+.role-moderator span { color: var(--color-role-moderator);}
+.role-board span { color: var(--color-role-board);}
+.role-leader span { color: var(--color-role-leader);}
+.role-coordinator span { color: var(--color-role-coordinator);}
+.role-co-organizers span { color: var(--color-role-co-organizers);}
+.role-lead-developer span { color: var(--color-role-lead-developer);}
+.role-event-organizers span { color: var(--color-role-event-organizers);}
+.role-assistant-organizers span { color: var(--color-role-assistant-organizers);}
