@@ -303,8 +303,8 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Aug 2024 – Committee Meeting (25/08/2024)</h3>
     	<p class="mb-4">
-    		<strong> Attendees: </strong> Steve Anderson, John Bampton, Rob Garvey, Stuart Holt, Jimmy Joe, Andrew Jones, Peiqi Sun, Ben Martin, Andrew Jones.<br />
-    		<strong> Later arrivals: </strong> Maria Conomos, Matthew McLean <br />
+    		<strong> Attendees: </strong> Steve Anderson, John Bampton, Robert Garvey, Stuart Holt, Jimmy Joe, Andrew Jones, Ben Martin, Peiqi Sun<br />
+    		<strong> Later arrivals: </strong> Maria Conomos, Matthew McLean<br />
     		<strong> Apologies: </strong> Nil
     	</p>
     	<ol class="list-decimal list-inside space-y-3 mb-4">
