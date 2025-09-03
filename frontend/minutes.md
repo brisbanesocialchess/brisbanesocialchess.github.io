@@ -235,7 +235,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <!-- Sept 2024 -->
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Sept 2024 – Committee Meeting (17/09/2024)</h3>
-    	<p class="mb-4"><strong> Present: </strong> Steve Anderson, John Bampton, Rob Garvey, Adam Lomsargis, Jimmy Joe, Ben Martin</p>
+    	<p class="mb-4"><strong> Present: </strong> Steve, John, Robert, Adam, Jimmy, Ben</p>
     	<ol class="list-decimal list-inside space-y-3 mb-4">
     		<li>
     			Chess.com
