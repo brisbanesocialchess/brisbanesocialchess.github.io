@@ -10,7 +10,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <article class="mb-6">
         <h3 class="text-center text-lg font-semibold">May 2025 – Committee Meeting (25/03/2025)</h3>
         <p class="text-gray-200 leading-relaxed">
-            <strong>Present:</strong> Jimmy, Steve, Rob, Matt <br />
+            <strong>Present:</strong> Jimmy, Matt, Rob, Steve<br />
             <strong>Apologies:</strong> Ben
         </p>
         <ol class="list-decimal list-inside space-y-3 pl-4">
@@ -82,7 +82,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <article class="mb-6">
     	<h3 class="text-xl font-bold mb-2 text-center">June 2024 – Committee Meeting (24/06/2025)</h3>
     	<p class="mb-3 text-gray-200">
-    		<strong> Attendees: </strong> Jimmy, Matt, Steve, Rob, John <br />
+    		<strong> Attendees: </strong> Jimmy, John, Matt, Rob, Steve<br />
     		<strong> Apologies: </strong> Ben
     	</p>
     	<ol class="list-decimal list-inside space-y-2 mb-3">
@@ -164,8 +164,8 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Dec 2024 – Committee Meeting (03/12/2024)</h3>
     	<p class="mb-4">
-    		<strong>Present:</strong> Jimmy, Matt, Steve, Rob <br />
-    		<strong>Apologies:</strong> John, Ben
+    		<strong>Present:</strong> Jimmy, Matt, Rob, Steve<br />
+    		<strong>Apologies:</strong> Ben, John
     	</p>
     	<ol class="list-decimal list-inside space-y-3 mb-4">
     		<li>
@@ -235,7 +235,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <!-- Sept 2024 -->
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Sept 2024 – Committee Meeting (17/09/2024)</h3>
-    	<p class="mb-4"><strong> Present: </strong> Steve, John, Robert, Adam, Jimmy, Ben</p>
+    	<p class="mb-4"><strong> Present: </strong> Adam, Ben, Jimmy, John, Rob, Steve</p>
     	<ol class="list-decimal list-inside space-y-3 mb-4">
     		<li>
     			Chess.com
@@ -303,7 +303,7 @@ title: Meeting Minutes & Club Records | Brisbane Social Chess Club
     <article class="mb-6">
     	<h3 class="text-xl font-semibold mb-2">Aug 2024 – Committee Meeting (25/08/2024)</h3>
     	<p class="mb-4">
-    		<strong> Attendees: </strong> Steve Anderson, John Bampton, Rob Garvey, Stuart Holt, Jimmy Joe, Andrew Jones, Peiqi Sun, Ben Martin, Andrew Jones. <br />
+    		<strong> Attendees: </strong> Steve Anderson, John Bampton, Rob Garvey, Stuart Holt, Jimmy Joe, Andrew Jones, Peiqi Sun, Ben Martin, Andrew Jones.<br />
     		<strong> Later arrivals: </strong> Maria Conomos, Matthew McLean <br />
     		<strong> Apologies: </strong> Nil
     	</p>
