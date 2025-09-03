@@ -10,13 +10,13 @@ title: Sunday Lunchtime Chess Meetup | Brisbane Social Chess Club
   </h2>
   <p class="text-gray-200 text-sm"><strong>Location:</strong> The Garden Room Cafe, Roma Street Parklands</p>
   <p class="text-gray-200 text-sm">
-    <strong>Hosted by:</strong> JoeT,
-    <a href="https://github.com/LuckyNotGood" class="text-blue-400 hover:text-blue-500">Matt McLean</a>, Steve
+    <strong>Hosted by:</strong> Joseph Tan,
+    <a href="https://github.com/LuckyNotGood" class="text-blue-400 hover:text-blue-500">Matt McLean</a>, Steve Anderson
   </p>
   <div class="flex justify-center gap-4 flex-wrap mt-2">
     <img
       src="https://avatars.githubusercontent.com/u/873384?s=400&v=4"
-      alt="JoeT"
+      alt="Joseph Tan"
       class="max-w-[150px] rounded-lg"
     />
     <img
@@ -26,7 +26,7 @@ title: Sunday Lunchtime Chess Meetup | Brisbane Social Chess Club
     />
     <img
       src="https://avatars.githubusercontent.com/u/873384?s=400&v=4"
-      alt="Steve"
+      alt="Steve Anderson"
       class="max-w-[150px] rounded-lg"
     />
   </div>
