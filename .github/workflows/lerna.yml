@@ -1,4 +1,4 @@
-name: 🏃🏻‍♂️‍➡️ Run lerna
+name: 🏃🏻‍♂️‍➡️ Run lerna test
 
 on:
   push:
@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   lerna:
-    name: 🏃🏻‍♂️‍➡️ Run lerna test
+    name: 🏃🏻‍♂️‍➡️ Run tests
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:

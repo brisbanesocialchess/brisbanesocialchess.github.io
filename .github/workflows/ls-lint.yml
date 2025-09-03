@@ -1,5 +1,5 @@
 ---
-name: Lint
+name: 🧹 ls-lint
 
 on: [pull_request]
 
@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   ls-lint:
-    name: Run ls-lint
+    name: 🏃🏼 Run linter
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5

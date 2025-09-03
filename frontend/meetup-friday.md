@@ -11,7 +11,7 @@ title: Friday Lunchtime Meetup | Brisbane Social Chess Club
   <p class="text-gray-200 text-sm"><strong>Location:</strong> Chocolate Moments</p>
   <p class="text-gray-200 text-sm">
     <strong>Hosted by:</strong>
-    <a href="https://github.com/LuckyNotGood" class="text-blue-400 hover:text-blue-500">Matt McLean</a>, Steve
+    <a href="https://github.com/LuckyNotGood" class="text-blue-400 hover:text-blue-500">Matt McLean</a>, Steve Anderson
   </p>
   <div class="flex justify-center gap-4 flex-wrap">
     <img
@@ -21,7 +21,7 @@ title: Friday Lunchtime Meetup | Brisbane Social Chess Club
     />
     <img
       src="https://avatars.githubusercontent.com/u/873384?s=400&v=4"
-      alt="Steve"
+      alt="Steve Anderson"
       class="max-w-[150px] rounded-lg mt-2"
     />
   </div>

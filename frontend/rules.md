@@ -12,7 +12,7 @@ title: Club Rules & Code of Conduct | Brisbane Social Chess Club
   <ol class="list-decimal list-inside space-y-3 text-gray-100 text-sm leading-relaxed">
     <li>The name of the incorporated association is Brisbane Social Chess Inc. (‘the club’).</li>
     <li>
-      The objects of the club are to — a) Promote the playing of chess in person in amenable surroundings in and around the City of
+      The objects of the club are to a) Promote the playing of chess in person in amenable surroundings in and around the City of
       Brisbane in Queensland Australia. b) Be the cause of dormant chess players to take up the game again. c) Using social
       enterprise principles, encourage fun, free and friendly social chess everywhere. d) Welcome and encourage everyone. e) Promote
       chess as a constructive pastime for adults and children to learn. f) Spark resilience and develop mental toughness in response

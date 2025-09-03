@@ -1,4 +1,4 @@
-name: Build and Deploy Eleventy site
+name: 🏗️ Build and Deploy Eleventy site
 
 on:
   push:
