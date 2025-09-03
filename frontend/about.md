@@ -51,7 +51,7 @@ title: About Us | Brisbane Social Chess Club
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
-                    <td class="border px-4 py-2"><span class="role-board text-role-board">Steve</span></td>
+                    <td class="border px-4 py-2"><span class="role-board text-role-board">Steve Anderson</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
@@ -68,14 +68,14 @@ title: About Us | Brisbane Social Chess Club
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
                     <td class="border px-4 py-2">
-                        <span class="role-board text-role-board">Adam Lomsargis</span>, <span class="role-board text-role-board">Ben M</span>
+                        <span class="role-board text-role-board">Adam Lomsargis</span>, <span class="role-board text-role-board">Ben Martin</span>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
                     <td class="border px-4 py-2">
                         <span class="role-coordinator text-role-coordinator">Ross Barnard</span>,
-                        <a class="hover:underline role-coordinator text-role-coordinator" href="https://github.com/therealnugget">therealnugget</a>
+                        <a class="hover:underline role-coordinator text-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
                     </td>
                 </tr>
             </tbody>
@@ -97,12 +97,12 @@ title: About Us | Brisbane Social Chess Club
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role-board text-role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role-board text-role-board">Ben Martin</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role-board text-role-board">Jimmy Joe</span></li>
                 <li>
                     <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="role-board text-role-board">Steve</span>: Official pawn wrangler.</li>
+                <li><span class="role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
                 <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
             </ul>
         </li>
@@ -111,10 +111,10 @@ title: About Us | Brisbane Social Chess Club
             <strong>Event organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
                 <li><span class="text-role-event-organizers">Christoph Dierkes</span></li>
-                <li><span class="text-role-event-organizers">JoeT</span></li>
+                <li><span class="text-role-event-organizers">Joseph Tan</span></li>
                 <li><span class="text-role-event-organizers">Marty Benjamin</span></li>
                 <li><span class="text-role-event-organizers">Peiqi Sun</span></li>
-                <li><span class="text-role-event-organizers">Stuart</span></li>
+                <li><span class="text-role-event-organizers">Stuart Holt</span></li>
             </ul>
         </li>
     </ul>
@@ -197,7 +197,7 @@ title: About Us | Brisbane Social Chess Club
 		</a>
 		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role-coordinator text-role-coordinator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
-			<span class="font-medium">therealnugget</span>
+			<span class="font-medium">Thomas</span>
 			<span class="text-gray-500 github">@therealnugget</span>
 		</a>
 	</div>
