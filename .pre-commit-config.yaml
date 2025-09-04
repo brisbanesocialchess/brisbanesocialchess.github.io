@@ -249,4 +249,4 @@ repos:
         entry: pylint
         language: system
         types: [python]
-        args: ['-rn', '-sn', '--rcfile=.github/linters/.pylintrc']
+        args: ['-rn', '--rcfile=.github/linters/.pylintrc']
