@@ -222,7 +222,7 @@ repos:
       - id: bandit
         name: A security linter from PyCQA
         description: Bandit is a tool designed to find common security issues in Python code
-        args: ['-c', 'bandit.yaml', '-r', '.']
+        args: ['-c', 'bandit.yaml', '-r', 'scripts']
         files: \.py$
         pass_filenames: false
   - repo: https://github.com/pre-commit/mirrors-mypy

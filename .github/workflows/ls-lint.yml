@@ -1,7 +1,13 @@
 ---
 name: 🧹 ls-lint
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read

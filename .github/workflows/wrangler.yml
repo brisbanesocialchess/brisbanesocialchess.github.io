@@ -1,4 +1,6 @@
 name: 🚢 Deploy Workers
+permissions:
+  contents: read
 
 on:
   push:
