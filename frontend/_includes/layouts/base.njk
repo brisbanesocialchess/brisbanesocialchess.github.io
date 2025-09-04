@@ -54,7 +54,7 @@
             ] %}
             {% for link in navLinks -%}
             <a href="{{ link.url | url  }}"
-              class="block w-full py-2 rounded hover:bg-white/10 hover:text-white 
+              class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
                       md:inline-block md:w-auto md:py-0 md:p-2
                       {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">
               {{ link.text }}
