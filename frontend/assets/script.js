@@ -128,6 +128,8 @@ window.addEventListener('message', (e) => {
 });
 
 // Events
-elmToggleBtn.addEventListener("click", () => {
+elmToggleBtn?.addEventListener("click", () => {
 	elmMenu.classList.toggle("hidden");
+	const isExpanded = !elmMenu.classList.contains('hidden');
+	elmToggleBtn?.setAttribute('aria-expanded', isExpanded);
 });
