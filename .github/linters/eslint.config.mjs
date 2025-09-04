@@ -3,7 +3,9 @@ import globals from 'globals';
 import prettierConfig from 'eslint-config-prettier';
 export default [
   js.configs.recommended,
-  { ignores: ['**/.wrangler/**'] },
+  {
+    ignores: ['**/.wrangler/**'],
+  },
   {
     files: ['**/*.js'],
     languageOptions: {
@@ -16,10 +18,6 @@ export default [
     rules: {
       'sort-keys': ['error', 'asc', { caseSensitive: true, minKeys: 2, natural: false }],
     },
-  },
-  {
-    files: ['docs/**/*.js'],
-    languageOptions: { sourceType: 'script', globals: globals.browser },
   },
   prettierConfig,
 ];
