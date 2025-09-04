@@ -4,6 +4,8 @@ const MIN_AGE = 5;
 const MAX_AGE = 120;
 
 // Elements
+const elmToggleBtn = document.getElementById("menu-toggle");
+const elmMenu = document.getElementById("menu");
 const elmYear = document.getElementById('year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
@@ -110,27 +112,22 @@ elmYear.textContent = getCurrentYear();
 const emailReversed = 'ua.gro.ssehclaicosenabsirb@eettimmoc'; // reversed
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
-	if (el.getAttribute('data-email-href') !== null) {
-		el.href = `mailto:${email}`;
-	}
-	if (el.getAttribute('data-email-content') !== null) {
-		el.textContent = email;
-	}
+	if (el.getAttribute('data-email-href') !== null) el.href = `mailto:${email}`;
+	if (el.getAttribute('data-email-content') !== null) el.textContent = email;
 });
 
 window.addEventListener('message', (e) => {
-	// Step 1: Security check - Verify the message origin is chess.com
-	if (e.origin !== 'https://www.chess.com') {
-		return; // Exit if the message is from an untrusted source
-	}
-
-	// Step 2: Robustness check - Ensure data and ID exist and frameHeight is a number
+	if (e.origin !== 'https://www.chess.com') return;
 	if (e.data?.id && typeof e.data?.frameHeight === 'number') {
 		const iframe = document.getElementById(e.data.id);
-		// If a matching iframe is found, set its height
 		if (iframe) {
-			const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
+			const IFRAME_HEIGHT_OFFSET = 37;
 			iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
 		}
 	}
+});
+
+// Events
+elmToggleBtn.addEventListener("click", () => {
+	elmMenu.classList.toggle("hidden");
 });
