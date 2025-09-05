@@ -62,7 +62,7 @@ title: About Us | Brisbane Social Chess Club
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/jbampton" class="hover:underline role role-admin text-role-admin text-[red]">John Bampton</a>
+                        <a href="https://github.com/jbampton" class="hover:underline role role-admin text-role-admin">John Bampton</a>
                     </td>
                 </tr>
                 <tr>
