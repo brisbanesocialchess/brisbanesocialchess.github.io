@@ -170,7 +170,7 @@ title: About Us | Brisbane Social Chess Club
 			<span class="font-medium">Ayush Rana</span>
 			<span class="text-gray-500 github">@ayushrana182</span>
 		</a>
-		<div class="flex flex-col items-center text-center w-1/3 role-leader text-role-leader">
+		<div class="flex flex-col items-center text-center w-1/3 role role-leader text-role-leader">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500 github">N/A</span>
