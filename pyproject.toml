@@ -24,7 +24,7 @@ no_shell = [
   "os.spawnve",
   "os.spawnvp",
   "os.spawnvpe",
-  "os.startfile"
+  "os.startfile",
 ]
 shell = [
   "os.system",
@@ -38,11 +38,11 @@ shell = [
   "popen2.Popen3",
   "popen2.Popen4",
   "commands.getoutput",
-  "commands.getstatusoutput"
+  "commands.getstatusoutput",
 ]
 subprocess = [
   "subprocess.Popen",
   "subprocess.call",
   "subprocess.check_call",
-  "subprocess.check_output"
+  "subprocess.check_output",
 ]
