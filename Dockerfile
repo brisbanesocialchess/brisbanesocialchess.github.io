@@ -26,6 +26,15 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN go version && python3 --version && pip3 --version
 
+RUN groupadd -r appuser && useradd -r -g appuser -d /app -s /bin/bash appuser
+
 WORKDIR /app
+
+RUN chown -R appuser:appuser /app
+
+USER appuser
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD pre-commit --version || exit 1
 
 CMD ["pre-commit", "run", "--all-files"]
