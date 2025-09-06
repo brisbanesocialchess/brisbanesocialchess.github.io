@@ -1,4 +1,4 @@
-name: 🏃🏻‍♂️‍➡️ Run lerna
+name: 🏃🏻‍♂️‍➡️ Run lerna test
 
 on:
   push:
@@ -13,17 +13,17 @@ permissions:
 
 jobs:
   lerna:
-    name: 🏃🏻‍♂️‍➡️ Run lerna test
+    name: 🏃🏻‍♂️‍➡️ Run tests
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         node-version: ['20.x', '22.x']
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node-version }}
 

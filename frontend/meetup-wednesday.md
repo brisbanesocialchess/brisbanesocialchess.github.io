@@ -1,37 +1,36 @@
 ---
 permalink: /meetup/wednesday/
 layout: 'layouts/base.njk'
-title: Wednesday Night Chess Meetup | Brisbane Social Chess Club
+title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
 ---
 
-<section class="section">
-	<h2>Wednesday Night Chess ♟️☕</h2>
-	<p><strong>Location:</strong> Chocolate Moments</p>
-	<p><strong>Hosted by:</strong> John Bampton</p>
-	<div class="bio">
-		<img
-			src="https://avatars.githubusercontent.com/u/873384?s=400&v=4"
-			alt="John Bampton"
-			class="bio-img"
-		/>
-	</div>
-	<p>
-		Welcome to Wednesday night chess at Chocolate Moments in the city. <br />
-		Come play casual games over excellent coffee or a cold drink. <br />
-		The venue is relaxed, social, and friendly — perfect for all skill levels.
-	</p>
-	<p><strong>Time:</strong> 6:00 PM – 9:00 PM AEST</p>
-	<p><strong>When:</strong> Every Wednesday</p>
-	<p><strong>Address:</strong> 15 Balaclava St, Woolloongabba QLD 4102</p>
-	<div class="map">
-		<!-- TODO -->
-		<!-- <iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.0211617421363!2d153.02726041506186!3d-27.49145638289017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159a7a0211687%3A0x85ff58a2cfd7c0e5!2sCoffee%20Supreme%20Brisbane!5e0!3m2!1sen!2sau!4v1691123456789!5m2!1sen!2sau"
-			width="100%"
-			height="250"
-			style="border: 0; border-radius: 10px"
-			allowfullscreen=""
-			loading="lazy"
-		></iframe> -->
-	</div>
+<section class="px-4 max-w-3xl">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+    Wednesday Lunchtime Chess ♟️☕
+  </h2>
+  <p class="text-gray-200 text-sm"><strong>Location:</strong> June's Cafe</p>
+  <p class="text-gray-200 text-sm"><strong>Hosted by:</strong> Steve Anderson</p>
+  <div class="flex justify-center mt-2">
+    <img
+      src="https://avatars.githubusercontent.com/u/873384?s=400&v=4"
+      alt="Steve Anderson"
+      class="max-w-[150px] rounded-lg"
+    />
+  </div>
+  <p class="text-sm leading-relaxed">
+    Welcome to Wednesday chess at June's cafe. Good food, coffee and company. We usually expect 6 or more participants.
+  </p>
+  <p class="text-sm leading-relaxed">
+    Come if you are available. Parking available across the road, on street or at the Mowbray Park ferry.
+  </p>
+  <p class="text-sm leading-relaxed">
+    If you wish to come by ferry, it is a 5 minutes' walk to June's.
+  </p>
+  <p class="text-gray-200 text-sm"><strong>Time:</strong> 12:00 PM – 2:30 PM AEST</p>
+  <p class="text-gray-200 text-sm"><strong>When:</strong> Every Wednesday</p>
+  <p class="text-gray-200 text-sm"><strong>Address:</strong> 17 Lytton Rd, East Brisbane QLD 4169</p>
+  <div class="mt-4">
+    <!-- Map placeholder -->
+    <!-- Replace with iframe if needed -->
+  </div>
 </section>

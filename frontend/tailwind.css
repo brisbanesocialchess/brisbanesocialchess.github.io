@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--role-border: 2px solid;
+}
+@theme {
+	--color-table-header: #091a52;
+	--color-highlight: #ff5733;
+	--color-role-admin: red;
+	--color-role-lead-developer: red;
+	--color-role-developer: cyan;
+	--color-role-lead-moderator: #e91e63;
+	--color-role-moderator: yellow;
+	--color-role-board: purple;
+	--color-role-leader: orange;
+	--color-role-coordinator: #3498db;
+	--color-role-co-organizers: blue;
+	--color-role-event-organizers: lime;
+	--color-role-assistant-organizers: #c35339;
+}
+.role:hover img {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+  transition: filter 0.3s ease;
+}
+.role-admin img { border: var(--role-border) var(--color-role-admin);}
+.role-developer img { border: var(--role-border) var(--color-role-developer);}
+.role-moderator img { border: var(--role-border) var(--color-role-moderator);}
+.role-board img { border: var(--role-border) var(--color-role-board);}
+.role-leader img { border: var(--role-border) var(--color-role-leader);}
+.role-coordinator img { border: var(--role-border) var(--color-role-coordinator);}
+.role-co-organizers img { border: var(--role-border) var(--color-role-co-organizers);}
+.role-lead-developer img { border: var(--role-border) var(--color-role-lead-developer);}
+.role-event-organizers img { border: var(--role-border) var(--color-role-event-organizers);}
+.role-assistant-organizers img { border: var(--role-border) var(--color-role-assistant-organizers);}
+
+.role-admin span { color: var(--color-role-admin);}
+.role-developer span { color: var(--color-role-developer);}
+.role-moderator span { color: var(--color-role-moderator);}
+.role-board span { color: var(--color-role-board);}
+.role-leader span { color: var(--color-role-leader);}
+.role-coordinator span { color: var(--color-role-coordinator);}
+.role-co-organizers span { color: var(--color-role-co-organizers);}
+.role-lead-developer span { color: var(--color-role-lead-developer);}
+.role-event-organizers span { color: var(--color-role-event-organizers);}
+.role-assistant-organizers span { color: var(--color-role-assistant-organizers);}

@@ -1,4 +1,4 @@
-name: Build and Deploy Eleventy site
+name: 🏗️ Build and Deploy Eleventy site
 
 on:
   push:
@@ -14,17 +14,20 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           path: .
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
 
       - name: Install dependencies
         run: npm install
+
+      - name: Build Tailwindcss
+        run: npm run tailwindcss:build
 
       - name: Build Eleventy site
         run: npm run build

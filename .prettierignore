@@ -1,2 +1,5 @@
 package-lock.json
 packages/cfsite/package-lock.json
+frontend/tailwind.css
+.cache
+docker_data/.cache
