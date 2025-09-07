@@ -40,18 +40,7 @@
           </div>
           <div id="menu"
               class="hidden flex-col items-center justify-center space-y-2 mt-4 text-center text-sm md:flex md:flex-row md:space-y-0 md:space-x-2 md:mt-0">
-            {% set navLinks = [
-              { url: '/', text: 'Home' },
-              { url: '/about/', text: 'About' },
-              { url: '/games/', text: 'Games' },
-              { url: '/meetup/', text: 'Meetups' },
-              { url: '/minutes/', text: 'Minutes' },
-              { url: '/register/', text: 'Register' },
-              { url: '/rules/', text: 'Rules' },
-              { url: '/terms/', text: 'Terms' },
-              { url: '/contact/', text: 'Contact' }
-            ] %}
-            {% for link in navLinks -%}
+            {% for link in navigation.navLinks -%}
             <a href="{{ link.url | url  }}"
               class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
                       md:inline-block md:w-auto md:py-0 md:p-2
