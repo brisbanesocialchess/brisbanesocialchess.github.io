@@ -132,10 +132,10 @@ window.addEventListener('message', (e) => {
 });
 
 // Events
-elmToggleBtn?.addEventListener("click", () => {
-	if (elmMenu) {
+if (elmToggleBtn && elmMenu) {
+	elmToggleBtn.addEventListener("click", () => {
 		elmMenu.classList.toggle("hidden");
 		const isExpanded = !elmMenu.classList.contains('hidden');
-		elmToggleBtn?.setAttribute('aria-expanded', isExpanded);
-	}
-});
+		elmToggleBtn.setAttribute('aria-expanded', isExpanded);
+	});
+}
