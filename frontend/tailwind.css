@@ -22,7 +22,11 @@
 	--color-role-event-organizers: lime;
 	--color-role-assistant-organizers: #c35339;
 }
-
+.role:hover img {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+  transition: filter 0.3s ease;
+}
 .role-admin img { border: var(--role-border) var(--color-role-admin);}
 .role-developer img { border: var(--role-border) var(--color-role-developer);}
 .role-moderator img { border: var(--role-border) var(--color-role-moderator);}
