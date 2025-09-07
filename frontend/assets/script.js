@@ -112,8 +112,12 @@ elmYear.textContent = getCurrentYear();
 const emailReversed = 'ua.gro.ssehclaicosenabsirb@eettimmoc'; // reversed
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
-	if (el.getAttribute('data-email-href') !== null) el.href = `mailto:${email}`;
-	if (el.getAttribute('data-email-content') !== null) el.textContent = email;
+	if (el.getAttribute('data-email-href') !== null) {
+		el.href = `mailto:${email}`;
+	}
+	if (el.getAttribute('data-email-content') !== null) {
+		el.textContent = email;
+	}
 });
 
 window.addEventListener('message', (e) => {
