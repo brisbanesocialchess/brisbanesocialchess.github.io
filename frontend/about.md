@@ -41,41 +41,41 @@ title: About Us | Brisbane Social Chess Club
             <tbody>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">President</th>
-                    <td class="border px-4 py-2"><span class="role-board text-role-board">Jimmy Joe</span></td>
+                    <td class="border px-4 py-2"><span class="role role-board text-role-board">Jimmy Joe</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/LuckyNotGood" class="hover:underline role-board text-role-board">Matt McLean</a>
+                        <a href="https://github.com/LuckyNotGood" class="hover:underline role role-board text-role-board">Matt McLean</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
-                    <td class="border px-4 py-2"><span class="role-board text-role-board">Steve Anderson</span></td>
+                    <td class="border px-4 py-2"><span class="role role-board text-role-board">Steve Anderson</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Robert Garvey</a>
+                        <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
                     <td class="border px-4 py-2">
-                        <a href="https://github.com/jbampton" class="hover:underline role-admin text-role-admin text-[red]">John Bampton</a>
+                        <a href="https://github.com/jbampton" class="hover:underline role role-admin text-role-admin">John Bampton</a>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
                     <td class="border px-4 py-2">
-                        <span class="role-board text-role-board">Adam Lomsargis</span>, <span class="role-board text-role-board">Ben Martin</span>
+                        <span class="role role-board text-role-board">Adam Lomsargis</span>, <span class="role role-board text-role-board">Ben Martin</span>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
                     <td class="border px-4 py-2">
-                        <span class="role-coordinator text-role-coordinator">Ross Barnard</span>,
-                        <a class="hover:underline role-coordinator text-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
+                        <span class="role role-coordinator text-role-coordinator">Ross Barnard</span>,
+                        <a class="hover:underline role role-coordinator text-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
                     </td>
                 </tr>
             </tbody>
@@ -87,22 +87,22 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
-            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
+            <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="role-board text-role-board">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                <li><span class="role role-board text-role-board">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role-board text-role-board">Ben Martin</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
-                <li><span class="role-board text-role-board">Jimmy Joe</span></li>
+                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role role-board text-role-board">Jimmy Joe</span></li>
                 <li>
-                    <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
+                    <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
+                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
                 <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
             </ul>
         </li>
@@ -110,11 +110,11 @@ title: About Us | Brisbane Social Chess Club
         <li>
             <strong>Event organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="text-role-event-organizers">Christoph Dierkes</span></li>
-                <li><span class="text-role-event-organizers">Joseph Tan</span></li>
-                <li><span class="text-role-event-organizers">Marty Benjamin</span></li>
-                <li><span class="text-role-event-organizers">Peiqi Sun</span></li>
-                <li><span class="text-role-event-organizers">Stuart Holt</span></li>
+                <li><span class="role role-event-organizers text-role-event-organizers">Christoph Dierkes</span></li>
+                <li><span class="role role-event-organizers text-role-event-organizers">Joseph Tan</span></li>
+                <li><span class="role role-event-organizers text-role-event-organizers">Marty Benjamin</span></li>
+                <li><span class="role role-event-organizers text-role-event-organizers">Peiqi Sun</span></li>
+                <li><span class="role role-event-organizers text-role-event-organizers">Stuart Holt</span></li>
             </ul>
         </li>
     </ul>
@@ -128,7 +128,7 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">🧑‍🔧</span> Maintainer
 	</h3>
 	<div class="flex justify-center mb-8">
-		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center role-admin text-role-admin">
+		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center role role-admin text-role-admin">
 			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="John Bampton avatar" />
 			<span class="font-medium">John Bampton</span>
 			<span class="text-gray-500 github">@jbampton</span>
@@ -138,19 +138,19 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">💾</span> Developers
 	</h3>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
-		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center role-lead-developer text-role-lead-developer">
+		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center role role-lead-developer text-role-lead-developer">
 			<img class="w-35 md:w-50 lg:w-[300px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=300" alt="Max Base avatar" />
 			<span class="font-medium">Max Base</span>
 			<span class="text-gray-500 github">@BaseMax</span>
 		</a>
     </div>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
-		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-1/3 role-developer text-role-developer">
+		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=225" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
 			<span class="text-gray-500 github">@anufdo</span>
 		</a>
-		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-1/3 role-developer text-role-developer">
+		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=225" alt="sugiarto avatar" />
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500 github">@ugifractal</span>
@@ -160,42 +160,42 @@ title: About Us | Brisbane Social Chess Club
 		<span aria-hidden="true">🎮</span> Discord Moderators
 	</h2>
 	<div class="flex flex-wrap justify-center gap-6">
-		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
+		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=120" alt="Abhushan Gautam avatar" />
 			<span class="font-medium">Abhushan Gautam</span>
 			<span class="text-gray-500 github">@carefreeav09</span>
 		</a>
-		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
+		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
 			<span class="font-medium">Ayush Rana</span>
 			<span class="text-gray-500 github">@ayushrana182</span>
 		</a>
-		<div class="flex flex-col items-center text-center w-1/3 role-leader text-role-leader">
+		<div class="flex flex-col items-center text-center w-1/3 role role-leader text-role-leader">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500 github">N/A</span>
 		</div>
-		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
+		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
 			<span class="font-medium">Mahabub Islam Prio</span>
 			<span class="text-gray-500 github">@prio101</span>
 		</a>
-		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
+		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
 			<span class="text-gray-500 github">@mohammadlotfia</span>
 		</a>
-		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
+		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar" />
 			<span class="font-medium">Nicholas Meredith</span>
 			<span class="text-gray-500 github">@udha</span>
 		</a>
-		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
+		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
 			<span class="font-medium">SM Riad</span>
 			<span class="text-gray-500 github">@smriad</span>
 		</a>
-		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role-coordinator text-role-coordinator">
+		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role role-coordinator text-role-coordinator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
 			<span class="text-gray-500 github">@therealnugget</span>
