@@ -1,4 +1,4 @@
-@import url('tailwindcss');
+@import 'tailwindcss';
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,6 @@
 :root {
 	--role-border: 2px solid;
 }
-
 @theme {
 	--color-table-header: #091a52;
 	--color-highlight: #ff5733;
@@ -23,7 +22,6 @@
 	--color-role-event-organizers: lime;
 	--color-role-assistant-organizers: #c35339;
 }
-
 .role-admin { --role-color: var(--color-role-admin); }
 .role-developer { --role-color: var(--color-role-developer); }
 .role-moderator { --role-color: var(--color-role-moderator); }
@@ -34,14 +32,12 @@
 .role-lead-developer { --role-color: var(--color-role-lead-developer); }
 .role-event-organizers { --role-color: var(--color-role-event-organizers); }
 .role-assistant-organizers { --role-color: var(--color-role-assistant-organizers); }
-
 .role img {
 	border: var(--role-border) var(--role-color);
 }
-
 .role:hover img {
-  filter: drop-shadow(0 0 10px rgb(255 255 255 / 40%))
-          drop-shadow(0 0 20px rgb(255 255 255 / 20%));
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
   transition: filter 0.3s ease;
 }
 
