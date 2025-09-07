@@ -19,26 +19,36 @@
           <a href="{{ '/' | url  }}">
             <img src="{{ '/assets/logo.jpg' | url  }}" alt="Brisbane Social Chess Logo" class="w-45 mx-auto rounded-full" />
           </a>
-          <h1 class="text-lg mt-5 uppercase tracking-[2px] font-bold">Brisbane Social Chess</h1>
-          <p class="text-sm opacity-85 mt-1">A place for casual chess, for fun and friendly people.</p>
+          <h1 class="hidden md:block text-lg mt-5 uppercase tracking-[2px] font-bold">
+            Brisbane Social Chess
+          </h1>
+          <p class="text-sm opacity-85 mt-5 md:mt-1">A place for casual chess, for fun and friendly people.</p>
         </div>
         <!-- Top Navigation -->
-        <nav class="flex flex-wrap justify-center text-center text-sm space-x-2">
-          {% set navLinks = [
-            { url: '/', text: 'Home' },
-            { url: '/about/', text: 'About' },
-            { url: '/games/', text: 'Games' },
-            { url: '/meetup/', text: 'Meetups' },
-            { url: '/minutes/', text: 'Minutes' },
-            { url: '/register/', text: 'Register' },
-            { url: '/rules/', text: 'Rules' },
-            { url: '/terms/', text: 'Terms' },
-            { url: '/contact/', text: 'Contact' }
-          ] %}
-          {% for link in navLinks -%}
-          <a href="{{ link.url | url  }}"
-             class="hover:text-white {% if page.url == link.url %}text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">{{ link.text }}</a>
-          {%- endfor %}
+        <nav>
+          <div class="flex items-center md:hidden">
+            <button id="menu-toggle" type="button" aria-expanded="false" class="text-gray-300 hover:text-white cursor-pointer">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+            <span class="flex-1 text-center text-white text-md font-bold">
+              Brisbane Social Chess
+            </span>
+          </div>
+          <div id="menu"
+              class="hidden flex-col items-center justify-center space-y-2 mt-4 text-center text-sm md:flex md:flex-row md:space-y-0 md:space-x-2 md:mt-0">
+            {% for link in navigation.navLinks -%}
+            <a href="{{ link.url | url  }}"
+              class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
+                      md:inline-block md:w-auto md:py-0 md:p-2
+                      {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">
+              {{ link.text }}
+            </a>
+            {%- endfor %}
+          </div>
         </nav>
         <!-- Content -->
         {{ content | safe }}

@@ -1,0 +1,13 @@
+{
+	"navLinks": [
+		{ "url": "/", "text": "Home" },
+		{ "url": "/about/", "text": "About" },
+		{ "url": "/games/", "text": "Games" },
+		{ "url": "/meetup/", "text": "Meetups" },
+		{ "url": "/minutes/", "text": "Minutes" },
+		{ "url": "/register/", "text": "Register" },
+		{ "url": "/rules/", "text": "Rules" },
+		{ "url": "/terms/", "text": "Terms" },
+		{ "url": "/contact/", "text": "Contact" }
+	]
+}
