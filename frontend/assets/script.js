@@ -129,7 +129,9 @@ window.addEventListener('message', (e) => {
 
 // Events
 elmToggleBtn?.addEventListener("click", () => {
-	elmMenu.classList.toggle("hidden");
-	const isExpanded = !elmMenu.classList.contains('hidden');
-	elmToggleBtn?.setAttribute('aria-expanded', isExpanded);
+	if (elmMenu) {
+		elmMenu.classList.toggle("hidden");
+		const isExpanded = !elmMenu.classList.contains('hidden');
+		elmToggleBtn?.setAttribute('aria-expanded', isExpanded);
+	}
 });
