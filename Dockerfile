@@ -36,6 +36,8 @@ RUN npm run tailwindcss:build
 
 RUN npm run build
 
+RUN chown -R appuser:appuser /app
+
 USER appuser
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
