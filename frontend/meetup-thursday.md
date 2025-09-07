@@ -30,6 +30,7 @@ title: Thursday Night Chess Meetup | Brisbane Social Chess Club
       class="w-full h-64 rounded-lg border-0"
       allowfullscreen=""
       loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
   </div>
 </section>

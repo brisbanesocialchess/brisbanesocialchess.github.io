@@ -38,12 +38,12 @@ title: Saturday Chess Meetup | Brisbane Social Chess Club
   <p class="text-gray-200 text-sm"><strong>When:</strong> Every Saturday</p>
   <p class="text-gray-200 text-sm"><strong>Address:</strong> 305 Montague Rd, West End QLD 4101</p>
   <div class="mt-4">
-    <!-- TODO -->
-    <!-- <iframe
-      src=""
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.1856762717784!2d153.00220947513748!3d-27.48060821717052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9150a29961658b%3A0xa14cf2a7b92cb3bf!2sWest%20End%20Park%20Cafe!5e1!3m2!1sen!2snp!4v1757263596909!5m2!1sen!2snp"
       class="w-full h-64 rounded-lg border-0"
       allowfullscreen=""
       loading="lazy"
-    ></iframe> -->
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
 </section>

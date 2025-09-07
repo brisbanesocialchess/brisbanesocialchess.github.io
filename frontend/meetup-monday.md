@@ -39,5 +39,12 @@ title: Monday Afternoon Meetup | Brisbane Social Chess Club
       allowfullscreen=""
       loading="lazy"
     ></iframe> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.540098197516!2d153.02179447513691!3d-27.468417416650944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a03703bbe37%3A0xcb01498184b214!2sPig%20&#39;N&#39;%20Whistle%20King%20George%20Square!5e1!3m2!1sen!2snp!4v1757262947925!5m2!1sen!2snp"
+      class="w-full h-64 rounded-lg border-0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
 </section>
