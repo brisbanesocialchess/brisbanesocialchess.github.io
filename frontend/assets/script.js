@@ -121,7 +121,7 @@ window.addEventListener('message', (e) => {
 	if (e.data?.id && typeof e.data?.frameHeight === 'number') {
 		const iframe = document.getElementById(e.data.id);
 		if (iframe) {
-			const IFRAME_HEIGHT_OFFSET = 37;
+			const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
 			iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
 		}
 	}
