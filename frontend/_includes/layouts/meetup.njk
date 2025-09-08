@@ -1,0 +1,7 @@
+---
+layout: 'layouts/base.njk'
+eleventyComputed:
+  permalink: "meetup/{{ (slug or title) | slug }}/"
+---
+
+{{ content | safe }}

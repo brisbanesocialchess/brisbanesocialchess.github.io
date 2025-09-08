@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection('meetups', (collectionApi) => {
-		return getUniqueTaxonomy(collectionApi, 'meetups');
+		return getUniqueTaxonomy(collectionApi, 'meetup');
 	});
 
 	eleventyConfig.addCollection('tags', (collectionApi) => {
