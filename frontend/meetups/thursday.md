@@ -1,7 +1,6 @@
 ---
 layout: 'layouts/meetup.njk'
 slug: thursday
-title: Thursday Night Chess Meetup | Brisbane Social Chess Club
 heading: Thursday Night Chess ♟️🍺
 location: Royal Hotel, Nundah
 hosts:

@@ -1,7 +1,6 @@
 ---
 layout: 'layouts/meetup.njk'
 slug: sunday
-title: Sunday Lunchtime Chess Meetup | Brisbane Social Chess Club
 heading: Sunday Lunchtime Chess ♟️☕
 location: The Garden Room Cafe, Roma Street Parklands
 hosts:

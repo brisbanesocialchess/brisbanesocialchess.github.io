@@ -1,7 +1,6 @@
 ---
 layout: 'layouts/meetup.njk'
 slug: friday
-title: Friday Lunchtime Meetup
 heading: "Friday Lunchtime Chess ♟️☕"
 location: "Chocolate Moments"
 hosts:

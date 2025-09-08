@@ -1,7 +1,6 @@
 ---
 layout: 'layouts/meetup.njk'
 slug: saturday
-title: Saturday Chess Meetup | Brisbane Social Chess Club
 heading: Saturday Chess ♟️☕
 location: West End Park Cafe!
 hosts:

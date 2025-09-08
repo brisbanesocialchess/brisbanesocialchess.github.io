@@ -1,7 +1,6 @@
 ---
 layout: 'layouts/meetup.njk'
 slug: wednesday
-title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
 heading: Wednesday Lunchtime Chess ♟️☕
 location: June's Cafe
 hosts:
