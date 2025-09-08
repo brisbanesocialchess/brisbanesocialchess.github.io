@@ -30,6 +30,10 @@ module.exports = function (eleventyConfig) {
 		return getUniqueTaxonomy(collectionApi, 'categories');
 	});
 
+	eleventyConfig.addCollection('meetups', (collectionApi) => {
+		return getUniqueTaxonomy(collectionApi, 'meetups');
+	});
+
 	eleventyConfig.addCollection('tags', (collectionApi) => {
 		return getUniqueTaxonomy(collectionApi, 'tags');
 	});

@@ -1,5 +1,5 @@
 ---
-permalink: /meetup/saturday/
+permalink: /testmeetup/saturday/
 layout: 'layouts/base.njk'
 title: Saturday Chess Meetup | Brisbane Social Chess Club
 ---

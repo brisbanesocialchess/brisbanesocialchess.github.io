@@ -1,5 +1,5 @@
 ---
-permalink: /meetup/wednesday/
+permalink: /testmeetup/wednesday/
 layout: 'layouts/base.njk'
 title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
 ---

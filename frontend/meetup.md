@@ -1,5 +1,5 @@
 ---
-permalink: /meetup/
+permalink: /testmeetup/
 layout: 'layouts/base.njk'
 title: Chess Meetups & Locations | Brisbane Social Chess Club
 ---
