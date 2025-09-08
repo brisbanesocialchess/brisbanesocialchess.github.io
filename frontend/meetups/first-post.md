@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/meetup.njk'
-title: 'Getting Started with Eleventy: My First Meetup'
 slug: friday
+title: 'Getting Started with Eleventy: My First Meetup'
 date: 2025-09-08
 ---
 

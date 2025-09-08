@@ -2,6 +2,7 @@
 layout: 'layouts/base.njk'
 eleventyComputed:
   permalink: "meetup/{{ (slug or title) | slug }}/"
+  title: "{{ title }} – {{ site.name }}"
 ---
 
 {{ content | safe }}
