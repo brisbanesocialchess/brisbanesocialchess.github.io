@@ -14,7 +14,7 @@ hosts_images:
 description: |
   Welcome chess and chocolate lovers!  
   Come to the Chocolate Moments café for your guilty Friday indulgence of your two vices / virtues:  
-  **CHESS** and **CHOCOLATE** (and of course, coffee).  
+  <strong>CHESS</strong> and <strong>CHOCOLATE</strong> (and of course, coffee).  
   Friendly players will be in attendance. Come in your lunch break if you work in the city.
 time: '12:00 PM – 2:00 PM AEST'
 when: 'Every Friday'
