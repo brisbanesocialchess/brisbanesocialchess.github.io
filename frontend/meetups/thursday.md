@@ -1,6 +1,6 @@
 ---
-permalink: /testmeetup/thursday/
-layout: 'layouts/base.njk'
+layout: 'layouts/meetup.njk'
+slug: thursday
 title: Thursday Night Chess Meetup | Brisbane Social Chess Club
 ---
 

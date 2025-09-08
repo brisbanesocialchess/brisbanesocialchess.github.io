@@ -1,6 +1,6 @@
 ---
-permalink: /testmeetup/friday/
-layout: 'layouts/base.njk'
+layout: 'layouts/meetup.njk'
+slug: friday
 title: Friday Lunchtime Meetup | Brisbane Social Chess Club
 ---
 
