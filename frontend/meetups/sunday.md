@@ -24,6 +24,6 @@ description: |
 time: 11:00 AM – 2:00 PM AEST
 when: Every Sunday
 address: 1 Parkland Blvd, Brisbane City QLD 4000
-# map: "https://www.google.com/maps/embed?pb=..."  # uncomment when you have the embed link
+# map: "https://www.google.com/maps/embed?pb=..."
 permalink: "meetup/{{ slug }}/"
 ---
