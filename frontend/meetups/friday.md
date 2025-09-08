@@ -12,9 +12,9 @@ hosts_images:
   - src: 'https://avatars.githubusercontent.com/u/873384?s=400&v=4'
     alt: 'Steve Anderson'
 description: |
-  Welcome chess and chocolate lovers!  
-  Come to the Chocolate Moments café for your guilty Friday indulgence of your two vices / virtues:  
-  <strong>CHESS</strong> and <strong>CHOCOLATE</strong> (and of course, coffee).  
+  Welcome chess and chocolate lovers!
+  Come to the Chocolate Moments café for your guilty Friday indulgence of your two vices / virtues:
+  <strong>CHESS</strong> and <strong>CHOCOLATE</strong> (and of course, coffee).
   Friendly players will be in attendance. Come in your lunch break if you work in the city.
 time: '12:00 PM – 2:00 PM AEST'
 when: 'Every Friday'
