@@ -16,5 +16,5 @@ time: 12:00 PM – 2:30 PM AEST
 when: Every Wednesday
 address: 17 Lytton Rd, East Brisbane QLD 4169
 # map: "https://www.google.com/maps/embed?pb=..."
-permalink: "meetup/{{ slug }}/"
+permalink: 'meetup/{{ slug }}/'
 ---
