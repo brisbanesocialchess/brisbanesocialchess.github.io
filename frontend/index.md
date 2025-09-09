@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: 'layouts/base.njk'
-title: Brisbane Social Chess Club | Play, Learn & Compete in Brisbane
+title: Play, Learn & Compete in Brisbane
 ---
 
 <section class="px-4 max-w-3xl">

@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 layout: 'layouts/base.njk'
-title: About Us | Brisbane Social Chess Club
+title: About Us
 ---
 
 <section class="px-4 max-w-3xl">

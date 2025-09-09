@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/base.njk'
-title: 'Getting Started with Eleventy: My First Blog Post | Brisbane Social Chess Club'
+title: 'Getting Started with Eleventy: My First Blog Post'
 date: 2025-08-07
 categories: ['Tech']
 tags: ['eleventy', 'markdown', 'blog']

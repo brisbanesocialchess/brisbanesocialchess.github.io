@@ -1,7 +1,7 @@
 ---
 permalink: /meetup/sunday/
 layout: 'layouts/base.njk'
-title: Sunday Lunchtime Chess Meetup | Brisbane Social Chess Club
+title: Sunday Lunchtime Chess Meetup
 ---
 
 <section class="px-4 max-w-3xl">

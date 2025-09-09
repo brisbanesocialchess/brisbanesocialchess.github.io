@@ -1,7 +1,7 @@
 ---
 permalink: /register/
 layout: 'layouts/base.njk'
-title: Register for Membership | Brisbane Social Chess Club
+title: Register for Membership
 ---
 
 <section class="px-4 max-w-3xl">
