@@ -5,17 +5,18 @@
 		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
 		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
-		"lint-fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
+		"lint:fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
 		"test": "npx lerna run test --stream",
 		"dev": "npm run start",
-		"start": "concurrently \"npm run tailwindcss:watch\" \"npx @11ty/eleventy --serve --input=frontend\"",
+		"start": "concurrently \"npm run tailwindcss:watch\" \"npm run vite:watch\" \"npx @11ty/eleventy --serve --input=frontend\"",
 		"build": "npm run tailwindcss:build && npx @11ty/eleventy --input=frontend",
 		"tailwindcss:build": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css",
 		"tailwindcss:build2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css",
 		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch",
 		"tailwindcss:watch2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css --watch",
-		"vite-dev": "vite",
-		"vite-build": "vite build"
+		"vite:dev": "vite",
+		"vite:build": "vite build",
+		"vite:watch": "vite watch"
 	},
 	"workspaces": [
 		"packages/*"
