@@ -79,5 +79,5 @@ function copyStaticAssets(directories) {
 // -------------------------
 (async function main() {
 	await copyAndMinifyHtmlFiles();
-	copyStaticAssets(['assets/images', 'assets/pictures']);
+	// copyStaticAssets(['assets/images', 'assets/pictures']);
 })();
