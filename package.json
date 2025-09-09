@@ -10,16 +10,17 @@
 		"lint:fix": "eslint --config .github/linters/eslint.config.js . --fix",
 		"test": "npx lerna run test --stream",
 		"dev": "npm run watch",
-		"start": "npm run watch",
-		"watch": "concurrently \"npm run tailwindcss:watch\" \"npm run vite:watch\" \"npm run 11ty:watch\" \"node copy-html.js\"",
-		"build": "npm run tailwindcss:build && npm run 11ty:build && node copy-html.js && vite build",
+		"start": "npm run build && npm run vite:preview",
+		"watch": "concurrently \"npm run 11ty:watch\" \"npm run tailwindcss:watch\" \"node copy-html.js\" \"npm run vite:watch\"",
+		"build": "npm run 11ty:build && npm run tailwindcss:build && npm run vite:build",
 		"11ty:watch": "eleventy --serve --input=frontend",
 		"11ty:build": "eleventy --input=frontend",
-		"tailwindcss:build": "tailwindcss -i frontend/assets/styles/tailwind.css -o frontend/assets/styles/base.css",
-		"tailwindcss:watch": "tailwindcss -i frontend/assets/styles/tailwind.css -o frontend/assets/styles/base.css --watch",
+		"tailwindcss:build": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css",
+		"tailwindcss:watch": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
-		"vite:build": "vite build",
-		"vite:watch": "vite watch"
+		"vite:build": "vite build && node copy-html.js",
+		"vite:watch": "vite watch",
+		"vite:preview": "vite preview"
 	},
 	"workspaces": [
 		"packages/*"

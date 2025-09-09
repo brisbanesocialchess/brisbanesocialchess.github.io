@@ -1,29 +1,7 @@
-// --- Ignore lists ---
-const ignoreCss = ['tailwind.css'];
-const ignoreJs = [];
+import.meta.glob('./styles/*.css');
 
-// --- Helper: load files one by one ---
-function importFile(file) {
-	return import(/* @vite-ignore */ file);
-}
+import.meta.glob('./scripts/*.js');
 
-// --- CSS Loader ---
-Object.keys(import.meta.glob('./styles/*.css'))
-	.filter((file) => !ignoreCss.includes(file.split('/').pop()))
-	.forEach((file) => {
-		importFile(file).then(() => {
-			console.log(`✅ Loaded CSS: ${file.split('/').pop()}`);
-		});
-	});
+// import.meta.glob('./images/*.{png,jpg,jpeg,gif,svg}');
 
-// --- JS Loader ---
-Object.keys(import.meta.glob('./scripts/*.js'))
-	.filter((file) => !ignoreJs.includes(file.split('/').pop()))
-	.forEach((file) => {
-		importFile(file).then(() => {
-			console.log(`✅ Loaded JS: ${file.split('/').pop()}`);
-		});
-	});
-
-// --- Explicit Tailwind import (ensures order) ---
-import './styles/tailwind.css';
+// import.meta.glob('./pictures/*.{png,jpg,jpeg,gif,svg}');

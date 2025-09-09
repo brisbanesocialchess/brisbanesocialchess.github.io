@@ -1,31 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-@import 'tailwindcss';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-	--role-border: 2px solid;
-}
 body {
 	font-family: Montserrat;
-}
-@theme {
-	--color-table-header: #091a52;
-	--color-highlight: #ff5733;
-	--color-role-admin: red;
-	--color-role-lead-developer: red;
-	--color-role-developer: cyan;
-	--color-role-lead-moderator: #e91e63;
-	--color-role-moderator: yellow;
-	--color-role-board: purple;
-	--color-role-leader: orange;
-	--color-role-coordinator: #3498db;
-	--color-role-co-organizers: blue;
-	--color-role-event-organizers: lime;
-	--color-role-assistant-organizers: #c35339;
 }
 .role-admin {
 	--role-color: var(--color-role-admin);
@@ -64,7 +40,6 @@ body {
 	filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
 	transition: filter 0.3s ease;
 }
-
 .role span {
 	color: var(--role-color);
 }
