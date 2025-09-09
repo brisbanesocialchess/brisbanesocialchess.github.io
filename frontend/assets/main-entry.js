@@ -1,7 +1,32 @@
-import.meta.glob('./styles/*.css');
+import './styles/base.css';
+import './styles/custom.css';
+import './styles/gh-fork-ribbon.css';
 
-import.meta.glob('./scripts/*.js');
+// import './scripts/script.js';
 
-// import.meta.glob('./images/*.{png,jpg,jpeg,gif,svg}');
+// const ignoreCss = ['tailwind.css'];
+// const ignoreJs = [];
+// const ignoreImages = [];
 
-// import.meta.glob('./pictures/*.{png,jpg,jpeg,gif,svg}');
+// // --- Load CSS files ---
+// const cssModules = import.meta.glob('./styles/*.css');
+// Object.entries(cssModules)
+//   .filter(([file]) => !ignoreCss.includes(file.split('/').pop()))
+//   .forEach(([file, loader]) => loader());
+
+// // --- Load JS files ---
+// const jsModules = import.meta.glob('./scripts/*.js');
+// Object.entries(jsModules)
+//   .filter(([file]) => !ignoreJs.includes(file.split('/').pop()))
+//   .forEach(([file, loader]) => loader());
+
+// // --- Load images ---
+// // const imageModules = import.meta.glob('./images/*.{png,jpg,jpeg,gif,svg}');
+// // Object.entries(imageModules)
+// //   .filter(([file]) => !ignoreImages.includes(file.split('/').pop()))
+// //   .forEach(([file, loader]) => loader());
+
+// // const pictureModules = import.meta.glob('./pictures/*.{png,jpg,jpeg,gif,svg}');
+// // Object.entries(pictureModules)
+// //   .filter(([file]) => !ignoreImages.includes(file.split('/').pop()))
+// //   .forEach(([file, loader]) => loader());

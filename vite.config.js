@@ -4,16 +4,21 @@ import postcssImport from 'postcss-import';
 
 export default defineConfig({
 	build: {
-		// emptyOutDir: false,
 		emptyOutDir: true,
 		outDir: '../_deploy',
 		rollupOptions: {
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
 			output: {
-				assetFileNames: 'assets/style.css',
+				assetFileNames: (assetInfo) => {
+					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+						return 'assets/style.css';
+					}
+					return 'assets/[name][extname]';
+				},
 				entryFileNames: 'assets/bundle.js',
 			},
 		},
+		assetsInlineLimit: 0,
 	},
 	css: {
 		postcss: {
