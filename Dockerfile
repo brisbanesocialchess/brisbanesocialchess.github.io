@@ -25,6 +25,8 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN go version && pipx --version && node -v && npm -v
 
+RUN groupadd -r -g 1001 appuser && useradd -m -r -u 1001 -g 1001 appuser -d /app -s /bin/bash appuser
+
 WORKDIR /app
 COPY . .
 
@@ -33,5 +35,12 @@ RUN npm install
 RUN npm run tailwindcss:build
 
 RUN npm run build
+
+RUN chown -R appuser:appuser /app
+
+USER appuser
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD pre-commit --version || exit 1
 
 CMD ["pre-commit", "run", "--all-files"]
