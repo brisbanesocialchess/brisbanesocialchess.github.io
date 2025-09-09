@@ -16,8 +16,8 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
-		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
+		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{css,js,json,md,yaml,yml}\"",
+		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{css,js,json,md,yaml,yml}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
 		"test": "npx lerna run test --stream",
