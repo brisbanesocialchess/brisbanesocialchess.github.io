@@ -32,6 +32,9 @@ build/
 .env.local
 .env.*.local
 
+# Python Cache
+.mypy_cache
+
 # Backup files
 *~
 *.bak
@@ -49,4 +52,5 @@ public/
 # Python
 .venv
 
+frontend/assets/dist
 frontend/assets/tailwind.css
