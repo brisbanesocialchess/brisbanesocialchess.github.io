@@ -1,6 +1,8 @@
 {
-	"name": "root",
-	"private": true,
+	"name": "brisbanesocialchess",
+	"version": "1.0.0",
+	"private": false,
+	"type": "module",
 	"scripts": {
 		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
 		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
@@ -13,12 +15,10 @@
 		"build": "npm run tailwindcss:build && npm run 11ty:build",
 		"11ty:watch": "eleventy --serve --input=frontend",
 		"11ty:build": "eleventy --input=frontend",
-		"tailwindcss:build": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css",
-		"tailwindcss:build2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css",
-		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch",
-		"tailwindcss:watch2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css --watch",
+		"tailwindcss:build": "tailwindcss -i frontend/assets/styles/tailwind.css -o _site/assets/styles/base.css",
+		"tailwindcss:watch": "tailwindcss -i frontend/assets/styles/tailwind.css -o _site/assets/styles/base.css --watch",
 		"vite:dev": "vite",
-		"vite:build": "vite build",
+		"vite:build": "vite build && node copy-html.js",
 		"vite:watch": "vite watch"
 	},
 	"workspaces": [
@@ -26,6 +26,7 @@
 	],
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.11",
+		"glob": "^11.0.3",
 		"luxon": "^3.7.1",
 		"tailwindcss": "^4.1.11"
 	},
@@ -43,7 +44,8 @@
 		"postcss": "^8.5.6",
 		"postcss-import": "^16.1.1",
 		"prettier": "^3.6.2",
-		"slugify": "^1.6.6"
+		"slugify": "^1.6.6",
+		"vite-plugin-static-copy": "^3.1.2"
 	},
 	"overrides": {
 		"devalue": "5.3.2"
