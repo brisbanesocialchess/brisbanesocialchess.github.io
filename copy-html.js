@@ -23,10 +23,10 @@ function getAllFiles(globPattern) {
 async function minifyHtml(content) {
 	return minify(content, {
 		collapseWhitespace: true,
-		removeComments: true,
-		removeEmptyAttributes: true,
 		minifyCSS: true,
 		minifyJS: true,
+		removeComments: true,
+		removeEmptyAttributes: true,
 		removeRedundantAttributes: true,
 		useShortDoctype: true,
 	});

@@ -5,7 +5,7 @@ import prettierConfig from 'eslint-config-prettier';
 export default [
 	js.configs.recommended,
 	{
-		ignores: ['**/.wrangler/**', 'doc/'],
+		ignores: ['**/.wrangler/**', 'doc/', '_site/', 'deploy/', 'node_modules/'],
 	},
 	{
 		files: ['**/*.js'],

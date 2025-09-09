@@ -1,5 +1,3 @@
-// main-entry.js
-
 // --- Ignore lists ---
 const ignoreCss = ['tailwind.css'];
 const ignoreJs = [];

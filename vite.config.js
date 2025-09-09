@@ -19,8 +19,8 @@ export default defineConfig({
 			plugins: [postcssImport()],
 		},
 	},
-	root: './_site',
 	plugins: [],
+	root: './_site',
 	server: {
 		port: 5173,
 		strictPort: true,
