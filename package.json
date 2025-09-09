@@ -18,7 +18,7 @@
 		"tailwindcss:build": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css",
 		"tailwindcss:watch": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
-		"vite:build": "node copy-html.js && vite build",
+		"vite:build": "node copy-html.js && vite build && node merge-assets.js",
 		"vite:watch": "vite watch",
 		"vite:preview": "vite preview"
 	},
