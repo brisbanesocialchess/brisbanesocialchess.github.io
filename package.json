@@ -15,10 +15,10 @@
 		"build": "npm run tailwindcss:build && npm run 11ty:build",
 		"11ty:watch": "eleventy --serve --input=frontend",
 		"11ty:build": "eleventy --input=frontend",
-		"tailwindcss:build": "tailwindcss -i frontend/assets/styles/tailwind.css -o _site/assets/styles/base.css",
-		"tailwindcss:watch": "tailwindcss -i frontend/assets/styles/tailwind.css -o _site/assets/styles/base.css --watch",
+		"tailwindcss:build": "tailwindcss -i frontend/assets/styles/tailwind.css -o frontend/assets/styles/base.css",
+		"tailwindcss:watch": "tailwindcss -i frontend/assets/styles/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
-		"vite:build": "vite build && node copy-html.js",
+		"vite:build": "npm run tailwindcss:build && vite build && node copy-html.js",
 		"vite:watch": "vite watch"
 	},
 	"workspaces": [
