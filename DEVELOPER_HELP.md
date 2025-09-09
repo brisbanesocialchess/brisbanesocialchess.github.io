@@ -94,7 +94,7 @@ These checks ensure your code follows the project's style guidelines and passes 
 
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network with a single command - no infrastructure to manage, no complex configuration.
 
-[Lerna](https://lerna.js.org/) is a fast, modern build tool for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
+[Lerna](https://lerna.js.org/) is a tool for optimizing the workflow around managing multi-package repositories (monorepos).
 
 [Vitest](https://vitest.dev/) is a blazing-fast, next-generation testing framework designed for modern JavaScript and TypeScript projects, built on top of Vite. It's known for its speed and developer experience, offering instant feedback and seamless integration with Vite's features like hot module replacement (HMR). Vitest is inspired by Jest and aims to provide a familiar yet enhanced testing experience.
 
