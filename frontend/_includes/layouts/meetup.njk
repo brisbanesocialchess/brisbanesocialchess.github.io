@@ -1,0 +1,48 @@
+---
+layout: 'layouts/base.njk'
+eleventyComputed:
+  permalink: "meetup/{{ (slug or title) | slug }}/"
+  title: "{{ title }} – {{ site.name }}"
+---
+
+<section class="px-4 max-w-3xl">
+  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+    {{ heading }}
+  </h2>
+
+  <p class="text-gray-200 text-sm"><strong>Location:</strong> {{ location }}</p>
+  <p class="text-gray-200 text-sm"><strong>Hosted by:</strong> {{ hosts | join(", ") }}</p>
+
+  {% if hosts_images %}
+  <div class="flex justify-center gap-4 flex-wrap mt-2">
+    {% for img in hosts_images %}
+    <img
+      src="{{ img.src }}"
+      alt="{{ img.alt }}"
+      class="max-w-[150px] rounded-lg"
+    />
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p class="text-sm leading-relaxed">
+    {{ description | safe }}
+  </p>
+
+  <p class="text-gray-200 text-sm"><strong>Time:</strong> {{ time }}</p>
+  <p class="text-gray-200 text-sm"><strong>When:</strong> {{ when }}</p>
+  <p class="text-gray-200 text-sm"><strong>Address:</strong> {{ address }}</p>
+
+  {% if map %}
+  <div class="mt-4">
+    <iframe
+      src="{{ map }}"
+      class="w-full h-64 rounded-lg border-0"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+  {% endif %}
+</section>
+
+<!-- {{ content | safe }} -->

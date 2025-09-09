@@ -28,6 +28,10 @@ export default function (eleventyConfig) {
 		return getUniqueTaxonomy(collectionApi, 'categories');
 	});
 
+	eleventyConfig.addCollection('meetups', (collectionApi) => {
+		return getUniqueTaxonomy(collectionApi, 'meetup');
+	});
+
 	eleventyConfig.addCollection('tags', (collectionApi) => {
 		return getUniqueTaxonomy(collectionApi, 'tags');
 	});
