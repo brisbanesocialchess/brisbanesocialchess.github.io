@@ -4,7 +4,7 @@ import postcssImport from 'postcss-import';
 
 export default defineConfig({
 	build: {
-		emptyOutDir: true,
+		emptyOutDir: false,
 		outDir: '../_deploy',
 		rollupOptions: {
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
