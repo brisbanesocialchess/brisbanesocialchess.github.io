@@ -29,6 +29,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
 [![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
 [![Discord Server](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
+[![Cloudflare Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.pages.dev&label=%F0%9F%8C%90%20cloudflare-pages)](https://brisbanesocialchess.pages.dev)
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages)](https://brisbanesocialchess.github.io)
 [![Read the Docs Documentation Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://brisbanesocialchess.readthedocs.io/en/latest/)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
