@@ -5,8 +5,7 @@ const BASE_PATH = 'frontend';
 const BASE_OUTPUT = '_site';
 
 const getUniqueTaxonomy = (collectionApi, taxonomy) => {
-	const allItems = collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`)
-		.flatMap((item) => item.data[taxonomy] || []);
+	const allItems = collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`).flatMap((item) => item.data[taxonomy] || []);
 	return [...new Set(allItems)];
 };
 
@@ -22,8 +21,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy(`${BASE_PATH}/assets`);
 
 	eleventyConfig.addCollection('posts', (collectionApi) => {
-		return collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`)
-			.sort((a, b) => b.date - a.date);
+		return collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`).sort((a, b) => b.date - a.date);
 	});
 
 	eleventyConfig.addCollection('categories', (collectionApi) => {
