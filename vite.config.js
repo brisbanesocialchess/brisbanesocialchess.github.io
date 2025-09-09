@@ -14,12 +14,12 @@ export default defineConfig({
 			},
 		},
 	},
-	root: './_site',
 	css: {
 		postcss: {
 			plugins: [postcssImport()],
 		},
 	},
+	root: './_site',
 	plugins: [],
 	server: {
 		port: 5173,

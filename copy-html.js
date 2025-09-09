@@ -25,9 +25,9 @@ async function minifyHtml(content) {
 		collapseWhitespace: true,
 		removeComments: true,
 		removeEmptyAttributes: true,
-		removeRedundantAttributes: true,
 		minifyCSS: true,
 		minifyJS: true,
+		removeRedundantAttributes: true,
 		useShortDoctype: true,
 	});
 }
