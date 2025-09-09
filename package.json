@@ -27,6 +27,7 @@
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.11",
 		"glob": "^11.0.3",
+		"html-minifier-terser": "^7.2.0",
 		"luxon": "^3.7.1",
 		"tailwindcss": "^4.1.11"
 	},
