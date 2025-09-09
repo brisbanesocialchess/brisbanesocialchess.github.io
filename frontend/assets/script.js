@@ -4,8 +4,8 @@ const MIN_AGE = 5;
 const MAX_AGE = 120;
 
 // Elements
-const elmToggleBtn = document.getElementById("menu-toggle");
-const elmMenu = document.getElementById("menu");
+const elmToggleBtn = document.getElementById('menu-toggle');
+const elmMenu = document.getElementById('menu');
 const elmYear = document.getElementById('year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
@@ -133,8 +133,8 @@ window.addEventListener('message', (e) => {
 
 // Events
 if (elmToggleBtn && elmMenu) {
-	elmToggleBtn.addEventListener("click", () => {
-		elmMenu.classList.toggle("hidden");
+	elmToggleBtn.addEventListener('click', () => {
+		elmMenu.classList.toggle('hidden');
 		const isExpanded = !elmMenu.classList.contains('hidden');
 		elmToggleBtn.setAttribute('aria-expanded', isExpanded);
 	});
