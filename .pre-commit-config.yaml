@@ -52,7 +52,7 @@ repos:
         name: Run prettier
         description: format files with prettier
         entry: prettier --config .github/linters/.prettierrc --write
-        files: \.(css|json|md|ya?ml)$
+        files: \.(css|js|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
       - id: npm-audit
