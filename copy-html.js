@@ -10,74 +10,74 @@ const DEST_FOLDER = path.resolve('./_deploy');
 // Utility functions
 // -------------------------
 function ensureDir(filePath) {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+	fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
 function getAllFiles(globPattern) {
-  return globSync(globPattern);
+	return globSync(globPattern);
 }
 
 // -------------------------
 // HTML processing
 // -------------------------
 async function minifyHtml(content) {
-  return minify(content, {
-    collapseWhitespace: true,
-    removeComments: true,
-    removeRedundantAttributes: true,
-    removeEmptyAttributes: true,
-    useShortDoctype: true,
-    minifyJS: true,
-    minifyCSS: true,
-  });
+	return minify(content, {
+		collapseWhitespace: true,
+		removeComments: true,
+		removeRedundantAttributes: true,
+		removeEmptyAttributes: true,
+		useShortDoctype: true,
+		minifyJS: true,
+		minifyCSS: true,
+	});
 }
 
 async function copyAndMinifyHtmlFiles() {
-  const htmlFiles = getAllFiles(`${SRC_FOLDER}/**/*.html`);
-  console.log('HTML files found:', htmlFiles.length);
+	const htmlFiles = getAllFiles(`${SRC_FOLDER}/**/*.html`);
+	console.log('HTML files found:', htmlFiles.length);
 
-  for (const file of htmlFiles) {
-    const relativePath = path.relative(SRC_FOLDER, file);
-    const destPath = path.join(DEST_FOLDER, relativePath);
+	for (const file of htmlFiles) {
+		const relativePath = path.relative(SRC_FOLDER, file);
+		const destPath = path.join(DEST_FOLDER, relativePath);
 
-    ensureDir(destPath);
+		ensureDir(destPath);
 
-    const content = fs.readFileSync(file, 'utf-8');
-    const minified = await minifyHtml(content);
+		const content = fs.readFileSync(file, 'utf-8');
+		const minified = await minifyHtml(content);
 
-    fs.writeFileSync(destPath, minified, 'utf-8');
-  }
+		fs.writeFileSync(destPath, minified, 'utf-8');
+	}
 
-  console.log(`✅ ${htmlFiles.length} HTML files copied and minified to _deploy.`);
+	console.log(`✅ ${htmlFiles.length} HTML files copied and minified to _deploy.`);
 }
 
 // -------------------------
 // Static assets processing
 // -------------------------
 function copyStaticAssets(directories) {
-  directories.forEach((dir) => {
-    const srcPath = path.join(SRC_FOLDER, dir);
-    const destPath = path.join(DEST_FOLDER, 'assets', path.basename(dir));
+	directories.forEach((dir) => {
+		const srcPath = path.join(SRC_FOLDER, dir);
+		const destPath = path.join(DEST_FOLDER, 'assets', path.basename(dir));
 
-    if (!fs.existsSync(srcPath)) return;
+		if (!fs.existsSync(srcPath)) return;
 
-    const files = getAllFiles(`${srcPath}/**/*.*`);
+		const files = getAllFiles(`${srcPath}/**/*.*`);
 
-    files.forEach((file) => {
-      const relative = path.relative(srcPath, file);
-      const target = path.join(destPath, relative);
-      ensureDir(target);
-      fs.copyFileSync(file, target);
-    });
+		files.forEach((file) => {
+			const relative = path.relative(srcPath, file);
+			const target = path.join(destPath, relative);
+			ensureDir(target);
+			fs.copyFileSync(file, target);
+		});
 
-    console.log(`✅ Copied ${files.length} files from ${dir} to _deploy/assets/${path.basename(dir)}`);
-  });
+		console.log(`✅ Copied ${files.length} files from ${dir} to _deploy/assets/${path.basename(dir)}`);
+	});
 }
 
 // -------------------------
 // Main execution
 // -------------------------
 (async function main() {
-  await copyAndMinifyHtmlFiles();
-  copyStaticAssets(['assets/images', 'assets/pictures']);
+	await copyAndMinifyHtmlFiles();
+	copyStaticAssets(['assets/images', 'assets/pictures']);
 })();
