@@ -24,6 +24,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![Build and Deploy Eleventy site](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml)
 [![CI - Build Eleventy on PR](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml)
 [![Wrangler](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
+[![Read the Docs Documentation Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://app.readthedocs.org/projects/brisbanesocialchess/builds/?version__slug=latest)
 [![Pages Build Deployment](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
 
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
@@ -31,7 +32,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![Discord Server](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
 [![Cloudflare Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.pages.dev&label=%F0%9F%8C%90%20cloudflare-pages)](https://brisbanesocialchess.pages.dev)
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages)](https://brisbanesocialchess.github.io)
-[![Read the Docs Documentation Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://brisbanesocialchess.readthedocs.io/en/latest/)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 [![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
 
