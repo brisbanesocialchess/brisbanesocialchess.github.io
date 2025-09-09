@@ -7,14 +7,14 @@
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint-fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
 		"test": "npx lerna run test --stream",
-		"dev": "vite",
 		"start": "concurrently \"npm run tailwindcss:watch\" \"npx @11ty/eleventy --serve --input=frontend\"",
 		"build": "npm run tailwindcss:build && npx @11ty/eleventy --input=frontend",
-		"vite-build": "vite build",
 		"tailwindcss:build": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css",
 		"tailwindcss:build2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css",
 		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch",
-		"tailwindcss:watch2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css --watch"
+		"tailwindcss:watch2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css --watch",
+		"vite-dev": "vite",
+		"vite-build": "vite build"
 	},
 	"workspaces": [
 		"packages/*"
