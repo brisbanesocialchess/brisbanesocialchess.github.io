@@ -42,6 +42,33 @@ repos:
         entry: npm run build
         language: system
         pass_filenames: false
+      - id: test-lerna
+        name: Run test-lerna
+        description: Run lerna tests
+        entry: npx lerna run test -- --run
+        language: system
+        pass_filenames: false
+      - id: prettier
+        name: Run prettier
+        description: format files with prettier
+        entry: prettier --config .github/linters/.prettierrc --write
+        files: \.(css|json|md|ya?ml)$
+        language: node
+        additional_dependencies: ['prettier@3.6.2']
+      - id: npm-audit
+        name: Run npm-audit
+        description: Run npm audit
+        entry: npm audit --audit-level=high
+        language: system
+        pass_filenames: false
+      - id: check-zip-file-is-not-committed
+        name: Check no zip files are committed
+        description: Zip files are not allowed in the repository
+        language: fail
+        entry: |
+          Zip files are not allowed in the repository as they are hard to
+          track and have security implications. Please remove the zip file from the repository.
+        files: (?i)\.zip$
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
@@ -129,41 +156,6 @@ repos:
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
-  - repo: local
-    hooks:
-      - id: npm-ci
-        name: Run npm-ci
-        description: Run npm ci install
-        entry: npm ci
-        language: system
-        pass_filenames: false
-      - id: test-lerna
-        name: Run test-lerna
-        description: Run learn tests
-        entry: npx lerna run test -- --run
-        language: system
-        pass_filenames: false
-      - id: prettier
-        name: Run prettier
-        description: format files with prettier
-        entry: prettier --config .github/linters/.prettierrc --write
-        files: \.(css|json|md|ya?ml)$
-        language: node
-        additional_dependencies: ['prettier@3.6.2']
-      - id: npm-audit
-        name: Run npm-audit
-        description: Run npm audit
-        entry: npm audit --audit-level=high
-        language: system
-        pass_filenames: false
-      - id: check-zip-file-is-not-committed
-        name: Check no zip files are committed
-        description: Zip files are not allowed in the repository
-        language: fail
-        entry: |
-          Zip files are not allowed in the repository as they are hard to
-          track and have security implications. Please remove the zip file from the repository.
-        files: (?i)\.zip$
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v9.33.0
     hooks:
