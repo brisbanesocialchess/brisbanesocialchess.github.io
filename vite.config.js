@@ -3,9 +3,9 @@ import { defineConfig } from "vite";
 export default defineConfig({
   build: {
     emptyOutDir: true,
-    outDir: '../frontend/assets',
+    outDir: '../_build',
   },
-  root: './frontend',
+  root: './_site',
   server: {
     port: 5173,
     strictPort: true,
