@@ -15,13 +15,11 @@ export default defineConfig({
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
 						return 'assets/style.css';
 					}
-					else if (assetInfo.originalFileNames?.includes('assets/images/')) {
-						const name = assetInfo.name.replace('images/', '');
-						return `assets/images/${name}`;
+					else if (assetInfo.originalFileNames?.some(name => name.includes('assets/images/'))) {
+						return `assets/images/${assetInfo.name}`;
 					}
-					else if (assetInfo.originalFileNames?.includes('assets/pictures/')) {
-						const name = assetInfo.name.replace('pictures/', '');
-						return `assets/pictures/${name}`;
+					else if (assetInfo.originalFileNames?.some(name => name.includes('assets/pictures/'))) {
+						return `assets/pictures/${assetInfo.name}`;
 					}
 					return 'assets/[name][extname]';
 				},
