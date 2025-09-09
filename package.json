@@ -12,13 +12,13 @@
 		"dev": "npm run watch",
 		"start": "npm run watch",
 		"watch": "concurrently \"npm run tailwindcss:watch\" \"npm run vite:watch\" \"npm run 11ty:watch\"",
-		"build": "npm run tailwindcss:build && npm run 11ty:build",
+		"build": "npm run tailwindcss:build && npm run 11ty:build && vite build && node copy-html.js",
 		"11ty:watch": "eleventy --serve --input=frontend",
 		"11ty:build": "eleventy --input=frontend",
 		"tailwindcss:build": "tailwindcss -i frontend/assets/styles/tailwind.css -o frontend/assets/styles/base.css",
 		"tailwindcss:watch": "tailwindcss -i frontend/assets/styles/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
-		"vite:build": "npm run tailwindcss:build && vite build && node copy-html.js",
+		"vite:build": "vite build",
 		"vite:watch": "vite watch"
 	},
 	"workspaces": [
