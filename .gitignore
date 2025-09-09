@@ -1,6 +1,6 @@
 # Site builder
 _site
-_build
+_deploy
 
 # Editor directories
 .vscode/

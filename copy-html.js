@@ -3,7 +3,7 @@ import path from 'path';
 import { globSync } from 'glob';
 
 const srcFolder = path.resolve('./_site');
-const destFolder = path.resolve('./_build');
+const destFolder = path.resolve('./_deploy');
 
 const files = globSync(`${srcFolder}/**/*.html`);
 console.log('HTML files found:', files);
@@ -16,4 +16,4 @@ files.forEach(file => {
   fs.copyFileSync(file, destPath);
 });
 
-console.log(`${files.length} HTML files copied to _build.`);
+console.log(`${files.length} HTML files copied to _deploy.`);
