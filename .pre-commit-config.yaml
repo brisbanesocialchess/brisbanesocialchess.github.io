@@ -44,7 +44,7 @@ repos:
         pass_filenames: false
       - id: test-lerna
         name: Run test-lerna
-        description: Run learn tests
+        description: Run lerna tests
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
