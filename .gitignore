@@ -52,5 +52,4 @@ public/
 # Python
 .venv
 
-frontend/assets/dist
-frontend/assets/tailwind.css
+frontend/assets/styles/base.css
