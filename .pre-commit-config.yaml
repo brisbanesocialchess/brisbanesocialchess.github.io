@@ -162,7 +162,7 @@ repos:
       - id: eslint
         name: Find and fix problems in your JavaScript code
         description: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline
-        entry: eslint --config .github/linters/eslint.config.mjs --fix
+        entry: eslint --config .github/linters/eslint.config.js --fix
         language: node
         files: \.(cjs|js|mjs)$
   - repo: https://github.com/igorshubovych/markdownlint-cli

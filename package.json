@@ -6,8 +6,8 @@
 	"scripts": {
 		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{js,json,yaml,yml,css,md}\"",
 		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{js,json,yaml,yml,css,md}\"",
-		"lint": "eslint --config .github/linters/eslint.config.mjs .",
-		"lint:fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
+		"lint": "eslint --config .github/linters/eslint.config.js .",
+		"lint:fix": "eslint --config .github/linters/eslint.config.js . --fix",
 		"test": "npx lerna run test --stream",
 		"dev": "npm run watch",
 		"start": "npm run watch",
