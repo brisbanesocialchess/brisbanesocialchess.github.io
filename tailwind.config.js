@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./_site/**/*.{html}'],
+	plugins: [],
 	theme: {
 		extend: {
 			fontFamily: {
@@ -8,7 +9,6 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
 	safelist: [
 		'role-admin',
 		'role-developer',

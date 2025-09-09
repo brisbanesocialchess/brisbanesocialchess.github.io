@@ -26,9 +26,9 @@ async function minifyHtml(content) {
 		removeComments: true,
 		removeRedundantAttributes: true,
 		removeEmptyAttributes: true,
-		useShortDoctype: true,
-		minifyJS: true,
 		minifyCSS: true,
+		minifyJS: true,
+		useShortDoctype: true,
 	});
 }
 

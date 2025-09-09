@@ -10,11 +10,11 @@ export default [
   {
     files: ['**/*.js'],
     languageOptions: {
-      sourceType: 'module',
       globals: {
         ...globals.browser,
         ...globals.node,
       },
+      sourceType: 'module',
     },
     rules: {
       'sort-keys': ['error', 'asc', { caseSensitive: true, minKeys: 2, natural: false }],
