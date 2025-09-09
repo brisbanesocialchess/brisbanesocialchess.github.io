@@ -60,7 +60,7 @@
             </span>
           </div>
           <div id="menu"
-              class="hidden flex-col items-center justify-center space-y-2 mt-4 text-center text-sm md:flex md:flex-row md:space-y-0 md:space-x-2 md:mt-0">
+              class="flex-wrap hidden flex-col items-center justify-center space-y-2 mt-4 text-center text-sm md:flex md:flex-row md:space-y-0 md:space-x-2 md:mt-0">
             {% for link in navigation.navLinks -%}
             <a href="{{ link.url | url  }}"
               class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
