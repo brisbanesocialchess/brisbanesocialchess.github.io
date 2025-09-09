@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./_site/**/*.{html}'],
+	theme: {
+		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
+		},
+	},
 	plugins: [],
 	safelist: [
 		'role-admin',
@@ -14,5 +21,4 @@ module.exports = {
 		'role-event-organizers',
 		'role-assistant-organizers',
 	],
-	theme: {},
 };

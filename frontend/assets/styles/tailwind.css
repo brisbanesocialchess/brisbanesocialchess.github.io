@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 @import 'tailwindcss';
 
 @tailwind base;
@@ -6,6 +8,9 @@
 
 :root {
 	--role-border: 2px solid;
+}
+body {
+	font-family: Montserrat;
 }
 @theme {
 	--color-table-header: #091a52;
