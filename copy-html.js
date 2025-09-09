@@ -24,8 +24,8 @@ async function minifyHtml(content) {
 	return minify(content, {
 		collapseWhitespace: true,
 		removeComments: true,
-		removeRedundantAttributes: true,
 		removeEmptyAttributes: true,
+		removeRedundantAttributes: true,
 		minifyCSS: true,
 		minifyJS: true,
 		useShortDoctype: true,

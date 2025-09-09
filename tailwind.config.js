@@ -2,13 +2,6 @@
 module.exports = {
 	content: ['./_site/**/*.{html}'],
 	plugins: [],
-	theme: {
-		extend: {
-			fontFamily: {
-				montserrat: ['Montserrat', 'sans-serif'],
-			},
-		},
-	},
 	safelist: [
 		'role-admin',
 		'role-developer',
@@ -21,4 +14,11 @@ module.exports = {
 		'role-event-organizers',
 		'role-assistant-organizers',
 	],
+	theme: {
+		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
+		},
+	},
 };
