@@ -141,8 +141,8 @@ async function handleContact(request) {
 
 /**
  * Handles user registration by parsing the request payload and returning a JSON or error response.
- * @param {object} request - The incoming request object containing registration data.
- * @returns {Promise<object>} A promise resolving to the JSON response or error response.
+ * @param {Request} request - The incoming request object containing registration data.
+ * @returns {Promise<Response>} A promise resolving to the JSON response or error response.
  */
 async function handleRegister(request) {
 	try {
