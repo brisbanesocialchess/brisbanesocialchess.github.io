@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { globSync } from 'glob';
 
-const siteDir = path.resolve('./_site/assets');
+// const siteDir = path.resolve('./_site/assets');
 // const siteCssDir = path.join(siteDir, 'styles');
 // const siteJsDir = path.join(siteDir, 'scripts');
 
