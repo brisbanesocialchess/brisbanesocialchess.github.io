@@ -1,27 +1,34 @@
 version = 1
 
+# -------------------------
+# Python analyzer
+# -------------------------
 [[analyzers]]
 name = "python"
 enabled = true
 version = "3.11"
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 
-[[analyzers]]
-name = "javascript"
-enabled = true
-version = "es2022"
-[analyzers.meta]
-environment = ["nodejs"]
-include_patterns = ["merge-assets.js", "copy-html.js", ".eleventy.js"]
-
+# -------------------------
+# JavaScript analyzer for Node.js scripts
+# -------------------------
 [[analyzers]]
 name = "javascript"
 enabled = true
 version = "es2022"
 [analyzers.meta]
 environment = ["nodejs", "vitest"]
-include_patterns = ["packages/**/*.js"]
+include_patterns = [
+    "merge-assets.js",
+    "copy-html.js",
+    ".eleventy.js",
+    "packages/**/*.js"
+]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
 
+# -------------------------
+# JavaScript analyzer for browser
+# -------------------------
 [[analyzers]]
 name = "javascript"
 enabled = true
@@ -29,7 +36,11 @@ version = "es2022"
 [analyzers.meta]
 environment = ["browser"]
 include_patterns = ["frontend/**/*.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
 
+# -------------------------
+# Secrets, Shell, Docker
+# -------------------------
 [[analyzers]]
 name = "secrets"
 enabled = true
@@ -42,23 +53,9 @@ enabled = true
 name = "docker"
 enabled = true
 
-# You can configure specific analyzers.
-# For example, to enable a specific linter rule for Python:
-# [[analyzers.meta]]
-# name = "flake8"
-# enable_all = true
-
-# You can also set a minimum severity for issues that will be reported.
-# severity_threshold = "critical"
-# Possible values: "critical", "major", "minor", "info"
-
-# Configure transformers.
-# Transformers are used to generate code before analysis.
-# For example, if you use a build step that generates files.
-# [[transformers]]
-# name = "mypy"
-# enabled = true
-
+# -------------------------
+# Transformers
+# -------------------------
 [[transformers]]
 name = "isort"
 enabled = true
@@ -70,7 +67,3 @@ enabled = true
 [[transformers]]
 name = "prettier"
 enabled = true
-
-test_patterns = ["packages/cfsite/test/**/*.spec.js"]
-
-exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
