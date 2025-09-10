@@ -75,7 +75,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 			method: 'POST',
 		});
 
-		if (response && response.ok && response.status === 200) {
+		if (response?.ok && response?.status === 200) {
 			alert('✅ Submission successful!');
 			form.reset();
 		} else {
