@@ -25,7 +25,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![CI - Build Eleventy on PR](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml)
 [![Wrangler Deploy status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
 [![Read the Docs Build Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://app.readthedocs.org/projects/brisbanesocialchess/builds/?version__slug=latest)
-[![GitHub Pages Build Deployment](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
+[![GitHub Pages Build Deployment status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
 
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
 [![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
