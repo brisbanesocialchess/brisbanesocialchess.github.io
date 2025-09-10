@@ -1,24 +1,52 @@
-version = 1
+# .deepsource.toml
 
-# Configure the analyzers to be used. Each analyzer gets its own [[analyzers]] block.
-[[analyzers]]
-name = "javascript"
-enabled = true
-
-    [analyzers.meta]
-    eslint_config = ".github/linters/eslint.config.mjs"
-
+# Define the analyzers for each language.
 [[analyzers]]
 name = "python"
 enabled = true
-
-    [analyzers.meta]
-    runtime_version = "3.12" # Specify the Python runtime version for the analyzer.
+# You can specify the version of Python you are using.
+# Default is '3.8'.
+# version = "3.10"
 
 [[analyzers]]
-name = "secrets"
+name = "js"
 enabled = true
+# Specify the version of JavaScript.
+# Default is 'es2018'.
+# version = "es2021"
 
-# [[analyzers]]
-# name = "test-coverage"
+[[analyzers]]
+name = "secret-detection"
+enabled = true
+# This analyzer detects hardcoded secrets like API keys and passwords.
+
+[[analyzers]]
+name = "shell"
+enabled = true
+# This analyzer checks for common issues in shell scripts.
+
+[[analyzers]]
+name = "docker"
+enabled = true
+# This analyzer checks for security and best practices in Dockerfiles.
+
+# You can configure specific analyzers.
+# For example, to enable a specific linter rule for Python:
+# [[analyzers.meta]]
+# name = "flake8"
+# enable_all = true
+
+# You can also set a minimum severity for issues that will be reported.
+# severity_threshold = "critical"
+# Possible values: "critical", "major", "minor", "info"
+
+# Configure transformers.
+# Transformers are used to generate code before analysis.
+# For example, if you use a build step that generates files.
+# [[transformers]]
+# name = "mypy"
 # enabled = true
+
+# To ignore files or paths from being analyzed.
+# [[ignore_paths]]
+# paths = ["**/vendor/", "**/dist/"]
