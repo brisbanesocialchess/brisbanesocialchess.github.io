@@ -10,13 +10,13 @@ describe('Hello World worker', () => {
 		const ctx = createExecutionContext();
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
-		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+		expect(await response.text()).toMatchInlineSnapshot('"Hello World!"');
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 
 	it('responds with Hello World! (integration style)', async () => {
 		const response = await SELF.fetch(BASE_URL);
-		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+		expect(await response.text()).toMatchInlineSnapshot('"Hello World!"');
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 });
