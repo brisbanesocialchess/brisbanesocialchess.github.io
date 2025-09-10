@@ -51,7 +51,7 @@ enabled = true
 # enabled = true
 
 # To identify test files.
-test_patterns = ["packages/cfsite/test/**"]
+test_patterns = ["packages/cfsite/test/**/*.spec.js"]
 
 # To ignore files or paths from being analyzed.
 exclude_patterns = ["**/node_modules/", "_site/"]
