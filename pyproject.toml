@@ -1,3 +1,7 @@
+[tool.isort]
+profile = "black"
+extend_skip_glob = ["packages/cfsite/node_modules"]
+
 [tool.black]
 line-length = 88
 
