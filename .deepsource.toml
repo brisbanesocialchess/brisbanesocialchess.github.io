@@ -6,6 +6,7 @@ name = "javascript"
 enabled = true
 [analyzers.meta]
 eslint_config = ".github/linters/eslint.config.mjs"
+
 [[analyzers]]
 name = "python"
 enabled = true
