@@ -19,10 +19,10 @@ version = "es2022"
 [analyzers.meta]
 environment = ["nodejs", "vitest"]
 include_patterns = [
-    "merge-assets.js",
-    "copy-html.js",
-    ".eleventy.js",
-    "packages/**/*.js"
+  "merge-assets.js",
+  "copy-html.js",
+  ".eleventy.js",
+  "packages/**/*.js",
 ]
 exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
 
