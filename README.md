@@ -101,7 +101,7 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 - [Makefile](https://en.wikipedia.org/wiki/Makefile) is a text file that contains a set of instructions used by the [make](<https://en.wikipedia.org/wiki/Make_(software)>) utility to automate the process of building and managing software projects. It defines dependencies between files and specifies the commands required to update outdated files or generate new ones.
 <!-- dprint-ignore-end -->
 
-### ⚡Cloudflare Workers Development
+### ⚡ Cloudflare Workers Development
 
 To work with the Cloudflare Workers site in the `packages/cfsite` directory:
 
