@@ -30,13 +30,10 @@ RUN groupadd -r -g 1001 appuser && useradd -m -r -u 1001 -g 1001 appuser -d /app
 WORKDIR /app
 COPY . .
 
-RUN npm install
-
-RUN npm run tailwindcss:build
-
-RUN npm run build
-
-RUN chown -R appuser:appuser /app
+RUN npm install && \
+    npm run tailwindcss:build && \
+    npm run build && \
+    chown -R appuser:appuser /app
 
 USER appuser
 
