@@ -50,11 +50,11 @@ enabled = true
 # enabled = true
 
 [[transformers]]
-name = "black"
+name = "isort"
 enabled = true
 
 [[transformers]]
-name = "isort"
+name = "black"
 enabled = true
 
 # To identify test files.
