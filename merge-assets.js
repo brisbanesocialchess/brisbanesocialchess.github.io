@@ -14,34 +14,32 @@ const mergedCssFile = path.relative(process.cwd(), path.join(cssDir, 'bundle.css
 const mergedJsFile = path.relative(process.cwd(), path.join(jsDir, 'bundle.js'));
 
 // --- Merge CSS ---
-const cssFiles = globSync(`${cssDir}/*.css`)
-  .filter(f => f !== mergedCssFile);
+const cssFiles = globSync(`${cssDir}/*.css`).filter((f) => f !== mergedCssFile);
 let mergedCss = '';
-cssFiles.forEach(file => {
-  const content = fs.readFileSync(file, 'utf-8');
-  mergedCss += content + '\n';
+cssFiles.forEach((file) => {
+	const content = fs.readFileSync(file, 'utf-8');
+	mergedCss += content + '\n';
 });
 
 if (cssFiles.length > 0) {
-  fs.writeFileSync(mergedCssFile, mergedCss, 'utf-8');
-  console.log(`✅ Merged ${cssFiles.length} CSS files into ${mergedCssFile}`);
+	fs.writeFileSync(mergedCssFile, mergedCss, 'utf-8');
+	console.log(`✅ Merged ${cssFiles.length} CSS files into ${mergedCssFile}`);
 }
 
 // --- Merge JS ---
-const jsFiles = globSync(`${jsDir}/*.js`)
-  .filter(f => f !== mergedJsFile);
+const jsFiles = globSync(`${jsDir}/*.js`).filter((f) => f !== mergedJsFile);
 
 let mergedJs = '';
-jsFiles.forEach(file => {
-  const content = fs.readFileSync(file, 'utf-8');
-  mergedJs += content + '\n';
+jsFiles.forEach((file) => {
+	const content = fs.readFileSync(file, 'utf-8');
+	mergedJs += content + '\n';
 });
 
 fs.writeFileSync(mergedJsFile, mergedJs, 'utf-8');
 console.log(`✅ Merged ${jsFiles.length} JS files into ${mergedJsFile}`);
 
 // --- Cleanup individual files ---
-[...cssFiles, ...jsFiles].forEach(file => {
-  fs.unlinkSync(file);
+[...cssFiles, ...jsFiles].forEach((file) => {
+	fs.unlinkSync(file);
 });
 console.log(`🗑️  Removed ${cssFiles.length + jsFiles.length} original CSS/JS files, keeping only bundles`);

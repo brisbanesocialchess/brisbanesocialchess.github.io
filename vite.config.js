@@ -10,16 +10,14 @@ export default defineConfig({
 		rollupOptions: {
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
 			output: {
-		        manualChunks: undefined,
+				manualChunks: undefined,
 				assetFileNames: (assetInfo) => {
 					console.log(assetInfo);
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
 						return 'assets/styles/style.css';
-					}
-					else if (assetInfo.originalFileNames?.some(name => name.includes('assets/images/'))) {
+					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/images/'))) {
 						return `assets/images/${assetInfo.name}`;
-					}
-					else if (assetInfo.originalFileNames?.some(name => name.includes('assets/pictures/'))) {
+					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/pictures/'))) {
 						return `assets/pictures/${assetInfo.name}`;
 					}
 					return 'assets/[name][extname]';
