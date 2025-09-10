@@ -18,7 +18,7 @@ enabled = true
 version = "es2022"
 
 [[analyzers]]
-name = "secret-detection"
+name = "secrets"
 enabled = true
 # This analyzer detects hardcoded secrets like API keys and passwords.
 
