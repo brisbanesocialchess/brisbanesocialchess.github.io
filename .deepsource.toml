@@ -50,5 +50,4 @@ enabled = true
 # enabled = true
 
 # To ignore files or paths from being analyzed.
-# [[ignore_paths]]
-# paths = ["**/vendor/", "**/dist/"]
+exclude_patterns = ["**/node_modules/", "_site/"]
