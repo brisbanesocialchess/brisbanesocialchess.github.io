@@ -126,7 +126,7 @@ Read below for instructions about the current static development site hosted on 
 To start a local development server with live reload, run:
 
 ```bash
-npm run tailwindcss:watch & npm run start
+npm run start
 ```
 
 ---
