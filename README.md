@@ -1,12 +1,12 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
-  <h1>brisbanesocialchess.github.io</h1>
+  <h1>♟️ brisbanesocialchess.github.io</h1>
   <p>Welcome to the source code repository for the Brisbane Social Chess website.</p>
 </div>
 
 ---
 
-## About the Site Generator
+## ℹ️ About the Site Generator
 
 This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static site. You do not need to know advanced JavaScript to get started - just follow the steps below!
 
@@ -50,16 +50,16 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [About Brisbane Social Chess](#about-brisbane-social-chess)
-- [Quick Start](#quick-start)
-- [Technology Stack](#technology-stack)
-  - [Cloudflare Workers Development](#cloudflare-workers-development)
-    - [Start Development Server](#start-development-server)
-    - [Run Tests](#run-tests)
-  - [Getting Started / Building the Site](#getting-started--building-the-site)
-  - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
-  - [Build the Documentation](#build-the-documentation)
-- [Contributors](#contributors)
+- [♟️ About Brisbane Social Chess](#about-brisbane-social-chess)
+- [🚀 Quick Start](#quick-start)
+- [🛠️ Technology Stack](#technology-stack)
+  - [⚡ Cloudflare Workers Development](#cloudflare-workers-development)
+    - [▶️ Start Development Server](#start-development-server)
+    - [🧪 Run Tests](#run-tests)
+  - [🏗️ Getting Started / Building the Site](#getting-started--building-the-site)
+  - [🐳 Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
+  - [📚Build the Documentation](#build-the-documentation)
+- [👥 Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
