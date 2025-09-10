@@ -12,6 +12,7 @@ export default defineConfig({
 			output: {
 		        manualChunks: undefined,
 				assetFileNames: (assetInfo) => {
+					console.log(assetInfo);
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
 						return 'assets/styles/style.css';
 					}
