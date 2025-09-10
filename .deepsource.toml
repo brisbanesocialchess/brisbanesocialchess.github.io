@@ -1,3 +1,5 @@
+version = 1
+
 # Configure the analyzers to be used. Each analyzer gets its own [[analyzers]] block.
 [[analyzers]]
 name = "javascript"
