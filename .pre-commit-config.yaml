@@ -51,7 +51,7 @@ repos:
       - id: prettier
         name: Run prettier
         description: format files with prettier
-        entry: prettier --config .github/linters/.prettierrc --write "**/*.{js,css,html,md,json}"
+        entry: prettier --write
         files: \.(css|js|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
@@ -172,7 +172,7 @@ repos:
         name: Run markdownlint
         description: MarkdownLint Command Line Interface
         types: [markdown]
-        args: ['--config', '.github/linters/.markdownlint.json']
+        args: ['--config', '.github/linters/.markdown-lint.yml']
         exclude: ^frontend/.*\.md$
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0

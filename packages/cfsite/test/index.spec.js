@@ -10,13 +10,13 @@ describe('Hello World worker', () => {
 		const ctx = createExecutionContext();
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
-		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+		expect(await response.text()).toMatchInlineSnapshot('"Hello World!"');
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 
 	it('responds with Hello World! (integration style)', async () => {
 		const response = await SELF.fetch(BASE_URL);
-		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+		expect(await response.text()).toMatchInlineSnapshot('"Hello World!"');
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 });
@@ -30,7 +30,7 @@ describe('API endpoints', () => {
 			subject: 'Subject',
 		});
 
-		const request = new Request(BASE_URL + '/api/contact', {
+		const request = new Request(`${BASE_URL}/api/contact`, {
 			body,
 			headers: { 'Content-Type': 'application/json' },
 			method: 'POST',
@@ -57,7 +57,7 @@ describe('API endpoints', () => {
 			lname: 'Base',
 		});
 
-		const request = new Request(BASE_URL + '/api/register', {
+		const request = new Request(`${BASE_URL}/api/register`, {
 			body,
 			headers: { 'Content-Type': 'application/json' },
 			method: 'POST',
@@ -75,7 +75,7 @@ describe('API endpoints', () => {
 	});
 
 	it('responds with 404 for unknown routes', async () => {
-		const request = new Request(BASE_URL + '/api/unknown', {
+		const request = new Request(`${BASE_URL}/api/unknown`, {
 			method: 'GET',
 		});
 		const ctx = createExecutionContext();
@@ -91,7 +91,7 @@ describe('API endpoints', () => {
 	});
 
 	it('responds to OPTIONS preflight request', async () => {
-		const request = new Request(BASE_URL + '/api/contact', {
+		const request = new Request(`${BASE_URL}/api/contact`, {
 			headers: {
 				'Access-Control-Request-Headers': 'Content-Type',
 				'Access-Control-Request-Method': 'POST',

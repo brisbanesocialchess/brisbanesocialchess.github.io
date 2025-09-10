@@ -34,11 +34,14 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![GitHub Pages](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages)](https://brisbanesocialchess.github.io)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 [![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
+[![DeepSource active issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
+[![DeepSource resolved issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=resolved+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
-- **Current Development site:** [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
-- **Cloudflare Playground:** [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
-- **Read the Docs:** [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
+- **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
+- **Cloudflare Pages:** Pull request deploy previews [https://brisbanesocialchess.pages.dev/](https://brisbanesocialchess.pages.dev/)
+- **Cloudflare Workers:** Playground [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
+- **Read the Docs:** Skeleton book and documentation site [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
 - [DEVELOPER_HELP Guide](DEVELOPER_HELP.md)
 
@@ -125,7 +128,7 @@ Read below for instructions about the current static development site hosted on 
 To start a local development server with live reload, run:
 
 ```bash
-npm run tailwindcss:watch & npm run start
+npm run start
 ```
 
 ---
