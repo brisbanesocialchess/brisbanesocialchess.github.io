@@ -4,9 +4,11 @@
 [[analyzers]]
 name = "python"
 enabled = true
-# You can specify the version of Python you are using.
-# Default is '3.8'.
-# version = "3.10"
+version = "3.11"
+
+[analyzers.meta]
+pylint_enabled = true
+black_enabled = true
 
 [[analyzers]]
 name = "js"
