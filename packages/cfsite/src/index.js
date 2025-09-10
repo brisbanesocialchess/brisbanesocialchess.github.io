@@ -118,7 +118,7 @@ async function handleRegister(request) {
 	}
 }
 
-async function handleGetRoot(request) {
+function handleGetRoot(request) {
 	return new Response('Hello World!', {
 		headers: {
 			...getCorsHeaders(request),
@@ -129,7 +129,7 @@ async function handleGetRoot(request) {
 	});
 }
 
-async function handleHealthCheck(request) {
+function handleHealthCheck(request) {
 	return createJsonResponse({ status: 'ok', uptime: Date.now() }, request);
 }
 
