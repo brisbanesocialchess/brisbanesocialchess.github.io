@@ -14,7 +14,7 @@ dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 name = "javascript"
 enabled = true
 version = "es2022"
-environment = ["vitest"]
+environment = ["vitest", "browser", "nodejs"]
 
 [[analyzers]]
 name = "secrets"
