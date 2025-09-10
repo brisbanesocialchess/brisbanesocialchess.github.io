@@ -15,7 +15,7 @@ name = "js"
 enabled = true
 # Specify the version of JavaScript.
 # Default is 'es2018'.
-# version = "es2021"
+version = "es2022"
 
 [[analyzers]]
 name = "secret-detection"
