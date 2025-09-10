@@ -172,7 +172,7 @@ repos:
         name: Run markdownlint
         description: MarkdownLint Command Line Interface
         types: [markdown]
-        args: ['--config', '.github/linters/.markdownlint.json']
+        args: ['--config', '.github/linters/.markdown-lint.yml']
         exclude: ^frontend/.*\.md$
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0

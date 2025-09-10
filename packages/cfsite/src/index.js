@@ -12,12 +12,18 @@ const routes = {
 
 // Functions
 function uuidv4() {
-	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-		const v = c === 'x' ? c : (c & 0x3) | 0x8;
-		return v.toString(16);
+	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (matchedChar) => {
+		const hexValue = matchedChar === 'x' ? matchedChar : (matchedChar & 0x3) | 0x8;
+		return hexValue.toString(16);
 	});
 }
 
+/**
+ * Returns CORS headers for the given request's origin.
+ *
+ * @param {Request} request - The incoming HTTP request object.
+ * @returns {Object<string, string>} A map of CORS headers.
+ */
 function getCorsHeaders(request) {
 	const origin = request.headers.get('Origin') || '*';
 	if (!corsHeadersCache.has(origin)) {
@@ -32,6 +38,10 @@ function getCorsHeaders(request) {
 	return corsHeadersCache.get(origin);
 }
 
+/**
+ * Returns security headers to enhance response security.
+ * @returns {Object<string, string>} An object mapping header names to their security policies.
+ */
 function getSecurityHeaders() {
 	return {
 		'Referrer-Policy': 'no-referrer',
@@ -40,6 +50,13 @@ function getSecurityHeaders() {
 	};
 }
 
+/**
+ * Creates a JSON HTTP response with appropriate headers.
+ * @param {any} data - The data to be JSON-serialized and sent as the response body.
+ * @param {Request} request - The request object used to generate CORS headers.
+ * @param {number} [status=200] - The HTTP status code for the response.
+ * @returns {Response} The constructed Response object with JSON body and headers.
+ */
 function createJsonResponse(data, request, status = 200) {
 	return new Response(JSON.stringify(data), {
 		headers: {
@@ -51,10 +68,24 @@ function createJsonResponse(data, request, status = 200) {
 	});
 }
 
+/**
+ * Creates a JSON error response with the specified message and HTTP status code.
+ *
+ * @param {string} message - The error message to include in the response.
+ * @param {Request} request - The original request object.
+ * @param {number} [status=400] - The HTTP status code for the error response.
+ * @returns {Response} The generated JSON error response.
+ */
 function createErrorResponse(message, request, status = 400) {
 	return createJsonResponse({ message, status: 'error' }, request, status);
 }
 
+/**
+ * Handles HTTP OPTIONS requests by returning a 204 No Content response with CORS and security headers.
+ *
+ * @param {Request} request - The incoming HTTP request.
+ * @returns {Response} The HTTP response with appropriate headers and status.
+ */
 function handleOptions(request) {
 	return new Response(null, {
 		headers: {
@@ -65,6 +96,13 @@ function handleOptions(request) {
 	});
 }
 
+/**
+ * Parses the JSON payload from the given request, ensuring it does not exceed the maximum allowed size.
+ *
+ * @param {Request} request - The HTTP request containing the JSON payload.
+ * @returns {Promise<any>} The parsed JSON object.
+ * @throws {Error} If the payload is too large or invalid JSON.
+ */
 async function parseJson(request) {
 	const maxBodySize = 1_000_000;
 	const contentLength = request.headers.get('content-length');
@@ -101,6 +139,11 @@ async function handleContact(request) {
 	}
 }
 
+/**
+ * Handles user registration by parsing the request payload and returning a JSON or error response.
+ * @param {Request} request - The incoming request object containing registration data.
+ * @returns {Promise<Response>} A promise resolving to the JSON response or error response.
+ */
 async function handleRegister(request) {
 	try {
 		// discordusername
@@ -118,7 +161,12 @@ async function handleRegister(request) {
 	}
 }
 
-async function handleGetRoot(request) {
+/**
+ * Handles GET requests to the root endpoint by returning a "Hello World!" response.
+ * @param {Request} request - The incoming HTTP request object.
+ * @returns {Response} The HTTP response containing "Hello World!" message with CORS and security headers.
+ */
+function handleGetRoot(request) {
 	return new Response('Hello World!', {
 		headers: {
 			...getCorsHeaders(request),
@@ -129,7 +177,12 @@ async function handleGetRoot(request) {
 	});
 }
 
-async function handleHealthCheck(request) {
+/**
+ * Handles the health check endpoint by returning a JSON response with status and uptime.
+ * @param {Request} request - The incoming HTTP request object.
+ * @returns {Response} JSON response containing the status and server uptime.
+ */
+function handleHealthCheck(request) {
 	return createJsonResponse({ status: 'ok', uptime: Date.now() }, request);
 }
 
