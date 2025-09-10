@@ -17,8 +17,8 @@ function getCurrentYear() {
 }
 
 function showAlert(errors) {
-	if (errors.length === 1) alert('Please fix the error: ' + errors.join(' '));
-	else alert('Please fix the following:\n- ' + errors.join('\n- '));
+	if (errors.length === 1) alert(`Please fix the error: ${errors.join(' ')}`);
+	else alert(`Please fix the following:\n- ${errors.join('\n- ')}`);
 }
 
 function isValidEmail(email) {
@@ -83,10 +83,10 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 			try {
 				const result = await response.json();
 				const errorMessage = result.message || defaultErrorMessage;
-				alert('❌ Error: ' + errorMessage);
+				alert(`❌ Error: ${errorMessage}`);
 			} catch (e) {
 				console.error('Error parsing JSON response:', e);
-				alert('❌ Error: ' + defaultErrorMessage);
+				alert(`❌ Error: ${defaultErrorMessage}`);
 			}
 		}
 	} catch (err) {
@@ -98,12 +98,12 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 // Event Bindings
 elmFormRegister?.addEventListener('submit', async (e) => {
 	e.preventDefault();
-	await handleFormSubmit(elmFormRegister, API_BASE + '/api/register', validateRegisterForm);
+	await handleFormSubmit(elmFormRegister, `${API_BASE}/api/register`, validateRegisterForm);
 });
 
 elmFormContact?.addEventListener('submit', async (e) => {
 	e.preventDefault();
-	await handleFormSubmit(elmFormContact, API_BASE + '/api/contact', validateContactForm);
+	await handleFormSubmit(elmFormContact, `${API_BASE}/api/contact`, validateContactForm);
 });
 
 // Init
