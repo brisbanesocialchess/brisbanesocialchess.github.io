@@ -10,8 +10,8 @@ enabled = true
 [[analyzers]]
 name = "python"
 enabled = true
-[analyzers.meta]
-runtime_version = "3.12" # Specify the Python runtime version for the analyzer.
+    [analyzers.meta]
+    runtime_version = "3.12" # Specify the Python runtime version for the analyzer.
 
 [[analyzers]]
 name = "secrets"
