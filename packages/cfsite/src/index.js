@@ -40,7 +40,7 @@ function getCorsHeaders(request) {
 
 /**
  * Returns security headers to enhance response security.
- * @returns {{[header: string]: string}} An object mapping header names to their security policies.
+ * @returns {Object<string, string>} An object mapping header names to their security policies.
  */
 function getSecurityHeaders() {
 	return {
