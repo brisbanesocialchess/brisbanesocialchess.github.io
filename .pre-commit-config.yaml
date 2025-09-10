@@ -3,7 +3,7 @@ default_stages: [pre-commit, pre-push]
 default_language_version:
   python: python3
   node: 22.18.0
-minimum_pre_commit_version: '3.2.0'
+minimum_pre_commit_version: "3.2.0"
 repos:
   - repo: meta
     hooks:
@@ -27,7 +27,7 @@ repos:
       - id: chmod
         name: Set file permissions
         description: Does not run on Windows so setup as a manual hook
-        args: ['644']
+        args: ["644"]
         files: \.md$
         stages: [manual]
   - repo: local
@@ -54,7 +54,7 @@ repos:
         entry: prettier --config .github/linters/.prettierrc --write
         files: \.(css|js|json|md|ya?ml)$
         language: node
-        additional_dependencies: ['prettier@3.6.2']
+        additional_dependencies: ["prettier@3.6.2"]
       - id: npm-audit
         name: Run npm-audit
         description: Run npm audit
@@ -142,7 +142,7 @@ repos:
       - id: check-added-large-files
         name: Run check-added-large-files
         description: Prevent giant files from being committed
-        args: ['--maxkb=1500']
+        args: ["--maxkb=1500"]
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
@@ -155,7 +155,7 @@ repos:
       - id: oxipng
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
-        args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+        args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v9.33.0
     hooks:
@@ -172,7 +172,7 @@ repos:
         name: Run markdownlint
         description: MarkdownLint Command Line Interface
         types: [markdown]
-        args: ['--config', '.github/linters/.markdownlint.json']
+        args: ["--config", ".github/linters/.markdownlint.json"]
         exclude: ^frontend/.*\.md$
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
@@ -213,7 +213,7 @@ repos:
       - id: bandit
         name: A security linter from PyCQA
         description: Bandit is a tool designed to find common security issues in Python code
-        args: ['-c', 'pyproject.toml', '-r', 'scripts']
+        args: ["-c", "pyproject.toml", "-r", "scripts"]
         types: [python]
         pass_filenames: false
   - repo: https://github.com/pre-commit/mirrors-mypy
@@ -230,7 +230,7 @@ repos:
         name: Run flake8
         description: flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code
         types: [python]
-        args: ['--config', '.github/linters/.flake8']
+        args: ["--config", ".github/linters/.flake8"]
   - repo: local
     hooks:
       - id: pylint
@@ -238,4 +238,4 @@ repos:
         entry: pylint
         language: system
         types: [python]
-        args: ['-rn', '--rcfile=.github/linters/.pylintrc']
+        args: ["-rn", "--rcfile=.github/linters/.pylintrc"]

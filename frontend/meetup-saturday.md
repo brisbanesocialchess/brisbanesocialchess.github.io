@@ -1,6 +1,6 @@
 ---
 permalink: /meetup/saturday/
-layout: 'layouts/base.njk'
+layout: "layouts/base.njk"
 title: Saturday Chess Meetup | Brisbane Social Chess Club
 ---
 
