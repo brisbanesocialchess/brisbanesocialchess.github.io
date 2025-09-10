@@ -4,8 +4,17 @@ import slugify from 'slugify';
 const BASE_PATH = 'frontend';
 const BASE_OUTPUT = '_site';
 
+/**
+ * Extracts all unique values of a given taxonomy from the posts collection.
+ *
+ * @param {object} collectionApi - Eleventy collection API instance.
+ * @param {string} taxonomy - The taxonomy key to extract (e.g., "tags", "categories").
+ * @returns {string[]} Array of unique taxonomy values.
+ */
 const getUniqueTaxonomy = (collectionApi, taxonomy) => {
-	const allItems = collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`).flatMap((item) => item.data[taxonomy] || []);
+	const allItems = collectionApi
+		.getFilteredByGlob(`${BASE_PATH}/posts/*.md`)
+		.flatMap((item) => item.data[taxonomy] || []);
 	return [...new Set(allItems)];
 };
 
