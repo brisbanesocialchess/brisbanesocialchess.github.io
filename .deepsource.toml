@@ -10,7 +10,7 @@ enabled = true
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
   
   [analyzers.meta]
-  runtime_version = "3.x.x"
+  runtime_version = "3.11.x"
   type_checker = "mypy"
 
 [[analyzers]]
