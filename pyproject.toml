@@ -1,5 +1,7 @@
 [tool.isort]
 profile = "black"
+extend_skip_glob = ["packages/cfsite/node_modules"]
+known_first_party = [] # TODO: Add your project's top-level package names here
 
 [tool.black]
 line-length = 88
