@@ -24,7 +24,6 @@ cssFiles.forEach((file) => {
 
 if (cssFiles.length > 0) {
 	fs.writeFileSync(mergedCssFile, mergedCss, 'utf-8');
-	console.log(`✅ Merged ${cssFiles.length} CSS files into ${mergedCssFile}`);
 }
 
 // --- Merge JS ---
@@ -37,10 +36,8 @@ jsFiles.forEach((file) => {
 });
 
 fs.writeFileSync(mergedJsFile, mergedJs, 'utf-8');
-console.log(`✅ Merged ${jsFiles.length} JS files into ${mergedJsFile}`);
 
 // --- Cleanup individual files ---
 [...cssFiles, ...jsFiles].forEach((file) => {
 	fs.unlinkSync(file);
 });
-console.log(`🗑️  Removed ${cssFiles.length + jsFiles.length} original CSS/JS files, keeping only bundles`);

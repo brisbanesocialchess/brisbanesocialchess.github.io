@@ -58,7 +58,6 @@ function minifyHtml(content) {
  */
 async function copyAndMinifyHtmlFiles() {
 	const htmlFiles = getAllFiles(`${SRC_FOLDER}/**/*.html`);
-	console.log('HTML files found:', htmlFiles.length);
 
 	for (const file of htmlFiles) {
 		const relativePath = path.relative(SRC_FOLDER, file);
@@ -71,8 +70,6 @@ async function copyAndMinifyHtmlFiles() {
 
 		fs.writeFileSync(destPath, minified, 'utf-8');
 	}
-
-	console.log(`✅ ${htmlFiles.length} HTML files copied and minified to _deploy.`);
 }
 
 // -------------------------
@@ -99,8 +96,6 @@ async function copyAndMinifyHtmlFiles() {
 // 			ensureDir(target);
 // 			fs.copyFileSync(file, target);
 // 		});
-//
-// 		console.log(`✅ Copied ${files.length} files from ${dir} to _deploy/assets/${path.basename(dir)}`);
 // 	});
 // }
 
