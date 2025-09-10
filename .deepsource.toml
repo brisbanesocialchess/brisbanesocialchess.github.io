@@ -57,6 +57,10 @@ enabled = true
 name = "black"
 enabled = true
 
+[[transformers]]
+name = "prettier"
+enabled = true
+
 # To identify test files.
 test_patterns = ["packages/cfsite/test/**/*.spec.js"]
 
