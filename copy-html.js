@@ -73,33 +73,6 @@ async function copyAndMinifyHtmlFiles() {
 }
 
 // -------------------------
-// Static assets processing (optional)
-// -------------------------
-
-/**
- * Copies static asset files (like images) from source directories
- * into the destination `assets` folder while preserving structure.
- * @param {string[]} directories - List of subdirectories under `SRC_FOLDER`.
- */
-// function copyStaticAssets(directories) {
-// 	directories.forEach((dir) => {
-// 		const srcPath = path.join(SRC_FOLDER, dir);
-// 		const destPath = path.join(DEST_FOLDER, 'assets', path.basename(dir));
-//
-// 		if (!fs.existsSync(srcPath)) return;
-//
-// 		const files = getAllFiles(`${srcPath}/**/*.*`);
-//
-// 		files.forEach((file) => {
-// 			const relative = path.relative(srcPath, file);
-// 			const target = path.join(destPath, relative);
-// 			ensureDir(target);
-// 			fs.copyFileSync(file, target);
-// 		});
-// 	});
-// }
-
-// -------------------------
 // Main execution
 // -------------------------
 
@@ -110,5 +83,4 @@ async function copyAndMinifyHtmlFiles() {
  */
 (async function main() {
 	await copyAndMinifyHtmlFiles();
-	// copyStaticAssets(['assets/images', 'assets/pictures']);
 })();
