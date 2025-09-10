@@ -13,9 +13,8 @@ dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 [[analyzers]]
 name = "javascript"
 enabled = true
-# Specify the version of JavaScript.
-# Default is 'es2018'.
 version = "es2022"
+environment = ["vitest", "browser", "nodejs"]
 
 [[analyzers]]
 name = "secrets"
