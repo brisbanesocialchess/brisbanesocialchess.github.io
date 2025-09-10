@@ -10,10 +10,20 @@ const DEST_FOLDER = path.resolve('./_deploy');
 // -------------------------
 // Utility functions
 // -------------------------
+/**
+ * Ensures the directory for a given file path exists.
+ * Creates parent directories recursively if missing.
+ * @param {string} filePath - Path to a file (not directory).
+ */
 function ensureDir(filePath) {
 	fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
+/**
+ * Gets all files matching the provided glob pattern.
+ * @param {string} globPattern - The glob pattern
+ * @returns {string[]} Array of matched file paths.
+ */
 function getAllFiles(globPattern) {
 	return globSync(globPattern);
 }
@@ -21,6 +31,12 @@ function getAllFiles(globPattern) {
 // -------------------------
 // HTML processing
 // -------------------------
+/**
+ * Minifies HTML content by removing whitespace, comments,
+ * and minifying embedded CSS/JS.
+ * @param {string} content - Raw HTML string.
+ * @returns {Promise<string>} Minified HTML content.
+ */
 async function minifyHtml(content) {
 	return minify(content, {
 		collapseWhitespace: true,
@@ -33,6 +49,11 @@ async function minifyHtml(content) {
 	});
 }
 
+/**
+ * Copies all `.html` files from the source folder, minifies them,
+ * and writes them to the destination folder while preserving structure.
+ * @returns {Promise<void>}
+ */
 async function copyAndMinifyHtmlFiles() {
 	const htmlFiles = getAllFiles(`${SRC_FOLDER}/**/*.html`);
 	console.log('HTML files found:', htmlFiles.length);
@@ -53,24 +74,29 @@ async function copyAndMinifyHtmlFiles() {
 }
 
 // -------------------------
-// Static assets processing
+// Static assets processing (optional)
 // -------------------------
+/**
+ * Copies static asset files (like images) from source directories
+ * into the destination `assets` folder while preserving structure.
+ * @param {string[]} directories - List of subdirectories under `SRC_FOLDER`.
+ */
 // function copyStaticAssets(directories) {
 // 	directories.forEach((dir) => {
 // 		const srcPath = path.join(SRC_FOLDER, dir);
 // 		const destPath = path.join(DEST_FOLDER, 'assets', path.basename(dir));
-
+//
 // 		if (!fs.existsSync(srcPath)) return;
-
+//
 // 		const files = getAllFiles(`${srcPath}/**/*.*`);
-
+//
 // 		files.forEach((file) => {
 // 			const relative = path.relative(srcPath, file);
 // 			const target = path.join(destPath, relative);
 // 			ensureDir(target);
 // 			fs.copyFileSync(file, target);
 // 		});
-
+//
 // 		console.log(`✅ Copied ${files.length} files from ${dir} to _deploy/assets/${path.basename(dir)}`);
 // 	});
 // }
@@ -78,6 +104,11 @@ async function copyAndMinifyHtmlFiles() {
 // -------------------------
 // Main execution
 // -------------------------
+/**
+ * Main entry point of the script.
+ * Runs HTML minification and (optionally) static asset copy.
+ * @returns {Promise<void>}
+ */
 (async function main() {
 	await copyAndMinifyHtmlFiles();
 	// copyStaticAssets(['assets/images', 'assets/pictures']);
