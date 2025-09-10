@@ -20,7 +20,6 @@ enabled = true
 # Specify the version of JavaScript.
 # Default is 'es2018'.
 version = "es2022"
-meta = { eslint_config = ".github/linters/eslint.config.mjs" }
 
 [[analyzers]]
 name = "secrets"
@@ -53,6 +52,10 @@ enabled = true
 # [[transformers]]
 # name = "mypy"
 # enabled = true
+
+[[transformers]]
+name = black
+enabled = true
 
 # To identify test files.
 test_patterns = ["packages/cfsite/test/**/*.spec.js"]
