@@ -50,5 +50,8 @@ enabled = true
 # name = "mypy"
 # enabled = true
 
+# To identify test files.
+test_patterns = ["packages/cfsite/test/**"]
+
 # To ignore files or paths from being analyzed.
 exclude_patterns = ["**/node_modules/", "_site/"]
