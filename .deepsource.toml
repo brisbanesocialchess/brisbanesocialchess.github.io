@@ -1,0 +1,14 @@
+# Configure the analyzers to be used. Each analyzer gets its own [[analyzers]] block.
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+[[analyzers]]
+name = "python"
+enabled = true
+[analyzers.meta]
+runtime_version = "3.13.0" # Specify the Python runtime version for the analyzer.
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
