@@ -53,6 +53,10 @@ enabled = true
 name = "black"
 enabled = true
 
+[[transformers]]
+name = "isort"
+enabled = true
+
 # To identify test files.
 test_patterns = ["packages/cfsite/test/**/*.spec.js"]
 
