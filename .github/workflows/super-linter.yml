@@ -26,5 +26,4 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYTHON_PYLINT_CONFIG_FILE: .pylintrc
-          PRETTIER_CONFIG_FILE: .prettierrc
           VALIDATE_ALL_CODEBASE: true
