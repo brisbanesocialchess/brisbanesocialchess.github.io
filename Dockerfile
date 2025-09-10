@@ -5,15 +5,15 @@ ENV NODE_VERSION=22.18.0
 ENV PATH="/root/.local/bin:${PATH}"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    git \
     bash \
-    pipx \
     build-essential \
     ca-certificates \
+    curl \
+    libstdc++6 && \
+    git \
+    pipx \
     tar \
     xz-utils \
-    libstdc++6 && \
     rm -rf /var/lib/apt/lists/* && \
     pipx install pre-commit
 
