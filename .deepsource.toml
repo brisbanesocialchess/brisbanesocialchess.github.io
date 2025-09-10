@@ -1,34 +1,20 @@
 version = 1
 
-# -------------------------
-# Python analyzer
-# -------------------------
 [[analyzers]]
 name = "python"
 enabled = true
 version = "3.11"
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 
-# -------------------------
-# JavaScript analyzer for Node.js scripts
-# -------------------------
 [[analyzers]]
 name = "javascript"
 enabled = true
 version = "es2022"
 [analyzers.meta]
 environment = ["nodejs", "vitest"]
-include_patterns = [
-  "merge-assets.js",
-  "copy-html.js",
-  ".eleventy.js",
-  "packages/**/*.js",
-]
+include_patterns = ["merge-assets.js", "copy-html.js", ".eleventy.js", "packages/**/*.js"]
 exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
 
-# -------------------------
-# JavaScript analyzer for browser
-# -------------------------
 [[analyzers]]
 name = "javascript"
 enabled = true
@@ -38,9 +24,6 @@ environment = ["browser"]
 include_patterns = ["frontend/**/*.js"]
 exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
 
-# -------------------------
-# Secrets, Shell, Docker
-# -------------------------
 [[analyzers]]
 name = "secrets"
 enabled = true
@@ -52,10 +35,16 @@ enabled = true
 [[analyzers]]
 name = "docker"
 enabled = true
+# [[analyzers.meta]]
+# name = "flake8"
+# enable_all = true
+# severity_threshold = "critical"
+# Possible values: "critical", "major", "minor", "info"
 
-# -------------------------
-# Transformers
-# -------------------------
+# [[transformers]]
+# name = "mypy"
+# enabled = true
+
 [[transformers]]
 name = "isort"
 enabled = true
@@ -67,3 +56,5 @@ enabled = true
 [[transformers]]
 name = "prettier"
 enabled = true
+test_patterns = ["packages/cfsite/test/**/*.spec.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
