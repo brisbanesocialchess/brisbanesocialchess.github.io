@@ -31,8 +31,8 @@ WORKDIR /app
 COPY . .
 
 RUN npm install && \
-    npm run tailwindcss:build && \
     npm run build && \
+    npm cache clean --force && \
     chown -R appuser:appuser /app
 
 USER appuser
