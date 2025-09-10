@@ -189,7 +189,7 @@ You can open the HTML files with your web browser.
 
 ---
 
-## 👥Contributors
+## 👥 Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=brisbanesocialchess/brisbanesocialchess.github.io)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/contributors)
 
