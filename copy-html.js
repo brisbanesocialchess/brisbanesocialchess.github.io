@@ -10,6 +10,7 @@ const DEST_FOLDER = path.resolve('./_deploy');
 // -------------------------
 // Utility functions
 // -------------------------
+
 /**
  * Ensures the directory for a given file path exists.
  * Creates parent directories recursively if missing.
@@ -31,13 +32,14 @@ function getAllFiles(globPattern) {
 // -------------------------
 // HTML processing
 // -------------------------
+
 /**
  * Minifies HTML content by removing whitespace, comments,
  * and minifying embedded CSS/JS.
  * @param {string} content - Raw HTML string.
  * @returns {Promise<string>} Minified HTML content.
  */
-async function minifyHtml(content) {
+function minifyHtml(content) {
 	return minify(content, {
 		collapseWhitespace: true,
 		minifyCSS: true,
@@ -76,6 +78,7 @@ async function copyAndMinifyHtmlFiles() {
 // -------------------------
 // Static assets processing (optional)
 // -------------------------
+
 /**
  * Copies static asset files (like images) from source directories
  * into the destination `assets` folder while preserving structure.
@@ -104,6 +107,7 @@ async function copyAndMinifyHtmlFiles() {
 // -------------------------
 // Main execution
 // -------------------------
+
 /**
  * Main entry point of the script.
  * Runs HTML minification and (optionally) static asset copy.
