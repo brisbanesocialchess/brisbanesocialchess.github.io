@@ -59,7 +59,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
   - [Getting Started / Building the Site](#getting-started--building-the-site)
   - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
   - [Build the Documentation](#build-the-documentation)
-- [ Contributors](#contributors)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
