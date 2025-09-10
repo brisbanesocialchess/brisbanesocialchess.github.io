@@ -16,8 +16,8 @@
 	"name": "root",
 	"private": true,
 	"scripts": {
-		"format": "prettier --config .github/linters/.prettierrc --write \"**/*.{css,js,json,md,yaml,yml}\"",
-		"check": "prettier --config .github/linters/.prettierrc --check \"**/*.{css,js,json,md,yaml,yml}\"",
+		"format": "prettier --write \"**/*.{css,js,json,md,yaml,yml}\"",
+		"check": "prettier --check \"**/*.{css,js,json,md,yaml,yml}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint_fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
 		"test": "npx lerna run test --stream",
@@ -29,6 +29,13 @@
 		"tailwindcss:build2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css",
 		"tailwindcss:watch": "tailwindcss -i frontend/tailwind.css -o frontend/assets/tailwind.css --watch",
 		"tailwindcss:watch2": "tailwindcss -i frontend/tailwind.css -o _site/assets/tailwind.css --watch"
+	},
+	"prettier": {
+		"printWidth": 140,
+		"singleQuote": true,
+		"semi": true,
+		"useTabs": true,
+		"endOfLine": "lf"
 	},
 	"workspaces": [
 		"packages/*"
