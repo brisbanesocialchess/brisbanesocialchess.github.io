@@ -19,7 +19,7 @@ const cssFiles = globSync(`${cssDir}/*.css`).filter((f) => f !== mergedCssFile);
 let mergedCss = '';
 cssFiles.forEach((file) => {
 	const content = fs.readFileSync(file, 'utf-8');
-	mergedCss += content + '\n';
+	mergedCss += `${content}\n`;
 });
 
 if (cssFiles.length > 0) {
@@ -33,7 +33,7 @@ const jsFiles = globSync(`${jsDir}/*.js`).filter((f) => f !== mergedJsFile);
 let mergedJs = '';
 jsFiles.forEach((file) => {
 	const content = fs.readFileSync(file, 'utf-8');
-	mergedJs += content + '\n';
+	mergedJs += `${content}\n`;
 });
 
 fs.writeFileSync(mergedJsFile, mergedJs, 'utf-8');
