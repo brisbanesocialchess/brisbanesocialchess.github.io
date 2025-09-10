@@ -6,8 +6,8 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 export default defineConfig({
 	build: {
 		emptyOutDir: false,
-		outDir: '../_deploy',
 		assetsInlineLimit: 0,
+		outDir: '../_deploy',
 		rollupOptions: {
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
 			output: {
@@ -22,8 +22,8 @@ export default defineConfig({
 					}
 					return 'assets/[name][extname]';
 				},
-				manualChunks: undefined,
 				chunkFileNames: 'assets/scripts/[name].js',
+				manualChunks: undefined,
 				entryFileNames: 'assets/scripts/[name].js',
 			},
 		},
