@@ -22,7 +22,7 @@ function uuidv4() {
  * Returns CORS headers for the given request's origin.
  *
  * @param {Request} request - The incoming HTTP request object.
- * @returns {Object<string, string>} A map of CORS headers.
+ * @returns {{[key: string]: string}} A map of CORS headers.
  */
 function getCorsHeaders(request) {
 	const origin = request.headers.get('Origin') || '*';
