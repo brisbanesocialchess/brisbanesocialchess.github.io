@@ -54,25 +54,25 @@ async function copyAndMinifyHtmlFiles() {
 // -------------------------
 // Static assets processing
 // -------------------------
-function copyStaticAssets(directories) {
-	directories.forEach((dir) => {
-		const srcPath = path.join(SRC_FOLDER, dir);
-		const destPath = path.join(DEST_FOLDER, 'assets', path.basename(dir));
+// function copyStaticAssets(directories) {
+// 	directories.forEach((dir) => {
+// 		const srcPath = path.join(SRC_FOLDER, dir);
+// 		const destPath = path.join(DEST_FOLDER, 'assets', path.basename(dir));
 
-		if (!fs.existsSync(srcPath)) return;
+// 		if (!fs.existsSync(srcPath)) return;
 
-		const files = getAllFiles(`${srcPath}/**/*.*`);
+// 		const files = getAllFiles(`${srcPath}/**/*.*`);
 
-		files.forEach((file) => {
-			const relative = path.relative(srcPath, file);
-			const target = path.join(destPath, relative);
-			ensureDir(target);
-			fs.copyFileSync(file, target);
-		});
+// 		files.forEach((file) => {
+// 			const relative = path.relative(srcPath, file);
+// 			const target = path.join(destPath, relative);
+// 			ensureDir(target);
+// 			fs.copyFileSync(file, target);
+// 		});
 
-		console.log(`✅ Copied ${files.length} files from ${dir} to _deploy/assets/${path.basename(dir)}`);
-	});
-}
+// 		console.log(`✅ Copied ${files.length} files from ${dir} to _deploy/assets/${path.basename(dir)}`);
+// 	});
+// }
 
 // -------------------------
 // Main execution

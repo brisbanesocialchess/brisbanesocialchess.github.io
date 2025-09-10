@@ -3,8 +3,8 @@ import path from 'path';
 import { globSync } from 'glob';
 
 const siteDir = path.resolve('./_site/assets');
-const siteCssDir = path.join(siteDir, 'styles');
-const siteJsDir = path.join(siteDir, 'scripts');
+// const siteCssDir = path.join(siteDir, 'styles');
+// const siteJsDir = path.join(siteDir, 'scripts');
 
 const deployDir = path.resolve('./_deploy/assets');
 const cssDir = path.join(deployDir, 'styles');

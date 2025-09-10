@@ -51,7 +51,6 @@ repos:
       - id: prettier
         name: Run prettier
         description: format files with prettier
-        # entry: prettier --config .github/linters/.prettierrc --check "**/*.{js,css,html,md,json}"
         entry: prettier --config .github/linters/.prettierrc --write "**/*.{js,css,html,md,json}"
         files: \.(css|js|json|md|ya?ml)$
         language: node

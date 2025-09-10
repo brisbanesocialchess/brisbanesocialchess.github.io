@@ -7,10 +7,10 @@ export default defineConfig({
 	build: {
 		emptyOutDir: false,
 		outDir: '../_deploy',
+		assetsInlineLimit: 0,
 		rollupOptions: {
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
 			output: {
-				manualChunks: undefined,
 				assetFileNames: (assetInfo) => {
 					console.log(assetInfo);
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
@@ -22,11 +22,11 @@ export default defineConfig({
 					}
 					return 'assets/[name][extname]';
 				},
-				entryFileNames: 'assets/scripts/[name].js',
+				manualChunks: undefined,
 				chunkFileNames: 'assets/scripts/[name].js',
+				entryFileNames: 'assets/scripts/[name].js',
 			},
 		},
-		assetsInlineLimit: 0,
 	},
 	css: {
 		postcss: {
@@ -35,8 +35,8 @@ export default defineConfig({
 	},
 	plugins: [
 		ViteImageOptimizer({
-			png: { quality: 90 },
 			jpg: { quality: 80 },
+			png: { quality: 90 },
 			svg: { multipass: true },
 		}),
 	],
