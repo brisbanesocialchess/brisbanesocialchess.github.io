@@ -50,22 +50,22 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [♟️ About Brisbane Social Chess](#about-brisbane-social-chess)
-- [🚀 Quick Start](#quick-start)
-- [🛠️ Technology Stack](#technology-stack)
-  - [⚡ Cloudflare Workers Development](#cloudflare-workers-development)
-    - [▶️ Start Development Server](#start-development-server)
-    - [🧪 Run Tests](#run-tests)
-  - [🏗️ Getting Started / Building the Site](#getting-started--building-the-site)
-  - [🐳 Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
-  - [📚Build the Documentation](#build-the-documentation)
-- [👥 Contributors](#contributors)
+- [ About Brisbane Social Chess](#about-brisbane-social-chess)
+- [ Quick Start](#quick-start)
+- [ Technology Stack](#technology-stack)
+  - [ Cloudflare Workers Development](#cloudflare-workers-development)
+    - [ Start Development Server](#start-development-server)
+    - [ Run Tests](#run-tests)
+  - [ Getting Started / Building the Site](#getting-started--building-the-site)
+  - [ Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
+  - [Build the Documentation](#build-the-documentation)
+- [ Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
-## About Brisbane Social Chess
+## ♟️ About Brisbane Social Chess
 
 Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
 We organize regular meetups where people can play chess in a relaxed and friendly environment.
@@ -73,13 +73,13 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 For detailed development setup instructions, see [DEVELOPER_HELP.md](DEVELOPER_HELP.md).
 
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - [GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host sites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 - [Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
@@ -101,18 +101,18 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 - [Makefile](https://en.wikipedia.org/wiki/Makefile) is a text file that contains a set of instructions used by the [make](<https://en.wikipedia.org/wiki/Make_(software)>) utility to automate the process of building and managing software projects. It defines dependencies between files and specifies the commands required to update outdated files or generate new ones.
 <!-- dprint-ignore-end -->
 
-### Cloudflare Workers Development
+### ⚡Cloudflare Workers Development
 
 To work with the Cloudflare Workers site in the `packages/cfsite` directory:
 
-#### Start Development Server
+#### ▶️ Start Development Server
 
 ```bash
 cd packages/cfsite
 npx wrangler dev
 ```
 
-#### Run Tests
+#### 🧪 Run Tests
 
 ```bash
 cd packages/cfsite
@@ -123,7 +123,7 @@ Read below for instructions about the current static development site hosted on 
 
 ---
 
-### Getting Started / Building the Site
+### 🏗️ Getting Started / Building the Site
 
 To start a local development server with live reload, run:
 
@@ -133,7 +133,7 @@ npm run start
 
 ---
 
-### Build the Docker image for running `pre-commit` easily
+### 🐳 Build the Docker image for running `pre-commit` easily
 
 - Standard build:
 
@@ -175,7 +175,7 @@ docker run --platform=linux/amd64 --rm -v "$PWD":/app -w /app my-go-precommit
 
 ---
 
-### Build the Documentation
+### 📚 Build the Documentation
 
 Run the following commands from the repo root to create the Sphinx documentation with Make:
 
@@ -189,7 +189,7 @@ You can open the HTML files with your web browser.
 
 ---
 
-## Contributors
+## 👥Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=brisbanesocialchess/brisbanesocialchess.github.io)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/contributors)
 
