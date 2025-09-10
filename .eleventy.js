@@ -12,9 +12,7 @@ const BASE_OUTPUT = '_site';
  * @returns {string[]} Array of unique taxonomy values.
  */
 const getUniqueTaxonomy = (collectionApi, taxonomy) => {
-	const allItems = collectionApi
-		.getFilteredByGlob(`${BASE_PATH}/posts/*.md`)
-		.flatMap((item) => item.data[taxonomy] || []);
+	const allItems = collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`).flatMap((item) => item.data[taxonomy] || []);
 	return [...new Set(allItems)];
 };
 
@@ -55,9 +53,7 @@ export default function (eleventyConfig) {
 	 * @returns {Array<object>} Sorted list of post collections.
 	 */
 	eleventyConfig.addCollection('posts', (collectionApi) => {
-		return collectionApi
-			.getFilteredByGlob(`${BASE_PATH}/posts/*.md`)
-			.sort((a, b) => b.date - a.date);
+		return collectionApi.getFilteredByGlob(`${BASE_PATH}/posts/*.md`).sort((a, b) => b.date - a.date);
 	});
 
 	/**

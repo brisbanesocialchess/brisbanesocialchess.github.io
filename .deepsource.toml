@@ -14,12 +14,23 @@ dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 name = "javascript"
 enabled = true
 version = "es2022"
-environment = ["vitest", "nodejs"]
+[analyzers.meta]
+environment = ["nodejs"]
+include_patterns = ["merge-assets.js", "copy-html.js", ".eleventy.js"]
 
 [[analyzers]]
 name = "javascript"
 enabled = true
 version = "es2022"
+[analyzers.meta]
+environment = ["nodejs", "vitest"]
+include_patterns = ["packages/**/*.js"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+version = "es2022"
+[analyzers.meta]
 environment = ["browser"]
 include_patterns = ["frontend/**/*.js"]
 
