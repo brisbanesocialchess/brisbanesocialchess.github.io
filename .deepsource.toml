@@ -11,10 +11,6 @@ version = "3.11"
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 
 [[analyzers]]
-name = "bandit"
-enabled = true
-
-[[analyzers]]
 name = "javascript"
 enabled = true
 # Specify the version of JavaScript.
