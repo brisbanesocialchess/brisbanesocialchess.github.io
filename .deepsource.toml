@@ -1,5 +1,8 @@
 # .deepsource.toml
 
+# The version of the configuration file format.
+version = 1
+
 # Define the analyzers for each language.
 [[analyzers]]
 name = "python"
