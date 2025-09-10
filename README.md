@@ -52,16 +52,16 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [About Brisbane Social Chess](#about-brisbane-social-chess)
-- [Quick Start](#quick-start)
-- [Technology Stack](#technology-stack)
-  - [Cloudflare Workers Development](#cloudflare-workers-development)
-    - [Start Development Server](#start-development-server)
-    - [Run Tests](#run-tests)
-  - [Getting Started / Building the Site](#getting-started--building-the-site)
-  - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
-  - [Build the Documentation](#build-the-documentation)
-- [Contributors](#contributors)
+- [♟️ About Brisbane Social Chess](#%E2%99%9F%EF%B8%8F-about-brisbane-social-chess)
+- [🚀 Quick Start](#-quick-start)
+- [🛠️ Technology Stack](#-technology-stack)
+  - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
+    - [▶️ Start Development Server](#-start-development-server)
+    - [🧪 Run Tests](#%F0%9F%A7%AA-run-tests)
+  - [🏗️ Getting Started / Building the Site](#-getting-started--building-the-site)
+  - [🐳 Build the Docker image for running `pre-commit` easily](#-build-the-docker-image-for-running-pre-commit-easily)
+  - [📚 Build the Documentation](#-build-the-documentation)
+- [👥 Contributors](#-contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
