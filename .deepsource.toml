@@ -9,7 +9,7 @@ enabled = true
 name = "python"
 enabled = true
 [analyzers.meta]
-runtime_version = "3.13.0" # Specify the Python runtime version for the analyzer.
+runtime_version = "3.12" # Specify the Python runtime version for the analyzer.
 
 [[analyzers]]
 name = "test-coverage"
