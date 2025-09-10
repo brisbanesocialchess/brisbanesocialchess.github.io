@@ -1,6 +1,6 @@
 ---
 permalink: /meetup/wednesday/
-layout: "layouts/base.njk"
+layout: 'layouts/base.njk'
 title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
 ---
 

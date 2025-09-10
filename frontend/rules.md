@@ -1,6 +1,6 @@
 ---
 permalink: /rules/
-layout: "layouts/base.njk"
+layout: 'layouts/base.njk'
 title: Club Rules & Code of Conduct | Brisbane Social Chess Club
 ---
 

@@ -1,3 +1,3 @@
-import "./tailwind.css";
+import './tailwind.css';
 
-console.log("Vite + Tailwind is running!");
+console.log('Vite + Tailwind is running!');
