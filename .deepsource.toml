@@ -12,6 +12,9 @@ enabled = true
 [analyzers.meta]
 runtime_version = "3.12" # Specify the Python runtime version for the analyzer.
 
+[[analyzers]]
+name = "secrets"
+enabled = true
 # [[analyzers]]
 # name = "test-coverage"
 # enabled = true
