@@ -173,7 +173,7 @@ repos:
         description: MarkdownLint Command Line Interface
         types: [markdown]
         args: ['--config', '.github/linters/.markdown-lint.yml']
-        exclude: ^frontend/.*\.md$
+        files: \.md$
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
     hooks:
