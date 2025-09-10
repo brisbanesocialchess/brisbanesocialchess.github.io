@@ -11,7 +11,7 @@ pylint_enabled = true
 black_enabled = true
 
 [[analyzers]]
-name = "js"
+name = "javascript"
 enabled = true
 # Specify the version of JavaScript.
 # Default is 'es2018'.
