@@ -9,9 +9,8 @@ name = "python"
 enabled = true
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 
-[[analyzers.meta]]
-runtime_version = "3.12.x"
-type_checker = "mypy"
+  [analyzers.meta]
+  type_checker = "mypy"
 
 [[analyzers]]
 name = "javascript"
