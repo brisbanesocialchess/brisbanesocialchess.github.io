@@ -32,7 +32,7 @@ fs.writeFileSync(mergedJsFile, mergedJs.trim(), 'utf-8');
 // --- Cleanup individual files ---
 fs.readdirSync(cssDir).forEach((file) => {
 	const filePath = path.join(cssDir, file);
-	if (file !== 'bundle.css' && fs.lstatSync(filePath).isFile()) {
+	if (file !== path.basename(mergedCssFile) && fs.lstatSync(filePath).isFile()) {
 		fs.unlinkSync(filePath);
 	}
 });
