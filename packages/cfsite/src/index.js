@@ -13,10 +13,7 @@ const routes = {
  * @returns {string} A randomly generated UUID v4.
  */
 function uuidv4() {
-	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (matchedChar) => {
-		const hexValue = matchedChar === 'x' ? matchedChar : (matchedChar & 0x3) | 0x8;
-		return hexValue.toString(16);
-	});
+	return crypto.randomUUID();
 }
 
 /**
