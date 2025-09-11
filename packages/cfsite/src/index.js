@@ -36,8 +36,8 @@ async function verifyTurnstile(token, maxRetries = 3, delayMs = 500) {
 	for (let attempt = 1; attempt <= maxRetries; attempt++) {
 		try {
 			const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-				method: 'POST',
 				body: formData,
+				method: 'POST',
 			});
 
 			if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -244,11 +244,9 @@ export default {
 	 * Routes incoming requests to the appropriate handler.
 	 *
 	 * @param {Request} request - The incoming HTTP request object.
-	 * @param {Object} env - Environment object containing secrets and bindings.
-	 * @param {Object} ctx - Context object with waitUntil and other runtime properties.
 	 * @returns {Promise<Response>} The response returned from the matched route or an error response.
 	 */
-	async fetch(request, env, ctx) {
+	async fetch(request) {
 		const requestId = uuidv4();
 		const url = new URL(request.url);
 		const routeKey = `${request.method.toUpperCase()} ${url.pathname}`;
@@ -264,7 +262,7 @@ export default {
 		const handler = routes[routeKey];
 		if (handler) {
 			try {
-				return await handler(request, env, ctx);
+				return await handler(request);
 			} catch (err) {
 				console.error(`[${requestId}] Error:`, err);
 				return createErrorResponse('Internal Server Error', request, 500);
