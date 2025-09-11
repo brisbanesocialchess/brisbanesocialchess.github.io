@@ -20,7 +20,7 @@ const includeJs = [
 ];
 
 // --- Merge CSS ---
-const cssFiles = includeCss.map(f => path.join(cssDir, f))
+const cssFiles = includeCss.map(f => path.relative(process.cwd(), path.join(cssDir, f)))
 	.filter(f => fs.existsSync(f) && f !== mergedCssFile);
 
 let mergedCss = '';
