@@ -18,6 +18,36 @@ function uuidv4() {
 	});
 }
 
+async function verifyTurnstile(token, env, maxRetries = 3, delayMs = 500) {
+	if (!token) return false;
+
+	const SECRET_KEY = env.TURNSTILE_SECRET;
+
+	const formData = new URLSearchParams();
+	formData.append('secret', SECRET_KEY);
+	formData.append('response', token);
+
+	for (let attempt = 1; attempt <= maxRetries; attempt++) {
+		try {
+			const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+				method: 'POST',
+				body: formData,
+			});
+
+			if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+			const data = await res.json();
+			return data.success === true;
+		} catch (err) {
+			console.warn(`Turnstile verification attempt ${attempt} failed:`, err);
+
+			if (attempt === maxRetries) return false;
+
+			await new Promise((resolve) => setTimeout(resolve, delayMs));
+		}
+	}
+}
+
 /**
  * Returns CORS headers for the given request's origin.
  *
@@ -125,10 +155,15 @@ async function parseJson(request) {
 // Route functions
 async function handleContact(request) {
 	try {
-		const { name, email, subject, message } = await parseJson(request);
+		const { name, email, subject, message, 'cf-turnstile-response': token } = await parseJson(request);
 
 		if (!name || !email || !subject || !message) {
 			return createErrorResponse('Missing required fields: name, email, subject, message', request, 422);
+		}
+
+		const captchaValid = await verifyTurnstile(token);
+		if (!captchaValid) {
+			return createErrorResponse('Captcha verification failed', request, 400);
 		}
 
 		console.log(`[Contact] from ${name} <${email}>: ${message}`);
@@ -147,10 +182,15 @@ async function handleContact(request) {
 async function handleRegister(request) {
 	try {
 		// discordusername
-		const { fname, lname, birthyear, gender, email } = await parseJson(request);
+		const { fname, lname, birthyear, gender, email, 'cf-turnstile-response': token } = await parseJson(request);
 
 		if (!fname || !lname || !birthyear || !gender || !email) {
 			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, email', request, 422);
+		}
+
+		const captchaValid = await verifyTurnstile(token);
+		if (!captchaValid) {
+			return createErrorResponse('Captcha verification failed', request, 400);
 		}
 
 		console.log(`[Register] fname: ${fname}, lname: ${lname}`);
