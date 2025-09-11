@@ -32,13 +32,6 @@
 			"in_nav": true
 		},
 		{
-			"name": "Telegram",
-			"url": "https://t.me/brisbanesocialchess",
-			"icon": "telegram.svg",
-			"gradient": "from-cyan-500 to-blue-500",
-			"in_nav": true
-		},
-		{
 			"name": "YouTube",
 			"url": "https://www.youtube.com/@brisbanesocialchess",
 			"icon": "youtube.svg",
@@ -49,7 +42,14 @@
 			"name": "X",
 			"url": "https://x.com/BrisbaneChess",
 			"icon": "x.svg",
-			"gradient": "from-sky-500 to-blue-500",
+			"gradient": "from-gray-900 to-gray-700",
+			"in_nav": true
+		},
+		{
+			"name": "Telegram",
+			"url": "https://t.me/brisbanesocialchess",
+			"icon": "telegram.svg",
+			"gradient": "from-cyan-500 to-blue-500",
 			"in_nav": true
 		}
 	]
