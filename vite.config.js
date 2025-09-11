@@ -23,10 +23,14 @@ export default defineConfig({
 					return 'assets/[name][extname]';
 				},
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e56a6bc (Max updates 09 09 2025 (#593))
 				chunkFileNames: 'assets/scripts/[name].js',
 				entryFileNames: 'assets/scripts/[name].js',
 				manualChunks: undefined,
 			},
+<<<<<<< HEAD
 		},
 =======
 				chunkFileNames: 'chunks/[name].js',
@@ -44,6 +48,15 @@ export default defineConfig({
 			plugins: [postcssImport()],
 		},
 	},
+=======
+		},
+	},
+	css: {
+		postcss: {
+			plugins: [postcssImport()],
+		},
+	},
+>>>>>>> e56a6bc (Max updates 09 09 2025 (#593))
 	plugins: [
 		ViteImageOptimizer({
 			jpg: { quality: 80 },
@@ -56,4 +69,8 @@ export default defineConfig({
 		port: 5173,
 		strictPort: true,
 	},
+	assetsInclude: [],
+	optimizeDeps: {
+		exclude: ['*.jpg', '*.jpeg', '*.png', '*.gif', '*.svg', '*.webp']
+	}
 });
