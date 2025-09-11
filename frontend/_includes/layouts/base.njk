@@ -79,7 +79,7 @@
     </div>
     <!-- Footer -->
     <footer class="h-[85px] text-center p-8 text-sm text-white/60 flex flex-col items-center justify-center gap-3">
-      <div class="flex space-x-4">
+      <div class="hidden md:flex space-x-4">
         {% for social in site.socials %}
           {{ social_macro.social_link(social, "hover:opacity-80 transition") }}
         {% endfor %}
