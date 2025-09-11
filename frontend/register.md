@@ -2,10 +2,7 @@
 permalink: /register/
 layout: 'layouts/base.njk'
 title: Register for Membership
-<<<<<<< HEAD
 captcha: true
-=======
->>>>>>> e56a6bc (Max updates 09 09 2025 (#593))
 ---
 
 <section class="px-4 max-w-3xl">
