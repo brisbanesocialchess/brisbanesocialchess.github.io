@@ -25,6 +25,7 @@ title: Chess Games & Variants | Brisbane Social Chess Club
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545254"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
@@ -40,6 +41,7 @@ title: Chess Games & Variants | Brisbane Social Chess Club
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545220"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
@@ -55,6 +57,7 @@ title: Chess Games & Variants | Brisbane Social Chess Club
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545240"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
@@ -70,6 +73,7 @@ title: Chess Games & Variants | Brisbane Social Chess Club
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545342"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
