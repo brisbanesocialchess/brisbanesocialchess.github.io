@@ -33,11 +33,7 @@ const jsFiles = includeJs
 	.map((f) => path.relative(process.cwd(), path.join(jsDir, f)))
 	.filter((f) => fs.existsSync(f) && f !== mergedJsFile);
 
-let mergedJs = '';
-jsFiles.forEach((file) => {
-	const content = fs.readFileSync(file, 'utf-8');
-	mergedJs += `${content}\n`;
-});
+const mergedJs = jsFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('\n');
 
 fs.writeFileSync(mergedJsFile, mergedJs.trim(), 'utf-8');
 
