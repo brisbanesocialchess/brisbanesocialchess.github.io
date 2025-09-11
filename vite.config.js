@@ -12,7 +12,6 @@ export default defineConfig({
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
 			output: {
 				assetFileNames: (assetInfo) => {
-					console.log(assetInfo);
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
 						return 'assets/styles/style.css';
 					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/images/'))) {
