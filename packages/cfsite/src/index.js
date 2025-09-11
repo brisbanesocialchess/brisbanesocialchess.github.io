@@ -266,7 +266,7 @@ export default {
 		const handler = routes[routeKey];
 		if (handler) {
 			try {
-	            return await handler(request, env);
+				return await handler(request, env);
 			} catch (err) {
 				console.error(`[${requestId}] Error:`, err);
 				return createErrorResponse('Internal Server Error', request, 500);
