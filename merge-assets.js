@@ -18,11 +18,7 @@ const cssFiles = includeCss
 	.map((f) => path.relative(process.cwd(), path.join(cssDir, f)))
 	.filter((f) => fs.existsSync(f) && f !== mergedCssFile);
 
-let mergedCss = '';
-cssFiles.forEach((file) => {
-	const content = fs.readFileSync(file, 'utf-8');
-	mergedCss += `${content}\n`;
-});
+const mergedCss = cssFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('\n');
 
 if (cssFiles.length > 0) {
 	fs.writeFileSync(mergedCssFile, mergedCss.trim(), 'utf-8');
