@@ -30,6 +30,16 @@ const mergedJs = jsFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('');
 fs.writeFileSync(mergedJsFile, mergedJs.trim(), 'utf-8');
 
 // --- Cleanup individual files ---
-[...cssFiles, ...jsFiles].forEach((file) => {
-	fs.unlinkSync(file);
+fs.readdirSync(cssDir).forEach(file => {
+	const filePath = path.join(cssDir, file);
+	if (file !== 'bundle.css' && fs.lstatSync(filePath).isFile()) {
+		fs.unlinkSync(filePath);
+	}
+});
+
+fs.readdirSync(jsDir).forEach(file => {
+	const filePath = path.join(jsDir, file);
+	if (file !== 'bundle.js' && fs.lstatSync(filePath).isFile()) {
+		fs.unlinkSync(filePath);
+	}
 });
