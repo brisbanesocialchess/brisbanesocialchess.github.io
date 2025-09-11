@@ -26,7 +26,13 @@ def clear_screen():
     # Clears the terminal screen in a cross-platform way
     try:
         if os.name == "nt":
-            os.system("cls")  # Windows
+            os.system(
+                '"'
+                + os.path.join(
+                    os.environ.get("SystemRoot", "C:\\Windows"), "System32", "cmd.exe"
+                )
+                + '" /c cls'
+            )  # Windows
         else:
             os.system("/usr/bin/clear")  # macOS/Linux
     except Exception:
