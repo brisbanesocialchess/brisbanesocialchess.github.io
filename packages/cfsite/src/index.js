@@ -1,8 +1,6 @@
 // Const variables
 const JSON_HEADERS = { 'Content-Type': 'application/json' };
-
 const corsHeadersCache = new Map();
-
 const routes = {
 	'GET /': handleGetRoot,
 	'GET /health': handleHealthCheck,
@@ -10,7 +8,10 @@ const routes = {
 	'POST /api/register': handleRegister,
 };
 
-// Functions
+/**
+ * Generates a UUID v4 string.
+ * @returns {string} A randomly generated UUID v4.
+ */
 function uuidv4() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (matchedChar) => {
 		const hexValue = matchedChar === 'x' ? matchedChar : (matchedChar & 0x3) | 0x8;
@@ -18,6 +19,15 @@ function uuidv4() {
 	});
 }
 
+/**
+ * Verifies a Cloudflare Turnstile captcha token with optional retry logic.
+ *
+ * @param {string} token - The captcha token to verify.
+ * @param {Object} env - Environment object containing secret keys.
+ * @param {number} [maxRetries=3] - Maximum number of retry attempts.
+ * @param {number} [delayMs=500] - Delay in milliseconds between retries.
+ * @returns {Promise<boolean>} True if captcha is valid, false otherwise.
+ */
 async function verifyTurnstile(token, env, maxRetries = 3, delayMs = 500) {
 	if (!token) return false;
 
@@ -152,7 +162,12 @@ async function parseJson(request) {
 	}
 }
 
-// Route functions
+/**
+ * Handles contact form submissions by validating required fields and captcha verification.
+ *
+ * @param {Request} request - The HTTP request containing contact form data.
+ * @returns {Promise<Response>} JSON response indicating success or error.
+ */
 async function handleContact(request) {
 	try {
 		const { name, email, subject, message, 'cf-turnstile-response': token } = await parseJson(request);
@@ -181,7 +196,6 @@ async function handleContact(request) {
  */
 async function handleRegister(request) {
 	try {
-		// discordusername
 		const { fname, lname, birthyear, gender, email, 'cf-turnstile-response': token } = await parseJson(request);
 
 		if (!fname || !lname || !birthyear || !gender || !email) {
@@ -227,6 +241,15 @@ function handleHealthCheck(request) {
 }
 
 export default {
+	/**
+	 * Main entry point for the Cloudflare Worker fetch event.
+	 * Routes incoming requests to the appropriate handler.
+	 *
+	 * @param {Request} request - The incoming HTTP request object.
+	 * @param {Object} env - Environment object containing secrets and bindings.
+	 * @param {Object} ctx - Context object with waitUntil and other runtime properties.
+	 * @returns {Promise<Response>} The response returned from the matched route or an error response.
+	 */
 	async fetch(request, env, ctx) {
 		const requestId = uuidv4();
 		const url = new URL(request.url);
