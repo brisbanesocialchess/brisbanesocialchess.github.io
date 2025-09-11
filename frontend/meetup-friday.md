@@ -42,5 +42,12 @@ title: Friday Lunchtime Meetup | Brisbane Social Chess Club
       allowfullscreen=""
       loading="lazy"
     ></iframe> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.499580593187!2d153.02520607608456!3d-27.47246601626516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1b31119fbd%3A0x5bedc7c6def4d072!2sChocolate%20Moments!5e0!3m2!1sen!2sau!4v1694105637591!5m2!1sen!2sau"
+      class="w-full h-64 rounded-lg border-0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
 </section>
