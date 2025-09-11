@@ -30,21 +30,6 @@ const mergedJs = jsFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('');
 fs.writeFileSync(mergedJsFile, mergedJs.trim(), 'utf-8');
 
 // --- Cleanup individual files ---
-const keepCss = new Set([mergedCssFile, ...includeCss.map(f => path.relative(process.cwd(), path.join(cssDir, f)))]);
-const keepJs = new Set([mergedJsFile, ...includeJs.map(f => path.relative(process.cwd(), path.join(jsDir, f)))]);
-
-fs.readdirSync(cssDir).forEach(file => {
-	const filePath = path.relative(process.cwd(), path.join(cssDir, file));
-	if (!keepCss.has(filePath)) {
-		fs.unlinkSync(filePath);
-		console.log(`Deleted: ${filePath}`);
-	}
-});
-
-fs.readdirSync(jsDir).forEach(file => {
-	const filePath = path.relative(process.cwd(), path.join(jsDir, file));
-	if (!keepJs.has(filePath)) {
-		fs.unlinkSync(filePath);
-		console.log(`Deleted: ${filePath}`);
-	}
+[...cssFiles, ...jsFiles].forEach((file) => {
+	fs.unlinkSync(file);
 });
