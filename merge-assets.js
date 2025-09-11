@@ -30,7 +30,7 @@ cssFiles.forEach((file) => {
 });
 
 if (cssFiles.length > 0) {
-	fs.writeFileSync(mergedCssFile, mergedCss, 'utf-8');
+	fs.writeFileSync(mergedCssFile, mergedCss.trim(), 'utf-8');
 }
 
 // --- Merge JS ---
@@ -43,7 +43,7 @@ jsFiles.forEach((file) => {
 	mergedJs += `${content}\n`;
 });
 
-fs.writeFileSync(mergedJsFile, mergedJs, 'utf-8');
+fs.writeFileSync(mergedJsFile, mergedJs.trim(), 'utf-8');
 
 // --- Cleanup individual files ---
 [...cssFiles, ...jsFiles].forEach((file) => {
