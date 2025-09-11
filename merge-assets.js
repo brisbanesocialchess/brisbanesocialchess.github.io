@@ -34,7 +34,7 @@ if (cssFiles.length > 0) {
 }
 
 // --- Merge JS ---
-const jsFiles = includeJs.map(f => path.join(jsDir, f))
+const jsFiles = includeJs.map(f => path.relative(process.cwd(), path.join(jsDir, f)))
 	.filter(f => fs.existsSync(f) && f !== mergedJsFile);
 
 let mergedJs = '';
