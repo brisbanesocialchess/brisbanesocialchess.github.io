@@ -39,7 +39,7 @@
 			"in_nav": true
 		},
 		{
-			"name": "Youtube",
+			"name": "YouTube",
 			"url": "https://www.youtube.com/@brisbanesocialchess",
 			"icon": "youtube.svg",
 			"gradient": "from-red-600 to-red-400",
