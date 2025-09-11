@@ -2,6 +2,7 @@
 permalink: /contact/
 layout: 'layouts/base.njk'
 title: Contact Us
+captcha: true
 ---
 
 <section class="px-4 max-w-3xl">

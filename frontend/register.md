@@ -2,6 +2,7 @@
 permalink: /register/
 layout: 'layouts/base.njk'
 title: Register for Membership
+captcha: true
 ---
 
 <section class="px-4 max-w-3xl">

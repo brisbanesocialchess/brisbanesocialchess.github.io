@@ -86,6 +86,10 @@
       </div>
       <p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
     </footer>
+    {% if captcha %}
+      <div class="cf-turnstile" data-sitekey="{{ captcha.sitekey }}"></div>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    {% endif %}
     <script type="text/javascript" src="{{ '/assets/scripts/bundle.js' | url  }}"></script>
   </body>
 </html>
