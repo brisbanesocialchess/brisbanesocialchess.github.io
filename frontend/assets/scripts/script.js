@@ -106,6 +106,18 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		return;
 	}
 
+
+	const turnstileEl = form.querySelector('.cf-turnstile');
+	if (turnstileEl) {
+		try {
+			data['cf-turnstile-response'] = await window.turnstile.execute(turnstileEl);
+		} catch (err) {
+			alert('❌ Captcha verification failed. Please try again.');
+			console.error(err);
+			return;
+		}
+	}
+
 	try {
 		const response = await fetch(endpoint, {
 			body: JSON.stringify(data),
@@ -116,6 +128,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		if (response?.ok && response?.status === 200) {
 			alert('✅ Submission successful!');
 			form.reset();
+			if (turnstileEl) window.turnstile.reset(turnstileEl);
 		} else {
 			const defaultErrorMessage = 'Something went wrong.';
 			try {
