@@ -33,6 +33,8 @@ captcha: true
       <label for="message" class="text-gray-200 font-semibold mb-1">Message <span aria-hidden="true">*</span></label>
       <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-vertical min-h-[120px]"></textarea>
     </div>
+    <!-- Captcha -->
+    <div class="cf-turnstile" data-sitekey="{{ site.cloudflare_turnstile_key }}" data-action="submit"></div>
     <!-- Submit Button -->
     <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
       Send Message
