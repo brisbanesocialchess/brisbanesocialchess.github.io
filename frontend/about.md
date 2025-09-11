@@ -6,7 +6,7 @@ title: About Us | Brisbane Social Chess Club
 
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
-    <p class="text-white text-base leading-relaxed mb-6">
+    <p class="text-white leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
         and community engagement. We organize regular meetups where people can play chess in a relaxed and friendly environment. We are
         registered in Queensland and have a dedicated team of organizers.
