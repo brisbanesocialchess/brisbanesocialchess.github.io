@@ -20,12 +20,11 @@ function uuidv4() {
  * Verifies a Cloudflare Turnstile captcha token with optional retry logic.
  *
  * @param {string} token - The captcha token to verify.
- * @param {Object} env - Environment object containing secret keys.
  * @param {number} [maxRetries=3] - Maximum number of retry attempts.
  * @param {number} [delayMs=500] - Delay in milliseconds between retries.
  * @returns {Promise<boolean>} True if captcha is valid, false otherwise.
  */
-async function verifyTurnstile(token, env, maxRetries = 3, delayMs = 500) {
+async function verifyTurnstile(token, maxRetries = 3, delayMs = 500) {
 	if (!token) return false;
 
 	const SECRET_KEY = env.TURNSTILE_SECRET;
