@@ -41,10 +41,8 @@ async function copyFile(srcPath) {
 		const content = fs.readFileSync(srcPath, "utf-8");
 		const minified = await minifyHtml(content);
 		fs.writeFileSync(destPath, minified, "utf-8");
-		console.log(`✨ Minified + copied HTML: ${relativePath}`);
 	} else {
 		fs.copyFileSync(srcPath, destPath);
-		console.log(`📂 Copied: ${relativePath}`);
 	}
 }
 
@@ -54,7 +52,6 @@ function removeFile(srcPath) {
 
 	if (fs.existsSync(destPath)) {
 		fs.unlinkSync(destPath);
-		console.log(`🗑️ Deleted: ${relativePath}`);
 	}
 }
 
@@ -64,7 +61,6 @@ function removeDir(srcPath) {
 
 	if (fs.existsSync(destPath)) {
 		fs.rmSync(destPath, { recursive: true, force: true });
-		console.log(`🗑️ Deleted folder: ${relativePath}`);
 	}
 }
 
@@ -77,7 +73,6 @@ async function buildAll() {
 	for (const file of allFiles) {
 		await copyFile(file);
 	}
-	console.log("✅ Initial sync complete.");
 }
 
 // -------------------------
@@ -95,8 +90,6 @@ function watchFiles() {
 		.on("change", copyFile)
 		.on("unlink", removeFile)
 		.on("unlinkDir", removeDir);
-
-	console.log("👀 Watching for file changes...");
 }
 
 // -------------------------
