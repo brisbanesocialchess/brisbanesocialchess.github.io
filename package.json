@@ -19,7 +19,7 @@
 		"tailwindcss:watch": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
 		"vite:build": "node copy-html.js && vite build && node merge-assets.js",
-		"vite:watch": "vite watch",
+		"vite:watch": "concurrently \"vite watch\" \"node copy-html.js --watch\"",
 		"vite:preview": "vite preview"
 	},
 	"prettier": {
