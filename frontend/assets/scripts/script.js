@@ -106,7 +106,6 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		return;
 	}
 
-
 	const turnstileEl = form.querySelector('.cf-turnstile');
 	if (turnstileEl) {
 		try {

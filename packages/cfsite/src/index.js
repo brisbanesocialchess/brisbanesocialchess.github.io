@@ -56,6 +56,8 @@ async function verifyTurnstile(token, env, maxRetries = 3, delayMs = 500) {
 			await new Promise((resolve) => setTimeout(resolve, delayMs));
 		}
 	}
+
+	return false;
 }
 
 /**
