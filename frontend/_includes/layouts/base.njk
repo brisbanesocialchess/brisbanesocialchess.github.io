@@ -86,18 +86,11 @@
     <!-- Footer -->
     <footer class="h-[85px] text-center p-8 text-sm text-white/60 flex flex-col items-center justify-center gap-3">
       <div class="flex space-x-4">
-        <a href="https://discord.gg/YOUR_LINK" target="_blank" rel="noopener">
-          <img src="/assets/images/discord.svg" alt="Discord" class="w-6 h-6 hover:opacity-80 transition" />
+        {% for social in socials %}
+        <a href="{{ social.url }}" target="_blank" rel="noopener" class="hover:opacity-80 transition">
+          <img src="/assets/images/{{ social.icon }}" alt="{{ social.name }}" class="w-6 h-6" />
         </a>
-        <a href="https://facebook.com/YOUR_PAGE" target="_blank" rel="noopener">
-          <img src="/assets/images/facebook.svg" alt="Facebook" class="w-6 h-6 hover:opacity-80 transition" />
-        </a>  
-        <a href="https://github.com/brisbanesocialchess" target="_blank" rel="noopener">
-          <img src="/assets/images/github.svg" alt="GitHub" class="w-6 h-6 hover:opacity-80 transition" />
-        </a>
-        <a href="https://instagram.com/brisbanesocialchess" target="_blank" rel="noopener">
-          <img src="/assets/images/instagram.svg" alt="Instagram" class="w-6 h-6 hover:opacity-80 transition" />
-        </a>
+        {% endfor %}
       </div>
       <p>&copy; <span id="year"></span> Brisbane Social Chess. All rights reserved.</p>
     </footer>

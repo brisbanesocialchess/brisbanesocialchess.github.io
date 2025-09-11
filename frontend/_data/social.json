@@ -1,6 +1,6 @@
 [
-  { "name": "Discord", "url": "https://discord.gg/your-link", "icon": "discord.svg", "gradient": "from-indigo-500 to-purple-600" },
-  { "name": "Facebook", "url": "https://facebook.com/your-page", "icon": "facebook.svg", "gradient": "from-blue-600 to-blue-400" },
-  { "name": "GitHub", "url": "https://github.com/your-profile", "icon": "github.svg", "gradient": "from-gray-800 to-gray-600" },
-  { "name": "Instagram", "url": "https://instagram.com/your-profile", "icon": "instagram.svg", "gradient": "from-pink-500 via-purple-500 to-yellow-400" }
+  { "name": "Discord", "url": "https://discord.com/invite/JWBKhQmzvD", "icon": "discord.svg", "gradient": "from-indigo-500 to-purple-600" },
+  { "name": "Facebook", "url": "https://www.facebook.com/BrisbaneSocialChess", "icon": "facebook.svg", "gradient": "from-blue-600 to-blue-400" },
+  { "name": "GitHub", "url": "https://github.com/brisbanesocialchess", "icon": "github.svg", "gradient": "from-gray-800 to-gray-600" },
+  { "name": "Instagram", "url": "https://instagram.com/brisbanesocialchess", "icon": "instagram.svg", "gradient": "from-pink-500 via-purple-500 to-yellow-400" }
 ]
