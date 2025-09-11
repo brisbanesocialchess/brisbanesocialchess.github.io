@@ -28,7 +28,7 @@ def clear_screen():
         if os.name == "nt":
             os.system("cls")  # Windows
         else:
-            os.system("clear")  # macOS/Linux
+            os.system("/usr/bin/clear")  # macOS/Linux
     except Exception:
         print("\033[H\033[J", end="")  # ANSI escape sequence fallback
 
