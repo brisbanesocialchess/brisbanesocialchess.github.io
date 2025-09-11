@@ -26,17 +26,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Tailwindcss
-        run: npm run tailwindcss:build
-
-      - name: Build Eleventy site
+      - name: Build site
         run: npm run build
 
       - name: Deploy to GitHub Pages branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          cd ./_site
+          cd ./_deploy
           git init
           git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git checkout -b gh-pages

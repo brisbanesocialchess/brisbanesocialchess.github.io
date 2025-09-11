@@ -10,6 +10,18 @@
 
 This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static site. You do not need to know advanced JavaScript to get started - just follow the steps below!
 
+[![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
+[![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
+[![Join our Discord Server](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
+[![Cloudflare Pages site status](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.pages.dev&label=%F0%9F%8C%90%20cloudflare-pages)](https://brisbanesocialchess.pages.dev)
+[![GitHub Pages site status](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages)](https://brisbanesocialchess.github.io)
+[![Read the Docs site status](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.readthedocs.io%2Fen%2Flatest%2F&label=%F0%9F%8C%90%20read-the-docs)](https://brisbanesocialchess.readthedocs.io/en/latest/)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
+[![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
+
+[![DeepSource active issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
+[![DeepSource resolved issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=resolved+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
+
 [![CodeQL](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
 [![Dependabot Updates](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates)
 [![Dprint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
@@ -27,18 +39,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![Read the Docs Build Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://app.readthedocs.org/projects/brisbanesocialchess/builds/?version__slug=latest)
 [![GitHub Pages Build Deployment status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
 
-[![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
-[![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
-[![Join our Discord Server](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
-[![Cloudflare Pages site status](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.pages.dev&label=%F0%9F%8C%90%20cloudflare-pages)](https://brisbanesocialchess.pages.dev)
-[![GitHub Pages site status](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages)](https://brisbanesocialchess.github.io)
-[![Read the Docs site status](https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.readthedocs.io%2Fen%2Flatest%2F&label=%F0%9F%8C%90%20read-the-docs)](https://brisbanesocialchess.readthedocs.io/en/latest/)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
-[![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
-
-[![DeepSource active issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
-[![DeepSource resolved issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=resolved+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
-
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
 - **Cloudflare Pages:** Pull request deploy previews [https://brisbanesocialchess.pages.dev/](https://brisbanesocialchess.pages.dev/)
@@ -52,22 +52,23 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [About Brisbane Social Chess](#about-brisbane-social-chess)
-- [Quick Start](#quick-start)
-- [Technology Stack](#technology-stack)
-  - [Cloudflare Workers Development](#cloudflare-workers-development)
-    - [Start Development Server](#start-development-server)
-    - [Run Tests](#run-tests)
-  - [Getting Started / Building the Site](#getting-started--building-the-site)
-  - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
-  - [Build the Documentation](#build-the-documentation)
-- [Contributors](#contributors)
+- [📃 About Brisbane Social Chess](#-about-brisbane-social-chess)
+- [🚀 Quick Start](#-quick-start)
+- [🛠️ Technology Stack](#-technology-stack)
+  - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
+    - [▶️ Start Development Server](#-start-development-server)
+    - [🏃 Run Tests](#-run-tests)
+  - [🏗️ Getting Started / Building the Site](#-getting-started--building-the-site)
+  - [🐳 Build the Docker image for running `pre-commit` easily](#-build-the-docker-image-for-running-pre-commit-easily)
+  - [📚 Build the Documentation](#-build-the-documentation)
+- [👥 Contributors](#-contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
-## ♟️ About Brisbane Social Chess
+
+## 📃 About Brisbane Social Chess
 
 Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
 We organize regular meetups where people can play chess in a relaxed and friendly environment.
@@ -114,7 +115,9 @@ cd packages/cfsite
 npx wrangler dev
 ```
 
-#### 🧪 Run Tests
+
+#### 🏃 Run Tests
+
 
 ```bash
 cd packages/cfsite

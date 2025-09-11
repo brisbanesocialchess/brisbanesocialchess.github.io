@@ -24,15 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Tailwindcss
-        run: npm run tailwindcss:build
-
-      - name: Build Eleventy site
+      - name: Build site
         run: npm run build
 
       - name: Verify build output
         run: |
-          if [ ! -d "./_site" ]; then
-            echo "_site folder missing — build failed"
+          if [ ! -d "./_deploy" ]; then
+            echo "_deploy folder missing — build failed"
             exit 1
           fi
