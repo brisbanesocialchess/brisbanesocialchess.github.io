@@ -1,2 +1,6 @@
+docker_data/.cache
+frontend/tailwind.css
 package-lock.json
-packages/cfsite/package-lock.json
+.cache
+.mypy_cache
+.pytest_cache

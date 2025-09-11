@@ -4,6 +4,8 @@ const MIN_AGE = 5;
 const MAX_AGE = 120;
 
 // Elements
+const elmToggleBtn = document.getElementById('menu-toggle');
+const elmMenu = document.getElementById('menu');
 const elmYear = document.getElementById('year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
@@ -15,8 +17,8 @@ function getCurrentYear() {
 }
 
 function showAlert(errors) {
-	if (errors.length === 1) alert('Please fix the error: ' + errors.join(' '));
-	else alert('Please fix the following:\n- ' + errors.join('\n- '));
+	if (errors.length === 1) alert(`Please fix the error: ${errors.join(' ')}`);
+	else alert(`Please fix the following:\n- ${errors.join('\n- ')}`);
 }
 
 function isValidEmail(email) {
@@ -73,7 +75,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 			method: 'POST',
 		});
 
-		if (response && response.ok && response.status === 200) {
+		if (response?.ok && response?.status === 200) {
 			alert('✅ Submission successful!');
 			form.reset();
 		} else {
@@ -81,10 +83,10 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 			try {
 				const result = await response.json();
 				const errorMessage = result.message || defaultErrorMessage;
-				alert('❌ Error: ' + errorMessage);
+				alert(`❌ Error: ${errorMessage}`);
 			} catch (e) {
 				console.error('Error parsing JSON response:', e);
-				alert('❌ Error: ' + defaultErrorMessage);
+				alert(`❌ Error: ${defaultErrorMessage}`);
 			}
 		}
 	} catch (err) {
@@ -96,12 +98,12 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 // Event Bindings
 elmFormRegister?.addEventListener('submit', async (e) => {
 	e.preventDefault();
-	await handleFormSubmit(elmFormRegister, API_BASE + '/api/register', validateRegisterForm);
+	await handleFormSubmit(elmFormRegister, `${API_BASE}/api/register`, validateRegisterForm);
 });
 
 elmFormContact?.addEventListener('submit', async (e) => {
 	e.preventDefault();
-	await handleFormSubmit(elmFormContact, API_BASE + '/api/contact', validateContactForm);
+	await handleFormSubmit(elmFormContact, `${API_BASE}/api/contact`, validateContactForm);
 });
 
 // Init
@@ -119,18 +121,21 @@ elmEmailElements.forEach((el) => {
 });
 
 window.addEventListener('message', (e) => {
-	// Step 1: Security check - Verify the message origin is chess.com
-	if (e.origin !== 'https://www.chess.com') {
-		return; // Exit if the message is from an untrusted source
-	}
-
-	// Step 2: Robustness check - Ensure data and ID exist and frameHeight is a number
+	if (e.origin !== 'https://www.chess.com') return;
 	if (e.data?.id && typeof e.data?.frameHeight === 'number') {
 		const iframe = document.getElementById(e.data.id);
-		// If a matching iframe is found, set its height
 		if (iframe) {
 			const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
 			iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
 		}
 	}
 });
+
+// Events
+if (elmToggleBtn && elmMenu) {
+	elmToggleBtn.addEventListener('click', () => {
+		elmMenu.classList.toggle('hidden');
+		const isExpanded = !elmMenu.classList.contains('hidden');
+		elmToggleBtn.setAttribute('aria-expanded', isExpanded);
+	});
+}

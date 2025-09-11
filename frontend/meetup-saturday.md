@@ -9,11 +9,11 @@ title: Saturday Chess Meetup | Brisbane Social Chess Club
     Saturday Chess ♟️☕
   </h2>
   <p class="text-gray-200 text-sm"><strong>Location:</strong> West End Park Cafe!</p>
-  <p class="text-gray-200 text-sm"><strong>Hosted by:</strong> Ben M, Peiqi Sun</p>
+  <p class="text-gray-200 text-sm"><strong>Hosted by:</strong> Ben Martin, Peiqi Sun</p>
   <div class="flex justify-center gap-4 flex-wrap mt-2">
     <img
       src="https://avatars.githubusercontent.com/u/873384?s=400&v=4"
-      alt="Ben M"
+      alt="Ben Martin"
       class="max-w-[150px] rounded-lg"
     />
     <img
