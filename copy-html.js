@@ -1,45 +1,25 @@
 /* eslint-env node */
-import fs from 'fs';
-import path from 'path';
-import { globSync } from 'glob';
-import { minify } from 'html-minifier-terser';
+import fs from "fs";
+import path from "path";
+import { globSync } from "glob";
+import { minify } from "html-minifier-terser";
+import chokidar from "chokidar";
 
-const SRC_FOLDER = path.resolve('./_site');
-const DEST_FOLDER = path.resolve('./_deploy');
+const SRC_FOLDER = path.resolve("./_site");
+const DEST_FOLDER = path.resolve("./_deploy");
 
 // -------------------------
 // Utility functions
 // -------------------------
-
-/**
- * Ensures the directory for a given file path exists.
- * Creates parent directories recursively if missing.
- * @param {string} filePath - Path to a file (not directory).
- */
 function ensureDir(filePath) {
 	fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
-/**
- * Gets all files matching the provided glob pattern.
- * @param {string} globPattern - The glob pattern
- * @returns {string[]} Array of matched file paths.
- */
 function getAllFiles(globPattern) {
-	return globSync(globPattern);
+	return globSync(globPattern, { nodir: true });
 }
 
-// -------------------------
-// HTML processing
-// -------------------------
-
-/**
- * Minifies HTML content by removing whitespace, comments,
- * and minifying embedded CSS/JS.
- * @param {string} content - Raw HTML string.
- * @returns {Promise<string>} Minified HTML content.
- */
-function minifyHtml(content) {
+async function minifyHtml(content) {
 	return minify(content, {
 		collapseWhitespace: true,
 		minifyCSS: true,
@@ -51,36 +31,84 @@ function minifyHtml(content) {
 	});
 }
 
-/**
- * Copies all `.html` files from the source folder, minifies them,
- * and writes them to the destination folder while preserving structure.
- * @returns {Promise<void>}
- */
-async function copyAndMinifyHtmlFiles() {
-	const htmlFiles = getAllFiles(`${SRC_FOLDER}/**/*.html`);
+async function copyFile(srcPath) {
+	const relativePath = path.relative(SRC_FOLDER, srcPath);
+	const destPath = path.join(DEST_FOLDER, relativePath);
 
-	for (const file of htmlFiles) {
-		const relativePath = path.relative(SRC_FOLDER, file);
-		const destPath = path.join(DEST_FOLDER, relativePath);
+	ensureDir(destPath);
 
-		ensureDir(destPath);
-
-		const content = fs.readFileSync(file, 'utf-8');
+	if (srcPath.endsWith(".html")) {
+		const content = fs.readFileSync(srcPath, "utf-8");
 		const minified = await minifyHtml(content);
+		fs.writeFileSync(destPath, minified, "utf-8");
+		console.log(`✨ Minified + copied HTML: ${relativePath}`);
+	} else {
+		fs.copyFileSync(srcPath, destPath);
+		console.log(`📂 Copied: ${relativePath}`);
+	}
+}
 
-		fs.writeFileSync(destPath, minified, 'utf-8');
+function removeFile(srcPath) {
+	const relativePath = path.relative(SRC_FOLDER, srcPath);
+	const destPath = path.join(DEST_FOLDER, relativePath);
+
+	if (fs.existsSync(destPath)) {
+		fs.unlinkSync(destPath);
+		console.log(`🗑️ Deleted: ${relativePath}`);
+	}
+}
+
+function removeDir(srcPath) {
+	const relativePath = path.relative(SRC_FOLDER, srcPath);
+	const destPath = path.join(DEST_FOLDER, relativePath);
+
+	if (fs.existsSync(destPath)) {
+		fs.rmSync(destPath, { recursive: true, force: true });
+		console.log(`🗑️ Deleted folder: ${relativePath}`);
 	}
 }
 
 // -------------------------
-// Main execution
+// Build all
 // -------------------------
+async function buildAll() {
+	const allFiles = getAllFiles(`${SRC_FOLDER}/**/*.*`);
 
-/**
- * Main entry point of the script.
- * Runs HTML minification and (optionally) static asset copy.
- * @returns {Promise<void>}
- */
+	for (const file of allFiles) {
+		await copyFile(file);
+	}
+	console.log("✅ Initial sync complete.");
+}
+
+// -------------------------
+// Watcher
+// -------------------------
+function watchFiles() {
+	const watcher = chokidar.watch(SRC_FOLDER, {
+		ignored: /(^|[/\\])\../, // ignore dotfiles
+		persistent: true,
+		ignoreInitial: true,
+	});
+
+	watcher
+		.on("add", copyFile)
+		.on("change", copyFile)
+		.on("unlink", removeFile)
+		.on("unlinkDir", removeDir);
+
+	console.log("👀 Watching for file changes...");
+}
+
+// -------------------------
+// Main
+// -------------------------
 (async function main() {
-	await copyAndMinifyHtmlFiles();
+	const args = process.argv.slice(2);
+	const watchMode = args.includes("--watch");
+
+	await buildAll();
+
+	if (watchMode) {
+		watchFiles();
+	}
 })();
