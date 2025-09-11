@@ -39,7 +39,7 @@ fs.readdirSync(cssDir).forEach((file) => {
 
 fs.readdirSync(jsDir).forEach((file) => {
 	const filePath = path.join(jsDir, file);
-	if (file !== 'bundle.js' && fs.lstatSync(filePath).isFile()) {
+	if (file !== path.basename(mergedJsFile) && fs.lstatSync(filePath).isFile()) {
 		fs.unlinkSync(filePath);
 	}
 });
