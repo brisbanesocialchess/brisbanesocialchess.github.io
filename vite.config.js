@@ -4,6 +4,7 @@ import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
+	assetsInclude: [],
 	build: {
 		assetsInlineLimit: 0,
 		emptyOutDir: false,
