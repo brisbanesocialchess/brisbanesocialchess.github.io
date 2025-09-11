@@ -1,5 +1,6 @@
 # Site builder
 _site
+_deploy
 
 # Editor directories
 .vscode/
@@ -31,6 +32,9 @@ build/
 .env.local
 .env.*.local
 
+# Python Cache
+.mypy_cache
+
 # Backup files
 *~
 *.bak
@@ -48,4 +52,4 @@ public/
 # Python
 .venv
 
-frontend/assets/tailwind.css
+frontend/assets/styles/base.css

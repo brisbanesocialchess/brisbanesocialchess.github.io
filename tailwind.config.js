@@ -14,5 +14,11 @@ module.exports = {
 		'role-event-organizers',
 		'role-assistant-organizers',
 	],
-	theme: {},
+	theme: {
+		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
+		},
+	},
 };

@@ -1,9 +1,5 @@
-# .deepsource.toml
-
-# The version of the configuration file format.
 version = 1
 
-# Define the analyzers for each language.
 [[analyzers]]
 name = "python"
 enabled = true
@@ -14,36 +10,35 @@ dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 name = "javascript"
 enabled = true
 version = "es2022"
-environment = ["vitest", "browser", "nodejs"]
+environment = ["nodejs"]
+include_patterns = ["merge-assets.js", "copy-html.js", ".eleventy.js", "packages/**/*.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+version = "es2022"
+environment = ["browser"]
+include_patterns = ["frontend/**/*.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
 
 [[analyzers]]
 name = "secrets"
 enabled = true
-# This analyzer detects hardcoded secrets like API keys and passwords.
 
 [[analyzers]]
 name = "shell"
 enabled = true
-# This analyzer checks for common issues in shell scripts.
 
 [[analyzers]]
 name = "docker"
 enabled = true
-# This analyzer checks for security and best practices in Dockerfiles.
-
-# You can configure specific analyzers.
-# For example, to enable a specific linter rule for Python:
 # [[analyzers.meta]]
 # name = "flake8"
 # enable_all = true
-
-# You can also set a minimum severity for issues that will be reported.
 # severity_threshold = "critical"
 # Possible values: "critical", "major", "minor", "info"
 
-# Configure transformers.
-# Transformers are used to generate code before analysis.
-# For example, if you use a build step that generates files.
 # [[transformers]]
 # name = "mypy"
 # enabled = true
@@ -59,9 +54,5 @@ enabled = true
 [[transformers]]
 name = "prettier"
 enabled = true
-
-# To identify test files.
 test_patterns = ["packages/cfsite/test/**/*.spec.js"]
-
-# To ignore files or paths from being analyzed.
-exclude_patterns = ["**/node_modules/", "_site/"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]

@@ -1,0 +1,28 @@
+---
+layout: 'layouts/meetup.njk'
+slug: sunday
+heading: Sunday Lunchtime Chess ♟️☕
+location: The Garden Room Cafe, Roma Street Parklands
+hosts:
+  - Joseph Tan
+  - Matt McLean
+  - Steve Anderson
+hosts_images:
+  - src: https://avatars.githubusercontent.com/u/873384?s=400&v=4
+    alt: Joseph Tan
+  - src: https://avatars.githubusercontent.com/u/172946035?v=4
+    alt: Matt McLean
+  - src: https://avatars.githubusercontent.com/u/873384?s=400&v=4
+    alt: Steve Anderson
+description: |
+  Calling all Blunderers near and far - Sundays are our day to plot, move and laugh. <br />
+  Join us every Sunday around 11am as we transform a city coffee house into a casual chess haven. Early birds, latecomers, and every bird in between is welcome! <br />
+  This isn't your serious chess tournament - bring your humour and your favourite chess set from home. We need at least half our chess crew rocking unique sets every week! Extra props if it's got some personality. And don't forget a timer if you like to play with one. <br />
+  Remember, this is social chess, so lend your opponent a hand if they need it! Give some extra time, point out potential moves, or let 'em take a move back. We're all about wholesome fun - no scorekeeping, fees, or cutthroat competition here. <br />
+  Got an idea for a new time or place we could play? We wanna hear it! All ages and experience levels...you guessed it: welcome! Show off your chess skills or come as a newbie - either way, you'll fit right in. We know you've got the chops
+time: 11:00 AM – 2:00 PM AEST
+when: Every Sunday
+address: 1 Parkland Blvd, Brisbane City QLD 4000
+# map: "https://www.google.com/maps/embed?pb=..."
+permalink: 'meetup/{{ slug }}/'
+---

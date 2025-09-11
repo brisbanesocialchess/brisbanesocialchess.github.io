@@ -1,7 +1,7 @@
 ---
 permalink: /games/
 layout: 'layouts/base.njk'
-title: Chess Games & Variants | Brisbane Social Chess Club
+title: Chess Games & Variants
 ---
 
 <section class="px-4 max-w-3xl">

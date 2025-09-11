@@ -1,6 +1,9 @@
 docker_data/.cache
-frontend/tailwind.css
+frontend/assets/tailwind.css
+frontend/assets/styles/base.css
 package-lock.json
 .cache
 .mypy_cache
 .pytest_cache
+_deploy
+_site

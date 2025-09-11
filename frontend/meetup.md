@@ -1,7 +1,7 @@
 ---
 permalink: /meetup/
 layout: 'layouts/base.njk'
-title: Chess Meetups & Locations | Brisbane Social Chess Club
+title: Chess Meetups & Locations
 ---
 
 <section class="px-4 max-w-3xl">
