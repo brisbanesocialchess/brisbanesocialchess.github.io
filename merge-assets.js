@@ -1,4 +1,4 @@
-/* eslint-env node */ 
+/* eslint-env node */
 import fs from 'fs';
 import path from 'path';
 
@@ -10,18 +10,13 @@ const mergedCssFile = path.relative(process.cwd(), path.join(cssDir, 'bundle.css
 const mergedJsFile = path.relative(process.cwd(), path.join(jsDir, 'bundle.js'));
 
 // --- Include arrays ---
-const includeCss = [
-	'base.css',
-	'gh-fork-ribbon.css',
-	'custom.css',
-];
-const includeJs = [
-	'script.js',
-];
+const includeCss = ['base.css', 'gh-fork-ribbon.css', 'custom.css'];
+const includeJs = ['script.js'];
 
 // --- Merge CSS ---
-const cssFiles = includeCss.map(f => path.relative(process.cwd(), path.join(cssDir, f)))
-	.filter(f => fs.existsSync(f) && f !== mergedCssFile);
+const cssFiles = includeCss
+	.map((f) => path.relative(process.cwd(), path.join(cssDir, f)))
+	.filter((f) => fs.existsSync(f) && f !== mergedCssFile);
 
 let mergedCss = '';
 cssFiles.forEach((file) => {
@@ -34,8 +29,9 @@ if (cssFiles.length > 0) {
 }
 
 // --- Merge JS ---
-const jsFiles = includeJs.map(f => path.relative(process.cwd(), path.join(jsDir, f)))
-	.filter(f => fs.existsSync(f) && f !== mergedJsFile);
+const jsFiles = includeJs
+	.map((f) => path.relative(process.cwd(), path.join(jsDir, f)))
+	.filter((f) => fs.existsSync(f) && f !== mergedJsFile);
 
 let mergedJs = '';
 jsFiles.forEach((file) => {
