@@ -54,13 +54,13 @@ function validateRegisterForm(data) {
 
 	const currentYear = getCurrentYear();
 
-	if (!data.firstName?.trim()) errors.push('First name is required.');
-	if (!data.lastName?.trim()) errors.push('Last name is required.');
+	if (!data.fname?.trim()) errors.push('First name is required.');
+	if (!data.lname?.trim()) errors.push('Last name is required.');
 
-	const year = data.birthYear ? parseInt(data.birthYear, 10) : NaN;
+	const year = data.birthyear ? parseInt(data.birthyear, 10) : NaN;
 	const age = currentYear - year;
 
-	if (!data.birthYear?.trim()) errors.push('Birth year is required.');
+	if (!data.birthyear?.trim()) errors.push('Birth year is required.');
 	else if (isNaN(year)) errors.push('Birth year must be a valid number.');
 	else if (age < MIN_AGE || age > MAX_AGE) errors.push(`Age must be between ${MIN_AGE} and ${MAX_AGE} years old.`);
 
@@ -106,17 +106,6 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		return;
 	}
 
-	const turnstileEl = form.querySelector('.cf-turnstile');
-	if (turnstileEl) {
-		try {
-			data['cf-turnstile-response'] = await window.turnstile.execute(turnstileEl);
-		} catch (err) {
-			alert('❌ Captcha verification failed. Please try again.');
-			console.error(err);
-			return;
-		}
-	}
-
 	try {
 		const response = await fetch(endpoint, {
 			body: JSON.stringify(data),
@@ -127,7 +116,6 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		if (response?.ok && response?.status === 200) {
 			alert('✅ Submission successful!');
 			form.reset();
-			if (turnstileEl) window.turnstile.reset(turnstileEl);
 		} else {
 			const defaultErrorMessage = 'Something went wrong.';
 			try {
