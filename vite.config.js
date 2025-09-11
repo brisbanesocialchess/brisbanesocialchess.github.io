@@ -22,11 +22,22 @@ export default defineConfig({
 					}
 					return 'assets/[name][extname]';
 				},
+<<<<<<< HEAD
 				chunkFileNames: 'assets/scripts/[name].js',
 				entryFileNames: 'assets/scripts/[name].js',
 				manualChunks: undefined,
 			},
 		},
+=======
+				chunkFileNames: 'chunks/[name].js',
+				entryFileNames: 'script.js',
+			}
+		},
+	},
+	assetsInclude: [],
+	optimizeDeps: {
+		exclude: ['*.jpg', '*.jpeg', '*.png', '*.gif', '*.svg', '*.webp']
+>>>>>>> 987469a (chore(vite): reorder keys to satisfy sort-keys and prevent image JS output)
 	},
 	css: {
 		postcss: {
