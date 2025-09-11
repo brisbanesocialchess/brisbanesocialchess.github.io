@@ -42,7 +42,7 @@ describe('API endpoints', () => {
 
 		expect(await response.json()).toEqual({
 			message: "Captcha verification failed",
-			status: 'ok',
+			status: "error",
 		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
@@ -69,7 +69,7 @@ describe('API endpoints', () => {
 
 		expect(await response.json()).toEqual({
 			message: "Captcha verification failed",
-			status: 'ok',
+			status: "error",
 		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
