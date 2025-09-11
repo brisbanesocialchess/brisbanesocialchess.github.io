@@ -144,10 +144,6 @@ title: Play, Learn & Compete in Brisbane
 <section class="px-4 max-w-3xl text-center">
   <h2 class="text-xl md:text-2xl font-semibold text-indigo-200 mb-4">Join Us!</h2>
   <p class="text-white/90 mb-6">
-    We are creating magic live on Discord <span aria-hidden="true">🪄</span><br/>
-    Click below to peruse our Facebook page <span aria-hidden="true">📄</span><br/>
-    Come collaborate, communicate and share your ideas for Brisbane Social Chess on GitHub <span aria-hidden="true">🚀</span><br/>
-    Follow and like us on Instagram <span aria-hidden="true">📷</span><br/>
     The club plays chess on three social networks <span aria-hidden="true">💃</span>
   </p>
   <div class="flex flex-col md:flex-row flex-wrap justify-center gap-4 mb-6">
