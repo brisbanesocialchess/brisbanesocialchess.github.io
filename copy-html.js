@@ -18,20 +18,22 @@ const MERGED_JS_FILE = path.join(JS_DIR, "bundle.js");
 // -------------------------
 // Utility functions
 // -------------------------
-
 /**
- * Ensure parent directory for `filePath` exists (creates recursively).
- * @param {string} filePath - File path (not directory) for which parent dir will be created.
+ * Ensures the parent directory for a given file path exists.
+ *
+ * @param {string} filePath - File path (not directory) for which the parent directory should be created.
+ * @returns {void}
  */
 function ensureDir(filePath) {
 	fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
 /**
- * Return `true` if the path is inside excluded asset directories.
- * We keep asset merging logic separate, so these are skipped during general copying.
- * @param {string} filePath
- * @returns {boolean}
+ * Checks if a given file path is inside excluded asset directories.
+ * Asset dirs are `/assets/styles/` and `/assets/scripts/`.
+ *
+ * @param {string} filePath - Absolute file path to check.
+ * @returns {boolean} - True if file path is in excluded dirs, otherwise false.
  */
 function isExcludedAssetPath(filePath) {
 	const norm = filePath.replace(/\\/g, "/");
@@ -39,9 +41,10 @@ function isExcludedAssetPath(filePath) {
 }
 
 /**
- * Get all files matched by a glob pattern (no directories).
- * @param {string} globPattern
- * @returns {string[]}
+ * Returns all files that match a glob pattern.
+ *
+ * @param {string} globPattern - Glob pattern for file matching.
+ * @returns {string[]} - List of absolute file paths.
  */
 function getAllFiles(globPattern) {
 	return globSync(globPattern, { nodir: true });
@@ -50,11 +53,11 @@ function getAllFiles(globPattern) {
 // -------------------------
 // HTML Minification
 // -------------------------
-
 /**
- * Minifies HTML string and returns result.
- * @param {string} content
- * @returns {Promise<string>}
+ * Minifies an HTML string.
+ *
+ * @param {string} content - Raw HTML string.
+ * @returns {Promise<string>} - Minified HTML string.
  */
 async function minifyHtml(content) {
 	return minify(content, {
@@ -71,12 +74,13 @@ async function minifyHtml(content) {
 // -------------------------
 // File operations
 // -------------------------
-
 /**
- * Copy a file from `_site` to `_deploy`.
- * - Skips asset style/script source files (they are handled by asset merging).
- * - Minifies `.html`.
- * @param {string} srcPath - absolute path in SRC_FOLDER
+ * Copies a file from the `_site` folder to `_deploy`.
+ * - Skips excluded asset dirs.
+ * - Minifies `.html` files.
+ *
+ * @param {string} srcPath - Absolute source file path inside `_site`.
+ * @returns {Promise<void>}
  */
 async function copyFile(srcPath) {
 	if (isExcludedAssetPath(srcPath)) return;
@@ -102,8 +106,10 @@ async function copyFile(srcPath) {
 }
 
 /**
- * Remove the corresponding file from `_deploy`.
- * @param {string} srcPath - absolute path in SRC_FOLDER
+ * Removes a file from the `_deploy` folder.
+ *
+ * @param {string} srcPath - Absolute source file path inside `_site`.
+ * @returns {void}
  */
 function removeFile(srcPath) {
 	if (isExcludedAssetPath(srcPath)) return;
@@ -122,8 +128,10 @@ function removeFile(srcPath) {
 }
 
 /**
- * Remove the corresponding directory from `_deploy`.
- * @param {string} srcPath - absolute dir path in SRC_FOLDER
+ * Removes a directory from the `_deploy` folder.
+ *
+ * @param {string} srcPath - Absolute directory path inside `_site`.
+ * @returns {void}
  */
 function removeDir(srcPath) {
 	if (isExcludedAssetPath(srcPath)) return;
@@ -144,12 +152,13 @@ function removeDir(srcPath) {
 // -------------------------
 // Asset merging
 // -------------------------
-
 /**
- * Merge multiple text files into a single output file (concatenation).
- * Removes original files after writing bundle.
- * @param {string[]} files - absolute paths
- * @param {string} outputFile - absolute path
+ * Concatenates multiple text files into a single output file.
+ * Deletes the original input files after merging.
+ *
+ * @param {string[]} files - Absolute paths of input files.
+ * @param {string} outputFile - Absolute output file path.
+ * @returns {void}
  */
 function mergeFiles(files, outputFile) {
 	if (!files || files.length === 0) return;
@@ -167,7 +176,7 @@ function mergeFiles(files, outputFile) {
 		ensureDir(outputFile);
 		fs.writeFileSync(outputFile, merged, "utf-8");
 		console.log(`🔗 Merged ${files.length} -> ${path.relative(process.cwd(), outputFile)}`);
-		// cleanup originals
+
 		for (const f of files) {
 			try {
 				fs.unlinkSync(f);
@@ -181,8 +190,9 @@ function mergeFiles(files, outputFile) {
 }
 
 /**
- * Merge CSS and JS files inside `_deploy/assets/...` into bundle.css and bundle.js.
- * Skips if no files found.
+ * Merges CSS and JS assets into `bundle.css` and `bundle.js`.
+ *
+ * @returns {void}
  */
 function mergeAssets() {
 	const cssPattern = path.join(CSS_DIR, "*.css");
@@ -198,12 +208,13 @@ function mergeAssets() {
 // -------------------------
 // Build and Watch
 // -------------------------
-
 /**
- * Build all files or only HTML files depending on `htmlOnly`.
- * - htmlOnly = true  => only copies `.html` files and does NOT merge assets.
- * - htmlOnly = false => copies all files (excluding source asset folders), then merges assets.
- * @param {boolean} htmlOnly
+ * Builds the entire site.
+ * - If `htmlOnly` is true, only `.html` files are processed (no asset merging).
+ * - If `htmlOnly` is false, all files are copied and assets are merged.
+ *
+ * @param {boolean} htmlOnly - Whether to restrict build to `.html` files only.
+ * @returns {Promise<void>}
  */
 async function buildAll(htmlOnly = false) {
 	console.log(`🔨 Starting build (${htmlOnly ? "HTML-only" : "full"})...`);
@@ -224,12 +235,12 @@ async function buildAll(htmlOnly = false) {
 }
 
 /**
- * Start watching files. If `htmlOnly` is true:
- *  - Watch only `*.html` under `_site`.
- *  - Do not trigger asset merging.
- * If false:
- *  - Watch entire `_site` tree and trigger merging on changes.
- * @param {boolean} htmlOnly
+ * Watches for file changes and mirrors them into `_deploy`.
+ * - If `htmlOnly` is true, only `.html` files are watched and copied (no asset merging).
+ * - If `htmlOnly` is false, all files are watched and assets are merged on changes.
+ *
+ * @param {boolean} htmlOnly - Whether to restrict watching to `.html` files only.
+ * @returns {import("chokidar").FSWatcher} - The active chokidar watcher instance.
  */
 function watchFiles(htmlOnly = false) {
 	const pattern = htmlOnly ? `${SRC_FOLDER}/**/*.html` : SRC_FOLDER;
@@ -259,13 +270,23 @@ function watchFiles(htmlOnly = false) {
 			if (!htmlOnly) mergeAssets();
 		});
 
-	// return watcher so caller could close it if desired
 	return watcher;
 }
 
 // -------------------------
 // CLI entry
 // -------------------------
+/**
+ * CLI entry point.
+ *
+ * Parses command-line arguments and runs the appropriate build process.
+ *
+ * Supported CLI flags:
+ * - `--html`: Build only HTML files (skip asset merging).
+ * - `--watch`: Run in watch mode, automatically updating files on change.
+ *
+ * @returns {Promise<void>} Resolves when the build (and optional watch) process completes.
+ */
 (async function main() {
 	const args = process.argv.slice(2);
 	const htmlOnlyMode = args.includes("--html");
