@@ -67,7 +67,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 
 ---
 
-
 ## 📃 About Brisbane Social Chess
 
 Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
@@ -115,9 +114,7 @@ cd packages/cfsite
 npx wrangler dev
 ```
 
-
 #### 🏃 Run Tests
-
 
 ```bash
 cd packages/cfsite
