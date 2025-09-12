@@ -48,7 +48,7 @@ captcha: true
     <a href="https://discord.com/invite/JWBKhQmzvD" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
       Ask Questions on Discord
     </a>
-    <a data-email-href class="w-full cursor-pointer text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
+    <a data-email-href class="email-obfuscated w-full cursor-pointer text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
       Ask Questions on E-Mail
     </a>
   </div>

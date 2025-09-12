@@ -7,25 +7,50 @@
 			"name": "Discord",
 			"url": "https://discord.com/invite/JWBKhQmzvD",
 			"icon": "discord.svg",
-			"gradient": "from-indigo-500 to-purple-600"
+			"gradient": "from-indigo-600 to-indigo-400",
+			"in_nav": true
 		},
 		{
 			"name": "Facebook",
 			"url": "https://www.facebook.com/BrisbaneSocialChess",
 			"icon": "facebook.svg",
-			"gradient": "from-blue-600 to-blue-400"
+			"gradient": "from-blue-700 to-blue-500",
+			"in_nav": true
 		},
 		{
 			"name": "GitHub",
 			"url": "https://github.com/brisbanesocialchess",
 			"icon": "github.svg",
-			"gradient": "from-gray-800 to-gray-600"
+			"gradient": "from-gray-900 to-gray-700",
+			"in_nav": false
 		},
 		{
 			"name": "Instagram",
 			"url": "https://instagram.com/brisbanesocialchess",
 			"icon": "instagram.svg",
-			"gradient": "from-pink-500 via-purple-500 to-yellow-400"
+			"gradient": "from-pink-500 via-purple-500 to-yellow-400",
+			"in_nav": true
+		},
+		{
+			"name": "YouTube",
+			"url": "https://www.youtube.com/@brisbanesocialchess",
+			"icon": "youtube.svg",
+			"gradient": "from-red-600 to-red-400",
+			"in_nav": false
+		},
+		{
+			"name": "X",
+			"url": "https://x.com/BrisbaneChess",
+			"icon": "x.svg",
+			"gradient": "from-gray-900 to-gray-700",
+			"in_nav": true
+		},
+		{
+			"name": "Telegram",
+			"url": "https://t.me/brisbanesocialchess",
+			"icon": "telegram.svg",
+			"gradient": "from-cyan-500 to-blue-500",
+			"in_nav": true
 		}
 	]
 }
