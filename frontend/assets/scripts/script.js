@@ -20,13 +20,87 @@ function getCurrentYear() {
 	return new Date().getFullYear();
 }
 
+
+
+/**
+ * Displays a styled alert card with a custom message in the top-right corner of the page.
+ *
+ * If the required CSS styles are not already present in the document, they will be created and added.
+ * The alert includes a close button that removes the alert card with a fade-out effect.
+ *
+ * @param {string} message - The message to be displayed inside the alert card.
+ * @param {string} color - The color of the side bar, takes hex
+ *
+ * @example
+ * Alert("Something went wrong!", "red");
+ */
+const Alert = (message = "alert message not found", color = "red") => {
+    if (!document.getElementById('alert-card-style')) {
+        const style = document.createElement('style');
+        style.id = 'alert-card-style';
+        style.innerHTML = `
+.alert-card {
+position: fixed;
+top: 20px;
+right: 20px;
+background-color: white;
+color: black;
+padding: 16px 24px;
+border-left: 5px solid ${color};
+border-radius: 6px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+font-family: Arial, sans-serif;
+z-index: 1000;
+min-width: 250px;
+transition: opacity 0.3s ease;
+}
+
+.alert-card button {
+background: none;
+border: none;
+color: black;
+font-size: 18px;
+font-weight: bold;
+float: right;
+cursor: pointer;
+}
+
+.alert-card.fade-out {
+opacity: 0;
+pointer-events: none;
+}
+`;
+        document.head.appendChild(style);
+    }
+
+    const card = document.createElement('div');
+    card.className = 'alert-card';
+    card.innerHTML = ` <button>&times;</button> ${message} `;
+
+    // Close button functionality
+    card.querySelector('button').onclick = () => {
+        card.classList.add('fade-out');
+        setTimeout(() => card.remove(), 300);
+    };
+
+    document.body.appendChild(card);
+
+    // Auto-dismiss after 5 seconds
+    setTimeout(() => {
+        if (card.parentElement) {
+            card.classList.add('fade-out');
+            setTimeout(() => card.remove(), 300);
+        }
+    }, 5000);
+};
+
 /**
  * Displays an alert message with a list of validation errors.
  * @param {string[]} errors - The list of error messages.
  */
 function showAlert(errors) {
-	if (errors.length === 1) alert(`Please fix the error: ${errors.join(' ')}`);
-	else alert(`Please fix the following:\n- ${errors.join('\n- ')}`);
+	if (errors.length === 1) Alert(`Please fix the error: ${errors.join(' ')}`,"red");
+	else Alert(`Please fix the following:\n- ${errors.join('\n- ')}`,"red");
 }
 
 /**
@@ -114,21 +188,21 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		});
 
 		if (response?.ok && response?.status === 200) {
-			alert('✅ Submission successful!');
+			Alert('✅ Submission successful!', "lightseagreen");
 			form.reset();
 		} else {
 			const defaultErrorMessage = 'Something went wrong.';
 			try {
 				const result = await response.json();
 				const errorMessage = result.message || defaultErrorMessage;
-				alert(`❌ Error: ${errorMessage}`);
+				Alert(`❌ Error: ${errorMessage}`, "red");
 			} catch (e) {
 				console.error('Error parsing JSON response:', e);
-				alert(`❌ Error: ${defaultErrorMessage}`);
+				Alert(`❌ Error: ${defaultErrorMessage}`, "red");
 			}
 		}
 	} catch (err) {
-		alert('❌ Network error. Please try again.');
+		Alert('❌ Network error. Please try again.', "red");
 		console.error(err);
 	}
 }
