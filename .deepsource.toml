@@ -3,7 +3,7 @@ version = 1
 [[analyzers]]
 name = "python"
 enabled = true
-version = "3.11"
+version = "3.13"
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 
 [[analyzers]]

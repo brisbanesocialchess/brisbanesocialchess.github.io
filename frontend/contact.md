@@ -2,6 +2,7 @@
 permalink: /contact/
 layout: 'layouts/base.njk'
 title: Contact Us
+captcha: true
 ---
 
 <section class="px-4 max-w-3xl">
@@ -32,6 +33,8 @@ title: Contact Us
       <label for="message" class="text-gray-200 font-semibold mb-1">Message <span aria-hidden="true">*</span></label>
       <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-white/10 text-white placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-vertical min-h-[120px]"></textarea>
     </div>
+    <!-- Captcha -->
+    <div class="cf-turnstile" data-sitekey="{{ site.cloudflare_turnstile_key }}" data-action="submit"></div>
     <!-- Submit Button -->
     <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
       Send Message
@@ -45,7 +48,7 @@ title: Contact Us
     <a href="https://discord.com/invite/JWBKhQmzvD" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
       Ask Questions on Discord
     </a>
-    <a data-email-href class="w-full cursor-pointer text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
+    <a data-email-href class="email-obfuscated w-full cursor-pointer text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
       Ask Questions on E-Mail
     </a>
   </div>

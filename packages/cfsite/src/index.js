@@ -1,8 +1,6 @@
 // Const variables
 const JSON_HEADERS = { 'Content-Type': 'application/json' };
-
 const corsHeadersCache = new Map();
-
 const routes = {
 	'GET /': handleGetRoot,
 	'GET /health': handleHealthCheck,
@@ -10,12 +8,53 @@ const routes = {
 	'POST /api/register': handleRegister,
 };
 
-// Functions
+/**
+ * Generates a UUID v4 string.
+ * @returns {string} A randomly generated UUID v4.
+ */
 function uuidv4() {
-	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (matchedChar) => {
-		const hexValue = matchedChar === 'x' ? matchedChar : (matchedChar & 0x3) | 0x8;
-		return hexValue.toString(16);
-	});
+	return crypto.randomUUID();
+}
+
+/**
+ * Verifies a Cloudflare Turnstile captcha token with optional retry logic.
+ *
+ * @param {string} token - The captcha token to verify.
+ * @param {Object} env - The Cloudflare Worker environment object containing secrets.
+ * @param {number} [maxRetries=3] - Maximum number of retry attempts.
+ * @param {number} [delayMs=500] - Delay in milliseconds between retries.
+ * @returns {Promise<boolean>} True if captcha is valid, false otherwise.
+ */
+async function verifyTurnstile(token, env, maxRetries = 3, delayMs = 500) {
+	if (!token) return false;
+
+	const SECRET_KEY = env.TURNSTILE_SECRET;
+
+	const formData = new URLSearchParams();
+	formData.append('secret', SECRET_KEY);
+	formData.append('response', token);
+
+	for (let attempt = 1; attempt <= maxRetries; attempt++) {
+		try {
+			const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+				body: formData,
+				method: 'POST',
+			});
+
+			if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+			const data = await res.json();
+			return data.success === true;
+		} catch (err) {
+			console.warn(`Turnstile verification attempt ${attempt} failed:`, err);
+
+			if (attempt === maxRetries) return false;
+
+			await new Promise((resolve) => setTimeout(resolve, delayMs));
+		}
+	}
+
+	return false;
 }
 
 /**
@@ -122,13 +161,24 @@ async function parseJson(request) {
 	}
 }
 
-// Route functions
-async function handleContact(request) {
+/**
+ * Handles contact form submissions by validating required fields and captcha verification.
+ *
+ * @param {Request} request - The HTTP request containing contact form data.
+ * @param {Object} env - The Cloudflare Worker environment object containing secrets.
+ * @returns {Promise<Response>} JSON response indicating success or error.
+ */
+async function handleContact(request, env) {
 	try {
-		const { name, email, subject, message } = await parseJson(request);
+		const { name, email, subject, message, 'cf-turnstile-response': token } = await parseJson(request);
 
 		if (!name || !email || !subject || !message) {
 			return createErrorResponse('Missing required fields: name, email, subject, message', request, 422);
+		}
+
+		const captchaValid = await verifyTurnstile(token, env);
+		if (!captchaValid) {
+			return createErrorResponse('Captcha verification failed', request, 400);
 		}
 
 		console.log(`[Contact] from ${name} <${email}>: ${message}`);
@@ -142,15 +192,20 @@ async function handleContact(request) {
 /**
  * Handles user registration by parsing the request payload and returning a JSON or error response.
  * @param {Request} request - The incoming request object containing registration data.
+ * @param {Object} env - The Cloudflare Worker environment object containing secrets.
  * @returns {Promise<Response>} A promise resolving to the JSON response or error response.
  */
-async function handleRegister(request) {
+async function handleRegister(request, env) {
 	try {
-		// discordusername
-		const { fname, lname, birthyear, gender, email } = await parseJson(request);
+		const { fname, lname, birthyear, gender, email, 'cf-turnstile-response': token } = await parseJson(request);
 
 		if (!fname || !lname || !birthyear || !gender || !email) {
 			return createErrorResponse('Missing required fields: fname, lname, birthyear, gender, email', request, 422);
+		}
+
+		const captchaValid = await verifyTurnstile(token, env);
+		if (!captchaValid) {
+			return createErrorResponse('Captcha verification failed', request, 400);
 		}
 
 		console.log(`[Register] fname: ${fname}, lname: ${lname}`);
@@ -187,7 +242,15 @@ function handleHealthCheck(request) {
 }
 
 export default {
-	async fetch(request, env, ctx) {
+	/**
+	 * Main entry point for the Cloudflare Worker fetch event.
+	 * Routes incoming requests to the appropriate handler.
+	 *
+	 * @param {Request} request - The incoming HTTP request object.
+	 * @param {Object} env - The Cloudflare Worker environment object containing secrets.
+	 * @returns {Promise<Response>} The response returned from the matched route or an error response.
+	 */
+	async fetch(request, env) {
 		const requestId = uuidv4();
 		const url = new URL(request.url);
 		const routeKey = `${request.method.toUpperCase()} ${url.pathname}`;
@@ -203,7 +266,7 @@ export default {
 		const handler = routes[routeKey];
 		if (handler) {
 			try {
-				return await handler(request, env, ctx);
+				return await handler(request, env);
 			} catch (err) {
 				console.error(`[${requestId}] Error:`, err);
 				return createErrorResponse('Internal Server Error', request, 500);
