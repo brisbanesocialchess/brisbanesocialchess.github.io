@@ -75,7 +75,8 @@ pointer-events: none;
 
     const card = document.createElement('div');
     card.className = 'alert-card';
-    card.innerHTML = ` <button>&times;</button> ${message} `;
+    card.innerHTML = ` <button>&times;</button> `;
+    card.appendChild(document.createTextNode(message));
 
     // Close button functionality
     card.querySelector('button').onclick = () => {
