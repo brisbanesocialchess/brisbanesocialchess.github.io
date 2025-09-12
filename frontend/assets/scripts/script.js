@@ -29,7 +29,7 @@ function getCurrentYear() {
  * The alert includes a close button that removes the alert card with a fade-out effect.
  *
  * @param {string} message - The message to be displayed inside the alert card.
- * @param {string} color - The color of the side bar, takes hex
+ * @param {string} color - The color of the side bar, takes any valid CSS color string.
  *
  * @example
  * Alert("Something went wrong!", "red");
