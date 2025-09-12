@@ -18,13 +18,14 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Adam Lomsargis versus Robert Garvey
       </h3>
-      <div class="aspect-video">
+      <div class="h-[612px]">
         <iframe
           id="13545254"
           allowtransparency="true"
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545254"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
@@ -33,13 +34,14 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         John Bampton versus Robert Garvey
       </h3>
-      <div class="aspect-video">
+      <div class="h-[612px]">
         <iframe
           id="13545220"
           allowtransparency="true"
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545220"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
@@ -48,13 +50,14 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Matt McLean versus Robert Garvey
       </h3>
-      <div class="aspect-video">
+      <div class="h-[612px]">
         <iframe
           id="13545240"
           allowtransparency="true"
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545240"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
@@ -63,13 +66,14 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Jimmy versus John Bampton
       </h3>
-      <div class="aspect-video">
+      <div class="h-[612px]">
         <iframe
           id="13545342"
           allowtransparency="true"
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545342"
+          style="height :612px;"
         ></iframe>
       </div>
     </div>
