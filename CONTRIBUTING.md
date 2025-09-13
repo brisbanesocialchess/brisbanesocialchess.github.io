@@ -70,14 +70,33 @@ Make necessary improvements, such as fixing bugs, enhancing documentation, or ad
 
 ---
 
-### 📐 Formatting & Commit Rules
+### 📐 Formatting & Development Setup
 
-Before committing, please make sure your code follows our formatting and line-ending standards.
+Before committing, please make sure you have set up the development environment correctly and your code follows our formatting standards.
 
 We use:
 
+- [**Python**](https://www.python.org/) for various development tools and scripts
 - [**dprint**](https://dprint.dev) for consistent code formatting
 - [**pre-commit**](https://pre-commit.com) for checking **end-of-file** and **line endings (LF/CRLF)**
+
+#### 🐍 Setting Up Python Environment
+
+1. Make sure you have Python 3.8 or higher installed. You can check your Python version with:
+   ```bash
+   python --version
+   ```
+
+2. Install the required Python packages:
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+   This will install all the necessary Python dependencies for development.
+
+3. (Optional) If you're working on documentation, install additional doc-related packages:
+   ```bash
+   python -m pip install -r requirements-docs.txt
+   ```
 
 #### 🔧 Setting Up dprint
 
@@ -112,29 +131,37 @@ Our configuration is already in the repo: [dprint.json](./dprint.json)
 
 #### 🧪 Setting Up pre-commit
 
-We use [pre-commit](https://pre-commit.com/) to automatically check your code for common issues, like missing end-of-file newlines and inconsistent line endings. This keeps our project clean and easy for everyone to work on.
+We use [pre-commit](https://pre-commit.com/) to maintain code quality by automatically checking for common issues before each commit. This includes:
+- Ensuring files end with a newline
+- Maintaining consistent line endings (LF/CRLF)
+- Checking for large files
+- Validating Python syntax
 
-**How to install (requires Python):**
+Follow these steps to set up pre-commit:
 
-```bash
-python -m pip install --user pre-commit
-```
+1. **Install pre-commit** (after installing Python packages):
+   ```bash
+   python -m pip install --user pre-commit
+   ```
 
-**Set up pre-commit hooks for this project:**
+2. **Install the pre-commit hooks** for this project:
+   ```bash
+   pre-commit install
+   ```
+   This will activate automatic checks before each commit.
 
-```bash
-pre-commit install
-```
+3. **Verify the installation** by running all checks manually:
+   ```bash
+   pre-commit run --all-files
+   ```
 
-This will make pre-commit run its checks every time you make a commit.
-**Running checks manually (optional):**
+**Common pre-commit commands:**
+- `pre-commit run` - Run hooks on staged files
+- `pre-commit run --all-files` - Run hooks on all files
+- `pre-commit uninstall` - Remove pre-commit hooks
+- `pre-commit autoupdate` - Update hooks to the latest version
 
-```bash
-pre-commit run --all-files
-```
-
-This command runs all configured pre-commit hooks against all files in the repository.
-For more info, visit the [pre-commit website](https://pre-commit.com/).
+For more information and troubleshooting, visit the [pre-commit documentation](https://pre-commit.com/).
 
 ---
 
