@@ -2,7 +2,7 @@
 layout: 'layouts/base.njk'
 permalink: /posts/delightful-anecdote/
 title: 'A delightful anecdote by our very own Emiterus Professor Ross Barnard.'
-date: 2025-08-13
+date: 2025-09-01
 categories: ['chess']
 tags: ['post']
 ---
@@ -23,6 +23,6 @@ Needless to say, on departure, I left a good-sized gratuity.
 
 To end, I leave you with Bird versus Steinitz, at Simpson’s Divan, 1866.
 
-Ross Barnard, 1/9/2025
+Ross Barnard, {{ date | date("yyyy-MM-dd") }}
 
 [Bird vs Steinitz, William | London Simpson's Divan Chess 1866, England](https://www.youtube.com/watch?v=f5_4hvtDf10)
