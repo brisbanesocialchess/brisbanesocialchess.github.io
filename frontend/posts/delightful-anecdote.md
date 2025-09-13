@@ -7,9 +7,9 @@ categories: ['chess']
 tags: ['post']
 ---
 
-<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+<h1 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
   {{ title }}
-</h2>
+</h1>
 
 A Visit to Simpson’s Chess Divan. During a visit to London in 2014, after seeking out 221 B, Baker Street (the address of the detective Sherlock Holmes), my partner and I chanced to walk past Simpson’s Chess Divan in the Strand, which is adjacent to the Savoy Hotel. At first impression it appeared to be an exclusive establishment (possibly “members only”), but we were, to our pleasant surprise, welcomed by the Doorman.
 
