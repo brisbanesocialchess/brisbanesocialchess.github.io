@@ -18,6 +18,8 @@ export default defineConfig({
 				assetFileNames: (assetInfo) => {
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
 						return 'assets/styles/[name].css';
+					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/avatars/'))) {
+						return `assets/avatars/${assetInfo.name}`;
 					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/images/'))) {
 						return `assets/images/${assetInfo.name}`;
 					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/pictures/'))) {
@@ -38,6 +40,7 @@ export default defineConfig({
 	},
 	plugins: [
 		ViteImageOptimizer({
+			jpeg: { quality: 80 },
 			jpg: { quality: 80 },
 			png: { quality: 90 },
 			svg: { multipass: true },

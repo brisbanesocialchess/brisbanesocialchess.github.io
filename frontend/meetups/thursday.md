@@ -6,7 +6,7 @@ location: Royal Hotel, Nundah
 hosts:
   - Jimmy Joe
 hosts_images:
-  - src: https://avatars.githubusercontent.com/u/873384?s=400&v=4
+  - src: '/assets/avatars/octoman.png'
     alt: Jimmy Joe
 description: |
   Welcome to Thursday night chess at The Royal Hotel in Nundah. <br />

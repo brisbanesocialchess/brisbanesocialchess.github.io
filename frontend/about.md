@@ -97,13 +97,13 @@ title: About Us
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role role-board text-role-board">Jimmy Joe</span></li>
                 <li>
                     <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
-                <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
+                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</li>
+                <li><span class="role role-coordinator text-role-coordinator">Ross Barnard</span></li>
             </ul>
         </li>
         <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers text-role-assistant-organizers">Roger Clarke</span></li>
@@ -129,7 +129,7 @@ title: About Us
 	</h3>
 	<div class="flex justify-center mb-8">
 		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center role role-admin text-role-admin">
-			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="John Bampton avatar" />
+			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/jbampton.jpeg' | url }}" alt="John Bampton avatar" />
 			<span class="font-medium">John Bampton</span>
 			<span class="text-gray-500 github">@jbampton</span>
 		</a>
@@ -139,21 +139,31 @@ title: About Us
 	</h3>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
 		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center role role-lead-developer text-role-lead-developer">
-			<img class="w-35 md:w-50 lg:w-[300px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=300" alt="Max Base avatar" />
+			<img class="w-35 md:w-50 lg:w-[300px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/basemax.jpeg' | url }}" alt="Max Base avatar" />
 			<span class="font-medium">Max Base</span>
 			<span class="text-gray-500 github">@BaseMax</span>
 		</a>
     </div>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
 		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
-			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=225" alt="Anuradha Fernando avatar" />
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/anufdo.jpeg' | url }}" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
 			<span class="text-gray-500 github">@anufdo</span>
 		</a>
 		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
-			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=225" alt="sugiarto avatar" />
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/ugifractal.png' | url }}" alt="sugiarto avatar" />
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500 github">@ugifractal</span>
+		</a>
+        <a href="https://github.com/janus" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/janus.png' | url }}" alt="Emeka avatar" />
+			<span class="font-medium">Emeka</span>
+			<span class="text-gray-500 github">@janus</span>
+		</a>
+        <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/prio101.jpeg' | url }}" alt="prio101 avatar" />
+			<span class="font-medium">Mahabub Islam Prio</span>
+			<span class="text-gray-500 github">@prio101</span>
 		</a>
 	</div>
 	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
@@ -161,42 +171,37 @@ title: About Us
 	</h2>
 	<div class="flex flex-wrap justify-center gap-6">
 		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=120" alt="Abhushan Gautam avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/carefreeav09.jpeg' | url }}" alt="Abhushan Gautam avatar" />
 			<span class="font-medium">Abhushan Gautam</span>
 			<span class="text-gray-500 github">@carefreeav09</span>
 		</a>
 		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/ayush.jpeg' | url }}" alt="Ayush Rana avatar" />
 			<span class="font-medium">Ayush Rana</span>
 			<span class="text-gray-500 github">@ayushrana182</span>
 		</a>
 		<div class="flex flex-col items-center text-center w-1/3 role role-leader text-role-leader">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500 github">N/A</span>
 		</div>
-		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
-			<span class="font-medium">Mahabub Islam Prio</span>
-			<span class="text-gray-500 github">@prio101</span>
-		</a>
 		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/mohammadlotfia.png' | url }}" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
 			<span class="text-gray-500 github">@mohammadlotfia</span>
 		</a>
 		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/udha.png' | url }}" alt="Nicholas Meredith avatar" />
 			<span class="font-medium">Nicholas Meredith</span>
 			<span class="text-gray-500 github">@udha</span>
 		</a>
 		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/smriad.png' | url }}" alt="SM Riad avatar" />
 			<span class="font-medium">SM Riad</span>
 			<span class="text-gray-500 github">@smriad</span>
 		</a>
 		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role role-coordinator text-role-coordinator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/therealnugget.jpeg' | url }}" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
 			<span class="text-gray-500 github">@therealnugget</span>
 		</a>
