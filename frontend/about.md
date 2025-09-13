@@ -155,7 +155,7 @@ title: About Us
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500 github">@ugifractal</span>
 		</a>
-        <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+        <a href="https://github.com/janus" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/6726?v=4&s=225" alt="emeka avatar" />
 			<span class="font-medium">Emeka</span>
 			<span class="text-gray-500 github">@janus</span>
