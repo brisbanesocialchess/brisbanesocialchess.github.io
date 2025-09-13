@@ -155,6 +155,16 @@ title: About Us
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500 github">@ugifractal</span>
 		</a>
+        <a href="https://github.com/janus" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/6726?v=4&s=225" alt="emeka avatar" />
+			<span class="font-medium">Emeka</span>
+			<span class="text-gray-500 github">@janus</span>
+		</a>
+        <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=225" alt="prio101 avatar" />
+			<span class="font-medium">Mahabub Islam Prio</span>
+			<span class="text-gray-500 github">@prio101</span>
+		</a>
 	</div>
 	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
 		<span aria-hidden="true">🎮</span> Discord Moderators
@@ -175,11 +185,6 @@ title: About Us
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500 github">N/A</span>
 		</div>
-		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
-			<span class="font-medium">Mahabub Islam Prio</span>
-			<span class="text-gray-500 github">@prio101</span>
-		</a>
 		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
