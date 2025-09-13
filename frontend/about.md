@@ -97,13 +97,13 @@ title: About Us
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role role-board text-role-board">Jimmy Joe</span></li>
                 <li>
                     <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
-                <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
+                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</li>
+                <li><span class="role role-coordinator text-role-coordinator">Ross Barnard</span></li>
             </ul>
         </li>
         <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers text-role-assistant-organizers">Roger Clarke</span></li>
