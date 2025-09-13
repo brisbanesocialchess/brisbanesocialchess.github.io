@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/base.njk'
 permalink: /posts/delightful-anecdote/
-title: 'A delightful anecdote by our very own Emiterus Professor Ross Barnard.'
+title: 'A delightful anecdote by our very own Emeritus Professor Ross Barnard.'
 date: 2025-08-13
 categories: ['chess']
 tags: ['post']
