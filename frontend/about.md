@@ -103,7 +103,7 @@ title: About Us
                     <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
                 <li><span class="role role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
-                <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
+                <li><span class="text-role-co-organizers text-[#2196f3]">Ross Barnard</span></li>
             </ul>
         </li>
         <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers text-role-assistant-organizers">Roger Clarke</span></li>
