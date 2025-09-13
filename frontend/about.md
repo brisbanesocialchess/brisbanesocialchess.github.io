@@ -97,13 +97,13 @@ title: About Us
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role role-board text-role-board">Jimmy Joe</span></li>
                 <li>
                     <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
-                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official pawn wrangler.</li>
-                <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
+                <li><span class="role role-board text-role-board">Steve Anderson</span>: Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</li>
+                <li><span class="role role-coordinator text-role-coordinator">Ross Barnard</span></li>
             </ul>
         </li>
         <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers text-role-assistant-organizers">Roger Clarke</span></li>
@@ -155,6 +155,16 @@ title: About Us
 			<span class="font-medium">sugiarto</span>
 			<span class="text-gray-500 github">@ugifractal</span>
 		</a>
+        <a href="https://github.com/janus" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/6726?v=4&s=225" alt="emeka avatar" />
+			<span class="font-medium">Emeka</span>
+			<span class="text-gray-500 github">@janus</span>
+		</a>
+        <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=225" alt="prio101 avatar" />
+			<span class="font-medium">Mahabub Islam Prio</span>
+			<span class="text-gray-500 github">@prio101</span>
+		</a>
 	</div>
 	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
 		<span aria-hidden="true">🎮</span> Discord Moderators
@@ -175,11 +185,6 @@ title: About Us
 			<span class="font-medium">Jasper</span>
 			<span class="text-gray-500 github">N/A</span>
 		</div>
-		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
-			<span class="font-medium">Mahabub Islam Prio</span>
-			<span class="text-gray-500 github">@prio101</span>
-		</a>
 		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>

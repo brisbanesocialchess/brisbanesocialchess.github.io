@@ -2,6 +2,7 @@
 permalink: /register/
 layout: 'layouts/base.njk'
 title: Register for Membership
+captcha: true
 ---
 
 <section class="px-4 max-w-3xl">
@@ -65,6 +66,8 @@ title: Register for Membership
       </label>
       <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 rounded-md border border-gray-400 bg-white/10 text-white placeholder-gray-400 italic focus:border-cyan-400 focus:bg-white/15 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
     </div>
+    <!-- Captcha -->
+    <div class="cf-turnstile" data-sitekey="{{ site.cloudflare_turnstile_key }}" data-action="submit"></div>
     <!-- Submit Button -->
     <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
       Register

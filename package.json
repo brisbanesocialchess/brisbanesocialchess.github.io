@@ -30,7 +30,8 @@
 		"endOfLine": "lf"
 	},
 	"workspaces": [
-		"packages/*"
+		"packages/*",
+		"!packages/cfsite"
 	],
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.11",
