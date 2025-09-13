@@ -7,9 +7,9 @@ hosts:
   - Ben Martin
   - Peiqi Sun
 hosts_images:
-  - src: /assets/avatars/octoman.png
+  - src: '/assets/avatars/octoman.png'
     alt: Ben Martin
-  - src: /assets/avatars/octoman.png
+  - src: '/assets/avatars/octoman.png'
     alt: Peiqi Sun
 description: |
   Calling all Blunderers! Join Brisbane's coolest chess crew every Saturday morning as we transform West End Park Café into checkered board central.<br/>

@@ -8,11 +8,11 @@ hosts:
   - Matt McLean
   - Steve Anderson
 hosts_images:
-  - src: /assets/avatars/octoman.png
+  - src: '/assets/avatars/octoman.png'
     alt: Joseph Tan
-  - src: /assets/avatars/matt.jpeg
+  - src: '/assets/avatars/matt.jpeg'
     alt: Matt McLean
-  - src: /assets/avatars/octoman.png
+  - src: '/assets/avatars/octoman.png'
     alt: Steve Anderson
 description: |
   Calling all Blunderers near and far - Sundays are our day to plot, move and laugh. <br />
