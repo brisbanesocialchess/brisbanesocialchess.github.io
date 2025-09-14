@@ -56,7 +56,8 @@ export default defineConfig({
 				'**/_site/**',
 				...coverageConfigDefaults.exclude
 			],
-			provider: 'v8',
+			provider: 'istanbul',
+			// provider: 'v8', // Error: No such module "node:inspector".
 			reporter: ['text', 'html', 'cobertura'],
 			reportsDirectory: './coverage',
 		},
