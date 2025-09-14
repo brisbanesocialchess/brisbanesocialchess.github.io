@@ -7,7 +7,7 @@ categories: ['chess']
 tags: ['post']
 ---
 
-<h1 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+<h1 class="text-center text-xl md:text-2xl font-semibold mb-3">
   {{ title }}
 </h1>
 

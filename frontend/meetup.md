@@ -6,7 +6,7 @@ title: Chess Meetups & Locations
 
 <section class="px-4 max-w-3xl">
   <!-- Heading -->
-  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+  <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
     Weekly Meetups
   </h2>
   <!-- Description -->

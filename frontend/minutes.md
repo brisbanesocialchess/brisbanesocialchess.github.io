@@ -5,7 +5,7 @@ title: Meeting Minutes & Club Records
 ---
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Meeting Minutes</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">Meeting Minutes</h2>
     <!-- May 2025 -->
     <article class="mb-6">
         <h3 class="text-center text-lg font-semibold">May 2025 – Committee Meeting (25/03/2025)</h3>

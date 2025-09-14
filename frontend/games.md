@@ -5,7 +5,7 @@ title: Chess Games & Variants
 ---
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+  <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
     Club Games Archive
   </h2>
   <p class="text-center text-white text-base md:text-lg mb-8">

@@ -5,7 +5,7 @@ title: About Us
 ---
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
     <p class="text-white text-base leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
         and community engagement. We organize regular meetups where people can play chess in a relaxed and friendly environment. We are
@@ -29,7 +29,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">👥</span> Team Members</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">👥</span> Team Members</h2>
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
@@ -84,7 +84,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
             <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
@@ -121,7 +121,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl text-center">
-	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
 		<span aria-hidden="true">🛠️</span> GitHub Team
 	</h2>
 	<h3 class="text-xl font-semibold mb-4">
@@ -166,7 +166,7 @@ title: About Us
 			<span class="text-gray-500 github">@prio101</span>
 		</a>
 	</div>
-	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
 		<span aria-hidden="true">🎮</span> Discord Moderators
 	</h2>
 	<div class="flex flex-wrap justify-center gap-6">
@@ -209,7 +209,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
     <ul class="list-disc pl-6 space-y-4">
         <li>
             <strong>Chess:</strong>
@@ -234,7 +234,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li>
             <a href="https://www.chessplus.com/" class="text-blue-400 hover:underline">Chessplus</a>:
@@ -247,7 +247,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li><a href="https://en.wikipedia.org/wiki/Go_(game)" class="text-blue-400 hover:underline">Go</a> - at least one small Go set</li>
         <li><a href="https://en.wikipedia.org/wiki/Shogi" class="text-blue-400 hover:underline">Shogi (Japanese chess)</a> - at least two Shogi sets</li>
@@ -256,7 +256,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">📖</span> Chess books we recommend</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">📖</span> Chess books we recommend</h2>
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
@@ -373,7 +373,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
     <figure>
         <a href="{{ '/assets/pictures/standard-4-player-chess.jpg' | url }}">
             <img
@@ -385,7 +385,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏡</span> Garden Room - Random Days Gone Bye</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏡</span> Garden Room - Random Days Gone Bye</h2>
     <figure>
         <a href="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
             <img
@@ -398,7 +398,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel - Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel - Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div class="flex gap-4">
         <a href="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
@@ -418,7 +418,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
     <div class="grid grid-cols-2 gap-4">
         <a href="{{ '/assets/pictures/quaternity-1.png' | url }}">
             <img
