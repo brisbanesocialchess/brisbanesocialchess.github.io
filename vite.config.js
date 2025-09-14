@@ -34,14 +34,6 @@ export default defineConfig({
 			plugins: [postcssImport()],
 		},
 	},
-	test: {
-		coverage: {
-			provider: 'v8',
-			reporter: ['text', 'html', 'cobertura'],
-			reportsDirectory: './coverage',
-			all: true,
-		},
-	},
 	plugins: [
 		ViteImageOptimizer({
 			jpeg: { quality: 80 },
@@ -50,6 +42,14 @@ export default defineConfig({
 			svg: { multipass: true },
 		}),
 	],
+	test: {
+		coverage: {
+			provider: 'v8',
+			reporter: ['text', 'html', 'cobertura'],
+			all: true,
+			reportsDirectory: './coverage',
+		},
+	},
 	root: './_site',
 	server: {
 		port: 5173,
