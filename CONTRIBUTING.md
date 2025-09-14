@@ -82,18 +82,32 @@ We use:
 
 #### 🐍 Setting Up Python Environment
 
+
 1. Make sure you have Python 3.8 or higher installed. You can check your Python version with:
    ```bash
    python --version
    ```
 
-2. Install the required Python packages:
+2. (Recommended) Create and activate a virtual environment to isolate dependencies:
+   - **Windows:**
+     ```powershell
+     python -m venv .venv
+     .venv\Scripts\activate
+     ```
+   - **macOS/Linux:**
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
+   This helps keep your global Python installation clean and avoids dependency conflicts.
+
+3. Install the required Python packages:
    ```bash
    python -m pip install -r requirements.txt
    ```
    This will install all the necessary Python dependencies for development.
 
-3. (Optional) If you're working on documentation, install additional doc-related packages:
+4. (Optional) If you're working on documentation, install additional doc-related packages:
    ```bash
    python -m pip install -r requirements-docs.txt
    ```
