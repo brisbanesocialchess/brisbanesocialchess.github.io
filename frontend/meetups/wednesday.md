@@ -6,7 +6,7 @@ location: June's Cafe
 hosts:
   - Steve Anderson
 hosts_images:
-  - src: https://avatars.githubusercontent.com/u/873384?s=400&v=4
+  - src: '/assets/avatars/octoman.png'
     alt: Steve Anderson
 description: |
   Welcome to Wednesday chess at June's cafe. Good food, coffee and company. We usually expect 6 or more participants. <br />

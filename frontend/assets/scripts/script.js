@@ -2,14 +2,19 @@
 const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
 const MIN_AGE = 5;
 const MAX_AGE = 120;
+const CURRENT_THEME = localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
+
+// Setup
+document.documentElement.setAttribute('data-theme', CURRENT_THEME);
 
 // Elements
-const elmToggleBtn = document.getElementById('menu-toggle');
-const elmMenu = document.getElementById('menu');
-const elmYear = document.getElementById('year');
+const elmMenuToggleButton = document.querySelector('#menu-toggle');
+const elmMenu = document.querySelector('#menu');
+const elmYear = document.querySelector('#year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
+const elmThemeToggleButton = document.querySelector('#theme-toggle');
 
 // Utilities
 /**
@@ -170,10 +175,18 @@ window.addEventListener('message', (e) => {
 });
 
 // Events
-if (elmToggleBtn && elmMenu) {
-	elmToggleBtn.addEventListener('click', () => {
+if (elmMenuToggleButton && elmMenu) {
+	elmMenuToggleButton.addEventListener('click', () => {
 		elmMenu.classList.toggle('hidden');
 		const isExpanded = !elmMenu.classList.contains('hidden');
-		elmToggleBtn.setAttribute('aria-expanded', isExpanded);
+		elmMenuToggleButton.setAttribute('aria-expanded', isExpanded);
+	});
+}
+
+if (elmThemeToggleButton) {
+	elmThemeToggleButton.addEventListener('click', () => {
+		const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+		document.documentElement.setAttribute('data-theme', theme);
+		localStorage.setItem('theme', theme);
 	});
 }
