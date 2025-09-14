@@ -6,6 +6,7 @@
 	--text-color: #ffffff;
 	--reverse-text-color: #111111;
 	--card-bg: rgba(255, 255, 255, 0.1);
+	--role-shadow-rgb: 255, 255, 255;
 }
 [data-theme='light'] {
 	--toggle-icon-color: #111111;
@@ -15,6 +16,7 @@
 	--text-color: #111111;
 	--reverse-text-color: #ffffff;
 	--card-bg: rgba(255, 255, 255, 0.85);
+	--role-shadow-rgb: 0, 0, 0;
 }
 
 /* Theme */
@@ -70,10 +72,10 @@
 }
 .role img {
 	border: var(--role-border) var(--role-color);
+	transition: filter 0.3s ease;
 }
 .role:hover img {
-	filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
-	transition: filter 0.3s ease;
+	filter: drop-shadow(0 0 10px rgba(var(--role-shadow-rgb), 0.4)) drop-shadow(0 0 20px rgba(var(--role-shadow-rgb), 0.2));
 }
 .role span {
 	color: var(--role-color);
