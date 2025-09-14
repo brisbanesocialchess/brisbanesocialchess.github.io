@@ -14,8 +14,28 @@
   </head>
   <body class="flex flex-col min-h-screen font-montserrat text-[var(--text-color)] bg-[var(--bg-color)] bg-[url('/assets/images/background.jpg')] bg-cover bg-center bg-fixed bg-blend-multiply">
     <!-- Background overlay -->
-    <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4">
-      <main class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
+    <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center">
+      <main class="relative max-w-[620px] w-[calc(100%-1rem)] shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
+        <!-- Switch -->
+        <button class="theme-toggle absolute top-4 left-4 text-white hover:text-yellow-400" id="theme-toggle" title="Toggle light & dark theme" aria-label="Toggle theme">
+          <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+            <g class="sun-beams" stroke="currentColor">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
         <!-- Ribbon -->
         <a
           class="github-fork-ribbon right-top"
