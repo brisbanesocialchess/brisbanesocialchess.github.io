@@ -50,9 +50,6 @@ export default defineConfig({
 	test: {
 		coverage: {
 			all: true,
-			provider: 'v8',
-			reporter: ['text', 'html', 'cobertura'],
-			reportsDirectory: './coverage',
 			exclude: [
 				'**/node_modules/**',
 				'**/dist/**',
@@ -63,6 +60,9 @@ export default defineConfig({
 				'**/_site/**',
 				'**/_deploy/**',
 			],
+			provider: 'v8',
+			reporter: ['text', 'html', 'cobertura'],
+			reportsDirectory: './coverage',
 		},
 	},
 });
