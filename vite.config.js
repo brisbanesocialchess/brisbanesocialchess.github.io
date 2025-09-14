@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import path from 'path';
+import { coverageConfigDefaults, defineConfig } from 'vitest/config'
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
@@ -53,14 +53,10 @@ export default defineConfig({
 		coverage: {
 			all: true,
 			exclude: [
-				'**/node_modules/**',
-				'**/dist/**',
-				'**/cypress/**',
-				'**/.{idea,git,cache,output,temp}/**',
-				'**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build,eslint,prettier}.config.*',
 				'**/coverage/**',
 				'**/_site/**',
 				'**/_deploy/**',
+				...coverageConfigDefaults.exclude
 			],
 			provider: 'v8',
 			reporter: ['text', 'html', 'cobertura'],
