@@ -34,6 +34,14 @@ export default defineConfig({
 			plugins: [postcssImport()],
 		},
 	},
+	test: {
+		coverage: {
+			provider: 'v8',
+			reporter: ['text', 'html', 'cobertura'], 
+			reportsDirectory: './coverage',
+			all: true,
+		},
+	},
 	plugins: [
 		ViteImageOptimizer({
 			jpeg: { quality: 80 },
