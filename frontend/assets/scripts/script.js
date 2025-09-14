@@ -5,13 +5,13 @@ const MAX_AGE = 120;
 const CURRENT_THEME = localStorage.getItem('theme') || 'dark';
 
 // Elements
-const elmToggleBtn = document.getElementById('menu-toggle');
-const elmMenu = document.getElementById('menu');
-const elmYear = document.getElementById('year');
+const elmMenuToggleBtn = document.querySelector('#menu-toggle');
+const elmMenu = document.querySelector('#menu');
+const elmYear = document.querySelector('#year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
-const elmToggleButton = document.getElementById('theme-toggle');
+const elmToggleButton = document.querySelector('#theme-toggle');
 
 // Utilities
 /**
@@ -172,17 +172,17 @@ window.addEventListener('message', (e) => {
 });
 
 // Events
-if (elmToggleBtn && elmMenu) {
-	elmToggleBtn.addEventListener('click', () => {
+if (elmMenuToggleBtn && elmMenu) {
+	elmMenuToggleBtn.addEventListener('click', () => {
 		elmMenu.classList.toggle('hidden');
 		const isExpanded = !elmMenu.classList.contains('hidden');
-		elmToggleBtn.setAttribute('aria-expanded', isExpanded);
+		elmMenuToggleBtn.setAttribute('aria-expanded', isExpanded);
 	});
 }
 
 document.documentElement.setAttribute('data-theme', CURRENT_THEME);
 
-elmToggleBtn.addEventListener('click', () => {
+elmToggleButton.addEventListener('click', () => {
 	const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
 	document.documentElement.setAttribute('data-theme', theme);
 	localStorage.setItem('theme', theme);
