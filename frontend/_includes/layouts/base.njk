@@ -61,7 +61,7 @@
         <!-- Top Navigation -->
         <nav>
           <div class="flex items-center md:hidden">
-            <button id="menu-toggle" type="button" aria-expanded="false" class="text-gray-300 hover:text-white cursor-pointer">
+            <button id="menu-toggle" type="button" aria-expanded="false" class="cursor-pointer">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -78,7 +78,7 @@
             <a href="{{ link.url | url  }}"
               class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
                       md:inline-block md:w-auto md:py-0 md:p-2
-                      {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">
+                      {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %}{% endif %}">
               {{ link.text }}
             </a>
             {%- endfor %}

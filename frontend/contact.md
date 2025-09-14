@@ -15,22 +15,22 @@ captcha: true
   <form method="POST" class="flex flex-col gap-2 form-contact" novalidate>
     <!-- Name -->
     <div class="flex flex-col">
-      <label for="name" class="text-gray-200 font-semibold mb-1">Your Name <span aria-hidden="true">*</span></label>
+      <label for="name" class="font-semibold mb-1">Your Name <span aria-hidden="true">*</span></label>
       <input type="text" id="name" name="name" required autocomplete="name" class="w-full px-4 py-2 rounded-md border border-gray-400 focus:border-cyan-400  focus:ring-2 focus:ring-cyan-400 outline-none transition" />
     </div>
     <!-- Email -->
     <div class="flex flex-col">
-      <label for="email" class="text-gray-200 font-semibold mb-1">Your Email <span aria-hidden="true">*</span></label>
+      <label for="email" class="font-semibold mb-1">Your Email <span aria-hidden="true">*</span></label>
       <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 rounded-md border border-gray-400 focus:border-cyan-400  focus:ring-2 focus:ring-cyan-400 outline-none transition" />
     </div>
     <!-- Subject -->
     <div class="flex flex-col">
-      <label for="subject" class="text-gray-200 font-semibold mb-1">Subject <span aria-hidden="true">*</span></label>
+      <label for="subject" class="font-semibold mb-1">Subject <span aria-hidden="true">*</span></label>
       <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 rounded-md border border-gray-400 focus:border-cyan-400  focus:ring-2 focus:ring-cyan-400 outline-none transition" />
     </div>
     <!-- Message -->
     <div class="flex flex-col">
-      <label for="message" class="text-gray-200 font-semibold mb-1">Message <span aria-hidden="true">*</span></label>
+      <label for="message" class="font-semibold mb-1">Message <span aria-hidden="true">*</span></label>
       <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-400 placeholder-gray-400 focus:border-blue-400 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-vertical min-h-[120px]"></textarea>
     </div>
     <!-- Captcha -->
