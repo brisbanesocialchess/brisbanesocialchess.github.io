@@ -10,7 +10,7 @@ title: Chess Meetups & Locations
     Weekly Meetups
   </h2>
   <!-- Description -->
-  <p class="text-center text-white text-base md:text-lg mb-8">
+  <p class="text-center text-base md:text-lg mb-8">
     Click on a day to view detailed meetup information:
   </p>
   <!-- Button group -->

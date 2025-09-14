@@ -68,7 +68,7 @@
                       d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
-            <span class="flex-1 text-center text-white text-md font-bold">
+            <span class="flex-1 text-center text-md font-bold">
               Brisbane Social Chess
             </span>
           </div>
@@ -76,7 +76,7 @@
               class="flex-wrap hidden flex-col items-center justify-center space-y-2 mt-4 text-center text-sm md:flex md:flex-row md:space-y-0 md:space-x-2 md:mt-0">
             {% for link in navigation.navLinks -%}
             <a href="{{ link.url | url  }}"
-              class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
+              class="block w-full py-2 rounded hover:bg-white/10
                       md:inline-block md:w-auto md:py-0 md:p-2
                       {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %}{% endif %}">
               {{ link.text }}
@@ -100,7 +100,7 @@
       {% endfor %}
     </div>
     <!-- Footer -->
-    <footer class="h-[85px] text-center p-8 pb-20 md:pb-8 text-sm text-white/60 flex flex-col items-center justify-center gap-3">
+    <footer class="h-[85px] text-center p-8 pb-20 md:pb-8 text-sm flex flex-col items-center justify-center gap-3">
       <div class="hidden md:flex space-x-4">
         {% for social in site.socials %}
           {{ social_macro.social_link(social, "hover:opacity-80 transition") }}

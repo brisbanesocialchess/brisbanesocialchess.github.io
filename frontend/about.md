@@ -6,13 +6,13 @@ title: About Us
 
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
-    <p class="text-white text-base leading-relaxed mb-6">
+    <p class="text-base leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
         and community engagement. We organize regular meetups where people can play chess in a relaxed and friendly environment. We are
         registered in Queensland and have a dedicated team of organizers.
     </p>
     <h3 class="text-center text-xl font-semibold mb-3"><span aria-hidden="true">📄</span> A More Detailed Look at Brisbane Social Chess</h3>
-    <ul class="list-disc list-inside text-white space-y-3">
+    <ul class="list-disc list-inside space-y-3">
         <li><strong>Focus:</strong> We emphasize social interaction and fun, making it a welcoming space for players of all skill levels.</li>
         <li><strong>Community Driven:</strong> We encourage community participation in various aspects, including website development,
             Discord server management, and event organization.
@@ -85,7 +85,7 @@ title: About Us
 
 <section class="px-4 max-w-3xl">
     <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
-    <ul class="list-disc list-inside text-white space-y-3">
+    <ul class="list-disc list-inside space-y-3">
         <li>
             <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a>

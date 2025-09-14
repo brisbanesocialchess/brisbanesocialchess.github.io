@@ -9,7 +9,7 @@ captcha: true
   <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
     Contact Us
   </h2>
-  <p class="text-center text-white text-base md:text-lg mb-8">
+  <p class="text-center text-base md:text-lg mb-8">
     Feel free to reach out using the form below, or through one of our other contact methods.
   </p>
   <form method="POST" class="flex flex-col gap-2 form-contact" novalidate>
