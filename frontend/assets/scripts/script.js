@@ -4,14 +4,17 @@ const MIN_AGE = 5;
 const MAX_AGE = 120;
 const CURRENT_THEME = localStorage.getItem('theme') || 'dark';
 
+// Setup
+document.documentElement.setAttribute('data-theme', CURRENT_THEME);
+
 // Elements
-const elmMenuToggleBtn = document.querySelector('#menu-toggle');
+const elmMenuToggleButton = document.querySelector('#menu-toggle');
 const elmMenu = document.querySelector('#menu');
 const elmYear = document.querySelector('#year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
-const elmToggleButton = document.querySelector('#theme-toggle');
+const elmThemeToggleButton = document.querySelector('#theme-toggle');
 
 // Utilities
 /**
@@ -172,18 +175,18 @@ window.addEventListener('message', (e) => {
 });
 
 // Events
-if (elmMenuToggleBtn && elmMenu) {
-	elmMenuToggleBtn.addEventListener('click', () => {
+if (elmMenuToggleButton && elmMenu) {
+	elmMenuToggleButton.addEventListener('click', () => {
 		elmMenu.classList.toggle('hidden');
 		const isExpanded = !elmMenu.classList.contains('hidden');
-		elmMenuToggleBtn.setAttribute('aria-expanded', isExpanded);
+		elmMenuToggleButton.setAttribute('aria-expanded', isExpanded);
 	});
 }
 
-document.documentElement.setAttribute('data-theme', CURRENT_THEME);
-
-elmToggleButton.addEventListener('click', () => {
-	const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-	document.documentElement.setAttribute('data-theme', theme);
-	localStorage.setItem('theme', theme);
-});
+if (elmThemeToggleButton) {
+	elmThemeToggleButton.addEventListener('click', () => {
+		const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+		document.documentElement.setAttribute('data-theme', theme);
+		localStorage.setItem('theme', theme);
+	});
+}
