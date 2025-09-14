@@ -15,7 +15,8 @@
 		"build": "npm run 11ty:build && npm run tailwindcss:build && npm run vite:build",
 		"11ty:watch": "eleventy --serve --input=frontend",
 		"11ty:build": "eleventy --input=frontend",
-		"tailwindcss:build": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css",
+		"tailwindcss:dev": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css",
+		"tailwindcss:build": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --minify",
 		"tailwindcss:watch": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
 		"vite:build": "node copy-html.js && vite build && node merge-assets.js",
@@ -34,11 +35,13 @@
 		"!packages/cfsite"
 	],
 	"dependencies": {
-		"@tailwindcss/cli": "^4.1.11",
+		"@tailwindcss/cli": "^4.1.13",
+		"esbuild": "^0.25.9",
 		"glob": "^11.0.3",
 		"html-minifier-terser": "^7.2.0",
 		"luxon": "^3.7.1",
-		"tailwindcss": "^4.1.11"
+		"rollup": "^4.50.1",
+		"tailwindcss": "^4.1.13"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",

@@ -5,14 +5,14 @@ title: About Us
 ---
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
-    <p class="text-white text-base leading-relaxed mb-6">
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏢</span> Who are we?</h2>
+    <p class="text-base leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
         and community engagement. We organize regular meetups where people can play chess in a relaxed and friendly environment. We are
         registered in Queensland and have a dedicated team of organizers.
     </p>
     <h3 class="text-center text-xl font-semibold mb-3"><span aria-hidden="true">📄</span> A More Detailed Look at Brisbane Social Chess</h3>
-    <ul class="list-disc list-inside text-white space-y-3">
+    <ul class="list-disc list-inside space-y-3">
         <li><strong>Focus:</strong> We emphasize social interaction and fun, making it a welcoming space for players of all skill levels.</li>
         <li><strong>Community Driven:</strong> We encourage community participation in various aspects, including website development,
             Discord server management, and event organization.
@@ -29,7 +29,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">👥</span> Team Members</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">👥</span> Team Members</h2>
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
@@ -84,8 +84,8 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
-    <ul class="list-disc list-inside text-white space-y-3">
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
+    <ul class="list-disc list-inside space-y-3">
         <li>
             <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
             <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a>
@@ -121,7 +121,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl text-center">
-	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
 		<span aria-hidden="true">🛠️</span> GitHub Team
 	</h2>
 	<h3 class="text-xl font-semibold mb-4">
@@ -131,7 +131,7 @@ title: About Us
 		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center role role-admin text-role-admin">
 			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/jbampton.jpeg' | url }}" alt="John Bampton avatar" />
 			<span class="font-medium">John Bampton</span>
-			<span class="text-gray-500 github">@jbampton</span>
+			<span class="github">@jbampton</span>
 		</a>
 	</div>
 	<h3 class="text-xl font-semibold mb-4">
@@ -141,75 +141,75 @@ title: About Us
 		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center role role-lead-developer text-role-lead-developer">
 			<img class="w-35 md:w-50 lg:w-[300px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/basemax.jpeg' | url }}" alt="Max Base avatar" />
 			<span class="font-medium">Max Base</span>
-			<span class="text-gray-500 github">@BaseMax</span>
+			<span class="github">@BaseMax</span>
 		</a>
     </div>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
 		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/anufdo.jpeg' | url }}" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
-			<span class="text-gray-500 github">@anufdo</span>
+			<span class="github">@anufdo</span>
 		</a>
 		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/ugifractal.png' | url }}" alt="sugiarto avatar" />
 			<span class="font-medium">sugiarto</span>
-			<span class="text-gray-500 github">@ugifractal</span>
+			<span class="github">@ugifractal</span>
 		</a>
         <a href="https://github.com/janus" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/janus.png' | url }}" alt="Emeka avatar" />
 			<span class="font-medium">Emeka</span>
-			<span class="text-gray-500 github">@janus</span>
+			<span class="github">@janus</span>
 		</a>
         <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role role-developer text-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/prio101.jpeg' | url }}" alt="prio101 avatar" />
 			<span class="font-medium">Mahabub Islam Prio</span>
-			<span class="text-gray-500 github">@prio101</span>
+			<span class="github">@prio101</span>
 		</a>
 	</div>
-	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
 		<span aria-hidden="true">🎮</span> Discord Moderators
 	</h2>
 	<div class="flex flex-wrap justify-center gap-6">
 		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/carefreeav09.jpeg' | url }}" alt="Abhushan Gautam avatar" />
 			<span class="font-medium">Abhushan Gautam</span>
-			<span class="text-gray-500 github">@carefreeav09</span>
+			<span class="github">@carefreeav09</span>
 		</a>
 		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/ayush.jpeg' | url }}" alt="Ayush Rana avatar" />
 			<span class="font-medium">Ayush Rana</span>
-			<span class="text-gray-500 github">@ayushrana182</span>
+			<span class="github">@ayushrana182</span>
 		</a>
 		<div class="flex flex-col items-center text-center w-1/3 role role-leader text-role-leader">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
-			<span class="text-gray-500 github">N/A</span>
+			<span class="github">N/A</span>
 		</div>
 		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/mohammadlotfia.png' | url }}" alt="Mohammad Lotfi Akbarabadi avatar" />
 			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
-			<span class="text-gray-500 github">@mohammadlotfia</span>
+			<span class="github">@mohammadlotfia</span>
 		</a>
 		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/udha.png' | url }}" alt="Nicholas Meredith avatar" />
 			<span class="font-medium">Nicholas Meredith</span>
-			<span class="text-gray-500 github">@udha</span>
+			<span class="github">@udha</span>
 		</a>
 		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/smriad.png' | url }}" alt="SM Riad avatar" />
 			<span class="font-medium">SM Riad</span>
-			<span class="text-gray-500 github">@smriad</span>
+			<span class="github">@smriad</span>
 		</a>
 		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-1/3 role role-coordinator text-role-coordinator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/therealnugget.jpeg' | url }}" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
-			<span class="text-gray-500 github">@therealnugget</span>
+			<span class="github">@therealnugget</span>
 		</a>
 	</div>
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🎲</span> Games that we play</h2>
     <ul class="list-disc pl-6 space-y-4">
         <li>
             <strong>Chess:</strong>
@@ -234,7 +234,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li>
             <a href="https://www.chessplus.com/" class="text-blue-400 hover:underline">Chessplus</a>:
@@ -247,7 +247,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li><a href="https://en.wikipedia.org/wiki/Go_(game)" class="text-blue-400 hover:underline">Go</a> - at least one small Go set</li>
         <li><a href="https://en.wikipedia.org/wiki/Shogi" class="text-blue-400 hover:underline">Shogi (Japanese chess)</a> - at least two Shogi sets</li>
@@ -256,7 +256,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">📖</span> Chess books we recommend</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">📖</span> Chess books we recommend</h2>
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
@@ -373,7 +373,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
     <figure>
         <a href="{{ '/assets/pictures/standard-4-player-chess.jpg' | url }}">
             <img
@@ -385,7 +385,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏡</span> Garden Room - Random Days Gone Bye</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏡</span> Garden Room - Random Days Gone Bye</h2>
     <figure>
         <a href="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
             <img
@@ -398,7 +398,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel - Never Underestimate the Power of Jedi Master Big Bird</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel - Never Underestimate the Power of Jedi Master Big Bird</h2>
     <div class="flex gap-4">
         <a href="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
@@ -418,7 +418,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
     <div class="grid grid-cols-2 gap-4">
         <a href="{{ '/assets/pictures/quaternity-1.png' | url }}">
             <img
