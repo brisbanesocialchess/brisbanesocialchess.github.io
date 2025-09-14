@@ -3,8 +3,6 @@ import { coverageConfigDefaults, defineConfig } from 'vitest/config'
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
-const isTest = process.env.VITEST === 'true';
-
 export default defineConfig({
 	build: {
 		assetsInlineLimit: 0,
@@ -44,7 +42,7 @@ export default defineConfig({
 			svg: { multipass: true },
 		}),
 	],
-	root: isTest ? '.' : './_site',
+	root: './_site',
 	server: {
 		port: 5173,
 		strictPort: true,
@@ -53,19 +51,14 @@ export default defineConfig({
 		coverage: {
 			all: true,
 			exclude: [
+				'**/packages/cfsite/**',
 				'**/coverage/**',
 				'**/_site/**',
-				'**/_deploy/**',
 				...coverageConfigDefaults.exclude
 			],
 			provider: 'v8',
 			reporter: ['text', 'html', 'cobertura'],
 			reportsDirectory: './coverage',
-		},
-	},
-	resolve: {
-		alias: {
-			'cloudflare:test': path.resolve(__dirname, 'cloudflare-mock.js'),
 		},
 	},
 });
