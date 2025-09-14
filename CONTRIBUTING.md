@@ -113,12 +113,32 @@ Our configuration is already in the repo: [dprint.json](./dprint.json)
 
 #### 📦 Installing Python Requirements
 
-Some of our tools (like `pre-commit`) require Python dependencies.  
-You can install them from `requirements.txt`:
+
+Some of our tools (like `pre-commit`) require Python dependencies. It's recommended to use a virtual environment to manage project-specific dependencies and avoid conflicts with system-wide packages.
+
+1. **Create a virtual environment (optional but recommended):**
 
 ```bash
-python -m pip install -r requirements.txt
+python -m venv .venv
 ```
+
+2. **Activate the virtual environment:**
+
+- On Windows:
+```shell
+.venv\Scripts\activate
+```
+- On macOS/Linux:
+```bash
+   source .venv/bin/activate
+```
+ 
+  3. **Install requirements from `requirements.txt`:**
+ 
+ ```bash
+ python -m pip install -r requirements.txt
+ ```
+
 ---
 
 #### 🧪 Setting Up pre-commit
