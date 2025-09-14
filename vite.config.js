@@ -51,8 +51,7 @@ export default defineConfig({
 		coverage: {
 			all: true,
 			exclude: ['**/packages/cfsite/**', '**/coverage/**', '**/_site/**', ...coverageConfigDefaults.exclude],
-			provider: 'istanbul',
-			// provider: 'v8', // Error: No such module "node:inspector".
+			provider: 'v8',
 			reporter: ['text', 'html', 'cobertura'],
 			reportsDirectory: './coverage',
 		},

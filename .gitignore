@@ -56,4 +56,3 @@ frontend/assets/styles/base.css
 
 # Vitest coverage
 coverage
-packages/cfsite/coverage
