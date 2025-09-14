@@ -1,17 +1,17 @@
 {
-  "name": "cfsite",
-  "version": "0.0.0",
-  "private": false,
-  "scripts": {
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "deploy": "wrangler deploy",
-    "test": "vitest",
-    "coverage": "vitest run --coverage"
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.19",
-    "vitest": "~3.2.0",
-    "wrangler": "^4.24.0"
-  }
+	"name": "cfsite",
+	"version": "0.0.0",
+	"private": false,
+	"scripts": {
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"test": "vitest",
+		"coverage": "vitest run --coverage"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.24.0"
+	}
 }

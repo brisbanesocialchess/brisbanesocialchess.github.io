@@ -1,5 +1,5 @@
 import path from 'path';
-import { coverageConfigDefaults, defineConfig } from 'vitest/config'
+import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
@@ -50,12 +50,7 @@ export default defineConfig({
 	test: {
 		coverage: {
 			all: true,
-			exclude: [
-				'**/packages/cfsite/**',
-				'**/coverage/**',
-				'**/_site/**',
-				...coverageConfigDefaults.exclude
-			],
+			exclude: ['**/packages/cfsite/**', '**/coverage/**', '**/_site/**', ...coverageConfigDefaults.exclude],
 			provider: 'istanbul',
 			// provider: 'v8', // Error: No such module "node:inspector".
 			reporter: ['text', 'html', 'cobertura'],
