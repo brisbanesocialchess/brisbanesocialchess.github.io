@@ -34,12 +34,13 @@
 		"!packages/cfsite"
 	],
 	"dependencies": {
+		"@tailwindcss/cli": "^4.1.13",
 		"esbuild": "^0.25.9",
-		"rollup": "^4.50.1",
 		"glob": "^11.0.3",
 		"html-minifier-terser": "^7.2.0",
 		"luxon": "^3.7.1",
-		"tailwindcss": "^4.1.11"
+		"rollup": "^4.50.1",
+		"tailwindcss": "^4.1.13"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
