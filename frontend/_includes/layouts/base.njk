@@ -12,18 +12,38 @@
     <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | url  }}" />
     <meta name="generator" content="{{ eleventy.generator }}" />
   </head>
-  <body class="flex flex-col min-h-screen font-montserrat text-white bg-[url('/assets/images/background.jpg')] bg-cover bg-center bg-fixed">
+  <body class="flex flex-col min-h-screen font-montserrat text-[var(--text-color)] bg-[var(--bg-color)] bg-[url('/assets/images/background.jpg')] bg-cover bg-center bg-fixed bg-blend-multiply">
+    <!-- Ribbon -->
+    <a class="github-fork-ribbon right-top" href="https://github.com/brisbanesocialchess/brisbanesocialchess.github.io" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
     <!-- Background overlay -->
-    <div class="flex-grow min-h-[calc(100vh-85px)] bg-black/65 flex justify-center p-12 max-md:p-4">
-      <main class="max-w-[620px] w-[calc(100%-1rem)] bg-black/55 p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
-        <!-- Ribbon -->
-        <a
-          class="github-fork-ribbon right-top"
-          href="https://github.com/brisbanesocialchess/brisbanesocialchess.github.io"
-          data-ribbon="Fork me on GitHub"
-          title="Fork me on GitHub"
-          >Fork me on GitHub</a
+    <div class="flex-grow min-h-[calc(100vh-85px)] bg-[var(--bg-overlay)] flex justify-center p-12 max-md:p-4">
+      <!-- Container -->
+      <main class="relative max-w-[620px] w-[calc(100%-1rem)] bg-[var(--card-bg)] p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
+        <!-- Switch -->
+        <button
+          class="theme-toggle absolute top-4 left-4 cursor-pointer"
+          id="theme-toggle"
+          title="Toggle light & dark theme"
+          aria-label="Toggle theme"
         >
+          <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+            <g class="sun-beams" stroke="currentColor">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
         <!-- Logo -->
         <div class="text-center">
           <a href="{{ '/' | url  }}">
@@ -41,14 +61,14 @@
         <!-- Top Navigation -->
         <nav>
           <div class="flex items-center md:hidden">
-            <button id="menu-toggle" type="button" aria-expanded="false" class="text-gray-300 hover:text-white cursor-pointer">
+            <button id="menu-toggle" type="button" aria-expanded="false" class="cursor-pointer">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round"
                       d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
-            <span class="flex-1 text-center text-white text-md font-bold">
+            <span class="flex-1 text-center text-md font-bold">
               Brisbane Social Chess
             </span>
           </div>
@@ -56,9 +76,9 @@
               class="flex-wrap hidden flex-col items-center justify-center space-y-2 mt-4 text-center text-sm md:flex md:flex-row md:space-y-0 md:space-x-2 md:mt-0">
             {% for link in navigation.navLinks -%}
             <a href="{{ link.url | url  }}"
-              class="block w-full py-2 rounded hover:bg-white/10 hover:text-white
+              class="block w-full py-2 rounded hover:bg-white/10
                       md:inline-block md:w-auto md:py-0 md:p-2
-                      {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %} text-gray-300{% endif %}">
+                      {% if page.url == link.url %}text-[#849eff] hover:text-[#849eff] font-bold{% else %}{% endif %}">
               {{ link.text }}
             </a>
             {%- endfor %}
@@ -80,7 +100,7 @@
       {% endfor %}
     </div>
     <!-- Footer -->
-    <footer class="h-[85px] text-center p-8 pb-20 md:pb-8 text-sm text-white/60 flex flex-col items-center justify-center gap-3">
+    <footer class="h-[85px] text-center p-8 pb-20 md:pb-8 text-sm flex flex-col items-center justify-center gap-3">
       <div class="hidden md:flex space-x-4">
         {% for social in site.socials %}
           {{ social_macro.social_link(social, "hover:opacity-80 transition") }}

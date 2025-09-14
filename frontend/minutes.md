@@ -5,11 +5,11 @@ title: Meeting Minutes & Club Records
 ---
 
 <section class="px-4 max-w-3xl">
-    <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Meeting Minutes</h2>
+    <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">Meeting Minutes</h2>
     <!-- May 2025 -->
     <article class="mb-6">
         <h3 class="text-center text-lg font-semibold">May 2025 – Committee Meeting (25/03/2025)</h3>
-        <p class="text-gray-200 leading-relaxed">
+        <p class="leading-relaxed">
             <strong>Present:</strong> Jimmy, Matt, Rob, Steve<br />
             <strong>Apologies:</strong> Ben
         </p>
@@ -17,7 +17,7 @@ title: Meeting Minutes & Club Records
             <li class="space-y-2">
                 Need to either lodge an annual Not For Profit (NFP) self-review return to confirm eligibility for income tax exemption or
                 cancel ABN.
-                <ul class="list-disc list-inside pl-6 space-y-1 text-gray-200">
+                <ul class="list-disc list-inside pl-6 space-y-1">
                     <li>Rob advised that this is a statutory requirement.</li>
                     <li>
                         Rob noted that for non-profit organisations the return is fairly easy, an office bearer must lodge and can do so
@@ -35,7 +35,7 @@ title: Meeting Minutes & Club Records
             </li>
             <li class="space-y-2">
                 Preparation for the Annual General Meeting.
-                <ul class="list-disc list-inside pl-6 space-y-1 text-gray-200">
+                <ul class="list-disc list-inside pl-6 space-y-1">
                     <li>Steve suggested that some early preparation for our next AGM would make the process easier.</li>
                     <li>
                         Steve suggested that a list of tasks with identified responsibilities would be useful as would an early forecast of a
@@ -50,7 +50,7 @@ title: Meeting Minutes & Club Records
             </li>
             <li class="space-y-2">
                 Business cards.
-                <ul class="list-disc list-inside pl-6 space-y-1 text-gray-200">
+                <ul class="list-disc list-inside pl-6 space-y-1">
                     <li>Matt noted that it is possible to get 250 business cards for about $100.</li>
                     <li>Rob noted the need to decide what goes on the card and that there is no BSC logo or phone number.</li>
                     <li>Matt suggested that contact could be via MeetUp as there are 14 people who can respond.</li>
@@ -64,7 +64,7 @@ title: Meeting Minutes & Club Records
             </li>
             <li class="space-y-2">
                 General Business.
-                <ul class="list-disc list-inside pl-6 space-y-1 text-gray-200">
+                <ul class="list-disc list-inside pl-6 space-y-1">
                     <li>
                         After some issues with payment of membership the status of Ben as a committee member in terms of the BSC constitution
                         was discussed.
@@ -73,7 +73,9 @@ title: Meeting Minutes & Club Records
                 </ul>
             </li>
         </ol>
-        <p class="text-gray-200 leading-relaxed mt-2"><strong>Next meeting:</strong> in 2 months, Jimmy to advise of a suitable date.</p>
+        <p class="leading-relaxed font-semibold mt-2">
+			<strong>Next meeting:</strong> in 2 months, Jimmy to advise of a suitable date.
+		</p>
     </article>
     <div class="my-6">
         <hr class="border-gray-500" />
@@ -81,7 +83,7 @@ title: Meeting Minutes & Club Records
     <!-- June 2025 -->
     <article class="mb-6">
     	<h3 class="text-xl font-bold mb-2 text-center">June 2024 – Committee Meeting (24/06/2025)</h3>
-    	<p class="mb-3 text-gray-200">
+    	<p class="mb-3">
     		<strong> Attendees: </strong> Jimmy, John, Matt, Rob, Steve<br />
     		<strong> Apologies: </strong> Ben
     	</p>
@@ -155,7 +157,9 @@ title: Meeting Minutes & Club Records
     			consideration.
     		</li>
     	</ol>
-    	<p class="text-gray-200"><strong>Next meeting:</strong> in 1 month.</p>
+		<p class="leading-relaxed font-semibold mt-2">
+    		<strong>Next meeting:</strong> in 1 month.
+		</p>
     </article>
     <div class="my-6">
         <hr class="border-gray-500" />
@@ -227,7 +231,9 @@ title: Meeting Minutes & Club Records
     			</ul>
     		</li>
     	</ol>
-    	<p class="font-semibold">Next meeting: To be held about the 3rd week of January - Jimmy to advise via email.</p>
+    	<p class="leading-relaxed font-semibold mt-2">
+			<strong>Next meeting:</strong> To be held about the 3rd week of January - Jimmy to advise via email.
+		</p>
     </article>
     <div class="my-6">
         <hr class="border-gray-500" />
@@ -292,8 +298,8 @@ title: Meeting Minutes & Club Records
     			</ul>
     		</li>
     	</ol>
-    	<p class="font-semibold">
-    		Next meeting: Jimmy said the next meeting would be held in the first week of December. He will pick a date and advise.
+		<p class="leading-relaxed font-semibold mt-2">
+    		<strong>Next meeting:</strong> Jimmy said the next meeting would be held in the first week of December. He will pick a date and advise.
     	</p>
     </article>
     <div class="my-6">
