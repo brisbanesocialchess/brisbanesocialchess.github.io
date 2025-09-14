@@ -2,6 +2,7 @@
 const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
 const MIN_AGE = 5;
 const MAX_AGE = 120;
+const CURRENT_THEME = localStorage.getItem('theme') || 'dark';
 
 // Elements
 const elmToggleBtn = document.getElementById('menu-toggle');
@@ -10,6 +11,7 @@ const elmYear = document.getElementById('year');
 const elmFormRegister = document.querySelector('.form-registration');
 const elmFormContact = document.querySelector('.form-contact');
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
+const elmToggleButton = document.getElementById('theme-toggle');
 
 // Utilities
 /**
@@ -177,3 +179,11 @@ if (elmToggleBtn && elmMenu) {
 		elmToggleBtn.setAttribute('aria-expanded', isExpanded);
 	});
 }
+
+document.documentElement.setAttribute('data-theme', CURRENT_THEME);
+
+elmToggleBtn.addEventListener('click', () => {
+	const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+	document.documentElement.setAttribute('data-theme', theme);
+	localStorage.setItem('theme', theme);
+});
