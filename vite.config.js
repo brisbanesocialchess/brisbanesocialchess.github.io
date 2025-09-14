@@ -3,6 +3,8 @@ import path from 'path';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
+const isTest = process.env.VITEST === 'true';
+
 export default defineConfig({
 	build: {
 		assetsInlineLimit: 0,
@@ -42,7 +44,7 @@ export default defineConfig({
 			svg: { multipass: true },
 		}),
 	],
-	root: './_site',
+	root: isTest ? '.' : './_site',
 	server: {
 		port: 5173,
 		strictPort: true,
