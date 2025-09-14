@@ -146,7 +146,7 @@ title: Play, Learn & Compete in Brisbane
   <p class="mb-6">
     The club plays chess on three social networks <span aria-hidden="true">💃</span>
   </p>
-  <div class="flex flex-col md:flex-row flex-wrap justify-center gap-4 mb-6">
+  <div class="flex flex-col text-[var(--reverse-text-color)] md:flex-row flex-wrap justify-center gap-4 mb-6">
     <a href="https://www.chess.com/club/brisbane-social-chess" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Chess.com</a>
     <a href="https://worldchess.com/community/bsc" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">FIDE Online Arena</a>
     <a href="https://lichess.org/team/brisbane-social-chess" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Lichess</a>

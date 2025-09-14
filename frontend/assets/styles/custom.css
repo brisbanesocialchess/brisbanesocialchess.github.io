@@ -4,6 +4,7 @@
   --bg-color: #000000;
   --bg-overlay: rgba(0, 0, 0, 0.65);
   --text-color: #ffffff;
+  --reverse-text-color: #111111;
   --card-bg: rgba(255, 255, 255, 0.1);
 }
 [data-theme='light'] {
@@ -12,6 +13,7 @@
   --bg-color: #ffffff;
   --bg-overlay: rgba(255, 255, 255, 0.65);
   --text-color: #111111;
+  --reverse-text-color: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.85);
 }
 

@@ -36,7 +36,7 @@ captcha: true
     <!-- Captcha -->
     <div class="cf-turnstile" data-sitekey="{{ site.cloudflare_turnstile_key }}" data-action="submit"></div>
     <!-- Submit Button -->
-    <button type="submit" class="cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
+    <button type="submit" class="text-[var(--reverse-text-color)] cursor-pointer bg-indigo-900 hover:bg-indigo-500 font-bold py-3 px-6 rounded-full shadow-lg transition">
       Send Message
     </button>
   </form>
