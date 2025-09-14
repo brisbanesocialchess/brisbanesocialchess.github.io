@@ -63,4 +63,9 @@ export default defineConfig({
 			reportsDirectory: './coverage',
 		},
 	},
+	resolve: {
+		alias: {
+			'cloudflare:test': path.resolve(__dirname, 'cloudflare-mock.js'),
+		},
+	},
 });
