@@ -46,6 +46,13 @@ export default defineConfig({
 	server: {
 		port: 5173,
 		strictPort: true,
+		fs: {
+			strict: true,
+			deny: [
+				path.resolve(__dirname, 'private.txt'), 
+				path.resolve(__dirname, 'anotherSensitiveFile')
+			]
+		}
 	},
 	test: {
 		coverage: {
