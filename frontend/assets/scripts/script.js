@@ -2,7 +2,7 @@
 const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
 const MIN_AGE = 5;
 const MAX_AGE = 120;
-const CURRENT_THEME = localStorage.getItem('theme') || 'dark';
+const CURRENT_THEME = localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
 
 // Setup
 document.documentElement.setAttribute('data-theme', CURRENT_THEME);
