@@ -33,7 +33,7 @@ title: About Us
     <div class="overflow-x-auto">
         <table class="w-full table-auto border-collapse">
             <thead>
-                <tr class="bg-table-header text-center">
+                <tr class="bg-table-header text-center text-white">
                     <th class="border px-4 py-2 w-[40px]">Role</th>
                     <th class="border px-4 py-2">Name</th>
                 </tr>
