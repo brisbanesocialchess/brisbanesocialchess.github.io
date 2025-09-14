@@ -42,17 +42,17 @@ export default defineConfig({
 			svg: { multipass: true },
 		}),
 	],
-	test: {
-		coverage: {
-			provider: 'v8',
-			reporter: ['text', 'html', 'cobertura'],
-			all: true,
-			reportsDirectory: './coverage',
-		},
-	},
 	root: './_site',
 	server: {
 		port: 5173,
 		strictPort: true,
+	},
+	test: {
+		coverage: {
+			all: true,
+			provider: 'v8',
+			reporter: ['text', 'html', 'cobertura'],
+			reportsDirectory: './coverage',
+		},
 	},
 });
