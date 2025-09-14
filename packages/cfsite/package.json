@@ -1,6 +1,6 @@
 {
-	"name": "cfsite",
-	"version": "0.0.0",
+	"name": "brisbanesocialchess-cfsite",
+	"version": "1.0.0",
 	"private": false,
 	"scripts": {
 		"dev": "wrangler dev",
