@@ -14,7 +14,8 @@ Welcome to **Awesome Social Chess**! We appreciate your interest in contributing
   - [4. ✏️ Make Changes](#4--make-changes)
   - [📐 Formatting & Commit Rules](#-formatting--commit-rules)
     - [🔧 Setting Up dprint](#-setting-up-dprint)
-    - [🧪 Setting Up pre-commit](#%F0%9F%A7%AA-setting-up-pre-commit)
+    - [📦 Installing Python Requirements](#-installing-python-requirements)
+    - [🧪 Setting Up pre-commit](#-setting-up-pre-commit)
   - [5. 📝 Commit Changes](#5--commit-changes)
   - [6. ⬆️ Push Changes](#6--push-changes)
   - [7. 🔄 Create a Pull Request](#7--create-a-pull-request)
@@ -110,15 +111,19 @@ Our configuration is already in the repo: [dprint.json](./dprint.json)
 
 ---
 
+#### 📦 Installing Python Requirements
+
+Some of our tools (like `pre-commit`) require Python dependencies.  
+You can install them from `requirements.txt`:
+
+```bash
+python -m pip install -r requirements.txt
+```
+---
+
 #### 🧪 Setting Up pre-commit
 
 We use [pre-commit](https://pre-commit.com/) to automatically check your code for common issues, like missing end-of-file newlines and inconsistent line endings. This keeps our project clean and easy for everyone to work on.
-
-**How to install (requires Python):**
-
-```bash
-python -m pip install --user pre-commit
-```
 
 **Set up pre-commit hooks for this project:**
 
