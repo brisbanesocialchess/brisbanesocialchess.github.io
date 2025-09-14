@@ -50,7 +50,7 @@ export default defineConfig({
 	test: {
 		coverage: {
 			all: true,
-			exclude: ['**/packages/cfsite/**', '**/coverage/**', '**/_site/**', ...coverageConfigDefaults.exclude],
+			exclude: ['**/packages/cfsite/**', '**/_site/**', ...coverageConfigDefaults.exclude],
 			provider: 'v8',
 			reporter: ['text', 'html', 'cobertura'],
 			reportsDirectory: './coverage',
