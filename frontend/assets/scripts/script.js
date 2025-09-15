@@ -94,6 +94,19 @@ function luminance(red, green, blue) {
 }
 
 /**
+ * Resets custom CSS variables set by random theme
+ */
+function resetThemeOverrides() {
+	const root = document.documentElement.style;
+	root.removeProperty('--bg-color');
+	root.removeProperty('--text-color');
+	root.removeProperty('--reverse-text-color');
+	root.removeProperty('--toggle-icon-color');
+	root.removeProperty('--toggle-icon-hover');
+	root.removeProperty('--role-shadow-rgb');
+}
+
+/**
  * Generates two random colors that have sufficient contrast.
  * Ensures the contrast ratio (per WCAG guidelines) is > 4.5
  * for readability between background and text.
@@ -318,6 +331,10 @@ if (elmThemeToggleButton) {
 		index = (index + 1) % THEMES.length;
 		currentTheme = THEMES[index];
 
+		if (currentTheme !== 'random') {
+			resetThemeOverrides();
+		}
+		
 		document.documentElement.setAttribute('data-theme', currentTheme);
 		localStorage.setItem('theme', currentTheme);
 
