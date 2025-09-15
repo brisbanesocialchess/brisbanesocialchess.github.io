@@ -48,6 +48,10 @@
 .theme-toggle:hover svg {
 	color: var(--toggle-icon-hover);
 }
+/* Utility class to hide elements */
+.hidden {
+  display: none;
+}
 
 /* Roles */
 .role-admin {
