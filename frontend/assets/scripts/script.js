@@ -150,14 +150,15 @@ function isValidRgb(color) {
  * Get stored random colors or generate a new pair if invalid/missing.
  * @returns {[string, string]} [background, text]
  */
-function getStoredRandomColors() {
-	const stored = JSON.parse(localStorage.getItem('randomColors') || 'null');
+function getStoredRandomColors(forceNew = false) {
+	if (!forceNew) {
+		const stored = JSON.parse(localStorage.getItem('randomColors') || 'null');
 
-	if (stored?.bg && stored?.text && isValidRgb(stored.bg) && isValidRgb(stored.text)) {
-		return [stored.bg, stored.text];
+		if (stored?.bg && stored?.text && isValidRgb(stored.bg) && isValidRgb(stored.text)) {
+			return [stored.bg, stored.text];
+		}
 	}
 
-	// If invalid or missing, generate new
 	const [bg, text] = getContrastingPair();
 	localStorage.setItem('randomColors', JSON.stringify({ bg, text }));
 	return [bg, text];
@@ -166,8 +167,8 @@ function getStoredRandomColors() {
 /**
  * Apply stored random theme
  */
-function applyStoredRandomTheme() {
-	const [bg, text] = getStoredRandomColors();
+function applyStoredRandomTheme(forceNew = false) {
+	const [bg, text] = getStoredRandomColors(forceNew);
 	document.documentElement.style.setProperty('--bg-color', bg);
 	document.documentElement.style.setProperty('--text-color', text);
 	document.documentElement.style.setProperty('--reverse-text-color', bg);
@@ -310,7 +311,7 @@ elmFormContact?.addEventListener('submit', async (e) => {
 document.documentElement.setAttribute('data-theme', currentTheme);
 
 /** Apply random theme immediately if chosen */
-if (currentTheme === 'random') applyStoredRandomTheme();
+if (currentTheme === 'random') applyStoredRandomTheme(false);
 
 /** Insert current year into footer */
 elmYear.textContent = getCurrentYear();
@@ -363,7 +364,7 @@ if (elmThemeToggleButton) {
 		localStorage.setItem('theme', currentTheme);
 
 		if (currentTheme === 'random') {
-			applyStoredRandomTheme();
+			applyStoredRandomTheme(true);
 		} else {
 			resetThemeOverrides();
 		}
