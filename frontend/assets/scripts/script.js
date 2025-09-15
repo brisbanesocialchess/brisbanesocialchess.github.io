@@ -100,12 +100,11 @@ function luminance(r, g, b) {
  * @returns {[string, string]} A pair of contrasting RGB colors.
  */
 function getContrastingPair() {
-	let color1, color2;
 	let found = false;
-	while (!found) {
-		color1 = randomColor();
-		color2 = randomColor();
+	let color1 = randomColor();
+	let color2 = randomColor();
 
+	while (!found) {
 		const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
 		const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
 
@@ -116,8 +115,12 @@ function getContrastingPair() {
 
 		if (contrast > 4.5) {
 			found = true;
+		} else {
+			color1 = randomColor();
+			color2 = randomColor();
 		}
 	}
+
 	return [color1, color2];
 }
 
