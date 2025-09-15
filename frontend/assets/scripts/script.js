@@ -136,14 +136,14 @@ function getContrastingPair() {
 
 /**
  * Validate if a string is a valid RGB color like "rgb(123, 45, 67)".
- * @param {string} color 
+ * @param {string} color
  * @returns {boolean}
  */
 function isValidRgb(color) {
 	if (!color) return false;
 	const match = color.match(/^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/);
 	if (!match) return false;
-	return match.slice(1, 4).every(n => parseInt(n, 10) >= 0 && parseInt(n, 10) <= 255);
+	return match.slice(1, 4).every((n) => parseInt(n, 10) >= 0 && parseInt(n, 10) <= 255);
 }
 
 /**
