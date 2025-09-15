@@ -24,9 +24,6 @@ const THEMES = ['dark', 'light', 'random'];
  */
 let currentTheme = localStorage.getItem('theme') || 'dark';
 
-/** Apply the stored theme immediately */
-document.documentElement.setAttribute('data-theme', currentTheme);
-
 // ======================
 // Elements
 // ======================
@@ -143,6 +140,48 @@ function getContrastingPair() {
  */
 function applyRandomTheme() {
 	const [bg, text] = getContrastingPair();
+	document.documentElement.style.setProperty('--bg-color', bg);
+	document.documentElement.style.setProperty('--text-color', text);
+	document.documentElement.style.setProperty('--reverse-text-color', bg);
+	document.documentElement.style.setProperty('--toggle-icon-color', text);
+	document.documentElement.style.setProperty('--toggle-icon-hover', bg);
+	document.documentElement.style.setProperty('--role-shadow-rgb', text.match(/\d+/g).join(', '));
+}
+
+/**
+ * Validate if a string is a valid RGB color like "rgb(123, 45, 67)".
+ * @param {string} color 
+ * @returns {boolean}
+ */
+function isValidRgb(color) {
+	if (!color) return false;
+	const match = color.match(/^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/);
+	if (!match) return false;
+	return match.slice(1, 4).every(n => parseInt(n, 10) >= 0 && parseInt(n, 10) <= 255);
+}
+
+/**
+ * Get stored random colors or generate a new pair if invalid/missing.
+ * @returns {[string, string]} [background, text]
+ */
+function getStoredRandomColors() {
+	const stored = JSON.parse(localStorage.getItem('randomColors') || 'null');
+
+	if (stored?.bg && stored?.text && isValidRgb(stored.bg) && isValidRgb(stored.text)) {
+		return [stored.bg, stored.text];
+	}
+
+	// If invalid or missing, generate new
+	const [bg, text] = getContrastingPair();
+	localStorage.setItem('randomColors', JSON.stringify({ bg, text }));
+	return [bg, text];
+}
+
+/**
+ * Apply stored random theme
+ */
+function applyStoredRandomTheme() {
+	const [bg, text] = getStoredRandomColors();
 	document.documentElement.style.setProperty('--bg-color', bg);
 	document.documentElement.style.setProperty('--text-color', text);
 	document.documentElement.style.setProperty('--reverse-text-color', bg);
@@ -281,6 +320,12 @@ elmFormContact?.addEventListener('submit', async (e) => {
 // Init
 // ======================
 
+/** Apply the stored theme immediately */
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+/** Apply random theme immediately if chosen */
+if (currentTheme === 'random') applyStoredRandomTheme();
+
 /** Insert current year into footer */
 elmYear.textContent = getCurrentYear();
 
@@ -321,9 +366,6 @@ if (elmMenuToggleButton && elmMenu) {
 	});
 }
 
-/** Apply random theme immediately if chosen */
-if (currentTheme === 'random') applyRandomTheme();
-
 /** Cycle through themes (dark → light → random → dark...) */
 if (elmThemeToggleButton) {
 	elmThemeToggleButton.addEventListener('click', () => {
@@ -333,8 +375,9 @@ if (elmThemeToggleButton) {
 
 		document.documentElement.setAttribute('data-theme', currentTheme);
 		localStorage.setItem('theme', currentTheme);
+
 		if (currentTheme === 'random') {
-			applyRandomTheme();
+			applyStoredRandomTheme();
 		} else {
 			resetThemeOverrides();
 		}
