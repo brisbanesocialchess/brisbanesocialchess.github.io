@@ -110,27 +110,27 @@ function resetThemeOverrides() {
  * @returns {[string, string]} A pair of contrasting RGB colors.
  */
 function getContrastingPair() {
-    let color1 = randomColor();
-    let color2 = randomColor();
-    let contrast = 0;
-    let valid = false;
+	let color1 = randomColor();
+	let color2 = randomColor();
+	let contrast = 0;
+	let valid = false;
 
-    while (!valid) {
-        const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
-        const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
-        const lum1 = luminance(r1, g1, b1);
-        const lum2 = luminance(r2, g2, b2);
+	while (!valid) {
+		const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
+		const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
+		const lum1 = luminance(r1, g1, b1);
+		const lum2 = luminance(r2, g2, b2);
 
-        contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
-        if (contrast > 4.5) {
-            valid = true;
-        } else {
-            color1 = randomColor();
-            color2 = randomColor();
-        }
-    }
+		contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+		if (contrast > 4.5) {
+			valid = true;
+		} else {
+			color1 = randomColor();
+			color2 = randomColor();
+		}
+	}
 
-    return [color1, color2];
+	return [color1, color2];
 }
 
 /**
