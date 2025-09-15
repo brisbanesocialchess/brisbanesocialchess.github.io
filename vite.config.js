@@ -36,14 +36,17 @@ export default defineConfig({
 	},
 	plugins: [
 		ViteImageOptimizer({
-			logStats: true,
 			ansiColors: true,
-			test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+			avif: { lossless: true },
+			cache: false,
+			cacheLocation: undefined,
 			exclude: undefined,
+			gif: {},
 			include: undefined,
 			includePublic: true,
 			jpeg: { quality: 80 },
 			jpg: { quality: 80 },
+			logStats: true,
 			png: { quality: 90 },
 			svg: {
 				multipass: true,
@@ -52,8 +55,8 @@ export default defineConfig({
 					name: 'preset-default',
 					params: {
 					overrides: {
-						cleanupNumericValues: false,
 						cleanupIds: {
+						cleanupNumericValues: false,
 						minify: false,
 						remove: false,
 						},
@@ -70,12 +73,9 @@ export default defineConfig({
 				},
 				],
 			},
+			test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
 			tiff: { quality: 100 },
-			gif: {},
 			webp: { lossless: true },
-			avif: { lossless: true },
-			cache: false,
-			cacheLocation: undefined,
 		}),
 	],
 	root: './_site',
