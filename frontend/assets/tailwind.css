@@ -14,11 +14,12 @@
 	--color-role-lead-developer: red;
 	--color-role-developer: cyan;
 	--color-role-lead-moderator: #e91e63;
-	--color-role-moderator: yellow;
+	--color-role-moderator: #ec9c11;
 	--color-role-board: purple;
 	--color-role-leader: orange;
-	--color-role-coordinator: #3498db;
+	--color-role-coordinator: #1d4ed8;
 	--color-role-co-organizers: blue;
 	--color-role-event-organizers: lime;
 	--color-role-assistant-organizers: #c35339;
+    --role-shadow-rgb: 255, 255, 255; /* default for dark theme */
 }

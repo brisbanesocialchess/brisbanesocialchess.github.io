@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import path from 'path';
+import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
@@ -46,5 +46,14 @@ export default defineConfig({
 	server: {
 		port: 5173,
 		strictPort: true,
+	},
+	test: {
+		coverage: {
+			all: true,
+			exclude: ['**/packages/cfsite/**', '**/_site/**', ...coverageConfigDefaults.exclude],
+			provider: 'v8',
+			reporter: ['text', 'html', 'cobertura'],
+			reportsDirectory: './coverage',
+		},
 	},
 });
