@@ -3,9 +3,13 @@ comment:
   behavior: default
 coverage:
   status:
-    project: # add everything under here, more options at https://docs.codecov.com/docs/commit-status
-      default:
-        # basic
-        target: auto # default
+    project:
+      default: false
+      tests:
+        paths: 'packages/cfsite'
+        target: 55%
         threshold: 1%
-        base: auto
+      app:
+        paths: '!packages/cfsite'
+        target: auto
+        threshold: 1%
