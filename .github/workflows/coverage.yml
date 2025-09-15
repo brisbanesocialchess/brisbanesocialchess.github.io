@@ -19,7 +19,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run tests
-        run: npm run coverage
+        run: |
+          npm run coverage
+          cd packages/cfsite || exit
+          npm run coverage
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
