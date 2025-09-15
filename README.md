@@ -19,6 +19,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 [![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
 
+[![Codecov status](https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io/branch/main/graph/badge.svg?token=VFS3PN96Q0)](https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io)
 [![DeepSource active issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
 [![DeepSource resolved issues](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=resolved+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F)](https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/)
 
