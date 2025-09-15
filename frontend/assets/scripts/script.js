@@ -2,10 +2,11 @@
 const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
 const MIN_AGE = 5;
 const MAX_AGE = 120;
-const CURRENT_THEME = localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
+const THEMES = ['dark', 'light', 'random'];
 
 // Setup
-document.documentElement.setAttribute('data-theme', CURRENT_THEME);
+let currentTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', currentTheme);
 
 // Elements
 const elmMenuToggleButton = document.querySelector('#menu-toggle');
@@ -23,6 +24,84 @@ const elmThemeToggleButton = document.querySelector('#theme-toggle');
  */
 function getCurrentYear() {
 	return new Date().getFullYear();
+}
+
+// Utilities
+
+/**
+ * Returns the current year as a number.
+ * Useful for things like dynamic footer years or age calculations.
+ * @returns {number} The current year (e.g., 2025).
+ */
+function getCurrentYear() {
+	return new Date().getFullYear();
+}
+
+/**
+ * Generates a random RGB color string.
+ * Each channel (R, G, B) is between 0 and 255.
+ * Example output: "rgb(123, 45, 200)".
+ * @returns {string} Randomly generated RGB color.
+ */
+function randomColor() {
+	const r = Math.floor(Math.random() * 256);
+	const g = Math.floor(Math.random() * 256);
+	const b = Math.floor(Math.random() * 256);
+	return `rgb(${r}, ${g}, ${b})`;
+}
+
+/**
+ * Calculates the relative luminance of an RGB color.
+ * Uses the WCAG formula to measure brightness perception.
+ * @param {number} r - Red channel (0–255).
+ * @param {number} g - Green channel (0–255).
+ * @param {number} b - Blue channel (0–255).
+ * @returns {number} Relative luminance (0 = dark, 1 = bright).
+ */
+function luminance(r, g, b) {
+	const a = [r, g, b].map((v) => {
+		v /= 255;
+		return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+	});
+	return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+}
+
+/**
+ * Generates two random colors that have sufficient contrast.
+ * Ensures the contrast ratio (per WCAG guidelines) is > 4.5
+ * for readability between background and text.
+ * @returns {[string, string]} A pair of contrasting RGB colors.
+ */
+function getContrastingPair() {
+	let color1, color2;
+	do {
+		color1 = randomColor();
+		color2 = randomColor();
+
+		const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
+		const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
+
+		const lum1 = luminance(r1, g1, b1);
+		const lum2 = luminance(r2, g2, b2);
+
+		// Contrast ratio formula
+		const contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+
+		// Require contrast ratio above 4.5 for good readability
+		if (contrast > 4.5) break;
+	} while (true);
+
+	return [color1, color2];
+}
+
+function applyRandomTheme() {
+	const [bg, text] = getContrastingPair();
+	document.documentElement.style.setProperty('--bg-color', bg);
+	document.documentElement.style.setProperty('--text-color', text);
+	document.documentElement.style.setProperty('--reverse-text-color', bg);
+	document.documentElement.style.setProperty('--toggle-icon-color', text);
+	document.documentElement.style.setProperty('--toggle-icon-hover', bg);
+	document.documentElement.style.setProperty('--role-shadow-rgb', text.match(/\d+/g).join(', '));
 }
 
 /**
@@ -183,10 +262,17 @@ if (elmMenuToggleButton && elmMenu) {
 	});
 }
 
+if (currentTheme === 'random') applyRandomTheme();
+
 if (elmThemeToggleButton) {
 	elmThemeToggleButton.addEventListener('click', () => {
-		const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-		document.documentElement.setAttribute('data-theme', theme);
-		localStorage.setItem('theme', theme);
+		let index = THEMES.indexOf(currentTheme);
+		index = (index + 1) % THEMES.length;
+		currentTheme = THEMES[index];
+
+		document.documentElement.setAttribute('data-theme', currentTheme);
+		localStorage.setItem('theme', currentTheme);
+
+		if (currentTheme === 'random') applyRandomTheme();
 	});
 }
