@@ -68,7 +68,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![pre-commit](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
 [![Run tests and upload coverage](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml)
 
-
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
 - **Cloudflare Pages:** Pull request deploy previews [https://brisbanesocialchess.pages.dev/](https://brisbanesocialchess.pages.dev/)
