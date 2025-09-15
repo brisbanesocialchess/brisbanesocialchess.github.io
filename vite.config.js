@@ -36,10 +36,46 @@ export default defineConfig({
 	},
 	plugins: [
 		ViteImageOptimizer({
+			logStats: true,
+			ansiColors: true,
+			test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+			exclude: undefined,
+			include: undefined,
+			includePublic: true,
 			jpeg: { quality: 80 },
 			jpg: { quality: 80 },
 			png: { quality: 90 },
-			svg: { multipass: true },
+			svg: {
+				multipass: true,
+				plugins: [
+				{
+					name: 'preset-default',
+					params: {
+					overrides: {
+						cleanupNumericValues: false,
+						cleanupIds: {
+						minify: false,
+						remove: false,
+						},
+						convertPathData: false,
+					},
+					},
+				},
+				'sortAttrs',
+				{
+					name: 'addAttributesToSVGElement',
+					params: {
+					attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
+					},
+				},
+				],
+			},
+			tiff: { quality: 100 },
+			gif: {},
+			webp: { lossless: true },
+			avif: { lossless: true },
+			cache: false,
+			cacheLocation: undefined,
 		}),
 	],
 	root: './_site',
