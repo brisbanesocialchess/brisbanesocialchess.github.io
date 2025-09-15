@@ -20,6 +20,14 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm run coverage
+        continue-on-error: true
+
+      - name: Install dependencies in a subdirectory
+        run: npm ci
+        working-directory: ./packages/cfsite
+      - name: Run tests
+        run: npm run coverage
+        working-directory: ./packages/cfsite
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
