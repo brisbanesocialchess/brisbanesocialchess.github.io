@@ -45,7 +45,7 @@ export default defineConfig({
 	root: './_site',
 	server: {
 		fs: {
-			deny: ['**/private.txt', '**/anotherSensitiveFile'],
+			deny: [],
 			strict: true,
 		},
 		port: 5173,
