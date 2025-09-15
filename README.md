@@ -21,7 +21,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
     <td>
       <a href="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io">
         <img src="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io/graphs/tree.svg?token=VFS3PN96Q0" width="200px" alt="Codecov test coverage tree graph">
-      </a>  
+      </a>
     </td>
     <td>
       <a href="https://brisbanesocialchess.pages.dev">
