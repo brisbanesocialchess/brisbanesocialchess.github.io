@@ -71,26 +71,26 @@ function getCurrentYear() {
  * @returns {string} Randomly generated RGB color.
  */
 function randomColor() {
-	const r = Math.floor(Math.random() * 256);
-	const g = Math.floor(Math.random() * 256);
-	const b = Math.floor(Math.random() * 256);
-	return `rgb(${r}, ${g}, ${b})`;
+	const red = Math.floor(Math.random() * 256);
+	const green = Math.floor(Math.random() * 256);
+	const blue = Math.floor(Math.random() * 256);
+	return `rgb(${red}, ${green}, ${blue})`;
 }
 
 /**
  * Calculates the relative luminance of an RGB color.
  * Uses the WCAG formula to measure brightness perception.
- * @param {number} r - Red channel (0–255).
- * @param {number} g - Green channel (0–255).
- * @param {number} b - Blue channel (0–255).
+ * @param {number} red - Red channel (0–255).
+ * @param {number} green - Green channel (0–255).
+ * @param {number} blue - Blue channel (0–255).
  * @returns {number} Relative luminance (0 = dark, 1 = bright).
  */
-function luminance(r, g, b) {
-	const a = [r, g, b].map((v) => {
-		v /= 255;
-		return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+function luminance(red, green, blue) {
+	const values = [red, green, blue].map((value) => {
+		value /= 255;
+		return value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
 	});
-	return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+	return values[0] * 0.2126 + values[1] * 0.7152 + values[2] * 0.0722;
 }
 
 /**
