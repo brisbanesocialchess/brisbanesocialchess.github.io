@@ -3,7 +3,7 @@ comment:                  # this is a top-level key
   behavior: default
 coverage:
   status:
-    project: #add everything under here, more options at https://docs.codecov.com/docs/commit-status
+    project: # add everything under here, more options at https://docs.codecov.com/docs/commit-status
       default:
         # basic
         target: auto # default
