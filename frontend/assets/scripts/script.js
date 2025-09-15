@@ -83,8 +83,8 @@ function randomColor() {
  * @returns {number} Relative luminance (0 = dark, 1 = bright).
  */
 function luminance(red, green, blue) {
-	const values = [red, green, blue].map((v) => {
-		const srgb = v / 255;
+	const values = [red, green, blue].map((value) => {
+		const srgb = value / 255;
 		return srgb <= 0.03928 ? srgb / 12.92 : Math.pow((srgb + 0.055) / 1.055, 2.4);
 	});
 	return values[0] * 0.2126 + values[1] * 0.7152 + values[2] * 0.0722;
@@ -110,26 +110,20 @@ function resetThemeOverrides() {
  * @returns {[string, string]} A pair of contrasting RGB colors.
  */
 function getContrastingPair() {
-	let found = false;
-	let color1 = randomColor();
-	let color2 = randomColor();
+	let color1, color2, contrast;
 
-	while (!found) {
+	do {
+		color1 = randomColor();
+		color2 = randomColor();
+
 		const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
 		const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
 
 		const lum1 = luminance(r1, g1, b1);
 		const lum2 = luminance(r2, g2, b2);
 
-		const contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
-
-		if (contrast > 4.5) {
-			found = true;
-		} else {
-			color1 = randomColor();
-			color2 = randomColor();
-		}
-	}
+		contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+	} while (contrast <= 4.5);
 
 	return [color1, color2];
 }
