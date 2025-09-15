@@ -64,14 +64,14 @@ function getCurrentYear() {
 
 /**
  * Generates a random RGB color string.
- * Example output: "rgb(123, 45, 200)".
- * @returns {string} Randomly generated RGB color.
+ * Example output: [123, 45, 200].
+ * @returns {[number, number, number]} Randomly generated RGB color.
  */
 function randomColor() {
 	const red = Math.floor(Math.random() * 256);
 	const green = Math.floor(Math.random() * 256);
 	const blue = Math.floor(Math.random() * 256);
-	return `rgb(${red}, ${green}, ${blue})`;
+	return [red, green, blue];
 }
 
 /**
@@ -110,27 +110,25 @@ function resetThemeOverrides() {
  * @returns {[string, string]} A pair of contrasting RGB colors.
  */
 function getContrastingPair() {
-	let color1 = randomColor();
-	let color2 = randomColor();
-	let contrast = 0;
-	let valid = false;
+	const MAX_ATTEMPTS = 100;
+	for (let i = 0; i < MAX_ATTEMPTS; i++) {
+		const [r1, g1, b1] = randomColor();
+		const [r2, g2, b2] = randomColor();
 
-	while (!valid) {
-		const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
-		const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
 		const lum1 = luminance(r1, g1, b1);
 		const lum2 = luminance(r2, g2, b2);
 
-		contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+		const contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+
 		if (contrast > 4.5) {
-			valid = true;
-		} else {
-			color1 = randomColor();
-			color2 = randomColor();
+			const color1 = `rgb(${r1}, ${g1}, ${b1})`;
+			const color2 = `rgb(${r2}, ${g2}, ${b2})`;
+			return [color1, color2];
 		}
 	}
 
-	return [color1, color2];
+	// Fallback to a default high-contrast pair if no suitable pair is found.
+	return ['rgb(255, 255, 255)', 'rgb(0, 0, 0)'];
 }
 
 /**
