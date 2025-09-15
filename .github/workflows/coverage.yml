@@ -23,7 +23,7 @@ jobs:
         continue-on-error: true
 
       - name: Install dependencies in a subdirectory
-        run: npm ci
+        run: npm install
         working-directory: ./packages/cfsite
       - name: Run tests
         run: npm run coverage
