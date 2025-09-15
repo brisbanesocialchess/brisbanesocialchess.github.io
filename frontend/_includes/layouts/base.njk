@@ -23,26 +23,10 @@
         <button
           class="theme-toggle absolute top-4 left-4 cursor-pointer"
           id="theme-toggle"
-          title="Toggle light & dark theme"
+          title="Toggle light, dark & random theme"
           aria-label="Toggle theme"
         >
-          <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-            <mask class="moon" id="moon-mask">
-              <rect x="0" y="0" width="100%" height="100%" fill="white" />
-              <circle cx="24" cy="10" r="6" fill="black" />
-            </mask>
-            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-            <g class="sun-beams" stroke="currentColor">
-              <line x1="12" y1="1" x2="12" y2="3" />
-              <line x1="12" y1="21" x2="12" y2="23" />
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-              <line x1="1" y1="12" x2="3" y2="12" />
-              <line x1="21" y1="12" x2="23" y2="12" />
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-            </g>
-          </svg>
+          <span id="theme-icon">☀️</span>
         </button>
         <!-- Logo -->
         <div class="text-center">
@@ -112,5 +96,33 @@
       <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     {% endif %}
     <script type="text/javascript" src="{{ '/assets/scripts/bundle.js' | url  }}"></script>
+
+    <!-- Theme Switch Script -->
+    <script>
+      (function() {
+        const btn = document.getElementById("theme-toggle");
+        const icon = document.getElementById("theme-icon");
+        const themes = ["light", "dark", "random"];
+        const icons = { light: "☀️", dark: "🌙", random: "✨" };
+        let current = 0;
+
+        function applyTheme(theme) {
+          document.documentElement.setAttribute("data-theme", theme);
+          icon.textContent = icons[theme];
+        }
+
+        btn.addEventListener("click", () => {
+          current = (current + 1) % themes.length;
+          applyTheme(themes[current]);
+          localStorage.setItem("theme", themes[current]);
+        });
+
+        const saved = localStorage.getItem("theme");
+        if (saved && themes.includes(saved)) {
+          current = themes.indexOf(saved);
+        }
+        applyTheme(themes[current]);
+      })();
+    </script>
   </body>
 </html>
