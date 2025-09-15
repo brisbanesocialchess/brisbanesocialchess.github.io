@@ -1,4 +1,4 @@
-comment:                  # this is a top-level key
+comment:
   layout: 'diff, flags, files'
   behavior: default
 coverage:
