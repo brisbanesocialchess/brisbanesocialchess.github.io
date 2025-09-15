@@ -21,29 +21,22 @@
       <main class="relative max-w-[620px] w-[calc(100%-1rem)] bg-[var(--card-bg)] p-4 rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.6)] flex flex-col gap-6">
         <!-- Switch -->
         <button
-          class="theme-toggle absolute top-4 left-4 cursor-pointer"
-          id="theme-toggle"
-          title="Toggle light, dark or random theme"
-          aria-label="Toggle theme"
-        >
-          <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-            <mask class="moon" id="moon-mask">
-              <rect x="0" y="0" width="100%" height="100%" fill="white" />
-              <circle cx="24" cy="10" r="6" fill="black" />
-            </mask>
-            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-            <g class="sun-beams" stroke="currentColor">
-              <line x1="12" y1="1" x2="12" y2="3" />
-              <line x1="12" y1="21" x2="12" y2="23" />
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-              <line x1="1" y1="12" x2="3" y2="12" />
-              <line x1="21" y1="12" x2="23" y2="12" />
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-            </g>
-          </svg>
-        </button>
+    id="theme-toggle"
+    class="absolute top-4 left-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-400 text-gray-900 transition-colors duration-300 ease-in-out hover:bg-gray-200 dark:border-gray-600 dark:text-gray-100 dark:hover:bg-gray-700"
+    title="Toggles light, dark, and random color themes"
+    aria-label="Toggles light, dark, and random color themes"
+>
+    <svg id="theme-icon-light" class="theme-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+    <svg id="theme-icon-dark" class="theme-icon hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+    </svg>
+    <svg id="theme-icon-random" class="theme-icon hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6.343 6.343l2.829 2.829M14.828 14.828l2.829 2.829M5 21v-4M3 19h4m1.343-2.657l2.829-2.829m5.656 5.656l2.829-2.829M19 3v4m2-2h-4m-1.343 2.657L13.172 10.5M19 21v-4m2-2h-4"/>
+    </svg>
+    <span id="theme-status" class="sr-only" aria-live="polite"></span>
+</button>
         <!-- Logo -->
         <div class="text-center">
           <a href="{{ '/' | url  }}">
