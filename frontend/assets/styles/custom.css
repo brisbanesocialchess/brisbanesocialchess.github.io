@@ -18,6 +18,16 @@
 	--card-bg: rgba(255, 255, 255, 0.85);
 	--role-shadow-rgb: 0, 0, 0;
 }
+[data-theme='random'] {
+	--toggle-icon-color: var(--text-color);
+	--toggle-icon-hover: var(--bg-color);
+	--bg-color: #000000;
+	--bg-overlay: rgba(0, 0, 0, 0.65);
+	--text-color: #ffffff;
+	--reverse-text-color: #ffffff;
+	--card-bg: rgba(255, 255, 255, 0.1);
+	--role-shadow-rgb: 255, 255, 255;
+}
 
 /* Theme */
 .theme-toggle {

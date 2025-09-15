@@ -1,0 +1,11 @@
+comment:
+  layout: 'diff, flags, files'
+  behavior: default
+coverage:
+  status:
+    project: # add everything under here, more options at https://docs.codecov.com/docs/commit-status
+      default:
+        # basic
+        target: auto # default
+        threshold: 1%
+        base: auto
