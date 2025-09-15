@@ -135,20 +135,6 @@ function getContrastingPair() {
 }
 
 /**
- * Applies a random theme by generating a high-contrast
- * background and text color pair, then updating CSS variables.
- */
-function applyRandomTheme() {
-	const [bg, text] = getContrastingPair();
-	document.documentElement.style.setProperty('--bg-color', bg);
-	document.documentElement.style.setProperty('--text-color', text);
-	document.documentElement.style.setProperty('--reverse-text-color', bg);
-	document.documentElement.style.setProperty('--toggle-icon-color', text);
-	document.documentElement.style.setProperty('--toggle-icon-hover', bg);
-	document.documentElement.style.setProperty('--role-shadow-rgb', text.match(/\d+/g).join(', '));
-}
-
-/**
  * Validate if a string is a valid RGB color like "rgb(123, 45, 67)".
  * @param {string} color 
  * @returns {boolean}
