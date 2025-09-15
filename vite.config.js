@@ -38,7 +38,7 @@ export default defineConfig({
 		ViteImageOptimizer({
 			ansiColors: true,
 			avif: { lossless: true },
-cache: true,
+			cache: true,
 			cacheLocation: undefined,
 			exclude: undefined,
 			gif: {},
@@ -51,26 +51,26 @@ cache: true,
 			svg: {
 				multipass: true,
 				plugins: [
-				{
-					name: 'preset-default',
-					params: {
-					overrides: {
-cleanupIds: {
-							minify: false,
-							remove: false,
+					{
+						name: 'preset-default',
+						params: {
+							overrides: {
+								cleanupIds: {
+									minify: false,
+									remove: false,
+								},
+								cleanupNumericValues: false,
+								convertPathData: false,
+							},
 						},
-						cleanupNumericValues: false,
-						convertPathData: false,
 					},
+					'sortAttrs',
+					{
+						name: 'addAttributesToSVGElement',
+						params: {
+							attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
+						},
 					},
-				},
-				'sortAttrs',
-				{
-					name: 'addAttributesToSVGElement',
-					params: {
-					attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
-					},
-				},
 				],
 			},
 			test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
