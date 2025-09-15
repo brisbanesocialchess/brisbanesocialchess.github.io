@@ -55,11 +55,11 @@ export default defineConfig({
 					name: 'preset-default',
 					params: {
 					overrides: {
-						cleanupIds: {
-						cleanupNumericValues: false,
-						minify: false,
-						remove: false,
+cleanupIds: {
+							minify: false,
+							remove: false,
 						},
+						cleanupNumericValues: false,
 						convertPathData: false,
 					},
 					},
