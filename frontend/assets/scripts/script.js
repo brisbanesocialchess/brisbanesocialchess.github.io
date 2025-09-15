@@ -63,7 +63,7 @@ function getCurrentYear() {
 }
 
 /**
- * Generates a random RGB color string.
+ * Generates random RGB color components as an array of numbers.
  * Example output: [123, 45, 200].
  * @returns {[number, number, number]} Randomly generated RGB color.
  */
