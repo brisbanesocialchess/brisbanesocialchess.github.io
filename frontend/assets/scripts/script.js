@@ -1,28 +1,154 @@
+// ======================
 // Const variables
+// ======================
+
+/** Base API URL for backend requests */
 const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
+
+/** Minimum allowed user age for registration */
 const MIN_AGE = 5;
+
+/** Maximum allowed user age for registration */
 const MAX_AGE = 120;
-const CURRENT_THEME = localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
 
+/** Available theme modes: dark, light, and random */
+const THEMES = ['dark', 'light', 'random'];
+
+// ======================
 // Setup
-document.documentElement.setAttribute('data-theme', CURRENT_THEME);
+// ======================
 
+/**
+ * Load the user's preferred theme from localStorage,
+ * fallback to 'dark' if none exists.
+ */
+let currentTheme = localStorage.getItem('theme') || 'dark';
+
+/** Apply the stored theme immediately */
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+// ======================
 // Elements
+// ======================
+
+/** Button to toggle the menu (mobile, sidebar, etc.) */
 const elmMenuToggleButton = document.querySelector('#menu-toggle');
+
+/** Menu element that opens/closes */
 const elmMenu = document.querySelector('#menu');
+
+/** Element to display the current year (e.g., footer) */
 const elmYear = document.querySelector('#year');
+
+/** Registration form element */
 const elmFormRegister = document.querySelector('.form-registration');
+
+/** Contact form element */
 const elmFormContact = document.querySelector('.form-contact');
+
+/** All elements where obfuscated emails should be revealed */
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
+
+/** Button to toggle between dark, light, and random themes */
 const elmThemeToggleButton = document.querySelector('#theme-toggle');
 
+// ======================
 // Utilities
+// ======================
+
 /**
  * Returns the current year as a number.
+ * Useful for dynamic copyright text or age validation.
  * @returns {number} The current year (e.g., 2025).
  */
 function getCurrentYear() {
 	return new Date().getFullYear();
+}
+
+/**
+ * Generates a random RGB color string.
+ * Example output: "rgb(123, 45, 200)".
+ * @returns {string} Randomly generated RGB color.
+ */
+function randomColor() {
+	const red = Math.floor(Math.random() * 256);
+	const green = Math.floor(Math.random() * 256);
+	const blue = Math.floor(Math.random() * 256);
+	return `rgb(${red}, ${green}, ${blue})`;
+}
+
+/**
+ * Calculates the relative luminance of an RGB color.
+ * Uses the WCAG formula to measure brightness perception.
+ * @param {number} red - Red channel (0–255).
+ * @param {number} green - Green channel (0–255).
+ * @param {number} blue - Blue channel (0–255).
+ * @returns {number} Relative luminance (0 = dark, 1 = bright).
+ */
+function luminance(red, green, blue) {
+	const values = [red, green, blue].map((value) => {
+		value /= 255;
+		return value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
+	});
+	return values[0] * 0.2126 + values[1] * 0.7152 + values[2] * 0.0722;
+}
+
+/**
+ * Resets custom CSS variables set by random theme
+ */
+function resetThemeOverrides() {
+	const root = document.documentElement.style;
+	root.removeProperty('--bg-color');
+	root.removeProperty('--text-color');
+	root.removeProperty('--reverse-text-color');
+	root.removeProperty('--toggle-icon-color');
+	root.removeProperty('--toggle-icon-hover');
+	root.removeProperty('--role-shadow-rgb');
+}
+
+/**
+ * Generates two random colors that have sufficient contrast.
+ * Ensures the contrast ratio (per WCAG guidelines) is > 4.5
+ * for readability between background and text.
+ * @returns {[string, string]} A pair of contrasting RGB colors.
+ */
+function getContrastingPair() {
+	let found = false;
+	let color1 = randomColor();
+	let color2 = randomColor();
+
+	while (!found) {
+		const [r1, g1, b1] = color1.match(/\d+/g).map(Number);
+		const [r2, g2, b2] = color2.match(/\d+/g).map(Number);
+
+		const lum1 = luminance(r1, g1, b1);
+		const lum2 = luminance(r2, g2, b2);
+
+		const contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+
+		if (contrast > 4.5) {
+			found = true;
+		} else {
+			color1 = randomColor();
+			color2 = randomColor();
+		}
+	}
+
+	return [color1, color2];
+}
+
+/**
+ * Applies a random theme by generating a high-contrast
+ * background and text color pair, then updating CSS variables.
+ */
+function applyRandomTheme() {
+	const [bg, text] = getContrastingPair();
+	document.documentElement.style.setProperty('--bg-color', bg);
+	document.documentElement.style.setProperty('--text-color', text);
+	document.documentElement.style.setProperty('--reverse-text-color', bg);
+	document.documentElement.style.setProperty('--toggle-icon-color', text);
+	document.documentElement.style.setProperty('--toggle-icon-hover', bg);
+	document.documentElement.style.setProperty('--role-shadow-rgb', text.match(/\d+/g).join(', '));
 }
 
 /**
@@ -56,7 +182,6 @@ function isValidEmail(email) {
  */
 function validateRegisterForm(data) {
 	const errors = [];
-
 	const currentYear = getCurrentYear();
 
 	if (!data.fname?.trim()) errors.push('First name is required.');
@@ -86,12 +211,10 @@ function validateRegisterForm(data) {
  */
 function validateContactForm(data) {
 	const errors = [];
-
 	if (!data.name?.trim()) errors.push('Name is required.');
 	if (!data.email?.trim() || !isValidEmail(data.email)) errors.push('Valid email is required.');
 	if (!data.subject?.trim()) errors.push('Subject is required.');
 	if (!data.message?.trim()) errors.push('Message is required.');
-
 	return errors;
 }
 
@@ -138,21 +261,31 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 	}
 }
 
+// ======================
 // Event Bindings
+// ======================
+
+/** Registration form submit */
 elmFormRegister?.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	await handleFormSubmit(elmFormRegister, `${API_BASE}/api/register`, validateRegisterForm);
 });
 
+/** Contact form submit */
 elmFormContact?.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	await handleFormSubmit(elmFormContact, `${API_BASE}/api/contact`, validateContactForm);
 });
 
+// ======================
 // Init
+// ======================
+
+/** Insert current year into footer */
 elmYear.textContent = getCurrentYear();
 
-const emailReversed = 'ua.gro.ssehclaicosenabsirb@eettimmoc'; // reversed
+/** Decode obfuscated email (reversed string) */
+const emailReversed = 'moc.liamg@ssehclaicosenabsirb';
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
 	if (el.getAttribute('data-email-href') !== null) {
@@ -163,18 +296,23 @@ elmEmailElements.forEach((el) => {
 	}
 });
 
+/** Auto-resize embedded chess.com iframe */
 window.addEventListener('message', (e) => {
 	if (e.origin !== 'https://www.chess.com') return;
 	if (e.data?.id && typeof e.data?.frameHeight === 'number') {
 		const iframe = document.getElementById(e.data.id);
 		if (iframe) {
-			const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
+			const IFRAME_HEIGHT_OFFSET = 37; // Extra height for padding/borders
 			iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
 		}
 	}
 });
 
+// ======================
 // Events
+// ======================
+
+/** Toggle menu expand/collapse */
 if (elmMenuToggleButton && elmMenu) {
 	elmMenuToggleButton.addEventListener('click', () => {
 		elmMenu.classList.toggle('hidden');
@@ -183,10 +321,23 @@ if (elmMenuToggleButton && elmMenu) {
 	});
 }
 
+/** Apply random theme immediately if chosen */
+if (currentTheme === 'random') applyRandomTheme();
+
+/** Cycle through themes (dark → light → random → dark...) */
 if (elmThemeToggleButton) {
 	elmThemeToggleButton.addEventListener('click', () => {
-		const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-		document.documentElement.setAttribute('data-theme', theme);
-		localStorage.setItem('theme', theme);
+		let index = THEMES.indexOf(currentTheme);
+		index = (index + 1) % THEMES.length;
+		currentTheme = THEMES[index];
+
+		if (currentTheme !== 'random') {
+			resetThemeOverrides();
+		}
+		
+		document.documentElement.setAttribute('data-theme', currentTheme);
+		localStorage.setItem('theme', currentTheme);
+
+		if (currentTheme === 'random') applyRandomTheme();
 	});
 }
