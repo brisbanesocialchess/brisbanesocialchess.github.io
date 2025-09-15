@@ -48,11 +48,8 @@ export default defineConfig({
 		strictPort: true,
 		fs: {
 			strict: true,
-			deny: [
-				path.resolve(__dirname, 'private.txt'), 
-				path.resolve(__dirname, 'anotherSensitiveFile')
-			],
-		}
+			deny: [path.resolve(__dirname, 'private.txt'), path.resolve(__dirname, 'anotherSensitiveFile')],
+		},
 	},
 	test: {
 		coverage: {
