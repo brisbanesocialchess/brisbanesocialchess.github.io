@@ -330,14 +330,13 @@ if (elmThemeToggleButton) {
 		let index = THEMES.indexOf(currentTheme);
 		index = (index + 1) % THEMES.length;
 		currentTheme = THEMES[index];
-
-		if (currentTheme !== 'random') {
-			resetThemeOverrides();
-		}
 		
 		document.documentElement.setAttribute('data-theme', currentTheme);
 		localStorage.setItem('theme', currentTheme);
-
-		if (currentTheme === 'random') applyRandomTheme();
+		if (currentTheme === 'random') {
+			applyRandomTheme();
+		} else {
+			resetThemeOverrides();
+		}
 	});
 }
