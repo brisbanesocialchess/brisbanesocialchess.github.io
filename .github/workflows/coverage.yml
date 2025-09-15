@@ -20,7 +20,7 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm run coverage
-      continue-on-error: true
+        continue-on-error: true
 
       - name: Install dependencies in a subdirectory
         run: npm ci
