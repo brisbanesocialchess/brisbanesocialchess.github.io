@@ -14,7 +14,6 @@ const MAX_AGE = 120;
 /** Available theme modes: dark, light, and random */
 const THEMES = ['dark', 'light', 'random'];
 
-
 // ======================
 // Setup
 // ======================
@@ -27,7 +26,6 @@ let currentTheme = localStorage.getItem('theme') || 'dark';
 
 /** Apply the stored theme immediately */
 document.documentElement.setAttribute('data-theme', currentTheme);
-
 
 // ======================
 // Elements
@@ -53,7 +51,6 @@ const elmEmailElements = document.querySelectorAll('.email-obfuscated');
 
 /** Button to toggle between dark, light, and random themes */
 const elmThemeToggleButton = document.querySelector('#theme-toggle');
-
 
 // ======================
 // Utilities
@@ -104,7 +101,8 @@ function luminance(r, g, b) {
  */
 function getContrastingPair() {
 	let color1, color2;
-	do {
+	let found = false;
+	while (!found) {
 		color1 = randomColor();
 		color2 = randomColor();
 
@@ -116,9 +114,10 @@ function getContrastingPair() {
 
 		const contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
 
-		if (contrast > 4.5) break;
-	} while (true);
-
+		if (contrast > 4.5) {
+			found = true;
+		}
+	}
 	return [color1, color2];
 }
 
@@ -246,7 +245,6 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 	}
 }
 
-
 // ======================
 // Event Bindings
 // ======================
@@ -263,7 +261,6 @@ elmFormContact?.addEventListener('submit', async (e) => {
 	await handleFormSubmit(elmFormContact, `${API_BASE}/api/contact`, validateContactForm);
 });
 
-
 // ======================
 // Init
 // ======================
@@ -272,7 +269,7 @@ elmFormContact?.addEventListener('submit', async (e) => {
 elmYear.textContent = getCurrentYear();
 
 /** Decode obfuscated email (reversed string) */
-const emailReversed = 'moc.liamg@ssehclaicosenabsirb'; 
+const emailReversed = 'moc.liamg@ssehclaicosenabsirb';
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
 	if (el.getAttribute('data-email-href') !== null) {
@@ -294,7 +291,6 @@ window.addEventListener('message', (e) => {
 		}
 	}
 });
-
 
 // ======================
 // Events
