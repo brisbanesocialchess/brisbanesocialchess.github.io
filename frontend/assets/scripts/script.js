@@ -1,36 +1,67 @@
+// ======================
 // Const variables
+// ======================
+
+/** Base API URL for backend requests */
 const API_BASE = 'https://cfsite.brisbanesocialchess.workers.dev';
+
+/** Minimum allowed user age for registration */
 const MIN_AGE = 5;
+
+/** Maximum allowed user age for registration */
 const MAX_AGE = 120;
+
+/** Available theme modes: dark, light, and random */
 const THEMES = ['dark', 'light', 'random'];
 
+
+// ======================
 // Setup
+// ======================
+
+/**
+ * Load the user's preferred theme from localStorage,
+ * fallback to 'dark' if none exists.
+ */
 let currentTheme = localStorage.getItem('theme') || 'dark';
+
+/** Apply the stored theme immediately */
 document.documentElement.setAttribute('data-theme', currentTheme);
 
+
+// ======================
 // Elements
+// ======================
+
+/** Button to toggle the menu (mobile, sidebar, etc.) */
 const elmMenuToggleButton = document.querySelector('#menu-toggle');
+
+/** Menu element that opens/closes */
 const elmMenu = document.querySelector('#menu');
+
+/** Element to display the current year (e.g., footer) */
 const elmYear = document.querySelector('#year');
+
+/** Registration form element */
 const elmFormRegister = document.querySelector('.form-registration');
+
+/** Contact form element */
 const elmFormContact = document.querySelector('.form-contact');
+
+/** All elements where obfuscated emails should be revealed */
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
+
+/** Button to toggle between dark, light, and random themes */
 const elmThemeToggleButton = document.querySelector('#theme-toggle');
 
-// Utilities
-/**
- * Returns the current year as a number.
- * @returns {number} The current year (e.g., 2025).
- */
-function getCurrentYear() {
-	return new Date().getFullYear();
-}
 
+// ======================
 // Utilities
+// ======================
 
 /**
  * Returns the current year as a number.
- * Useful for things like dynamic footer years or age calculations.
+ * Useful for dynamic copyright text or age validation.
  * @returns {number} The current year (e.g., 2025).
  */
 function getCurrentYear() {
@@ -39,7 +70,6 @@ function getCurrentYear() {
 
 /**
  * Generates a random RGB color string.
- * Each channel (R, G, B) is between 0 and 255.
  * Example output: "rgb(123, 45, 200)".
  * @returns {string} Randomly generated RGB color.
  */
@@ -84,16 +114,18 @@ function getContrastingPair() {
 		const lum1 = luminance(r1, g1, b1);
 		const lum2 = luminance(r2, g2, b2);
 
-		// Contrast ratio formula
 		const contrast = (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
 
-		// Require contrast ratio above 4.5 for good readability
 		if (contrast > 4.5) break;
 	} while (true);
 
 	return [color1, color2];
 }
 
+/**
+ * Applies a random theme by generating a high-contrast
+ * background and text color pair, then updating CSS variables.
+ */
 function applyRandomTheme() {
 	const [bg, text] = getContrastingPair();
 	document.documentElement.style.setProperty('--bg-color', bg);
@@ -135,7 +167,6 @@ function isValidEmail(email) {
  */
 function validateRegisterForm(data) {
 	const errors = [];
-
 	const currentYear = getCurrentYear();
 
 	if (!data.fname?.trim()) errors.push('First name is required.');
@@ -165,12 +196,10 @@ function validateRegisterForm(data) {
  */
 function validateContactForm(data) {
 	const errors = [];
-
 	if (!data.name?.trim()) errors.push('Name is required.');
 	if (!data.email?.trim() || !isValidEmail(data.email)) errors.push('Valid email is required.');
 	if (!data.subject?.trim()) errors.push('Subject is required.');
 	if (!data.message?.trim()) errors.push('Message is required.');
-
 	return errors;
 }
 
@@ -217,21 +246,33 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 	}
 }
 
+
+// ======================
 // Event Bindings
+// ======================
+
+/** Registration form submit */
 elmFormRegister?.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	await handleFormSubmit(elmFormRegister, `${API_BASE}/api/register`, validateRegisterForm);
 });
 
+/** Contact form submit */
 elmFormContact?.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	await handleFormSubmit(elmFormContact, `${API_BASE}/api/contact`, validateContactForm);
 });
 
+
+// ======================
 // Init
+// ======================
+
+/** Insert current year into footer */
 elmYear.textContent = getCurrentYear();
 
-const emailReversed = 'moc.liamg@ssehclaicosenabsirb'; // reversed
+/** Decode obfuscated email (reversed string) */
+const emailReversed = 'moc.liamg@ssehclaicosenabsirb'; 
 const email = emailReversed.split('').reverse().join('');
 elmEmailElements.forEach((el) => {
 	if (el.getAttribute('data-email-href') !== null) {
@@ -242,18 +283,24 @@ elmEmailElements.forEach((el) => {
 	}
 });
 
+/** Auto-resize embedded chess.com iframe */
 window.addEventListener('message', (e) => {
 	if (e.origin !== 'https://www.chess.com') return;
 	if (e.data?.id && typeof e.data?.frameHeight === 'number') {
 		const iframe = document.getElementById(e.data.id);
 		if (iframe) {
-			const IFRAME_HEIGHT_OFFSET = 37; // Extra height to account for container padding/borders.
+			const IFRAME_HEIGHT_OFFSET = 37; // Extra height for padding/borders
 			iframe.style.height = `${e.data.frameHeight + IFRAME_HEIGHT_OFFSET}px`;
 		}
 	}
 });
 
+
+// ======================
 // Events
+// ======================
+
+/** Toggle menu expand/collapse */
 if (elmMenuToggleButton && elmMenu) {
 	elmMenuToggleButton.addEventListener('click', () => {
 		elmMenu.classList.toggle('hidden');
@@ -262,8 +309,10 @@ if (elmMenuToggleButton && elmMenu) {
 	});
 }
 
+/** Apply random theme immediately if chosen */
 if (currentTheme === 'random') applyRandomTheme();
 
+/** Cycle through themes (dark → light → random → dark...) */
 if (elmThemeToggleButton) {
 	elmThemeToggleButton.addEventListener('click', () => {
 		let index = THEMES.indexOf(currentTheme);
