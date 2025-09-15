@@ -77,10 +77,6 @@ export default defineConfig({
 	],
 	root: './_site',
 	server: {
-		fs: {
-			deny: [],
-			strict: true,
-		},
 		port: 5173,
 		strictPort: true,
 	},
