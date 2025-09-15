@@ -6,10 +6,12 @@ coverage:
     project:
       default: false
       tests:
-        paths: ['packages/cfsite']
+        paths:
+          - 'packages/cfsite'
         target: 70%
         threshold: 1%
       app:
-        paths: ['!packages/cfsite']
+        paths:
+          - '!packages/cfsite'
         target: auto
         threshold: 1%
