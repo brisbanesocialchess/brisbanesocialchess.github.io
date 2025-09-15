@@ -39,7 +39,7 @@ export default defineConfig({
 			ansiColors: true,
 			avif: { lossless: true },
 			cache: true,
-            gif: {},
+			gif: {},
 			includePublic: true,
 			jpeg: { quality: 80 },
 			jpg: { quality: 80 },
