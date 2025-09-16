@@ -9,12 +9,16 @@ coverage:
   status:
     project:
       default: false
-      tests:
+      cfsite:
+        flags: 
+          - cfsite
         paths:
           - 'packages/cfsite'
         target: 70%
         threshold: 1%
       app:
+        flags:
+          - app
         paths:
           - '!packages/cfsite'
         target: auto
