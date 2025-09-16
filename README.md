@@ -19,11 +19,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <table>
   <tr>
     <td>
-      <a href="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io">
-        <img src="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io/graphs/tree.svg?token=VFS3PN96Q0" width="200px" alt="Codecov test coverage tree graph">
-      </a>
-    </td>
-    <td>
       <a href="https://brisbanesocialchess.pages.dev">
         <img src="https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.pages.dev&label=%F0%9F%8C%90%20cloudflare-pages" alt="Cloudflare Pages site status">
       </a>
@@ -35,11 +30,19 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
       <a href="https://brisbanesocialchess.readthedocs.io/en/latest/">
         <img src="https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.readthedocs.io%2Fen%2Flatest%2F&label=%F0%9F%8C%90%20read-the-docs" alt="Read the Docs site status">
       </a>
-      <br>
+    </td>
+    <td>
       <a href="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io">
         <img src="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io/branch/main/graph/badge.svg?token=VFS3PN96Q0" alt="Codecov status">
       </a>
       <br>
+      <a href="https://app.readthedocs.org/projects/brisbanesocialchess/builds/?version__slug=latest">
+        <img src="https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest" alt="Read the Docs Build Status">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
       <a href="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/">
         <img src="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F" alt="DeepSource active issues">
       </a>
@@ -57,7 +60,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![CodeQL](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
 [![Dependabot Updates](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates)
 [![Wrangler Deploy status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
-[![Read the Docs Build Status](https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest)](https://app.readthedocs.org/projects/brisbanesocialchess/builds/?version__slug=latest)
 [![Dprint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
 [![First Interaction](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml)
 [![Git Clone Matrix](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
