@@ -12,6 +12,8 @@ coverage:
       tests:
         paths:
           - 'packages/cfsite'
+        target: 55%
+        threshold: 1%
       app:
         paths:
           - '!packages/cfsite'
