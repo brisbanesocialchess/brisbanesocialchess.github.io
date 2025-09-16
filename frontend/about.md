@@ -86,7 +86,7 @@ title: About Us
         <li>
             <strong>Co-organizers</strong>:
             <ul class="list-disc list-inside space-y-2 ml-5">
-                <li><span class="hover:underline text-blue-400">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
+                <li><span class="role role-co-organizers text-role-co-organizers">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
