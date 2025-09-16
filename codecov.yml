@@ -10,7 +10,7 @@ coverage:
     project:
       default: false
       cfsite:
-        flags: 
+        flags:
           - cfsite
         paths:
           - 'packages/cfsite'
