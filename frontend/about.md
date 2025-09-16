@@ -41,7 +41,7 @@ title: About Us
             <tbody>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">President</th>
-                    <td class="border px-4 py-2"><span class="role role-board text-role-board">Jimmy Joe</span></td>
+                    <td class="border px-4 py-2"><span class="role role-board text-role-board">Benjamin Martin</span></td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
@@ -54,12 +54,6 @@ title: About Us
                     <td class="border px-4 py-2"><span class="role role-board text-role-board">Steve Anderson</span></td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
-                    <td class="border px-4 py-2">
-                        <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>
-                    </td>
-                </tr>
-                <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
                     <td class="border px-4 py-2">
                         <a href="https://github.com/jbampton" class="hover:underline role role-admin text-role-admin">John Bampton</a>
@@ -68,13 +62,12 @@ title: About Us
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
                     <td class="border px-4 py-2">
-                        <span class="role role-board text-role-board">Adam Lomsargis</span>, <span class="role role-board text-role-board">Ben Martin</span>
+                        <span class="role role-board text-role-board">Ross Barnard</span>, <span class="role role-board text-role-board">Stuart Holt</span>
                     </td>
                 </tr>
                 <tr>
                     <th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
                     <td class="border px-4 py-2">
-                        <span class="role role-coordinator text-role-coordinator">Ross Barnard</span>,
                         <a class="hover:underline role role-coordinator text-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
                     </td>
                 </tr>
@@ -103,7 +96,7 @@ title: About Us
                     <a href="https://github.com/garveybiz" class="hover:underline role role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
                 <li><span class="role role-board text-role-board">Steve Anderson</span>: Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</li>
-                <li><span class="role role-coordinator text-role-coordinator">Ross Barnard</span></li>
+                <li><span class="role role-board text-role-board">Ross Barnard</span></li>
             </ul>
         </li>
         <li><strong>Assistant organizer</strong>: <span class="role-assistant-organizers text-role-assistant-organizers">Roger Clarke</span></li>
@@ -114,7 +107,7 @@ title: About Us
                 <li><span class="role role-event-organizers text-role-event-organizers">Joseph Tan</span></li>
                 <li><span class="role role-event-organizers text-role-event-organizers">Marty Benjamin</span></li>
                 <li><span class="role role-event-organizers text-role-event-organizers">Peiqi Sun</span></li>
-                <li><span class="role role-event-organizers text-role-event-organizers">Stuart Holt</span></li>
+                <li><span class="role role-board text-role-board">Stuart Holt</span></li>
             </ul>
         </li>
     </ul>
