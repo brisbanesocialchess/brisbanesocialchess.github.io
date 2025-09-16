@@ -1,0 +1,18 @@
+comment:
+  layout: 'diff, flags, files'
+  behavior: default
+  require_changes: false
+coverage:
+  status:
+    project:
+      default: false
+      tests:
+        paths:
+          - 'packages/cfsite'
+        target: 70%
+        threshold: 1%
+      app:
+        paths:
+          - '!packages/cfsite'
+        target: auto
+        threshold: 1%

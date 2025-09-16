@@ -5,11 +5,11 @@ title: Club Rules & Code of Conduct
 ---
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">Rules</h2>
-  <p class="text-center text-gray-200 mb-6">
+  <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">Rules</h2>
+  <p class="text-center mb-6">
     <strong>Brisbane Social Chess Inc IA4682418 ABN 20129327738</strong>
   </p>
-  <ol class="list-decimal list-inside space-y-3 text-gray-100 text-sm leading-relaxed">
+  <ol class="list-decimal list-inside space-y-3 text-sm leading-relaxed">
     <li>The name of the incorporated association is Brisbane Social Chess Inc. (‘the club’).</li>
     <li>
       The objects of the club are to a) Promote the playing of chess in person in amenable surroundings in and around the City of

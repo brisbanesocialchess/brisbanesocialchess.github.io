@@ -5,10 +5,10 @@ title: Chess Games & Variants
 ---
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+  <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
     Club Games Archive
   </h2>
-  <p class="text-center text-white text-base md:text-lg mb-8">
+  <p class="text-center text-base md:text-lg mb-8">
     Explore some of the fun and chaotic group games we've played at different meetups and online on
     <a href="https://chess.com" class="text-blue-400 underline hover:text-blue-300" target="_blank" rel="noopener noreferrer">chess.com</a>.
   </p>

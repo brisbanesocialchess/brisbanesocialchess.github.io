@@ -1,13 +1,14 @@
 {
 	"name": "brisbanesocialchess",
 	"version": "1.0.0",
-	"private": false,
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"format": "prettier --write \"**/*.{css,js,json,md,yaml,yml}\"",
 		"check": "prettier --check \"**/*.{css,js,json,md,yaml,yml}\"",
 		"lint": "eslint --config .github/linters/eslint.config.mjs .",
 		"lint:fix": "eslint --config .github/linters/eslint.config.mjs . --fix",
+		"coverage": "vitest run --coverage",
 		"test": "npx lerna run test --stream",
 		"dev": "npm run watch",
 		"start": "npm run build && npm run vite:preview",
@@ -15,7 +16,8 @@
 		"build": "npm run 11ty:build && npm run tailwindcss:build && npm run vite:build",
 		"11ty:watch": "eleventy --serve --input=frontend",
 		"11ty:build": "eleventy --input=frontend",
-		"tailwindcss:build": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css",
+		"tailwindcss:dev": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css",
+		"tailwindcss:build": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --minify",
 		"tailwindcss:watch": "tailwindcss -i frontend/assets/tailwind.css -o frontend/assets/styles/base.css --watch",
 		"vite:dev": "vite",
 		"vite:build": "node copy-html.js && vite build && node merge-assets.js",
@@ -34,17 +36,21 @@
 		"!packages/cfsite"
 	],
 	"dependencies": {
-		"@tailwindcss/cli": "^4.1.11",
+		"@tailwindcss/cli": "^4.1.13",
+		"esbuild": "^0.25.9",
 		"glob": "^11.0.3",
 		"html-minifier-terser": "^7.2.0",
 		"luxon": "^3.7.1",
-		"tailwindcss": "^4.1.11"
+		"rollup": "^4.50.1",
+		"tailwindcss": "^4.1.13"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
-		"@cloudflare/vitest-pool-workers": "^0.8.68",
+		"@cloudflare/vitest-pool-workers": "^0.9.1",
 		"@eslint/js": "^9.35.0",
 		"@npmcli/arborist": "^9.1.3",
+		"@vitest/coverage-istanbul": "^3.2.4",
+		"@vitest/coverage-v8": "^3.2.4",
 		"concurrently": "^9.2.1",
 		"eslint": "^9.35.0",
 		"eslint-config-prettier": "^10.1.5",
@@ -57,7 +63,8 @@
 		"sharp": "^0.34.3",
 		"slugify": "^1.6.6",
 		"svgo": "^4.0.0",
-		"vite-plugin-image-optimizer": "^2.0.2"
+		"vite-plugin-image-optimizer": "^2.0.2",
+		"vitest": "^3.2.4"
 	},
 	"overrides": {
 		"devalue": "5.3.2"

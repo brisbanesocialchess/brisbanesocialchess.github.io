@@ -14,6 +14,12 @@ Object.entries(jsModules)
 	.filter(([file]) => !ignoreJs.includes(file.split('/').pop()))
 	.forEach(([, loader]) => loader());
 
+// --- Load avatars ---
+const avatarModules = import.meta.glob('./avatars/*.{png,jpg,jpeg,gif,svg}');
+Object.entries(avatarModules)
+	.filter(([file]) => !ignoreImages.includes(file.split('/').pop()))
+	.forEach(([, loader]) => loader());
+
 // --- Load images ---
 const imageModules = import.meta.glob('./images/*.{png,jpg,jpeg,gif,svg}');
 Object.entries(imageModules)
