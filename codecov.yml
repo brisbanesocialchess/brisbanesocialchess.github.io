@@ -2,13 +2,16 @@ comment:
   layout: 'diff, flags, files'
   behavior: default
 coverage:
+  range: 50...75
+  round: down
+  precision: 2
   status:
     project:
       default: false
       tests:
         paths:
           - 'packages/cfsite'
-        target: 70%
+        target: 80%
         threshold: 1%
       app:
         paths:
