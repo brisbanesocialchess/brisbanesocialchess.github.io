@@ -90,7 +90,7 @@ title: About Us
                     just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
                     have a laugh! :D
                 </li>
-                <li><span class="role role-board text-role-board">Ben Martin</span>: How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></li>
+                <li><span class="role role-board text-role-board">Benjamin Martin</span>: How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role role-co-organizers text-role-co-organizers">Jimmy Joe</span></li>
                 <li>
                     <a href="https://github.com/garveybiz" class="hover:underline role role-co-organizers text-role-co-organizers">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
