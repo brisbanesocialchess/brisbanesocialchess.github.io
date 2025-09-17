@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import path from 'path';
+import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
@@ -36,15 +36,57 @@ export default defineConfig({
 	},
 	plugins: [
 		ViteImageOptimizer({
+			ansiColors: true,
+			avif: { lossless: true },
+			cache: true,
+			gif: {},
+			includePublic: true,
 			jpeg: { quality: 80 },
 			jpg: { quality: 80 },
+			logStats: true,
 			png: { quality: 90 },
-			svg: { multipass: true },
+			svg: {
+				multipass: true,
+				plugins: [
+					{
+						name: 'preset-default',
+						params: {
+							overrides: {
+								cleanupIds: {
+									minify: false,
+									remove: false,
+								},
+								cleanupNumericValues: false,
+								convertPathData: false,
+							},
+						},
+					},
+					'sortAttrs',
+					{
+						name: 'addAttributesToSVGElement',
+						params: {
+							attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
+						},
+					},
+				],
+			},
+			test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+			tiff: { quality: 100 },
+			webp: { lossless: true },
 		}),
 	],
 	root: './_site',
 	server: {
 		port: 5173,
 		strictPort: true,
+	},
+	test: {
+		coverage: {
+			all: true,
+			exclude: ['**/packages/cfsite/**', '**/_site/**', ...coverageConfigDefaults.exclude],
+			provider: 'v8',
+			reporter: ['text', 'json', 'html', 'cobertura'],
+			reportsDirectory: '../coverage',
+		},
 	},
 });

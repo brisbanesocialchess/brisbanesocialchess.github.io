@@ -1,0 +1,25 @@
+name: 🛳️ Docker CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: 🐬 Test image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      - name: Build Docker image
+        run: docker build -t my-go-precommit .
+      - name: Run Docker container and tests
+        run: |
+          docker run --rm -v "$PWD":/app -w /app my-go-precommit

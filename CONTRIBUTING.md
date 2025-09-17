@@ -121,7 +121,7 @@ We use:
 
 **Linux/macOS:**
 
-Install via curl:
+Install via cURL:
 
 ```bash
 curl -fsSL https://dprint.dev/install.sh | sh
@@ -133,13 +133,13 @@ curl -fsSL https://dprint.dev/install.sh | sh
 dprint check --allow-no-files
 ```
 
-**To auto-format code:**
+**To autoformat code:**
 
 ```bash
 dprint fmt --allow-no-files
 ```
 
-Our configuration is already in the repo: [dprint.json](./dprint.json)
+Our configuration is already in the repository: [dprint.json](./dprint.json)
 
 ---
 
