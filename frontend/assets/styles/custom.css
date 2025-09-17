@@ -7,6 +7,7 @@
 	--reverse-text-color: #111111;
 	--card-bg: rgba(255, 255, 255, 0.1);
 	--role-shadow-rgb: 255, 255, 255;
+	/* --footer-text-color: #070505; */
 }
 [data-theme='light'] {
 	--toggle-icon-color: #111111;
@@ -17,10 +18,12 @@
 	--reverse-text-color: #ffffff;
 	--card-bg: rgba(255, 255, 255, 0.85);
 	--role-shadow-rgb: 0, 0, 0;
+	--footer-text-color: #ffffff;
 }
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
 	--toggle-icon-hover: var(--bg-color);
+	--footer-text-color: var(--text-color);
 	--bg-color: #000000;
 	--bg-overlay: rgba(0, 0, 0, 0.65);
 	--text-color: #ffffff;
@@ -89,4 +92,9 @@
 }
 .role span {
 	color: var(--role-color);
+}
+
+/* Footer */
+footer p {
+	color: var(--footer-text-color)
 }
