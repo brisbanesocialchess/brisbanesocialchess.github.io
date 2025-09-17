@@ -171,6 +171,7 @@ Follow these steps to set up pre-commit:
    This will activate automatic checks before each commit.
 
 3. **Verify the installation** by running all checks manually:
+
    ```bash
    pre-commit run --all-files
    ```
