@@ -31,8 +31,8 @@
 }
 
 /* Footer Contrast Fix for Issue #725 */
-[data-theme='light'] footer {
-	color: var(--footer-text-color);
+[data-theme='light'] footer, [data-theme='light'] footer * {
+	color: var(--footer-text-color) !important;
 }
 /* End Footer Contrast Fix */
 /* Theme */
