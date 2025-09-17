@@ -3,12 +3,16 @@ import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
+const imageFileTypes = ['jpg', 'jpeg', 'png', 'gif', 'svg', 'webp'];
+
 export default defineConfig({
+	assetsInclude: imageFileTypes.map((ext) => `**/*.${ext}`),
 	build: {
 		assetsInlineLimit: 0,
 		emptyOutDir: false,
 		outDir: '../_deploy',
 		rollupOptions: {
+			external: (id) => new RegExp(`\\.(${imageFileTypes.join('|')})$`).test(id),
 			input: path.resolve(__dirname, 'frontend/assets/main-entry.js'),
 			output: {
 				assetFileNames: (assetInfo) => {
