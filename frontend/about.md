@@ -179,8 +179,6 @@ title: About Us
 			<span class="font-medium">Thomas</span>
 			<span class="github">@therealnugget</span>
 		</a>
-	</div>
-	<div class="flex flex-wrap justify-center gap-6">
 		<div class="flex flex-col items-center text-center w-1/3 role role-leader text-role-leader">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Eddie avatar" />
 			<span class="font-medium">Eddie</span>
