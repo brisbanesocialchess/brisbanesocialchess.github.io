@@ -7,7 +7,6 @@
 	--reverse-text-color: #111111;
 	--card-bg: rgba(255, 255, 255, 0.1);
 	--role-shadow-rgb: 255, 255, 255;
-	/* --footer-text-color: #070505; */
 }
 [data-theme='light'] {
 	--toggle-icon-color: #111111;
