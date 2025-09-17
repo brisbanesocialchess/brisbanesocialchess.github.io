@@ -110,6 +110,7 @@ python --version
    This will install all the necessary Python dependencies for development.
 
 4. (Optional) If you're working on documentation, install additional doc-related packages:
+
    ```bash
    python -m pip install -r requirements-docs.txt
    ```
