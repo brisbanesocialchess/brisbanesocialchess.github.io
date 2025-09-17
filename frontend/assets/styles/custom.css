@@ -17,7 +17,7 @@
 	--reverse-text-color: #ffffff;
 	--card-bg: rgba(255, 255, 255, 0.85);
 	--role-shadow-rgb: 0, 0, 0;
-    --footer-text-color: #222222;
+	--footer-text-color: #222222;
 }
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
