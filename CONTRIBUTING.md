@@ -103,6 +103,7 @@ python --version
    This helps keep your global Python installation clean and avoids dependency conflicts.
 
 3. Install the required Python packages:
+
    ```bash
    python -m pip install -r requirements.txt
    ```
