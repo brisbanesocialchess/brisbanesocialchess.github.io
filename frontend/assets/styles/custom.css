@@ -17,6 +17,7 @@
 	--reverse-text-color: #ffffff;
 	--card-bg: rgba(255, 255, 255, 0.85);
 	--role-shadow-rgb: 0, 0, 0;
+    --footer-text-color: #222222;
 }
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
@@ -29,6 +30,11 @@
 	--role-shadow-rgb: 255, 255, 255;
 }
 
+/* Footer Contrast Fix for Issue #725 */
+footer, footer * {
+	color: var(--footer-text-color, #222222);
+}
+/* End Footer Contrast Fix */
 /* Theme */
 .theme-toggle {
 	display: flex;
