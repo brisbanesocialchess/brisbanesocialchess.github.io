@@ -33,7 +33,6 @@
 [data-theme='light'] footer {
 	color: var(--footer-text-color);
 }
-/* End Footer Contrast Fix */
 /* Theme */
 .theme-toggle {
 	display: flex;
