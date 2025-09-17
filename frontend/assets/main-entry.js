@@ -26,6 +26,7 @@ Object.entries(imageModules)
 	.filter(([file]) => !ignoreImages.includes(file.split('/').pop()))
 	.forEach(([, loader]) => loader());
 
+// --- Load pictures ---
 const pictureModules = import.meta.glob('./pictures/*.{png,jpg,jpeg,gif,svg}');
 Object.entries(pictureModules)
 	.filter(([file]) => !ignoreImages.includes(file.split('/').pop()))
