@@ -164,6 +164,7 @@ Follow these steps to set up pre-commit:
    ```
 
 2. **Install the pre-commit hooks** for this project:
+
    ```bash
    pre-commit install
    ```
