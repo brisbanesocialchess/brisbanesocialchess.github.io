@@ -2,6 +2,7 @@ import path from 'path';
 import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import copy from 'rollup-plugin-copy';
 
 export default defineConfig({
 	build: {
@@ -73,6 +74,13 @@ export default defineConfig({
 			test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
 			tiff: { quality: 100 },
 			webp: { lossless: true },
+		}),
+		copy({
+			hook: 'closeBundle',
+			targets: [
+				{ dest: '_deploy/assets', src: '_site/assets/bundle.css' },
+				{ dest: '_deploy/assets', src: '_site/assets/bundle.js' },
+			],
 		}),
 	],
 	root: './_site',

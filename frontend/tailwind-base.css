@@ -21,5 +21,5 @@
 	--color-role-co-organizers: blue;
 	--color-role-event-organizers: lime;
 	--color-role-assistant-organizers: #c35339;
-    --role-shadow-rgb: 255, 255, 255; /* default for dark theme */
+	--role-shadow-rgb: 255, 255, 255; /* default for dark theme */
 }

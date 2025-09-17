@@ -52,7 +52,6 @@ public/
 # Python
 .venv
 
-frontend/assets/styles/base.css
-
+frontend/assets/styles/tailwind.css
 # Vitest coverage
 coverage

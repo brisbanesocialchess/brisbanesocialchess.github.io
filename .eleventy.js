@@ -1,8 +1,53 @@
 import { DateTime } from 'luxon';
 import slugify from 'slugify';
 
+import fs from 'fs';
+import path from 'path';
+
 const BASE_PATH = 'frontend';
 const BASE_OUTPUT = '_site';
+
+/*
+ * Bundle css files to single bundle.css
+ */
+const bundleCSS = () => {
+	const cssDir = './frontend/assets/styles';
+	const files = ['custom.css', 'gh-fork-ribbon.css', 'tailwind.css'];
+
+	let bundle = '';
+	for (const file of files) {
+		const filePath = path.join(cssDir, file);
+		if (fs.existsSync(filePath)) {
+			bundle += `/* ${file} */\n${fs.readFileSync(filePath, 'utf8')}\n`;
+		}
+	}
+
+	const outDir = '.cache/build';
+	if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+
+	fs.writeFileSync(path.join(outDir, 'bundle.css'), bundle);
+};
+
+/*
+ * Bundle js files to single bundle.js
+ */
+const bundleJS = () => {
+	const jsDir = './frontend/assets/scripts';
+	const files = ['script.js'];
+
+	let bundle = '';
+	for (const file of files) {
+		const filePath = path.join(jsDir, file);
+		if (fs.existsSync(filePath)) {
+			bundle += `// ${file}\n${fs.readFileSync(filePath, 'utf8')}\n`;
+		}
+	}
+
+	const outDir = '.cache/build';
+	if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+
+	fs.writeFileSync(path.join(outDir, 'bundle.js'), bundle);
+};
 
 /**
  * Extracts all unique values of a given taxonomy from the posts collection.
@@ -45,7 +90,10 @@ export default function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPassthroughCopy(`${BASE_PATH}/assets`);
-
+	eleventyConfig.addPassthroughCopy({
+		'.cache/build/bundle.css': 'assets/bundle.css',
+		'.cache/build/bundle.js': 'assets/bundle.js',
+	});
 	/**
 	 * Collection: Posts sorted by date (newest first).
 	 *
@@ -84,6 +132,20 @@ export default function (eleventyConfig) {
 	 */
 	eleventyConfig.addCollection('tags', (collectionApi) => {
 		return getUniqueTaxonomy(collectionApi, 'tags');
+	});
+
+	eleventyConfig.on('afterBuild', () => {
+		bundleCSS();
+		bundleJS();
+	});
+
+	eleventyConfig.on('beforeWatch', (changedFiles) => {
+		if (changedFiles.some((f) => f.endsWith('.css') && f.includes('frontend/assets/styles'))) {
+			bundleCSS();
+		}
+		if (changedFiles.some((f) => f.endsWith('.js') && f.includes('frontend/assets/scripts'))) {
+			bundleJS();
+		}
 	});
 
 	return {
