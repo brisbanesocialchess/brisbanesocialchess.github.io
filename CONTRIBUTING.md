@@ -83,9 +83,9 @@ We use:
 #### 🐍 Setting Up Python Environment
 
 1. Make sure you have Python 3.13 installed. You can check your Python version with:
-   ```bash
-   python --version
-   ```
+
+```bash
+python --version
 
 2. (Recommended) Create and activate a virtual environment to isolate dependencies:
    - **Windows:**
