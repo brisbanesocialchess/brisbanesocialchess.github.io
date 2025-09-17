@@ -12,7 +12,8 @@ Welcome to **Awesome Social Chess**! We appreciate your interest in contributing
   - [2. Clone Your Fork 📥](#2-clone-your-fork-)
   - [3. 🌿 Create a Branch](#3--create-a-branch)
   - [4. ✏️ Make Changes](#4--make-changes)
-  - [📐 Formatting & Commit Rules](#-formatting--commit-rules)
+  - [📐 Formatting & Development Setup](#-formatting--development-setup)
+    - [🐍 Setting Up Python Environment](#-setting-up-python-environment)
     - [🔧 Setting Up dprint](#-setting-up-dprint)
     - [🧪 Setting Up pre-commit](#%F0%9F%A7%AA-setting-up-pre-commit)
   - [5. 📝 Commit Changes](#5--commit-changes)
@@ -86,34 +87,39 @@ We use:
 
 ```bash
 python --version
+```
 
 2. (Recommended) Create and activate a virtual environment to isolate dependencies:
 
-   - **Windows:**
-     ```powershell
-     python -m venv .venv
-     .venv\Scripts\activate
-     ```
+- **Windows:**
 
-   - **macOS/Linux:**
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
-   This helps keep your global Python installation clean and avoids dependency conflicts.
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+- **macOS/Linux:**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+This helps keep your global Python installation clean and avoids dependency conflicts.
 
 3. Install the required Python packages:
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-   This will install all the necessary Python dependencies for development.
+```bash
+python -m pip install -r requirements.txt
+```
+
+This will install all the necessary Python dependencies for development.
 
 4. (Optional) If you're working on documentation, install additional doc-related packages:
 
-   ```bash
-   python -m pip install -r requirements-docs.txt
-   ```
+```bash
+python -m pip install -r requirements-docs.txt
+```
 
 #### 🔧 Setting Up dprint
 
@@ -159,22 +165,23 @@ Follow these steps to set up pre-commit:
 
 1. **Install pre-commit** (after installing Python packages):
 
-   ```bash
-   python -m pip install --user pre-commit
-   ```
+```bash
+python -m pip install --user pre-commit
+```
 
 2. **Install the pre-commit hooks** for this project:
 
-   ```bash
-   pre-commit install
-   ```
-   This will activate automatic checks before each commit.
+```bash
+pre-commit install
+```
+
+This will activate automatic checks before each commit.
 
 3. **Verify the installation** by running all checks manually:
 
-   ```bash
-   pre-commit run --all-files
-   ```
+```bash
+pre-commit run --all-files
+```
 
 **Common pre-commit commands:**
 
