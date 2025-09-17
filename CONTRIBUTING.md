@@ -82,7 +82,7 @@ We use:
 
 #### 🐍 Setting Up Python Environment
 
-1. Make sure you have Python 3.8 or higher installed. You can check your Python version with:
+1. Make sure you have Python 3.13 installed. You can check your Python version with:
    ```bash
    python --version
    ```
