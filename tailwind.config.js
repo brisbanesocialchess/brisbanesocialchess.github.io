@@ -11,6 +11,7 @@ module.exports = {
 		'role-coordinator',
 		'role-co-organizers',
 		'role-lead-developer',
+		'role-core-developer',
 		'role-event-organizers',
 		'role-assistant-organizers',
 	],
