@@ -177,6 +177,7 @@ Follow these steps to set up pre-commit:
    ```
 
 **Common pre-commit commands:**
+
 - `pre-commit run` - Run hooks on staged files
 - `pre-commit run --all-files` - Run hooks on all files
 - `pre-commit uninstall` - Remove pre-commit hooks
