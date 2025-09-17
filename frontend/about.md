@@ -221,6 +221,11 @@ title: About Us
 			<span class="font-medium">SM Riad</span>
 			<span class="github">@smriad</span>
 		</a>
+		<a href="https://github.com/abdorah" class="flex flex-col items-center text-center w-1/3 role role-moderator text-role-moderator">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/abdorah.png' | url }}" alt="Kotbi Abderrahmane avatar" />
+			<span class="font-medium">Kotbi Abderrahmane</span>
+			<span class="github">@abdorah</span>
+		</a>
 	</div>
 </section>
 
