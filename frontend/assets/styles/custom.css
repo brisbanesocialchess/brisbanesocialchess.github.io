@@ -31,8 +31,8 @@
 }
 
 /* Footer Contrast Fix for Issue #725 */
-footer, footer * {
-	color: var(--footer-text-color, #222222);
+[data-theme='light'] footer {
+	color: var(--footer-text-color);
 }
 /* End Footer Contrast Fix */
 /* Theme */
