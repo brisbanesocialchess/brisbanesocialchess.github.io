@@ -30,7 +30,6 @@
 	--role-shadow-rgb: 255, 255, 255;
 }
 
-/* Footer Contrast Fix for Issue #725 */
 [data-theme='light'] footer {
 	color: var(--footer-text-color);
 }
