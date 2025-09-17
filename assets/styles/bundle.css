@@ -1,0 +1,14 @@
+body[data-theme="white"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body[data-theme="black"] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+
+body[data-theme="random"] {
+  --bg-color: hsl(200, 70%, 20%);
+  --text-color: #f0f0f0;
+}
