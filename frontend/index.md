@@ -55,7 +55,7 @@ title: Play, Learn & Compete in Brisbane
   </p>
   <div class="overflow-x-auto mb-6">
     <table class="min-w-full border border-gray-300 text-left">
-      <thead class="bg-indigo-900 text-center">
+      <thead class="bg-indigo-900 text-center text-white">
         <tr>
           <th class="px-4 py-2">Day</th>
           <th class="px-4 py-2">Time</th>

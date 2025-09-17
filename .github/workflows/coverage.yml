@@ -1,0 +1,34 @@
+name: 🧪 Run tests and upload coverage
+
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 👨🏿‍🔬 Run tests and collect coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+      - name: Set up Node
+        uses: actions/setup-node@v5
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm run coverage
+        continue-on-error: true
+
+      - name: Install dependencies in a subdirectory
+        run: npm install
+        working-directory: ./packages/cfsite
+      - name: Run tests
+        run: npm run coverage
+        working-directory: ./packages/cfsite
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

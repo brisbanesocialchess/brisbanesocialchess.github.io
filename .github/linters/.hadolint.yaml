@@ -1,0 +1,4 @@
+failure-threshold: info
+ignored:
+  - DL3008 # warning: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`
+  - DL3013 # warning: Pin versions in pip. Instead of `pip install <package>` use `pip install <package>==<version>` or `pip install --requirement <requirements file>`

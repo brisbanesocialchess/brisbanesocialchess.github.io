@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   dprint:
+    name: 👣 Run dprint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
