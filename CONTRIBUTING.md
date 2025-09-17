@@ -149,6 +149,7 @@ Our configuration is already in the repository: [dprint.json](./dprint.json)
 #### 🧪 Setting Up pre-commit
 
 We use [pre-commit](https://pre-commit.com/) to maintain code quality by automatically checking for common issues before each commit. This includes:
+
 - Ensuring files end with a newline
 - Maintaining consistent line endings (LF/CRLF)
 - Checking for large files
