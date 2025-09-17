@@ -12,7 +12,8 @@ Welcome to **Awesome Social Chess**! We appreciate your interest in contributing
   - [2. Clone Your Fork 📥](#2-clone-your-fork-)
   - [3. 🌿 Create a Branch](#3--create-a-branch)
   - [4. ✏️ Make Changes](#4--make-changes)
-  - [📐 Formatting & Commit Rules](#-formatting--commit-rules)
+  - [📐 Formatting & Development Setup](#-formatting--development-setup)
+    - [🐍 Setting Up Python Environment](#-setting-up-python-environment)
     - [🔧 Setting Up dprint](#-setting-up-dprint)
     - [🧪 Setting Up pre-commit](#%F0%9F%A7%AA-setting-up-pre-commit)
   - [5. 📝 Commit Changes](#5--commit-changes)
@@ -70,14 +71,55 @@ Make necessary improvements, such as fixing bugs, enhancing documentation, or ad
 
 ---
 
-### 📐 Formatting & Commit Rules
+### 📐 Formatting & Development Setup
 
-Before committing, please make sure your code follows our formatting and line-ending standards.
+Before committing, please make sure you have set up the development environment correctly and your code follows our formatting standards.
 
 We use:
 
+- [**Python**](https://www.python.org/) for various development tools and scripts
 - [**dprint**](https://dprint.dev) for consistent code formatting
 - [**pre-commit**](https://pre-commit.com) for checking **end-of-file** and **line endings (LF/CRLF)**
+
+#### 🐍 Setting Up Python Environment
+
+1. Make sure you have Python 3.13 installed. You can check your Python version with:
+
+```bash
+python --version
+```
+
+2. (Recommended) Create and activate a virtual environment to isolate dependencies:
+
+- **Windows:**
+
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+- **macOS/Linux:**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+This helps keep your global Python installation clean and avoids dependency conflicts.
+
+3. Install the required Python packages:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+This will install all the necessary Python dependencies for development.
+
+4. (Optional) If you're working on documentation, install additional doc-related packages:
+
+```bash
+python -m pip install -r requirements-docs.txt
+```
 
 #### 🔧 Setting Up dprint
 
@@ -88,7 +130,7 @@ We use:
 
 **Linux/macOS:**
 
-Install via curl:
+Install via cURL:
 
 ```bash
 curl -fsSL https://dprint.dev/install.sh | sh
@@ -100,41 +142,55 @@ curl -fsSL https://dprint.dev/install.sh | sh
 dprint check --allow-no-files
 ```
 
-**To auto-format code:**
+**To autoformat code:**
 
 ```bash
 dprint fmt --allow-no-files
 ```
 
-Our configuration is already in the repo: [dprint.json](./dprint.json)
+Our configuration is already in the repository: [dprint.json](./dprint.json)
 
 ---
 
 #### 🧪 Setting Up pre-commit
 
-We use [pre-commit](https://pre-commit.com/) to automatically check your code for common issues, like missing end-of-file newlines and inconsistent line endings. This keeps our project clean and easy for everyone to work on.
+We use [pre-commit](https://pre-commit.com/) to maintain code quality by automatically checking for common issues before each commit. This includes:
 
-**How to install (requires Python):**
+- Ensuring files end with a newline
+- Maintaining consistent line endings (LF/CRLF)
+- Checking for large files
+- Validating Python syntax
+
+Follow these steps to set up pre-commit:
+
+1. **Install pre-commit** (after installing Python packages):
 
 ```bash
-python -m pip install --user pre-commit
+python -m pip install pre-commit
 ```
 
-**Set up pre-commit hooks for this project:**
+2. **Install the pre-commit hooks** for this project:
 
 ```bash
 pre-commit install
 ```
 
-This will make pre-commit run its checks every time you make a commit.
-**Running checks manually (optional):**
+This will activate automatic checks before each commit.
+
+3. **Verify the installation** by running all checks manually:
 
 ```bash
 pre-commit run --all-files
 ```
 
-This command runs all configured pre-commit hooks against all files in the repository.
-For more info, visit the [pre-commit website](https://pre-commit.com/).
+**Common pre-commit commands:**
+
+- `pre-commit run` - Run hooks on staged files
+- `pre-commit run --all-files` - Run hooks on all files
+- `pre-commit uninstall` - Remove pre-commit hooks
+- `pre-commit autoupdate` - Update hooks to the latest version
+
+For more information and troubleshooting, visit the [pre-commit documentation](https://pre-commit.com/).
 
 ---
 
