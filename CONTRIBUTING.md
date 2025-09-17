@@ -88,6 +88,7 @@ We use:
 python --version
 
 2. (Recommended) Create and activate a virtual environment to isolate dependencies:
+
    - **Windows:**
      ```powershell
      python -m venv .venv
