@@ -166,7 +166,7 @@ Follow these steps to set up pre-commit:
 1. **Install pre-commit** (after installing Python packages):
 
 ```bash
-python -m pip install --user pre-commit
+python -m pip install pre-commit
 ```
 
 2. **Install the pre-commit hooks** for this project:
