@@ -18,14 +18,13 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Adam Lomsargis versus Robert Garvey
       </h3>
-      <div class="h-[612px]">
+      <div class="aspect-square">
         <iframe
           id="13545254"
           allowtransparency="true"
           frameborder="0"
           class="w-full h-full rounded-lg"
           src="https://www.chess.com/emboard?id=13545254"
-          style="height :612px;"
         ></iframe>
       </div>
     </div>
