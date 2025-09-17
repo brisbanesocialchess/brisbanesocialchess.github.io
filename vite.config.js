@@ -1,7 +1,7 @@
 import path from 'path';
-import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	build: {
@@ -13,18 +13,18 @@ export default defineConfig({
 			output: {
 				assetFileNames: (assetInfo) => {
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-						return 'assets/styles/[name].css';
+						return '_deploy/assets/styles/[name].css';
 					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/avatars/'))) {
-						return `assets/avatars/${assetInfo.name}`;
+						return `_deploy/assets/avatars/${assetInfo.name}`;
 					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/images/'))) {
-						return `assets/images/${assetInfo.name}`;
+						return `_deploy/assets/images/${assetInfo.name}`;
 					} else if (assetInfo.originalFileNames?.some((name) => name.includes('assets/pictures/'))) {
-						return `assets/pictures/${assetInfo.name}`;
+						return `_deploy/assets/pictures/${assetInfo.name}`;
 					}
-					return 'assets/[name][extname]';
+					return '_deploy/assets/[name][extname]';
 				},
-				chunkFileNames: 'assets/scripts/[name].js',
-				entryFileNames: 'assets/scripts/[name].js',
+				chunkFileNames: '_deploy/assets/scripts/[name].js',
+				entryFileNames: '_deploy/assets/scripts/[name].js',
 				manualChunks: undefined,
 			},
 		},
@@ -83,7 +83,10 @@ export default defineConfig({
 	test: {
 		coverage: {
 			all: true,
-			exclude: ['**/packages/cfsite/**', '**/_site/**', ...coverageConfigDefaults.exclude],
+			exclude: [
+				'**/packages/cfsite/**',
+				'**/_site/**', ...coverageConfigDefaults.exclude,
+			],
 			provider: 'v8',
 			reporter: ['text', 'json', 'html', 'cobertura'],
 			reportsDirectory: '../coverage',
