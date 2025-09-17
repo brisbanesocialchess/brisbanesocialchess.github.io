@@ -158,6 +158,7 @@ We use [pre-commit](https://pre-commit.com/) to maintain code quality by automat
 Follow these steps to set up pre-commit:
 
 1. **Install pre-commit** (after installing Python packages):
+
    ```bash
    python -m pip install --user pre-commit
    ```
