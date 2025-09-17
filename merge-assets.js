@@ -6,6 +6,13 @@ const deployDir = path.resolve('./_deploy/assets');
 const cssDir = path.join(deployDir, 'styles');
 const jsDir = path.join(deployDir, 'scripts');
 
+// --- Ensure directories exist ---
+[deployDir, cssDir, jsDir].forEach((dir) => {
+	if (!fs.existsSync(dir)) {
+		fs.mkdirSync(dir, { recursive: true });
+	}
+});
+
 const mergedCssFile = path.relative(process.cwd(), path.join(cssDir, 'bundle.css'));
 const mergedJsFile = path.relative(process.cwd(), path.join(jsDir, 'bundle.js'));
 
