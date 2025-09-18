@@ -17,7 +17,7 @@
 	--reverse-text-color: #ffffff;
 	--card-bg: rgba(255, 255, 255, 0.85);
 	--role-shadow-rgb: 0, 0, 0;
-    --footer-text-color: #222222;
+	--footer-text-color: #222222;
 }
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
@@ -34,7 +34,10 @@
 [data-theme='light'] footer, [data-theme='light'] footer * {
 	color: var(--footer-text-color) !important;
 }
-/* End Footer Contrast Fix */
+/* Footer Contrast Fix for Issue #725 */
+[data-theme='light'] footer, [data-theme='light'] footer * {
+    color: var(--footer-text-color) !important;
+}
 /* Theme */
 .theme-toggle {
 	display: flex;
@@ -79,6 +82,9 @@
 }
 .role-lead-developer {
 	--role-color: var(--color-role-lead-developer);
+}
+.role-core-developer {
+	--role-color: var(--color-role-core-developer);
 }
 .role-event-organizers {
 	--role-color: var(--color-role-event-organizers);
