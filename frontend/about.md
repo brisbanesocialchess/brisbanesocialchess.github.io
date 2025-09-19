@@ -226,7 +226,6 @@ title: About Us
 			<span class="font-medium">SM Riad</span>
 			<span class="github">@smriad</span>
 		</a>
-		
 	</div>
 </section>
 
