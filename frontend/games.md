@@ -18,7 +18,7 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Adam Lomsargis versus Robert Garvey
       </h3>
-      <div class="aspect-video">
+      <div class="aspect-square">
         <iframe
           id="13545254"
           allowtransparency="true"
@@ -33,7 +33,7 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         John Bampton versus Robert Garvey
       </h3>
-      <div class="aspect-video">
+      <div class="aspect-square">
         <iframe
           id="13545220"
           allowtransparency="true"
@@ -48,7 +48,7 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Matt McLean versus Robert Garvey
       </h3>
-      <div class="aspect-video">
+      <div class="aspect-square">
         <iframe
           id="13545240"
           allowtransparency="true"
@@ -63,7 +63,7 @@ title: Chess Games & Variants
       <h3 class="text-white text-xl font-semibold mb-3 text-center">
         Jimmy versus John Bampton
       </h3>
-      <div class="aspect-video">
+      <div class="aspect-square">
         <iframe
           id="13545342"
           allowtransparency="true"

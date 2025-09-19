@@ -74,6 +74,9 @@
 .role-lead-developer {
 	--role-color: var(--color-role-lead-developer);
 }
+.role-core-developer {
+	--role-color: var(--color-role-core-developer);
+}
 .role-event-organizers {
 	--role-color: var(--color-role-event-organizers);
 }
