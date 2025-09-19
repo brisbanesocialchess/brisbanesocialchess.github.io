@@ -21,7 +21,7 @@
             const {
                 message = '',
                 type = 'info',
-                duration = 50000000,
+                duration = 5000,
                 dismissible = true
             } = options;
 
@@ -48,13 +48,13 @@
                 }
             };
             const config = typeConfig[type] || typeConfig.info;
-            const alertId = 'alert-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+            const alertId = 'alert-' + Date.now() + '-' + Math.random().toString(36).slice(2, 11);
 
             const alertHTML = `
 				<div id="${alertId}" class="w-lg w-full ${config.bg} border ${config.border} ${config.text} px-4 py-3 rounded relative shadow-lg transform transition-all duration-300 ease-in-out translate-x-full opacity-0" role="alert">
 					<span class="block pr-2">${message}</span>
 					${dismissible ? `
-						<span class="absolute top-2 right-2 cursor-pointer" onclick="AlertSystem.dismiss('${alertId}')">
+						<span class="absolute top-2 right-2 cursor-pointer alert-dismiss-button">
 							<svg class="fill-current h-6 w-6 ${config.text}" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Close</title><path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z"/></svg>
 						</span>
 					` : ''}
@@ -64,7 +64,10 @@
             this.container.insertAdjacentHTML('beforeend', alertHTML);
 
             const alertElement = document.getElementById(alertId);
-
+            const dismissButton = alertElement.querySelector('.alert-dismiss-button');
+            if (dismissButton) {
+                dismissButton.addEventListener('click', () => this.dismiss(alertId));
+            }
             setTimeout(() => {
                 alertElement.classList.remove('translate-x-full', 'opacity-0');
                 alertElement.classList.add('translate-x-0', 'opacity-100');
@@ -102,12 +105,19 @@
     function formatMessage(message) {
         if (Array.isArray(message)) {
             if (message.length === 1) {
-                return `Please fix the error: ${message[0]}`;
+                return `Please fix the error: ${escapeHtml(message[0])}`;
             } else {
-                return `Please fix the following:<br>- ${message.join('<br>- ')}`;
+                return `Please fix the following:<br>- ${message.map(escapeHtml).join('<br>- ')}`;
             }
         }
-        return message;
+        // Escape HTML to prevent XSS
+        return escapeHtml(message);
+    }
+
+    function escapeHtml(text) {
+        const temp = document.createElement('div');
+        temp.textContent = text;
+        return temp.innerHTML;
     }
 
     window.showSuccess = (message, options = {}) => {
@@ -124,9 +134,9 @@
             ...options
         });
     };
-    window.showWarning = (message, options = {formatMessage}) => {
+    window.showWarning = (message, options = {}) => {
         return window.AlertSystem.show({
-            message: formatMessage ? formatMessage(message) : message,
+            message: formatMessage(message),
             type: 'warning',
             ...options
         });

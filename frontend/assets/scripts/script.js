@@ -178,8 +178,8 @@ function applyStoredRandomTheme(forceNew = false) {
  * Displays a warning alert message.
  * @param {string|string[]} message - The list of error messages.
  */
-function showWarning(message, options) {
-	window.showWarning(message, options);
+function showWarning(message) {
+	window.showWarning(message);
 }
 
 /**
@@ -268,7 +268,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 
 	const errors = validateFn(data);
 	if (errors.length > 0) {
-		showWarning(errors, {formatMessage: true});
+		showWarning(errors);
 		return;
 	}
 
