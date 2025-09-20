@@ -1,5 +1,6 @@
 name: 🤖 Pull Request Labeler
 
+# zizmorlinter:disable dangerous-triggers
 on:
   - pull_request_target
 

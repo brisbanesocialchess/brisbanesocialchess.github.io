@@ -1,31 +1,33 @@
 :root {
-	--toggle-icon-color: #ffffff;
+	--toggle-icon-color: #fff;
 	--toggle-icon-hover: #ffd700;
-	--bg-color: #000000;
-	--bg-overlay: rgba(0, 0, 0, 0.65);
-	--text-color: #ffffff;
-	--reverse-text-color: #111111;
-	--card-bg: rgba(255, 255, 255, 0.1);
+	--bg-color: #000;
+	--bg-overlay: rgb(0 0 0 / 65%);
+	--text-color: #fff;
+	--reverse-text-color: #111;
+	--card-bg: rgb(255 255 255 / 10%);
 	--role-shadow-rgb: 255, 255, 255;
 }
+
 [data-theme='light'] {
-	--toggle-icon-color: #111111;
+	--toggle-icon-color: #111;
 	--toggle-icon-hover: #ff8c00;
-	--bg-color: #ffffff;
-	--bg-overlay: rgba(255, 255, 255, 0.65);
-	--text-color: #111111;
-	--reverse-text-color: #ffffff;
-	--card-bg: rgba(255, 255, 255, 0.85);
+	--bg-color: #fff;
+	--bg-overlay: rgb(255 255 255 / 65%);
+	--text-color: #111;
+	--reverse-text-color: #fff;
+	--card-bg: rgb(255 255 255 / 85%);
 	--role-shadow-rgb: 0, 0, 0;
 }
+
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
 	--toggle-icon-hover: var(--bg-color);
-	--bg-color: #000000;
-	--bg-overlay: rgba(0, 0, 0, 0.65);
-	--text-color: #ffffff;
-	--reverse-text-color: #ffffff;
-	--card-bg: rgba(255, 255, 255, 0.1);
+	--bg-color: #000;
+	--bg-overlay: rgb(0 0 0 / 65%);
+	--text-color: #fff;
+	--reverse-text-color: #fff;
+	--card-bg: rgb(255 255 255 / 10%);
 	--role-shadow-rgb: 255, 255, 255;
 }
 
@@ -41,10 +43,12 @@
 		background-color 0.3s ease,
 		color 0.3s ease;
 }
+
 .theme-toggle svg {
 	color: var(--toggle-icon-color);
 	transition: color 0.3s ease;
 }
+
 .theme-toggle:hover svg {
 	color: var(--toggle-icon-hover);
 }
@@ -53,43 +57,56 @@
 .role-admin {
 	--role-color: var(--color-role-admin);
 }
+
 .role-developer {
 	--role-color: var(--color-role-developer);
 }
+
 .role-moderator {
 	--role-color: var(--color-role-moderator);
 }
+
 .role-board {
 	--role-color: var(--color-role-board);
 }
+
 .role-leader {
 	--role-color: var(--color-role-leader);
 }
+
 .role-coordinator {
 	--role-color: var(--color-role-coordinator);
 }
+
 .role-co-organizers {
 	--role-color: var(--color-role-co-organizers);
 }
+
 .role-lead-developer {
 	--role-color: var(--color-role-lead-developer);
 }
+
 .role-core-developer {
 	--role-color: var(--color-role-core-developer);
 }
+
 .role-event-organizers {
 	--role-color: var(--color-role-event-organizers);
 }
+
 .role-assistant-organizers {
 	--role-color: var(--color-role-assistant-organizers);
 }
+
 .role img {
 	border: var(--role-border) var(--role-color);
 	transition: filter 0.3s ease;
 }
+
 .role:hover img {
-	filter: drop-shadow(0 0 10px rgba(var(--role-shadow-rgb), 0.4)) drop-shadow(0 0 20px rgba(var(--role-shadow-rgb), 0.2));
+	filter: drop-shadow(0 0 10px rgb(var(--role-shadow-rgb), 0.4)) drop-shadow(0 0 20px rgb(var(--role-shadow-rgb), 0.2));
 }
+
 .role span {
 	color: var(--role-color);
 }

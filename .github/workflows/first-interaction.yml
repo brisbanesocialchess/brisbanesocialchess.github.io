@@ -1,7 +1,8 @@
 name: 🥇 First Interaction
 
 permissions:
-  contents: write
+  issues: write
+  pull-requests: write
 
 on:
   pull_request_target:

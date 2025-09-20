@@ -1,0 +1,5 @@
+bundle.css
+tailwind.css
+./_site/assets
+./_deploy/assets
+frontend/assets/styles/base.css
