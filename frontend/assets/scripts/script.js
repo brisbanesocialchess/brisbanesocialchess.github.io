@@ -179,7 +179,7 @@ function applyStoredRandomTheme(forceNew = false) {
  * @param {string|string[]} message - The list of error messages.
  */
 function showWarning(message) {
-	window.showWarning(message);
+	window.AlertSystem.showWarning(message);
 }
 
 /**
@@ -187,7 +187,7 @@ function showWarning(message) {
  * @param {string|string[]} message - The success message(s).
  */
 function showSuccess(message) {
-	window.showSuccess(message);
+	window.AlertSystem.showSuccess(message);
 }
 
 /**
@@ -195,7 +195,7 @@ function showSuccess(message) {
  * @param {string|string[]} message - The error message(s).
  */
 function showError(message) {
-	window.showError(message);
+	window.AlertSystem.showError(message);
 }
 
 /**
