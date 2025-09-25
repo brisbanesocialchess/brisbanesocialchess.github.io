@@ -100,7 +100,7 @@ function resetThemeOverrides() {
 	root.removeProperty('--reverse-text-color');
 	root.removeProperty('--toggle-icon-color');
 	root.removeProperty('--toggle-icon-hover');
-	root.removeProperty('--role-shadow-rgb');
+	root.removeProperty('--team-role-shadow-rgb');
 }
 
 /**
@@ -171,7 +171,7 @@ function applyStoredRandomTheme(forceNew = false) {
 	document.documentElement.style.setProperty('--reverse-text-color', bg);
 	document.documentElement.style.setProperty('--toggle-icon-color', text);
 	document.documentElement.style.setProperty('--toggle-icon-hover', bg);
-	document.documentElement.style.setProperty('--role-shadow-rgb', text.match(/\d+/g).join(', '));
+	document.documentElement.style.setProperty('--team-role-shadow-rgb', text.match(/\d+/g).join(', '));
 }
 
 /**
