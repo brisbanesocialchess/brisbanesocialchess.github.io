@@ -158,6 +158,11 @@ title: About Us
 			<span class="font-medium">Mahabub Islam Prio</span>
 			<span class="github">@prio101</span>
 		</a>
+		<a href="https://github.com/michal-duszak" class="flex flex-col items-center text-center w-1/3 role role-github-triage text-role-github-triage">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/michal-duszak.jpeg' | url }}" alt="michal-duszak avatar" />
+			<span class="font-medium">Michal Duszak</span>
+			<span class="github">@michal-duszak</span>
+		</a>
 	</div>
 	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3">
 		<span aria-hidden="true">🎮</span> Discord Moderators
