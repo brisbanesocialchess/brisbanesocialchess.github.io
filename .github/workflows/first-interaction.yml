@@ -4,8 +4,8 @@ permissions:
   issues: write
   pull-requests: write
 
-on:
-  pull_request_target: # zizmorlinter:disable dangerous-triggers
+on: # zizmorlinter:disable dangerous-triggers
+  pull_request_target:
     types: [opened, reopened]
   issues:
     types: [opened]

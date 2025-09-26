@@ -1,0 +1,11 @@
+{
+	"checks": {
+		"cliches.write_good": false,
+		"phrasal_adjectives.ly": false,
+		"lexical_illusions.misc": false,
+		"typography.diacritical_marks": false,
+		"typography.exclamation": false,
+		"typography.symbols": false,
+		"weasel_words.very": false
+	}
+}

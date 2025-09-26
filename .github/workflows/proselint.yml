@@ -1,0 +1,30 @@
+name: ✍️ Proselint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  proselint:
+    name: 🏃🏿 Run linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Install Proselint
+        run: |
+          pip install proselint
+      - name: Run Proselint
+        run: |
+          proselint --config=".github/linters/proselint_config.json" ./**/*.md
