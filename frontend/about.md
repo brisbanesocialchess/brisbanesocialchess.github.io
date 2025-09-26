@@ -171,7 +171,7 @@ title: About Us
 		<span aria-hidden="true">💿</span> GitHub Triage
 	</h3>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
-		<a href="https://github.com/michal-duszak" class="flex flex-col items-center text-center w-1/3 team-role team-role-github-triage text-team-role-github-triage">
+		<a href="https://github.com/michal-duszak" class="flex flex-col items-center text-center team-role team-role-github-triage text-team-role-github-triage">
 			<img class="w-32 md:w-40 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/michal-duszak.jpeg' | url }}" alt="Michal Duszak avatar" />
 			<span class="font-medium">Michal Duszak</span>
 			<span class="github">@michal-duszak</span>
