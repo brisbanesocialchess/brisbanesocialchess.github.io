@@ -56,6 +56,9 @@
 .team-role-developer {
 	--team-role-color: var(--color-team-role-developer);
 }
+.team-role-github-triage {
+	--team-role-color: var(--color-team-role-github-triage);
+}
 .team-role-moderator {
 	--team-role-color: var(--color-team-role-moderator);
 }
