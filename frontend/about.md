@@ -189,15 +189,19 @@ title: About Us
 			<span class="font-medium">Thomas</span>
 			<span class="github">@therealnugget</span>
 		</a>
-	</div>
-	<div class="flex flex-wrap justify-center gap-6">
-		<div class="flex flex-col items-center text-center w-1/3 team-role team-role-leader text-team-role-leader">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Eddie avatar" />
+  </div>
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+		<div class="flex flex-col items-center text-center team-role team-role-leader text-team-role-leader">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Eddie avatar"/>
 			<span class="font-medium">Eddie</span>
 			<span class="github">N/A</span>
 		</div>
-		<div class="flex flex-col items-center text-center w-1/3 team-role team-role-leader text-team-role-leader">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Jasper avatar" />
+		<div class="flex flex-col items-center text-center team-role team-role-leader text-team-role-leader">
+			<img
+			class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2"
+			src="{{ '/assets/avatars/octocat.png' | url }}"
+			alt="Jasper avatar"
+			/>
 			<span class="font-medium">Jasper</span>
 			<span class="github">N/A</span>
 		</div>
