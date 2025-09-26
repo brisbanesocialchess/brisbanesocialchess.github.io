@@ -28,6 +28,8 @@ jobs:
 
       - name: ↩️ Checkout code
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
 
       - name: 🔧 Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
