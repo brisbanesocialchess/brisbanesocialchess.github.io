@@ -127,7 +127,7 @@ title: Club Rules & Code of Conduct
     </li>
     <li>
       Each question, matter or resolution, other than a special resolution, at a general meeting must be decided by a majority of
-      votes of financial members (including any vote of the chairman).
+      votes of financial members (including any vote of the chair).
     </li>
     <li>Votes may not be cast by proxy but otherwise, the method of voting is to be decided by the management committee.</li>
     <li>

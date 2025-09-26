@@ -158,6 +158,12 @@ Read below for instructions about the current static development site hosted on 
 
 ### 🏗️ Getting Started / Building the Site
 
+First, from the project's root directory, install the necessary dependencies:
+
+```bash
+npm ci
+```
+
 To start a local development server with live reload, run:
 
 ```bash

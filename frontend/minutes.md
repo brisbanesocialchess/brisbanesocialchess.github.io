@@ -269,7 +269,7 @@ title: Meeting Minutes & Club Records
     			Chessmas location
     			<ul class="list-disc list-inside ml-5 mt-1 space-y-1">
     				<li>
-    					It was agreed that, subject to availability of a casual non-costing booking, Chessmas this year would be held in the back room of Netherworld on the 17th December starting around 6pm. Ben agreed to follow up a booking.
+    					It was agreed that, subject to availability of a casual non-costing booking, Chessmas this year would be held in the back room of Netherworld on the 17th December starting around 6 p.m. Ben agreed to follow up a booking.
     				</li>
     			</ul>
     		</li>
