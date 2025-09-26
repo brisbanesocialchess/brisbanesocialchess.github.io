@@ -9,7 +9,7 @@ title: Terms & Conditions
   <ul class="list-decimal list-inside ml-6 space-y-3 text-sm leading-relaxed">
     <li>We are a friendly, inclusive community - everyone is welcome.</li>
     <li>All members must follow the official club rules and behave respectfully.</li>
-    <li>We are not responsible for personal belongings at meetups.</li>
+    <li>We are not responsible for belongings at meetups.</li>
     <li>Images or videos may be taken during events - let us know if you'd prefer to not appear.</li>
     <li>All content, including games and comments, must be respectful and safe for all ages.</li>
     <li>Online interactions (Discord/Facebook/GitHub) must follow the same respectful conduct.</li>
