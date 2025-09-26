@@ -175,12 +175,27 @@ function applyStoredRandomTheme(forceNew = false) {
 }
 
 /**
- * Displays an alert message with a list of validation errors.
- * @param {string[]} errors - The list of error messages.
+ * Displays a warning alert message.
+ * @param {string|string[]} message - The list of error messages.
  */
-function showAlert(errors) {
-	if (errors.length === 1) alert(`Please fix the error: ${errors.join(' ')}`);
-	else alert(`Please fix the following:\n- ${errors.join('\n- ')}`);
+function showWarning(message) {
+	window.AlertSystem.showWarning(message);
+}
+
+/**
+ * Displays a success alert message.
+ * @param {string|string[]} message - The success message(s).
+ */
+function showSuccess(message) {
+	window.AlertSystem.showSuccess(message);
+}
+
+/**
+ * Displays an error alert message.
+ * @param {string|string[]} message - The error message(s).
+ */
+function showError(message) {
+	window.AlertSystem.showError(message);
 }
 
 /**
@@ -253,7 +268,7 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 
 	const errors = validateFn(data);
 	if (errors.length > 0) {
-		showAlert(errors);
+		showWarning(errors);
 		return;
 	}
 
@@ -265,21 +280,21 @@ async function handleFormSubmit(form, endpoint, validateFn) {
 		});
 
 		if (response?.ok && response?.status === 200) {
-			alert('✅ Submission successful!');
+			showSuccess('Submission successful!');
 			form.reset();
 		} else {
 			const defaultErrorMessage = 'Something went wrong.';
 			try {
 				const result = await response.json();
 				const errorMessage = result.message || defaultErrorMessage;
-				alert(`❌ Error: ${errorMessage}`);
+				showError(errorMessage);
 			} catch (e) {
 				console.error('Error parsing JSON response:', e);
-				alert(`❌ Error: ${defaultErrorMessage}`);
+				showError(defaultErrorMessage);
 			}
 		}
 	} catch (err) {
-		alert('❌ Network error. Please try again.');
+		showError('Network error. Please try again.');
 		console.error(err);
 	}
 }
