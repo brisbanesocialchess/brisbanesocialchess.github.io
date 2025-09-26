@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   codeql:
-    name: CodeQL
+    name: 🖥️ CodeQL
     runs-on: ubuntu-latest
 
     strategy:
