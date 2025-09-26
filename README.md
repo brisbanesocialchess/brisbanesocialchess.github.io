@@ -161,7 +161,7 @@ Read below for instructions about the current static development site hosted on 
 First, from the project's root directory, install the necessary dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
 To start a local development server with live reload, run:
