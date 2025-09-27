@@ -2,10 +2,10 @@
 	--toggle-icon-color: #ffffff;
 	--toggle-icon-hover: #ffd700;
 	--bg-color: #000000;
-	--bg-overlay: rgba(0, 0, 0, 0.65);
+	--bg-overlay: rgba(48, 48, 48, 0.95);
 	--text-color: #ffffff;
 	--reverse-text-color: #111111;
-	--card-bg: rgba(255, 255, 255, 0.1);
+	--card-bg: rgba(26, 26, 26, 1);
 	--team-role-shadow-rgb: 255, 255, 255;
 }
 [data-theme='light'] {
@@ -101,4 +101,21 @@
 /* Footer section */
 .footer-copyright {
 	color: var(--footer-copyright-color);
+}
+
+/* Theme-specific background blend modes */
+.theme-bg-blend {
+	background-blend-mode: multiply;
+}
+
+[data-theme='light'] .theme-bg-blend {
+	background-blend-mode: multiply;
+}
+
+[data-theme='dark'] .theme-bg-blend {
+	background-blend-mode: normal;
+}
+
+[data-theme='random'] .theme-bg-blend {
+	background-blend-mode: multiply;
 }
