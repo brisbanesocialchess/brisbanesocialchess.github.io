@@ -1,20 +1,20 @@
 :root {
-	--toggle-icon-color: #ffffff;
+	--toggle-icon-color: #fff;
 	--toggle-icon-hover: #ffd700;
-	--bg-color: #000000;
+	--bg-color: #000;
 	--bg-overlay: rgba(0, 0, 0, 0.65);
-	--text-color: #ffffff;
-	--reverse-text-color: #111111;
+	--text-color: #fff;
+	--reverse-text-color: #111;
 	--card-bg: rgba(255, 255, 255, 0.1);
 	--team-role-shadow-rgb: 255, 255, 255;
 }
 [data-theme='light'] {
-	--toggle-icon-color: #111111;
+	--toggle-icon-color: #111;
 	--toggle-icon-hover: #ff8c00;
-	--bg-color: #ffffff;
+	--bg-color: #fff;
 	--bg-overlay: rgba(255, 255, 255, 0.65);
-	--text-color: #111111;
-	--reverse-text-color: #ffffff;
+	--text-color: #111;
+	--reverse-text-color: #fff;
 	--card-bg: rgba(255, 255, 255, 0.85);
 	--team-role-shadow-rgb: 0, 0, 0;
 	--footer-copyright-color: var(--reverse-text-color);
@@ -22,10 +22,10 @@
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
 	--toggle-icon-hover: var(--bg-color);
-	--bg-color: #000000;
+	--bg-color: #000;
 	--bg-overlay: rgba(0, 0, 0, 0.65);
-	--text-color: #ffffff;
-	--reverse-text-color: #ffffff;
+	--text-color: #fff;
+	--reverse-text-color: #fff;
 	--card-bg: rgba(255, 255, 255, 0.1);
 	--team-role-shadow-rgb: 255, 255, 255;
 	--footer-copyright-color: var(--text-color);
