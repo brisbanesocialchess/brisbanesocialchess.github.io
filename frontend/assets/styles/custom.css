@@ -2,10 +2,10 @@
 	--toggle-icon-color: #ffffff;
 	--toggle-icon-hover: #ffd700;
 	--bg-color: #000000;
-	--bg-overlay: rgba(51, 48, 48, 0.95);
+	--bg-overlay: rgba(48, 48, 48, 0.95);
 	--text-color: #ffffff;
 	--reverse-text-color: #111111;
-	--card-bg: rgba(26, 26, 26,1);
+	--card-bg: rgba(26, 26, 26, 1);
 	--team-role-shadow-rgb: 255, 255, 255;
 }
 [data-theme='light'] {
@@ -119,4 +119,3 @@
 [data-theme='random'] .theme-bg-blend {
 	background-blend-mode: multiply;
 }
-
