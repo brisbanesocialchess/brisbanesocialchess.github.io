@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "color-hex-length": "short",
+    "selector-pseudo-element-colon-notation": "double"
+  }
+}
