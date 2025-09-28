@@ -155,7 +155,7 @@ npm run test
 
 #### 📊 Run Coverage Reports
 
-To generates a code coverage report:
+To generate a code coverage report:
 
 - **Frontend (root):** generates test coverage for the frontend code
 
