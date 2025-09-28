@@ -89,6 +89,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
   - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
     - [▶️ Start Development Server](#-start-development-server)
     - [🏃 Run Tests](#-run-tests)
+    - [📊 Run Coverage Reports](#-run-coverage-reports)
   - [🏗️ Getting Started / Building the Site](#-getting-started--building-the-site)
   - [🐳 Build the Docker image for running `pre-commit` easily](#-build-the-docker-image-for-running-pre-commit-easily)
   - [📚 Build the Documentation](#-build-the-documentation)
@@ -150,6 +151,23 @@ npx wrangler dev
 ```bash
 cd packages/cfsite
 npm run test
+```
+
+#### 📊 Run Coverage Reports
+
+To generates a code coverage report:
+
+- **Frontend (root):** generates test coverage for the frontend code
+
+```bash
+npm run coverage
+```
+
+- Backend (Cloudflare Workers in `packages/cfsite`): generates test coverage for the backend code
+
+```bash
+cd packages/cfsite
+npm run coverage
 ```
 
 Read below for instructions about the current static development site hosted on [GitHub Pages](https://pages.github.com/).
