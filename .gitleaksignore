@@ -17,3 +17,10 @@ yarn.lock
 *.json
 *.yml
 *.yaml
+
+# Ignore public badge tokens and site keys
+.*token=.*
+.*sitekey.*
+.*cloudflare_turnstile_key.*
+.*codecov.*token.*
+.*deepsource.*token.*
