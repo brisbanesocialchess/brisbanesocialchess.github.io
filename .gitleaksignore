@@ -7,3 +7,13 @@ _site/
 _deploy/
 *.min.js
 *.min.css
+package-lock.json
+yarn.lock
+*.lock
+.github/
+*.md
+*.rst
+*.txt
+*.json
+*.yml
+*.yaml

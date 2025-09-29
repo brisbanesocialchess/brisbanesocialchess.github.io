@@ -25,7 +25,7 @@ captcha: true
       <label for="lastName" class="font-semibold mb-1">
         Last Name <span aria-hidden="true">*</span>
       </label>
-      <input type="text" id="lastName" name="lname" required autocomplete="family-name" class="w-full px-4 py-2 rounded-md border border-gray-400 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
+      <input type="text" id="lastName" name="lname" required autocomplete="surname" class="w-full px-4 py-2 rounded-md border border-gray-400 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400 outline-none transition" />
     </div>
     <!-- Birth Year -->
     <div class="flex flex-col">

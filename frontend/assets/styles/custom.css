@@ -7,7 +7,6 @@
 	--reverse-text-color: #111111;
 	--card-bg: rgba(26, 26, 26, 1);
 	--team-role-shadow-rgb: 255, 255, 255;
-	--team-role-border: 2px solid;
 	--color-team-role-admin: #ff6b6b;
 	--color-team-role-developer: #4ecdc4;
 	--color-team-role-github-triage: #45b7d1;
@@ -102,7 +101,7 @@
 	--team-role-color: var(--color-team-role-assistant-organizers);
 }
 .team-role img {
-	border: var(--team-role-border) var(--team-role-color);
+	border: 2px solid var(--team-role-color);
 	transition: filter 0.3s ease;
 }
 .team-role:hover img {

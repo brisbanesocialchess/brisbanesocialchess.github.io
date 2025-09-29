@@ -21,7 +21,7 @@ Demonstrating my plebeian proclivities and the mentality of a trophy-hunting tou
 
 A few minutes later, the waiter re-appeared, carrying a small package wrapped in newspaper. He gave it to me. To my great delight, when I opened the package, a Simpson’s cup and saucer were revealed! “Class” of a bygone age; the age of mythical chess, and patrician manners.
 
-Needless to say, on departure, I left a good-sized gratuity.
+On departure, I left a good-sized gratuity.
 
 To end, I leave you with Bird versus Steinitz, at Simpson’s Divan, 1866.
 
