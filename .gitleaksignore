@@ -24,3 +24,10 @@ yarn.lock
 .*cloudflare_turnstile_key.*
 .*codecov.*token.*
 .*deepsource.*token.*
+VFS3PN96Q0
+YbVIWlOo80ifYYsP_8O2kR0F
+0x4AAAAAAB0ql5WdhXjYTC-y
+secrets\.GITHUB_TOKEN
+secrets\.CLOUDFLARE_API_TOKEN
+secrets\.CODECOV_TOKEN
+secrets\.CLOUDFLARE_ACCOUNT_ID

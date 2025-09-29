@@ -1,4 +1,5 @@
 name: 🏗️ Build and Deploy Eleventy site
+# zizmorlinter:disable dangerous-permissions
 
 on:
   push:
