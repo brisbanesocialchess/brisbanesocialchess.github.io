@@ -235,7 +235,7 @@ repos:
     hooks:
       - id: pylint
         name: pylint
-        entry: pylint
+        entry: python -m pylint
         language: system
         types: [python]
         args: ['-rn', '--rcfile=.github/linters/.pylintrc']

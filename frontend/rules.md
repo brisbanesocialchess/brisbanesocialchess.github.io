@@ -4,6 +4,8 @@ layout: 'layouts/base.njk'
 title: Club Rules & Code of Conduct
 ---
 
+<!-- Test change for pre-commit validation -->
+
 <section class="px-4 max-w-3xl">
   <h2 class="text-center text-xl md:text-2xl font-semibold mb-3">Rules</h2>
   <p class="text-center mb-6">
