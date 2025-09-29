@@ -7,6 +7,19 @@
 	--reverse-text-color: #111111;
 	--card-bg: rgba(26, 26, 26, 1);
 	--team-role-shadow-rgb: 255, 255, 255;
+	--team-role-border: 2px solid;
+	--color-team-role-admin: #ff6b6b;
+	--color-team-role-developer: #4ecdc4;
+	--color-team-role-github-triage: #45b7d1;
+	--color-team-role-moderator: #96ceb4;
+	--color-team-role-board: #feca57;
+	--color-team-role-leader: #ff9ff3;
+	--color-team-role-coordinator: #54a0ff;
+	--color-team-role-co-organizers: #5f27cd;
+	--color-team-role-lead-developer: #00d2d3;
+	--color-team-role-core-developer: #ff9f43;
+	--color-team-role-event-organizers: #10ac84;
+	--color-team-role-assistant-organizers: #ee5a24;
 }
 [data-theme='light'] {
 	--toggle-icon-color: #111111;

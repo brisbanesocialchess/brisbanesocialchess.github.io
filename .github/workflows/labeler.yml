@@ -1,6 +1,6 @@
 name: 🤖 Pull Request Labeler
 
-on: # zizmorlinter:disable dangerous-triggers
+on:
   - pull_request_target
 
 permissions:

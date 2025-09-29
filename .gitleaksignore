@@ -1,0 +1,9 @@
+# Ignore common false positives
+.*\.log$
+.*\.tmp$
+.*\.cache$
+node_modules/
+_site/
+_deploy/
+*.min.js
+*.min.css
