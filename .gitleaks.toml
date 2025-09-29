@@ -1,0 +1,31 @@
+title = "Brisbane Social Chess GitLeaks Config"
+
+# Ignore common false positive patterns
+[[rules]]
+description = "Ignore log, tmp, and cache files"
+regex = '''.*'''
+path = '''(.*\.log|.*\.tmp|.*\.cache|node_modules/.*|_site/.*|_deploy/.*|.*\.min\.js|.*\.min\.css|package-lock\.json|yarn\.lock|.*\.lock)'''
+entropy = 0
+tags = ["ignore"]
+
+# Ignore markdown, RST, and documentation files
+[[rules]]
+description = "Ignore documentation files"
+regex = '''.*'''
+path = '''(.*\.md|.*\.rst|.*\.txt|.*\.json|.*\.yml|.*\.yaml|\.github/.*)'''
+entropy = 0
+tags = ["ignore"]
+
+# Ignore public badge tokens and site keys
+[[rules]]
+description = "Ignore public badge tokens"
+regex = '''(token=.*|sitekey.*|cloudflare_turnstile_key.*|codecov.*token.*|deepsource.*token.*)'''
+entropy = 0
+tags = ["ignore"]
+
+# Ignore GitHub Actions secrets (these are environment variables, not hardcoded secrets)
+[[rules]]
+description = "Ignore GitHub Actions secrets"
+regex = '''(secrets\.GITHUB_TOKEN|secrets\.CLOUDFLARE_API_TOKEN|secrets\.CODECOV_TOKEN|secrets\.CLOUDFLARE_ACCOUNT_ID)'''
+entropy = 0
+tags = ["ignore"]

@@ -1,5 +1,4 @@
 name: 🛡️ CodeQL Analysis
-# zizmorlinter:disable dangerous-permissions
 
 on:
   push:
