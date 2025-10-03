@@ -35,38 +35,45 @@ title: About Us
 			<thead>
 				<tr class="bg-table-header text-center text-white">
 					<th class="border px-4 py-2 w-[40px]">Role</th>
+					<th class="border px-4 py-2">Sub Role</th>
 					<th class="border px-4 py-2">Name</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<th class="border px-4 py-2 text-left w-[40px]">President</th>
+					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2"><span class="team-role team-role-board text-team-role-board">Benjamin Martin</span></td>
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
+					<td class="border px-4 py-2">Organizer</td>
 					<td class="border px-4 py-2">
 						<a href="https://github.com/LuckyNotGood" class="hover:underline team-role team-role-board text-team-role-board">Matt McLean</a>
 					</td>
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
+					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2"><span class="team-role team-role-board text-team-role-board">Steve Anderson</span></td>
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
+					<td class="border px-4 py-2">Maintainer</td>
 					<td class="border px-4 py-2">
 						<a href="https://github.com/jbampton" class="hover:underline team-role team-role-admin text-team-role-admin">John Bampton</a>
 					</td>
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
+					<td class="border px-4 py-2">Co-organizer, Event Organizer</td>
 					<td class="border px-4 py-2">
 						<span class="team-role team-role-board text-team-role-board">Ross Barnard</span>, <span class="team-role team-role-board text-team-role-board">Stuart Holt</span>
 					</td>
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
+					<td class="border px-4 py-2">Discord Moderator Team Leader</td>
 					<td class="border px-4 py-2">
 						<a class="hover:underline team-role team-role-coordinator text-team-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
 					</td>
