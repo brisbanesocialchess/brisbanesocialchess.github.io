@@ -108,7 +108,7 @@ title: About Us
 					<td class="border px-4 py-2">—</td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left">Member</th>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
 					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2">
 						<a href="https://github.com/garveybiz" class="hover:underline team-role team-role-co-organizers text-team-role-co-organizers">Robert Garvey</a>
