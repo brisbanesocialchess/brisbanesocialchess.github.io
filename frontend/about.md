@@ -242,40 +242,40 @@ title: About Us
 		</div>
 	</div>
 	<h3 class="text-xl font-semibold mb-4">
-		<span aria-hidden="true">🗺️</span> Global Moderators
-	</h3>
-	<div class="flex flex-wrap justify-center gap-6">
-		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-1/3 team-role team-role-moderator text-team-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/carefreeav09.jpeg' | url }}" alt="Abhushan Gautam avatar" />
-			<span class="font-medium">Abhushan Gautam</span>
-			<span class="github">@carefreeav09</span>
-		</a>
-		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-1/3 team-role team-role-moderator text-team-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/ayush.jpeg' | url }}" alt="Ayush Rana avatar" />
-			<span class="font-medium">Ayush Rana</span>
-			<span class="github">@ayushrana182</span>
-		</a>
-		<a href="https://github.com/abdorah" class="flex flex-col items-center text-center w-1/3 team-role team-role-moderator text-team-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/abdorah.jpg' | url }}" alt="Kotbi Abderrahmane avatar" />
-			<span class="font-medium">Kotbi Abderrahmane</span>
-			<span class="github">@abdorah</span>
-		</a>
-		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-1/3 team-role team-role-moderator text-team-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/mohammadlotfia.png' | url }}" alt="Mohammad Lotfi Akbarabadi avatar" />
-			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
-			<span class="github">@mohammadlotfia</span>
-		</a>
-		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-1/3 team-role team-role-moderator text-team-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/udha.png' | url }}" alt="Nicholas Meredith avatar" />
-			<span class="font-medium">Nicholas Meredith</span>
-			<span class="github">@udha</span>
-		</a>
-		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-1/3 team-role team-role-moderator text-team-role-moderator">
-			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/smriad.png' | url }}" alt="SM Riad avatar" />
-			<span class="font-medium">SM Riad</span>
-			<span class="github">@smriad</span>
-		</a>
-	</div>
+	<span aria-hidden="true">🗺️</span> Global Moderators
+</h3>
+<div class="flex flex-wrap justify-center gap-6">
+	<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/3 team-role team-role-moderator text-team-role-moderator">
+		<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/carefreeav09.jpeg' | url }}" alt="Abhushan Gautam avatar" />
+		<span class="font-medium">Abhushan Gautam</span>
+		<span class="github">@carefreeav09</span>
+	</a>
+	<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/3 team-role team-role-moderator text-team-role-moderator">
+		<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/ayush.jpeg' | url }}" alt="Ayush Rana avatar" />
+		<span class="font-medium">Ayush Rana</span>
+		<span class="github">@ayushrana182</span>
+	</a>
+	<a href="https://github.com/abdorah" class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/3 team-role team-role-moderator text-team-role-moderator">
+		<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/abdorah.jpg' | url }}" alt="Kotbi Abderrahmane avatar" />
+		<span class="font-medium">Kotbi Abderrahmane</span>
+		<span class="github">@abdorah</span>
+	</a>
+	<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/3 team-role team-role-moderator text-team-role-moderator">
+		<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/mohammadlotfia.png' | url }}" alt="Mohammad Lotfi Akbarabadi avatar" />
+		<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
+		<span class="github">@mohammadlotfia</span>
+	</a>
+	<a href="https://github.com/udha" class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/3 team-role team-role-moderator text-team-role-moderator">
+		<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/udha.png' | url }}" alt="Nicholas Meredith avatar" />
+		<span class="font-medium">Nicholas Meredith</span>
+		<span class="github">@udha</span>
+	</a>
+	<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/3 team-role team-role-moderator text-team-role-moderator">
+		<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/smriad.png' | url }}" alt="SM Riad avatar" />
+		<span class="font-medium">SM Riad</span>
+		<span class="github">@smriad</span>
+	</a>
+</div>
 </section>
 
 <section class="px-4 max-w-3xl">
