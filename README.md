@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>♟️ brisbanesocialchess.github.io</h1>
-  <p>Welcome to the source code repository for the Brisbane Social Chess website.</p>
+  <p>Welcome to the source code repository for the Brisbane Social Chess Inc website.</p>
 </div>
 
 ---
@@ -85,7 +85,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [📃 About Brisbane Social Chess](#-about-brisbane-social-chess)
+- [📃 About Brisbane Social Chess Inc](#-about-brisbane-social-chess-inc)
 - [🚀 Quick Start](#-quick-start)
 - [🛠️ Technology Stack](#-technology-stack)
   - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
@@ -101,9 +101,9 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 
 ---
 
-## 📃 About Brisbane Social Chess
+## 📃 About Brisbane Social Chess Inc
 
-Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
+Brisbane Social Chess Inc is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
 We organize regular meetups where people can play chess in a relaxed and friendly environment.
 We are registered in Queensland and have a dedicated team of organizers.
 
