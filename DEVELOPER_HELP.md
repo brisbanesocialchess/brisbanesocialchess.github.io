@@ -92,8 +92,6 @@ These checks ensure your code follows the project's style guidelines and passes 
 
 ## Development Platforms
 
-## Development Platforms
-
 [Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/) is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
 
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network with a single command - no infrastructure to manage, no complex configuration.
