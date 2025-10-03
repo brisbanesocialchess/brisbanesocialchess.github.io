@@ -64,7 +64,7 @@ title: About Us
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left">Administrator</th>
-					<td class="border px-4 py-2">—</td>
+					<td class="border px-4 py-2">Maintainer</td>
 					<td class="border px-4 py-2">
 						<a href="https://github.com/jbampton" class="hover:underline team-role team-role-admin text-team-role-admin">John Bampton</a>
 					</td>
