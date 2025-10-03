@@ -1,4 +1,4 @@
-name: Lint
+name: 🦸🏽‍♀️ Super-Linter
 on:
   push:
     branches:
@@ -13,10 +13,10 @@ jobs:
     permissions:
       contents: read # for actions/checkout to fetch code
       statuses: write # for super-linter/super-linter/slim to mark status of each linter run
-    name: Super-Linter
+    name: 🏃🏽‍♀️ Run Super-Linter
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout ${{ github.ref }} ( ${{ github.sha }} )'
+      - name: '✅ Checkout ${{ github.ref }} ( ${{ github.sha }} )'
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
