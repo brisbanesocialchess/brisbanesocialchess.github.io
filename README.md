@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
   <h1>♟️ brisbanesocialchess.github.io</h1>
-  <p>Welcome to the source code repository for the Brisbane Social Chess website.</p>
+  <p>Welcome to the source code repository for the Brisbane Social Chess Inc website.</p>
 </div>
 
 ---
@@ -54,23 +54,24 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
   </tr>
 </table>
 
-[![Automatic Dependency Submission](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependency-graph/auto-submission)
-[![Build and Deploy Eleventy site](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml)
-[![CI - Build Eleventy on PR](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml)
-[![CodeQL](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
-[![Dependabot Updates](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates)
-[![Wrangler Deploy status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
-[![Docker CI](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/docker-ci.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/docker-ci.yml)
-[![Dprint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
-[![First Interaction](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml)
-[![Git Clone Matrix](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
-[![ls-lint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml)
-[![GitHub Pages Build Deployment status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
-[![Proselint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml)
-[![Pull Request Labeler](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
-[![Lerna](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml)
-[![pre-commit](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
-[![Run tests and upload coverage](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml)
+[![Automatic Dependency Submission Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependency-graph/auto-submission/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependency-graph/auto-submission)
+[![Build and Deploy Eleventy site Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site.yml)
+[![CI - Build Eleventy on PR Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/deploy-eleventy-site-on-pr.yml)
+[![CodeQL Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
+[![Dependabot Updates Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dependabot/dependabot-updates)
+[![Wrangler Deploy Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
+[![Docker CI Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/docker-ci.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/docker-ci.yml)
+[![Dprint Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
+[![First Interaction Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml)
+[![Git Clone Matrix Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
+[![ls-lint Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml)
+[![GitHub Pages Build Deployment Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
+[![Proselint Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml)
+[![Pull Request Labeler Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
+[![Lerna Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml)
+[![pre-commit Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
+[![Run tests and upload coverage Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml)
+[![Super-Linter Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/super-linter.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/super-linter.yml)
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
@@ -85,7 +86,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [📃 About Brisbane Social Chess](#-about-brisbane-social-chess)
+- [📃 About Brisbane Social Chess Inc](#-about-brisbane-social-chess-inc)
 - [🚀 Quick Start](#-quick-start)
 - [🛠️ Technology Stack](#-technology-stack)
   - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
@@ -101,9 +102,9 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 
 ---
 
-## 📃 About Brisbane Social Chess
+## 📃 About Brisbane Social Chess Inc
 
-Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
+Brisbane Social Chess Inc is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
 We organize regular meetups where people can play chess in a relaxed and friendly environment.
 We are registered in Queensland and have a dedicated team of organizers.
 
@@ -255,4 +256,4 @@ You can open the HTML files with your web browser.
 
 ---
 
-© 2025 Brisbane Social Chess
+© 2025 Brisbane Social Chess Inc
