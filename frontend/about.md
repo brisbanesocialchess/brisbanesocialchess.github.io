@@ -29,7 +29,7 @@ title: About Us
 </section>
 
 <section class="px-4 max-w-3xl">
-	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">👥</span> Team Members & Organizers</h2>
+	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">👥</span> Team Members</h2>
 	<div class="overflow-x-auto">
 		<table class="w-full table-auto border-collapse">
 			<thead>
