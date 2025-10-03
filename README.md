@@ -255,4 +255,4 @@ You can open the HTML files with your web browser.
 
 ---
 
-© 2025 Brisbane Social Chess
+© 2025 Brisbane Social Chess Inc
