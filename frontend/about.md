@@ -34,83 +34,122 @@ title: About Us
 		<table class="w-full table-auto border-collapse">
 			<thead>
 				<tr class="bg-table-header text-center text-white">
-					<th class="border px-4 py-2 w-[40px]">Role</th>
+					<th class="border px-4 py-2">Role</th>
+					<th class="border px-4 py-2">Sub Role</th>
 					<th class="border px-4 py-2">Name</th>
+					<th class="border px-4 py-2">Comment</th>
 				</tr>
 			</thead>
 			<tbody>
+				<!-- Board Members -->
 				<tr>
-					<th class="border px-4 py-2 text-left w-[40px]">President</th>
+					<th class="border px-4 py-2 text-left">President</th>
+					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2"><span class="team-role team-role-board text-team-role-board">Benjamin Martin</span></td>
+					<td class="border px-4 py-2">How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
+					<th class="border px-4 py-2 text-left">Treasurer</th>
+					<td class="border px-4 py-2">Organizer</td>
 					<td class="border px-4 py-2">
 						<a href="https://github.com/LuckyNotGood" class="hover:underline team-role team-role-board text-team-role-board">Matt McLean</a>
 					</td>
+					<td class="border px-4 py-2">"A good player is always lucky" - <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a></td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
+					<th class="border px-4 py-2 text-left">Secretary</th>
+					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2"><span class="team-role team-role-board text-team-role-board">Steve Anderson</span></td>
+					<td class="border px-4 py-2">Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left w-[40px]">Administrator</th>
+					<th class="border px-4 py-2 text-left">Administrator</th>
+					<td class="border px-4 py-2">Maintainer</td>
 					<td class="border px-4 py-2">
 						<a href="https://github.com/jbampton" class="hover:underline team-role team-role-admin text-team-role-admin">John Bampton</a>
 					</td>
+					<td class="border px-4 py-2">—</td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left w-[40px]">General Managers</th>
+					<th class="border px-4 py-2 text-left">General Manager</th>
+					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2">
-						<span class="team-role team-role-board text-team-role-board">Ross Barnard</span>, <span class="team-role team-role-board text-team-role-board">Stuart Holt</span>
+						<span class="team-role team-role-board text-team-role-board">Ross Barnard</span>
 					</td>
+					<td class="border px-4 py-2">—</td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left w-[40px]">Coordinators</th>
+					<th class="border px-4 py-2 text-left">General Manager</th>
+					<td class="border px-4 py-2">Event organizer</td>
+					<td class="border px-4 py-2">
+						<span class="team-role team-role-board text-team-role-board">Stuart Holt</span>
+					</td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Coordinator</th>
+					<td class="border px-4 py-2">Discord Moderator Team Leader</td>
 					<td class="border px-4 py-2">
 						<a class="hover:underline team-role team-role-coordinator text-team-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
 					</td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<!-- Co-organizers -->
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Co-organizer</td>
+					<td class="border px-4 py-2"><span class="team-role team-role-co-organizers text-team-role-co-organizers">Adam Lomsargis</span></td>
+					<td class="border px-4 py-2">Long time chess player with a great respect and passion for the game. I believe chess offers more than just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and have a laugh! :D</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Co-organizer</td>
+					<td class="border px-4 py-2"><span class="team-role team-role-co-organizers text-team-role-co-organizers">Jimmy Joe</span></td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Co-organizer</td>
+					<td class="border px-4 py-2">
+						<a href="https://github.com/garveybiz" class="hover:underline team-role team-role-co-organizers text-team-role-co-organizers">Robert Garvey</a>
+					</td>
+					<td class="border px-4 py-2">Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.</td>
+				</tr>
+				<!-- Assistant organizer -->
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Assistant organizer</td>
+					<td class="border px-4 py-2"><span class="team-role-assistant-organizers text-team-role-assistant-organizers">Roger Clarke</span></td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<!-- Event organizers -->
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Event organizer</td>
+					<td class="border px-4 py-2"><span class="team-role team-role-event-organizers text-team-role-event-organizers">Christoph Dierkes</span></td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Event organizer</td>
+					<td class="border px-4 py-2"><span class="team-role team-role-event-organizers text-team-role-event-organizers">Joseph Tan</span></td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Event organizer</td>
+					<td class="border px-4 py-2"><span class="team-role team-role-event-organizers text-team-role-event-organizers">Marty Benjamin</span></td>
+					<td class="border px-4 py-2">—</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
+					<td class="border px-4 py-2">Event organizer</td>
+					<td class="border px-4 py-2"><span class="team-role team-role-event-organizers text-team-role-event-organizers">Peiqi Sun</span></td>
+					<td class="border px-4 py-2">—</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-</section>
-
-<section class="px-4 max-w-3xl">
-	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
-	<ul class="list-disc list-inside space-y-3">
-		<li>
-			<strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline team-role team-role-board text-team-role-board">Matt McLean</a>: "A good player is always lucky" -
-			<a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a>
-		</li>
-		<li>
-			<strong>Co-organizers</strong>:
-			<ul class="list-disc list-inside space-y-2 ml-5">
-				<li><span class="team-role team-role-co-organizers text-team-role-co-organizers">Adam Lomsargis</span>: Long time chess player with a great respect and passion for the game. I believe chess offers more than
-					just a competitive space in which to battle your opponent. It's also a great way to socialise with intelligent people and
-					have a laugh! :D
-				</li>
-				<li><span class="team-role team-role-board text-team-role-board">Benjamin Martin</span>: How does the <a href="https://en.wikipedia.org/wiki/Knight_(chess)" class="hover:underline text-blue-400">horsey</a> move again? <span aria-hidden="true">🤔</span></li>
-				<li><span class="team-role team-role-co-organizers text-team-role-co-organizers">Jimmy Joe</span></li>
-				<li>
-					<a href="https://github.com/garveybiz" class="hover:underline team-role team-role-co-organizers text-team-role-co-organizers">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
-				</li>
-				<li><span class="team-role team-role-board text-team-role-board">Steve Anderson</span>: Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</li>
-				<li><span class="team-role team-role-board text-team-role-board">Ross Barnard</span></li>
-			</ul>
-		</li>
-		<li><strong>Assistant organizer</strong>: <span class="team-role-assistant-organizers text-team-role-assistant-organizers">Roger Clarke</span></li>
-		<li>
-			<strong>Event organizers</strong>:
-			<ul class="list-disc list-inside space-y-2 ml-5">
-				<li><span class="team-role team-role-event-organizers text-team-role-event-organizers">Christoph Dierkes</span></li>
-				<li><span class="team-role team-role-event-organizers text-team-role-event-organizers">Joseph Tan</span></li>
-				<li><span class="team-role team-role-event-organizers text-team-role-event-organizers">Marty Benjamin</span></li>
-				<li><span class="team-role team-role-event-organizers text-team-role-event-organizers">Peiqi Sun</span></li>
-				<li><span class="team-role team-role-board text-team-role-board">Stuart Holt</span></li>
-			</ul>
-		</li>
-	</ul>
 </section>
 
 <section class="px-4 max-w-3xl text-center">
