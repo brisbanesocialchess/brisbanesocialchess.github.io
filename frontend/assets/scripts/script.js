@@ -310,6 +310,16 @@ document.documentElement.setAttribute('data-theme', currentTheme);
 /** Apply random theme immediately if chosen */
 if (currentTheme === 'random') applyStoredRandomTheme(false);
 
+/** Set the initial theme button title based on current theme */
+if (elmThemeToggleButton) {
+	const themeLabels = {
+		dark: 'Currently in dark mode, click for light mode',
+		light: 'Currently in light mode, click for random mode',
+		random: 'Currently in random mode, click for dark mode',
+	};
+	elmThemeToggleButton.setAttribute('title', themeLabels[currentTheme] || 'Toggle theme');
+}
+
 /** Insert current year into footer */
 elmYear.textContent = getCurrentYear();
 
@@ -350,7 +360,10 @@ if (elmMenuToggleButton && elmMenu) {
 	});
 }
 
-/** Cycle through themes (dark → light → random → dark...) */
+/**
+ * Cycle through themes (dark → light → random → dark...)
+ * Updates the theme icon visibility based on current theme
+ */
 if (elmThemeToggleButton) {
 	elmThemeToggleButton.addEventListener('click', () => {
 		let index = THEMES.indexOf(currentTheme);
@@ -365,5 +378,13 @@ if (elmThemeToggleButton) {
 		} else {
 			resetThemeOverrides();
 		}
+
+		// Update button title for better accessibility
+		const themeLabels = {
+			dark: 'Currently in dark mode, click for light mode',
+			light: 'Currently in light mode, click for random mode',
+			random: 'Currently in random mode, click for dark mode',
+		};
+		elmThemeToggleButton.setAttribute('title', themeLabels[currentTheme] || 'Toggle theme');
 	});
 }
