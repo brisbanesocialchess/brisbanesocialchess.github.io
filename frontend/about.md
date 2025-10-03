@@ -88,7 +88,7 @@ title: About Us
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left">Coordinator</th>
-					<td class="border px-4 py-2">—</td>
+					<td class="border px-4 py-2">Discord Moderator Team Leader</td>
 					<td class="border px-4 py-2">
 						<a class="hover:underline team-role team-role-coordinator text-team-role-coordinator" href="https://github.com/therealnugget">Thomas</a>
 					</td>
