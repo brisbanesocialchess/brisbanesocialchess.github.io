@@ -69,6 +69,8 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![Lerna](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml)
 [![pre-commit](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
 [![Run tests and upload coverage](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/coverage.yml)
+[![🛳️ Docker CI](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/docker-ci.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/docker-ci.yml)
+[![✍️ Proselint](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml)
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
