@@ -140,7 +140,7 @@ title: About Us
 	<h3 class="text-xl font-semibold mb-4">
 		<span aria-hidden="true">⌨️</span> Core Developers
 	</h3>
-	<div class="flex flex-wrap justify-center items-start md:items-end gap-6 mb-8">
+	<div class="flex flex-wrap justify-center items-start gap-6 mb-8">
 		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/2 sm:w-1/3 team-role team-role-core-developer text-team-role-core-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/prio101.jpeg' | url }}" alt="prio101 avatar" />
 			<span class="font-medium">Mahabub Islam Prio</span>
@@ -155,7 +155,7 @@ title: About Us
 	<h3 class="text-xl font-semibold mb-4">
 		<span aria-hidden="true">🖱️</span> Developers
 	</h3>
-	<div class="flex flex-wrap justify-center items-start md:items-end gap-6 mb-8">
+	<div class="flex flex-wrap justify-center items-start gap-6 mb-8">
 		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-1/2 sm:w-1/3 team-role team-role-developer text-team-role-developer">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/anufdo.jpeg' | url }}" alt="Anuradha Fernando avatar" />
 			<span class="font-medium">Anuradha Fernando</span>
