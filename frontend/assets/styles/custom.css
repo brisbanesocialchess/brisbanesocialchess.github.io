@@ -60,20 +60,6 @@
 	stroke-linejoin: round;
 }
 
-/* Specific styling for the random theme icon */
-[data-theme='random'] .random-icon {
-	color: var(--toggle-icon-color);
-}
-
-[data-theme='random'] .random-icon rect {
-	fill: var(--toggle-icon-color);
-	stroke: var(--toggle-icon-color);
-}
-
-[data-theme='random'] .theme-toggle:hover .random-icon rect {
-	fill: var(--toggle-icon-hover);
-	stroke: var(--toggle-icon-hover);
-}
 .theme-toggle:hover svg {
 	color: var(--toggle-icon-hover);
 }
@@ -123,11 +109,7 @@
 	}
 }
 
-.theme-toggle:hover .random-icon {
-	animation: shake 0.8s ease;
-}
-
-/* Continuous subtle shake when random theme is active and hovered */
+/* Only apply shake animation when random theme is active and hovered */
 [data-theme='random'] .theme-toggle:hover .random-icon {
 	animation: shake 0.8s ease infinite;
 }

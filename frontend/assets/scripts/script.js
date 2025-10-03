@@ -14,6 +14,13 @@ const MAX_AGE = 120;
 /** Available theme modes: dark, light, and random */
 const THEMES = ['dark', 'light', 'random'];
 
+/** Theme label descriptions for accessibility */
+const THEME_LABELS = {
+	dark: 'Currently in dark mode, click for light mode',
+	light: 'Currently in light mode, click for random mode',
+	random: 'Currently in random mode, click for dark mode',
+};
+
 // ======================
 // Setup
 // ======================
@@ -60,6 +67,16 @@ const elmThemeToggleButton = document.querySelector('#theme-toggle');
  */
 function getCurrentYear() {
 	return new Date().getFullYear();
+}
+
+/**
+ * Updates the theme toggle button title based on the current theme.
+ * Uses the THEME_LABELS constant for accessibility descriptions.
+ */
+function updateThemeButtonTitle() {
+	if (elmThemeToggleButton) {
+		elmThemeToggleButton.setAttribute('title', THEME_LABELS[currentTheme] || 'Toggle theme');
+	}
 }
 
 /**
@@ -311,14 +328,7 @@ document.documentElement.setAttribute('data-theme', currentTheme);
 if (currentTheme === 'random') applyStoredRandomTheme(false);
 
 /** Set the initial theme button title based on current theme */
-if (elmThemeToggleButton) {
-	const themeLabels = {
-		dark: 'Currently in dark mode, click for light mode',
-		light: 'Currently in light mode, click for random mode',
-		random: 'Currently in random mode, click for dark mode',
-	};
-	elmThemeToggleButton.setAttribute('title', themeLabels[currentTheme] || 'Toggle theme');
-}
+updateThemeButtonTitle();
 
 /** Insert current year into footer */
 elmYear.textContent = getCurrentYear();
@@ -380,11 +390,6 @@ if (elmThemeToggleButton) {
 		}
 
 		// Update button title for better accessibility
-		const themeLabels = {
-			dark: 'Currently in dark mode, click for light mode',
-			light: 'Currently in light mode, click for random mode',
-			random: 'Currently in random mode, click for dark mode',
-		};
-		elmThemeToggleButton.setAttribute('title', themeLabels[currentTheme] || 'Toggle theme');
+		updateThemeButtonTitle();
 	});
 }
