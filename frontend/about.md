@@ -117,7 +117,7 @@ title: About Us
 				</tr>
 				<!-- Assistant organizer -->
 				<tr>
-					<th class="border px-4 py-2 text-left">Member</th>
+					<th class="border px-4 py-2 text-left">Meetup Regular</th>
 					<td class="border px-4 py-2">Assistant organizer</td>
 					<td class="border px-4 py-2"><span class="team-role-assistant-organizers text-team-role-assistant-organizers">Roger Clarke</span></td>
 					<td class="border px-4 py-2">—</td>
