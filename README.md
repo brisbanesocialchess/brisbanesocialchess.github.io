@@ -125,6 +125,7 @@ Experiment with Lerna and bootup a local developer playground from the repositor
 - [Eleventy (also known as 11ty)](https://www.11ty.dev/) is a static site generator. It's a tool that transforms content (like Markdown, HTML, or JavaScript) and templates into static HTML files, making it faster and easier to build sites. Unlike dynamic site builders, 11ty generates all the site's content upfront, which leads to better performance and simpler deployments.
 - [GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host sites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
 - [Lerna](https://lerna.js.org/) is a tool for optimizing the workflow around managing multi-package repositories (monorepos).
+
 <!-- dprint-ignore-start -->
 
 - [Makefile](https://en.wikipedia.org/wiki/Makefile) is a text file that contains a set of instructions used by the [make](<https://en.wikipedia.org/wiki/Make_(software)>) utility to automate the process of building and managing software projects. It defines dependencies between files and specifies the commands required to update outdated files or generate new ones.
