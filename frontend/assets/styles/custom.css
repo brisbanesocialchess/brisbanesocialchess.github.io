@@ -45,6 +45,7 @@
 		background-color 0.3s ease,
 		color 0.3s ease;
 }
+
 .theme-toggle svg {
 	color: var(--toggle-icon-color);
 	transition: color 0.3s ease;
