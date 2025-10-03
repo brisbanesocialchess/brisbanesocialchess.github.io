@@ -172,7 +172,7 @@ title: About Us
 	</h3>
 	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
 		<a href="https://github.com/michal-duszak" class="flex flex-col items-center text-center team-role team-role-github-triage text-team-role-github-triage">
-			<img class="w-32 md:w-40 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/michal-duszak.jpeg' | url }}" alt="Michal Duszak avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/michal-duszak.jpeg' | url }}" alt="Michal Duszak avatar" />
 			<span class="font-medium">Michal Duszak</span>
 			<span class="github">@michal-duszak</span>
 		</a>
@@ -185,7 +185,7 @@ title: About Us
 	</h3>
 	<div class="flex flex-wrap justify-center gap-6">
 		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center team-role team-role-coordinator text-team-role-coordinator">
-			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/therealnugget.jpeg' | url }}" alt="therealnugget avatar" />
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/therealnugget.jpeg' | url }}" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
 			<span class="github">@therealnugget</span>
 		</a>
