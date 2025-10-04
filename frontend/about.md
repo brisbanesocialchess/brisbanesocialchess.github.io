@@ -231,12 +231,12 @@ title: About Us
 		</a>
 	</div>
 	<div class="flex flex-wrap justify-center gap-6">
-		<div class="flex flex-col items-center text-center w-1/3 team-role team-role-leader text-team-role-leader">
+		<div class="flex flex-col items-center text-center w-1/2 sm:w-1/3 team-role team-role-leader text-team-role-leader">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Eddie avatar" />
 			<span class="font-medium">Eddie</span>
 			<span class="github">N/A</span>
 		</div>
-		<div class="flex flex-col items-center text-center w-1/3 team-role team-role-leader text-team-role-leader">
+		<div class="flex flex-col items-center text-center w-1/2 sm:w-1/3 team-role team-role-leader text-team-role-leader">
 			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/octocat.png' | url }}" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
 			<span class="github">N/A</span>
