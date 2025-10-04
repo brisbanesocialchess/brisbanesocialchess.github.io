@@ -225,7 +225,7 @@ title: About Us
 	</h3>
 	<div class="flex flex-wrap justify-center gap-6">
 		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center team-role team-role-coordinator text-team-role-coordinator">
-			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/therealnugget.jpeg' | url }}" alt="therealnugget avatar" />
+			<img class="w-35 md:w-50 lg:w-[300px] aspect-square rounded-full object-cover mb-2" src="{{ '/assets/avatars/therealnugget.jpeg' | url }}" alt="therealnugget avatar" />
 			<span class="font-medium">Thomas</span>
 			<span class="github">@therealnugget</span>
 		</a>
