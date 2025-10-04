@@ -12,7 +12,7 @@ title: About Us
 		registered in Queensland and have a dedicated team of organizers.
 	</p>
 	<h3 class="text-center text-xl font-semibold mb-3"><span aria-hidden="true">📄</span> A More Detailed Look at Brisbane Social Chess</h3>
-	<ul class="list-disc list-inside space-y-3">
+	<ul class="list-disc list-inside space-y-3 text-base">
 		<li><strong>Focus:</strong> We emphasize social interaction and fun, making it a welcoming space for players of all skill levels.</li>
 		<li><strong>Community Driven:</strong> We encourage community participation in various aspects, including website development,
 			Discord server management, and event organization.
