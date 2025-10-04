@@ -41,7 +41,6 @@ title: About Us
 				</tr>
 			</thead>
 			<tbody>
-				<!-- Board Members -->
 				<tr>
 					<th class="border px-4 py-2 text-left">President</th>
 					<td class="border px-4 py-2">Co-organizer</td>
@@ -63,14 +62,6 @@ title: About Us
 					<td class="border px-4 py-2">Official <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" class="hover:underline text-blue-400">pawn</a> wrangler.</td>
 				</tr>
 				<tr>
-					<th class="border px-4 py-2 text-left">Administrator</th>
-					<td class="border px-4 py-2">Maintainer</td>
-					<td class="border px-4 py-2">
-						<a href="https://github.com/jbampton" class="hover:underline team-role team-role-admin text-team-role-admin">John Bampton</a>
-					</td>
-					<td class="border px-4 py-2">—</td>
-				</tr>
-				<tr>
 					<th class="border px-4 py-2 text-left">General Manager</th>
 					<td class="border px-4 py-2">Co-organizer</td>
 					<td class="border px-4 py-2">
@@ -85,6 +76,16 @@ title: About Us
 						<span class="team-role team-role-board text-team-role-board">Stuart Holt</span>
 					</td>
 					<td class="border px-4 py-2">—</td>
+				</tr>
+				<tr>
+					<th class="border px-4 py-2 text-left">Administrator</th>
+					<td class="border px-4 py-2">Maintainer</td>
+					<td class="border px-4 py-2">
+						<a href="https://github.com/jbampton" class="hover:underline team-role team-role-admin text-team-role-admin">John Bampton</a>
+					</td>
+					<td class="border px-4 py-2">
+<a href="https://github.blog/">GitHub</a> is more about collaboration and community than code. I am interested in <a href="https://en.wikipedia.org/wiki/List_of_chess_variants">chess variants</a> and <a href="https://mathworld.wolfram.com/Chess.html">mathematics</a>. Check out the <a href="https://octodex.github.com/">playground and home for all octocats</a>, created and maintained by the <a href="https://en.wikipedia.org/wiki/GitHub">GitHub</a> Design team. <a href="https://www.ruby-lang.org/en/">Ruby</a> is... A dynamic, open source <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">programming language</a> with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+					</td>
 				</tr>
 				<tr>
 					<th class="border px-4 py-2 text-left">Coordinator</th>
