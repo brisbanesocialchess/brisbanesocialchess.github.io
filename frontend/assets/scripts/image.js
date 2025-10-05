@@ -3,17 +3,12 @@
 // Tailwind v4 Compatible
 // ======================
 
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    const images = document.querySelectorAll('img.modal-image');
 
-    if (!images.length) return;
-
-    images.forEach((img) => {
-      img.style.cursor = 'zoom-in';
-      img.addEventListener('click', () => openModal(img));
-    });
-
+    /**
+     * Opens an image modal with zoom effect, close button,
+     * ESC key handling, and outside click to close.
+     * @param {HTMLImageElement} img - The clicked image element.
+     */
     function openModal(img) {
       const overlay = document.createElement('div');
       overlay.className = `
@@ -65,5 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       document.addEventListener('keydown', escHandler);
     }
+
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const images = document.querySelectorAll('img.modal-image');
+
+    if (!images.length) return;
+
+    images.forEach((img) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => openModal(img));
+    });
   }, 500);
 });
