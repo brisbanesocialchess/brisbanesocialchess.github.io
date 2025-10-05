@@ -34,16 +34,25 @@ function openModal(imgEl) {
 	document.body.appendChild(overlay);
 
 	// --- Event Handlers for Closing ---
+	/**
+	 * Closes the modal and removes event listeners.
+	 * @returns {void}
+	 */
+	const closeModal = () => {
+		overlay.remove();
+		document.removeEventListener('keydown', handleEscKey);
+	};
+
+	/**
+	 * Handles ESC key press to close modal.
+	 * @param {KeyboardEvent} e - The keyboard event.
+	 */
+
 	// Close with ESC key
 	const handleEscKey = (e) => {
 		if (e.key === 'Escape') {
 			closeModal();
 		}
-	};
-
-	const closeModal = () => {
-		overlay.remove();
-		document.removeEventListener('keydown', handleEscKey);
 	};
 
 	// Close by clicking the button or the overlay backdrop
