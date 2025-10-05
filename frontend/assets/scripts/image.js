@@ -38,22 +38,10 @@ function openModal(imgEl) {
 	 * Closes the modal and removes event listeners.
 	 * @returns {void}
 	 */
-	const closeModal = () => {
+	function closeModal() {
 		overlay.remove();
-		document.removeEventListener('keydown', handleEscKey);
-	};
-
-	/**
-	 * Handles ESC key press to close modal.
-	 * @param {KeyboardEvent} e - The keyboard event.
-	 */
-
-	// Close with ESC key
-	const handleEscKey = (e) => {
-		if (e.key === 'Escape') {
-			closeModal();
-		}
-	};
+		document.removeEventListener('keydown', escHandler);
+	}
 
 	// Close by clicking the button or the overlay backdrop
 	closeButton.addEventListener('click', closeModal);
@@ -63,7 +51,16 @@ function openModal(imgEl) {
 		}
 	});
 
-	document.addEventListener('keydown', handleEscKey);
+	/**
+	 * Handles ESC key press to close modal.
+	 * @param {KeyboardEvent} e - The keyboard event.
+	 */
+
+	// ✅ Close with ESC key
+	function escHandler(e) {
+		if (e.key === 'Escape') closeModal();
+	}
+	document.addEventListener('keydown', escHandler);
 }
 
 // --- Global Setup using Event Delegation (More Efficient) ---
