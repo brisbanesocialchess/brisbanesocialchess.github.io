@@ -33,7 +33,7 @@ You need [Node.js](https://nodejs.org/) (version 22 LTS or higher). Download and
 Install the Python packages from the requirements file:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 This will install the required Python tools including pre-commit and pytest.
