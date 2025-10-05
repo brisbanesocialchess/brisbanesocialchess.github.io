@@ -1,75 +1,74 @@
-// ======================
-// Image Modal (Click to Enlarge)
-// Tailwind v4 Compatible
-// ======================
+// ===========================================
+// Image Modal
+// ===========================================
 
+/**
+ * Creates and opens a secure image modal.
+ * @param {HTMLImageElement} imgEl - The clicked image element.
+ */
+function openModal(imgEl) {
+    // 1. Overlay (the dark background)
+    const overlay = document.createElement('div');
+    overlay.className = 'fixed inset-0 bg-black/85 flex items-center justify-center z-[9999]';
 
-    /**
-     * Opens an image modal with zoom effect, close button,
-     * ESC key handling, and outside click to close.
-     * @param {HTMLImageElement} img - The clicked image element.
-     */
-    function openModal(img) {
-      const overlay = document.createElement('div');
-      overlay.className = `
-        fixed inset-0 bg-black/85 flex items-center justify-center 
-        z-[9999]
-      `;
+    // 2. Container (for centering and padding)
+    const modalContainer = document.createElement('div');
+    modalContainer.className = 'relative flex items-center justify-center h-[80%] w-full p-4';
 
-      overlay.innerHTML = `
-        <div class="relative flex items-center justify-center h-[80%] w-full p-4">
-          <img 
-            src="${img.src}" 
-            alt="${img.alt || ''}" 
-            class="max-w-full max-h-full object-contain rounded-2xl shadow-[0_4px_25px_rgba(0,0,0,0.4)] animate-fade-in"
-          >
-          <button 
-            class="absolute top-4 right-6 text-white text-3xl bg-transparent border-none cursor-pointer 
-                   transition-transform duration-200 hover:scale-125"
-            aria-label="Close image viewer"
-          >
-            &times;
-          </button>
-        </div>
-      `;
+    // 3. Image
+    const modalImage = document.createElement('img');
+    modalImage.src = imgEl.src; 
+    modalImage.alt = imgEl.alt;   
+    modalImage.className = 'max-w-full max-h-full object-contain rounded-2xl shadow-[0_4px_25px_rgba(0,0,0,0.4)]  animate-fade-in';
 
-      document.body.appendChild(overlay);
+    // 4. Close Button
+    const closeButton = document.createElement('button');
+    closeButton.className = 'absolute top-4 right-6 text-white text-3xl bg-transparent border-none cursor-pointer transition-transform duration-200 hover:scale-125';
+    closeButton.setAttribute('aria-label', 'Close image viewer');
+    closeButton.textContent = '×'; 
 
-      const modalContent = overlay.querySelector('img');
-      const closeButton = overlay.querySelector('button');
+    // --- Assemble and Append to Body ---
+    modalContainer.append(modalImage, closeButton);
+    overlay.appendChild(modalContainer);
+    document.body.appendChild(overlay);
+    
+    // --- Event Handlers for Closing ---
 
-      // Close modal function
-      function closeModal() {
+    const closeModal = () => {
         overlay.remove();
-        document.removeEventListener('keydown', escHandler);
-      }
-
-      // Close with button
-      closeButton.addEventListener('click', closeModal);
-
-      // ✅ Close when clicking outside image
-      overlay.addEventListener('click', (e) => {
-        if (!modalContent.contains(e.target)) {
+        document.removeEventListener('keydown', handleEscKey);
+    };
+    
+    // Close with ESC key
+    const handleEscKey = (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    };
+    
+    // Close by clicking the button or the overlay backdrop
+    closeButton.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => {
+         if (!modalImage.contains(e.target) && !closeButton.contains(e.target)) {
           closeModal();
         }
-      });
-
-      // ✅ Close with ESC key
-      function escHandler(e) {
-        if (e.key === 'Escape') closeModal();
-      }
-      document.addEventListener('keydown', escHandler);
-    }
-
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    const images = document.querySelectorAll('img.modal-image');
-
-    if (!images.length) return;
-
-    images.forEach((img) => {
-      img.style.cursor = 'zoom-in';
-      img.addEventListener('click', () => openModal(img));
     });
-  }, 500);
+
+    document.addEventListener('keydown', handleEscKey);
+}
+
+
+// --- Global Setup using Event Delegation (More Efficient) ---
+
+// 1. Inject a single CSS rule for the cursor instead of many inline styles.
+const style = document.createElement('style');
+style.textContent = '.modal-image { cursor: zoom-in; }';
+document.head.appendChild(style);
+
+// 2. Add one listener to the document to handle clicks on any .modal-image.
+// This is more performant than adding a listener to every image.
+document.addEventListener('click', (e) => {
+    if (e.target.matches('img.modal-image')) {
+        openModal(e.target);
+    }
 });
