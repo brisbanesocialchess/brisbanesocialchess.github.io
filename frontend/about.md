@@ -452,74 +452,58 @@ title: About Us
 <section class="px-4 max-w-3xl">
 	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
 	<figure>
-		<a href="{{ '/assets/pictures/standard-4-player-chess.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/standard-4-player-chess.jpg' | url }}"
 				alt="Standard 4 Player Chess" />
-		</a>
 	</figure>
 </section>
 
 <section class="px-4 max-w-3xl">
 	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🏡</span> Garden Room - Random Days Gone Bye</h2>
 	<figure>
-		<a href="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
 				alt="Harmegedo The Board of Lords at the Garden Room"
 			/>
-		</a>
 	</figure>
 </section>
 
 <section class="px-4 max-w-3xl">
 	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">🧙‍♂️</span> Royal Hotel - Never Underestimate the Power of Jedi Master Big Bird</h2>
-	<div class="flex gap-4">
-		<a href="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
+	<div class="grid grid-cols-2 gap-4">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}"
 				alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board."
 			/>
-		</a>
-		<a href="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}"
 				alt="Another view of Jedi Master Big Bird playing chess."
 			/>
-		</a>
 	</div>
 </section>
 
 <section class="px-4 max-w-3xl">
 	<h2 class="text-center text-xl md:text-2xl font-semibold mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
 	<div class="grid grid-cols-2 gap-4">
-		<a href="{{ '/assets/pictures/quaternity-1.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position."
 			/>
-		</a>
-		<a href="{{ '/assets/pictures/quaternity-2.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress."
 			/>
-		</a>
-		<a href="{{ '/assets/pictures/quaternity-3.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress."
 			/>
-		</a>
-		<a href="{{ '/assets/pictures/quaternity-4.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-4.png' | url }}" alt="The Quaternity game box and components."
 			/>
-		</a>
 	</div>
 </section>

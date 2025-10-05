@@ -132,13 +132,13 @@ title: Play, Learn & Compete in Brisbane
       </tbody>
     </table>
   </div>
-  <img src="{{ '/assets/images/locations.jpg' | url }}" alt="Chess Meetup" class="mx-auto rounded-lg w-full md:w-3/4" />
+  <img src="{{ '/assets/images/locations.jpg' | url }}" alt="Chess Meetup" class="mx-auto rounded-lg w-full md:w-3/4 modal-image" />
 </section>
 
 <section class="px-4 max-w-3xl text-center">
   <h2 class="text-xl md:text-2xl font-semibold mb-4">A Dedicated Team of Organisers</h2>
   <p class="mb-6">We are a registered community organisation in Queensland with a committee. Ready to contribute? We would like to hear from you.</p>
-  <img src="{{ '/assets/images/organisers.jpg' | url }}" alt="Organisers" class="mx-auto rounded-lg w-full md:w-3/4" />
+  <img src="{{ '/assets/images/organisers.jpg' | url }}" alt="Organisers" class="mx-auto rounded-lg w-full md:w-3/4 modal-image" />
 </section>
 
 <section class="px-4 max-w-3xl text-center">
@@ -151,5 +151,5 @@ title: Play, Learn & Compete in Brisbane
     <a href="https://worldchess.com/community/bsc" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">FIDE Online Arena</a>
     <a href="https://lichess.org/team/brisbane-social-chess" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Lichess</a>
   </div>
-  <img src="{{ '/assets/images/background-smaller.jpg' | url }}" alt="Play Chess" class="mx-auto rounded-lg w-full md:w-3/4" />
+  <img src="{{ '/assets/images/background-smaller.jpg' | url }}" alt="Play Chess" class="mx-auto rounded-lg w-full md:w-3/4 modal-image" />
 </section>
