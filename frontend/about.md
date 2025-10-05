@@ -84,12 +84,12 @@ title: About Us
 						<a href="https://github.com/jbampton" class="hover:underline team-role team-role-admin text-team-role-admin">John Bampton</a>
 					</td>
 					<td class="border px-4 py-2">
-						<a href="https://github.blog/" class="text-blue-400 hover:underline">GitHub</a> 
-						is more about collaboration and community than code. I am interested in 
+						<a href="https://github.blog/" class="text-blue-400 hover:underline">GitHub</a>
+						is more about collaboration and community than code. I am interested in
 						<a href="https://en.wikipedia.org/wiki/List_of_chess_variants" class="text-blue-400 hover:underline">chess variants</a> and
 						<a href="https://mathworld.wolfram.com/Chess.html" class="text-blue-400 hover:underline">mathematics</a>.
-						Check out the <a href="https://octodex.github.com/" class="text-blue-400 hover:underline">playground and home for all octocats</a>, created and maintained by the <a href="https://en.wikipedia.org/wiki/GitHub" class="text-blue-400 hover:underline">GitHub</a> 
-						Design team. <a href="https://www.ruby-lang.org/en/" class="text-blue-400 hover:underline">Ruby</a> is... A dynamic, open source 
+						Check out the <a href="https://octodex.github.com/" class="text-blue-400 hover:underline">playground and home for all octocats</a>, created and maintained by the <a href="https://en.wikipedia.org/wiki/GitHub" class="text-blue-400 hover:underline">GitHub</a>
+						Design team. <a href="https://www.ruby-lang.org/en/" class="text-blue-400 hover:underline">Ruby</a> is... A dynamic, open source
 						<a href="https://en.wikipedia.org/wiki/List_of_programming_languages" class="text-blue-400 hover:underline">programming language</a> with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
 					</td>
 				</tr>
