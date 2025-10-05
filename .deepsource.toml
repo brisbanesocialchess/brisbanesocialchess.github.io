@@ -4,7 +4,7 @@ version = 1
 name = "python"
 enabled = true
 version = "3.13"
-dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
+dependency_file_paths = ["requirements-dev.txt", "requirements-docs.txt"]
 
 [[analyzers]]
 name = "javascript"

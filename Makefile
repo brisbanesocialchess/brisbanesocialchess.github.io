@@ -16,7 +16,7 @@ VENV_DIR ?= .venv
 PRECOMMIT ?= pre-commit
 
 # Define the requirements file.
-REQUIREMENTS_FILE ?= requirements.txt
+REQUIREMENTS_FILE ?= requirements-dev.txt
 
 CHESS_ANIMATION_SCRIPT := scripts/chess_animation_2.py
 
@@ -41,7 +41,7 @@ $(VENV_DIR): ## Create a Python virtual environment if it doesn't exist
 	@$(PYTHON) -m venv $(VENV_DIR)
 	@echo "Virtual environment created. Activate with 'source $(VENV_DIR)/bin/activate'."
 
-install: $(VENV_DIR) ## Install Python dependencies from requirements.txt into the virtual environment
+install: $(VENV_DIR) ## Install Python dependencies from requirements-dev.txt into the virtual environment
 	@echo "Installing Python dependencies from $(REQUIREMENTS_FILE)..."
 	@. $(VENV_DIR)/bin/activate && $(PIP) install -r $(REQUIREMENTS_FILE)
 	@echo "Dependencies installed."
