@@ -1,394 +1,241 @@
-# Contributing & Developer Guide ✨
+# Developer and Contributing Guide ✨
 
-Welcome to Awesome Social Chess! We appreciate your interest in contributing. All contributions are welcome! 💖
+Welcome to **Awesome Social Chess**\! We appreciate your interest in contributing and are excited to have you. This guide provides everything you need to set up your development environment, run the project locally, and submit your first contribution. All contributions are welcome\! 💖
 
-## Table of Contents
+  - [Getting Started: Your Development Environment](https://www.google.com/search?q=%23getting-started-your-development-environment)
+      - [1. Install Node.js](https://www.google.com/search?q=%231-install-nodejs)
+      - [2. Set Up Python Environment](https://www.google.com/search?q=%232-set-up-python-environment)
+      - [3. Set Up dprint for Code Formatting](https://www.google.com/search?q=%233-set-up-dprint-for-code-formatting)
+      - [4. Set Up Pre-Commit Hooks](https://www.google.com/search?q=%234-set-up-pre-commit-hooks)
+  - [Local Development Workflow](https://www.google.com/search?q=%23local-development-workflow)
+      - [Running the Main Site (Eleventy)](https://www.google.com/search?q=%23running-the-main-site-eleventy)
+      - [Building the Documentation (Sphinx)](https://www.google.com/search?q=%23building-the-documentation-sphinx)
+      - [Cloudflare Workers Development](https://www.google.com/search?q=%23cloudflare-workers-development)
+      - [Docker Development (Optional)](https://www.google.com/search?q=%23docker-development-optional)
+  - [How to Contribute](https://www.google.com/search?q=%23how-to-contribute)
+      - [Step 1: Create an Issue](https://www.google.com/search?q=%23step-1-create-an-issue)
+      - [Step 2: Fork and Clone the Repository](https://www.google.com/search?q=%23step-2-fork-and-clone-the-repository)
+      - [Step 3: Create a Branch](https://www.google.com/search?q=%23step-3-create-a-branch)
+      - [Step 4: Make Your Changes](https://www.google.com/search?q=%23step-4-make-your-changes)
+      - [Step 5: Run Pre-Submission Checks](https://www.google.com/search?q=%23step-5-run-pre-submission-checks)
+      - [Step 6: Commit and Push Your Changes](https://www.google.com/search?q=%23step-6-commit-and-push-your-changes)
+      - [Step 7: Create a Pull Request](https://www.google.com/search?q=%23step-7-create-a-pull-request)
+  - [Community Support](https://www.google.com/search?q=%23community-support)
+  - [Appendix: Tools and Platforms We Use](https://www.google.com/search?q=%23appendix-tools-and-platforms-we-use)
 
-1. [Getting Started](#getting-started)
-2. [Creating an Issue](#creating-an-issue)
-3. [How to Contribute](#how-to-contribute)
-4. [Development Setup](#development-setup)
-5. [Running the Site Locally](#running-the-site-locally)
-6. [Before Submitting a Pull Request](#before-submitting-a-pull-request)
-7. [Development Platforms](#development-platforms)
-8. [Advanced Development](#advanced-development)
-9. [Community Support](#community-support)
+-----
 
----
+## Getting Started: Your Development Environment
 
-## Getting Started
+Follow these steps to set up your machine for development.
 
-Before you begin:
+### 1\. Install Node.js
 
-**Familiarize Yourself:** Take a moment to read through the existing issues and pull requests to understand current discussions.
+You need **Node.js** (version 22 LTS or higher). Download and install it from [nodejs.org](https://nodejs.org/) if you don't have it already.
 
----
+### 2\. Set Up Python Environment
 
-## Creating an Issue
+We use Python for various development scripts and tools.
 
-If you encounter a bug or have a feature request, please create an issue:
+1.  **Install Python**: Make sure you have Python 3.13 or higher installed. You can check your version with `python --version`.
 
-- **Search Existing Issues:** Check if the issue already exists to avoid duplicates.
-- **Open a New Issue:**
-  - Use a descriptive title.
-  - Clearly describe the problem or feature request.
-  - Provide steps to reproduce the issue, if applicable.
-  - Include screenshots or code snippets, if helpful.
+2.  **(Recommended) Create a Virtual Environment**: This isolates project dependencies and keeps your global Python installation clean.
 
----
+      * **Windows:**
+        ```powershell
+        python -m venv .venv
+        .venv\Scripts\activate
+        ```
+      * **macOS/Linux:**
+        ```bash
+        python -m venv .venv
+        source .venv/bin/activate
+        ```
 
-## How to Contribute
+3.  **Install Dependencies**: Install all required Python packages for development and pre-commit checks.
 
-We welcome contributions in the form of bugfixes, new features, documentation improvements, and more.
+    ```bash
+    python -m pip install -r requirements-dev.txt
+    ```
 
-### 1. Fork the Repository 🔗
+4.  **(Optional) Install Documentation Dependencies**: If you plan to work on the documentation, install the docs-related packages.
 
-Click the "Fork" button at the top right corner of the repository page to create a copy of the repository on your GitHub account.
+    ```bash
+    python -m pip install -r requirements-docs.txt
+    ```
 
-### 2. Clone Your Fork 📥
+### 3\. Set Up dprint for Code Formatting
 
-Clone the forked repository to your local machine:
+We use [dprint](https://dprint.dev/) for consistent code formatting.
 
-```bash
-git clone https://github.com/your-username/brisbanesocialchess.github.io.git
-```
+  * **Linux/macOS:**
+    ```bash
+    curl -fsSL https://dprint.dev/install.sh | sh
+    ```
+  * **Windows:**
+    Download the installer from the [dprint releases page](https://github.com/dprint/dprint/releases) and ensure it's added to your system's PATH.
 
-### 3. Create a Branch 🌿
+### 4\. Set Up Pre-Commit Hooks
 
-```bash
-cd brisbanesocialchess.github.io
-git checkout -b add-new-feature
-```
+We use [pre-commit](https://pre-commit.com/) to automatically run code quality checks before each commit. This helps catch issues like inconsistent line endings, trailing whitespace, and large files.
 
-### 4. Make Changes ✏️
+1.  **Install the hooks**: Once Python dependencies are installed, run this command in the repository root to activate the hooks.
+    ```bash
+    pre-commit install
+    ```
+2.  **Verify installation**: You can run all checks manually on all files to ensure everything is working.
+    ```bash
+    pre-commit run --all-files
+    ```
 
-Make necessary improvements, such as fixing bugs, enhancing documentation, or adding new features.
+Now, the checks will run automatically every time you commit\!
 
----
+-----
 
-## Development Setup
+## Local Development Workflow
 
-Before committing, please make sure you have set up the development environment correctly and your code follows our formatting standards.
+Here’s how to run the different parts of the project locally.
 
-We use:
+### Running the Main Site (Eleventy)
 
-- **Python** for various development tools and scripts
-- **dprint** for consistent code formatting
-- **pre-commit** for checking end-of-file and line endings (LF/CRLF)
-- **Node.js** for building and running the site
-- **Eleventy (11ty)** as the static site generator
-
-### Prerequisites
-
-#### Install Node.js
-
-You need Node.js (version 22 LTS or higher). Download and install it if you don't have it already.
-
-#### Setting Up Python Environment 🐍
-
-1. Make sure you have **Python 3.13** installed. You can check your Python version with:
-
-```bash
-python --version
-```
-
-2. **(Recommended)** Create and activate a virtual environment to isolate dependencies:
-
-**Windows:**
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-**macOS/Linux:**
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-This helps keep your global Python installation clean and avoids dependency conflicts.
-
-3. Install the required Python packages:
-
-```bash
-python -m pip install -r requirements-dev.txt
-```
-
-This will install all the necessary Python dependencies for development, including **pre-commit** and **pytest**.
-
-4. **(Optional)** If you're working on documentation, install additional doc-related packages:
-
-```bash
-python -m pip install -r requirements-docs.txt
-```
-
-### Setting Up dprint 🔧
-
-**Windows:**
-
-- Download and install dprint from the [dprint releases](https://github.com/dprint/dprint/releases)
-- Run the installer and make sure dprint is in your system PATH
-
-**Linux/macOS:**
-
-- Install via cURL:
-
-```bash
-curl -fsSL https://dprint.dev/install.sh | sh
-```
-
-**Using dprint:**
-
-To check code without changing files:
-
-```bash
-dprint check --allow-no-files
-```
-
-To autoformat code:
-
-```bash
-dprint fmt --allow-no-files
-```
-
-Our configuration is already in the repository: `dprint.json`
-
-### Setting Up pre-commit 🧪
-
-We use **pre-commit** to maintain code quality by automatically checking for common issues before each commit. This includes:
-
-- Ensuring files end with a newline
-- Maintaining consistent line endings (LF/CRLF)
-- Checking for large files
-- Validating Python syntax
-
-Follow these steps to set up pre-commit:
-
-1. Install pre-commit (after installing Python packages):
-
-```bash
-python -m pip install pre-commit
-```
-
-2. Install the pre-commit hooks for this project:
-
-```bash
-pre-commit install
-```
-
-This will activate automatic checks before each commit.
-
-3. Verify the installation by running all checks manually:
-
-```bash
-pre-commit run --all-files
-```
-
-**Common pre-commit commands:**
-
-- `pre-commit run` - Run hooks on staged files
-- `pre-commit run --all-files` - Run hooks on all files
-- `pre-commit uninstall` - Remove pre-commit hooks
-- `pre-commit autoupdate` - Update hooks to the latest version
-
-For more information and troubleshooting, visit the [pre-commit documentation](https://pre-commit.com/).
-
----
-
-## Running the Site Locally
-
-Welcome! If you are new to this project, here is how to get started as a developer:
-
-### Start the Development Server (with Watching)
-
-To develop and see your changes live, run:
-
-```bash
-npm run start
-```
-
-This starts a local server and enables "watching mode"—any changes you make will automatically rebuild and reload the site in your browser.
-
-### Build the Site Once (Production Build)
-
-To generate the static site files for deployment, run:
-
-```bash
-npm run build
-```
-
-This runs Eleventy once and outputs the final static site. No server or watching is started.
-
-**Summary:**
-
-- Use `npm run start` for development (with live reload and watching for changes).
-- Use `npm run build` for a one-time build (no watching, for production or deployment).
-
-This project uses **Eleventy (11ty)** as the static site generator. For more details, see the README.md or the [Eleventy documentation](https://www.11ty.dev/).
-
-### Alternative: Serve the Docs Folder
-
-To start a local development server with live reload for the docs, run:
-
-```bash
-cd docs
-npx serve
-```
-
----
-
-## Before Submitting a Pull Request
-
-Before submitting a pull request, make sure to run these commands to fix any formatting or linting issues:
-
-```bash
-# Fix formatting issues
-npm run format
-npx dprint fmt --allow-no-files
-
-# Run all pre-commit checks
-python -m pre_commit run --all-files
-
-# Or run specific hooks only (examples):
-python -m pre_commit run prettier --all-files        # Run only prettier formatting
-python -m pre_commit run eslint --all-files          # Run only ESLint checks
-python -m pre_commit run markdownlint --all-files    # Run only Markdown linting
-python -m pre_commit run yamllint --all-files        # Run only YAML linting
-```
-
-**Note:** If you don't have pre-commit installed, install it from the requirements file as mentioned in the prerequisites section.
-
-These checks ensure your code follows the project's style guidelines and passes all automated tests.
-
-### Commit Changes 📝
-
-Use meaningful and clear commit messages that describe the purpose of your changes. This helps maintain a clean and understandable project history.
-
-Example of staging and committing changes:
-
-```bash
-git add .
-git commit -m "Add feature: description of feature"
-```
-
-### Push Changes ⬆️
-
-Push your local branch to your remote fork. Replace `your-branch-name` with the name of your current branch.
-
-```bash
-git push origin add-new-feature
-```
-
-This makes your changes available for review and merging via a Pull Request.
-
-### Create a Pull Request 🔄
-
-1. Go to your forked repository on GitHub.
-2. Click the "Compare & pull request" button near the top of the page.
-3. Make sure your changes look correct and you are merging into the right branch.
-4. Write a clear and simple title describing your changes.
-5. Add a short description explaining what you changed and why. If it fixes an issue, mention it like this: `Fixes #issue-number`.
-6. Click "Create pull request" to submit your contribution.
-7. Watch for feedback on your Pull Request and respond to any comments.
-
----
-
-## Development Platforms
-
-### Cloudflare Workers
-
-**Cloudflare Wrangler** is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
-
-**Cloudflare Workers** is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network with a single command - no infrastructure to manage, no complex configuration.
-
-### GitHub Pages
-
-**GitHub Pages** is a static site hosting service offered by GitHub, enabling users to host sites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
-
-### Lerna
-
-**Lerna** is a tool for optimizing the workflow around managing multi-package repositories (monorepos).
-
-### Read the Docs
-
-**Read the Docs** is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
-
-### reStructuredText (RST)
-
-**reStructuredText (RST)** is a lightweight markup language designed for creating easy-to-read and easy-to-write plaintext documents that can be automatically converted to various output formats, such as HTML, LaTeX (and thus PDF), and more. It is a key component of the Docutils project and is widely used in the Python community for writing technical documentation, including Python's official documentation and documentation for many Python libraries.
-
-### Sphinx
-
-**Sphinx** is a powerful and widely-used documentation generator written in Python. It is particularly popular within the Python community and is considered the de facto standard for documenting Python projects.
-
-### Vitest
-
-**Vitest** is a blazing-fast, next-generation testing framework designed for modern JavaScript and TypeScript projects, built on top of Vite. It's known for its speed and developer experience, offering instant feedback and seamless integration with Vite's features like hot module replacement (HMR). Vitest is inspired by Jest and aims to provide a familiar yet enhanced testing experience.
-
----
-
-## Advanced Development
-
-### Cloudflare Workers Development
-
-To work with the Cloudflare Workers site in the `packages/cfsite` directory:
-
-#### Start Development Server
-
-```bash
-cd packages/cfsite
-npx wrangler dev
-```
-
-#### Run Tests
-
-```bash
-cd packages/cfsite
-npm run test
-```
-
-### Docker Development
-
-#### Build the Docker image for running pre-commit easily
-
-```bash
-docker build -t my-go-precommit .
-```
-
-Or without cache:
-
-```bash
-docker build --no-cache -t my-go-precommit .
-```
-
-#### Run the Docker container
-
-```bash
-docker run --rm -v "$PWD":/app -w /app my-go-precommit
-```
-
-Or if you want to run and keep the container and go into Bash:
-
-```bash
-docker run -it -v "$PWD":/app -w /app my-go-precommit bash
-```
-
-### Build the Documentation
-
-Run the following commands from the repository root to create the Sphinx documentation with Make:
-
-```bash
+This project uses [Eleventy (11ty)](https://www.11ty.dev/) as the static site generator.
+
+  * **To start the development server with live reload:**
+    Any changes you make will automatically rebuild the site and reload your browser.
+    ```bash
+    npm run start
+    ```
+  * **To build the static site for production:**
+    This generates the final files in the output directory without starting a server.
+    ```bash
+    npm run build
+    ```
+
+### Building the Documentation (Sphinx)
+
+Run the following commands from the repository root to build the Sphinx documentation:
+
+```shell
 cd doc
 make html
 ```
 
-The generated HTML site will be in the `doc/build/html` folder. You can open the HTML files with your web browser.
+The generated HTML files will be in the `doc/build/html` folder.
 
----
+### Cloudflare Workers Development
+
+To work with the Cloudflare Workers site located in `packages/cfsite`:
+
+  * **Start the development server:**
+    ```bash
+    cd packages/cfsite
+    npx wrangler dev
+    ```
+  * **Run tests:**
+    ```bash
+    cd packages/cfsite
+    npm run test
+    ```
+
+### Docker Development (Optional)
+
+You can use Docker to run pre-commit checks in an isolated environment.
+
+1.  **Build the Docker image:**
+    ```bash
+    docker build -t my-go-precommit .
+    ```
+2.  **Run checks inside the container:**
+    ```bash
+    docker run --rm -v "$PWD":/app -w /app my-go-precommit
+    ```
+
+-----
+
+## How to Contribute
+
+Ready to make a change? Follow this process.
+
+### Step 1: Create an Issue
+
+If you find a bug or have an idea for a new feature, please **create an issue** first.
+
+  * **Search existing issues** to avoid duplicates.
+  * Provide a clear title and a detailed description. For bugs, include steps to reproduce.
+
+### Step 2: Fork and Clone the Repository
+
+1.  **Fork** the repository on GitHub by clicking the "Fork" button.
+2.  **Clone** your fork to your local machine:
+    ```bash
+    git clone https://github.com/your-username/brisbanesocialchess.github.io.git
+    cd brisbanesocialchess.github.io
+    ```
+
+### Step 3: Create a Branch
+
+Create a new branch for your changes with a descriptive name.
+
+```bash
+git checkout -b your-descriptive-branch-name
+```
+
+### Step 4: Make Your Changes
+
+Now, you can edit code, add features, or fix bugs.
+
+### Step 5: Run Pre-Submission Checks
+
+Before committing, ensure your changes meet our quality standards by running the following commands:
+
+1.  **Format your code:**
+    ```bash
+    npm run format
+    dprint fmt --allow-no-files
+    ```
+2.  **Run all pre-commit hooks:**
+    This command runs linters (ESLint, markdownlint, yamllint) and other checks to ensure consistency.
+    ```bash
+    python -m pre_commit run --all-files
+    ```
+
+### Step 6: Commit and Push Your Changes
+
+1.  **Commit** your changes with a clear, descriptive message.
+    ```bash
+    git add .
+    git commit -m "feat: Add a cool new feature"
+    ```
+2.  **Push** your branch to your forked repository.
+    ```bash
+    git push origin your-descriptive-branch-name
+    ```
+
+### Step 7: Create a Pull Request
+
+1.  Go to your forked repository on GitHub.
+2.  Click the **"Compare & pull request"** button.
+3.  Write a clear title and description for your pull request. If it resolves an existing issue, link it using `Fixes #issue-number`.
+4.  Click **"Create pull request"** and wait for feedback from the maintainers.
+
+-----
 
 ## Community Support
 
-If you need help or have questions:
+If you need help or have questions, please:
 
-- **Join Discussions:** Participate in ongoing discussions with the community.
-- **Contact Maintainers:** Reach out to project maintainers if you need direct assistance.
+  * **Join Discussions**: Participate in ongoing discussions in the issues or project forums.
+  * **Contact Maintainers**: Reach out to project maintainers if you need direct assistance.
+
+-----
+
+## Appendix: Tools and Platforms We Use
+
+  * **[Cloudflare Workers](https://developers.cloudflare.com/workers/)**: A serverless platform for running our applications on Cloudflare's global network.
+  * **[Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/)**: The command-line tool for building and managing Cloudflare Workers.
+  * **[GitHub Pages](https://pages.github.com/)**: A static site hosting service where our project is deployed.
+  * **[Lerna](https://lerna.js.org/)**: A tool for managing JavaScript projects with multiple packages (monorepos).
+  * **[Read the Docs](https://about.readthedocs.com/)**: A platform for building, versioning, and hosting our technical documentation.
+  * **[reStructuredText (RST)](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)**: The markup language used for our documentation.
+  * **[Sphinx](https://www.sphinx-doc.org/en/master/)**: A powerful documentation generator that builds our docs from RST files.
+  * **[Vitest](https://vitest.dev/)**: A blazing-fast testing framework for our JavaScript and TypeScript code.
