@@ -110,7 +110,7 @@ This helps keep your global Python installation clean and avoids dependency conf
 3. Install the required Python packages:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 ```
 
 This will install all the necessary Python dependencies for development.
