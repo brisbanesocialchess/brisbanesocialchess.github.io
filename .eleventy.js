@@ -44,6 +44,17 @@ export default function (eleventyConfig) {
 		return slugify(str, { lower: true, remove: /[*+~.()'"!:@]/g });
 	});
 
+	/**
+	 * URL-encoding filter for building query strings in templates.
+	 *
+	 * @param {string} val - Input string to encode.
+	 * @returns {string} URL-encoded string.
+	 */
+	eleventyConfig.addFilter('url_encode', (val) => {
+		if (val === undefined || val === null) return '';
+		return encodeURIComponent(String(val));
+	});
+
 	eleventyConfig.addPassthroughCopy(`${BASE_PATH}/assets`);
 
 	/**
