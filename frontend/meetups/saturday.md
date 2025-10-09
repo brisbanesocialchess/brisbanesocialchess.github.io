@@ -25,6 +25,8 @@ description: |
 time: 10:30 AM to 2:30 PM AEST
 when: Every Saturday
 address: 305 Montague Rd, West End QLD 4101
-map: 'https://maps.google.com/maps?q=305+Montague+Rd,+West+End+QLD+4101,+Australia&output=embed'
+eleventyComputed:
+  title: '{{ title }} | Brisbane Social Chess Club'
+  map: 'https://maps.google.com/maps?q={{ address | url_encode }},+Australia&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---

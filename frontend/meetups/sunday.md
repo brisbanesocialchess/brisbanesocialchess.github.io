@@ -23,6 +23,8 @@ description: |
 time: 11:00 AM – 2:00 PM AEST
 when: Every Sunday
 address: 1 Parkland Blvd, Brisbane City QLD 4000
-map: 'https://maps.google.com/maps?q=1+Parkland+Blvd,+Brisbane+City+QLD+4000,+Australia&output=embed'
+eleventyComputed:
+  title: '{{ title }} | Brisbane Social Chess Club'
+  map: 'https://maps.google.com/maps?q={{ address | url_encode }},+Australia&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---

@@ -15,6 +15,8 @@ description: |
 time: 12:00 PM – 2:30 PM AEST
 when: Every Wednesday
 address: 17 Lytton Rd, East Brisbane QLD 4169
-map: 'https://maps.google.com/maps?q=17+Lytton+Rd,+East+Brisbane+QLD+4169,+Australia&output=embed'
+eleventyComputed:
+  title: '{{ title }} | Brisbane Social Chess Club'
+  map: 'https://maps.google.com/maps?q={{ address | url_encode }},+Australia&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---
