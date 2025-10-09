@@ -1,3 +1,31 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Developer and Contributing Guide ✨](#developer-and-contributing-guide-)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started: Your Development Environment](#getting-started-your-development-environment)
+    - [1. Install Node.js](#1-install-nodejs)
+    - [2. Set Up Python Environment](#2-set-up-python-environment)
+    - [3. Set Up dprint for Code Formatting](#3-set-up-dprint-for-code-formatting)
+    - [4. Set Up Pre-Commit Hooks](#4-set-up-pre-commit-hooks)
+  - [Local Development Workflow](#local-development-workflow)
+    - [Running the Main Site (Eleventy)](#running-the-main-site-eleventy)
+    - [Building the Documentation (Sphinx)](#building-the-documentation-sphinx)
+    - [Cloudflare Workers Development](#cloudflare-workers-development)
+    - [Docker Development (Optional)](#docker-development-optional)
+  - [How to Contribute](#how-to-contribute)
+    - [Step 1: Create an Issue](#step-1-create-an-issue)
+    - [Step 2: Fork and Clone the Repository](#step-2-fork-and-clone-the-repository)
+    - [Step 3: Create a Branch](#step-3-create-a-branch)
+    - [Step 4: Make Your Changes](#step-4-make-your-changes)
+    - [Step 5: Run Pre-Submission Checks](#step-5-run-pre-submission-checks)
+    - [Step 6: Commit and Push Your Changes](#step-6-commit-and-push-your-changes)
+    - [Step 7: Create a Pull Request](#step-7-create-a-pull-request)
+  - [Community Support](#community-support)
+  - [Appendix: Tools and Platforms We Use](#appendix-tools-and-platforms-we-use)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Developer and Contributing Guide ✨
 
 Welcome to Awesome Social Chess! We appreciate your interest in contributing and are excited to have you. This guide provides everything you need to set up your development environment, run the project locally, and submit your first contribution. All contributions are welcome! 💖
