@@ -27,6 +27,6 @@ when: Every Saturday
 address: 305 Montague Rd, West End QLD 4101
 eleventyComputed:
   title: '{{ title }} | Brisbane Social Chess Club'
-  map: 'https://maps.google.com/maps?q={{ address | url_encode }},+Australia&output=embed'
+  map: 'https://maps.google.com/maps?q={{ (address ~ ", Australia") | url_encode }}&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---

@@ -16,6 +16,6 @@ when: Every Thursday
 address: 1259 Sandgate Rd, Nundah QLD 4012
 eleventyComputed:
   title: '{{ title }} | Brisbane Social Chess Club'
-  map: 'https://maps.google.com/maps?q={{ address | url_encode }},+Australia&output=embed'
+  map: 'https://maps.google.com/maps?q={{ (address ~ ", Australia") | url_encode }}&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---
