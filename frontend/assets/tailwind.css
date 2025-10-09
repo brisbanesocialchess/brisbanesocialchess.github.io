@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import url('tailwindcss');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,7 @@
 :root {
 	--team-role-border: 2px solid;
 }
+
 @theme {
 	--color-table-header: #091a52;
 	--color-highlight: #ff5733;
