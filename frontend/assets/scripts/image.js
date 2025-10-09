@@ -95,12 +95,10 @@
 	}
 
 	// --- Global Setup (Event Delegation) ---
-	const s2 = document.createElement('style');
-	s2.textContent = '.modal-image { cursor: zoom-in; }';
-	document.head.appendChild(s2);
-
 	document.addEventListener('click', (e) => {
 		if (e.target.matches('img.modal-image')) {
+			const link = e.target.closest('a');
+			if (link) e.preventDefault(); // prevent navigation
 			openModal(e.target);
 		}
 	});
