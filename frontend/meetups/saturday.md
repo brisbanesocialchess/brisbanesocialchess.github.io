@@ -25,6 +25,6 @@ description: |
 time: 10:30 AM to 2:30 PM AEST
 when: Every Saturday
 address: 305 Montague Rd, West End QLD 4101
-# map: "https://www.google.com/maps/embed?pb=..."
+map: 'https://maps.google.com/maps?q=305+Montague+Rd,+West+End+QLD+4101,+Australia&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---

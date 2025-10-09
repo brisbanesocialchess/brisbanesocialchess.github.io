@@ -14,6 +14,6 @@ description: |
 time: 6:00 PM – 8:00 PM AEST
 when: Every Thursday
 address: 1259 Sandgate Rd, Nundah
-map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.743539120519!2d153.0613242!3d-27.401235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93df3cc8f4c4fb%3A0x5c8fe9f5679c437e!2sRoyal%20Hotel%20Nundah!5e0!3m2!1sen!2sau!4v1621066894245!5m2!1sen!2sau'
+map: 'https://maps.google.com/maps?q=1259+Sandgate+Rd,+Nundah+QLD+4012,+Australia&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---
