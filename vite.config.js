@@ -38,7 +38,6 @@ export default defineConfig({
 		ViteImageOptimizer({
 			ansiColors: true,
 			avif: { lossless: true },
-			cache: true,
 			gif: {},
 			includePublic: true,
 			jpeg: { quality: 80 },
