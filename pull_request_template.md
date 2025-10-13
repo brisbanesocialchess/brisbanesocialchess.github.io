@@ -2,6 +2,8 @@
 
 ## PR Checklist
 - [ ] I have tested my changes locally.
+- [ ] I have run `pre-commit run --all-files` locally.
+- [ ] I have updated the documentation if applicable.
 - [ ] I have reviewed my code for any potential issues.
 
 ## PR Type
@@ -9,13 +11,14 @@
 - [ ] Feature
 - [ ] Style update
 - [ ] Refactor
+- [ ] Docs
 - [ ] Other (please describe)
 
 ## Current behavior
 <!-- Describe the current behavior or issue -->
 
 Fixes: #
-Part of: #  
+Part of: #
 
 ## New behavior
 <!-- Describe the changes you made -->
