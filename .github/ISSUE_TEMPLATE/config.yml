@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution guide
+    url: /CONTRIBUTING.md
+    about: Read how to contribute before opening an issue.
