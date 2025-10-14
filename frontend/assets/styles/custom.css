@@ -31,6 +31,11 @@
 	--footer-copyright-color: var(--text-color);
 }
 
+/* Modal image cursor */
+.modal-image {
+	cursor: zoom-in;
+}
+
 /* Theme */
 .theme-toggle {
 	display: flex;
