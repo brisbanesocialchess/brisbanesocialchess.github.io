@@ -11,7 +11,7 @@ const mergedJsFile = path.relative(process.cwd(), path.join(jsDir, 'bundle.js'))
 
 // --- Include arrays ---
 const includeCss = ['base.css', 'gh-fork-ribbon.css', 'custom.css'];
-const includeJs = ['script.js'];
+const includeJs = ['script.js','image.js'];
 
 // --- Merge CSS ---
 const cssFiles = includeCss
