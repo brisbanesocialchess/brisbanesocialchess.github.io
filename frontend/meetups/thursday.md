@@ -13,7 +13,9 @@ description: |
   The Royal offers great food and drinks. On Sandgate Rd in Nundah Village, less than a 5-minute walk from Nundah Station.
 time: 6:00 PM – 8:00 PM AEST
 when: Every Thursday
-address: 1259 Sandgate Rd, Nundah
-map: 'https://maps.google.com/maps?q=1259+Sandgate+Rd,+Nundah+QLD+4012,+Australia&output=embed'
+address: 1259 Sandgate Rd, Nundah QLD 4012, Australia
+eleventyComputed:
+  title: '{{ title }} | Brisbane Social Chess Club'
+  map: 'https://maps.google.com/maps?q={{ address | url_encode }}&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---

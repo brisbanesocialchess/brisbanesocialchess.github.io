@@ -79,7 +79,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 - **Cloudflare Workers:** Playground [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 - **Read the Docs:** Skeleton book and documentation site [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
-- [DEVELOPER_HELP Guide](DEVELOPER_HELP.md)
 
 ---
 

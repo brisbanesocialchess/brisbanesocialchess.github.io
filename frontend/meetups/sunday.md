@@ -22,7 +22,9 @@ description: |
   Got an idea for a new time or place we could play? We wanna hear it! All ages and experience levels...you guessed it: welcome! Show off your chess skills or come as a newbie - either way, you'll fit right in. We know you've got the chops
 time: 11:00 AM – 2:00 PM AEST
 when: Every Sunday
-address: 1 Parkland Blvd, Brisbane City QLD 4000
-map: 'https://maps.google.com/maps?q=1+Parkland+Blvd,+Brisbane+City+QLD+4000,+Australia&output=embed'
+address: 1 Parkland Blvd, Brisbane City QLD 4000, Australia
+eleventyComputed:
+  title: '{{ title }} | Brisbane Social Chess Club'
+  map: 'https://maps.google.com/maps?q={{ address | url_encode }}&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---

@@ -14,7 +14,9 @@ description: |
   If you wish to come by ferry, it is a 5 minutes' walk to June's.
 time: 12:00 PM – 2:30 PM AEST
 when: Every Wednesday
-address: 17 Lytton Rd, East Brisbane QLD 4169
-map: 'https://maps.google.com/maps?q=17+Lytton+Rd,+East+Brisbane+QLD+4169,+Australia&output=embed'
+address: 17 Lytton Rd, East Brisbane QLD 4169, Australia
+eleventyComputed:
+  title: '{{ title }} | Brisbane Social Chess Club'
+  map: 'https://maps.google.com/maps?q={{ address | url_encode }}&output=embed'
 permalink: 'meetup/{{ slug }}/'
 ---
