@@ -1,6 +1,5 @@
 {
 	"checks": {
-		"cliches.write_good": false,
 		"lexical_illusions.misc": false,
 		"misc.phrasal_adjectives": false,
 		"typography.diacritical_marks": false,
