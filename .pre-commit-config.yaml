@@ -48,6 +48,33 @@ repos:
         entry: npm run build
         language: system
         pass_filenames: false
+      - id: test-lerna
+        name: Run test-lerna
+        description: Run lerna tests
+        entry: npx lerna run test -- --run
+        language: system
+        pass_filenames: false
+      - id: prettier
+        name: Run prettier
+        description: format files with prettier
+        entry: prettier --write
+        files: \.(css|js|json|md|ya?ml)$
+        language: node
+        additional_dependencies: ['prettier@3.6.2']
+      - id: npm-audit
+        name: Run npm-audit
+        description: Run npm audit
+        entry: npm audit --audit-level=high
+        language: system
+        pass_filenames: false
+      - id: check-zip-file-is-not-committed
+        name: Check no zip files are committed
+        description: Zip files are not allowed in the repository
+        language: fail
+        entry: |
+          Zip files are not allowed in the repository as they are hard to
+          track and have security implications. Please remove the zip file from the repository.
+        files: (?i)\.zip$
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
@@ -57,7 +84,7 @@ repos:
         files: \.md$
         exclude: |
           (?x)
-          ^frontend/.*\.md$
+          ^frontend/.*\.md$|^\.github/pull_request_template\.md$
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
@@ -72,7 +99,7 @@ repos:
   #       name: Run gitleaks
   #       description: Check for secrets with gitleaks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: end-of-file-fixer
         name: Run end-of-file-fixer
@@ -135,48 +162,13 @@ repos:
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
-  - repo: local
-    hooks:
-      - id: npm-ci
-        name: Run npm-ci
-        description: Run npm ci install
-        entry: npm ci
-        language: system
-        pass_filenames: false
-      - id: test-lerna
-        name: Run test-lerna
-        description: Run learn tests
-        entry: npx lerna run test -- --run
-        language: system
-        pass_filenames: false
-      - id: prettier
-        name: Run prettier
-        description: format files with prettier
-        entry: prettier --config .github/linters/.prettierrc --write
-        files: \.(css|json|md|ya?ml)$
-        language: node
-        additional_dependencies: ['prettier@3.6.2']
-      - id: npm-audit
-        name: Run npm-audit
-        description: Run npm audit
-        entry: npm audit --audit-level=high
-        language: system
-        pass_filenames: false
-      - id: check-zip-file-is-not-committed
-        name: Check no zip files are committed
-        description: Zip files are not allowed in the repository
-        language: fail
-        entry: |
-          Zip files are not allowed in the repository as they are hard to
-          track and have security implications. Please remove the zip file from the repository.
-        files: (?i)\.zip$
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.32.0
+    rev: v9.33.0
     hooks:
       - id: eslint
         name: Find and fix problems in your JavaScript code
         description: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline
-        entry: eslint --config .github/linters/eslint.config.mjs --fix
+        entry: eslint --config .github/linters/eslint.config.js --fix
         language: node
         files: \.(cjs|js|mjs)$
   - repo: https://github.com/igorshubovych/markdownlint-cli
@@ -186,8 +178,20 @@ repos:
         name: Run markdownlint
         description: MarkdownLint Command Line Interface
         types: [markdown]
-        args: ['--config', '.github/linters/.markdownlint.json']
-        exclude: ^frontend/.*\.md$
+        args: ['--config', '.github/linters/.markdown-lint.yml']
+        files: \.md$
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: rst-backticks
+        name: detect common mistake of using single backticks when writing rst
+        types: [rst]
+      - id: rst-directive-colons
+        name: detect mistake of rst directive not ending with double colon or space before the double colon
+        types: [rst]
+      - id: rst-inline-touching-normal
+        name: detect mistake of inline code touching normal text in rst
+        types: [rst]
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
@@ -207,15 +211,45 @@ repos:
     hooks:
       - id: black
         name: The uncompromising Python code formatter
-        description: Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting
-        language_version: python3
-        args: ['--line-length=88']
+        description: Black is the uncompromising Python code formatter.
+        types: [python]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.14.4
+    hooks:
+      # Run the linter.
+      - id: ruff-check
+      # Run the formatter.
+      - id: ruff-format
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
     hooks:
       - id: bandit
         name: A security linter from PyCQA
         description: Bandit is a tool designed to find common security issues in Python code
-        args: ['-c', 'bandit.yaml', '-r', '.']
-        files: \.py$
+        args: ['-c', 'pyproject.toml', '-r', 'scripts']
+        types: [python]
         pass_filenames: false
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.17.1
+    hooks:
+      - id: mypy
+        name: Run mypy
+        description: Optional static typing for Python
+        types: [python]
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.3.0
+    hooks:
+      - id: flake8
+        name: Run flake8
+        description: flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code
+        types: [python]
+        args: ['--config', '.github/linters/.flake8']
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args: ['-rn', '--rcfile=.github/linters/.pylintrc']

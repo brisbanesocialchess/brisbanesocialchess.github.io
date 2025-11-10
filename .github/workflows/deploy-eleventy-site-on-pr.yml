@@ -1,4 +1,4 @@
-name: CI - Build Eleventy on PR
+name: 👷🏾‍♂️ CI - Build Eleventy on PR
 
 on:
   pull_request:
@@ -10,26 +10,29 @@ permissions:
 
 jobs:
   build:
+    name: 🈸 Build
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
         with:
           node-version: 22
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Eleventy site
+      - name: Build site
         run: npm run build
 
       - name: Verify build output
         run: |
-          if [ ! -d "./_site" ]; then
-            echo "_site folder missing — build failed"
+          if [ ! -d "./_deploy" ]; then
+            echo "_deploy folder missing — build failed"
             exit 1
           fi

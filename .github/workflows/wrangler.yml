@@ -1,4 +1,6 @@
 name: 🚢 Deploy Workers
+permissions:
+  contents: read
 
 on:
   push:
@@ -11,15 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     name: 🤓 😎 Site
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
 
       - name: 🟢 Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
         with:
           node-version: '22'
 
       - name: 📦 Install dependencies
-        run: npm ci
+        run: npm install
         working-directory: packages/cfsite
 
       - name: 🚀 Deploy to Cloudflare Workers

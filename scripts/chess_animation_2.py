@@ -135,7 +135,7 @@ def print_board(board, move_description="Initial Board"):
     print(" -----------------")
     print("  a b c d e f g h")
     print(
-        f"\nAnimation will run for {ANIMATION_DURATION_SECONDS} seconds. Press Ctrl+C to exit."
+        f"\nAnimation will run for {ANIMATION_DURATION_SECONDS} seconds. Press Ctrl+C to exit."  # noqa: E501
     )
 
 

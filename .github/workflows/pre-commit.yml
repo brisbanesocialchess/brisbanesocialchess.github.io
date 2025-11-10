@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
-        python-version: ['3.13', '3.12', '3.11']
+        python-version: ['3.13', '3.12']
 
     steps:
       - name: 🍎 Fix macOS gettext issue
@@ -27,10 +27,12 @@ jobs:
           brew link --force gettext
 
       - name: ↩️ Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          persist-credentials: false
 
       - name: 🔧 Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
         with:
           python-version: ${{ matrix.python-version }}
           architecture: 'x64'
@@ -40,13 +42,13 @@ jobs:
         run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> "$GITHUB_ENV"
 
       - name: 💾 Cache pre-commit hooks
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
         with:
           path: ~/.cache/pre-commit
           key: pre-commit|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
 
       - name: 💾 Cache pip downloads
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
         with:
           path: ~/.cache/pip
           key: pip|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('**/requirements*.txt', '.pre-commit-config.yaml') }}
@@ -54,7 +56,7 @@ jobs:
       - name: 🪛 Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pre-commit
+          pip install -r requirements-dev.txt
 
       - name: 🏃🏻‍♂️‍➡️ Run pre-commit
         run: pre-commit run --all-files

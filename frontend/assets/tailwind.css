@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--team-role-border: 2px solid;
+}
+@theme {
+	--color-table-header: #091a52;
+	--color-highlight: #ff5733;
+	--color-team-role-admin: red;
+	--color-team-role-lead-developer: red;
+	--color-team-role-core-developer: #57F287;
+	--color-team-role-developer: cyan;
+	--color-team-role-github-triage: #8fc5ba;
+	--color-team-role-lead-moderator: #e91e63;
+	--color-team-role-moderator: #f1c40f;
+	--color-team-role-board: purple;
+	--color-team-role-leader: #e74c3c;
+	--color-team-role-coordinator: #1d4ed8;
+	--color-team-role-co-organizers: blue;
+	--color-team-role-event-organizers: lime;
+	--color-team-role-assistant-organizers: #c35339;
+    --team-role-shadow-rgb: 255, 255, 255; /* default for dark theme */
+}

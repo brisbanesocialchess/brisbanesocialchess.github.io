@@ -1,0 +1,58 @@
+version = 1
+
+[[analyzers]]
+name = "python"
+enabled = true
+version = "3.13"
+dependency_file_paths = ["requirements-dev.txt", "requirements-docs.txt"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+version = "es2022"
+environment = ["nodejs"]
+include_patterns = ["merge-assets.js", "copy-html.js", ".eleventy.js", "packages/**/*.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+version = "es2022"
+environment = ["browser"]
+include_patterns = ["frontend/**/*.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
+
+[[analyzers]]
+name = "secrets"
+enabled = true
+
+[[analyzers]]
+name = "shell"
+enabled = true
+
+[[analyzers]]
+name = "docker"
+enabled = true
+# [[analyzers.meta]]
+# name = "flake8"
+# enable_all = true
+# severity_threshold = "critical"
+# Possible values: "critical", "major", "minor", "info"
+
+# [[transformers]]
+# name = "mypy"
+# enabled = true
+
+[[transformers]]
+name = "isort"
+enabled = true
+
+[[transformers]]
+name = "black"
+enabled = true
+
+[[transformers]]
+name = "prettier"
+enabled = true
+test_patterns = ["packages/cfsite/test/**/*.spec.js"]
+exclude_patterns = ["**/node_modules/", "_site/", "_deploy/"]
