@@ -213,8 +213,10 @@ repos:
     hooks:
       # Run the linter.
       - id: ruff-check
+        args: ['--config', '.github/linters/.ruff.toml']
       # Run the formatter.
       - id: ruff-format
+        args: ['--config', '.github/linters/.ruff.toml']
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
     hooks:
