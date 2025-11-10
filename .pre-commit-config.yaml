@@ -78,7 +78,7 @@ repos:
         files: \.md$
         exclude: |
           (?x)
-          ^frontend/.*\.md$
+          ^frontend/.*\.md$|^\.github/pull_request_template\.md$
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
