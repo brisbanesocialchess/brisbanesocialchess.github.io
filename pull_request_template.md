@@ -8,6 +8,7 @@
 - [ ] I have reviewed my code for any potential issues.
 
 ## PR Type
+
 - [ ] Bug fix
 - [ ] Feature
 - [ ] Style update
