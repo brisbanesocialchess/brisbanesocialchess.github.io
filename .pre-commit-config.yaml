@@ -32,6 +32,12 @@ repos:
         stages: [manual]
   - repo: local
     hooks:
+      - id: sort-proselint-config
+        name: Sort proselint config
+        entry: bash -c 'jq -S . .github/linters/proselint-config.json > tmp.json && mv tmp.json .github/linters/proselint-config.json'
+        language: system
+        files: ^\.github/linters/proselint-config\.json$
+        pass_filenames: false
       - id: npm-ci
         name: Install Node dependencies
         entry: npm ci
