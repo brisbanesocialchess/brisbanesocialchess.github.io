@@ -78,7 +78,7 @@ repos:
         files: \.md$
         exclude: |
           (?x)
-          ^frontend/.*\.md$
+          ^frontend/.*\.md$|^\.github/pull_request_template\.md$
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
@@ -207,6 +207,16 @@ repos:
         name: The uncompromising Python code formatter
         description: Black is the uncompromising Python code formatter.
         types: [python]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.14.4
+    hooks:
+      # Run the linter.
+      - id: ruff-check
+        args: ['--config', '.github/linters/.ruff.toml']
+      # Run the formatter.
+      - id: ruff-format
+        args: ['--config', '.github/linters/.ruff.toml']
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
     hooks:
