@@ -5,6 +5,12 @@ extend_skip_glob = ["packages/cfsite/node_modules"]
 [tool.black]
 line-length = 88
 
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "double"
+
 [tool.bandit]
 exclude_dirs = ["node_modules", "packages/cfsite/node_modules"]
 tests = ["B201", "B301"]
