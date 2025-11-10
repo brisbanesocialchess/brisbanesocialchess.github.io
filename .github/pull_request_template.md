@@ -9,7 +9,7 @@
 
 ## PR Type
 
-- [ ] Bug fix
+- [ ] Bugfix
 - [ ] Feature
 - [ ] Style update
 - [ ] Refactor
