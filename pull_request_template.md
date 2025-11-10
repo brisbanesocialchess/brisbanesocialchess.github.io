@@ -17,6 +17,7 @@
 - [ ] Other (please describe)
 
 ## Current behavior
+
 <!-- Describe the current behavior or issue -->
 
 Fixes: #
