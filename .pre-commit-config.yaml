@@ -34,7 +34,7 @@ repos:
     hooks:
       - id: sort-proselint-config
         name: Sort proselint config
-        entry: bash -c 'f=.github/linters/proselint-config.json; jq -S --indent 2 . "$f" > "$f.tmp" && mv "$f.tmp" "$f"'
+        entry: bash -c 'f=.github/linters/proselint-config.json; jq -S --tab . "$f" > "$f.tmp" && mv "$f.tmp" "$f"'
         language: system
         files: ^\.github/linters/proselint-config\.json$
         pass_filenames: false

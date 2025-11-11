@@ -1,11 +1,11 @@
 {
-  "checks": {
-    "cliches.write_good": false,
-    "lexical_illusions.misc": false,
-    "misc.phrasal_adjectives": false,
-    "typography.diacritical_marks": false,
-    "typography.exclamation": false,
-    "typography.symbols": false,
-    "weasel_words.very": false
-  }
+	"checks": {
+		"cliches.write_good": false,
+		"lexical_illusions.misc": false,
+		"misc.phrasal_adjectives": false,
+		"typography.diacritical_marks": false,
+		"typography.exclamation": false,
+		"typography.symbols": false,
+		"weasel_words.very": false
+	}
 }
