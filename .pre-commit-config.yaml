@@ -1,9 +1,11 @@
 # https://pre-commit.com/#installation
 default_stages: [pre-commit, pre-push]
+default_install_hook_types: [pre-commit, pre-push, commit-msg]
 default_language_version:
   python: python3
   node: 22.18.0
 minimum_pre_commit_version: '3.2.0'
+
 repos:
   - repo: meta
     hooks:
@@ -13,6 +15,7 @@ repos:
       - id: check-hooks-apply
         name: Check hooks apply to the repository
         description: Useful when testing new hooks to see if they apply to the repository
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
@@ -21,6 +24,7 @@ repos:
         description: Check spelling with codespell
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: '(package-lock\.json|yarn\.lock)$'
+
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.5.5
     hooks:
@@ -30,6 +34,7 @@ repos:
         args: ['644']
         files: \.md$
         stages: [manual]
+
   - repo: local
     hooks:
       - id: sort-proselint-config
@@ -38,22 +43,26 @@ repos:
         language: system
         files: ^\.github/linters/proselint-config\.json$
         pass_filenames: false
+
       - id: npm-ci
         name: Install Node dependencies
         entry: npm ci
         language: system
         pass_filenames: false
+
       - id: eleventy-build-check
         name: Eleventy build and output check
         entry: npm run build
         language: system
         pass_filenames: false
+
       - id: test-lerna
         name: Run test-lerna
         description: Run lerna tests
         entry: npx lerna run test -- --run
         language: system
         pass_filenames: false
+
       - id: prettier
         name: Run prettier
         description: format files with prettier
@@ -61,12 +70,14 @@ repos:
         files: \.(css|js|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.6.2']
+
       - id: npm-audit
         name: Run npm-audit
         description: Run npm audit
         entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
+
       - id: check-zip-file-is-not-committed
         name: Check no zip files are committed
         description: Zip files are not allowed in the repository
@@ -75,6 +86,7 @@ repos:
           Zip files are not allowed in the repository as they are hard to
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
+
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.2.0
     hooks:
@@ -85,19 +97,14 @@ repos:
         exclude: |
           (?x)
           ^frontend/.*\.md$|^\.github/pull_request_template\.md$
+
   - repo: https://github.com/pycqa/isort
     rev: 6.0.1
     hooks:
       - id: isort
         name: isort (python)
         description: isort is a Python utility / library to sort imports alphabetically and automatically separate into sections and by type
-  # GO-based
-  # - repo: https://github.com/gitleaks/gitleaks
-  #   rev: v8.27.2
-  #   hooks:
-  #     - id: gitleaks
-  #       name: Run gitleaks
-  #       description: Check for secrets with gitleaks
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
@@ -144,17 +151,18 @@ repos:
       - id: check-json
         name: Run check-json
         description: Attempts to load all json files to verify syntax
-      # - id: pretty-format-json
       - id: check-added-large-files
         name: Run check-added-large-files
         description: Prevent giant files from being committed
         args: ['--maxkb=1500']
+
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
       - id: actionlint
         name: Run actionlint
         description: Static checker for GitHub Actions workflow files
+
   - repo: https://github.com/oxipng/oxipng
     rev: v9.1.5
     hooks:
@@ -162,15 +170,17 @@ repos:
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v9.33.0
     hooks:
       - id: eslint
         name: Find and fix problems in your JavaScript code
-        description: ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline
+        description: ESLint statically analyzes your code to quickly find problems.
         entry: eslint --config .github/linters/eslint.config.js --fix
         language: node
         files: \.(cjs|js|mjs)$
+
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.45.0
     hooks:
@@ -180,6 +190,7 @@ repos:
         types: [markdown]
         args: ['--config', '.github/linters/.markdown-lint.yml']
         files: \.md$
+
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
     hooks:
@@ -192,6 +203,7 @@ repos:
       - id: rst-inline-touching-normal
         name: detect mistake of inline code touching normal text in rst
         types: [rst]
+
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
@@ -201,11 +213,7 @@ repos:
         args: [--strict, -c=.github/linters/.yaml-lint.yml]
         types: [yaml]
         files: \.ya?ml$
-  # - repo: https://github.com/koalaman/shellcheck-precommit
-  #   rev: v0.9.0
-  #   hooks:
-  #     - id: shellcheck
-  #       name: run shellcheck
+
   - repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
@@ -213,16 +221,15 @@ repos:
         name: The uncompromising Python code formatter
         description: Black is the uncompromising Python code formatter.
         types: [python]
+
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    # Ruff version.
     rev: v0.14.4
     hooks:
-      # Run the linter.
       - id: ruff-check
         args: ['--config', '.github/linters/.ruff.toml']
-      # Run the formatter.
       - id: ruff-format
         args: ['--config', '.github/linters/.ruff.toml']
+
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
     hooks:
@@ -232,6 +239,7 @@ repos:
         args: ['-c', 'pyproject.toml', '-r', 'scripts']
         types: [python]
         pass_filenames: false
+
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.17.1
     hooks:
@@ -239,6 +247,7 @@ repos:
         name: Run mypy
         description: Optional static typing for Python
         types: [python]
+
   - repo: https://github.com/pycqa/flake8
     rev: 7.3.0
     hooks:
@@ -247,6 +256,7 @@ repos:
         description: flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check the style and quality of some python code
         types: [python]
         args: ['--config', '.github/linters/.flake8']
+
   - repo: local
     hooks:
       - id: pylint
