@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     tar \
     xz-utils \
-    libstdc++6 && \
+    libstdc++6 \
+    jq && \
     rm -rf /var/lib/apt/lists/* && \
     pipx install pre-commit
 

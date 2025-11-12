@@ -39,10 +39,11 @@ repos:
     hooks:
       - id: sort-proselint-config
         name: Sort proselint config
-        entry: bash -c 'f=.github/linters/proselint-config.json; jq -S --tab . "$f" > "$f.tmp" && mv "$f.tmp" "$f"'
+        description: Does not run on Windows so setup as a manual hook
+        entry: bash -c 'jq -S --tab . "$1" > "$1.tmp" && mv "$1.tmp" "$1"' --
         language: system
         files: ^\.github/linters/proselint-config\.json$
-        pass_filenames: false
+        stages: [manual]
 
       - id: npm-ci
         name: Install Node dependencies
