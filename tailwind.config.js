@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./_site/**/*.{html}'],
-	plugins: [],
+	content: ['./_site/**/*.{html,js,md}'],
+	plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-filters'), 
+    ],
 	safelist: [
 		'team-role-admin',
 		'team-role-developer',
