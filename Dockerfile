@@ -26,7 +26,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN go version && pipx --version && node -v && npm -v
 
-RUN groupadd -r -g 1001 appuser && useradd -m -r -u 1001 -g 1001 appuser -d /app -s /bin/bash appuser
+RUN groupadd -r -g 1001 appuser && useradd -m -r -u 1001 -g 1001 -d /app -s /bin/bash appuser
 
 WORKDIR /app
 COPY . .
