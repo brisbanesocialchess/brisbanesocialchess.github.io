@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     tar \
     xz-utils \
-    libstdc++6 && \
+    libstdc++6 \
+    jq && \
     rm -rf /var/lib/apt/lists/* && \
     pipx install pre-commit
 
@@ -25,7 +26,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN go version && pipx --version && node -v && npm -v
 
-RUN groupadd -r -g 1001 appuser && useradd -m -r -u 1001 -g 1001 appuser -d /app -s /bin/bash appuser
+RUN groupadd -r -g 1001 appuser && useradd -m -r -u 1001 -g 1001 -d /app -s /bin/bash appuser
 
 WORKDIR /app
 COPY . .
