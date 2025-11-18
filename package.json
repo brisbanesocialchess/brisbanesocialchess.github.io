@@ -37,8 +37,8 @@
 	],
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.13",
-		"esbuild": "^0.25.9",
-		"glob": "^11.0.3",
+		"esbuild": "^0.27.0",
+		"glob": "^12.0.0",
 		"html-minifier-terser": "^7.2.0",
 		"luxon": "^3.7.1",
 		"rollup": "^4.50.1",
@@ -46,11 +46,11 @@
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
-		"@cloudflare/vitest-pool-workers": "^0.9.1",
+		"@cloudflare/vitest-pool-workers": "^0.10.7",
 		"@eslint/js": "^9.35.0",
 		"@npmcli/arborist": "^9.1.3",
-		"@vitest/coverage-istanbul": "^3.2.4",
-		"@vitest/coverage-v8": "^3.2.4",
+		"@vitest/coverage-istanbul": "^4.0.10",
+		"@vitest/coverage-v8": "^4.0.10",
 		"concurrently": "^9.2.1",
 		"eslint": "^9.35.0",
 		"eslint-config-prettier": "^10.1.5",
@@ -64,7 +64,7 @@
 		"slugify": "^1.6.6",
 		"svgo": "^4.0.0",
 		"vite-plugin-image-optimizer": "^2.0.2",
-		"vitest": "^3.2.4"
+		"vitest": "^4.0.10"
 	},
 	"overrides": {
 		"devalue": "5.3.2"
