@@ -101,6 +101,8 @@ pre-commit run --all-files
 
 Now, the checks will run automatically every time you commit!
 
+**Note:** The `sort-proselint-config` hook requires `jq` to be installed on your system.
+
 ## Local Development Workflow
 
 Here's how to run the different parts of the project locally.
