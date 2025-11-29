@@ -26,6 +26,15 @@ jobs:
           brew install gettext
           brew link --force gettext
 
+      - name: 📦 Install jq
+        run: |
+          if [ "$RUNNER_OS" == "macOS" ]; then
+            brew install jq
+          elif [ "$RUNNER_OS" == "Linux" ]; then
+            sudo apt-get update && sudo apt-get install -y jq
+          fi
+        shell: bash
+
       - name: ↩️ Checkout code
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
