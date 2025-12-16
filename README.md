@@ -19,10 +19,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <table>
   <tr>
     <td>
-      <a href="https://brisbanesocialchess.pages.dev">
-        <img src="https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.pages.dev&label=%F0%9F%8C%90%20cloudflare-pages" alt="Cloudflare Pages site status">
-      </a>
-      <br>
       <a href="https://brisbanesocialchess.github.io">
         <img src="https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.github.io&label=%F0%9F%8C%90%20github-pages" alt="GitHub Pages site status">
       </a>
@@ -75,7 +71,6 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
-- **Cloudflare Pages:** Pull request deploy previews [https://brisbanesocialchess.pages.dev/](https://brisbanesocialchess.pages.dev/)
 - **Cloudflare Workers:** Playground [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 - **Read the Docs:** Skeleton book and documentation site [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
