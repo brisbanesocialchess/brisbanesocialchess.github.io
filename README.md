@@ -29,11 +29,11 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
       <a href="https://brisbanesocialchess.readthedocs.io/en/latest/">
         <img src="https://img.shields.io/website?url=https%3A%2F%2Fbrisbanesocialchess.readthedocs.io%2Fen%2Flatest%2F&label=%F0%9F%8C%90%20read-the-docs" alt="Read the Docs site status">
       </a>
-    </td>    
+    </td>
     <td>
       <a href="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io">
         <img src="https://codecov.io/github/brisbanesocialchess/brisbanesocialchess.github.io/branch/main/graph/badge.svg?token=VFS3PN96Q0" alt="Codecov status">
-      </a>      
+      </a>
       <br>
       <a href="https://app.readthedocs.org/projects/brisbanesocialchess/builds/?version__slug=latest">
         <img src="https://readthedocs.org/projects/brisbanesocialchess/badge/?version=latest" alt="Read the Docs Build Status">
