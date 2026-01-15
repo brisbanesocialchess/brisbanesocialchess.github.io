@@ -1,16 +1,16 @@
 ---
 layout: 'layouts/meetup.njk'
 slug: saturday
-heading: Saturday Chess ♟️☕
-location: West End Park Cafe!
+heading: 'Saturday Chess ♟️☕'
+location: 'West End Park Cafe!'
 hosts:
-  - Ben Martin
-  - Peiqi Sun
+  - 'Ben Martin'
+  - 'Peiqi Sun'
 hosts_images:
   - src: '/assets/avatars/octoman.png'
-    alt: Ben Martin
+    alt: 'Ben Martin'
   - src: '/assets/avatars/octoman.png'
-    alt: Peiqi Sun
+    alt: 'Peiqi Sun'
 description: |
   Calling all Blunderers! Join Brisbane's coolest chess crew every Saturday morning as we transform West End Park Café into checkered board central.<br/>
   Arrive anytime from 10:30 AM to soak up the cafe's scrumptious breakfast menu, piping hot coffee, and morning newspapers. Early risers, late sleepers, and every bird in between is welcome!<br/>
@@ -22,9 +22,9 @@ description: |
   Chess experts and newbies alike - every level is welcome in our club. We know you've got talent waiting to be discovered over a chess board!<br/>
   Easy parking and a nearby bus stop make West End Park Café an accessible location for all. And the famous West End Markets are steps away for browsing before or after chess.<br/>
   So grab your thinking cap and join our Saturday morning ritual as we make boredom checkmate together!
-time: 10:30 AM to 2:30 PM AEST
-when: Every Saturday
-address: 305 Montague Rd, West End QLD 4101, Australia
+time: '10:30 AM to 2:30 PM AEST'
+when: 'Every Saturday'
+address: '305 Montague Rd, West End QLD 4101, Australia'
 eleventyComputed:
   title: '{{ title }} | Brisbane Social Chess Club'
   map: 'https://maps.google.com/maps?q={{ address | url_encode }}&output=embed'

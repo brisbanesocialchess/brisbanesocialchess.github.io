@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 layout: 'layouts/base.njk'
-title: About Us
+title: 'About Us'
 ---
 
 <section class="px-4 max-w-3xl">
@@ -469,7 +469,7 @@ title: About Us
 			<img
 				class="w-full h-auto rounded-lg object-contain"
 				src="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
-				alt="Harmegedo The Board of Lords at the Garden Room"
+				alt="Harmegedo The Board of Lords 6-Player Chess at the Garden Room"
 			/>
 		</a>
 	</figure>
