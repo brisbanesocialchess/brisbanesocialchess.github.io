@@ -27,4 +27,4 @@ jobs:
           pip install proselint
       - name: Run Proselint
         run: |
-          proselint . --glob="**/*.md" --config=".github/linters/proselint-config.json"
+          proselint check . --glob="**/*.md" --config=".github/linters/proselint-config.json"
