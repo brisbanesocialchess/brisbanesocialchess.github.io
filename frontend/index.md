@@ -148,7 +148,7 @@ title: Play, Learn & Compete in Brisbane
   </p>
   <div class="flex flex-col text-white md:flex-row flex-wrap justify-center gap-4 mb-6">
     <a href="https://www.chess.com/club/brisbane-social-chess-inc" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Chess.com</a>
-    <a href="https://worldchess.com/community/bsc" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">FIDE Online Arena</a>
+    <a href="https://worldchess.com/community/brisbanesocialchess" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">FIDE Online Arena</a>
     <a href="https://lichess.org/team/brisbane-social-chess-inc" class="px-6 py-3 bg-indigo-900 hover:bg-indigo-500 rounded-full font-bold shadow-md transition">Lichess</a>
   </div>
   <img src="{{ '/assets/images/background-smaller.jpg' | url }}" alt="Play Chess" class="mx-auto rounded-lg w-full md:w-3/4" />
