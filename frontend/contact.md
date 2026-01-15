@@ -1,7 +1,7 @@
 ---
 permalink: /contact/
 layout: 'layouts/base.njk'
-title: Contact Us
+title: 'Contact Us'
 captcha: true
 ---
 
