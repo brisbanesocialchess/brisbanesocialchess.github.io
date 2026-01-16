@@ -1,32 +1,34 @@
 :root {
-	--toggle-icon-color: #ffffff;
+	--toggle-icon-color: #fff;
 	--toggle-icon-hover: #ffd700;
-	--bg-color: #000000;
-	--bg-overlay: rgba(48, 48, 48, 0.95);
-	--text-color: #ffffff;
-	--reverse-text-color: #111111;
-	--card-bg: rgba(26, 26, 26, 1);
+	--bg-color: #000;
+	--bg-overlay: rgb(48 48 48 / 95%);
+	--text-color: #fff;
+	--reverse-text-color: #111;
+	--card-bg: rgb(26 26 26 / 100%);
 	--team-role-shadow-rgb: 255, 255, 255;
 }
+
 [data-theme='light'] {
-	--toggle-icon-color: #111111;
+	--toggle-icon-color: #111;
 	--toggle-icon-hover: #ff8c00;
-	--bg-color: #ffffff;
-	--bg-overlay: rgba(255, 255, 255, 0.65);
-	--text-color: #111111;
-	--reverse-text-color: #ffffff;
-	--card-bg: rgba(255, 255, 255, 0.85);
+	--bg-color: #fff;
+	--bg-overlay: rgb(255 255 255 / 65%);
+	--text-color: #111;
+	--reverse-text-color: #fff;
+	--card-bg: rgb(255 255 255 / 85%);
 	--team-role-shadow-rgb: 0, 0, 0;
 	--footer-copyright-color: var(--reverse-text-color);
 }
+
 [data-theme='random'] {
 	--toggle-icon-color: var(--text-color);
 	--toggle-icon-hover: var(--bg-color);
-	--bg-color: #000000;
-	--bg-overlay: rgba(0, 0, 0, 0.65);
-	--text-color: #ffffff;
-	--reverse-text-color: #ffffff;
-	--card-bg: rgba(255, 255, 255, 0.1);
+	--bg-color: #000;
+	--bg-overlay: rgb(0 0 0 / 65%);
+	--text-color: #fff;
+	--reverse-text-color: #fff;
+	--card-bg: rgb(255 255 255 / 10%);
 	--team-role-shadow-rgb: 255, 255, 255;
 	--footer-copyright-color: var(--text-color);
 }
@@ -43,10 +45,12 @@
 		background-color 0.3s ease,
 		color 0.3s ease;
 }
+
 .theme-toggle svg {
 	color: var(--toggle-icon-color);
 	transition: color 0.3s ease;
 }
+
 .theme-toggle:hover svg {
 	color: var(--toggle-icon-hover);
 }
@@ -55,49 +59,64 @@
 .team-role-admin {
 	--team-role-color: var(--color-team-role-admin);
 }
+
 .team-role-developer {
 	--team-role-color: var(--color-team-role-developer);
 }
+
 .team-role-github-triage {
 	--team-role-color: var(--color-team-role-github-triage);
 }
+
 .team-role-moderator {
 	--team-role-color: var(--color-team-role-moderator);
 }
+
 .team-role-board {
 	--team-role-color: var(--color-team-role-board);
 }
+
 .team-role-leader {
 	--team-role-color: var(--color-team-role-leader);
 }
+
 .team-role-coordinator {
 	--team-role-color: var(--color-team-role-coordinator);
 }
+
 .team-role-co-organizers {
 	--team-role-color: var(--color-team-role-co-organizers);
 }
+
 .team-role-lead-developer {
 	--team-role-color: var(--color-team-role-lead-developer);
 }
+
 .team-role-core-developer {
 	--team-role-color: var(--color-team-role-core-developer);
 }
+
 .team-role-event-organizers {
 	--team-role-color: var(--color-team-role-event-organizers);
 }
+
 .team-role-assistant-organizers {
 	--team-role-color: var(--color-team-role-assistant-organizers);
 }
+
 .team-role img {
 	border: var(--team-role-border) var(--team-role-color);
 	transition: filter 0.3s ease;
 }
+
 .team-role:hover img {
-	filter: drop-shadow(0 0 10px rgba(var(--team-role-shadow-rgb), 0.4)) drop-shadow(0 0 20px rgba(var(--team-role-shadow-rgb), 0.2));
+	filter: drop-shadow(0 0 10px rgb(var(--team-role-shadow-rgb) / 40%)) drop-shadow(0 0 20px rgb(var(--team-role-shadow-rgb) / 20%));
 }
+
 .team-role span {
 	color: var(--team-role-color);
 }
+
 /* Footer section */
 .footer-copyright {
 	color: var(--footer-copyright-color);
