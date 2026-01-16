@@ -3,7 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
 	--team-role-border: 2px solid;
 }
@@ -24,4 +23,18 @@
 	--color-team-role-event-organizers: lime;
 	--color-team-role-assistant-organizers: #c35339;
     --team-role-shadow-rgb: 255, 255, 255; /* default for dark theme */
+
+	--animate-fade-in: fade-in 0.3s ease-in-out;
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+			scale: 0.8;
+		}
+		to {
+			opacity: 1;
+			scale: 1;
+		}
+		
+	}
 }

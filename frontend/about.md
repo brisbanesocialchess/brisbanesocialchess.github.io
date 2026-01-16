@@ -455,7 +455,7 @@ title: 'About Us'
 	<figure>
 		<a href="{{ '/assets/pictures/standard-4-player-chess.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/standard-4-player-chess.jpg' | url }}"
 				alt="Standard 4 Player Chess" />
 		</a>
@@ -467,7 +467,7 @@ title: 'About Us'
 	<figure>
 		<a href="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
 				alt="Harmegedo The Board of Lords 6-Player Chess at the Garden Room"
 			/>
@@ -480,14 +480,14 @@ title: 'About Us'
 	<div class="flex gap-4">
 		<a href="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}"
 				alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board."
 			/>
 		</a>
 		<a href="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}"
 				alt="Another view of Jedi Master Big Bird playing chess."
 			/>
@@ -500,25 +500,25 @@ title: 'About Us'
 	<div class="grid grid-cols-2 gap-4">
 		<a href="{{ '/assets/pictures/quaternity-1.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position."
 			/>
 		</a>
 		<a href="{{ '/assets/pictures/quaternity-2.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress."
 			/>
 		</a>
 		<a href="{{ '/assets/pictures/quaternity-3.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress."
 			/>
 		</a>
 		<a href="{{ '/assets/pictures/quaternity-4.png' | url }}">
 			<img
-				class="w-full h-auto rounded-lg object-contain"
+				class="w-full h-auto rounded-lg object-contain modal-image"
 				src="{{ '/assets/pictures/quaternity-4.png' | url }}" alt="The Quaternity game box and components."
 			/>
 		</a>
