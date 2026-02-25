@@ -1,3 +1,4 @@
+---
 name: 🤖 Pull Request Labeler
 
 on: # zizmorlinter:disable dangerous-triggers
