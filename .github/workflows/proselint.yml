@@ -17,17 +17,17 @@ jobs:
     name: 🏃🏿 Run linter
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: ✅ Checkout code
         uses: actions/checkout@v6.0.2
         with:
           persist-credentials: false
-      - name: Set up Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.13'
-      - name: Install Proselint
+          python-version: '3.14'
+      - name: 🚧 Install Proselint
         run: |
           pip install proselint
-      - name: Run Proselint
+      - name: 🏃🏿‍➡️ Run Proselint
         run: |
           proselint check . --config=".github/linters/proselint-config.json"
