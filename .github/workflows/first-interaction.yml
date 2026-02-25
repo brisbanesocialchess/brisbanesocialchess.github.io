@@ -12,6 +12,7 @@ on: # zizmorlinter:disable dangerous-triggers
 
 jobs:
   first-interaction:
+    name: 🌓 Greetings Earthling
     runs-on: ubuntu-latest
     steps:
       - uses: actions/first-interaction@1c4688942c71f71d4f5502a26ea67c331730fa4d
