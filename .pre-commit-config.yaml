@@ -21,7 +21,7 @@ repos:
         name: Run codespell
         description: Check spelling with codespell
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.5
+    rev: v1.5.6
     hooks:
       - id: chmod
         name: Set file permissions
@@ -50,7 +50,7 @@ repos:
       - id: prettier
         name: Run prettier
         description: format files with prettier
-        entry: prettier --write
+        entry: prettier --write '**/*.css' '**/*.js' '**/*.json' '**/*.md' '**/*.yaml' '**/*.yml'
         files: \.(css|js|json|md|ya?ml)$
         language: node
         additional_dependencies: ['prettier@3.8.1']
@@ -70,7 +70,7 @@ repos:
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
   - repo: https://github.com/thlorenz/doctoc.git
-    rev: v2.2.0
+    rev: v2.3.0
     hooks:
       - id: doctoc
         name: Add TOC for Markdown and RST files
@@ -80,7 +80,7 @@ repos:
           (?x)
           ^frontend/.*\.md$|^\.github/pull_request_template\.md$
   - repo: https://github.com/pycqa/isort
-    rev: 6.0.1
+    rev: 8.0.0
     hooks:
       - id: isort
         name: isort (python)
@@ -144,20 +144,20 @@ repos:
         description: Prevent giant files from being committed
         args: ['--maxkb=1500']
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.7
+    rev: v1.7.11
     hooks:
       - id: actionlint
         name: Run actionlint
         description: Static checker for GitHub Actions workflow files
   - repo: https://github.com/oxipng/oxipng
-    rev: v9.1.5
+    rev: v10.1.0
     hooks:
       - id: oxipng
         name: Run oxipng
         description: Multithreaded PNG optimizer written in Rust
         args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.33.0
+    rev: v10.0.2
     hooks:
       - id: eslint
         name: Find and fix problems in your JavaScript code
@@ -166,7 +166,7 @@ repos:
         language: node
         files: \.(cjs|js|mjs)$
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.47.0
     hooks:
       - id: markdownlint
         name: Run markdownlint
@@ -187,7 +187,7 @@ repos:
         name: detect mistake of inline code touching normal text in rst
         types: [rst]
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         name: Run yamllint
@@ -201,7 +201,7 @@ repos:
   #     - id: shellcheck
   #       name: run shellcheck
   - repo: https://github.com/psf/black
-    rev: 25.1.0
+    rev: 26.1.0
     hooks:
       - id: black
         name: The uncompromising Python code formatter
@@ -209,7 +209,7 @@ repos:
         types: [python]
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: v0.14.4
+    rev: v0.15.2
     hooks:
       # Run the linter.
       - id: ruff-check
@@ -218,7 +218,7 @@ repos:
       - id: ruff-format
         args: ['--config', '.github/linters/.ruff.toml']
   - repo: https://github.com/PyCQA/bandit
-    rev: 1.8.6
+    rev: 1.9.4
     hooks:
       - id: bandit
         name: A security linter from PyCQA
@@ -227,7 +227,7 @@ repos:
         types: [python]
         pass_filenames: false
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.17.1
+    rev: v1.19.1
     hooks:
       - id: mypy
         name: Run mypy

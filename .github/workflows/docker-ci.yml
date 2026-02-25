@@ -17,12 +17,12 @@ jobs:
     name: 🐬 Test image
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: ✅ Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           persist-credentials: false
-      - name: Build Docker image
+      - name: 👷🏼‍♂️ Build Docker image
         run: docker build -t my-go-precommit .
-      - name: Run Docker container and tests
+      - name: 🏃🏿‍♀️ Run Docker container and tests
         run: |
           docker run --rm -v "$PWD":/app -w /app my-go-precommit
