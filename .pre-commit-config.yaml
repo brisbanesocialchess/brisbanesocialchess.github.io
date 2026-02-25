@@ -3,7 +3,7 @@
 default_stages: [pre-commit, pre-push]
 default_language_version:
   python: python3
-  node: 22.18.0
+  node: 24.14.0
 minimum_pre_commit_version: '3.2.0'
 repos:
   - repo: meta
@@ -53,7 +53,8 @@ repos:
         entry: prettier --write
         files: \.(css|js|json|md|ya?ml)$
         language: node
-        additional_dependencies: ['prettier@3.6.2']
+        additional_dependencies: ['prettier@3.8.1']
+        pass_filenames: false
       - id: npm-audit
         name: Run npm-audit
         description: Run npm audit
