@@ -19,8 +19,6 @@ repos:
       - id: codespell
         name: Run codespell
         description: Check spelling with codespell
-        args: [--ignore-words=.github/linters/codespell.txt]
-        exclude: '(package-lock\.json|yarn\.lock)$'
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.5.5
     hooks:
