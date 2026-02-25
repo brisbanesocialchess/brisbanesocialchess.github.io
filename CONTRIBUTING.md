@@ -27,7 +27,10 @@
 
 # Developer and Contributing Guide ✨
 
-Welcome to Awesome Social Chess. We appreciate your interest in contributing and are excited to have you. This guide provides everything you need to set up your development environment, run the project locally, and submit your first contribution. All contributions are welcome! 💖
+Welcome to Awesome Social Chess.
+We appreciate your interest in contributing and are excited to have you.
+This guide provides everything you need to set up your development environment, run the project locally, and submit your first contribution.
+All contributions are welcome! 💖
 
 ## Getting Started: Your Development Environment
 
@@ -35,7 +38,8 @@ Follow these steps to set up your machine for development.
 
 ### 1. Install Node.js
 
-You need Node.js (version 20 LTS or higher). Download and install it from [nodejs.org](https://nodejs.org) if you don't have it already.
+You need Node.js (version 20 LTS or higher).
+Download and install it from [nodejs.org](https://nodejs.org) if you don't have it already.
 
 ### 2. Set Up Python Environment
 
@@ -85,7 +89,8 @@ curl -fsSL https://dprint.dev/install.sh | sh
 
 ### 4. Set Up Pre-Commit Hooks
 
-We use pre-commit to automatically run code quality checks before each commit. This helps catch issues like inconsistent line endings, trailing whitespace, and large files.
+We use pre-commit to automatically run code quality checks before each commit.
+This helps catch issues like inconsistent line endings, trailing whitespace, and large files.
 
 **Install the hooks:** Once Python dependencies are installed, run this command in the repository root to activate the hooks.
 
@@ -209,7 +214,8 @@ Before committing, ensure your changes meet our quality standards by running the
 pre-commit run --all-files
 ```
 
-**Note:** The pre-commit hooks automatically run dprint for code formatting, so you don't need to run `dprint fmt` separately. If you want to format files manually before committing, you can run:
+**Note:** The pre-commit hooks automatically run dprint for code formatting, so you don't need to run `dprint fmt` separately.
+If you want to format files manually before committing, you can run:
 
 ```bash
 dprint fmt

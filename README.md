@@ -8,7 +8,9 @@
 
 ## ℹ️ About the Site Generator
 
-This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static site. You do not need to know advanced JavaScript to get started - just follow the steps below!
+This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects.
+Eleventy takes your content and templates and generates a fast, static site.
+You do not need to know advanced JavaScript to get started - just follow the steps below!
 
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
 [![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
@@ -254,4 +256,4 @@ You can open the HTML files with your web browser.
 
 ---
 
-© 2025 Brisbane Social Chess Inc
+© 2024-2026 Brisbane Social Chess Inc
