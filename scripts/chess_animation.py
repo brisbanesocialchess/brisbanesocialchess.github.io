@@ -8,6 +8,7 @@ states as an animation.
 
 import os
 import time
+import subprocess
 
 FRAME_DELAY = 1  # delay in seconds between frames
 
@@ -26,15 +27,12 @@ def clear_screen():
     # Clears the terminal screen in a cross-platform way
     try:
         if os.name == "nt":
-            os.system(
-                '"'
-                + os.path.join(
-                    os.environ.get("SystemRoot", "C:\\Windows"), "System32", "cmd.exe"
-                )
-                + '" /c cls'
-            )  # Windows
+            cmd_path = os.path.join(
+                os.environ.get("SystemRoot", "C:\\Windows"), "System32", "cmd.exe"
+            )
+            subprocess.run([cmd_path, "/c", "cls"], shell=False)  # Windows
         else:
-            os.system("/usr/bin/clear")  # macOS/Linux
+            subprocess.run(["/usr/bin/clear"], shell=False)  # macOS/Linux
     except Exception:
         print("\033[H\033[J", end="")  # ANSI escape sequence fallback
 
