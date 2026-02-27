@@ -3,10 +3,13 @@ FROM node:25.7-bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     python3-pip \
+    python3-venv \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
+
+RUN python3 -m venv .venv && source .venv/bin/activate
 
 COPY .pre-commit-config.yaml ./
 
