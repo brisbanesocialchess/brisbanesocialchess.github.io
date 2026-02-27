@@ -1,5 +1,5 @@
 ---
-name: 🏃🏼 Run pre-commit
+name: 🏃🏼 pre-commit
 
 on:
   push:
@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   pre-commit:
-    name: 🏃🏼 Pre-commit on ${{ matrix.os }} / Python ${{ matrix.python-version }}
+    name: 🏃🏼 manual hooks ${{ matrix.os }} / Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
 
     strategy:
