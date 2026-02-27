@@ -1,39 +1,15 @@
-FROM node:22.18.0-bookworm
-
-ENV GO_VERSION=1.24.5
-ENV NODE_VERSION=22.18.0
-ENV PATH="/root/.local/bin:${PATH}"
+FROM node:25.7-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    git \
-    bash \
-    build-essential \
-    ca-certificates \
-    pipx \
-    tar \
-    xz-utils \
-    libstdc++6 \
+    python3-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.gz && \
-    tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
-    rm go${GO_VERSION}.linux-amd64.tar.gz
-
-ENV PATH="/usr/local/go/bin:${PATH}"
-
-RUN go version && pipx --version && node -v && npm -v
-
-RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser
-
 WORKDIR /app
-
-RUN git config --global init.defaultBranch main
 
 COPY .pre-commit-config.yaml ./
 
-RUN pipx install pre-commit && git init . && pre-commit install-hooks
+RUN pip3 install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
 COPY . .
 
