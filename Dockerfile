@@ -31,7 +31,7 @@ WORKDIR /app
 
 COPY .pre-commit-config.yaml ./
 
-RUN pipx install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
+RUN pipx install pre-commit && git init . && pre-commit install-hooks
 
 COPY . .
 
