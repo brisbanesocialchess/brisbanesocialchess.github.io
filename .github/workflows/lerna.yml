@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   lerna:
-    name: 🏃🏻‍♂️‍➡️ Run tests
+    name: 🏃🏻‍♂️‍➡️ {{ matrix.os }} / Node ${{ matrix.node-version }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
