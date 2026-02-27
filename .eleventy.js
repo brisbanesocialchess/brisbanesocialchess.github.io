@@ -34,6 +34,11 @@ export default function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat(format);
 	});
 
+	eleventyConfig.addFilter('readableDate', (dateObj) => {
+		// Convert the JavaScript Date object to a Luxon DateTime object
+		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+	});
+
 	/**
 	 * Slugify filter for converting strings into URL-friendly slugs.
 	 *
