@@ -13,20 +13,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: ↩️ Checkout repo
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           path: .
           persist-credentials: false
-      - name: Setup Node.js
+      - name: 🟢 Setup Node.js
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238
         with:
-          node-version: 22
-      - name: Install dependencies
+          node-version: 24
+      - name: ⚙️ Install dependencies
         run: npm install
-      - name: Build site
+      - name: 🏗️ Build site
         run: npm run build
-      - name: Deploy to GitHub Pages branch
+      - name: 🚀 Deploy to GitHub Pages branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

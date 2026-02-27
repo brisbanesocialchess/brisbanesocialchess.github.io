@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🏷️ Apply Labels using Labeler
-        uses: actions/labeler@v6
+        uses: actions/labeler@634933edcd8ababfe52f92936142cc22ac488b1b
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           sync-labels: true
