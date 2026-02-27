@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /app && chown -R appuser:appuser /app
+
 WORKDIR /app
 
 COPY .pre-commit-config.yaml ./
@@ -18,6 +20,7 @@ RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 RUN pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
+
 
 RUN useradd --create-home appuser
 USER appuser
