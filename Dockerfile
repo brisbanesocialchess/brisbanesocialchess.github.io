@@ -29,6 +29,8 @@ RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser
 
 WORKDIR /app
 
+RUN git config --global init.defaultBranch main
+
 COPY .pre-commit-config.yaml ./
 
 RUN pipx install pre-commit && git init . && pre-commit install-hooks
