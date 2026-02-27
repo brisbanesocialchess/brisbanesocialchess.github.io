@@ -1,7 +1,7 @@
 ---
 permalink: /register/
 layout: 'layouts/base.njk'
-title: Register for Membership
+title: 'Register for Membership'
 captcha: true
 ---
 

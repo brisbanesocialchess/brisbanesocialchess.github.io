@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
+  <img src="https://avatars.githubusercontent.com/u/223948126?s=200&v=4" alt="Brisbane Social Chess Inc Logo" style="border-radius: 50%;">
   <h1>♟️ brisbanesocialchess.github.io</h1>
   <p>Welcome to the source code repository for the Brisbane Social Chess Inc website.</p>
 </div>
@@ -8,11 +8,12 @@
 
 ## ℹ️ About the Site Generator
 
-This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static site. You do not need to know advanced JavaScript to get started - just follow the steps below!
+This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects.
+Eleventy takes your content and templates and generates a fast, static site.
+You do not need to know advanced JavaScript to get started - just follow the steps below!
 
 [![View the project board](https://img.shields.io/badge/view_the_project_board-purple)](https://github.com/orgs/brisbanesocialchess/projects/1/)
 [![MIT License](https://img.shields.io/github/license/brisbanesocialchess/brisbanesocialchess.github.io?label=%E2%9A%96%EF%B8%8F%20license)](LICENSE)
-[![Join our Discord Server](https://img.shields.io/discord/1299539471964049448?label=%F0%9F%92%83%20Discord)](https://discord.com/invite/JWBKhQmzvD)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/brisbanesocialchess/brisbanesocialchess.github.io?label=%F0%9F%9A%80%20commit%20activity)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/graphs/commit-activity)
 [![GitHub Issues marked as good first issue](https://img.shields.io/github/issues/brisbanesocialchess/brisbanesocialchess.github.io/good%20first%20issue?color=%237057ff)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
 
@@ -65,6 +66,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 [![First Interaction Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml)
 [![Git Clone Matrix Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
 [![ls-lint Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml)
+[![Manual hooks Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit-manual.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit-manual.yml)
 [![GitHub Pages Build Deployment Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pages/pages-build-deployment)
 [![Proselint Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml/badge.svg?branch=main)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/proselint.yml)
 [![Pull Request Labeler Workflow Status](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml/badge.svg)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
@@ -75,7 +77,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 
 - **Live site:** [https://www.brisbanesocialchess.org.au/](https://www.brisbanesocialchess.org.au/)
 - **GitHub Pages:** Current development site [https://brisbanesocialchess.github.io/](https://brisbanesocialchess.github.io/)
-- **Cloudflare Pages:** Pull request deploy previews [https://brisbanesocialchess.pages.dev/](https://brisbanesocialchess.pages.dev/)
+- **Cloudflare Pages:** Pull request deployment previews for admins and local branches [https://brisbanesocialchess.pages.dev](https://brisbanesocialchess.pages.dev)
 - **Cloudflare Workers:** Playground [https://cfsite.brisbanesocialchess.workers.dev/](https://cfsite.brisbanesocialchess.workers.dev/)
 - **Read the Docs:** Skeleton book and documentation site [https://brisbanesocialchess.readthedocs.io/en/latest/](https://brisbanesocialchess.readthedocs.io/en/latest/)
 - [CONTRIBUTING Guide](CONTRIBUTING.md)
@@ -85,7 +87,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [📃 About Brisbane Social Chess Inc](#-about-brisbane-social-chess-inc)
+- [📃 About Us](#-about-us)
 - [🚀 Quick Start](#-quick-start)
 - [🛠️ Technology Stack](#-technology-stack)
   - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
@@ -101,7 +103,7 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 
 ---
 
-## 📃 About Brisbane Social Chess Inc
+## 📃 About Us
 
 Brisbane Social Chess Inc is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings and community engagement.
 We organize regular meetups where people can play chess in a relaxed and friendly environment.
@@ -113,7 +115,7 @@ We are registered in Queensland and have a dedicated team of organizers.
 
 For detailed development setup instructions, see [DEVELOPER_HELP.md](DEVELOPER_HELP.md).
 
-Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
+Experiment with Lerna and boot up a local developer playground from the repository root with: `npx lerna run dev`.
 
 ## 🛠️ Technology Stack
 
@@ -255,4 +257,4 @@ You can open the HTML files with your web browser.
 
 ---
 
-© 2025 Brisbane Social Chess Inc
+© 2024-2026 Brisbane Social Chess Inc
