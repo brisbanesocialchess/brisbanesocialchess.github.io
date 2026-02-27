@@ -1,3 +1,4 @@
+---
 name: 🧪 Run tests and upload coverage
 
 on: push
@@ -11,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           fetch-depth: 2
           persist-credentials: false
       - name: Set up Node
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238
       - name: Install dependencies
         run: npm install
       - name: Run tests
@@ -30,6 +31,6 @@ jobs:
         run: npm run coverage
         working-directory: ./packages/cfsite
       - name: Upload results to Codecov
-        uses: codecov/codecov-action@5a1091511ad55cbe89839c7260b706298ca349f7
+        uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

@@ -1,11 +1,11 @@
 {
 	"url": "https://brisbanesocialchess.github.io",
-	"name": "Brisbane Social Chess Club",
-	"cloudflare_turnstile_key": "0x4AAAAAAB0ql5WdhXjYTC-y",
+	"name": "Brisbane Social Chess Inc",
+	"cloudflare_turnstile_key": "0x4AAAAAACMoVWA1mhWObYwp",
 	"socials": [
 		{
 			"name": "Discord",
-			"url": "https://discord.com/invite/JWBKhQmzvD",
+			"url": "https://discord.gg/Tv9VHEb8PN",
 			"icon": "discord.svg",
 			"gradient": "from-indigo-600 to-indigo-400",
 			"in_nav": true
@@ -22,7 +22,7 @@
 			"url": "https://github.com/brisbanesocialchess",
 			"icon": "github.svg",
 			"gradient": "from-gray-900 to-gray-700",
-			"in_nav": false
+			"in_nav": true
 		},
 		{
 			"name": "Instagram",
@@ -36,7 +36,7 @@
 			"url": "https://www.youtube.com/@brisbanesocialchess",
 			"icon": "youtube.svg",
 			"gradient": "from-red-600 to-red-400",
-			"in_nav": false
+			"in_nav": true
 		},
 		{
 			"name": "X",

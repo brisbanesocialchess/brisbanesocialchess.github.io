@@ -1,7 +1,7 @@
 ---
 permalink: /contact/
 layout: 'layouts/base.njk'
-title: Contact Us
+title: 'Contact Us'
 captcha: true
 ---
 
@@ -45,7 +45,7 @@ captcha: true
     <a href="/register" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
       Join Now
     </a>
-    <a href="https://discord.com/invite/JWBKhQmzvD" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
+    <a href="{{ site.socials[0].url }}" class="w-full text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">
       Ask Questions on Discord
     </a>
     <a data-email-href class="email-obfuscated w-full cursor-pointer text-center py-3 px-6 bg-white text-black font-bold rounded-full shadow-md hover:shadow-lg transition">

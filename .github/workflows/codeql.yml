@@ -1,3 +1,4 @@
+---
 name: 🛡️ CodeQL Analysis
 
 on:
@@ -12,7 +13,7 @@ permissions:
 
 jobs:
   codeql:
-    name: 🖥️ CodeQL
+    name: 🖥️ Run CodeQL
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,19 +21,19 @@ jobs:
         language: ['actions', 'javascript', 'python']
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - name: ✅ Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           persist-credentials: false
-      - name: Initialize CodeQL
+      - name: 📐 Initialize CodeQL
         uses: github/codeql-action/init@v4
         with:
           languages: ${{ matrix.language }}
 
-      - name: Autobuild
+      - name: 👷🏾‍♂️ Autobuild
         uses: github/codeql-action/autobuild@v4
 
-      - name: Perform CodeQL Analysis
+      - name: 📠 Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
         with:
           category: 'Security'

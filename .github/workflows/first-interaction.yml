@@ -1,17 +1,21 @@
+---
 name: 🥇 First Interaction
+
+on:
+  pull_request:
+    types:
+      - opened
+  issues:
+    types:
+      - opened
 
 permissions:
   issues: write
   pull-requests: write
 
-on: # zizmorlinter:disable dangerous-triggers
-  pull_request_target:
-    types: [opened, reopened]
-  issues:
-    types: [opened]
-
 jobs:
   first-interaction:
+    name: 🌓 Greetings Earthling
     runs-on: ubuntu-latest
     steps:
       - uses: actions/first-interaction@1c4688942c71f71d4f5502a26ea67c331730fa4d
