@@ -10,8 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     bash \
     build-essential \
     ca-certificates \
-    python3 \
-    python3-pip \
+    pipx \
     tar \
     xz-utils \
     libstdc++6 \
@@ -24,7 +23,7 @@ RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.g
 
 ENV PATH="/usr/local/go/bin:${PATH}"
 
-RUN go version && node -v && npm -v
+RUN go version && pipx --version && node -v && npm -v
 
 RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser
 
@@ -32,7 +31,7 @@ WORKDIR /app
 
 COPY .pre-commit-config.yaml ./
 
-RUN pip3 install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
+RUN pipx install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
 COPY . .
 
