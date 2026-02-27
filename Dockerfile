@@ -1,6 +1,7 @@
 FROM node:25.7-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 \
     python3-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -9,7 +10,7 @@ WORKDIR /app
 
 COPY .pre-commit-config.yaml ./
 
-RUN pip3 install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
+RUN pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
 COPY . .
 
