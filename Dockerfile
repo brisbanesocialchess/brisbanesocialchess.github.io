@@ -11,7 +11,13 @@ WORKDIR /app
 
 COPY .pre-commit-config.yaml ./
 
-RUN python3 -m venv .venv && source .venv/bin/activate && pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
+# Create the venv
+RUN python3 -m venv .venv
+
+# Force the venv to be the default for all future RUN and CMD steps
+ENV PATH="/.venv/bin:$PATH"
+
+RUN pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
 RUN useradd --create-home appuser
 USER appuser
