@@ -9,11 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-RUN python3 -m venv .venv && source .venv/bin/activate
-
 COPY .pre-commit-config.yaml ./
 
-RUN pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
+RUN python3 -m venv .venv && source .venv/bin/activate && pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
 RUN useradd --create-home appuser
 USER appuser
