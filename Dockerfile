@@ -15,7 +15,9 @@ COPY .pre-commit-config.yaml ./
 
 RUN pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
-COPY . .
+RUN useradd --create-home appuser
+USER appuser
+COPY --chown=appuser:appuser . .
 
 RUN npm install && \
     npm run build && \
