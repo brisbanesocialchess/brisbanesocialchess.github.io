@@ -12,10 +12,10 @@ WORKDIR /app
 COPY .pre-commit-config.yaml ./
 
 # Create the venv
-RUN python3 -m venv .venv
+RUN python3 -m venv /opt/venv
 
 # Force the venv to be the default for all future RUN and CMD steps
-ENV PATH="/.venv/bin:$PATH"
+ENV PATH="/opt/venv/bin:$PATH"
 
 RUN pip install --no-cache-dir pre-commit && git init . && pre-commit install-hooks
 
