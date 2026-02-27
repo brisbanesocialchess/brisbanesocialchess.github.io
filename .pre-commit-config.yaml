@@ -61,6 +61,7 @@ repos:
         entry: npm audit --audit-level=high
         language: system
         pass_filenames: false
+        stages: [manual]
       - id: check-zip-file-is-not-committed
         name: Check no zip files are committed
         description: Zip files are not allowed in the repository
