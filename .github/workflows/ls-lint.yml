@@ -1,17 +1,27 @@
 ---
-name: Lint
+name: 🧹 ls-lint
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
 
 jobs:
   ls-lint:
-    name: Run ls-lint
+    name: 🏃🏼 Run linter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: ls-lint/action@v2.3.1
+      - name: ✅ Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - name: 🏃🏼 Let's ls-lint
+        uses: ls-lint/action@02e380fe8733d499cbfc9e22276de5085508a5bd
         with:
           config: .github/linters/.ls-lint.yml

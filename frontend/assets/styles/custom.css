@@ -1,0 +1,121 @@
+:root {
+	--toggle-icon-color: #ffffff;
+	--toggle-icon-hover: #ffd700;
+	--bg-color: #000000;
+	--bg-overlay: rgba(48, 48, 48, 0.95);
+	--text-color: #ffffff;
+	--reverse-text-color: #111111;
+	--card-bg: rgba(26, 26, 26, 1);
+	--team-role-shadow-rgb: 255, 255, 255;
+}
+[data-theme='light'] {
+	--toggle-icon-color: #111111;
+	--toggle-icon-hover: #ff8c00;
+	--bg-color: #ffffff;
+	--bg-overlay: rgba(255, 255, 255, 0.65);
+	--text-color: #111111;
+	--reverse-text-color: #ffffff;
+	--card-bg: rgba(255, 255, 255, 0.85);
+	--team-role-shadow-rgb: 0, 0, 0;
+	--footer-copyright-color: var(--reverse-text-color);
+}
+[data-theme='random'] {
+	--toggle-icon-color: var(--text-color);
+	--toggle-icon-hover: var(--bg-color);
+	--bg-color: #000000;
+	--bg-overlay: rgba(0, 0, 0, 0.65);
+	--text-color: #ffffff;
+	--reverse-text-color: #ffffff;
+	--card-bg: rgba(255, 255, 255, 0.1);
+	--team-role-shadow-rgb: 255, 255, 255;
+	--footer-copyright-color: var(--text-color);
+}
+
+/* Theme */
+.theme-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 9999px;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+.theme-toggle svg {
+	color: var(--toggle-icon-color);
+	transition: color 0.3s ease;
+}
+.theme-toggle:hover svg {
+	color: var(--toggle-icon-hover);
+}
+
+/* team-roles */
+.team-role-admin {
+	--team-role-color: var(--color-team-role-admin);
+}
+.team-role-developer {
+	--team-role-color: var(--color-team-role-developer);
+}
+.team-role-github-triage {
+	--team-role-color: var(--color-team-role-github-triage);
+}
+.team-role-moderator {
+	--team-role-color: var(--color-team-role-moderator);
+}
+.team-role-board {
+	--team-role-color: var(--color-team-role-board);
+}
+.team-role-leader {
+	--team-role-color: var(--color-team-role-leader);
+}
+.team-role-coordinator {
+	--team-role-color: var(--color-team-role-coordinator);
+}
+.team-role-co-organizers {
+	--team-role-color: var(--color-team-role-co-organizers);
+}
+.team-role-lead-developer {
+	--team-role-color: var(--color-team-role-lead-developer);
+}
+.team-role-core-developer {
+	--team-role-color: var(--color-team-role-core-developer);
+}
+.team-role-event-organizers {
+	--team-role-color: var(--color-team-role-event-organizers);
+}
+.team-role-assistant-organizers {
+	--team-role-color: var(--color-team-role-assistant-organizers);
+}
+.team-role img {
+	border: var(--team-role-border) var(--team-role-color);
+	transition: filter 0.3s ease;
+}
+.team-role:hover img {
+	filter: drop-shadow(0 0 10px rgba(var(--team-role-shadow-rgb), 0.4)) drop-shadow(0 0 20px rgba(var(--team-role-shadow-rgb), 0.2));
+}
+.team-role span {
+	color: var(--team-role-color);
+}
+/* Footer section */
+.footer-copyright {
+	color: var(--footer-copyright-color);
+}
+
+/* Theme-specific background blend modes */
+.theme-bg-blend {
+	background-blend-mode: multiply;
+}
+
+[data-theme='light'] .theme-bg-blend {
+	background-blend-mode: multiply;
+}
+
+[data-theme='dark'] .theme-bg-blend {
+	background-blend-mode: normal;
+}
+
+[data-theme='random'] .theme-bg-blend {
+	background-blend-mode: multiply;
+}

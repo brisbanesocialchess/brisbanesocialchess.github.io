@@ -1,0 +1,32 @@
+---
+name: 🦸🏽‍♀️ Super-Linter
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+permissions:
+  contents: read
+jobs:
+  build:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      statuses: write # for super-linter/super-linter/slim to mark status of each linter run
+    name: 🏃🏽‍♀️ Run Super-Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: '✅ Checkout ${{ github.ref }} ( ${{ github.sha }} )'
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+          persist-credentials: false
+      - name: 🏃🏼‍♂️‍➡️ Super-Linter
+        uses: super-linter/super-linter/slim@61abc07d755095a68f4987d1c2c3d1d64408f1f9
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYTHON_PYLINT_CONFIG_FILE: .pylintrc
+          VALIDATE_ALL_CODEBASE: true
