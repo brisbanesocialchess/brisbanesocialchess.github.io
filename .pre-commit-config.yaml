@@ -55,13 +55,6 @@ repos:
         language: node
         additional_dependencies: ['prettier@3.8.1']
         pass_filenames: false
-      - id: npm-audit
-        name: Run npm-audit
-        description: Run npm audit
-        entry: npm audit --audit-level=high
-        language: system
-        pass_filenames: false
-        stages: [manual]
       - id: check-zip-file-is-not-committed
         name: Check no zip files are committed
         description: Zip files are not allowed in the repository
@@ -196,6 +189,12 @@ repos:
         args: [--strict, -c=.github/linters/.yaml-lint.yml]
         types: [yaml]
         files: \.ya?ml$
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker
+    rev: v3.6.1
+    hooks:
+      - id: editorconfig-checker
+        name: Run editorconfig-checker
+        description: Validate files against the .editorconfig configuration
   # - repo: https://github.com/koalaman/shellcheck-precommit
   #   rev: v0.9.0
   #   hooks:

@@ -1,0 +1,28 @@
+---
+name: ✅ Dprint Check (Windows)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  dprint:
+    name: 👣 Run dprint
+    runs-on: windows-latest
+    steps:
+      - name: ✅ Checkout the current repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: 🏃🏻‍♂️‍➡️ Run dprint check
+        uses: dprint/check@9cb3a2b17a8e606d37aae341e49df3654933fc23 # v2.3
+        with:
+          arguments: --allow-no-files
