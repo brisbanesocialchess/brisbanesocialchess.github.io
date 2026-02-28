@@ -191,6 +191,12 @@ repos:
         args: [--strict, -c=.github/linters/.yaml-lint.yml]
         types: [yaml]
         files: \.ya?ml$
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker
+    rev: v3.6.1
+    hooks:
+      - id: editorconfig-checker
+        name: Run editorconfig-checker
+        description: Validate files against the .editorconfig configuration
   # - repo: https://github.com/koalaman/shellcheck-precommit
   #   rev: v0.9.0
   #   hooks:
