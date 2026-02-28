@@ -15,7 +15,10 @@ jobs:
     steps:
       - name: ↩️ Checkout code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-      - run: npm ci && npm run build
+        with:
+          persist-credentials: false
+      - name: 🏗️ Build site
+        run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@e2eda2e106cfa35cdbcf4ac9ddaf6c4756df2c8c
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
