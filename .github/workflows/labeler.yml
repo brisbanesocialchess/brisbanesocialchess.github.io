@@ -1,6 +1,7 @@
+---
 name: 🤖 Pull Request Labeler
 
-on:
+on: # zizmorlinter:disable dangerous-triggers
   - pull_request_target
 
 permissions:
@@ -14,11 +15,8 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - name: 📥 Checkout Repository
-        uses: actions/checkout@v4
-
       - name: 🏷️ Apply Labels using Labeler
-        uses: actions/labeler@v5
+        uses: actions/labeler@634933edcd8ababfe52f92936142cc22ac488b1b
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           sync-labels: true

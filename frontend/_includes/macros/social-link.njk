@@ -1,0 +1,5 @@
+{% macro social_link(social, extra_classes="") %}
+  <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" class="{{ extra_classes }}">
+    <img src="/assets/images/{{ social.icon }}" alt="{{ social.name }}" class="w-6 h-6" />
+  </a>
+{% endmacro %}
