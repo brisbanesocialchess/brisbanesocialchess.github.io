@@ -252,11 +252,11 @@ If you need help or have questions, please:
 
 ## Appendix: Tools and Platforms We Use
 
-- **Cloudflare Workers:** A serverless platform for running our applications on Cloudflare's global network.
-- **Cloudflare Wrangler:** The command-line tool for building and managing Cloudflare Workers.
-- **GitHub Pages:** A static site hosting service where our project is deployed.
-- **Lerna:** A tool for managing JavaScript projects with multiple packages (monorepos).
-- **Read the Docs:** A platform for building, versioning, and hosting our technical documentation.
+- **[Cloudflare Workers](https://workers.cloudflare.com/)**: A serverless platform for running our applications on Cloudflare's global network.
+- **[Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/)**: The command-line tool for building and managing Cloudflare Workers.
+- **[GitHub Pages](https://pages.github.com/)**: A static site hosting service where our project is deployed.
+- **[Lerna](https://lerna.js.org/)**: A tool for managing JavaScript projects with multiple packages (monorepos).
+- **[Read the Docs](https://docs.readthedocs.com/)**: A platform for building, versioning, and hosting our technical documentation.
 - **reStructuredText (RST):** The markup language used for our documentation.
 - **Sphinx:** A powerful documentation generator that builds our docs from RST files.
-- **Vitest:** A blazing-fast testing framework for our JavaScript and TypeScript code.
+- **[Vitest](https://vitest.dev/)**: A blazing-fast testing framework for our JavaScript and TypeScript code.
