@@ -1,0 +1,30 @@
+{
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"useOptionalChain": "off"
+			},
+			"style": {
+				"useNodejsImportProtocol": "off"
+			},
+			"suspicious": {
+				"noGlobalIsNan": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 140
+	},
+
+	"files": {
+		"includes": ["frontend/**/*.js", ".eleventy.js", "copy-html.js", "merge-assets.js", "tailwind.config.js", "vite.config.js"]
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	}
+}

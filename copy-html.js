@@ -1,7 +1,7 @@
 import fs from 'fs';
-import path from 'path';
 import { globSync } from 'glob';
 import { minify } from 'html-minifier-terser';
+import path from 'path';
 
 const SRC_FOLDER = path.resolve('./_site');
 const DEST_FOLDER = path.resolve('./_deploy');

@@ -1,7 +1,7 @@
 import path from 'path';
-import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import postcssImport from 'postcss-import';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	build: {
