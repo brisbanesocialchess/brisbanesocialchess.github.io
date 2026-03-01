@@ -85,7 +85,7 @@ function randomColor() {
 function luminance(red, green, blue) {
 	const values = [red, green, blue].map((value) => {
 		const srgb = value / 255;
-		return srgb <= 0.03928 ? srgb / 12.92 : Math.pow((srgb + 0.055) / 1.055, 2.4);
+		return srgb <= 0.03928 ? srgb / 12.92 : ((srgb + 0.055) / 1.055) ** 2.4;
 	});
 	return values[0] * 0.2126 + values[1] * 0.7152 + values[2] * 0.0722;
 }

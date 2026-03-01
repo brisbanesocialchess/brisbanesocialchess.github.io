@@ -43,6 +43,7 @@
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
+		"@biomejs/biome": "2.4.4",
 		"@cloudflare/vitest-pool-workers": "^0.12.18",
 		"@eslint/js": "^10.0.1",
 		"@npmcli/arborist": "^9.1.3",

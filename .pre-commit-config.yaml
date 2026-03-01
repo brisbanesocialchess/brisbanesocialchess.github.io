@@ -70,6 +70,13 @@ repos:
           Zip files are not allowed in the repository as they are hard to
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
+  - repo: https://github.com/biomejs/pre-commit
+    rev: v0.6.1
+    hooks:
+      - id: biome-lint
+        name: run biome-lint
+        description: Lint and apply safe fixes to the committed files
+        additional_dependencies: ['@biomejs/biome@2.4.4']
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.3.0
     hooks:
