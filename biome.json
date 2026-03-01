@@ -1,4 +1,19 @@
 {
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"useOptionalChain": "off"
+			},
+			"style": {
+				"useNodejsImportProtocol": "off"
+			},
+			"suspicious": {
+				"noGlobalIsNan": "off"
+			}
+		}
+	},
 	"formatter": {
 		"enabled": true,
 		"lineWidth": 140
