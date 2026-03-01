@@ -5,8 +5,8 @@ permissions:
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - 'gh-pages'
 
 jobs:
   cfsite:
