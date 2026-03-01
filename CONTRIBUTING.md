@@ -252,7 +252,7 @@ If you need help or have questions, please:
 
 ## Appendix: Tools and Platforms We Use
 
-- **[Cloudflare Pages](https://pages.cloudflare.com/)** is a JAMstack platform for frontend developers to collaborate and deploy websites. Build fast sites. In record time.
+- **[Cloudflare Pages](https://pages.cloudflare.com/)** is a JAMstack platform for frontend developers to collaborate and deploy sites. Build fast sites. In record time.
 - **[Cloudflare Workers](https://workers.cloudflare.com/)**: A serverless platform for running our applications on Cloudflare's global network.
 - **[Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/)**: The command-line tool for building and managing Cloudflare Workers.
 - **[GitHub Pages](https://pages.github.com/)**: A static site hosting service where our project is deployed.
