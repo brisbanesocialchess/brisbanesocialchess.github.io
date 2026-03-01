@@ -73,9 +73,9 @@ repos:
   - repo: https://github.com/biomejs/pre-commit
     rev: v0.6.1
     hooks:
-      - id: biome-lint
-        name: run biome-lint
-        description: Lint and apply safe fixes to the committed files
+      - id: biome-check
+        name: run biome-check
+        description: Format, organize imports, lint, and apply safe fixes to the committed files
         additional_dependencies: ['@biomejs/biome@2.4.4']
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.3.0
