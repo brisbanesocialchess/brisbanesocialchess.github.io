@@ -39,7 +39,7 @@ RUN npm install && \
     npm cache clean --force && \
     chown -R appuser:appuser /app
 
-RUN mkdir -p /app/.cache && chown -R appuser:appuser /app/.cache
+RUN mkdir -p /tmp/appuser/.cache/pre-commit && chown -R appuser:appuser /tmp/appuser
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD pre-commit --version || exit 1
@@ -47,8 +47,8 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 USER appuser
 
 ENV PATH="/usr/local/bin:/usr/local/go/bin:${PATH}"
-ENV HOME="/app"
-ENV PRE_COMMIT_HOME="/app/.cache/pre-commit"
+ENV HOME="/tmp/appuser"
+ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
