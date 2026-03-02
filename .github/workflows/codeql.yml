@@ -26,14 +26,14 @@ jobs:
         with:
           persist-credentials: false
       - name: 📐 Initialize CodeQL
-        uses: github/codeql-action/init@v4
+        uses: github/codeql-action/init@5e7a52feb2a3dfb87f88be2af33b9e2275f48de6
         with:
           languages: ${{ matrix.language }}
 
       - name: 👷🏾‍♂️ Autobuild
-        uses: github/codeql-action/autobuild@v4
+        uses: github/codeql-action/autobuild@5e7a52feb2a3dfb87f88be2af33b9e2275f48de6
 
       - name: 📠 Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v4
+        uses: github/codeql-action/analyze@5e7a52feb2a3dfb87f88be2af33b9e2275f48de6
         with:
           category: 'Security'

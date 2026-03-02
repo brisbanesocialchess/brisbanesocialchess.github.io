@@ -31,6 +31,13 @@ repos:
         stages: [manual]
   - repo: local
     hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        stages: [manual]
+        types: [python]
+        args: ['-rn', '--rcfile=.github/linters/.pylintrc']
       - id: npm-ci
         name: Install Node dependencies
         entry: npm ci
@@ -55,13 +62,6 @@ repos:
         language: node
         additional_dependencies: ['prettier@3.8.1']
         pass_filenames: false
-      - id: npm-audit
-        name: Run npm-audit
-        description: Run npm audit
-        entry: npm audit --audit-level=high
-        language: system
-        pass_filenames: false
-        stages: [manual]
       - id: check-zip-file-is-not-committed
         name: Check no zip files are committed
         description: Zip files are not allowed in the repository
@@ -70,6 +70,13 @@ repos:
           Zip files are not allowed in the repository as they are hard to
           track and have security implications. Please remove the zip file from the repository.
         files: (?i)\.zip$
+  - repo: https://github.com/biomejs/pre-commit
+    rev: v0.6.1
+    hooks:
+      - id: biome-check
+        name: run biome-check
+        description: Format, organize imports, lint, and apply safe fixes to the committed files
+        additional_dependencies: ['@biomejs/biome@2.4.4']
   - repo: https://github.com/thlorenz/doctoc.git
     rev: v2.3.0
     hooks:
@@ -81,7 +88,7 @@ repos:
           (?x)
           ^frontend/.*\.md$|^\.github/pull_request_template\.md$
   - repo: https://github.com/pycqa/isort
-    rev: 8.0.0
+    rev: 8.0.1
     hooks:
       - id: isort
         name: isort (python)
@@ -196,6 +203,12 @@ repos:
         args: [--strict, -c=.github/linters/.yaml-lint.yml]
         types: [yaml]
         files: \.ya?ml$
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker
+    rev: v3.6.1
+    hooks:
+      - id: editorconfig-checker
+        name: Run editorconfig-checker
+        description: Validate files against the .editorconfig configuration
   # - repo: https://github.com/koalaman/shellcheck-precommit
   #   rev: v0.9.0
   #   hooks:
@@ -210,7 +223,7 @@ repos:
         types: [python]
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: v0.15.2
+    rev: v0.15.4
     hooks:
       # Run the linter.
       - id: ruff-check
@@ -242,12 +255,12 @@ repos:
         description: flake8 is a python tool that checks the style and quality of some python code
         types: [python]
         args: ['--config', '.github/linters/.flake8']
-  - repo: local
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.22.0
     hooks:
-      - id: pylint
-        name: pylint
-        entry: pylint
-        language: system
-        stages: [manual]
-        types: [python]
-        args: ['-rn', '--rcfile=.github/linters/.pylintrc']
+      - id: zizmor
+        name: run zizmor
+        description: zizmor is a static analysis tool for GitHub Actions
+        # args: [--config=.github/linters/zizmor.yml]
+        files: ^\.github/workflows/.*$
+        types: [yaml]

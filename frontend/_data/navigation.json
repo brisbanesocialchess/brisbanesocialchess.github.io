@@ -2,6 +2,7 @@
 	"navLinks": [
 		{ "url": "/", "text": "Home" },
 		{ "url": "/about/", "text": "About" },
+		{ "url": "/blog/", "text": "Blog" },
 		{ "url": "/games/", "text": "Games" },
 		{ "url": "/meetup/", "text": "Meetups" },
 		{ "url": "/minutes/", "text": "Minutes" },
