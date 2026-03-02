@@ -28,28 +28,21 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN go version && node -v && npm -v && pre-commit --version
 
-RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser
-
 WORKDIR /app
 COPY . .
 
 RUN npm install && \
     npm run build && \
-    npm cache clean --force && \
-    chown -R appuser:appuser /app
+    npm cache clean --force
 
-RUN mkdir -p /tmp/appuser/.cache/pre-commit && chown -R appuser:appuser /tmp/appuser
+RUN mkdir -p /tmp/appuser/.cache/pre-commit
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD pre-commit --version || exit 1
 
-USER appuser
+# USER appuser
 
 ENV PATH="/usr/local/bin:/usr/bin:/usr/local/go/bin:/usr/local/sbin:${PATH}"
-ENV HOME="/tmp/appuser"
-ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
 ENV GIT_TERMINAL_PROMPT=0
 
-ENTRYPOINT ["/bin/bash", "-c"]
-
-CMD ["bash", "-c", "set -x && git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && git status && which git && pre-commit run --all-files"]
+CMD ["pre-commit", "run", "--all-files"]
