@@ -30,9 +30,15 @@ RUN npm install && \
     npm run build && \
     npm cache clean --force
 
-RUN mkdir -p /tmp/appuser/.cache/pre-commit
+RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser && \
+    mkdir -p /tmp/appuser/.cache/pre-commit && \
+    chown -R appuser:appuser /app /tmp/appuser
 
 ENV PATH="/usr/local/go/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:${PATH}"
 ENV GIT_TERMINAL_PROMPT=0
+ENV HOME="/tmp/appuser"
+ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
 
-CMD ["pre-commit", "run", "--all-files"]
+USER appuser
+
+CMD ["bash", "-c", "git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && pre-commit run --all-files"]
