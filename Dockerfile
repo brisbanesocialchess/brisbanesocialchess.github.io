@@ -43,4 +43,8 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 
 USER appuser
 
+ENV PATH="/usr/local/bin:/usr/local/go/bin:${PATH}"
+
+ENTRYPOINT ["/bin/bash", "-c"]
+
 CMD ["pre-commit", "run", "--all-files"]
