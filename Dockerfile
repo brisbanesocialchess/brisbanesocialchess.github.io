@@ -16,8 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libstdc++6 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir --break-system-packages --upgrade pipx==1.6.0 && \
-    pipx install --global pre-commit==4.5.1
+RUN pip install --no-cache-dir --break-system-packages pre-commit==4.5.1
 
 RUN git config --global --add safe.directory "*"
 
@@ -27,7 +26,7 @@ RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.g
 
 ENV PATH="/usr/local/go/bin:${PATH}"
 
-RUN go version && pipx --version && node -v && npm -v && pre-commit --version
+RUN go version && node -v && npm -v && pre-commit --version
 
 RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser
 
@@ -46,10 +45,11 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 
 USER appuser
 
-ENV PATH="/usr/local/bin:/usr/bin:/usr/local/go/bin:${PATH}"
+ENV PATH="/usr/local/bin:/usr/bin:/usr/local/go/bin:/usr/local/sbin:${PATH}"
 ENV HOME="/tmp/appuser"
 ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
+ENV GIT_TERMINAL_PROMPT=0
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
-CMD ["bash", "-c", "cd /app && git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && pre-commit run --all-files"]
+CMD ["bash", "-c", "git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && git status && pre-commit run --all-files"]
