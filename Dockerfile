@@ -42,4 +42,4 @@ ENV PRE_COMMIT_HOME="/.cache/pre-commit"
 
 USER appuser
 
-CMD ["bash", "-c", "set -x && git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && which git && git status && pre-commit run --all-files"]
+CMD ["bash", "-c", "git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && pre-commit run --all-files"]
