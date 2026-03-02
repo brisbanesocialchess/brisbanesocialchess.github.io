@@ -8,3 +8,5 @@ package-lock.json
 .venv
 _deploy
 _site
+
+/.nx/workspace-data

@@ -1,5 +1,5 @@
 ---
-name: 🏃🏼 Run pre-commit
+name: 🏃🏼 Run Audit
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         python-version: ['3.14']
 
     steps:
@@ -40,13 +40,13 @@ jobs:
         uses: actions/cache@9255dc7a253b0ccc959486e2bca901246202afeb
         with:
           path: ~/.cache/pre-commit
-          key: pre-commit|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
+          key: pre-commit|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('.pre-commit-config-audit.yaml') }}
 
       - name: 💾 Cache pip downloads
         uses: actions/cache@9255dc7a253b0ccc959486e2bca901246202afeb
         with:
           path: ~/.cache/pip
-          key: pip|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('**/requirements*.txt', '.pre-commit-config.yaml') }}
+          key: pip|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('**/requirements*.txt', '.pre-commit-config-audit.yaml') }}
 
       - name: 🪛 Install dependencies
         run: |
@@ -54,4 +54,4 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: 🏃🏻‍♂️‍➡️ Run pre-commit
-        run: pre-commit run --all-files
+        run: pre-commit run --config .pre-commit-config-audit.yaml --all-files
