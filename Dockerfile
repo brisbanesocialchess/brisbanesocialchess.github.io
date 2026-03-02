@@ -46,7 +46,7 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 
 USER appuser
 
-ENV PATH="/usr/local/bin:/usr/local/go/bin:${PATH}"
+ENV PATH="/usr/local/bin:/usr/bin:/usr/local/go/bin:${PATH}"
 ENV HOME="/tmp/appuser"
 ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
 
