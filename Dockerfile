@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     bash \
-    pipx \
+    python3-pip \
     build-essential \
     ca-certificates \
     tar \
@@ -15,8 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libstdc++6 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pipx install pre-commit==4.5.1 && \
-    ln -s /root/.local/bin/pre-commit /usr/local/bin/pre-commit
+RUN pip install --upgrade pipx && pipx install --global pre-commit==4.5.1
 
 RUN git config --global --add safe.directory "*"
 
