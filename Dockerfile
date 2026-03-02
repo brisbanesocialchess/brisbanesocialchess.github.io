@@ -52,4 +52,4 @@ ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
-CMD ["git config --global --add safe.directory '*' && git config --global --add safe.directory /app && pre-commit run --all-files"]
+CMD ["git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && pre-commit run --all-files"]
