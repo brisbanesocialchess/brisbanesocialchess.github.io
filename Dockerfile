@@ -39,13 +39,15 @@ COPY --chown=appuser:appuser . .
 
 RUN npm install && \
     npm run build && \
-    npm cache clean --force && \
-    chmod -R a+rw /app
+    npm cache clean --force
+
+RUN chmod -R 777 /app
 
 ENV PATH="/usr/local/go/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:${PATH}"
 ENV GIT_TERMINAL_PROMPT=0
 ENV HOME="/home/appuser"
 ENV PRE_COMMIT_HOME="/.cache/pre-commit"
+ENV PRE_COMMIT_CACHE_DIR="/.cache/pre-commit"
 
 USER appuser
 
