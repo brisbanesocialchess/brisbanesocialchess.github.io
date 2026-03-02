@@ -52,4 +52,4 @@ ENV GIT_TERMINAL_PROMPT=0
 
 ENTRYPOINT ["/bin/bash", "-c"]
 
-CMD ["bash", "-c", "git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && git status && pre-commit run --all-files"]
+CMD ["bash", "-c", "set -x && git config --global --add safe.directory '*' && git config --global user.email 'ci@localhost' && git config --global user.name 'CI' && git status && which git && pre-commit run --all-files"]
