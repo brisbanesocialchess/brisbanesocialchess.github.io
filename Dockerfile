@@ -31,13 +31,14 @@ RUN npm install && \
     npm cache clean --force
 
 RUN groupadd -r appuser && useradd -m -r -g appuser -d /app -s /bin/bash appuser && \
-    mkdir -p /tmp/appuser/.cache/pre-commit && \
+    mkdir -p /app/.cache /tmp/appuser/.cache/pre-commit && \
     chown -R appuser:appuser /app /tmp/appuser
 
 ENV PATH="/usr/local/go/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:${PATH}"
 ENV GIT_TERMINAL_PROMPT=0
-ENV HOME="/tmp/appuser"
-ENV PRE_COMMIT_HOME="/tmp/appuser/.cache/pre-commit"
+ENV HOME="/app"
+ENV XDG_CONFIG_HOME="/app/.config"
+ENV PRE_COMMIT_HOME="/app/.cache/pre-commit"
 
 USER appuser
 
