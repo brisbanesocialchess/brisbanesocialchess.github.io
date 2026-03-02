@@ -34,6 +34,14 @@ RUN groupadd -r appuser && useradd -m -r -g appuser -d /home/appuser -s /bin/bas
     mkdir -p /.cache /home/appuser && \
     chown -R appuser:appuser /home/appuser /.cache
 
+WORKDIR /app
+COPY --chown=appuser:appuser . .
+
+RUN npm install && \
+    npm run build && \
+    npm cache clean --force && \
+    chmod -R a+rw /app
+
 ENV PATH="/usr/local/go/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:${PATH}"
 ENV GIT_TERMINAL_PROMPT=0
 ENV HOME="/home/appuser"
