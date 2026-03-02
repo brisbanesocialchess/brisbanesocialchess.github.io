@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     bash \
     python3-pip \
+    python3.11-venv \
     build-essential \
     ca-certificates \
     tar \
