@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libstdc++6 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pipx install --global pre-commit==4.5.1
+RUN pipx install pre-commit==4.5.1 && \
+    ln -s /root/.local/bin/pre-commit /usr/local/bin/pre-commit
 
 RUN git config --global --add safe.directory "*"
 
