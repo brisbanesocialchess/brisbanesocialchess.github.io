@@ -14,19 +14,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     tar \
     xz-utils \
     libstdc++6 && \
-    rm -rf /var/lib/apt/lists/*
-
-RUN pip install --no-cache-dir --break-system-packages pre-commit==4.5.1
-
-RUN git config --global --add safe.directory "*"
+    rm -rf /var/lib/apt/lists/* && \
+    pip install --no-cache-dir --break-system-packages pre-commit==4.5.1 && \
+    git config --global --add safe.directory "*"
 
 RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
-    rm go${GO_VERSION}.linux-amd64.tar.gz
-
-ENV PATH="/usr/local/go/bin:${PATH}"
-
-RUN go version && node -v && npm -v && pre-commit --version
+    rm go${GO_VERSION}.linux-amd64.tar.gz && \
+    go version && node -v && npm -v && pre-commit --version
 
 WORKDIR /app
 COPY . .
