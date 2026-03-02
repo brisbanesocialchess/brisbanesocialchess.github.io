@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libstdc++6 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install --upgrade pipx && pipx install --global pre-commit==4.5.1
+RUN pip install --no-cache-dir --break-system-packages --upgrade pipx==1.6.0 && \
+    pipx install --global pre-commit==4.5.1
 
 RUN git config --global --add safe.directory "*"
 
