@@ -20,6 +20,8 @@ repos:
       - id: codespell
         name: Run codespell
         description: Check spelling with codespell
+        args: ['--toml', 'pyproject.toml']
+        additional_dependencies: ['tomli']
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.5.6
     hooks:
