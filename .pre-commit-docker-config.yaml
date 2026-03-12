@@ -1,0 +1,11 @@
+---
+# https://pre-commit.com/#installation
+default_stages: [pre-commit, pre-push]
+minimum_pre_commit_version: '3.2.0'
+repos:
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.14.0
+    hooks:
+      - id: hadolint-docker
+        name: Lint Dockerfiles
+        description: Runs hadolint Docker image to lint Dockerfiles
