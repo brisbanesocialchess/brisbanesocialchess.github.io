@@ -56,3 +56,5 @@ frontend/assets/styles/base.css
 
 # Vitest coverage
 coverage
+
+megalinter-reports/
