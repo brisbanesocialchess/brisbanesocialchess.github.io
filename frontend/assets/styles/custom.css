@@ -20,8 +20,8 @@
 	--footer-copyright-color: var(--reverse-text-color);
 }
 [data-theme='random'] {
-	--toggle-icon-color: var(--text-color);
-	--toggle-icon-hover: var(--bg-color);
+	--toggle-icon-color: #4bcd6b; /* Green color for the dice icon */
+	--toggle-icon-hover: #65e484; /* Lighter green on hover */
 	--bg-color: #000000;
 	--bg-overlay: rgba(0, 0, 0, 0.65);
 	--text-color: #ffffff;
@@ -45,10 +45,73 @@
 }
 .theme-toggle svg {
 	color: var(--toggle-icon-color);
-	transition: color 0.3s ease;
+	fill: currentColor;
+	transition:
+		color 0.3s ease,
+		transform 0.3s ease;
+	position: absolute;
+	opacity: 0;
+	transform: scale(0.5);
 }
+
+/* Ensure dice icon is properly displayed */
+.random-icon {
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
 .theme-toggle:hover svg {
 	color: var(--toggle-icon-hover);
+}
+
+/* Show the appropriate theme icon based on current theme */
+[data-theme='dark'] .sun-icon,
+[data-theme='light'] .moon-icon,
+[data-theme='random'] .random-icon {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Shake animation for dice icon */
+@keyframes shake {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	10% {
+		transform: scale(1.05) rotate(-5deg);
+	}
+	20% {
+		transform: scale(1.05) rotate(5deg);
+	}
+	30% {
+		transform: scale(1) rotate(-3deg);
+	}
+	40% {
+		transform: scale(1) rotate(3deg);
+	}
+	50% {
+		transform: scale(1.05) rotate(-5deg);
+	}
+	60% {
+		transform: scale(1.05) rotate(5deg);
+	}
+	70% {
+		transform: scale(1) rotate(-3deg);
+	}
+	80% {
+		transform: scale(1) rotate(3deg);
+	}
+	90% {
+		transform: scale(1.05) rotate(-1deg);
+	}
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+/* Only apply shake animation when random theme is active and hovered */
+[data-theme='random'] .theme-toggle:hover .random-icon {
+	animation: shake 0.8s ease infinite;
 }
 
 /* team-roles */
