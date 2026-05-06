@@ -49,9 +49,9 @@ title: 'Play, Learn & Compete in Brisbane'
 </section>
 
 <section class="px-4 max-w-3xl">
-  <h2 class="text-center text-xl md:text-2xl font-semibold mb-6"><span aria-hidden="true">🗓️</span> 5 Meetups a Week</h2>
+  <h2 class="text-center text-xl md:text-2xl font-semibold mb-6"><span aria-hidden="true">🗓️</span> 6 Meetups a Week</h2>
   <p class="text-center text-base  md:text-lg mb-6">
-    We have meetups every day of the week except Mondays and Tuesdays. There are always more meeting times and locations in the works.
+    We have meetups every day of the week except Mondays. There are always more meeting times and locations in the works.
   </p>
   <div class="overflow-x-auto mb-6">
     <table class="min-w-full border border-gray-300 text-left">
@@ -64,6 +64,19 @@ title: 'Play, Learn & Compete in Brisbane'
         </tr>
       </thead>
       <tbody>
+        <tr class="border-t border-gray-500">
+          <td class="px-4 py-2">Tuesday</td>
+          <td class="px-4 py-2">12:30-3:30 PM</td>
+          <td class="px-4 py-2 font-semibold">Ambassador Specialty Coffee</td>
+          <td class="px-4 py-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=Ambassador+Specialty+Coffee%2C+Shop+K1%2F9+Sherwood+Rd%2C+Toowong+QLD+4066"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[#a09de1] hover:text-[#b7b4ed] underline">
+              Shop K1/9 Sherwood Rd, Toowong QLD 4066
+            </a>
+          </td>
+        </tr>
         <tr class="border-t border-gray-500">
           <td class="px-4 py-2">Wednesday</td>
           <td class="px-4 py-2">12:00-2:30 PM</td>
