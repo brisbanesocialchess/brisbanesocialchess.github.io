@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 2
           persist-credentials: false
       - name: 🟢 Set up Node
-        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
       - name: ⚙️ Install dependencies
         run: npm install
       - name: 👨‍🔬 Run tests
@@ -31,6 +31,6 @@ jobs:
         run: npm run coverage
         working-directory: ./packages/cfsite
       - name: 🆙 Upload results to Codecov
-        uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de
+        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

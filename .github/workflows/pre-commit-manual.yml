@@ -32,12 +32,12 @@ jobs:
         shell: bash
         run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> "$GITHUB_ENV"
       - name: 💾 Cache pre-commit hooks
-        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae
         with:
           path: ~/.cache/pre-commit
           key: pre-commit|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
       - name: 💾 Cache pip downloads
-        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae
         with:
           path: ~/.cache/pip
           key: pip|${{ runner.os }}|${{ env.PY }}|${{ hashFiles('**/requirements*.txt', '.pre-commit-config.yaml') }}
