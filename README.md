@@ -45,11 +45,11 @@ You do not need to know advanced JavaScript to get started - just follow the ste
   <tr>
     <td colspan="2">
       <a href="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/">
-        <img src="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F" alt="DeepSource active issues">
+        <img src="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=active+issues&show_trend=true" alt="DeepSource active issues">
       </a>
       <br>
       <a href="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io/">
-        <img src="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=resolved+issues&show_trend=true&token=YbVIWlOo80ifYYsP_8O2kR0F" alt="DeepSource resolved issues">
+        <img src="https://app.deepsource.com/gh/brisbanesocialchess/brisbanesocialchess.github.io.svg/?label=resolved+issues&show_trend=true" alt="DeepSource resolved issues">
       </a>
     </td>
   </tr>
