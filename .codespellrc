@@ -1,3 +1,0 @@
-[codespell]
-ignore-words = .github/linters/codespell.txt
-skip = package-lock.json,yarn.lock
