@@ -6,6 +6,12 @@
     <title>{{ title }} | {{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Brisbane's only social chess club" />
+    <meta property="og:title" content="{{ title }} | {{ site.name }}" />
+    <meta property="og:description" content="Brisbane's only social chess club" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}{{ '/assets/images/logo.jpg' | url }}" />
+    <meta property="og:site_name" content="{{ site.name }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" />
     <link rel="stylesheet" href="{{ '/assets/styles/bundle.css' | url }}" />
     <link rel="icon" href="{{ '/assets/images/favicon.png' | url  }}" />
